@@ -1,8 +1,15 @@
-# Music Ontology Toolkit
+# cratedigger
+
+*Finding the order in a pile of records.*
 
 Builds queryable metadata ontologies for music collections, then projects them
-into things you can use: playlists, spreadsheets, and a self-contained
-interactive browser.
+into things you can actually use: playlists, spreadsheets, and a
+self-contained interactive browser.
+
+A folder tree has exactly one dimension. Real collections have five — composer,
+rating, quality tier, provenance, chronology — so this stops trying to encode
+them as directories and makes the metadata authoritative instead. Every
+hierarchy, including your existing folders, becomes a generated view.
 
 **Read-only with respect to your music.** Nothing is moved, renamed or
 retagged. Everything produced goes to a separate output directory, and the
@@ -131,9 +138,33 @@ of rate-limited fetching and a lot of hand curation. Everything under
   path, never of a date — so per-track session dates can never fragment the
   album view.
 
-## Licence
+## Data, sources and attribution
 
-Code is MIT. The data in `vocab/` has mixed provenance — MusicBrainz (CC0)
-and an extract from David Wild's discography kept for personal cataloguing.
-See [LICENSE](LICENSE) for the detail and attribution. No audio is included or
-redistributed.
+No audio is included, redistributed, or referenced by content. The code is
+**MIT**. The curated data in `vocab/` has mixed provenance and is not all the
+author's to relicense:
+
+**MusicBrainz** — `conductors.json`, `ensembles.json`, `coltrane_mb_cache.json`,
+`coltrane_mb_sessions.json`. Core data is released under
+[CC0](https://musicbrainz.org/doc/About/Data_License). Fetched politely, at the
+documented 1 request/second.
+
+**David Wild** — `coltrane_wild_sessions.json` holds 101 session records
+(dates, personnel, locations, tune listings) extracted from the web edition of
+David Wild, *The Recordings of John Coltrane: A Discography*, 2nd ed.,
+Wildmusic 1979, at [wildmusic-jazz.com](http://www.wildmusic-jazz.com/).
+
+> Wild's discography is the authoritative work on these recordings and this
+> project would be guessing without it. Individual facts are not
+> copyrightable; the compilation is his. This extract exists to catalogue a
+> private collection. **If you use it, credit Wild. If you are doing anything
+> commercial, ask him first.** `coltrane_wild.py --fetch` rebuilds it from
+> source, so you need not take this copy on trust.
+
+**Hand-written** — `coltrane_sessions.json`, `coltrane_personnel.json`. Written
+from general knowledge, then reconciled against the above. Every entry carries
+`confidence` and `source` fields recording how far it has actually been
+verified. Several were wrong until the reconcilers caught them, and the docs
+say which.
+
+See [LICENSE](LICENSE) for the full terms.
