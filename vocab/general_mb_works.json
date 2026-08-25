@@ -1,0 +1,4031 @@
+{
+ "_comment": "MusicBrainz work identity for a mixed library. A work id is stable where a catalogue number does not exist. Advisory: nothing is applied automatically.",
+ "_source": "musicbrainz",
+ "works": [
+  {
+   "work_id": "1ebe1abf-daf2-3e5e-b3ad-b6c5a4ec5727",
+   "title": "Adagio for Strings",
+   "releases": [
+    "1997 - Barber's Adagio"
+   ]
+  },
+  {
+   "work_id": "78823d85-3148-409e-b903-af9f0cfaf02d",
+   "title": "Adagio for Strings",
+   "releases": [
+    "1997 - Barber's Adagio"
+   ]
+  },
+  {
+   "work_id": "63c674fe-0204-4f3f-b197-a949ffc60190",
+   "title": "Agnus Dei",
+   "releases": [
+    "1997 - Barber's Adagio"
+   ]
+  },
+  {
+   "work_id": "976f478f-9ef0-3ea6-adb3-b0414e8c5580",
+   "title": "String Quartet, op. 11: II. Molto adagio",
+   "releases": [
+    "1997 - Barber's Adagio"
+   ]
+  },
+  {
+   "work_id": "15f11332-cfdc-3657-8941-7cfdb8207277",
+   "title": "Violin Concerto no. 3 in B minor, op. 61: I. Allegro non troppo",
+   "releases": [
+    "Amoyal - Saint-Saëns Violin Concerto No.3, Respighi  Concerto gregoriano"
+   ]
+  },
+  {
+   "work_id": "70a870c9-1364-31f6-b27a-8306b28f773b",
+   "title": "Violin Concerto no. 3 in B minor, op. 61: II. Andantino quasi allegretto",
+   "releases": [
+    "Amoyal - Saint-Saëns Violin Concerto No.3, Respighi  Concerto gregoriano"
+   ]
+  },
+  {
+   "work_id": "9bcd1a86-79c6-33ca-9a5a-94ab2fa0ca09",
+   "title": "Violin Concerto no. 3 in B minor, op. 61: III. Molto moderato e maestoso - Allegro non troppo",
+   "releases": [
+    "Amoyal - Saint-Saëns Violin Concerto No.3, Respighi  Concerto gregoriano"
+   ]
+  },
+  {
+   "work_id": "e30ca4f5-0088-4f65-ab6c-55de301ca50a",
+   "title": "Concerto gregoriano, P. 135: I. Andante tranquillo",
+   "releases": [
+    "Amoyal - Saint-Saëns Violin Concerto No.3, Respighi  Concerto gregoriano"
+   ]
+  },
+  {
+   "work_id": "234dfb52-8fb7-427d-87d0-15eb06692c1b",
+   "title": "Concerto gregoriano, P. 135: II. Andante espressivo e sostenuto",
+   "releases": [
+    "Amoyal - Saint-Saëns Violin Concerto No.3, Respighi  Concerto gregoriano"
+   ]
+  },
+  {
+   "work_id": "abc2f5bc-55a5-4b0c-a563-af73905ca0b5",
+   "title": "Concerto gregoriano, P. 135: III. Finale (Alleluja). Allegro energico",
+   "releases": [
+    "Amoyal - Saint-Saëns Violin Concerto No.3, Respighi  Concerto gregoriano"
+   ]
+  },
+  {
+   "work_id": "e39bfa30-fa4d-4bd5-9061-a74596c9fe32",
+   "title": "Poema autunnale, P. 146",
+   "releases": [
+    "Amoyal - Saint-Saëns Violin Concerto No.3, Respighi  Concerto gregoriano"
+   ]
+  },
+  {
+   "work_id": "2aa0c9bf-1a04-3929-a470-ba9f97d5f765",
+   "title": "Die Kunst der Fuge, BWV 1080: I. Contrapunctus 1",
+   "releases": [
+    "Bach - The Art of Fugue - Emerson"
+   ]
+  },
+  {
+   "work_id": "97be078d-8c22-333c-b05c-aed79d4f3554",
+   "title": "Die Kunst der Fuge, BWV 1080: II. Contrapunctus 2",
+   "releases": [
+    "Bach - The Art of Fugue - Emerson"
+   ]
+  },
+  {
+   "work_id": "0e135e6c-a2bc-332a-9158-329d1987e7f5",
+   "title": "Die Kunst der Fuge, BWV 1080: III. Contrapunctus 3",
+   "releases": [
+    "Bach - The Art of Fugue - Emerson"
+   ]
+  },
+  {
+   "work_id": "057dc676-e173-3951-a621-9790ea3cb3da",
+   "title": "Die Kunst der Fuge, BWV 1080: IV. Contrapunctus 4",
+   "releases": [
+    "Bach - The Art of Fugue - Emerson"
+   ]
+  },
+  {
+   "work_id": "3b69ca74-fe97-3055-880c-d565d6a39654",
+   "title": "Die Kunst der Fuge, BWV 1080: V. Contrapunctus 5",
+   "releases": [
+    "Bach - The Art of Fugue - Emerson"
+   ]
+  },
+  {
+   "work_id": "345800f6-a046-303b-8334-c701cd2470d2",
+   "title": "Die Kunst der Fuge, BWV 1080: VI. Contrapunctus 6 a 4 in Stylo Francese",
+   "releases": [
+    "Bach - The Art of Fugue - Emerson"
+   ]
+  },
+  {
+   "work_id": "d23f18e6-59e6-35b0-83f9-408901037c32",
+   "title": "Die Kunst der Fuge, BWV 1080: VII. Contrapunctus 7 a 4 per Augmentationem et Diminutionem",
+   "releases": [
+    "Bach - The Art of Fugue - Emerson"
+   ]
+  },
+  {
+   "work_id": "07df2b8b-4edf-3643-9839-e4cbc2d39031",
+   "title": "Die Kunst der Fuge, BWV 1080: VIII. Contrapunctus 8 a 3",
+   "releases": [
+    "Bach - The Art of Fugue - Emerson"
+   ]
+  },
+  {
+   "work_id": "eba29eca-65c8-3773-8d03-5633a49228f4",
+   "title": "Die Kunst der Fuge, BWV 1080: IX. Contrapunctus 9 a 4 alla Duodecima",
+   "releases": [
+    "Bach - The Art of Fugue - Emerson"
+   ]
+  },
+  {
+   "work_id": "febfbd6f-3f59-3231-af71-dadc1ab1a619",
+   "title": "Die Kunst der Fuge, BWV 1080: X. Contrapunctus 10 a 4 alla Decima",
+   "releases": [
+    "Bach - The Art of Fugue - Emerson"
+   ]
+  },
+  {
+   "work_id": "51174ec8-0b46-3fb8-a0ca-3fb7aafdc5fd",
+   "title": "Die Kunst der Fuge, BWV 1080: XI. Contrapunctus 11 a 4",
+   "releases": [
+    "Bach - The Art of Fugue - Emerson"
+   ]
+  },
+  {
+   "work_id": "d3db5430-ebff-3151-bab1-c3c286174d82",
+   "title": "Die Kunst der Fuge, BWV 1080: XIV. Canon per Augmentationem in Contrario Motu",
+   "releases": [
+    "Bach - The Art of Fugue - Emerson"
+   ]
+  },
+  {
+   "work_id": "a91c8be8-bc66-3034-ab0e-8001fc2bfcd5",
+   "title": "Die Kunst der Fuge, BWV 1080: XII, 1. Contrapunctus inversus a 4 (Forma recta)",
+   "releases": [
+    "Bach - The Art of Fugue - Emerson"
+   ]
+  },
+  {
+   "work_id": "986044bd-cd41-3c45-ac91-28451e58bf6d",
+   "title": "Die Kunst der Fuge, BWV 1080: XII, 2. Contrapunctus inversus 12 a 4 (Forma inversa)",
+   "releases": [
+    "Bach - The Art of Fugue - Emerson"
+   ]
+  },
+  {
+   "work_id": "cb24f2b7-0c42-3da0-8f51-36f6764a02c4",
+   "title": "Die Kunst der Fuge, BWV 1080: XV. Canon alla Ottava",
+   "releases": [
+    "Bach - The Art of Fugue - Emerson"
+   ]
+  },
+  {
+   "work_id": "2080fabd-44dd-3027-b6c6-5fbae476c57f",
+   "title": "Die Kunst der Fuge, BWV 1080: XVI. Canon alla Decima in Contrapunto alla Terza",
+   "releases": [
+    "Bach - The Art of Fugue - Emerson"
+   ]
+  },
+  {
+   "work_id": "5c2320c3-dbe9-31c6-a8ae-36fa7ea50424",
+   "title": "Die Kunst der Fuge, BWV 1080: XVII. Canon alla Duodecima in Contrapunto alla Quinta",
+   "releases": [
+    "Bach - The Art of Fugue - Emerson"
+   ]
+  },
+  {
+   "work_id": "558c7109-39ae-3052-89b8-05b0a9b9665a",
+   "title": "Die Kunst der Fuge, BWV 1080: XIII, 1. Contrapunctus inversus a 3 (Forma recta)",
+   "releases": [
+    "Bach - The Art of Fugue - Emerson"
+   ]
+  },
+  {
+   "work_id": "5465e820-d04f-3e2d-b843-0ccda2802a62",
+   "title": "Die Kunst der Fuge, BWV 1080: XIII, 2. Contrapunctus inversus a 3 (Forma inversa)",
+   "releases": [
+    "Bach - The Art of Fugue - Emerson"
+   ]
+  },
+  {
+   "work_id": "8281eb46-4681-3ad7-adb9-13d577a01b18",
+   "title": "Die Kunst der Fuge, BWV 1080: XIX. Fuga a 3 [4] Soggetti",
+   "releases": [
+    "Bach - The Art of Fugue - Emerson"
+   ]
+  },
+  {
+   "work_id": "a39edaab-0bb0-32df-b13d-67af8277a4e8",
+   "title": "Wenn wir in höchsten Nöten sein, BWV 668.1",
+   "releases": [
+    "Bach - The Art of Fugue - Emerson"
+   ]
+  },
+  {
+   "work_id": "29930a4b-b3a6-3b82-be2f-f19a06a76175",
+   "title": "Keyboard Concerto in D minor, BWV 1052: I. Allegro",
+   "releases": [
+    "Bach Concertos [Box] (The English Concert, Trevor Pinnock) [FLAC]"
+   ]
+  },
+  {
+   "work_id": "ff7b3ce6-f25d-3029-aa30-e5964e988e9b",
+   "title": "Keyboard Concerto in D minor, BWV 1052: II. Adagio",
+   "releases": [
+    "Bach Concertos [Box] (The English Concert, Trevor Pinnock) [FLAC]"
+   ]
+  },
+  {
+   "work_id": "7a046a04-921e-3e3d-a8d5-9dcc30f5e2f3",
+   "title": "Keyboard Concerto in D minor, BWV 1052: III. Allegro",
+   "releases": [
+    "Bach Concertos [Box] (The English Concert, Trevor Pinnock) [FLAC]"
+   ]
+  },
+  {
+   "work_id": "a9e2df6e-d61b-3627-b1b1-e2eb0181b720",
+   "title": "Keyboard Concerto no. 2 in E major, BWV 1053: I. Allegro",
+   "releases": [
+    "Bach Concertos [Box] (The English Concert, Trevor Pinnock) [FLAC]"
+   ]
+  },
+  {
+   "work_id": "cd40e5ac-cc20-3993-8e88-cfb650aa134a",
+   "title": "Keyboard Concerto no. 2 in E major, BWV 1053: II. Siciliano",
+   "releases": [
+    "Bach Concertos [Box] (The English Concert, Trevor Pinnock) [FLAC]"
+   ]
+  },
+  {
+   "work_id": "450a594a-01b1-3bcb-a109-193a65efd936",
+   "title": "Keyboard Concerto no. 2 in E major, BWV 1053: III. Allegro",
+   "releases": [
+    "Bach Concertos [Box] (The English Concert, Trevor Pinnock) [FLAC]"
+   ]
+  },
+  {
+   "work_id": "a840c404-0585-310b-9590-029cf7528dac",
+   "title": "Concerto for Keyboard and Orchestra no. 3 in D major, BWV 1054: I. Allegro",
+   "releases": [
+    "Bach Concertos [Box] (The English Concert, Trevor Pinnock) [FLAC]"
+   ]
+  },
+  {
+   "work_id": "e04e55ad-431c-3a24-9c83-54aed096e3be",
+   "title": "Concerto for Keyboard and Orchestra no. 3 in D major, BWV 1054: II. Adagio e piano sempre",
+   "releases": [
+    "Bach Concertos [Box] (The English Concert, Trevor Pinnock) [FLAC]"
+   ]
+  },
+  {
+   "work_id": "bfb4558c-49f7-37e5-89ff-cfa4a33c3baa",
+   "title": "Concerto for Keyboard and Orchestra no. 3 in D major, BWV 1054: III. Allegro",
+   "releases": [
+    "Bach Concertos [Box] (The English Concert, Trevor Pinnock) [FLAC]"
+   ]
+  },
+  {
+   "work_id": "07d35f4c-833a-3e44-b6aa-a464d0f534e1",
+   "title": "Keyboard Concerto no. 4 in A major, BWV 1055: I. Allegro",
+   "releases": [
+    "Bach Concertos [Box] (The English Concert, Trevor Pinnock) [FLAC]"
+   ]
+  },
+  {
+   "work_id": "843c35a7-436b-3ede-9ed1-74af21eb1b44",
+   "title": "Keyboard Concerto no. 4 in A major, BWV 1055: II. Larghetto",
+   "releases": [
+    "Bach Concertos [Box] (The English Concert, Trevor Pinnock) [FLAC]"
+   ]
+  },
+  {
+   "work_id": "78d084ed-8f9d-3bec-870c-af2aab173fd0",
+   "title": "Keyboard Concerto no. 4 in A major, BWV 1055: III. Allegro ma non tanto",
+   "releases": [
+    "Bach Concertos [Box] (The English Concert, Trevor Pinnock) [FLAC]"
+   ]
+  },
+  {
+   "work_id": "265a8270-3ab0-33d3-8b13-0a014bfc6d60",
+   "title": "Concerto no. 5 for Keyboard and Orchestra in F minor, BWV 1056: I. Allegro",
+   "releases": [
+    "Bach Concertos [Box] (The English Concert, Trevor Pinnock) [FLAC]"
+   ]
+  },
+  {
+   "work_id": "ae0d044f-5da7-3075-ac1e-f0997831e259",
+   "title": "Concerto no. 5 for Keyboard and Orchestra in F minor, BWV 1056: II. Largo",
+   "releases": [
+    "Bach Concertos [Box] (The English Concert, Trevor Pinnock) [FLAC]"
+   ]
+  },
+  {
+   "work_id": "8fa74eb4-d468-395d-a77b-176d2674ce01",
+   "title": "Concerto no. 5 for Keyboard and Orchestra in F minor, BWV 1056: III. Presto",
+   "releases": [
+    "Bach Concertos [Box] (The English Concert, Trevor Pinnock) [FLAC]"
+   ]
+  },
+  {
+   "work_id": "a03aeaa3-59ee-4f6a-994d-0c44e54a8d37",
+   "title": "Keyboard Concerto no. 6 in F major, BWV 1057: I. Allegro",
+   "releases": [
+    "Bach Concertos [Box] (The English Concert, Trevor Pinnock) [FLAC]"
+   ]
+  },
+  {
+   "work_id": "4a8444bc-f7d6-40dd-badf-9c7c8b8ad067",
+   "title": "Keyboard Concerto no. 6 in F major, BWV 1057: II. Andante",
+   "releases": [
+    "Bach Concertos [Box] (The English Concert, Trevor Pinnock) [FLAC]"
+   ]
+  },
+  {
+   "work_id": "832093a9-c764-4419-b7ee-cd9d9e147fea",
+   "title": "Keyboard Concerto no. 6 in F major, BWV 1057: III. Allegro assai",
+   "releases": [
+    "Bach Concertos [Box] (The English Concert, Trevor Pinnock) [FLAC]"
+   ]
+  },
+  {
+   "work_id": "77776255-eba8-34e3-9fc3-843e2cba2ab4",
+   "title": "Concerto for Keyboard and Orchestra no. 7 in G minor, BWV 1058: I. Allegro",
+   "releases": [
+    "Bach Concertos [Box] (The English Concert, Trevor Pinnock) [FLAC]"
+   ]
+  },
+  {
+   "work_id": "1323765a-5c43-3261-b348-c1cf7ca9d3bd",
+   "title": "Concerto for Keyboard and Orchestra no. 7 in G minor, BWV 1058: II. Andante",
+   "releases": [
+    "Bach Concertos [Box] (The English Concert, Trevor Pinnock) [FLAC]"
+   ]
+  },
+  {
+   "work_id": "627654aa-bc9e-3afa-95b2-0649fa3e6199",
+   "title": "Concerto for Keyboard and Orchestra no. 7 in G minor, BWV 1058: III. Allegro assai",
+   "releases": [
+    "Bach Concertos [Box] (The English Concert, Trevor Pinnock) [FLAC]"
+   ]
+  },
+  {
+   "work_id": "f63f44db-1d2d-3b42-9f23-58598b4143b5",
+   "title": "Concerto in C minor for Two Harpsichords, BWV 1060: I. Allegro",
+   "releases": [
+    "Bach Concertos [Box] (The English Concert, Trevor Pinnock) [FLAC]"
+   ]
+  },
+  {
+   "work_id": "c372da85-e43c-3e03-a740-04637a5fac64",
+   "title": "Concerto in C minor for Two Harpsichords, BWV 1060: II. Largo ovvero Adagio",
+   "releases": [
+    "Bach Concertos [Box] (The English Concert, Trevor Pinnock) [FLAC]"
+   ]
+  },
+  {
+   "work_id": "50144a6c-5d33-38f6-bbd7-76f9c8899cdf",
+   "title": "Concerto in C minor for Two Harpsichords, BWV 1060: III. Allegro",
+   "releases": [
+    "Bach Concertos [Box] (The English Concert, Trevor Pinnock) [FLAC]"
+   ]
+  },
+  {
+   "work_id": "159bc2fb-c420-38f2-8f61-bbc709bdb2f5",
+   "title": "Concerto in C major for Two Harpsichords, BWV 1061: I. Allegro",
+   "releases": [
+    "Bach Concertos [Box] (The English Concert, Trevor Pinnock) [FLAC]"
+   ]
+  },
+  {
+   "work_id": "66db4886-abce-3398-9f20-72022213bf36",
+   "title": "Concerto in C major for Two Harpsichords, BWV 1061: II. Adagio",
+   "releases": [
+    "Bach Concertos [Box] (The English Concert, Trevor Pinnock) [FLAC]"
+   ]
+  },
+  {
+   "work_id": "fc3d39a2-cd41-3dfd-8217-6469f8f88ff9",
+   "title": "Concerto in C major for Two Harpsichords, BWV 1061: III. Vivace",
+   "releases": [
+    "Bach Concertos [Box] (The English Concert, Trevor Pinnock) [FLAC]"
+   ]
+  },
+  {
+   "work_id": "f05f79d9-79ca-379a-93bf-3ae41b3e8002",
+   "title": "Concerto in C minor for Two Harpsichords, BWV 1062: I. [Allegro]",
+   "releases": [
+    "Bach Concertos [Box] (The English Concert, Trevor Pinnock) [FLAC]"
+   ]
+  },
+  {
+   "work_id": "120c3c41-0811-3d0b-92f5-1aae93f97a24",
+   "title": "Concerto in C minor for Two Harpsichords, BWV 1062: II. Andante e piano",
+   "releases": [
+    "Bach Concertos [Box] (The English Concert, Trevor Pinnock) [FLAC]"
+   ]
+  },
+  {
+   "work_id": "dd138751-a86e-3f56-af09-dbeb8c751f6c",
+   "title": "Concerto in C minor for Two Harpsichords, BWV 1062: III. Allegro assai",
+   "releases": [
+    "Bach Concertos [Box] (The English Concert, Trevor Pinnock) [FLAC]"
+   ]
+  },
+  {
+   "work_id": "0b8e3b4d-4fac-4197-bb80-acb3d849c9e9",
+   "title": "Concerto for 3 harpsichords, strings & continuo in D minor, BWV 1063: I. [no tempo indication]",
+   "releases": [
+    "Bach Concertos [Box] (The English Concert, Trevor Pinnock) [FLAC]"
+   ]
+  },
+  {
+   "work_id": "7641ee0e-38ee-4752-bdd8-5e9e947cadac",
+   "title": "Concerto for 3 harpsichords, strings & continuo in D minor, BWV 1063: II. Alla Siciliana",
+   "releases": [
+    "Bach Concertos [Box] (The English Concert, Trevor Pinnock) [FLAC]"
+   ]
+  },
+  {
+   "work_id": "c302193e-2e5c-417f-8465-3d2c3c9b078b",
+   "title": "Concerto for 3 harpsichords, strings & continuo in D minor, BWV 1063: III. Allegro",
+   "releases": [
+    "Bach Concertos [Box] (The English Concert, Trevor Pinnock) [FLAC]"
+   ]
+  },
+  {
+   "work_id": "ace64565-21b7-31e9-85f6-18cc7a2b0b46",
+   "title": "Concerto in C major for Three Harpsichords, BWV 1064: I. Allegro",
+   "releases": [
+    "Bach Concertos [Box] (The English Concert, Trevor Pinnock) [FLAC]"
+   ]
+  },
+  {
+   "work_id": "dc6a8837-cb23-37fd-bb36-6633b7f0ab17",
+   "title": "Concerto in C major for Three Harpsichords, BWV 1064: II. Adagio",
+   "releases": [
+    "Bach Concertos [Box] (The English Concert, Trevor Pinnock) [FLAC]"
+   ]
+  },
+  {
+   "work_id": "637bd1f9-0047-3cef-b795-eafe6186097d",
+   "title": "Concerto in C major for Three Harpsichords, BWV 1064: III. Allegro",
+   "releases": [
+    "Bach Concertos [Box] (The English Concert, Trevor Pinnock) [FLAC]"
+   ]
+  },
+  {
+   "work_id": "f95a149a-90d3-3b09-95e6-b95a4536963a",
+   "title": "Concerto for 4 Harpsichords and Orchestra in A minor, BWV 1065: I. [Allegro]",
+   "releases": [
+    "Bach Concertos [Box] (The English Concert, Trevor Pinnock) [FLAC]"
+   ]
+  },
+  {
+   "work_id": "55d273db-0522-30a8-9e3f-698286fbed1a",
+   "title": "Concerto for 4 Harpsichords and Orchestra in A minor, BWV 1065: II. Largo",
+   "releases": [
+    "Bach Concertos [Box] (The English Concert, Trevor Pinnock) [FLAC]"
+   ]
+  },
+  {
+   "work_id": "e03c4475-16a4-3a1a-a987-e16f72edd1df",
+   "title": "Concerto for 4 Harpsichords and Orchestra in A minor, BWV 1065: III. Allegro",
+   "releases": [
+    "Bach Concertos [Box] (The English Concert, Trevor Pinnock) [FLAC]"
+   ]
+  },
+  {
+   "work_id": "3051cb44-8f64-360b-864e-82f82f88b451",
+   "title": "Concerto for Flute, Violin, Harpsichord, Strings and Continuo in A minor, BWV 1044 \"Triple Concerto\": I. Allegro",
+   "releases": [
+    "Bach Concertos [Box] (The English Concert, Trevor Pinnock) [FLAC]"
+   ]
+  },
+  {
+   "work_id": "67845e84-9878-39cf-b963-2534d9f1c57f",
+   "title": "Concerto for Flute, Violin, Harpsichord, Strings and Continuo in A minor, BWV 1044 \"Triple Concerto\": II. Adagio, ma non tanto e dolce",
+   "releases": [
+    "Bach Concertos [Box] (The English Concert, Trevor Pinnock) [FLAC]"
+   ]
+  },
+  {
+   "work_id": "6b402efb-b12f-3bfe-8b66-a7d858504405",
+   "title": "Concerto for Flute, Violin, Harpsichord, Strings and Continuo in A minor, BWV 1044 \"Triple Concerto\": III. Alla breve",
+   "releases": [
+    "Bach Concertos [Box] (The English Concert, Trevor Pinnock) [FLAC]"
+   ]
+  },
+  {
+   "work_id": "ae5eac3d-5e0e-3d5e-9d38-5b2e4f3a1570",
+   "title": "Concerto for Violin & Oboe in C minor, BWV 1060R: I. Allegro",
+   "releases": [
+    "Bach Concertos [Box] (The English Concert, Trevor Pinnock) [FLAC]"
+   ]
+  },
+  {
+   "work_id": "6c367d0f-8be3-3bcf-9b82-6b53443126cf",
+   "title": "Concerto for Violin & Oboe in C minor, BWV 1060R: II. Adagio",
+   "releases": [
+    "Bach Concertos [Box] (The English Concert, Trevor Pinnock) [FLAC]"
+   ]
+  },
+  {
+   "work_id": "2fe0ec33-f44e-3c91-9a64-78c53a44d511",
+   "title": "Concerto for Violin & Oboe in C minor, BWV 1060R: III. Allegro",
+   "releases": [
+    "Bach Concertos [Box] (The English Concert, Trevor Pinnock) [FLAC]"
+   ]
+  },
+  {
+   "work_id": "c4c97f4d-03fe-4001-bebc-78a0b6399017",
+   "title": "Oboe d’Amore Concerto in A major, BWV 1055R: I. Allegro",
+   "releases": [
+    "Bach Concertos [Box] (The English Concert, Trevor Pinnock) [FLAC]"
+   ]
+  },
+  {
+   "work_id": "5d9225cc-a36c-4181-920f-01bc3cb45116",
+   "title": "Oboe d’Amore Concerto in A major, BWV 1055R: II. Larghetto",
+   "releases": [
+    "Bach Concertos [Box] (The English Concert, Trevor Pinnock) [FLAC]"
+   ]
+  },
+  {
+   "work_id": "18aa2503-e459-4d49-ab0e-7966490bb147",
+   "title": "Oboe d’Amore Concerto in A major, BWV 1055R: III. Allegro ma non tanto",
+   "releases": [
+    "Bach Concertos [Box] (The English Concert, Trevor Pinnock) [FLAC]"
+   ]
+  },
+  {
+   "work_id": "8d6f551f-bae5-3e36-ad2d-a5617101c6a8",
+   "title": "Violin Concerto in A minor, BWV 1041: I. Allegro",
+   "releases": [
+    "Bach Concertos [Box] (The English Concert, Trevor Pinnock) [FLAC]"
+   ]
+  },
+  {
+   "work_id": "e2f7417e-0c99-3814-94d0-aee06e4c1805",
+   "title": "Violin Concerto in A minor, BWV 1041: II. Andante",
+   "releases": [
+    "Bach Concertos [Box] (The English Concert, Trevor Pinnock) [FLAC]"
+   ]
+  },
+  {
+   "work_id": "7e85b930-e12f-33cd-8878-89cbf7a46dfe",
+   "title": "Violin Concerto in A minor, BWV 1041: III. Allegro assai",
+   "releases": [
+    "Bach Concertos [Box] (The English Concert, Trevor Pinnock) [FLAC]"
+   ]
+  },
+  {
+   "work_id": "db760d4f-ee78-32a2-b0b9-c9f66d283bcf",
+   "title": "Konzert für Violine und Orchester E-Dur, BWV 1042: I. Allegro",
+   "releases": [
+    "Bach Concertos [Box] (The English Concert, Trevor Pinnock) [FLAC]"
+   ]
+  },
+  {
+   "work_id": "c677eb74-a31b-3377-ba8f-e950f143c3bc",
+   "title": "Konzert für Violine und Orchester E-Dur, BWV 1042: II. Adagio",
+   "releases": [
+    "Bach Concertos [Box] (The English Concert, Trevor Pinnock) [FLAC]"
+   ]
+  },
+  {
+   "work_id": "0388f6fe-6b27-3c09-852b-9bba3bb72544",
+   "title": "Konzert für Violine und Orchester E-Dur, BWV 1042: III. Allegro assai",
+   "releases": [
+    "Bach Concertos [Box] (The English Concert, Trevor Pinnock) [FLAC]"
+   ]
+  },
+  {
+   "work_id": "a4910f73-44d5-3931-8b7b-db46e48efd15",
+   "title": "Concerto for 2 Violins in D minor, BWV 1043: I. Vivace",
+   "releases": [
+    "Bach Concertos [Box] (The English Concert, Trevor Pinnock) [FLAC]"
+   ]
+  },
+  {
+   "work_id": "88498de8-9c28-3e93-8b2a-2e66ecff890a",
+   "title": "Concerto for 2 Violins in D minor, BWV 1043: II. Largo ma non tanto",
+   "releases": [
+    "Bach Concertos [Box] (The English Concert, Trevor Pinnock) [FLAC]"
+   ]
+  },
+  {
+   "work_id": "3d2cb5f2-ba7c-3ea4-9427-e7d8ca74c13a",
+   "title": "Concerto for 2 Violins in D minor, BWV 1043: III. Allegro",
+   "releases": [
+    "Bach Concertos [Box] (The English Concert, Trevor Pinnock) [FLAC]"
+   ]
+  },
+  {
+   "work_id": "56d2ddfd-23a8-47ec-9e78-2ffecd4f956a",
+   "title": "Four Orchestral Pieces, op. 12, Sz. 51: I. Preludio: Moderato",
+   "releases": [
+    "Bartók - Boulez/Bartók - Boulez   cd 1 - Four Orchestral Pieces - Concerto For Orchestra"
+   ]
+  },
+  {
+   "work_id": "e9423e0c-32eb-41a7-a5d1-ec6865fd5f43",
+   "title": "Four Orchestral Pieces, op. 12, Sz. 51: II. Scherzo: Allegro",
+   "releases": [
+    "Bartók - Boulez/Bartók - Boulez   cd 1 - Four Orchestral Pieces - Concerto For Orchestra"
+   ]
+  },
+  {
+   "work_id": "b51de4ae-41ff-4c65-92bc-bfef9a9254d3",
+   "title": "Four Orchestral Pieces, op. 12, Sz. 51: III. Intermezzo: Moderato",
+   "releases": [
+    "Bartók - Boulez/Bartók - Boulez   cd 1 - Four Orchestral Pieces - Concerto For Orchestra"
+   ]
+  },
+  {
+   "work_id": "87d77c72-537c-462e-9537-c1fc919b1786",
+   "title": "Four Orchestral Pieces, op. 12, Sz. 51: IV. Marcia funebre: Maestoso",
+   "releases": [
+    "Bartók - Boulez/Bartók - Boulez   cd 1 - Four Orchestral Pieces - Concerto For Orchestra"
+   ]
+  },
+  {
+   "work_id": "490c25b4-fd2f-3cf1-af40-f0e072bc797a",
+   "title": "Concerto for Orchestra, Sz. 116, BB 123: I. Introduzione. Andante non troppo – Allegro vivace",
+   "releases": [
+    "Bartók - Boulez/Bartók - Boulez   cd 1 - Four Orchestral Pieces - Concerto For Orchestra"
+   ]
+  },
+  {
+   "work_id": "c7ee9027-6bb2-3a27-b91f-36da7e26808a",
+   "title": "Concerto for Orchestra, Sz. 116, BB 123: II. Giuoco delle coppie. Allegretto scherzando",
+   "releases": [
+    "Bartók - Boulez/Bartók - Boulez   cd 1 - Four Orchestral Pieces - Concerto For Orchestra"
+   ]
+  },
+  {
+   "work_id": "162bfe29-7970-3c20-bf55-031c76fa3f7c",
+   "title": "Concerto for Orchestra, Sz. 116, BB 123: III. Elegia. Andante non troppo",
+   "releases": [
+    "Bartók - Boulez/Bartók - Boulez   cd 1 - Four Orchestral Pieces - Concerto For Orchestra"
+   ]
+  },
+  {
+   "work_id": "8961fa6a-9d99-3bb9-9890-dd1b665d6010",
+   "title": "Concerto for Orchestra, Sz. 116, BB 123: IV. Intermezzo interrotto. Allegretto",
+   "releases": [
+    "Bartók - Boulez/Bartók - Boulez   cd 1 - Four Orchestral Pieces - Concerto For Orchestra"
+   ]
+  },
+  {
+   "work_id": "94c914f7-6458-3f70-a697-ab50e4e7f570",
+   "title": "Concerto for Orchestra, Sz. 116, BB 123: V. Finale. Pesante – Presto",
+   "releases": [
+    "Bartók - Boulez/Bartók - Boulez   cd 1 - Four Orchestral Pieces - Concerto For Orchestra"
+   ]
+  },
+  {
+   "work_id": "257e1603-a7c5-4fe1-96bc-147122caa629",
+   "title": "Dance Suite, Sz. 77, BB 86a: I. Moderato",
+   "releases": [
+    "Bartók - Boulez/Bartók - Boulez   cd 2 - Tanz Suite - Two Pictures - Hungarian Sketches - Divertimento"
+   ]
+  },
+  {
+   "work_id": "2b960c3b-18b1-4618-93ef-74320c879868",
+   "title": "Dance Suite, Sz. 77, BB 86a: II. Allegro molto",
+   "releases": [
+    "Bartók - Boulez/Bartók - Boulez   cd 2 - Tanz Suite - Two Pictures - Hungarian Sketches - Divertimento"
+   ]
+  },
+  {
+   "work_id": "6dbefa2e-3fa3-4a2b-8e8c-7dae0603b767",
+   "title": "Dance Suite, Sz. 77, BB 86a: III. Allegro vivace",
+   "releases": [
+    "Bartók - Boulez/Bartók - Boulez   cd 2 - Tanz Suite - Two Pictures - Hungarian Sketches - Divertimento"
+   ]
+  },
+  {
+   "work_id": "c312c700-8068-42bd-b359-f35065df932b",
+   "title": "Dance Suite, Sz. 77, BB 86a: IV. Molto tranquillo",
+   "releases": [
+    "Bartók - Boulez/Bartók - Boulez   cd 2 - Tanz Suite - Two Pictures - Hungarian Sketches - Divertimento"
+   ]
+  },
+  {
+   "work_id": "a0d9497c-2523-4a00-b217-d85eacbf5d1e",
+   "title": "Dance Suite, Sz. 77, BB 86a: V. Comodo",
+   "releases": [
+    "Bartók - Boulez/Bartók - Boulez   cd 2 - Tanz Suite - Two Pictures - Hungarian Sketches - Divertimento"
+   ]
+  },
+  {
+   "work_id": "278f664d-e86d-4fe0-b32e-65c37a110467",
+   "title": "Dance Suite, Sz. 77, BB 86a: VI. Finale. Allegro",
+   "releases": [
+    "Bartók - Boulez/Bartók - Boulez   cd 2 - Tanz Suite - Two Pictures - Hungarian Sketches - Divertimento"
+   ]
+  },
+  {
+   "work_id": "bec7306c-a065-4253-968d-593d2aeb9ed5",
+   "title": "2 Pictures, op. 10, Sz. 46: 1. In voller Blüte",
+   "releases": [
+    "Bartók - Boulez/Bartók - Boulez   cd 2 - Tanz Suite - Two Pictures - Hungarian Sketches - Divertimento"
+   ]
+  },
+  {
+   "work_id": "d845f050-8cd2-4ff0-bcf9-aad4363ce292",
+   "title": "2 Pictures, op. 10, Sz. 46: 2. Dorftanz",
+   "releases": [
+    "Bartók - Boulez/Bartók - Boulez   cd 2 - Tanz Suite - Two Pictures - Hungarian Sketches - Divertimento"
+   ]
+  },
+  {
+   "work_id": "e72084e5-b85f-3bab-a265-423e66de4e76",
+   "title": "Hungarian Sketches, Sz. 97, BB 103, No. 1: An Evening in the Village",
+   "releases": [
+    "Bartók - Boulez/Bartók - Boulez   cd 2 - Tanz Suite - Two Pictures - Hungarian Sketches - Divertimento"
+   ]
+  },
+  {
+   "work_id": "1b349c3f-3994-3d68-957c-61dba4a95f0b",
+   "title": "Hungarian Sketches, Sz. 97, BB 103, No. 2: Bear Dance",
+   "releases": [
+    "Bartók - Boulez/Bartók - Boulez   cd 2 - Tanz Suite - Two Pictures - Hungarian Sketches - Divertimento"
+   ]
+  },
+  {
+   "work_id": "8db56c1d-77e6-3f36-adcf-9fd9334b7b9f",
+   "title": "Hungarian Sketches, Sz. 97, BB 103, No. 3: Melody",
+   "releases": [
+    "Bartók - Boulez/Bartók - Boulez   cd 2 - Tanz Suite - Two Pictures - Hungarian Sketches - Divertimento"
+   ]
+  },
+  {
+   "work_id": "76d031a1-31c8-343c-9500-3a2c4dc5078a",
+   "title": "Hungarian Sketches, Sz. 97, BB 103, No. 4: Slightly Tipsy",
+   "releases": [
+    "Bartók - Boulez/Bartók - Boulez   cd 2 - Tanz Suite - Two Pictures - Hungarian Sketches - Divertimento"
+   ]
+  },
+  {
+   "work_id": "7df151a3-b5ce-3471-a04f-b4b1b19a7a65",
+   "title": "Hungarian Sketches, Sz. 97, BB 103, No. 5: Swineherd's Dance",
+   "releases": [
+    "Bartók - Boulez/Bartók - Boulez   cd 2 - Tanz Suite - Two Pictures - Hungarian Sketches - Divertimento"
+   ]
+  },
+  {
+   "work_id": "4ea7a897-5107-3846-9b7f-81b45fc4c563",
+   "title": "Divertimento for String Orchestra, Sz. 113, BB 118: I. Allegro non troppo",
+   "releases": [
+    "Bartók - Boulez/Bartók - Boulez   cd 2 - Tanz Suite - Two Pictures - Hungarian Sketches - Divertimento"
+   ]
+  },
+  {
+   "work_id": "e27e850a-90f6-37ab-9588-6b8a76680516",
+   "title": "Divertimento for String Orchestra, Sz. 113, BB 118: II. Molto adagio",
+   "releases": [
+    "Bartók - Boulez/Bartók - Boulez   cd 2 - Tanz Suite - Two Pictures - Hungarian Sketches - Divertimento"
+   ]
+  },
+  {
+   "work_id": "109fbda0-cf73-3f1d-85f2-096598431a3d",
+   "title": "Divertimento for String Orchestra, Sz. 113, BB 118: III. Allegro assai",
+   "releases": [
+    "Bartók - Boulez/Bartók - Boulez   cd 2 - Tanz Suite - Two Pictures - Hungarian Sketches - Divertimento"
+   ]
+  },
+  {
+   "work_id": "aa4bd006-e760-3195-b2d8-1dc2e99afa44",
+   "title": "Concerto for Two Pianos, Percussion and Orchestra, Sz. 115, BB 121: I. Assai lento",
+   "releases": [
+    "Bartók - Boulez/Bartók - Boulez   cd 4 - Concertos"
+   ]
+  },
+  {
+   "work_id": "1bae950c-ca9c-37f4-9aa2-95103dc0fb04",
+   "title": "Concerto for Two Pianos, Percussion and Orchestra, Sz. 115, BB 121: II. Lento, ma non troppo",
+   "releases": [
+    "Bartók - Boulez/Bartók - Boulez   cd 4 - Concertos"
+   ]
+  },
+  {
+   "work_id": "68b832b2-36a5-3913-ba32-e51136b8ada6",
+   "title": "Concerto for Two Pianos, Percussion and Orchestra, Sz. 115, BB 121: III. Allegro non troppo",
+   "releases": [
+    "Bartók - Boulez/Bartók - Boulez   cd 4 - Concertos"
+   ]
+  },
+  {
+   "work_id": "f5238770-a750-34dc-b4c9-0414de5909ed",
+   "title": "Concerto for Violin and Orchestra no. 1, Sz. 36, BB 48a: I. Andante sostenuto",
+   "releases": [
+    "Bartók - Boulez/Bartók - Boulez   cd 4 - Concertos"
+   ]
+  },
+  {
+   "work_id": "5283a29b-0b0c-35e6-ab15-7ce17c19510e",
+   "title": "Concerto for Violin and Orchestra no. 1, Sz. 36, BB 48a: II. Allegro giocoso",
+   "releases": [
+    "Bartók - Boulez/Bartók - Boulez   cd 4 - Concertos"
+   ]
+  },
+  {
+   "work_id": "69a3536a-5eeb-327a-9ae5-245fb7cfba2e",
+   "title": "Concerto for Viola and Orchestra, Sz. 120, BB 128: I. Moderato",
+   "releases": [
+    "Bartók - Boulez/Bartók - Boulez   cd 4 - Concertos"
+   ]
+  },
+  {
+   "work_id": "e5b1e4fe-50d3-381d-b772-a7b7bd3c568f",
+   "title": "Concerto for Viola and Orchestra, Sz. 120, BB 128: II. Adagio religioso",
+   "releases": [
+    "Bartók - Boulez/Bartók - Boulez   cd 4 - Concertos"
+   ]
+  },
+  {
+   "work_id": "02b82887-5038-3125-81c0-f2b629ad6fc4",
+   "title": "Concerto for Viola and Orchestra, Sz. 120, BB 128: III. Allegro vivace",
+   "releases": [
+    "Bartók - Boulez/Bartók - Boulez   cd 4 - Concertos"
+   ]
+  },
+  {
+   "work_id": "f5a6abbb-f4df-32a6-8095-32d186770755",
+   "title": "A Kékszakállú herceg vára: Opening \"Megérkeztünk\"",
+   "releases": [
+    "Bartók - Boulez/Bartók - Boulez   cd 6 - Bluebeard's Castle"
+   ]
+  },
+  {
+   "work_id": "74130182-8c57-38c7-8404-3014909c5d96",
+   "title": "A Kékszakállú herceg vára: Door 1 \"'Jaj! Mit látsz? Mit látsz? Láncok, kések\"",
+   "releases": [
+    "Bartók - Boulez/Bartók - Boulez   cd 6 - Bluebeard's Castle"
+   ]
+  },
+  {
+   "work_id": "28db179c-030e-3151-89dd-d2a98e3b8e46",
+   "title": "A Kékszakállú herceg vára: Door 2 \"Mit látsz? Százkegyetlen szörnyü fegyver\"",
+   "releases": [
+    "Bartók - Boulez/Bartók - Boulez   cd 6 - Bluebeard's Castle"
+   ]
+  },
+  {
+   "work_id": "dca8a97c-8ca2-384a-83f8-7e05ed506e54",
+   "title": "A Kékszakállú herceg vára: Door 3 \"Oh, be sok kincs! Oh, be sok kincs!\"",
+   "releases": [
+    "Bartók - Boulez/Bartók - Boulez   cd 6 - Bluebeard's Castle"
+   ]
+  },
+  {
+   "work_id": "6736d224-e854-3a44-854f-bad1d4058ad1",
+   "title": "A Kékszakállú herceg vára: Door 4 \"Oh! virágok! Oh! ilatoskert!\"",
+   "releases": [
+    "Bartók - Boulez/Bartók - Boulez   cd 6 - Bluebeard's Castle"
+   ]
+  },
+  {
+   "work_id": "a8c1db69-eb1b-3d57-95d9-06a62245dbe3",
+   "title": "A Kékszakállú herceg vára: Door 5 \"Ah! Lásdez az én birodalmam\"",
+   "releases": [
+    "Bartók - Boulez/Bartók - Boulez   cd 6 - Bluebeard's Castle"
+   ]
+  },
+  {
+   "work_id": "5c4065a4-7b0b-3737-b761-7eef34eabec2",
+   "title": "A Kékszakállú herceg vára: Door 6 \"Csendes fehér tavat látok\"",
+   "releases": [
+    "Bartók - Boulez/Bartók - Boulez   cd 6 - Bluebeard's Castle"
+   ]
+  },
+  {
+   "work_id": "d8428361-2a72-3d70-b414-79847e2c5dac",
+   "title": "A Kékszakállú herceg vára: Door 7 \"Lásd a régi aszszonyokat\"",
+   "releases": [
+    "Bartók - Boulez/Bartók - Boulez   cd 6 - Bluebeard's Castle"
+   ]
+  },
+  {
+   "work_id": "fe8bc122-2ef7-46f9-ab0d-73d6bee1eb60",
+   "title": "Cantata profana for tenor, baritone, double chorus & orchestra (or piano), Sz. 94, BB 100 \"The Enchanted Stags\": I. Molto moderato. Once there was an old man",
+   "releases": [
+    "Bartók - Boulez/Bartók - Boulez   cd 7 - Cantata Profana - The Wooden Prince"
+   ]
+  },
+  {
+   "work_id": "281d3e5d-087a-43fe-a7a0-2595730492be",
+   "title": "Cantata profana for tenor, baritone, double chorus & orchestra (or piano), Sz. 94, BB 100 \"The Enchanted Stags\": II. Andante. Through forest aroving, hey-yah!",
+   "releases": [
+    "Bartók - Boulez/Bartók - Boulez   cd 7 - Cantata Profana - The Wooden Prince"
+   ]
+  },
+  {
+   "work_id": "9abc6312-9c4c-4d90-9c4d-159f1bd73ccf",
+   "title": "Cantata profana for tenor, baritone, double chorus & orchestra (or piano), Sz. 94, BB 100 \"The Enchanted Stags\": III. Moderato. Once there was an old man",
+   "releases": [
+    "Bartók - Boulez/Bartók - Boulez   cd 7 - Cantata Profana - The Wooden Prince"
+   ]
+  },
+  {
+   "work_id": "34a76781-817b-453f-b743-a8f70cc371b1",
+   "title": "The Wooden Prince, Sz. 60: I. Prelude",
+   "releases": [
+    "Bartók - Boulez/Bartók - Boulez   cd 7 - Cantata Profana - The Wooden Prince"
+   ]
+  },
+  {
+   "work_id": "38dae07d-e8bc-4b3a-859e-d72291ddaf1e",
+   "title": "The Wooden Prince, Sz. 60: II. Dance 1: Dance of the Princess in the Forest",
+   "releases": [
+    "Bartók - Boulez/Bartók - Boulez   cd 7 - Cantata Profana - The Wooden Prince"
+   ]
+  },
+  {
+   "work_id": "afa0ea83-c82c-4ed2-9c50-dfe86514dd97",
+   "title": "The Wooden Prince, Sz. 60: III. Dance 2: Dance of the Trees",
+   "releases": [
+    "Bartók - Boulez/Bartók - Boulez   cd 7 - Cantata Profana - The Wooden Prince"
+   ]
+  },
+  {
+   "work_id": "5d5df35c-a395-47ed-a257-4331ecd31518",
+   "title": "The Wooden Prince, Sz. 60: IV. Dance 3: Dance of the Waves",
+   "releases": [
+    "Bartók - Boulez/Bartók - Boulez   cd 7 - Cantata Profana - The Wooden Prince"
+   ]
+  },
+  {
+   "work_id": "55240278-a24c-4f92-a349-f2e95f3ddb3c",
+   "title": "The Wooden Prince, Sz. 60: V. Dance 4: Dance of the Princess With the Wooden Doll",
+   "releases": [
+    "Bartók - Boulez/Bartók - Boulez   cd 7 - Cantata Profana - The Wooden Prince"
+   ]
+  },
+  {
+   "work_id": "06fe133f-9202-4e91-8c3b-b5895660214a",
+   "title": "The Wooden Prince, Sz. 60: VI. Dance 5: The Princess Pulls and Pushes Him and Tries to Make Him Dance",
+   "releases": [
+    "Bartók - Boulez/Bartók - Boulez   cd 7 - Cantata Profana - The Wooden Prince"
+   ]
+  },
+  {
+   "work_id": "8cd8654a-0898-4311-ac97-b41118ef522d",
+   "title": "The Wooden Prince, Sz. 60: VII. Dance 6: She Tries to Attract Him With a Seductive Dance",
+   "releases": [
+    "Bartók - Boulez/Bartók - Boulez   cd 7 - Cantata Profana - The Wooden Prince"
+   ]
+  },
+  {
+   "work_id": "b988b1ed-e089-48c6-a049-1ec89abe486c",
+   "title": "The Wooden Prince, Sz. 60: IX. Postlude",
+   "releases": [
+    "Bartók - Boulez/Bartók - Boulez   cd 7 - Cantata Profana - The Wooden Prince"
+   ]
+  },
+  {
+   "work_id": "a671992e-680c-4262-8fa4-2f7b5fa44cbb",
+   "title": "The Wooden Prince, Sz. 60: VIII. Dance 7: Alarmed, the Princess Rushes After Him, but the Forest Stops Her",
+   "releases": [
+    "Bartók - Boulez/Bartók - Boulez   cd 7 - Cantata Profana - The Wooden Prince"
+   ]
+  },
+  {
+   "work_id": "7628784b-557a-4fd6-9cbc-f378178f5e12",
+   "title": "The Miraculous Mandarin, BB 82, Sz. 73, op. 19",
+   "releases": [
+    "Bartók - Boulez/Bartók - Boulez   cd 8 - The Miraculous Mandarin; Music for Strings, Percussion and Celesta"
+   ]
+  },
+  {
+   "work_id": "85af0498-3d32-3498-8245-8fe44358561c",
+   "title": "Music for Strings, Percussion and Celesta, Sz. 106, BB 114: I. Andante tranquillo",
+   "releases": [
+    "Bartók - Boulez/Bartók - Boulez   cd 8 - The Miraculous Mandarin; Music for Strings, Percussion and Celesta"
+   ]
+  },
+  {
+   "work_id": "eea0433d-5d53-3d92-9cbc-a78644d82fc3",
+   "title": "Music for Strings, Percussion and Celesta, Sz. 106, BB 114: II. Allegro",
+   "releases": [
+    "Bartók - Boulez/Bartók - Boulez   cd 8 - The Miraculous Mandarin; Music for Strings, Percussion and Celesta"
+   ]
+  },
+  {
+   "work_id": "8f68c46d-faa8-3062-80f9-e1be8d4527d5",
+   "title": "Music for Strings, Percussion and Celesta, Sz. 106, BB 114: III. Adagio",
+   "releases": [
+    "Bartók - Boulez/Bartók - Boulez   cd 8 - The Miraculous Mandarin; Music for Strings, Percussion and Celesta"
+   ]
+  },
+  {
+   "work_id": "44788e71-6f55-389f-a89b-d74363433e9d",
+   "title": "Music for Strings, Percussion and Celesta, Sz. 106, BB 114: IV. Allegro molto",
+   "releases": [
+    "Bartók - Boulez/Bartók - Boulez   cd 8 - The Miraculous Mandarin; Music for Strings, Percussion and Celesta"
+   ]
+  },
+  {
+   "work_id": "3308d248-b287-38e9-9718-0119d7a3bf9d",
+   "title": "Symphony no. 9 in D minor, op. 125 “Choral”: I. Allegro ma non troppo, un poco maestoso",
+   "releases": [
+    "Beethoven - Berliner Philharmoniker - Karajan/Beethoven - Symphonie No. 9"
+   ]
+  },
+  {
+   "work_id": "87f3a5a6-fb92-381b-892b-5fc50ed0f2c1",
+   "title": "Symphony no. 9 in D minor, op. 125 “Choral”: II. Scherzo. Molto vivace – Presto",
+   "releases": [
+    "Beethoven - Berliner Philharmoniker - Karajan/Beethoven - Symphonie No. 9"
+   ]
+  },
+  {
+   "work_id": "4ebf3fc1-4dd4-361b-a441-bf1dc9421e34",
+   "title": "Symphony no. 9 in D minor, op. 125 “Choral”: III. Adagio molto e cantabile – Andante moderato – Tempo I – Andante moderato – Adagio – Lo stesso tempo",
+   "releases": [
+    "Beethoven - Berliner Philharmoniker - Karajan/Beethoven - Symphonie No. 9"
+   ]
+  },
+  {
+   "work_id": "3761b925-82b2-3a61-9581-57751dee2e9e",
+   "title": "Symphony no. 9 in D minor, op. 125 “Choral”: IV. Finale. Presto – Allegro assai",
+   "releases": [
+    "Beethoven - Berliner Philharmoniker - Karajan/Beethoven - Symphonie No. 9"
+   ]
+  },
+  {
+   "work_id": "b6f9ecc3-24d1-38ed-b8a0-091f7cd0c6b2",
+   "title": "Symphony no. 5 in C minor, op. 67: I. Allegro con brio",
+   "releases": [
+    "Beethoven - Berliner Philharmoniker - Karajan/Beethoven - Symphonien No. 5 & 6 'Pastorale'",
+    "Beethoven Symphonien Nos. 5 & 7 (Carlos Kleiber-VPO) FLAC+CUE"
+   ]
+  },
+  {
+   "work_id": "3bc742da-f67b-36c9-b31e-6ed09fdbdadd",
+   "title": "Symphony no. 5 in C minor, op. 67: II. Andante con moto",
+   "releases": [
+    "Beethoven - Berliner Philharmoniker - Karajan/Beethoven - Symphonien No. 5 & 6 'Pastorale'",
+    "Beethoven Symphonien Nos. 5 & 7 (Carlos Kleiber-VPO) FLAC+CUE"
+   ]
+  },
+  {
+   "work_id": "5831439d-e776-3b0e-ad34-c1a112d96e6d",
+   "title": "Symphony no. 5 in C minor, op. 67: III. Scherzo. Allegro",
+   "releases": [
+    "Beethoven - Berliner Philharmoniker - Karajan/Beethoven - Symphonien No. 5 & 6 'Pastorale'",
+    "Beethoven Symphonien Nos. 5 & 7 (Carlos Kleiber-VPO) FLAC+CUE"
+   ]
+  },
+  {
+   "work_id": "7eacabfd-c702-3eb6-8738-322555d6a521",
+   "title": "Symphony no. 5 in C minor, op. 67: IV. Allegro",
+   "releases": [
+    "Beethoven - Berliner Philharmoniker - Karajan/Beethoven - Symphonien No. 5 & 6 'Pastorale'",
+    "Beethoven Symphonien Nos. 5 & 7 (Carlos Kleiber-VPO) FLAC+CUE"
+   ]
+  },
+  {
+   "work_id": "d4b8437e-5ee6-33b2-9462-3bb0d51ec0a0",
+   "title": "Symphony no. 6 in F major, op. 68 “Pastorale”: I. Allegro ma non troppo “Awakening of cheerful feelings upon arrival in the country”",
+   "releases": [
+    "Beethoven - Berliner Philharmoniker - Karajan/Beethoven - Symphonien No. 5 & 6 'Pastorale'"
+   ]
+  },
+  {
+   "work_id": "a954237b-a56f-38e3-8d0b-739570dbcd6a",
+   "title": "Symphony no. 6 in F major, op. 68 “Pastorale”: II. Andante molto mosso “Scene at the brook”",
+   "releases": [
+    "Beethoven - Berliner Philharmoniker - Karajan/Beethoven - Symphonien No. 5 & 6 'Pastorale'"
+   ]
+  },
+  {
+   "work_id": "cc77216a-d316-3e92-8ee8-9b1cf3027ba9",
+   "title": "Symphony no. 6 in F major, op. 68 “Pastorale”: III. Allegro “Happy gathering of country folk”",
+   "releases": [
+    "Beethoven - Berliner Philharmoniker - Karajan/Beethoven - Symphonien No. 5 & 6 'Pastorale'"
+   ]
+  },
+  {
+   "work_id": "21b4c0c6-35ff-36a5-aeeb-ee4f0e30cc7d",
+   "title": "Symphony no. 6 in F major, op. 68 “Pastorale”: IV. Allegro “Thunderstorm”",
+   "releases": [
+    "Beethoven - Berliner Philharmoniker - Karajan/Beethoven - Symphonien No. 5 & 6 'Pastorale'"
+   ]
+  },
+  {
+   "work_id": "08202a87-8263-3f82-9d6e-09daf309615a",
+   "title": "Symphony no. 6 in F major, op. 68 “Pastorale”: V. Allegretto “Shepherds’ song: Cheerful and thankful feelings after the storm”",
+   "releases": [
+    "Beethoven - Berliner Philharmoniker - Karajan/Beethoven - Symphonien No. 5 & 6 'Pastorale'"
+   ]
+  },
+  {
+   "work_id": "be94acdc-323b-3407-9533-e053b96348d4",
+   "title": "Symphony no. 6 in F major, op. 68 “Pastoral”, S. 464 no. 6: V. Hirtengesang “Frohe dankbare Gefühle nach dem Sturm”. Allegretto",
+   "releases": [
+    "Beethoven - Berliner Philharmoniker - Karajan/Beethoven - Symphonien No. 5 & 6 'Pastorale'"
+   ]
+  },
+  {
+   "work_id": "c510d90f-df95-3df8-9ce5-69041c6d876d",
+   "title": "Symphony no. 8 in F major, op. 93: I. Allegro vivace e con brio",
+   "releases": [
+    "Beethoven - Berliner Philharmoniker - Karajan/Beethoven - Symphony No. 8, Overtures - 'Fidelio', 'Leonore III', 'Corliolan'"
+   ]
+  },
+  {
+   "work_id": "a03494e8-f696-32dc-a4f6-b211aa70b617",
+   "title": "Symphony no. 8 in F major, op. 93: II. Allegretto scherzando",
+   "releases": [
+    "Beethoven - Berliner Philharmoniker - Karajan/Beethoven - Symphony No. 8, Overtures - 'Fidelio', 'Leonore III', 'Corliolan'"
+   ]
+  },
+  {
+   "work_id": "1efe8667-e6fd-329f-9d18-bbf786dc45ad",
+   "title": "Symphony no. 8 in F major, op. 93: III. Tempo di menuetto",
+   "releases": [
+    "Beethoven - Berliner Philharmoniker - Karajan/Beethoven - Symphony No. 8, Overtures - 'Fidelio', 'Leonore III', 'Corliolan'"
+   ]
+  },
+  {
+   "work_id": "36946885-d3bc-3a67-97c0-78a0e7dfa008",
+   "title": "Symphony no. 8 in F major, op. 93: IV. Allegro vivace",
+   "releases": [
+    "Beethoven - Berliner Philharmoniker - Karajan/Beethoven - Symphony No. 8, Overtures - 'Fidelio', 'Leonore III', 'Corliolan'"
+   ]
+  },
+  {
+   "work_id": "82c92c7d-5875-333f-bccd-5e9254d78710",
+   "title": "Ouvertüre Coriolan, op. 62",
+   "releases": [
+    "Beethoven - Berliner Philharmoniker - Karajan/Beethoven - Symphony No. 8, Overtures - 'Fidelio', 'Leonore III', 'Corliolan'"
+   ]
+  },
+  {
+   "work_id": "c3d92ff6-89a4-3c64-ac5c-e8a68c0c2e1f",
+   "title": "Fidelio, op. 72: Overture",
+   "releases": [
+    "Beethoven - Berliner Philharmoniker - Karajan/Beethoven - Symphony No. 8, Overtures - 'Fidelio', 'Leonore III', 'Corliolan'"
+   ]
+  },
+  {
+   "work_id": "591fcf82-a054-3dbc-a3a9-6b952b05e2a7",
+   "title": "Overture “Leonore” no. 3 in C major, op. 72b",
+   "releases": [
+    "Beethoven - Berliner Philharmoniker - Karajan/Beethoven - Symphony No. 8, Overtures - 'Fidelio', 'Leonore III', 'Corliolan'"
+   ]
+  },
+  {
+   "work_id": "e4c32042-0f54-3932-b10e-c13d45c12967",
+   "title": "Sonata for Violin and Piano no. 1 in D major, op. 12 no. 1: I. Allegro con brio",
+   "releases": [
+    "Beethoven - Complete Violin Sonatas - Oistrakh, Oborin"
+   ]
+  },
+  {
+   "work_id": "533153cf-a074-34d7-a95f-4c81a0be431d",
+   "title": "Sonata for Violin and Piano no. 1 in D major, op. 12 no. 1: II. Tema con Variazioni. Andante con moto",
+   "releases": [
+    "Beethoven - Complete Violin Sonatas - Oistrakh, Oborin"
+   ]
+  },
+  {
+   "work_id": "60ed0f04-3ad7-3943-ae2c-e0989fa5d6c4",
+   "title": "Sonata for Violin and Piano no. 1 in D major, op. 12 no. 1: III. Rondo. Allegro",
+   "releases": [
+    "Beethoven - Complete Violin Sonatas - Oistrakh, Oborin"
+   ]
+  },
+  {
+   "work_id": "d89ccc90-0c53-306f-8ed9-dfc751aff01e",
+   "title": "Sonata for Violin and Piano no. 2 in A major, op. 12 no. 2: I. Allegro vivace",
+   "releases": [
+    "Beethoven - Complete Violin Sonatas - Oistrakh, Oborin"
+   ]
+  },
+  {
+   "work_id": "e4a6b7d2-28bf-3442-8727-871548dee399",
+   "title": "Sonata for Violin and Piano no. 2 in A major, op. 12 no. 2: II. Andante più tosto allegretto",
+   "releases": [
+    "Beethoven - Complete Violin Sonatas - Oistrakh, Oborin"
+   ]
+  },
+  {
+   "work_id": "a4e25536-becc-3bc3-b9a9-c35fe860eb09",
+   "title": "Sonata for Violin and Piano no. 2 in A major, op. 12 no. 2: III. Allegro piacevole",
+   "releases": [
+    "Beethoven - Complete Violin Sonatas - Oistrakh, Oborin"
+   ]
+  },
+  {
+   "work_id": "cf3f4d10-3bd3-3a2b-9544-4a4dd02086e2",
+   "title": "Sonata for Violin and Piano no. 3 in E-flat major, op. 12 no. 3: I. Allegro con spirito",
+   "releases": [
+    "Beethoven - Complete Violin Sonatas - Oistrakh, Oborin"
+   ]
+  },
+  {
+   "work_id": "3325f516-49a1-3145-b2de-82052b8a43ff",
+   "title": "Sonata for Violin and Piano no. 3 in E-flat major, op. 12 no. 3: II. Adagio con molto espressione",
+   "releases": [
+    "Beethoven - Complete Violin Sonatas - Oistrakh, Oborin"
+   ]
+  },
+  {
+   "work_id": "54c05ad5-a5c6-39d3-b55e-47e2d005452e",
+   "title": "Sonata for Violin and Piano no. 3 in E-flat major, op. 12 no. 3: III. Rondo. Allegro molto",
+   "releases": [
+    "Beethoven - Complete Violin Sonatas - Oistrakh, Oborin"
+   ]
+  },
+  {
+   "work_id": "b59a9645-6d0f-31dc-bd75-3ac193ff73e8",
+   "title": "Sonata for Violin and Piano no. 4 in A minor, op. 23: I. Presto",
+   "releases": [
+    "Beethoven - Complete Violin Sonatas - Oistrakh, Oborin"
+   ]
+  },
+  {
+   "work_id": "e0e46551-5651-3606-abfd-448f3c535a39",
+   "title": "Sonata for Violin and Piano no. 4 in A minor, op. 23: II. Andante scherzoso, più allegretto",
+   "releases": [
+    "Beethoven - Complete Violin Sonatas - Oistrakh, Oborin"
+   ]
+  },
+  {
+   "work_id": "ea7ae9cd-727e-38d3-b973-edaf13e316f4",
+   "title": "Sonata for Violin and Piano no. 4 in A minor, op. 23: III. Allegro molto",
+   "releases": [
+    "Beethoven - Complete Violin Sonatas - Oistrakh, Oborin"
+   ]
+  },
+  {
+   "work_id": "7747d90f-1c09-3fbf-9e89-afd9e7fc8c66",
+   "title": "Sonata for Violin and Piano no. 5 in F major, op. 24 \"Spring\": I. Allegro",
+   "releases": [
+    "Beethoven - Complete Violin Sonatas - Oistrakh, Oborin"
+   ]
+  },
+  {
+   "work_id": "cadb4323-933c-3179-aa0f-02bd96dcb97e",
+   "title": "Sonata for Violin and Piano no. 5 in F major, op. 24 \"Spring\": II. Adagio molto espressivo",
+   "releases": [
+    "Beethoven - Complete Violin Sonatas - Oistrakh, Oborin"
+   ]
+  },
+  {
+   "work_id": "cea55176-799c-3e7e-8820-59a960ce34a2",
+   "title": "Sonata for Violin and Piano no. 5 in F major, op. 24 \"Spring\": III. Scherzo. Allegro molto",
+   "releases": [
+    "Beethoven - Complete Violin Sonatas - Oistrakh, Oborin"
+   ]
+  },
+  {
+   "work_id": "7b77408b-f7b3-3da1-995e-58592a9e224d",
+   "title": "Sonata for Violin and Piano no. 5 in F major, op. 24 “Spring”: IV. Rondo. Allegro ma non troppo",
+   "releases": [
+    "Beethoven - Complete Violin Sonatas - Oistrakh, Oborin"
+   ]
+  },
+  {
+   "work_id": "e20a8f15-91fe-3b5d-a60c-2454f796036d",
+   "title": "Sonata for Violin and Piano no. 6 in A major, op. 30 no. 1: I. Allegro",
+   "releases": [
+    "Beethoven - Complete Violin Sonatas - Oistrakh, Oborin"
+   ]
+  },
+  {
+   "work_id": "e14b969a-24b9-3d63-9301-5fd466d72d31",
+   "title": "Sonata for Violin and Piano no. 6 in A major, op. 30 no. 1: II. Adagio molto espressivo",
+   "releases": [
+    "Beethoven - Complete Violin Sonatas - Oistrakh, Oborin"
+   ]
+  },
+  {
+   "work_id": "d92eda99-4ac7-384d-a9c3-c576755d81b3",
+   "title": "Sonata for Violin and Piano no. 6 in A major, op. 30 no. 1: III. Allegretto con variazioni",
+   "releases": [
+    "Beethoven - Complete Violin Sonatas - Oistrakh, Oborin"
+   ]
+  },
+  {
+   "work_id": "56e61f0a-f576-37be-ae8a-a6682aca2fe9",
+   "title": "Sonata for Violin and Piano no. 7 in C minor, op. 30 no. 2: I. Allegro con brio",
+   "releases": [
+    "Beethoven - Complete Violin Sonatas - Oistrakh, Oborin"
+   ]
+  },
+  {
+   "work_id": "2d34fe19-71a6-35eb-bd63-d0115b5dc051",
+   "title": "Sonata for Violin and Piano no. 7 in C minor, op. 30 no. 2: II. Adagio cantabile",
+   "releases": [
+    "Beethoven - Complete Violin Sonatas - Oistrakh, Oborin"
+   ]
+  },
+  {
+   "work_id": "094624cd-d0c7-3e84-91f7-1520d0c5c059",
+   "title": "Sonata for Violin and Piano no. 7 in C minor, op. 30 no. 2: III. Scherzo. Allegro",
+   "releases": [
+    "Beethoven - Complete Violin Sonatas - Oistrakh, Oborin"
+   ]
+  },
+  {
+   "work_id": "2f2535b6-49ed-3884-ab39-59a42453488c",
+   "title": "Sonata for Violin and Piano no. 7 in C minor, op. 30 no. 2: IV. Finale. Allegro",
+   "releases": [
+    "Beethoven - Complete Violin Sonatas - Oistrakh, Oborin"
+   ]
+  },
+  {
+   "work_id": "f5b390a0-9711-33e3-aa89-d220813c03aa",
+   "title": "Sonata for Violin and Piano no. 8 in G major, op. 30 no. 3: I. Allegro assai",
+   "releases": [
+    "Beethoven - Complete Violin Sonatas - Oistrakh, Oborin"
+   ]
+  },
+  {
+   "work_id": "041d809e-b9ab-34e9-a94a-ed103c153f89",
+   "title": "Sonata for Violin and Piano no. 8 in G major, op. 30 no. 3: II. Tempo di menuetto, ma molto moderato e grazioso",
+   "releases": [
+    "Beethoven - Complete Violin Sonatas - Oistrakh, Oborin"
+   ]
+  },
+  {
+   "work_id": "acbe71e2-3077-381b-a8a6-620d10f29d3e",
+   "title": "Sonata for Violin and Piano no. 8 in G major, op. 30 no. 3: III. Allegro vivace",
+   "releases": [
+    "Beethoven - Complete Violin Sonatas - Oistrakh, Oborin"
+   ]
+  },
+  {
+   "work_id": "c84d54a4-457e-3dc9-9ced-535e2cc3a347",
+   "title": "Sonata for Violin and Piano no. 9 in A major, op. 47 “Kreutzer”: I. Adagio sostenuto - Presto",
+   "releases": [
+    "Beethoven - Complete Violin Sonatas - Oistrakh, Oborin"
+   ]
+  },
+  {
+   "work_id": "b49b1ab9-8e71-3fe9-8916-5764ae1a2b1f",
+   "title": "Sonata for Violin and Piano no. 9 in A major, op. 47 “Kreutzer”: II. Andante con variazioni",
+   "releases": [
+    "Beethoven - Complete Violin Sonatas - Oistrakh, Oborin"
+   ]
+  },
+  {
+   "work_id": "65ecbc97-d015-3d6c-b599-7dee875327fa",
+   "title": "Sonata for Violin and Piano no. 9 in A major, op. 47 “Kreutzer”: III. Finale. Presto",
+   "releases": [
+    "Beethoven - Complete Violin Sonatas - Oistrakh, Oborin"
+   ]
+  },
+  {
+   "work_id": "22e58e59-91ca-302e-8507-1ef3189c1928",
+   "title": "Sonata for Violin and Piano no. 10 in G major, op. 96: I. Allegro moderato",
+   "releases": [
+    "Beethoven - Complete Violin Sonatas - Oistrakh, Oborin"
+   ]
+  },
+  {
+   "work_id": "dbaa607e-0bd8-353a-9c8d-5ba81e185575",
+   "title": "Sonata for Violin and Piano no. 10 in G major, op. 96: II. Adagio espressivo",
+   "releases": [
+    "Beethoven - Complete Violin Sonatas - Oistrakh, Oborin"
+   ]
+  },
+  {
+   "work_id": "7873998c-d0b5-32bc-91d8-349c5077265e",
+   "title": "Sonata for Violin and Piano no. 10 in G major, op. 96: III. Scherzo. Allegro",
+   "releases": [
+    "Beethoven - Complete Violin Sonatas - Oistrakh, Oborin"
+   ]
+  },
+  {
+   "work_id": "e2fda1d4-2a46-39ba-a239-8d4807be177d",
+   "title": "Sonata for Violin and Piano no. 10 in G major, op. 96: IV. Poco allegretto",
+   "releases": [
+    "Beethoven - Complete Violin Sonatas - Oistrakh, Oborin"
+   ]
+  },
+  {
+   "work_id": "424a3448-2afe-3d24-ad8d-22539100bf05",
+   "title": "Symphony no. 4 in B-flat major, op. 60: I. Adagio - Allegro vivace",
+   "releases": [
+    "Beethoven - Symphonie Nr. 4 B-Dur op. 60(1984) - FLAC"
+   ]
+  },
+  {
+   "work_id": "19ed94d7-978e-34e7-9c35-ac9b7ef26c2e",
+   "title": "Symphony no. 4 in B-flat major, op. 60: II. Adagio",
+   "releases": [
+    "Beethoven - Symphonie Nr. 4 B-Dur op. 60(1984) - FLAC"
+   ]
+  },
+  {
+   "work_id": "328d0a2b-f38c-3bb6-835b-b8cdcd9130e3",
+   "title": "Symphony no. 4 in B-flat major, op. 60: III. Allegro vivace",
+   "releases": [
+    "Beethoven - Symphonie Nr. 4 B-Dur op. 60(1984) - FLAC"
+   ]
+  },
+  {
+   "work_id": "894f3107-9db4-33ba-bc47-e7c52f4468ed",
+   "title": "Symphony no. 4 in B-flat major, op. 60: IV. Allegro ma non troppo",
+   "releases": [
+    "Beethoven - Symphonie Nr. 4 B-Dur op. 60(1984) - FLAC"
+   ]
+  },
+  {
+   "work_id": "63a41aed-3edb-38a7-a622-1eae0213f83e",
+   "title": "Symphony no. 7 in A major, op. 92: I. Poco sostenuto – Vivace",
+   "releases": [
+    "Beethoven Symphonien Nos. 5 & 7 (Carlos Kleiber-VPO) FLAC+CUE"
+   ]
+  },
+  {
+   "work_id": "04cc89e6-9194-3b2f-b568-132020ebccb8",
+   "title": "Symphony no. 7 in A major, op. 92: II. Allegretto",
+   "releases": [
+    "Beethoven Symphonien Nos. 5 & 7 (Carlos Kleiber-VPO) FLAC+CUE"
+   ]
+  },
+  {
+   "work_id": "1cbad2a8-1735-3d49-a1cc-050b04daa47b",
+   "title": "Symphony no. 7 in A major, op. 92: III. Presto",
+   "releases": [
+    "Beethoven Symphonien Nos. 5 & 7 (Carlos Kleiber-VPO) FLAC+CUE"
+   ]
+  },
+  {
+   "work_id": "2c6c11d3-bb5f-3016-82f4-62b39487651c",
+   "title": "Symphony no. 7 in A major, op. 92: IV. Allegro con brio",
+   "releases": [
+    "Beethoven Symphonien Nos. 5 & 7 (Carlos Kleiber-VPO) FLAC+CUE"
+   ]
+  },
+  {
+   "work_id": "3f67b08c-0ff6-34cc-a9df-916455d588ae",
+   "title": "Violinkonzert „Dem Andenken eines Engels“: I. Andante – Allegretto",
+   "releases": [
+    "Berg  Violin Concerto - Chamber Concerto",
+    "The Essential Alban Berg/CD 1/Three Orchestral Pieces, Op.6"
+   ]
+  },
+  {
+   "work_id": "40836c61-088d-3ccb-b406-461d3705b0fe",
+   "title": "Violinkonzert „Dem Andenken eines Engels“: II. Allegro – Adagio",
+   "releases": [
+    "Berg  Violin Concerto - Chamber Concerto",
+    "The Essential Alban Berg/CD 1/Three Orchestral Pieces, Op.6"
+   ]
+  },
+  {
+   "work_id": "69cbcd45-c414-36de-b3fa-5b47050dc978",
+   "title": "Chamber Concerto: I. Thema scherzoso con variazioni: Motto",
+   "releases": [
+    "Berg  Violin Concerto - Chamber Concerto"
+   ]
+  },
+  {
+   "work_id": "bc41f60e-97bd-36a8-a0c1-4bf066439a0a",
+   "title": "Chamber Concerto: I. Thema scherzoso con variazioni: Thema scherzoso",
+   "releases": [
+    "Berg  Violin Concerto - Chamber Concerto"
+   ]
+  },
+  {
+   "work_id": "df65f1c6-bc18-3711-8ff6-523be0fdd139",
+   "title": "Chamber Concerto: I. Thema scherzoso con variazioni: Variation I",
+   "releases": [
+    "Berg  Violin Concerto - Chamber Concerto"
+   ]
+  },
+  {
+   "work_id": "e2ecf6d9-2ae3-377f-b36c-c089d1682b97",
+   "title": "Chamber Concerto: II. Adagio",
+   "releases": [
+    "Berg  Violin Concerto - Chamber Concerto"
+   ]
+  },
+  {
+   "work_id": "051213ae-bc1c-3eca-a701-eddb256f49e3",
+   "title": "Chamber Concerto: I. Thema scherzoso con variazioni: Variation II: Langsames walzertempo",
+   "releases": [
+    "Berg  Violin Concerto - Chamber Concerto"
+   ]
+  },
+  {
+   "work_id": "4e8526f7-142b-30d7-aaf7-cf7d42d03e19",
+   "title": "Chamber Concerto: I. Thema scherzoso con variazioni: Variation III: Kräftig bewegt",
+   "releases": [
+    "Berg  Violin Concerto - Chamber Concerto"
+   ]
+  },
+  {
+   "work_id": "a116b6cd-6ed1-3b87-a66b-19a660c11a41",
+   "title": "Chamber Concerto: I. Thema scherzoso con variazioni: Variation IV: Sehr rasch",
+   "releases": [
+    "Berg  Violin Concerto - Chamber Concerto"
+   ]
+  },
+  {
+   "work_id": "42c6f9e7-da6a-38af-995d-85c09997ea91",
+   "title": "Chamber Concerto: I. Thema scherzoso con variazioni: Variation V: (Tempo primo)",
+   "releases": [
+    "Berg  Violin Concerto - Chamber Concerto"
+   ]
+  },
+  {
+   "work_id": "c3153c80-fcb1-3a4b-a97e-16643208aaeb",
+   "title": "Chamber Concerto: III. Rondo ritmico con introduzione: Introduzione: Introduzione",
+   "releases": [
+    "Berg  Violin Concerto - Chamber Concerto"
+   ]
+  },
+  {
+   "work_id": "370de57e-44dc-33dd-8b42-4dec180ae86a",
+   "title": "Chamber Concerto: III. Rondo ritmico con introduzione: Introduzione: Rondo ritmico",
+   "releases": [
+    "Berg  Violin Concerto - Chamber Concerto"
+   ]
+  },
+  {
+   "work_id": "6498f84d-e5fc-3b0e-a173-5cfc94e95606",
+   "title": "Chamber Concerto: III. Rondo ritmico con introduzione: Introduzione: Coda",
+   "releases": [
+    "Berg  Violin Concerto - Chamber Concerto"
+   ]
+  },
+  {
+   "work_id": "64f46c8f-49c0-3de1-a356-a0ac765e17ae",
+   "title": "Sinfonie Nr. 1 c-Moll, op. 68: I. Un poco sostenuto – Allegro",
+   "releases": [
+    "Brahms - The Symphonies, Ein Deutsches Requiem (Giulini - WPO)"
+   ]
+  },
+  {
+   "work_id": "d7ffdec4-5ac8-3ddc-8d17-372e2027edbe",
+   "title": "Sinfonie Nr. 1 c-Moll, op. 68: II. Andante sostenuto",
+   "releases": [
+    "Brahms - The Symphonies, Ein Deutsches Requiem (Giulini - WPO)"
+   ]
+  },
+  {
+   "work_id": "acec8360-72d9-3458-a1cc-c55d1015741d",
+   "title": "Sinfonie Nr. 1 c-Moll, op. 68: III. Un poco allegretto e grazioso",
+   "releases": [
+    "Brahms - The Symphonies, Ein Deutsches Requiem (Giulini - WPO)"
+   ]
+  },
+  {
+   "work_id": "1e790155-299c-3bd4-ae2e-8490f4845c13",
+   "title": "Sinfonie Nr. 1 c-Moll, op. 68: IV. Adagio – Allegro non troppo, ma con brio",
+   "releases": [
+    "Brahms - The Symphonies, Ein Deutsches Requiem (Giulini - WPO)"
+   ]
+  },
+  {
+   "work_id": "9675b8d9-84cf-3db1-bbcd-3963ed685646",
+   "title": "Sinfonie Nr. 2 D-Dur, op. 73: I. Allegro non troppo",
+   "releases": [
+    "Brahms - The Symphonies, Ein Deutsches Requiem (Giulini - WPO)",
+    "Celibidache - Symphonies (2011)/11",
+    "Celibidache - Symphonies (2011)/12"
+   ]
+  },
+  {
+   "work_id": "015fc341-524e-36ba-b740-b1a6ed7959fe",
+   "title": "Sinfonie Nr. 2 D-Dur, op. 73: II. Adagio non troppo",
+   "releases": [
+    "Brahms - The Symphonies, Ein Deutsches Requiem (Giulini - WPO)",
+    "Celibidache - Symphonies (2011)/11",
+    "Celibidache - Symphonies (2011)/12"
+   ]
+  },
+  {
+   "work_id": "49abad3a-3c1a-3c14-af68-f6c770869359",
+   "title": "Sinfonie Nr. 2 D-Dur, op. 73: III. Allegretto grazioso (quasi andantino)",
+   "releases": [
+    "Brahms - The Symphonies, Ein Deutsches Requiem (Giulini - WPO)",
+    "Celibidache - Symphonies (2011)/11",
+    "Celibidache - Symphonies (2011)/12"
+   ]
+  },
+  {
+   "work_id": "7dd1b9bd-4ef5-3e62-8884-3f3dea4b7e87",
+   "title": "Sinfonie Nr. 2 D-Dur, op. 73: IV. Allegro con spirito",
+   "releases": [
+    "Brahms - The Symphonies, Ein Deutsches Requiem (Giulini - WPO)",
+    "Celibidache - Symphonies (2011)/11",
+    "Celibidache - Symphonies (2011)/12"
+   ]
+  },
+  {
+   "work_id": "529cf62c-d23b-3d3f-93dc-0cf64c4a16d4",
+   "title": "Sinfonie Nr. 3 F-Dur, op. 90: I. Allegro con brio",
+   "releases": [
+    "Brahms - The Symphonies, Ein Deutsches Requiem (Giulini - WPO)",
+    "Celibidache - Symphonies (2011)/11",
+    "Celibidache - Symphonies (2011)/12"
+   ]
+  },
+  {
+   "work_id": "b4134883-3d4d-3fcb-9b19-c31ee2ec871a",
+   "title": "Sinfonie Nr. 3 F-Dur, op. 90: II. Andante",
+   "releases": [
+    "Brahms - The Symphonies, Ein Deutsches Requiem (Giulini - WPO)",
+    "Celibidache - Symphonies (2011)/11",
+    "Celibidache - Symphonies (2011)/12"
+   ]
+  },
+  {
+   "work_id": "6da4b2b3-c020-31a7-9b37-fa6a62168d5a",
+   "title": "Sinfonie Nr. 3 F-Dur, op. 90: III. Poco allegretto",
+   "releases": [
+    "Brahms - The Symphonies, Ein Deutsches Requiem (Giulini - WPO)",
+    "Celibidache - Symphonies (2011)/11",
+    "Celibidache - Symphonies (2011)/12"
+   ]
+  },
+  {
+   "work_id": "3208da9f-f65f-3793-adbf-5ad331acde67",
+   "title": "Sinfonie Nr. 3 F-Dur, op. 90: IV. Allegro",
+   "releases": [
+    "Brahms - The Symphonies, Ein Deutsches Requiem (Giulini - WPO)",
+    "Celibidache - Symphonies (2011)/11",
+    "Celibidache - Symphonies (2011)/12"
+   ]
+  },
+  {
+   "work_id": "6fa6c0e7-0007-369b-929c-10eabb105f9a",
+   "title": "Variations on a Theme by Joseph Haydn, op. 56a: Thema. Chorale St. Antoni. Andante",
+   "releases": [
+    "Brahms - The Symphonies, Ein Deutsches Requiem (Giulini - WPO)"
+   ]
+  },
+  {
+   "work_id": "8f1da441-8a9b-3d2f-bdd1-ee0b5091315a",
+   "title": "Variations on a Theme by Joseph Haydn, op. 56a: Variation I. Poco più animato",
+   "releases": [
+    "Brahms - The Symphonies, Ein Deutsches Requiem (Giulini - WPO)"
+   ]
+  },
+  {
+   "work_id": "2a74d6be-0a2e-361c-8d9b-f438bd500e82",
+   "title": "Variations on a Theme by Joseph Haydn, op. 56a: Variation II. Più vivace",
+   "releases": [
+    "Brahms - The Symphonies, Ein Deutsches Requiem (Giulini - WPO)"
+   ]
+  },
+  {
+   "work_id": "64fd348a-cbc2-3abf-bfca-ec277fa41b64",
+   "title": "Variations on a Theme by Joseph Haydn, op. 56a: Variation III. Con moto",
+   "releases": [
+    "Brahms - The Symphonies, Ein Deutsches Requiem (Giulini - WPO)"
+   ]
+  },
+  {
+   "work_id": "b3c85657-68e1-3406-84c4-4e34b878d25c",
+   "title": "Variations on a Theme by Joseph Haydn, op. 56a: Variation IV. Andante con moto",
+   "releases": [
+    "Brahms - The Symphonies, Ein Deutsches Requiem (Giulini - WPO)"
+   ]
+  },
+  {
+   "work_id": "4b1c3a0f-207f-319d-acb5-490907a5a8e2",
+   "title": "Variations on a Theme by Joseph Haydn, op. 56a: Variation V. Vivace",
+   "releases": [
+    "Brahms - The Symphonies, Ein Deutsches Requiem (Giulini - WPO)"
+   ]
+  },
+  {
+   "work_id": "2dbfcb93-aa1c-3f74-8cc7-f52e4f0ad81e",
+   "title": "Variations on a Theme by Joseph Haydn, op. 56a: Variation VI. Vivace",
+   "releases": [
+    "Brahms - The Symphonies, Ein Deutsches Requiem (Giulini - WPO)"
+   ]
+  },
+  {
+   "work_id": "e9d30756-5fdf-338e-8893-8509d24fb087",
+   "title": "Variations on a Theme by Joseph Haydn, op. 56a: Variation VII. Grazioso",
+   "releases": [
+    "Brahms - The Symphonies, Ein Deutsches Requiem (Giulini - WPO)"
+   ]
+  },
+  {
+   "work_id": "93e88832-89a7-3b35-951a-aecad61f7eca",
+   "title": "Variations on a Theme by Joseph Haydn, op. 56a: Variation VIII. Presto non troppo",
+   "releases": [
+    "Brahms - The Symphonies, Ein Deutsches Requiem (Giulini - WPO)"
+   ]
+  },
+  {
+   "work_id": "c99ac577-953b-32e0-923c-72f3c240c017",
+   "title": "Variations on a Theme by Joseph Haydn, op. 56a: Finale. Andante",
+   "releases": [
+    "Brahms - The Symphonies, Ein Deutsches Requiem (Giulini - WPO)"
+   ]
+  },
+  {
+   "work_id": "77fdd88d-ceab-33e4-9001-8e292259195c",
+   "title": "Sinfonie Nr. 4 e-Moll, op. 98: I. Allegro non troppo",
+   "releases": [
+    "Brahms - The Symphonies, Ein Deutsches Requiem (Giulini - WPO)",
+    "Brahms Symphony no 4 Kleiber",
+    "Celibidache - Symphonies (2011)/11",
+    "Celibidache - Symphonies (2011)/12"
+   ]
+  },
+  {
+   "work_id": "628c551a-bfbb-3c88-9dd3-ef75d1f385e1",
+   "title": "Sinfonie Nr. 4 e-Moll, op. 98: II. Andante moderato",
+   "releases": [
+    "Brahms - The Symphonies, Ein Deutsches Requiem (Giulini - WPO)",
+    "Brahms Symphony no 4 Kleiber",
+    "Celibidache - Symphonies (2011)/11",
+    "Celibidache - Symphonies (2011)/12"
+   ]
+  },
+  {
+   "work_id": "6b6169ed-00de-3874-8c64-c507bdea2cac",
+   "title": "Sinfonie Nr. 4 e-Moll, op. 98: III. Allegro giocoso",
+   "releases": [
+    "Brahms - The Symphonies, Ein Deutsches Requiem (Giulini - WPO)",
+    "Brahms Symphony no 4 Kleiber",
+    "Celibidache - Symphonies (2011)/11",
+    "Celibidache - Symphonies (2011)/12"
+   ]
+  },
+  {
+   "work_id": "720f2397-27fe-3c3e-9b91-bca6c2693e8e",
+   "title": "Sinfonie Nr. 4 e-Moll, op. 98: IV. Allegro energico e passionato",
+   "releases": [
+    "Brahms - The Symphonies, Ein Deutsches Requiem (Giulini - WPO)",
+    "Brahms Symphony no 4 Kleiber",
+    "Celibidache - Symphonies (2011)/11",
+    "Celibidache - Symphonies (2011)/12"
+   ]
+  },
+  {
+   "work_id": "b276bb79-d8e4-3e2d-9400-417760322f9a",
+   "title": "Tragische Ouvertüre, op. 81",
+   "releases": [
+    "Brahms - The Symphonies, Ein Deutsches Requiem (Giulini - WPO)"
+   ]
+  },
+  {
+   "work_id": "bf06d01e-dc3d-39a1-a1fa-0e1ed3110977",
+   "title": "Ein deutsches Requiem, op. 45: I. “Selig sind, die da Leid tragen” (Chor)",
+   "releases": [
+    "Brahms - The Symphonies, Ein Deutsches Requiem (Giulini - WPO)",
+    "Celibidache - Sacred Music & Opera (11cds)"
+   ]
+  },
+  {
+   "work_id": "c29780e7-625c-39fc-b48f-b718c7992452",
+   "title": "Ein deutsches Requiem, op. 45: II. “Denn alles Fleisch, es ist wie Gras” (Chor)",
+   "releases": [
+    "Brahms - The Symphonies, Ein Deutsches Requiem (Giulini - WPO)",
+    "Celibidache - Sacred Music & Opera (11cds)"
+   ]
+  },
+  {
+   "work_id": "049941b2-fb4b-34ab-bf5c-eb32d1f1ba5f",
+   "title": "Ein deutsches Requiem, op. 45: III. “Herr, lehre doch mich” (Chor, Bariton)",
+   "releases": [
+    "Brahms - The Symphonies, Ein Deutsches Requiem (Giulini - WPO)",
+    "Celibidache - Sacred Music & Opera (11cds)"
+   ]
+  },
+  {
+   "work_id": "2f329662-c95a-3a0b-9fd7-bd519ced9cd5",
+   "title": "Ein deutsches Requiem, op. 45: IV. “Wie lieblich sind Deine Wohnungen” (Chor)",
+   "releases": [
+    "Brahms - The Symphonies, Ein Deutsches Requiem (Giulini - WPO)",
+    "Celibidache - Sacred Music & Opera (11cds)"
+   ]
+  },
+  {
+   "work_id": "6e9211ff-776d-3743-8d00-f4fc3d2cd9aa",
+   "title": "Ein deutsches Requiem, op. 45: V. “Ihr habt nun Traurigkeit” (Chor, Sopran)",
+   "releases": [
+    "Brahms - The Symphonies, Ein Deutsches Requiem (Giulini - WPO)",
+    "Celibidache - Sacred Music & Opera (11cds)"
+   ]
+  },
+  {
+   "work_id": "f1465e6d-e31e-35ae-a2b8-5db4182c1058",
+   "title": "Ein deutsches Requiem, op. 45: VI. “Denn wir haben hie keine bleibende Statt” (Chor, Bariton)",
+   "releases": [
+    "Brahms - The Symphonies, Ein Deutsches Requiem (Giulini - WPO)",
+    "Celibidache - Sacred Music & Opera (11cds)"
+   ]
+  },
+  {
+   "work_id": "02147004-2e5a-320e-a9ca-d5e8ee254e49",
+   "title": "Ein deutsches Requiem, op. 45: VII. “Selig sind die Toten” (Chor)",
+   "releases": [
+    "Brahms - The Symphonies, Ein Deutsches Requiem (Giulini - WPO)",
+    "Celibidache - Sacred Music & Opera (11cds)"
+   ]
+  },
+  {
+   "work_id": "1dece647-54ac-3e53-9b3b-a39bcb05e261",
+   "title": "Genoveva, op. 81: Overture",
+   "releases": [
+    "Brahms Symphony no 4 Kleiber"
+   ]
+  },
+  {
+   "work_id": "9a34bcab-72d6-4491-b2b2-d185cf617542",
+   "title": "Iphigénie en Aulide, Wq. 40 : Ouverture",
+   "releases": [
+    "Bruckner - Symphony No.6 - Klemperer"
+   ]
+  },
+  {
+   "work_id": "18ffccde-9757-4e71-8577-344bb4ff3b01",
+   "title": "Iphigénie en Aulide, Wq. 40: Overture",
+   "releases": [
+    "Bruckner - Symphony No.6 - Klemperer"
+   ]
+  },
+  {
+   "work_id": "0f2c6bb0-6a63-3ddf-b023-6d4483b497d2",
+   "title": "Hänsel und Gretel: Vorspiel (Overture)",
+   "releases": [
+    "Bruckner - Symphony No.6 - Klemperer"
+   ]
+  },
+  {
+   "work_id": "0157027c-a876-48a0-a3a7-37f4b4db65c9",
+   "title": "Symphony no. 6 in A-major, WAB 106: I. Majestoso",
+   "releases": [
+    "Bruckner - Symphony No.6 - Klemperer"
+   ]
+  },
+  {
+   "work_id": "b13a67d6-bc71-404c-b0aa-16de33321ba4",
+   "title": "Symphony no. 6 in A-major, WAB 106: II. Adagio. Sehr feierlich",
+   "releases": [
+    "Bruckner - Symphony No.6 - Klemperer"
+   ]
+  },
+  {
+   "work_id": "aa57954a-e29b-473a-8d6f-0f2b0316635f",
+   "title": "Symphony no. 6 in A-major, WAB 106: III. Scherzo. Nicht schnell – Trio. Langsam",
+   "releases": [
+    "Bruckner - Symphony No.6 - Klemperer"
+   ]
+  },
+  {
+   "work_id": "c71038e5-e47f-4716-87ad-2d6891160aba",
+   "title": "Symphony no. 6 in A-major, WAB 106: IV. Finale. Bewegt, doch nicht zu schnell",
+   "releases": [
+    "Bruckner - Symphony No.6 - Klemperer"
+   ]
+  },
+  {
+   "work_id": "5cb97b81-23d4-3f98-b0a1-38c8dda904d2",
+   "title": "h-Moll-Messe, BWV 232: I. Missa: I. Kyrie eleison",
+   "releases": [
+    "Celibidache - Sacred Music & Opera (11cds)"
+   ]
+  },
+  {
+   "work_id": "f5b3ea26-60dd-3384-aa4f-9523aa4c6fd8",
+   "title": "h-Moll-Messe, BWV 232: I. Missa: II. Christe eleison",
+   "releases": [
+    "Celibidache - Sacred Music & Opera (11cds)"
+   ]
+  },
+  {
+   "work_id": "6681e508-1498-3fe1-a63d-3649d49be617",
+   "title": "h-Moll-Messe, BWV 232: I. Missa: III. Kyrie eleison",
+   "releases": [
+    "Celibidache - Sacred Music & Opera (11cds)"
+   ]
+  },
+  {
+   "work_id": "a21509df-2ad2-37da-870b-2d38e1a7443a",
+   "title": "h-Moll-Messe, BWV 232: I. Missa: IV. Gloria in excelsis Deo",
+   "releases": [
+    "Celibidache - Sacred Music & Opera (11cds)"
+   ]
+  },
+  {
+   "work_id": "39556225-f0e2-3025-baa3-6a8c58f4ff2b",
+   "title": "h-Moll-Messe, BWV 232: I. Missa: V. Et in terra pax",
+   "releases": [
+    "Celibidache - Sacred Music & Opera (11cds)"
+   ]
+  },
+  {
+   "work_id": "a4b74b69-57b4-37b0-8453-fba754c47230",
+   "title": "h-Moll-Messe, BWV 232: I. Missa: VI. Laudamus te",
+   "releases": [
+    "Celibidache - Sacred Music & Opera (11cds)"
+   ]
+  },
+  {
+   "work_id": "e6421582-f873-35c8-ace6-dc5bc54c89d5",
+   "title": "h-Moll-Messe, BWV 232: I. Missa: VII. Gratias agimus tibi",
+   "releases": [
+    "Celibidache - Sacred Music & Opera (11cds)"
+   ]
+  },
+  {
+   "work_id": "f3d5a7f0-0e9d-384d-b605-1a738f1e2a08",
+   "title": "h-Moll-Messe, BWV 232: I. Missa: VIII. Domine Deus",
+   "releases": [
+    "Celibidache - Sacred Music & Opera (11cds)"
+   ]
+  },
+  {
+   "work_id": "a77df32e-cc6d-3605-87ac-e20c71c101db",
+   "title": "h-Moll-Messe, BWV 232: I. Missa: IX. Qui tollis peccata mundi",
+   "releases": [
+    "Celibidache - Sacred Music & Opera (11cds)"
+   ]
+  },
+  {
+   "work_id": "7e63e315-a539-3031-8e79-5e7387b19594",
+   "title": "h-Moll-Messe, BWV 232: I. Missa: X. Qui sedes ad dextram Patris",
+   "releases": [
+    "Celibidache - Sacred Music & Opera (11cds)"
+   ]
+  },
+  {
+   "work_id": "9faa6570-4911-3f19-b379-4820e81450cc",
+   "title": "h-Moll-Messe, BWV 232: I. Missa: XI. Quoniam tu solus Sanctus",
+   "releases": [
+    "Celibidache - Sacred Music & Opera (11cds)"
+   ]
+  },
+  {
+   "work_id": "69d63e68-c291-3cfa-880f-36ff1930fa7b",
+   "title": "h-Moll-Messe, BWV 232: I. Missa: XII. Cum Sancto Spiritu",
+   "releases": [
+    "Celibidache - Sacred Music & Opera (11cds)"
+   ]
+  },
+  {
+   "work_id": "1af61f0c-0419-3d76-9ba2-de3cb33201a8",
+   "title": "h-Moll-Messe, BWV 232: II. Symbolum Nicenum: I. Credo in unum Deum",
+   "releases": [
+    "Celibidache - Sacred Music & Opera (11cds)"
+   ]
+  },
+  {
+   "work_id": "f1f3f339-fa80-30a4-87e2-457f80ab8b83",
+   "title": "h-Moll-Messe, BWV 232: II. Symbolum Nicenum: II. Patrem omnipotentem",
+   "releases": [
+    "Celibidache - Sacred Music & Opera (11cds)"
+   ]
+  },
+  {
+   "work_id": "abee24d9-c43d-359d-b4a0-79129f4a62a1",
+   "title": "h-Moll-Messe, BWV 232: II. Symbolum Nicenum: III. Et in unum Dominum",
+   "releases": [
+    "Celibidache - Sacred Music & Opera (11cds)"
+   ]
+  },
+  {
+   "work_id": "fac5477d-1b4c-33f3-98dd-a5b4c3afe5ae",
+   "title": "h-Moll-Messe, BWV 232: II. Symbolum Nicenum: IV. Et incarnatus est",
+   "releases": [
+    "Celibidache - Sacred Music & Opera (11cds)"
+   ]
+  },
+  {
+   "work_id": "38f19eaf-2c7c-3a8e-9d5c-dc1dcdc80516",
+   "title": "h-Moll-Messe, BWV 232: II. Symbolum Nicenum: V. Crucifixus",
+   "releases": [
+    "Celibidache - Sacred Music & Opera (11cds)"
+   ]
+  },
+  {
+   "work_id": "15b01a72-3ad7-3a69-959c-63f8a4f52eda",
+   "title": "h-Moll-Messe, BWV 232: II. Symbolum Nicenum: VI. Et resurrexit",
+   "releases": [
+    "Celibidache - Sacred Music & Opera (11cds)"
+   ]
+  },
+  {
+   "work_id": "8ceeb5b7-dc90-3b5e-8d62-d2a88e8ddf7b",
+   "title": "h-Moll-Messe, BWV 232: II. Symbolum Nicenum: VII. Et in Spiritum Sanctum Dominum",
+   "releases": [
+    "Celibidache - Sacred Music & Opera (11cds)"
+   ]
+  },
+  {
+   "work_id": "a3a5607b-c366-353b-b43b-be7cc49255ca",
+   "title": "h-Moll-Messe, BWV 232: II. Symbolum Nicenum: VIII. Confiteor",
+   "releases": [
+    "Celibidache - Sacred Music & Opera (11cds)"
+   ]
+  },
+  {
+   "work_id": "b03e2929-a018-3a00-a1e0-e8a213363baa",
+   "title": "h-Moll-Messe, BWV 232: II. Symbolum Nicenum: IX. Et expecto",
+   "releases": [
+    "Celibidache - Sacred Music & Opera (11cds)"
+   ]
+  },
+  {
+   "work_id": "ca4e5cac-c140-369d-89ea-130db50bf26f",
+   "title": "h-Moll-Messe, BWV 232: III. Sanctus",
+   "releases": [
+    "Celibidache - Sacred Music & Opera (11cds)"
+   ]
+  },
+  {
+   "work_id": "7cf1c3ec-9b30-3533-8606-31479c2de526",
+   "title": "h-Moll-Messe, BWV 232: IV. Osanna, Benedictus, Agnus Dei, Dona nobis pacem: I. Osanna in excelsis",
+   "releases": [
+    "Celibidache - Sacred Music & Opera (11cds)"
+   ]
+  },
+  {
+   "work_id": "90573391-a02f-36e2-ad49-33de8868816a",
+   "title": "h-Moll-Messe, BWV 232: IV. Osanna, Benedictus, Agnus Dei, Dona nobis pacem: II. Benedictus",
+   "releases": [
+    "Celibidache - Sacred Music & Opera (11cds)"
+   ]
+  },
+  {
+   "work_id": "26216824-5cef-3a06-ac21-cc7b2de3327f",
+   "title": "h-Moll-Messe, BWV 232: IV. Osanna, Benedictus, Agnus Dei, Dona nobis pacem: III. Osanna repetatur",
+   "releases": [
+    "Celibidache - Sacred Music & Opera (11cds)"
+   ]
+  },
+  {
+   "work_id": "8ac03607-574c-3775-95d1-f288cc0f6f1a",
+   "title": "h-Moll-Messe, BWV 232: IV. Osanna, Benedictus, Agnus Dei, Dona nobis pacem: IV. Agnus Dei",
+   "releases": [
+    "Celibidache - Sacred Music & Opera (11cds)"
+   ]
+  },
+  {
+   "work_id": "47f13e33-948b-373a-bf4d-8fedca74915b",
+   "title": "h-Moll-Messe, BWV 232: IV. Osanna, Benedictus, Agnus Dei, Dona nobis pacem: V. Dona nobis pacem",
+   "releases": [
+    "Celibidache - Sacred Music & Opera (11cds)"
+   ]
+  },
+  {
+   "work_id": "e27bda6e-531e-36d3-9cd7-b8ebc18e8c53",
+   "title": "Requiem in D minor, K. 626: I. Introitus: Requiem aeternam",
+   "releases": [
+    "Celibidache - Sacred Music & Opera (11cds)"
+   ]
+  },
+  {
+   "work_id": "6eaede01-c31a-3402-bedb-598e6bcbad03",
+   "title": "Requiem in D minor, K. 626: II. Kyrie eleison",
+   "releases": [
+    "Celibidache - Sacred Music & Opera (11cds)"
+   ]
+  },
+  {
+   "work_id": "1c0bb759-af4a-33b6-8608-324bf20dd30b",
+   "title": "Requiem in D minor, K. 626: III. Sequenz: a. Dies irae",
+   "releases": [
+    "Celibidache - Sacred Music & Opera (11cds)"
+   ]
+  },
+  {
+   "work_id": "58e8e481-3830-42ee-a0bd-1c2bf6b713bb",
+   "title": "Requiem in D minor, K. 626: III. Sequenz: b. Tuba mirum",
+   "releases": [
+    "Celibidache - Sacred Music & Opera (11cds)"
+   ]
+  },
+  {
+   "work_id": "fd3f72ab-161e-38cb-800b-ad6ad983abe8",
+   "title": "Requiem in D minor, K. 626: III. Sequenz: c. Rex tremendae majestatis",
+   "releases": [
+    "Celibidache - Sacred Music & Opera (11cds)"
+   ]
+  },
+  {
+   "work_id": "e5825b29-7ac1-3ae3-a2cc-fa6ad43f2347",
+   "title": "Requiem in D minor, K. 626: III. Sequenz: d. Recordare, Jesu pie",
+   "releases": [
+    "Celibidache - Sacred Music & Opera (11cds)"
+   ]
+  },
+  {
+   "work_id": "40b2b3ee-7c36-39fb-b915-f3695a0ce0a0",
+   "title": "Requiem in D minor, K. 626: III. Sequenz: e. Confutatis maledictis",
+   "releases": [
+    "Celibidache - Sacred Music & Opera (11cds)"
+   ]
+  },
+  {
+   "work_id": "c472ab1c-8471-3659-977b-3c4b7094629f",
+   "title": "Requiem in D minor, K. 626: III. Sequenz: f. Lacrimosa dies illa",
+   "releases": [
+    "Celibidache - Sacred Music & Opera (11cds)"
+   ]
+  },
+  {
+   "work_id": "e1e8fb55-e282-3958-a1cc-d285ef66ff0d",
+   "title": "Requiem in D minor, K. 626: IV. Offertorium: a. Domine Jesu Christie",
+   "releases": [
+    "Celibidache - Sacred Music & Opera (11cds)"
+   ]
+  },
+  {
+   "work_id": "bdf1b0ff-c133-38e4-8dab-c57c4b41e42d",
+   "title": "Requiem in D minor, K. 626: IV. Offertorium: b. Versus: Hostias et preces",
+   "releases": [
+    "Celibidache - Sacred Music & Opera (11cds)"
+   ]
+  },
+  {
+   "work_id": "c470a46c-8e11-33b5-94c8-6a605dfd9def",
+   "title": "Requiem in D minor, K. 626: V. Sanctus: a. Sanctus Dominus Deus Sabaoth",
+   "releases": [
+    "Celibidache - Sacred Music & Opera (11cds)"
+   ]
+  },
+  {
+   "work_id": "0f8c4722-e313-3859-9160-708b1bb27c7a",
+   "title": "Requiem in D minor, K. 626: V. Sanctus: b. Benedictus",
+   "releases": [
+    "Celibidache - Sacred Music & Opera (11cds)"
+   ]
+  },
+  {
+   "work_id": "c2f4ba54-6979-34e7-87e9-126a0a3e83f7",
+   "title": "Requiem in D minor, K. 626: VI. Agnus Dei",
+   "releases": [
+    "Celibidache - Sacred Music & Opera (11cds)"
+   ]
+  },
+  {
+   "work_id": "ddbc5e20-6c54-3106-8ac8-3710dde32eeb",
+   "title": "Requiem in D minor, K. 626: VIII. Communio: a. Lux aeterna",
+   "releases": [
+    "Celibidache - Sacred Music & Opera (11cds)"
+   ]
+  },
+  {
+   "work_id": "ee35601c-cc42-4165-b9d6-098cd4164d12",
+   "title": "Messa da requiem: I. Requiem aeternam – Kyrie (quartetto solista, coro)",
+   "releases": [
+    "Celibidache - Sacred Music & Opera (11cds)"
+   ]
+  },
+  {
+   "work_id": "09fb49a9-c7bb-3fe3-b704-3e6cb4a6b05e",
+   "title": "Messa da requiem: Ia. Requiem: Requiem aeternam",
+   "releases": [
+    "Celibidache - Sacred Music & Opera (11cds)"
+   ]
+  },
+  {
+   "work_id": "9ffe50aa-b471-4e33-be06-61fd3625a4e3",
+   "title": "Messa da requiem: IIa. Dies irae: Dies irae (coro)",
+   "releases": [
+    "Celibidache - Sacred Music & Opera (11cds)"
+   ]
+  },
+  {
+   "work_id": "d74ab43b-c1ea-48b1-851a-63652566505b",
+   "title": "Messa da requiem: IIb. Dies irae: Tuba mirum (basso, coro)",
+   "releases": [
+    "Celibidache - Sacred Music & Opera (11cds)"
+   ]
+  },
+  {
+   "work_id": "b229a9f7-b2b5-3d61-b483-143177594b91",
+   "title": "Messa da requiem: IIc. Dies irae: Mors stupebit (basso, coro)",
+   "releases": [
+    "Celibidache - Sacred Music & Opera (11cds)"
+   ]
+  },
+  {
+   "work_id": "c23be7c2-2cb6-4697-87e5-79e065b45540",
+   "title": "Messa da requiem: IId. Dies irae: Liber scriptus (mezzo-soprano, coro)",
+   "releases": [
+    "Celibidache - Sacred Music & Opera (11cds)"
+   ]
+  },
+  {
+   "work_id": "25bf5d36-70da-415e-9b56-a392839ee1eb",
+   "title": "Messa da requiem: IIe. Dies irae: Quid sum miser (soprano, mezzo-soprano, tenore)",
+   "releases": [
+    "Celibidache - Sacred Music & Opera (11cds)"
+   ]
+  },
+  {
+   "work_id": "e1903c6c-89fc-43fa-b0fc-57fb88a432fa",
+   "title": "Messa da requiem: IIf. Dies irae: Rex tremendae (quartetto solista, coro)",
+   "releases": [
+    "Celibidache - Sacred Music & Opera (11cds)"
+   ]
+  },
+  {
+   "work_id": "91957a85-f4ce-43c4-9ea5-03c6e32dcaf6",
+   "title": "Messa da requiem: IIg. Dies irae: Recordare (soprano, mezzo-soprano)",
+   "releases": [
+    "Celibidache - Sacred Music & Opera (11cds)"
+   ]
+  },
+  {
+   "work_id": "0a7c4f6b-9a80-4806-86b3-09edcea57709",
+   "title": "Messa da requiem: IIh. Dies irae: Ingemisco (tenore)",
+   "releases": [
+    "Celibidache - Sacred Music & Opera (11cds)"
+   ]
+  },
+  {
+   "work_id": "9c54cfc9-3e29-49d1-af55-1aee63f605f6",
+   "title": "Messa da requiem: IIi. Dies irae: Confutatis (basso, coro)",
+   "releases": [
+    "Celibidache - Sacred Music & Opera (11cds)"
+   ]
+  },
+  {
+   "work_id": "80571667-bbb7-4e28-84dd-5f4c5d603e59",
+   "title": "Messa da requiem: IIj. Dies irae: Lacrymosa (quartetto solista, coro)",
+   "releases": [
+    "Celibidache - Sacred Music & Opera (11cds)"
+   ]
+  },
+  {
+   "work_id": "5e0cabf1-ce33-334b-9baf-92a79fec728e",
+   "title": "Messa da requiem: IIIa. Offertorio: Domine Jesu Christe",
+   "releases": [
+    "Celibidache - Sacred Music & Opera (11cds)"
+   ]
+  },
+  {
+   "work_id": "cbcb2973-7175-3551-a444-a615b48a5259",
+   "title": "Messa da requiem: IIIb. Offertorio: Hostias",
+   "releases": [
+    "Celibidache - Sacred Music & Opera (11cds)"
+   ]
+  },
+  {
+   "work_id": "6a4bcbd4-8626-3e3f-be8b-cf0d193c696e",
+   "title": "Messa da requiem: IV. Sanctus (a doppio coro)",
+   "releases": [
+    "Celibidache - Sacred Music & Opera (11cds)"
+   ]
+  },
+  {
+   "work_id": "7b2dbe07-80d0-3e4e-a014-12227e044731",
+   "title": "Messa da requiem: V. Agnus Dei (soprano, mezzo-soprano, coro)",
+   "releases": [
+    "Celibidache - Sacred Music & Opera (11cds)"
+   ]
+  },
+  {
+   "work_id": "9cb393b8-b374-34a3-864a-a0f9baa623f0",
+   "title": "Messa da requiem: VI. Lux aeterna (mezzo-soprano, tenor, bass)",
+   "releases": [
+    "Celibidache - Sacred Music & Opera (11cds)"
+   ]
+  },
+  {
+   "work_id": "604015be-92ee-3a97-b042-dbdc6601414a",
+   "title": "Messa da requiem: VIIa. Libera me: Libera me, Domine",
+   "releases": [
+    "Celibidache - Sacred Music & Opera (11cds)"
+   ]
+  },
+  {
+   "work_id": "9f11180a-1b9f-30e8-8182-8ff696aee66a",
+   "title": "Messa da requiem: VIIb. Libera me: Dies irae",
+   "releases": [
+    "Celibidache - Sacred Music & Opera (11cds)"
+   ]
+  },
+  {
+   "work_id": "59f1dabb-e2f5-3aeb-847b-e88630a5adc5",
+   "title": "Messa da requiem: VIIc. Libera me: Requiem aeternam",
+   "releases": [
+    "Celibidache - Sacred Music & Opera (11cds)"
+   ]
+  },
+  {
+   "work_id": "7dd53433-5077-39b4-978d-da8def9b9288",
+   "title": "Messa da requiem: VIId. Libera me: Libera me, Domine",
+   "releases": [
+    "Celibidache - Sacred Music & Opera (11cds)"
+   ]
+  },
+  {
+   "work_id": "82ad69d4-d6d1-3c7f-9f32-61f0ae9fbaec",
+   "title": "Requiem, op. 48: I. Introït et Kyrie",
+   "releases": [
+    "Celibidache - Sacred Music & Opera (11cds)"
+   ]
+  },
+  {
+   "work_id": "3099610b-1c18-3ee8-9649-246a561c94a4",
+   "title": "Requiem, op. 48: II. Offertoire",
+   "releases": [
+    "Celibidache - Sacred Music & Opera (11cds)"
+   ]
+  },
+  {
+   "work_id": "97d4839c-3b4c-3fd2-89e0-50f2f3f45822",
+   "title": "Requiem, op. 48: III. Sanctus",
+   "releases": [
+    "Celibidache - Sacred Music & Opera (11cds)"
+   ]
+  },
+  {
+   "work_id": "d0c70942-2cd0-33bc-b2ae-726b19b118f9",
+   "title": "Requiem, op. 48: IV. Pie Jesu",
+   "releases": [
+    "Celibidache - Sacred Music & Opera (11cds)"
+   ]
+  },
+  {
+   "work_id": "2b467e89-0a1b-34a2-a141-0e557e95c4fd",
+   "title": "Requiem, op. 48: V. Agnus Dei et Lux Aeterna",
+   "releases": [
+    "Celibidache - Sacred Music & Opera (11cds)"
+   ]
+  },
+  {
+   "work_id": "97ec2563-e23b-37dc-b950-eaa4eb4b12cb",
+   "title": "Requiem, op. 48: VI. Libera me",
+   "releases": [
+    "Celibidache - Sacred Music & Opera (11cds)"
+   ]
+  },
+  {
+   "work_id": "da60277e-400a-3d26-8c70-c2e6ea756b1f",
+   "title": "Requiem, op. 48: VII. In Paradisum",
+   "releases": [
+    "Celibidache - Sacred Music & Opera (11cds)"
+   ]
+  },
+  {
+   "work_id": "1ec54673-8fe8-3a5c-b127-a110c1f5567a",
+   "title": "Symphony of Psalms: I. \"Exaudi orationem meam, Domine\"",
+   "releases": [
+    "Celibidache - Sacred Music & Opera (11cds)"
+   ]
+  },
+  {
+   "work_id": "783e0c3d-85d9-39b5-9bbc-a4feae5d985a",
+   "title": "Symphony of Psalms: II. \"Expectans expectavi Dominum\"",
+   "releases": [
+    "Celibidache - Sacred Music & Opera (11cds)"
+   ]
+  },
+  {
+   "work_id": "eb47076d-3e7d-3294-ba32-eb111a112c90",
+   "title": "Symphony of Psalms: III. \"Alleluia\"",
+   "releases": [
+    "Celibidache - Sacred Music & Opera (11cds)"
+   ]
+  },
+  {
+   "work_id": "937398a2-d307-3ccd-a390-78d1b73c6457",
+   "title": "Guillaume Tell : Ouverture",
+   "releases": [
+    "Celibidache - Sacred Music & Opera (11cds)"
+   ]
+  },
+  {
+   "work_id": "c1b8404d-f6d3-3fad-a6a5-97149ffa4a1c",
+   "title": "Semiramide: Sinfonia",
+   "releases": [
+    "Celibidache - Sacred Music & Opera (11cds)"
+   ]
+  },
+  {
+   "work_id": "f420ecbe-2a8a-3c4d-bf3e-4092576d89ae",
+   "title": "La scala di seta: Sinfonia",
+   "releases": [
+    "Celibidache - Sacred Music & Opera (11cds)"
+   ]
+  },
+  {
+   "work_id": "baa339e5-c2db-45da-a0ff-f9ea200f9178",
+   "title": "La gazza ladra: Ouverture",
+   "releases": [
+    "Celibidache - Sacred Music & Opera (11cds)"
+   ]
+  },
+  {
+   "work_id": "198faa40-6f59-3cdf-ac13-c4391d299686",
+   "title": "La forza del destino: Sinfonia",
+   "releases": [
+    "Celibidache - Sacred Music & Opera (11cds)"
+   ]
+  },
+  {
+   "work_id": "5082f48f-0646-325c-8b11-bb01e35d86a3",
+   "title": "Don Giovanni: Ouvertura",
+   "releases": [
+    "Celibidache - Sacred Music & Opera (11cds)"
+   ]
+  },
+  {
+   "work_id": "3f4b1135-f5df-4887-b95d-8e67198d0238",
+   "title": "Le Carnaval romain, ouverture pour orchestre, op. 9",
+   "releases": [
+    "Celibidache - Sacred Music & Opera (11cds)"
+   ]
+  },
+  {
+   "work_id": "3329a6c8-4785-31ee-ab7e-8ded6804598e",
+   "title": "Die Hebriden, op. 26",
+   "releases": [
+    "Celibidache - Sacred Music & Opera (11cds)"
+   ]
+  },
+  {
+   "work_id": "56f42454-be29-4a00-b1fd-4bef7ab8263c",
+   "title": "Ein Sommernachtstraum, op. 21 (op. 61 no. 1): Ouvertüre",
+   "releases": [
+    "Celibidache - Sacred Music & Opera (11cds)"
+   ]
+  },
+  {
+   "work_id": "593d45a6-67be-396c-a598-d56d88e6b282",
+   "title": "Rosamunde, D. 797 / Die Zauberharfe, D. 644: Ouvertüre",
+   "releases": [
+    "Celibidache - Sacred Music & Opera (11cds)"
+   ]
+  },
+  {
+   "work_id": "009b2276-f259-3f13-9112-7f1df8e6962a",
+   "title": "Má vlast: II. Vltava, JB 1:112/2",
+   "releases": [
+    "Celibidache - Sacred Music & Opera (11cds)"
+   ]
+  },
+  {
+   "work_id": "4147773e-61ee-3b4a-802d-399573d05d67",
+   "title": "Die Fledermaus: Ouvertüre",
+   "releases": [
+    "Celibidache - Sacred Music & Opera (11cds)"
+   ]
+  },
+  {
+   "work_id": "1229c7d1-feef-3095-9330-bcaee5ba1b4b",
+   "title": "Oberon, J. 306: Overture",
+   "releases": [
+    "Celibidache - Sacred Music & Opera (11cds)"
+   ]
+  },
+  {
+   "work_id": "98434ad8-13d9-49dc-ab9b-b1821a7eb407",
+   "title": "Parsifal, WWV 111",
+   "releases": [
+    "Celibidache - Sacred Music & Opera (11cds)"
+   ]
+  },
+  {
+   "work_id": "7b4b0ef2-7928-3c37-8107-1355eb043855",
+   "title": "Tristan und Isolde: Prelude and Liebestod",
+   "releases": [
+    "Celibidache - Sacred Music & Opera (11cds)"
+   ]
+  },
+  {
+   "work_id": "6b198406-4fbf-3d61-82db-0b7ef195a7fe",
+   "title": "Die Meistersinger von Nürnberg, WWV 96: Vorspiel",
+   "releases": [
+    "Celibidache - Sacred Music & Opera (11cds)"
+   ]
+  },
+  {
+   "work_id": "b7db99d4-0ee1-3383-8ace-5900a0864d80",
+   "title": "Siegfried Idyll, WWV 103",
+   "releases": [
+    "Celibidache - Sacred Music & Opera (11cds)"
+   ]
+  },
+  {
+   "work_id": "b4d7c421-e730-3a74-8e28-be58b35e51ba",
+   "title": "Excerpt from Götterdämmerung, WWV 86D: Akt III, Scene II. Trauermusik beim Tode Siegfrieds",
+   "releases": [
+    "Celibidache - Sacred Music & Opera (11cds)"
+   ]
+  },
+  {
+   "work_id": "1cba82ba-a6f3-3590-a0c1-b9e742fa742d",
+   "title": "Tannhäuser und der Sängerkrieg auf Wartburg, WWV 70: Ouvertüre",
+   "releases": [
+    "Celibidache - Sacred Music & Opera (11cds)"
+   ]
+  },
+  {
+   "work_id": "70729fa3-654b-4a0b-85ec-5c0ba3b3fb80",
+   "title": "Symphony no. 40 in G minor, K. 550 “Great”: I. Allegro molto",
+   "releases": [
+    "Celibidache - Symphonies (2011)/02"
+   ]
+  },
+  {
+   "work_id": "78b8b962-3bb0-3e79-884c-4e773fb0dbc7",
+   "title": "Symphony no. 40 in G minor, K. 550 “Great”: II. Andante",
+   "releases": [
+    "Celibidache - Symphonies (2011)/02"
+   ]
+  },
+  {
+   "work_id": "0531510a-165e-369e-bfc0-27f44015df10",
+   "title": "Symphony no. 40 in G minor, K. 550 “Great”: III. Minuetto. Allegretto & Trio",
+   "releases": [
+    "Celibidache - Symphonies (2011)/02"
+   ]
+  },
+  {
+   "work_id": "21fe54e0-b715-353a-a668-b7d543e8e4a8",
+   "title": "Symphony no. 40 in G minor, K. 550 “Great”: IV. Finale. Allegro assai",
+   "releases": [
+    "Celibidache - Symphonies (2011)/02"
+   ]
+  },
+  {
+   "work_id": "1e7033b0-5308-31fe-86e5-c7094dfeb224",
+   "title": "Symphony no. 92 in G major, Hob. I:92 \"Oxford\": I. Adagio - Allegro spiritoso",
+   "releases": [
+    "Celibidache - Symphonies (2011)/02"
+   ]
+  },
+  {
+   "work_id": "0e3fd8b2-e2b4-3c46-9350-8085978a3e87",
+   "title": "Symphony no. 92 in G major, Hob. I:92 \"Oxford\": II. Adagio",
+   "releases": [
+    "Celibidache - Symphonies (2011)/02"
+   ]
+  },
+  {
+   "work_id": "90a73ffd-497b-33b1-af4b-b0ae2c9656b8",
+   "title": "Symphony no. 92 in G major, Hob. I:92 \"Oxford\": III. Menuet and Trio. Allegretto",
+   "releases": [
+    "Celibidache - Symphonies (2011)/02"
+   ]
+  },
+  {
+   "work_id": "d93a3c4b-c04a-3c3e-ac67-4c662ef19a11",
+   "title": "Symphony no. 92 in G major, Hob. I:92 \"Oxford\": IV. Presto",
+   "releases": [
+    "Celibidache - Symphonies (2011)/02"
+   ]
+  },
+  {
+   "work_id": "4e8527ba-caa3-3162-9f52-8028570d5f28",
+   "title": "Concerto for Piano no. 20 in D minor, K. 466: I. Allegro",
+   "releases": [
+    "Evgeny Kissin - The Complete Concerto Recordings [4CD] (2014) WEB FLAC",
+    "Mozart - The Complete Piano Concertos (Barenboim, English Chamber Orchestra) (1998)"
+   ]
+  },
+  {
+   "work_id": "62f79f13-47d6-3715-aa73-aae931662b9c",
+   "title": "Concerto for Piano no. 20 in D minor, K. 466: II. Romanze",
+   "releases": [
+    "Evgeny Kissin - The Complete Concerto Recordings [4CD] (2014) WEB FLAC",
+    "Mozart - The Complete Piano Concertos (Barenboim, English Chamber Orchestra) (1998)"
+   ]
+  },
+  {
+   "work_id": "1160cb77-3297-332c-8eb9-74b78b616eb2",
+   "title": "Concerto for Piano no. 20 in D minor, K. 466: III. Rondo. Allegro assai",
+   "releases": [
+    "Evgeny Kissin - The Complete Concerto Recordings [4CD] (2014) WEB FLAC",
+    "Mozart - The Complete Piano Concertos (Barenboim, English Chamber Orchestra) (1998)"
+   ]
+  },
+  {
+   "work_id": "d7e2a9f1-3be1-323d-b45a-81ffcc0b4494",
+   "title": "Konzertrondo für Klavier und Orchester D-Dur, KV 382",
+   "releases": [
+    "Evgeny Kissin - The Complete Concerto Recordings [4CD] (2014) WEB FLAC",
+    "Mozart - The Complete Piano Concertos (Barenboim, English Chamber Orchestra) (1998)"
+   ]
+  },
+  {
+   "work_id": "a0963c14-2865-3c05-a673-7d2d649dec57",
+   "title": "Concerto for Piano no. 12 in A major, K. 385p / K3 386a / KV 414: I. Allegro",
+   "releases": [
+    "Evgeny Kissin - The Complete Concerto Recordings [4CD] (2014) WEB FLAC",
+    "Mozart - The Complete Piano Concertos (Barenboim, English Chamber Orchestra) (1998)"
+   ]
+  },
+  {
+   "work_id": "1d844aa5-eca2-3219-a6bf-76c1c0662de2",
+   "title": "Concerto for Piano no. 12 in A major, K. 385p / K3 386a / KV 414: II. Andante",
+   "releases": [
+    "Evgeny Kissin - The Complete Concerto Recordings [4CD] (2014) WEB FLAC",
+    "Mozart - The Complete Piano Concertos (Barenboim, English Chamber Orchestra) (1998)"
+   ]
+  },
+  {
+   "work_id": "2bfcb822-94ad-3f88-bda9-dd542f7d2b80",
+   "title": "Concerto for Piano no. 12 in A major, K. 385p / K3 386a / KV 414: III. Rondo. Allegretto",
+   "releases": [
+    "Evgeny Kissin - The Complete Concerto Recordings [4CD] (2014) WEB FLAC",
+    "Mozart - The Complete Piano Concertos (Barenboim, English Chamber Orchestra) (1998)"
+   ]
+  },
+  {
+   "work_id": "9512db07-6fa1-4a2f-8126-c0e4995d0505",
+   "title": "Piano Concerto no. 11 in D major, Hob. XVIII:11: I. Vivace",
+   "releases": [
+    "Evgeny Kissin - The Complete Concerto Recordings [4CD] (2014) WEB FLAC"
+   ]
+  },
+  {
+   "work_id": "5405df1f-2ce8-4bfa-8073-8fce2e4d00a7",
+   "title": "Piano Concerto no. 11 in D major, Hob. XVIII:11: II. Un poco adagio",
+   "releases": [
+    "Evgeny Kissin - The Complete Concerto Recordings [4CD] (2014) WEB FLAC"
+   ]
+  },
+  {
+   "work_id": "fc08841b-89a5-417b-9178-83565c80ffe7",
+   "title": "Piano Concerto no. 11 in D major, Hob. XVIII:11: III. Rondo all'ungarese. Allegro assai",
+   "releases": [
+    "Evgeny Kissin - The Complete Concerto Recordings [4CD] (2014) WEB FLAC"
+   ]
+  },
+  {
+   "work_id": "48a636b9-ff49-344e-9a31-5c13bf451886",
+   "title": "Concerto for Piano, Trumpet and String Orchestra no. 1 in C minor, op. 35: I. Allegretto",
+   "releases": [
+    "Evgeny Kissin - The Complete Concerto Recordings [4CD] (2014) WEB FLAC"
+   ]
+  },
+  {
+   "work_id": "251b84a3-4ad8-3a19-a394-57067834153a",
+   "title": "Concerto for Piano, Trumpet and String Orchestra no. 1 in C minor, op. 35: II. Lento",
+   "releases": [
+    "Evgeny Kissin - The Complete Concerto Recordings [4CD] (2014) WEB FLAC"
+   ]
+  },
+  {
+   "work_id": "15a890d3-40d0-3943-9b4d-6cb4037f7c34",
+   "title": "Concerto for Piano, Trumpet and String Orchestra no. 1 in C minor, op. 35: III. Moderato",
+   "releases": [
+    "Evgeny Kissin - The Complete Concerto Recordings [4CD] (2014) WEB FLAC"
+   ]
+  },
+  {
+   "work_id": "28fc70dd-7bef-38aa-9718-38ca9a79cf24",
+   "title": "Concerto for Piano, Trumpet and String Orchestra no. 1 in C minor, op. 35: IV. Allegro con brio",
+   "releases": [
+    "Evgeny Kissin - The Complete Concerto Recordings [4CD] (2014) WEB FLAC"
+   ]
+  },
+  {
+   "work_id": "5da1e3dd-6adf-3bbd-9f18-3dd72a535c63",
+   "title": "Concerto for Piano and Orchestra in A minor, op. 54: I. Allegro affettuoso",
+   "releases": [
+    "Evgeny Kissin - The Complete Concerto Recordings [4CD] (2014) WEB FLAC"
+   ]
+  },
+  {
+   "work_id": "bb636e91-b4ec-3e94-bb09-0e5757a5d178",
+   "title": "Concerto for Piano and Orchestra in A minor, op. 54: II. Intermezzo. Andantino grazioso",
+   "releases": [
+    "Evgeny Kissin - The Complete Concerto Recordings [4CD] (2014) WEB FLAC"
+   ]
+  },
+  {
+   "work_id": "d99878bf-924d-3709-b4f0-9e573014b3fd",
+   "title": "Concerto for Piano and Orchestra in A minor, op. 54: III. Allegro vivace",
+   "releases": [
+    "Evgeny Kissin - The Complete Concerto Recordings [4CD] (2014) WEB FLAC"
+   ]
+  },
+  {
+   "work_id": "6c47fa1a-9e9c-3298-937a-8a9a0ba04950",
+   "title": "Concerto for Piano and Orchestra no. 2 in B-flat major, op. 19: I. Allegro con brio",
+   "releases": [
+    "Evgeny Kissin - The Complete Concerto Recordings [4CD] (2014) WEB FLAC"
+   ]
+  },
+  {
+   "work_id": "3e9557cb-9f31-325f-b1fc-756bb3398565",
+   "title": "Concerto for Piano and Orchestra no. 2 in B-flat major, op. 19: II. Adagio",
+   "releases": [
+    "Evgeny Kissin - The Complete Concerto Recordings [4CD] (2014) WEB FLAC"
+   ]
+  },
+  {
+   "work_id": "af2da01d-18cb-3620-a2d2-2ca62d187545",
+   "title": "Concerto for Piano and Orchestra no. 2 in B-flat major, op. 19: III. Rondo. Molto allegro",
+   "releases": [
+    "Evgeny Kissin - The Complete Concerto Recordings [4CD] (2014) WEB FLAC"
+   ]
+  },
+  {
+   "work_id": "913bc84d-158b-3ac3-821e-6cc5e46c9bb5",
+   "title": "Concerto for Piano and Orchestra no. 5 in E-flat major, op. 73 “Emperor”: I. Allegro",
+   "releases": [
+    "Evgeny Kissin - The Complete Concerto Recordings [4CD] (2014) WEB FLAC"
+   ]
+  },
+  {
+   "work_id": "ffdf5002-45cc-3533-898e-b43441b8aa3f",
+   "title": "Concerto for Piano and Orchestra no. 5 in E-flat major, op. 73 “Emperor”: II. Adagio un poco mosso",
+   "releases": [
+    "Evgeny Kissin - The Complete Concerto Recordings [4CD] (2014) WEB FLAC"
+   ]
+  },
+  {
+   "work_id": "b6b0a615-adf9-3427-a3ba-cd34556d9997",
+   "title": "Concerto for Piano and Orchestra no. 5 in E-flat major, op. 73 “Emperor”: III. Rondo. Allegro",
+   "releases": [
+    "Evgeny Kissin - The Complete Concerto Recordings [4CD] (2014) WEB FLAC"
+   ]
+  },
+  {
+   "work_id": "4661a9a2-3986-30a8-a044-b79359dfd4fc",
+   "title": "Piano Concerto no. 2 in C minor, op. 18: I. Moderato",
+   "releases": [
+    "Evgeny Kissin - The Complete Concerto Recordings [4CD] (2014) WEB FLAC"
+   ]
+  },
+  {
+   "work_id": "ee48e04f-d88e-3562-b5b9-98ceb0d218d1",
+   "title": "Piano Concerto no. 2 in C minor, op. 18: II. Adagio sostenuto",
+   "releases": [
+    "Evgeny Kissin - The Complete Concerto Recordings [4CD] (2014) WEB FLAC"
+   ]
+  },
+  {
+   "work_id": "f06a3c2f-ae0d-30d0-b108-c8cf8af6fc33",
+   "title": "Piano Concerto no. 2 in C minor, op. 18: III. Allegro scherzando",
+   "releases": [
+    "Evgeny Kissin - The Complete Concerto Recordings [4CD] (2014) WEB FLAC"
+   ]
+  },
+  {
+   "work_id": "e55e8d47-c07a-31f5-90e4-404b8e975255",
+   "title": "Piano Concerto no. 3 in D minor, op. 30: I. Allegro ma non tanto",
+   "releases": [
+    "Evgeny Kissin - The Complete Concerto Recordings [4CD] (2014) WEB FLAC"
+   ]
+  },
+  {
+   "work_id": "3daf2401-b558-3212-b70e-cb738749e02d",
+   "title": "Piano Concerto no. 3 in D minor, op. 30: II. Intermezzo. Adagio",
+   "releases": [
+    "Evgeny Kissin - The Complete Concerto Recordings [4CD] (2014) WEB FLAC"
+   ]
+  },
+  {
+   "work_id": "6910fb86-7ccd-3152-8edf-42c762f29dd1",
+   "title": "Piano Concerto no. 3 in D minor, op. 30: III. Finale. Alla breve",
+   "releases": [
+    "Evgeny Kissin - The Complete Concerto Recordings [4CD] (2014) WEB FLAC"
+   ]
+  },
+  {
+   "work_id": "6f2a3dfb-c76b-49b0-b126-cd6b1b45a58d",
+   "title": "Diamorphoses",
+   "releases": [
+    "Iannis Xenakis - 2022 - Electroacoustic Works (web)"
+   ]
+  },
+  {
+   "work_id": "aca370e1-64d5-4799-a8d7-51742807a234",
+   "title": "Concret PH",
+   "releases": [
+    "Iannis Xenakis - 2022 - Electroacoustic Works (web)"
+   ]
+  },
+  {
+   "work_id": "aab6f24e-4c9b-495f-a11c-ce6567051b50",
+   "title": "Orient-Occident",
+   "releases": [
+    "Iannis Xenakis - 2022 - Electroacoustic Works (web)"
+   ]
+  },
+  {
+   "work_id": "1e6865b7-2378-4352-a448-c6b074be3093",
+   "title": "Bohor",
+   "releases": [
+    "Iannis Xenakis - 2022 - Electroacoustic Works (web)"
+   ]
+  },
+  {
+   "work_id": "04b0d77d-9ef1-4884-81be-055769fa031e",
+   "title": "Hibiki-Hana-Ma",
+   "releases": [
+    "Iannis Xenakis - 2022 - Electroacoustic Works (web)"
+   ]
+  },
+  {
+   "work_id": "6017d328-c513-4047-a7d5-35b2ac9793a3",
+   "title": "Mycenae Alpha",
+   "releases": [
+    "Iannis Xenakis - 2022 - Electroacoustic Works (web)"
+   ]
+  },
+  {
+   "work_id": "cac02a50-a388-4f8f-b5b6-744a2c84c2a7",
+   "title": "Polytope de Cluny",
+   "releases": [
+    "Iannis Xenakis - 2022 - Electroacoustic Works (web)"
+   ]
+  },
+  {
+   "work_id": "e2c10241-2962-49cd-94d3-32e15a054331",
+   "title": "Persepolis",
+   "releases": [
+    "Iannis Xenakis - 2022 - Electroacoustic Works (web)"
+   ]
+  },
+  {
+   "work_id": "3642ac25-cc54-4eef-bcb0-6c02b504c37c",
+   "title": "La Légende d’Eer",
+   "releases": [
+    "Iannis Xenakis - 2022 - Electroacoustic Works (web)"
+   ]
+  },
+  {
+   "work_id": "8fd3e0e4-14c5-4334-aef0-28335d11dfd9",
+   "title": "Taurhiphanie",
+   "releases": [
+    "Iannis Xenakis - 2022 - Electroacoustic Works (web)"
+   ]
+  },
+  {
+   "work_id": "b43f84af-c587-4dbb-ab22-81807c5ea482",
+   "title": "Voyage absolu des Unari vers Andromède",
+   "releases": [
+    "Iannis Xenakis - 2022 - Electroacoustic Works (web)"
+   ]
+  },
+  {
+   "work_id": "f71c3cbc-4cae-4d6e-b3b3-94ba0b1c5e06",
+   "title": "GENDY3",
+   "releases": [
+    "Iannis Xenakis - 2022 - Electroacoustic Works (web)"
+   ]
+  },
+  {
+   "work_id": "14e748de-59e9-40ba-a4c9-144f31a45976",
+   "title": "S.709",
+   "releases": [
+    "Iannis Xenakis - 2022 - Electroacoustic Works (web)"
+   ]
+  },
+  {
+   "work_id": "b674740a-5051-4433-b3ac-59a1ae9b2df2",
+   "title": "Burgundy Walk (aka Globetrotter)",
+   "releases": [
+    "John Coltrane - Complete Studio Sessions with Johnny Hodges (2004, Definitive)"
+   ]
+  },
+  {
+   "work_id": "2400c4d2-1bc7-3e06-a406-32dd7556fc2a",
+   "title": "On the Sunny Side of the Street",
+   "releases": [
+    "John Coltrane - Complete Studio Sessions with Johnny Hodges (2004, Definitive)"
+   ]
+  },
+  {
+   "work_id": "03f8aeff-4d3e-4a8e-aae4-204ee512dce2",
+   "title": "Sweet as Bear Meat",
+   "releases": [
+    "John Coltrane - Complete Studio Sessions with Johnny Hodges (2004, Definitive)"
+   ]
+  },
+  {
+   "work_id": "afd47b70-ce0f-4dc5-bbed-b4fda76c1a11",
+   "title": "Madam Butterfly",
+   "releases": [
+    "John Coltrane - Complete Studio Sessions with Johnny Hodges (2004, Definitive)"
+   ]
+  },
+  {
+   "work_id": "9b562257-079e-34fd-9658-f1b13b11fe61",
+   "title": "Warm Valley",
+   "releases": [
+    "John Coltrane - Complete Studio Sessions with Johnny Hodges (2004, Definitive)"
+   ]
+  },
+  {
+   "work_id": "9a897ada-7b52-4704-9fd4-4a4e10d83b3b",
+   "title": "Used to Be Duke",
+   "releases": [
+    "John Coltrane - Complete Studio Sessions with Johnny Hodges (2004, Definitive)"
+   ]
+  },
+  {
+   "work_id": "74df7931-9ee4-355f-a9ad-917e06faa2da",
+   "title": "All of Me",
+   "releases": [
+    "John Coltrane - Complete Studio Sessions with Johnny Hodges (2004, Definitive)"
+   ]
+  },
+  {
+   "work_id": "84322430-c1e0-3720-9074-db3743edb6af",
+   "title": "Autumn in New York",
+   "releases": [
+    "John Coltrane - Complete Studio Sessions with Johnny Hodges (2004, Definitive)"
+   ]
+  },
+  {
+   "work_id": "4be4fefe-37e1-44d3-9c3c-f3cff5334883",
+   "title": "If You Were Mine",
+   "releases": [
+    "John Coltrane - Complete Studio Sessions with Johnny Hodges (2004, Definitive)"
+   ]
+  },
+  {
+   "work_id": "54c0e90d-5493-4282-93f3-34eb984c5b9a",
+   "title": "Poor Butterfly",
+   "releases": [
+    "John Coltrane - Complete Studio Sessions with Johnny Hodges (2004, Definitive)"
+   ]
+  },
+  {
+   "work_id": "f211762d-0892-3cc6-b535-cc43e66d3818",
+   "title": "Smoke Gets in Your Eyes",
+   "releases": [
+    "John Coltrane - Complete Studio Sessions with Johnny Hodges (2004, Definitive)"
+   ]
+  },
+  {
+   "work_id": "6a020627-bce6-3b6a-a802-96d923a84f3c",
+   "title": "Sweet Lorraine",
+   "releases": [
+    "John Coltrane - Complete Studio Sessions with Johnny Hodges (2004, Definitive)"
+   ]
+  },
+  {
+   "work_id": "fa454a29-a5ad-3262-8fb5-07f5557e2406",
+   "title": "Time on My Hands",
+   "releases": [
+    "John Coltrane - Complete Studio Sessions with Johnny Hodges (2004, Definitive)"
+   ]
+  },
+  {
+   "work_id": "9203c135-077a-4936-b802-a360a6d4e4eb",
+   "title": "Skokiaan",
+   "releases": [
+    "John Coltrane - Complete Studio Sessions with Johnny Hodges (2004, Definitive)"
+   ]
+  },
+  {
+   "work_id": "09829686-05af-47ec-a04b-23839814f97c",
+   "title": "Violin Sonata no. 1 in G major: I. Andante",
+   "releases": [
+    "Menuhin, Britten"
+   ]
+  },
+  {
+   "work_id": "daf7dbd9-0e17-4218-985f-6841ea0cb403",
+   "title": "Violin Sonata no. 1 in G major: II. Allegro",
+   "releases": [
+    "Menuhin, Britten"
+   ]
+  },
+  {
+   "work_id": "c75f9180-dd10-4fc8-9cf8-59eab247aee5",
+   "title": "Sonate pour violon et piano en sol mineur, L. 140 : I. Allegro vivo",
+   "releases": [
+    "Menuhin, Britten"
+   ]
+  },
+  {
+   "work_id": "e409d8df-76cb-46a9-988a-9304cdd4eec3",
+   "title": "Sonate pour violon et piano en sol mineur, L. 140 : II. Intermède: fantasque et léger",
+   "releases": [
+    "Menuhin, Britten"
+   ]
+  },
+  {
+   "work_id": "7bcb31db-ff18-4030-b6b1-c9822c46a46c",
+   "title": "Sonate pour violon et piano en sol mineur, L. 140 : III. Finale: très animé",
+   "releases": [
+    "Menuhin, Britten"
+   ]
+  },
+  {
+   "work_id": "ef224602-9759-377b-9e24-451e9e678dbc",
+   "title": "Sonata (Duo) for Violin and Piano in A major, op. 162. D. 574: I. Allegro moderato",
+   "releases": [
+    "Menuhin, Britten"
+   ]
+  },
+  {
+   "work_id": "9c2877ac-d03e-3cd2-b58a-13b12b33c297",
+   "title": "Sonata (Duo) for Violin and Piano in A major, op. 162. D. 574: II. Scherzo: Presto. Trio",
+   "releases": [
+    "Menuhin, Britten"
+   ]
+  },
+  {
+   "work_id": "58e3570c-3f04-3cc2-a6a9-911bfa00683f",
+   "title": "Sonata (Duo) for Violin and Piano in A major, op. 162. D. 574: III. Andantino",
+   "releases": [
+    "Menuhin, Britten"
+   ]
+  },
+  {
+   "work_id": "19a2aed1-ae05-36d6-a6f2-e6e64d14161e",
+   "title": "Sonata (Duo) for Violin and Piano in A major, op. 162. D. 574: IV. Allegro vivace",
+   "releases": [
+    "Menuhin, Britten"
+   ]
+  },
+  {
+   "work_id": "44870b66-23c4-4179-9a63-d869ebab4fbe",
+   "title": "Fantasie for Violin and Piano in C major, op. 159, D. 934: I. Andante molto",
+   "releases": [
+    "Menuhin, Britten"
+   ]
+  },
+  {
+   "work_id": "8dd6e08c-7eec-46b6-9683-5b4389b4af41",
+   "title": "Fantasie for Violin and Piano in C major, op. 159, D. 934: II. Allegretto",
+   "releases": [
+    "Menuhin, Britten"
+   ]
+  },
+  {
+   "work_id": "4e43dbfd-30af-4368-9aa0-a8dcc1cd65ae",
+   "title": "Fantasie for Violin and Piano in C major, op. 159, D. 934: III. Andantino",
+   "releases": [
+    "Menuhin, Britten"
+   ]
+  },
+  {
+   "work_id": "99ea94fa-57b1-4bcb-b87a-0a8edff074b3",
+   "title": "Fantasie for Violin and Piano in C major, op. 159, D. 934: IV. Allegro vivace",
+   "releases": [
+    "Menuhin, Britten"
+   ]
+  },
+  {
+   "work_id": "29058041-569c-4a84-afb4-9e1c9a62a2ee",
+   "title": "Fantasie for Violin and Piano in C major, op. 159, D. 934: V. Allegretto",
+   "releases": [
+    "Menuhin, Britten"
+   ]
+  },
+  {
+   "work_id": "11026fad-a3ef-4873-8f71-a613352d305a",
+   "title": "Fantasie for Violin and Piano in C major, op. 159, D. 934: VI. Presto",
+   "releases": [
+    "Menuhin, Britten"
+   ]
+  },
+  {
+   "work_id": "549f586a-2c8b-3316-9736-49f583b0086e",
+   "title": "Concerto for Piano no. 1 in F major, K. 37: I. Allegro",
+   "releases": [
+    "Mozart - The Complete Piano Concertos (Barenboim, English Chamber Orchestra) (1998)"
+   ]
+  },
+  {
+   "work_id": "8d9be5de-94b9-3f9b-aa5a-6e160fd4d100",
+   "title": "Concerto for Piano no. 1 in F major, K. 37: II. Andante",
+   "releases": [
+    "Mozart - The Complete Piano Concertos (Barenboim, English Chamber Orchestra) (1998)"
+   ]
+  },
+  {
+   "work_id": "4b78239d-be32-3d6b-a7cf-36cfcd727a52",
+   "title": "Concerto for Piano no. 1 in F major, K. 37: III. Allegro",
+   "releases": [
+    "Mozart - The Complete Piano Concertos (Barenboim, English Chamber Orchestra) (1998)"
+   ]
+  },
+  {
+   "work_id": "391f07fc-0151-3dbf-a611-b20fa18bf02f",
+   "title": "Concerto for Piano no. 2 in B-flat major, K. 39: I. Allegro spiritoso",
+   "releases": [
+    "Mozart - The Complete Piano Concertos (Barenboim, English Chamber Orchestra) (1998)"
+   ]
+  },
+  {
+   "work_id": "85aef8d7-0f63-3fad-b977-40e0d66d37af",
+   "title": "Concerto for Piano no. 2 in B-flat major, K. 39: II. Andante staccato",
+   "releases": [
+    "Mozart - The Complete Piano Concertos (Barenboim, English Chamber Orchestra) (1998)"
+   ]
+  },
+  {
+   "work_id": "fd80f13e-eea9-39ee-9598-c6523bb2772c",
+   "title": "Concerto for Piano no. 2 in B-flat major, K. 39: III. Allegro molto",
+   "releases": [
+    "Mozart - The Complete Piano Concertos (Barenboim, English Chamber Orchestra) (1998)"
+   ]
+  },
+  {
+   "work_id": "8883737b-240c-3566-971e-463426feaebb",
+   "title": "Concerto for Piano no. 3 in D major, K. 40: I. Allegro maestoso",
+   "releases": [
+    "Mozart - The Complete Piano Concertos (Barenboim, English Chamber Orchestra) (1998)"
+   ]
+  },
+  {
+   "work_id": "39f99252-98f4-3aa4-9bf5-d45928ff6033",
+   "title": "Concerto for Piano no. 3 in D major, K. 40: II. Andante",
+   "releases": [
+    "Mozart - The Complete Piano Concertos (Barenboim, English Chamber Orchestra) (1998)"
+   ]
+  },
+  {
+   "work_id": "a45c4638-6cbc-3e66-a7ec-b8160c6c10b7",
+   "title": "Concerto for Piano no. 3 in D major, K. 40: III. Presto",
+   "releases": [
+    "Mozart - The Complete Piano Concertos (Barenboim, English Chamber Orchestra) (1998)"
+   ]
+  },
+  {
+   "work_id": "b9935e8e-5c0a-3b80-bae4-8a808431cd14",
+   "title": "Concerto for Piano no. 4 in G major, K. 41: I. Allegro",
+   "releases": [
+    "Mozart - The Complete Piano Concertos (Barenboim, English Chamber Orchestra) (1998)"
+   ]
+  },
+  {
+   "work_id": "f8977953-e455-399c-a36e-d827922b8ed8",
+   "title": "Concerto for Piano no. 4 in G major, K. 41: II. Andante",
+   "releases": [
+    "Mozart - The Complete Piano Concertos (Barenboim, English Chamber Orchestra) (1998)"
+   ]
+  },
+  {
+   "work_id": "f6125ce6-adb6-3b32-a52a-84f9f6657974",
+   "title": "Concerto for Piano no. 4 in G major, K. 41: III. Allegro molto",
+   "releases": [
+    "Mozart - The Complete Piano Concertos (Barenboim, English Chamber Orchestra) (1998)"
+   ]
+  },
+  {
+   "work_id": "584194aa-5f05-3b5d-9cd1-99a106e0f88f",
+   "title": "Concerto for Piano and Orchestra no. 5 in D major, K. 175: I. Allegro",
+   "releases": [
+    "Mozart - The Complete Piano Concertos (Barenboim, English Chamber Orchestra) (1998)"
+   ]
+  },
+  {
+   "work_id": "25b83328-14e5-3e22-9093-6a2db2a55a18",
+   "title": "Concerto for Piano and Orchestra no. 5 in D major, K. 175: II. Andante ma un poco adagio",
+   "releases": [
+    "Mozart - The Complete Piano Concertos (Barenboim, English Chamber Orchestra) (1998)"
+   ]
+  },
+  {
+   "work_id": "fc5a2f21-b86c-3965-b1eb-f3619be93898",
+   "title": "Concerto for Piano and Orchestra no. 5 in D major, K. 175: III. Allegro",
+   "releases": [
+    "Mozart - The Complete Piano Concertos (Barenboim, English Chamber Orchestra) (1998)"
+   ]
+  },
+  {
+   "work_id": "02495148-b249-361b-8e3f-2bcfd752305f",
+   "title": "Concerto for Piano and Orchestra no. 6 in B-flat major, K. 238: I. Allegro aperto",
+   "releases": [
+    "Mozart - The Complete Piano Concertos (Barenboim, English Chamber Orchestra) (1998)"
+   ]
+  },
+  {
+   "work_id": "501ab5e3-15bb-3db9-b39b-5a7b1802959f",
+   "title": "Concerto for Piano and Orchestra no. 6 in B-flat major, K. 238: II. Andante un poco adagio",
+   "releases": [
+    "Mozart - The Complete Piano Concertos (Barenboim, English Chamber Orchestra) (1998)"
+   ]
+  },
+  {
+   "work_id": "4fbc74a1-ed03-340b-9efd-063321993e9a",
+   "title": "Concerto for Piano and Orchestra no. 6 in B-flat major, K. 238: III. Rondeau. Allegro",
+   "releases": [
+    "Mozart - The Complete Piano Concertos (Barenboim, English Chamber Orchestra) (1998)"
+   ]
+  },
+  {
+   "work_id": "c256c4a9-d482-3c1e-8cbf-96e1bf89fa6e",
+   "title": "Concerto for Piano and Orchestra no. 8 in C major, K. 246 “Lutzow”: I. Allegro aperto",
+   "releases": [
+    "Mozart - The Complete Piano Concertos (Barenboim, English Chamber Orchestra) (1998)"
+   ]
+  },
+  {
+   "work_id": "fb289d44-3a80-37e4-8337-17863e2f9f38",
+   "title": "Concerto for Piano and Orchestra no. 8 in C major, K. 246 “Lutzow”: II. Andante",
+   "releases": [
+    "Mozart - The Complete Piano Concertos (Barenboim, English Chamber Orchestra) (1998)"
+   ]
+  },
+  {
+   "work_id": "1a705aa4-187a-3f91-8af9-7e23d4400a7c",
+   "title": "Concerto for Piano and Orchestra no. 8 in C major, K. 246 “Lutzow”: III. Rondeau. Tempo di menuetto",
+   "releases": [
+    "Mozart - The Complete Piano Concertos (Barenboim, English Chamber Orchestra) (1998)"
+   ]
+  },
+  {
+   "work_id": "ba2dd89e-e065-3d33-a866-65e7e1d4f235",
+   "title": "Concerto for Piano no. 9 in E-flat major, K. 271 “Jenamy”: I. Allegro",
+   "releases": [
+    "Mozart - The Complete Piano Concertos (Barenboim, English Chamber Orchestra) (1998)"
+   ]
+  },
+  {
+   "work_id": "3caf63f9-771b-3a1e-a3ee-6c3165d29543",
+   "title": "Concerto for Piano no. 9 in E-flat major, K. 271 “Jenamy”: II. Andantino",
+   "releases": [
+    "Mozart - The Complete Piano Concertos (Barenboim, English Chamber Orchestra) (1998)"
+   ]
+  },
+  {
+   "work_id": "2ee7b29c-c6d4-3d61-90af-6661d6c2472e",
+   "title": "Concerto for Piano no. 9 in E-flat major, K. 271 “Jenamy”: III. Rondeau. Presto – Adagio & Menuetto. Cantabile – Tempo primo",
+   "releases": [
+    "Mozart - The Complete Piano Concertos (Barenboim, English Chamber Orchestra) (1998)"
+   ]
+  },
+  {
+   "work_id": "5f425cc9-d3ac-32c3-8b15-81e01ea9f77e",
+   "title": "Concerto for Piano and Orchestra no. 25 in C major, K. 503: I. Allegro maestoso",
+   "releases": [
+    "Mozart - The Complete Piano Concertos (Barenboim, English Chamber Orchestra) (1998)"
+   ]
+  },
+  {
+   "work_id": "03333ce7-5d1d-37d1-b10a-4b3a7adeccd9",
+   "title": "Concerto for Piano and Orchestra no. 25 in C major, K. 503: II. Andante",
+   "releases": [
+    "Mozart - The Complete Piano Concertos (Barenboim, English Chamber Orchestra) (1998)"
+   ]
+  },
+  {
+   "work_id": "9aa524b0-109d-32b9-8ec9-633f84c875bf",
+   "title": "Concerto for Piano and Orchestra no. 25 in C major, K. 503: III. (Allegretto)",
+   "releases": [
+    "Mozart - The Complete Piano Concertos (Barenboim, English Chamber Orchestra) (1998)"
+   ]
+  },
+  {
+   "work_id": "0028e80b-25e7-3e0f-82a7-4705383ce4cd",
+   "title": "Concerto for Piano no. 11 in F major, K. 387a/413: I. Allegro",
+   "releases": [
+    "Mozart - The Complete Piano Concertos (Barenboim, English Chamber Orchestra) (1998)"
+   ]
+  },
+  {
+   "work_id": "fdad19ef-c219-37cb-9d82-0ab99a2e1bdd",
+   "title": "Concerto for Piano no. 11 in F major, K. 387a/413: II. Larghetto",
+   "releases": [
+    "Mozart - The Complete Piano Concertos (Barenboim, English Chamber Orchestra) (1998)"
+   ]
+  },
+  {
+   "work_id": "ce14f9b9-4366-32d2-83d2-c6da606d479e",
+   "title": "Concerto for Piano no. 11 in F major, K. 387a/413: III. Tempo di menuetto",
+   "releases": [
+    "Mozart - The Complete Piano Concertos (Barenboim, English Chamber Orchestra) (1998)"
+   ]
+  },
+  {
+   "work_id": "bd241d28-80f6-3993-a00e-71dbc73067d3",
+   "title": "Concerto for Piano no. 13 in C major, K. 387b/415: I. Allegro",
+   "releases": [
+    "Mozart - The Complete Piano Concertos (Barenboim, English Chamber Orchestra) (1998)"
+   ]
+  },
+  {
+   "work_id": "b13bd74b-1add-308f-b22d-4cc5515e4a3b",
+   "title": "Concerto for Piano no. 13 in C major, K. 387b/415: II. Andante",
+   "releases": [
+    "Mozart - The Complete Piano Concertos (Barenboim, English Chamber Orchestra) (1998)"
+   ]
+  },
+  {
+   "work_id": "9adde7c6-f980-3b8f-ba65-b4ec7f29cc2e",
+   "title": "Concerto for Piano no. 13 in C major, K. 387b/415: III. Rondeau. Allegro",
+   "releases": [
+    "Mozart - The Complete Piano Concertos (Barenboim, English Chamber Orchestra) (1998)"
+   ]
+  },
+  {
+   "work_id": "d1e99679-9c6d-3434-a67f-45524a2b3883",
+   "title": "Concerto for Piano no. 14 in E‐flat major, K. 449 “First Ployer”: I. Allegro vivace",
+   "releases": [
+    "Mozart - The Complete Piano Concertos (Barenboim, English Chamber Orchestra) (1998)"
+   ]
+  },
+  {
+   "work_id": "cfc41ea3-593b-393c-8e45-f42ebeb6c85e",
+   "title": "Concerto for Piano no. 14 in E‐flat major, K. 449 “First Ployer”: II. Andantino",
+   "releases": [
+    "Mozart - The Complete Piano Concertos (Barenboim, English Chamber Orchestra) (1998)"
+   ]
+  },
+  {
+   "work_id": "b6c21a38-72e3-3b46-a522-d0c412d00567",
+   "title": "Concerto for Piano no. 14 in E‐flat major, K. 449 “First Ployer”: III. Allegro ma non troppo",
+   "releases": [
+    "Mozart - The Complete Piano Concertos (Barenboim, English Chamber Orchestra) (1998)"
+   ]
+  },
+  {
+   "work_id": "38b61b79-feb2-3174-8e4f-08527762f10f",
+   "title": "Concerto for Piano and Orchestra no. 15 in B-flat major, K. 450: I. Allegro",
+   "releases": [
+    "Mozart - The Complete Piano Concertos (Barenboim, English Chamber Orchestra) (1998)"
+   ]
+  },
+  {
+   "work_id": "26899b6d-d561-366e-a221-aa11e9001ad3",
+   "title": "Concerto for Piano and Orchestra no. 15 in B-flat major, K. 450: II. [Andante]",
+   "releases": [
+    "Mozart - The Complete Piano Concertos (Barenboim, English Chamber Orchestra) (1998)"
+   ]
+  },
+  {
+   "work_id": "21859d1a-0bf2-3c17-8c43-a447a0aab29e",
+   "title": "Concerto for Piano and Orchestra no. 15 in B-flat major, K. 450: III. Allegro",
+   "releases": [
+    "Mozart - The Complete Piano Concertos (Barenboim, English Chamber Orchestra) (1998)"
+   ]
+  },
+  {
+   "work_id": "58d966e9-4af4-36ee-b9d1-a4a3f4696d15",
+   "title": "Concerto for Piano no. 16 in D major, K. 451: I. Allegro assai",
+   "releases": [
+    "Mozart - The Complete Piano Concertos (Barenboim, English Chamber Orchestra) (1998)"
+   ]
+  },
+  {
+   "work_id": "11f1af3a-cef5-307e-a530-f78d857f265d",
+   "title": "Concerto for Piano no. 16 in D major, K. 451: II. Andante",
+   "releases": [
+    "Mozart - The Complete Piano Concertos (Barenboim, English Chamber Orchestra) (1998)"
+   ]
+  },
+  {
+   "work_id": "6aaac4ba-8c70-3b51-815d-20754063e2ea",
+   "title": "Concerto for Piano no. 16 in D major, K. 451: III. Rondo. Allegro di molto",
+   "releases": [
+    "Mozart - The Complete Piano Concertos (Barenboim, English Chamber Orchestra) (1998)"
+   ]
+  },
+  {
+   "work_id": "284d8abb-b9c4-3c0b-aba9-6a77ab22630e",
+   "title": "Concerto for Piano no. 17 in G major, K. 453 \"Second Ployer\": I. Allegro",
+   "releases": [
+    "Mozart - The Complete Piano Concertos (Barenboim, English Chamber Orchestra) (1998)"
+   ]
+  },
+  {
+   "work_id": "6884716f-132a-3956-9428-a9a25ac4e9e2",
+   "title": "Concerto for Piano no. 17 in G major, K. 453 \"Second Ployer\": II. Andante",
+   "releases": [
+    "Mozart - The Complete Piano Concertos (Barenboim, English Chamber Orchestra) (1998)"
+   ]
+  },
+  {
+   "work_id": "906604e0-7355-30dc-8e77-d2532532d43a",
+   "title": "Concerto for Piano no. 17 in G major, K. 453 \"Second Ployer\": III. Allegretto & Finale. Presto",
+   "releases": [
+    "Mozart - The Complete Piano Concertos (Barenboim, English Chamber Orchestra) (1998)"
+   ]
+  },
+  {
+   "work_id": "1e6b6aeb-ab28-36f4-8f6c-c6b6b7dcc400",
+   "title": "Concerto for Piano no. 26 in D major, K. 537 “Coronation”: I. Allegro",
+   "releases": [
+    "Mozart - The Complete Piano Concertos (Barenboim, English Chamber Orchestra) (1998)"
+   ]
+  },
+  {
+   "work_id": "3a5dd09c-3437-3ab5-911f-f6431d382896",
+   "title": "Concerto for Piano no. 26 in D major, K. 537 “Coronation”: II. Larghetto",
+   "releases": [
+    "Mozart - The Complete Piano Concertos (Barenboim, English Chamber Orchestra) (1998)"
+   ]
+  },
+  {
+   "work_id": "5c7966bd-e4f8-3e20-8604-d86f66006a14",
+   "title": "Concerto for Piano no. 26 in D major, K. 537 “Coronation”: III. Allegretto",
+   "releases": [
+    "Mozart - The Complete Piano Concertos (Barenboim, English Chamber Orchestra) (1998)"
+   ]
+  },
+  {
+   "work_id": "07566a5b-f584-3110-8273-d99318ea2bfe",
+   "title": "Concerto for Piano no. 18 in B-flat major, K. 456 \"Paradis\": I. Allegro vivace",
+   "releases": [
+    "Mozart - The Complete Piano Concertos (Barenboim, English Chamber Orchestra) (1998)"
+   ]
+  },
+  {
+   "work_id": "4f525a35-05a8-3d75-af59-748fe6911de6",
+   "title": "Concerto for Piano no. 18 in B-flat major, K. 456 \"Paradis\": II. Andante un poco sostenuto",
+   "releases": [
+    "Mozart - The Complete Piano Concertos (Barenboim, English Chamber Orchestra) (1998)"
+   ]
+  },
+  {
+   "work_id": "8c515aee-f24e-32fa-baf7-b1ded5ef3e70",
+   "title": "Concerto for Piano no. 18 in B-flat major, K. 456 \"Paradis\": III. Allegro vivace",
+   "releases": [
+    "Mozart - The Complete Piano Concertos (Barenboim, English Chamber Orchestra) (1998)"
+   ]
+  },
+  {
+   "work_id": "32ddffd9-81bf-392b-9ef2-8aa050e0df76",
+   "title": "Concerto for Piano and Orchestra no. 19 in F major, K. 459: I. Allegro",
+   "releases": [
+    "Mozart - The Complete Piano Concertos (Barenboim, English Chamber Orchestra) (1998)"
+   ]
+  },
+  {
+   "work_id": "f25b53ba-b06e-39fb-890c-6ddb3c7c650c",
+   "title": "Concerto for Piano and Orchestra no. 19 in F major, K. 459: II. Allegretto",
+   "releases": [
+    "Mozart - The Complete Piano Concertos (Barenboim, English Chamber Orchestra) (1998)"
+   ]
+  },
+  {
+   "work_id": "049deb96-94d8-3e13-a598-16932a22fbba",
+   "title": "Concerto for Piano and Orchestra no. 19 in F major, K. 459: III. Allegro assai",
+   "releases": [
+    "Mozart - The Complete Piano Concertos (Barenboim, English Chamber Orchestra) (1998)"
+   ]
+  },
+  {
+   "work_id": "683d6bd2-ffcc-353c-b49f-cea884f6ce48",
+   "title": "Concerto for Piano no. 24 in C minor, K. 491: I. Allegro",
+   "releases": [
+    "Mozart - The Complete Piano Concertos (Barenboim, English Chamber Orchestra) (1998)"
+   ]
+  },
+  {
+   "work_id": "b20573a1-af85-3ba9-a445-9884513f87bd",
+   "title": "Concerto for Piano no. 24 in C minor, K. 491: II. Larghetto",
+   "releases": [
+    "Mozart - The Complete Piano Concertos (Barenboim, English Chamber Orchestra) (1998)"
+   ]
+  },
+  {
+   "work_id": "dfd88e14-2dea-36c7-aa59-507b5b8de978",
+   "title": "Concerto for Piano no. 24 in C minor, K. 491: III. Allegretto",
+   "releases": [
+    "Mozart - The Complete Piano Concertos (Barenboim, English Chamber Orchestra) (1998)"
+   ]
+  },
+  {
+   "work_id": "95717b5c-c86a-307d-819e-0850d032a797",
+   "title": "Concerto for Piano no. 21 in C major, K. 467: I. Allegro",
+   "releases": [
+    "Mozart - The Complete Piano Concertos (Barenboim, English Chamber Orchestra) (1998)"
+   ]
+  },
+  {
+   "work_id": "d092f540-fadb-34ac-9952-246eaa8f6164",
+   "title": "Concerto for Piano no. 21 in C major, K. 467: II. Andante",
+   "releases": [
+    "Mozart - The Complete Piano Concertos (Barenboim, English Chamber Orchestra) (1998)"
+   ]
+  },
+  {
+   "work_id": "32f22dec-3b01-3335-9ea4-48da5949c854",
+   "title": "Concerto for Piano no. 21 in C major, K. 467: III. Allegro vivace assai",
+   "releases": [
+    "Mozart - The Complete Piano Concertos (Barenboim, English Chamber Orchestra) (1998)"
+   ]
+  },
+  {
+   "work_id": "75518c11-254f-39e9-a7ee-e75ce9e1d9e0",
+   "title": "Concerto for Piano no. 27 in B-flat major, K. 595: I. Allegro",
+   "releases": [
+    "Mozart - The Complete Piano Concertos (Barenboim, English Chamber Orchestra) (1998)"
+   ]
+  },
+  {
+   "work_id": "7b24aa2f-5644-384b-b3e4-40128490174d",
+   "title": "Concerto for Piano no. 27 in B-flat major, K. 595: II. Larghetto",
+   "releases": [
+    "Mozart - The Complete Piano Concertos (Barenboim, English Chamber Orchestra) (1998)"
+   ]
+  },
+  {
+   "work_id": "cb4ef8d5-a1e3-3e49-a5eb-6c712ce3d777",
+   "title": "Concerto for Piano no. 27 in B-flat major, K. 595: III. Rondo. Allegro",
+   "releases": [
+    "Mozart - The Complete Piano Concertos (Barenboim, English Chamber Orchestra) (1998)"
+   ]
+  },
+  {
+   "work_id": "bbde0679-0fb0-3d7d-86f8-f3498932949f",
+   "title": "Concerto for Piano no. 22 in E-flat major, K. 482: I. Allegro",
+   "releases": [
+    "Mozart - The Complete Piano Concertos (Barenboim, English Chamber Orchestra) (1998)"
+   ]
+  },
+  {
+   "work_id": "f5d3e320-47ed-3c78-b8ed-51cc153d692a",
+   "title": "Concerto for Piano no. 22 in E-flat major, K. 482: II. Andante",
+   "releases": [
+    "Mozart - The Complete Piano Concertos (Barenboim, English Chamber Orchestra) (1998)"
+   ]
+  },
+  {
+   "work_id": "8bdf5c1c-1ec3-3259-8143-c64780f3fd67",
+   "title": "Concerto for Piano no. 22 in E-flat major, K. 482: III. Allegro",
+   "releases": [
+    "Mozart - The Complete Piano Concertos (Barenboim, English Chamber Orchestra) (1998)"
+   ]
+  },
+  {
+   "work_id": "9eded82a-e275-34b0-a39d-b4761a586bbb",
+   "title": "Concerto for Piano and Orchestra no. 23 in A major, K. 488: I. Allegro",
+   "releases": [
+    "Mozart - The Complete Piano Concertos (Barenboim, English Chamber Orchestra) (1998)"
+   ]
+  },
+  {
+   "work_id": "c64e2982-1164-3be3-8423-abac3f294b23",
+   "title": "Concerto for Piano and Orchestra no. 23 in A major, K. 488: II. Andante (Adagio)",
+   "releases": [
+    "Mozart - The Complete Piano Concertos (Barenboim, English Chamber Orchestra) (1998)"
+   ]
+  },
+  {
+   "work_id": "95201e70-2a38-30a1-9458-606ad7cff459",
+   "title": "Concerto for Piano and Orchestra no. 23 in A major, K. 488: III. Allegro assai",
+   "releases": [
+    "Mozart - The Complete Piano Concertos (Barenboim, English Chamber Orchestra) (1998)"
+   ]
+  },
+  {
+   "work_id": "1099c7fe-3ffb-44fc-baf3-db917676fe1c",
+   "title": "Raga Piloo",
+   "releases": [
+    "Ravi Shankar - 2012 - The Ravi Shankar Collection/02"
+   ]
+  },
+  {
+   "work_id": "703c7143-418d-468c-a178-648c3e96ae96",
+   "title": "Prabhati",
+   "releases": [
+    "Ravi Shankar - 2012 - The Ravi Shankar Collection/02"
+   ]
+  },
+  {
+   "work_id": "ba704e17-2369-4d08-a363-02fd65fd3b8e",
+   "title": "Concerto for Sitar and Orchestra: I. Raga Khamaj",
+   "releases": [
+    "Ravi Shankar - 2012 - The Ravi Shankar Collection/02"
+   ]
+  },
+  {
+   "work_id": "c2a4ff9e-f4d1-483a-ac68-c7bee7f990bd",
+   "title": "Concerto for Sitar and Orchestra: II. Raga Sindhi Bhairavi",
+   "releases": [
+    "Ravi Shankar - 2012 - The Ravi Shankar Collection/02"
+   ]
+  },
+  {
+   "work_id": "301ef681-9ab1-4af7-b432-580852c338fb",
+   "title": "Concerto for Sitar and Orchestra: III. Raga Adana",
+   "releases": [
+    "Ravi Shankar - 2012 - The Ravi Shankar Collection/02"
+   ]
+  },
+  {
+   "work_id": "872bb6fe-4f2f-42b8-8981-6e28e8b7a3c5",
+   "title": "Concerto for Sitar and Orchestra: IV. Raga Manj Khamaj",
+   "releases": [
+    "Ravi Shankar - 2012 - The Ravi Shankar Collection/02"
+   ]
+  },
+  {
+   "work_id": "29d7af42-936c-49e7-a451-6a8000ce80cf",
+   "title": "Swara‐Kakali",
+   "releases": [
+    "Ravi Shankar - 2012 - The Ravi Shankar Collection/02"
+   ]
+  },
+  {
+   "work_id": "9e7b9c27-ce9b-4ad4-8727-a2348d7ae4cc",
+   "title": "Lalit (Presto)",
+   "releases": [
+    "Ravi Shankar - 2012 - The Ravi Shankar Collection/02"
+   ]
+  },
+  {
+   "work_id": "f3fcce07-89fb-448f-b73b-6173ddd443b7",
+   "title": "Bairagi (Moderato)",
+   "releases": [
+    "Ravi Shankar - 2012 - The Ravi Shankar Collection/02"
+   ]
+  },
+  {
+   "work_id": "061efbbc-439f-4b5d-b137-4772aaf5d7d3",
+   "title": "Yaman Kalyan (Largo noderato)",
+   "releases": [
+    "Ravi Shankar - 2012 - The Ravi Shankar Collection/02"
+   ]
+  },
+  {
+   "work_id": "829e0194-2336-4732-8816-58fd8b6c40fa",
+   "title": "Main Ki Malhar (Allegro)",
+   "releases": [
+    "Ravi Shankar - 2012 - The Ravi Shankar Collection/02"
+   ]
+  },
+  {
+   "work_id": "655f0b42-05b3-3c23-a1a0-7635aa241f40",
+   "title": "Piano Concerto in G minor, op. 33, B. 63: I. Allegro agitato",
+   "releases": [
+    "Schubert Piano Fantasy D760 Wanderer Richter PCM"
+   ]
+  },
+  {
+   "work_id": "9df6d1c8-df76-3ce6-b6ca-e640b5eab766",
+   "title": "Piano Concerto in G minor, op. 33, B. 63: II. Andante sostenuto",
+   "releases": [
+    "Schubert Piano Fantasy D760 Wanderer Richter PCM"
+   ]
+  },
+  {
+   "work_id": "4e158b2d-3898-3933-90f9-20694165e7c1",
+   "title": "Piano Concerto in G minor, op. 33, B. 63: III. Finale: Allegro con fuoco",
+   "releases": [
+    "Schubert Piano Fantasy D760 Wanderer Richter PCM"
+   ]
+  },
+  {
+   "work_id": "8b1ef824-0bf6-31e4-80f3-de3bd3452720",
+   "title": "Fantasy in C major, D. 760 “Wanderer”: I. Allegro con fuoco ma non troppo",
+   "releases": [
+    "Schubert Piano Fantasy D760 Wanderer Richter PCM"
+   ]
+  },
+  {
+   "work_id": "13534377-52b7-3b9b-afb1-5659cdd8ef79",
+   "title": "Fantasy in C major, D. 760 “Wanderer”: II. Adagio",
+   "releases": [
+    "Schubert Piano Fantasy D760 Wanderer Richter PCM"
+   ]
+  },
+  {
+   "work_id": "4de17283-10b4-38f5-8f0f-e33c858688dc",
+   "title": "Fantasy in C major, D. 760 “Wanderer”: III. Presto",
+   "releases": [
+    "Schubert Piano Fantasy D760 Wanderer Richter PCM"
+   ]
+  },
+  {
+   "work_id": "651e1681-8454-31f2-844c-39d51d0c51eb",
+   "title": "Fantasy in C major, D. 760 “Wanderer”: IV. Allegro",
+   "releases": [
+    "Schubert Piano Fantasy D760 Wanderer Richter PCM"
+   ]
+  },
+  {
+   "work_id": "0069eaab-1df5-3c9f-a751-33b4ad831f7a",
+   "title": "Sonata for Piano no. 19 in C minor, D. 958: I. Allegro",
+   "releases": [
+    "Schubert Piano Sonata D958 Richter PCM",
+    "Schubert Piano Sonata D960 Richter PCM"
+   ]
+  },
+  {
+   "work_id": "090ada53-a192-3862-8250-fa291146f674",
+   "title": "Sonata for Piano no. 19 in C minor, D. 958: II. Adagio",
+   "releases": [
+    "Schubert Piano Sonata D958 Richter PCM",
+    "Schubert Piano Sonata D960 Richter PCM"
+   ]
+  },
+  {
+   "work_id": "53f5478f-204e-315d-a778-521a0c26bead",
+   "title": "Sonata for Piano no. 19 in C minor, D. 958: III. Menuetto: Allegro – Trio",
+   "releases": [
+    "Schubert Piano Sonata D958 Richter PCM",
+    "Schubert Piano Sonata D960 Richter PCM"
+   ]
+  },
+  {
+   "work_id": "74352f12-0f4c-3a42-b5a8-b55955f279f3",
+   "title": "Sonata for Piano no. 19 in C minor, D. 958: IV. Allegro",
+   "releases": [
+    "Schubert Piano Sonata D958 Richter PCM",
+    "Schubert Piano Sonata D960 Richter PCM"
+   ]
+  },
+  {
+   "work_id": "a3f1c983-1e58-33cc-a667-21a36dd33f93",
+   "title": "Sonata for Piano no. 21 in B-flat major, D. 960: I. Molto moderato",
+   "releases": [
+    "Schubert Piano Sonata D958 Richter PCM",
+    "Schubert Piano Sonata D960 Richter PCM"
+   ]
+  },
+  {
+   "work_id": "13172930-8fee-3d7c-9064-438e2bcf8e87",
+   "title": "Sonata for Piano no. 21 in B-flat major, D. 960: II. Andante sostenuto",
+   "releases": [
+    "Schubert Piano Sonata D958 Richter PCM",
+    "Schubert Piano Sonata D960 Richter PCM"
+   ]
+  },
+  {
+   "work_id": "2cccdd4b-69b4-38e0-be0d-7af50b984d74",
+   "title": "Sonata for Piano no. 21 in B-flat major, D. 960: III. Scherzo. Allegro vivace con delicatezza",
+   "releases": [
+    "Schubert Piano Sonata D958 Richter PCM",
+    "Schubert Piano Sonata D960 Richter PCM"
+   ]
+  },
+  {
+   "work_id": "20d79a72-c652-3126-b22d-8281a6b1a0fb",
+   "title": "Sonata for Piano no. 21 in B-flat major, D. 960: IV. Allegro ma non troppo",
+   "releases": [
+    "Schubert Piano Sonata D958 Richter PCM",
+    "Schubert Piano Sonata D960 Richter PCM"
+   ]
+  },
+  {
+   "work_id": "330e3d76-ee05-4da7-b4e1-b1b99fba3464",
+   "title": "Drei Orchesterstücke, op. 6: I. Präludium",
+   "releases": [
+    "The Essential Alban Berg/CD 1/Three Orchestral Pieces, Op.6"
+   ]
+  },
+  {
+   "work_id": "1674d0a8-f7f6-4da4-88ce-963b4204c1fc",
+   "title": "Drei Orchesterstücke, op. 6: II. Reigen",
+   "releases": [
+    "The Essential Alban Berg/CD 1/Three Orchestral Pieces, Op.6"
+   ]
+  },
+  {
+   "work_id": "029c35c1-2d79-4dea-87bd-9e28c43503ae",
+   "title": "Drei Orchesterstücke, op. 6: III. Marsch",
+   "releases": [
+    "The Essential Alban Berg/CD 1/Three Orchestral Pieces, Op.6"
+   ]
+  },
+  {
+   "work_id": "b4fb7274-f8d2-407c-a182-dca65ea56a19",
+   "title": "Hungarian Dances for orchestra, WoO 1, Book 1, no. 1 in G minor: Allegro molto",
+   "releases": [
+    "The complete set of Hungarian Dances by J. Brahms"
+   ]
+  },
+  {
+   "work_id": "64e062d1-1647-4d9d-9b86-c0ba0b5ed09c",
+   "title": "Hungarian Dances for orchestra, WoO 1, Book 1, no. 2 in D minor: Allegro non assai - Vivace",
+   "releases": [
+    "The complete set of Hungarian Dances by J. Brahms"
+   ]
+  },
+  {
+   "work_id": "ae318b73-4426-4e47-8db4-b4351cd886b0",
+   "title": "Hungarian Dances for orchestra, WoO 1, Book 1, no. 3 in F major: Allegretto",
+   "releases": [
+    "The complete set of Hungarian Dances by J. Brahms"
+   ]
+  },
+  {
+   "work_id": "160e51cc-18a7-4ae1-90d7-4793010c4a06",
+   "title": "Hungarian Dances for orchestra, WoO 1, Book 1, no. 4 in F-sharp minor: Poco sostenuto - Vivace",
+   "releases": [
+    "The complete set of Hungarian Dances by J. Brahms"
+   ]
+  },
+  {
+   "work_id": "e822f7b1-8cd7-4e34-9950-d13f9f911cda",
+   "title": "Hungarian Dances for orchestra, WoO 1, Book 1, No. 5 in G minor: Allegro - Vivace",
+   "releases": [
+    "The complete set of Hungarian Dances by J. Brahms"
+   ]
+  },
+  {
+   "work_id": "92a73eef-0a51-4ee8-8157-2e65de2d65f9",
+   "title": "Hungarian Dances for orchestra, WoO 1, Book 2, no. 6 in D major: Vivace",
+   "releases": [
+    "The complete set of Hungarian Dances by J. Brahms"
+   ]
+  },
+  {
+   "work_id": "af55989f-4d43-4a0a-90f7-e1420417f874",
+   "title": "Hungarian Dances for orchestra, WoO 1, Book 2, no. 7 in F major: Allegretto - Vivo",
+   "releases": [
+    "The complete set of Hungarian Dances by J. Brahms"
+   ]
+  },
+  {
+   "work_id": "f036c584-60a0-433a-990f-d6e7bfce9b36",
+   "title": "Hungarian Dances for orchestra, WoO 1, Book 2, no. 8 in A minor: Presto",
+   "releases": [
+    "The complete set of Hungarian Dances by J. Brahms"
+   ]
+  },
+  {
+   "work_id": "e527074e-1066-422f-a0fa-13887e580fbf",
+   "title": "Hungarian Dances for orchestra, WoO 1, Book 2, no. 9 in E minor: Allegro ma non troppo",
+   "releases": [
+    "The complete set of Hungarian Dances by J. Brahms"
+   ]
+  },
+  {
+   "work_id": "ec753fb9-bd9f-4043-a133-77bd6264c131",
+   "title": "Hungarian Dances for orchestra, WoO 1, Book 2, no. 10 in F major: Presto",
+   "releases": [
+    "The complete set of Hungarian Dances by J. Brahms"
+   ]
+  },
+  {
+   "work_id": "e0bfe30c-9d24-430b-81cb-4dfbd0fa6f2d",
+   "title": "Hungarian Dances for orchestra, WoO 1, Book 3, no. 11 in D minor: Poco andante",
+   "releases": [
+    "The complete set of Hungarian Dances by J. Brahms"
+   ]
+  },
+  {
+   "work_id": "92db3956-3520-43ba-a245-6c5d121c5873",
+   "title": "Hungarian Dances for orchestra, WoO 1, Book 3, no. 12 in D minor: Presto",
+   "releases": [
+    "The complete set of Hungarian Dances by J. Brahms"
+   ]
+  },
+  {
+   "work_id": "ba03c303-dcb2-4c30-a6c3-d7689d8a167f",
+   "title": "Hungarian Dances for orchestra, WoO 1, Book 3, no. 13 in D major: Andantino grazioso - Vivace",
+   "releases": [
+    "The complete set of Hungarian Dances by J. Brahms"
+   ]
+  },
+  {
+   "work_id": "17716a3c-8032-4f8f-a813-89d64ed569e1",
+   "title": "Hungarian Dances for orchestra, WoO 1, Book 3, no. 14 in D minor: Un poco andante",
+   "releases": [
+    "The complete set of Hungarian Dances by J. Brahms"
+   ]
+  },
+  {
+   "work_id": "48194c72-8782-435a-a5f1-3378755450e3",
+   "title": "Hungarian Dances for orchestra, WoO 1, Book 3, no. 15 in B-flat major: Allegretto grazioso",
+   "releases": [
+    "The complete set of Hungarian Dances by J. Brahms"
+   ]
+  },
+  {
+   "work_id": "b95b9c0e-fb2a-40bf-beb3-b78d145dc7e9",
+   "title": "Hungarian Dances for orchestra, WoO 1, Book 3, no. 16 in F minor: Con moto",
+   "releases": [
+    "The complete set of Hungarian Dances by J. Brahms"
+   ]
+  },
+  {
+   "work_id": "ae572179-13f4-498a-83da-60f8c88d3301",
+   "title": "Hungarian Dances for orchestra, WoO 1, Book 4, no. 17 in F-sharp minor: Andantino - Vivace",
+   "releases": [
+    "The complete set of Hungarian Dances by J. Brahms"
+   ]
+  },
+  {
+   "work_id": "61b12882-092a-406a-9d29-942b6ba337b8",
+   "title": "Hungarian Dances for orchestra, WoO 1, Book 4, no. 18 in D major: Molto vivace",
+   "releases": [
+    "The complete set of Hungarian Dances by J. Brahms"
+   ]
+  },
+  {
+   "work_id": "3e3565ea-bc7f-4d1d-b528-90e09afb5b22",
+   "title": "Hungarian Dances for orchestra, WoO 1, Book 4, no. 19 in B minor: Allegretto",
+   "releases": [
+    "The complete set of Hungarian Dances by J. Brahms"
+   ]
+  },
+  {
+   "work_id": "aaf56d2b-9bd4-4e53-9811-e451d29f5944",
+   "title": "Hungarian Dances for orchestra, WoO 1, Book 4, no. 20 in E minor: Poco allegretto - Vivace",
+   "releases": [
+    "The complete set of Hungarian Dances by J. Brahms"
+   ]
+  },
+  {
+   "work_id": "60639b3a-c43f-46ec-848a-f311a99b2f57",
+   "title": "Hungarian Dances for orchestra, WoO 1, Book 4, no. 21 in E minor: Vivace",
+   "releases": [
+    "The complete set of Hungarian Dances by J. Brahms"
+   ]
+  },
+  {
+   "work_id": "324ac490-8aff-42f6-badc-ce695218d73a",
+   "title": "Metastaseis B",
+   "releases": [
+    "Xenakis - Orchestral Works Vol. I-V (Arturo Tamayo) 320/Vol.5 - 2008"
+   ]
+  },
+  {
+   "work_id": "0f820c02-ce24-4dfe-883e-927adb5f0abe",
+   "title": "Pithoprakta",
+   "releases": [
+    "Xenakis - Orchestral Works Vol. I-V (Arturo Tamayo) 320/Vol.5 - 2008"
+   ]
+  },
+  {
+   "work_id": "9b9dfc35-030d-40f3-9bdc-309d23bf4705",
+   "title": "ST/48",
+   "releases": [
+    "Xenakis - Orchestral Works Vol. I-V (Arturo Tamayo) 320/Vol.5 - 2008"
+   ]
+  },
+  {
+   "work_id": "ba83ddc3-13aa-4acc-ad77-cd22be4698a9",
+   "title": "Achorripsis",
+   "releases": [
+    "Xenakis - Orchestral Works Vol. I-V (Arturo Tamayo) 320/Vol.5 - 2008"
+   ]
+  },
+  {
+   "work_id": "f98c14b4-5bc6-4081-b347-3740cadcd697",
+   "title": "Syrmos",
+   "releases": [
+    "Xenakis - Orchestral Works Vol. I-V (Arturo Tamayo) 320/Vol.5 - 2008"
+   ]
+  },
+  {
+   "work_id": "7b796e46-0f32-405c-a532-cac79b7f4370",
+   "title": "Hiketides",
+   "releases": [
+    "Xenakis - Orchestral Works Vol. I-V (Arturo Tamayo) 320/Vol.5 - 2008"
+   ]
+  },
+  {
+   "work_id": "1b42305d-c9a0-3088-9493-0f4be3b7e601",
+   "title": "Piano Sonata no. 2, S. 88 “Concord, Mass., 1840–60”: I. Emerson. Slowly",
+   "releases": [
+    "[2004, CDA67469] IVES Concord Sonata BARBER Piano Sonata [CD, album]"
+   ]
+  },
+  {
+   "work_id": "54738f3f-a84c-3649-9113-ea8ff3159b0c",
+   "title": "Piano Sonata no. 2, S. 88 “Concord, Mass., 1840–60”: II. Hawthorne. Very fast",
+   "releases": [
+    "[2004, CDA67469] IVES Concord Sonata BARBER Piano Sonata [CD, album]"
+   ]
+  },
+  {
+   "work_id": "ece9633e-3f84-354b-a12a-4e80b9e9180c",
+   "title": "Piano Sonata no. 2, S. 88 “Concord, Mass., 1840–60”: III. The Alcotts. Moderately",
+   "releases": [
+    "[2004, CDA67469] IVES Concord Sonata BARBER Piano Sonata [CD, album]"
+   ]
+  },
+  {
+   "work_id": "36b09a06-99c9-36e8-bc2a-819978565f1f",
+   "title": "Piano Sonata no. 2, S. 88 “Concord, Mass., 1840–60”: IV. Thoreau. Starting slowly and quietly",
+   "releases": [
+    "[2004, CDA67469] IVES Concord Sonata BARBER Piano Sonata [CD, album]"
+   ]
+  },
+  {
+   "work_id": "42a571b1-7c20-3718-91a2-77ab50cf002f",
+   "title": "Sonata for Piano, op. 26: I. Allegro energico - Un poco meno mosso - Tempo I",
+   "releases": [
+    "[2004, CDA67469] IVES Concord Sonata BARBER Piano Sonata [CD, album]"
+   ]
+  },
+  {
+   "work_id": "134932cc-1fe7-3418-89b1-442afd52c6c3",
+   "title": "Sonata for Piano, op. 26: II. Allegro vivace e leggero",
+   "releases": [
+    "[2004, CDA67469] IVES Concord Sonata BARBER Piano Sonata [CD, album]"
+   ]
+  },
+  {
+   "work_id": "d895e18f-7ac4-3599-9580-fd26c827ad74",
+   "title": "Sonata for Piano, op. 26: III. Adagio mesto",
+   "releases": [
+    "[2004, CDA67469] IVES Concord Sonata BARBER Piano Sonata [CD, album]"
+   ]
+  },
+  {
+   "work_id": "0873aec1-b5c6-3c8d-9bad-1a02732376d1",
+   "title": "Sonata for Piano, op. 26: IV. Fuga. Allegro con spirito",
+   "releases": [
+    "[2004, CDA67469] IVES Concord Sonata BARBER Piano Sonata [CD, album]"
+   ]
+  }
+ ]
+}

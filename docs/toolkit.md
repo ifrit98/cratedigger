@@ -172,8 +172,12 @@ five survives that, and a different performance does not pass.
 
 ### Why the hit rate is low, and why that is correct
 
-On first measurement roughly a fifth of releases matched. Most refusals are
-the validator working:
+Measured over 228 classical releases: **37 matched (16%)**, yielding 567
+distinct works, of which **40 span more than one release** — that is the
+fragmentation fix. Brahms's Fourth, first movement, now carries one work id
+across four separate releases, however each folder spelled the title.
+
+Most refusals are the validator working:
 
 ```
 'BACH - Brandenburg Concerti CD1'   ours=19 tracks
@@ -193,6 +197,15 @@ five. Three things push against that:
 | **title cleaning** | `BACH - Brandenburg Concerti CD1` finds nothing; `Brandenburg Concerti` scores 100. Disc markers, bracketed editions and `24-bit/96kHz` noise are stripped. |
 | **`tracks:N` filter** | `release:"Brandenburg Concerti"` returns eight plausible releases; the same query with `AND tracks:19` returns one. A track count is a far stronger filter than a title score. |
 | **track-count prefilter** | a 67-track anthology cannot be our 4-track release, and the search result says so before any detail fetch. Cut the budget from ~36 calls per release to under 10. |
+| **bare-terms fallback** | the largest failure bucket, 37% of releases, returned *no candidate at all*. Those folder names are descriptions of contents, not release titles: `Symphony No. 1 - Chicago SO, 8.04 & 8.05.1961`. Dropping the quotes doubled the hit rate. |
+
+That last one is worth stating plainly, because it inverts the obvious
+instinct. `release:"The Miraculous Mandarin; Music for Strings, Percussion
+and Celesta"` returns nothing; the same words unquoted return the right
+release at score 100, titled with slashes instead of semicolons. Bare terms
+drag in junk too — and that is affordable, because durations are the gate.
+**Loose recall, strict validation.** The loose query runs only when the
+precise ones found nothing to look at.
 
 ### Transient failures are not negative results
 

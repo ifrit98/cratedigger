@@ -92,7 +92,7 @@ def get(endpoint, params, retries=4):
 # No \b after the keyword: "CD1" has no boundary between the letters and the
 # digit, and that spelling is common in folder names.
 _DISC = re.compile(r"[\s(\[_.,-]*\b(?:cd|disc|disk|vol(?:ume)?|part|pt)"
-                   r"\s*\.?\s*\d+\s*[)\]]?\s*$", re.I)
+                   r"\s*\.?\s*(?:\d+|[ivx]{1,5})\s*[)\]]?\s*$", re.I)
 _BRACKET = re.compile(r"[\[(][^\])]*[\])]")
 _NOISE = re.compile(r"\b(?:remaster(?:ed)?|reissue|deluxe|expanded|edition|"
                     r"hdtracks|24[\s-]?bit|\d{2,3}\s?khz|flac|dsd|sacd)\b", re.I)
@@ -265,25 +265,45 @@ def fetch(manifest_path, limit, only):
         keys = clean_title(r.get("title")) or [r.get("title") or ""]
         artist = unquote(r.get("album_artist"))[:50]
 
-        # Query strategies, cheapest and most selective first. A track count
-        # is a far stronger filter than a title score: "Brandenburg Concerti"
-        # returns eight plausible releases, and the same query with tracks:19
-        # returns one. Classical titles are shared by hundreds of releases,
-        # so title ranking alone rarely floats the right performance.
+        # Query strategies, most selective first. A track count is a far
+        # stronger filter than a title score: "Brandenburg Concerti" returns
+        # eight plausible releases, and the same query with tracks:19 returns
+        # one.
+        #
+        # The last strategy drops the quotes. Folder names are often a
+        # description of contents rather than a release title -- a performer
+        # prefix, several works joined by ";" or "&", a date, a label. An
+        # exact phrase can never match those, but bare terms can: the quoted
+        # form of "The Miraculous Mandarin; Music for Strings, Percussion and
+        # Celesta" returns nothing, and the bare form returns the right
+        # release at score 100, titled with slashes instead. Bare terms drag
+        # in junk too, which is affordable because durations are the gate.
         def variants(key):
             v = []
             if len(ours) >= MIN_TRACKS:
-                v.append('release:"%s" AND tracks:%d' % (key, len(ours)))
+                v.append(('release:"%s" AND tracks:%d' % (key, len(ours)),
+                          False))
             if artist:
-                v.append('release:"%s" AND artist:"%s"' % (key, artist))
-            v.append('release:"%s"' % key)
+                v.append(('release:"%s" AND artist:"%s"' % (key, artist),
+                          False))
+            v.append(('release:"%s"' % key, False))
+            bare = re.sub(r"[^\w\s]+", " ", key)
+            bare = re.sub(r"\s{2,}", " ", bare).strip()
+            if bare and bare.lower() != key.lower():
+                v.append((bare, True))
+            elif bare:
+                v.append((bare, True))
             return v
 
         best, best_ratio, transient = None, 0.0, False
         seen = set()
         for key in keys:
             key = unquote(key)[:70]
-            for query in variants(key):
+            for query, is_fallback in variants(key):
+                # Only spend the loose query when the precise ones found
+                # nothing at all to look at.
+                if is_fallback and seen:
+                    continue
                 res, tr = get("release", {"query": query, "limit": 5})
                 transient = transient or tr
                 for cand in ((res or {}).get("releases") or [])[:5]:
