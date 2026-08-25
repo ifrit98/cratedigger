@@ -189,8 +189,7 @@ def status_payload():
         for label, path in (("probe", os.path.join(out, "raw_probe.jsonl")),
                             ("manifest", man),
                             ("views", os.path.join(out, "views")),
-                            ("browser", os.path.join(
-                                out, "coltrane-browser.html"))):
+                            ("browser", cd.browser_path(cfg))):
             if os.path.exists(path):
                 if os.path.isdir(path):
                     n = sum(len(f) for _r, _d, f in os.walk(path))

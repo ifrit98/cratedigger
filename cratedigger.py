@@ -97,6 +97,12 @@ def out_dir(cfg):
     return os.path.abspath(cfg.get("output") or "output")
 
 
+def browser_path(cfg):
+    name = ("coltrane-browser.html" if cfg.get("mode") == "artist"
+            else "library-browser.html")
+    return os.path.join(out_dir(cfg), name)
+
+
 def manifest_path(cfg):
     name = "coltrane.json" if cfg.get("mode") == "artist" else "library.json"
     return os.path.join(out_dir(cfg), name)
@@ -198,7 +204,8 @@ def cmd_init(args):
     print(f"\nwrote {p}")
     print(f"  library : {library}")
     print(f"  output  : {output}")
-    print(f"  mode    : {mode}" + (f" ({artist_slug})" if artist_slug else ""))
+    print(f"  mode    : {mode}"
+          + (f" ({artist_slug})" if artist_slug and mode == "artist" else ""))
     print("\nNext:")
     print("  python cratedigger.py all        # scan, build, views, browser")
     print("  python cratedigger.py status")
@@ -295,7 +302,8 @@ def cmd_status(args):
     print(f"library  {lib}" + ("" if os.path.isdir(lib) else "   [MISSING]"))
     print(f"output   {out}")
     print(f"mode     {cfg.get('mode')}"
-          + (f"  ({cfg['artist']})" if cfg.get("artist") else ""))
+          + (f"  ({cfg['artist']})"
+             if cfg.get("artist") and cfg.get("mode") == "artist" else ""))
 
     if cfg.get("artist"):
         p = os.path.join(ARTISTS_DIR, cfg["artist"] + ".json")
@@ -326,8 +334,7 @@ def cmd_status(args):
     man = manifest_path(cfg)
     for label, path in (("probe", raw), ("manifest", man),
                         ("views", os.path.join(out, "views")),
-                        ("browser", os.path.join(
-                            out, "coltrane-browser.html"))):
+                        ("browser", browser_path(cfg))):
         if os.path.exists(path):
             if os.path.isdir(path):
                 n = sum(len(f) for _r, _d, f in os.walk(path))
@@ -391,11 +398,16 @@ def cmd_browse(args):
     man = manifest_path(cfg)
     if not os.path.exists(man):
         sys.exit("no manifest yet -- run:  python cratedigger.py build")
-    if cfg.get("mode") != "artist":
-        sys.exit("the browser is currently artist-mode only")
-    html = os.path.join(out, "coltrane-browser.html")
-    run("coltrane_app.py", ["--manifest", man, "--out", html,
-                            "--root", cfg["library"]], "building browser")
+    if cfg.get("mode") == "artist":
+        html = os.path.join(out, "coltrane-browser.html")
+        run("coltrane_app.py", ["--manifest", man, "--out", html,
+                                "--root", cfg["library"]], "building browser")
+    else:
+        html = os.path.join(out, "library-browser.html")
+        argv = ["--manifest", man, "--out", html, "--root", cfg["library"]]
+        if cfg.get("title"):
+            argv += ["--title", cfg["title"]]
+        run("general_app.py", argv, "building browser")
     print(f"\n  {html}")
     if args.open:
         try:
@@ -505,6 +517,7 @@ ARTIFACTS = [
                            "confirmed / unsourced"),
     ("wild_track_proposals.csv", "per-track session candidates"),
     ("coltrane-browser.html", "the interactive browser -- open from disk"),
+    ("library-browser.html", "the interactive browser -- open from disk"),
 ]
 
 
@@ -534,8 +547,10 @@ def cmd_results(args):
     if not found:
         print("  (empty)")
         return
-    browser = os.path.join(out, "coltrane-browser.html")
-    if os.path.exists(browser):
+    browser = next((os.path.join(out, n) for n in
+                    ("coltrane-browser.html", "library-browser.html")
+                    if os.path.exists(os.path.join(out, n))), None)
+    if browser:
         print("\nStart here:  %s" % browser)
         print("  open it from disk -- no server needed")
     print("\n  python cratedigger.py clean --dry-run   # what teardown "
@@ -548,7 +563,8 @@ def _clean_plan(out, what):
     """(label, path) pairs to remove. Never music, never vocab."""
     groups = {
         "views": [("views", os.path.join(out, "views"))],
-        "browser": [("browser", os.path.join(out, "coltrane-browser.html"))],
+        "browser": [("browser", os.path.join(out, n)) for n in
+                    ("coltrane-browser.html", "library-browser.html")],
         "reports": [("report", os.path.join(out, n)) for n in (
             "mb_conflicts.csv", "wild_reconciliation.csv",
             "date_consensus.csv", "wild_track_proposals.csv",

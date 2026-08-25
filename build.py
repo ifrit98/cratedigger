@@ -1,7 +1,8 @@
 """Phases 1-3: derive / normalize / emit the faceted library manifest.
 
 Consumes raw_probe.jsonl, writes library.json + library.csv + works.csv +
-duplicates.csv into D:\\_library. Never touches the music files.
+duplicates.csv into the output directory. Never touches the music
+files.
 """
 import argparse
 import csv
@@ -16,7 +17,9 @@ import credits
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 RAW = os.path.join(HERE, "raw_probe.jsonl")
-OUTDIR = "D:\\_library"
+# No drive letters: every path comes from the CLI.
+OUTDIR = os.path.join(os.getcwd(), "output")
+MUSIC_ROOT = os.getcwd()
 
 # Populated from CLI flags in main(); see --collection.
 CONFIG = {
@@ -162,7 +165,10 @@ def tget(tags, *names):
     for n in names:
         v = low.get(n)
         if v and str(v).strip():
-            return str(v).strip()
+            # Embedded newlines are real -- some rips write
+            # 'Old Folks\nOld Folks' into TITLE -- and they break every
+            # line-oriented format downstream (m3u8, CSV).
+            return re.sub(r"\s+", " ", str(v)).strip()
     return None
 
 
@@ -726,6 +732,9 @@ def parse_args():
         description="Derive the faceted music manifest from a raw probe.")
     ap.add_argument("--raw", default=RAW, help="raw_probe.jsonl from scan.py")
     ap.add_argument("--out", default=OUTDIR, help="output directory")
+    ap.add_argument("--root", default=MUSIC_ROOT,
+                    help="music root the probe paths are relative to; "
+                         "needed to read .cue sheets")
     ap.add_argument("--collection", action="append", default=None,
                     metavar="NAME[=RATING]",
                     help="top-level folder to treat as a curated set, "
@@ -734,9 +743,9 @@ def parse_args():
 
 
 def main():
-    global RAW, OUTDIR
+    global RAW, OUTDIR, MUSIC_ROOT
     args = parse_args()
-    RAW, OUTDIR = args.raw, args.out
+    RAW, OUTDIR, MUSIC_ROOT = args.raw, args.out, args.root
 
     colls = {}
     for spec in (args.collection if args.collection is not None
@@ -879,7 +888,8 @@ def main():
                     continue
                 for n in names:
                     if n.lower().endswith(".cue"):
-                        cue_tracks.extend(parse_cue(os.path.join("D:\\", d, n)))
+                        cue_tracks.extend(parse_cue(
+                            os.path.join(MUSIC_ROOT, d, n)))
         release["cue_track_count"] = len(cue_tracks)
 
         # -------- tracks
@@ -1147,7 +1157,7 @@ def main():
     # ---- emit
     manifest = {
         "schema": "faceted-music-library/1.0",
-        "generated_from": "D:\\",
+        "generated_from": MUSIC_ROOT,
         "field_vocabulary": "Vorbis Comment / MusicBrainz Picard names",
         "entity_tiers": ["work", "recording(track)", "release"],
         "counts": {

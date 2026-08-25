@@ -9,8 +9,8 @@ import os
 import re
 from collections import defaultdict
 
-OUTDIR = "D:\\_library"
-ROOT = "D:\\"
+OUTDIR = os.path.join(os.getcwd(), "output")
+ROOT = os.getcwd()
 VIEWS = os.path.join(OUTDIR, "views")
 # Relative hop from a playlist back to the music root. Recomputed in main()
 # so the output directory can live anywhere, inside the tree or beside it.
@@ -38,10 +38,17 @@ def write_playlist(path, tracks, title):
                             or (t.get("artist_raw") or "").split(";")[0]
                             or "Unknown")
             label_title = t.get("title") or t.get("filename")
-            fh.write(f"#EXTINF:{dur},{label_artist} - {label_title}\n")
-            # forward slashes throughout: portable, and accepted by
-            # foobar2000, VLC, FiiO and every player worth supporting
-            fh.write(PREFIX + t["path"].replace("\\", "/") + "\n")
+            # a tag may contain a newline; m3u8 is line-oriented
+            label = re.sub(r"\s+", " ",
+                           f"{label_artist} - {label_title}").strip()
+            fh.write(f"#EXTINF:{dur},{label}\n")
+            rel = t["path"].replace("\\", "/")
+            if PREFIX is None:
+                out = os.path.abspath(
+                    os.path.join(ROOT, rel.replace("/", os.sep)))
+            else:
+                out = PREFIX + rel
+            fh.write(out + "\n")
     return True
 
 
@@ -60,7 +67,14 @@ def work_order(t):
 def compute_prefix(root, views_dir):
     """Relative path from views/<facet>/ back to the music root."""
     facet_dir = os.path.join(views_dir, "x")
-    rel = os.path.relpath(os.path.abspath(root), os.path.abspath(facet_dir))
+    try:
+        rel = os.path.relpath(os.path.abspath(root),
+                              os.path.abspath(facet_dir))
+    except ValueError:
+        # Windows: no relative path exists between C: and E:. Absolute is
+        # the only workable form, and is the normal case when the output
+        # lives outside the library.
+        return None
     return rel.replace(os.sep, "/") + "/"
 
 

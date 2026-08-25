@@ -134,6 +134,21 @@ Measured on a 90,000-file library: 10,633 folders processed in 5.4 seconds,
 55% of classical folders resolved, 163 distinct conductors, ~1% residual
 error concentrated in soloist/conductor confusion.
 
+## The browser
+
+```bash
+python cratedigger.py browse
+```
+
+Writes `library-browser.html` -- one self-contained file, opened from disk.
+The same client as the artist archive (see `browser_core.py`), driven by a
+different payload.
+
+Its spine is the **work**, not the session: the Works view groups every
+recording of a piece together, which for classical is the axis a folder tree
+cannot express. Facets are work, composer, genre, conductor, ensemble,
+quality, source and label, all cross-filtering with live counts.
+
 ## Output
 
 | file | |

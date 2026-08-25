@@ -181,6 +181,10 @@ def main():
     ROOT, OUT, WORKERS = args.root, args.out, args.workers
     SKIP_DIRS.update(args.skip)
 
+    out_dir = os.path.dirname(os.path.abspath(OUT))
+    if out_dir:
+        os.makedirs(out_dir, exist_ok=True)
+
     audio, containers, sidecars = [], [], []
     for kind, p in walk():
         (audio if kind == "audio" else
