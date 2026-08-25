@@ -37,6 +37,18 @@ winget install Gyan.FFmpeg          # or: brew install ffmpeg
 ## Start here
 
 ```bash
+python cratedigger.py serve
+```
+
+Opens a local control panel in your browser: browse to your music folder,
+pick or create an artist profile, run any stage with live output, and open
+the archive browser when it is built. Bound to `127.0.0.1` only.
+
+See [docs/panel.md](docs/panel.md) for what is on it.
+
+Prefer the terminal? Everything the panel does is a command:
+
+```bash
 python cratedigger.py init
 ```
 
@@ -117,6 +129,8 @@ sheet; a human rules on it; the ruling is stored with its citation.
 ## Layout
 
 ```
+cratedigger.py          one CLI: init / status / run stages / serve
+cratedigger_ui.py       the local control panel served by `serve`
 doctor.py               environment check -- run first
 scan.py                 shared: ffprobe every file -> raw_probe.jsonl
 
@@ -138,7 +152,7 @@ mbfetch.py mine.py      grow the credits vocabulary
 evalcredits.py          measure credit coverage
 
 vocab/                  curated knowledge -- see LICENSE for provenance
-docs/                   coltrane.md, toolkit.md
+docs/                   coltrane.md, toolkit.md, panel.md
 tests/                  credits regression suite
 output-coltrane/        GENERATED -- gitignored, rebuilt from your files
 ```

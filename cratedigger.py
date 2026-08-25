@@ -23,6 +23,7 @@ Commands
   enrich    pull session data from MusicBrainz / David Wild
   artists   list, show or create artist profiles
   all       scan -> build -> views -> browse
+  serve     open a local control panel in your browser
 """
 import argparse
 import json
@@ -455,6 +456,11 @@ def cmd_artists(args):
               f"{'  [mbid]' if p.get('musicbrainz_mbid') else ''}")
 
 
+def cmd_serve(args):
+    import cratedigger_ui
+    cratedigger_ui.serve(port=args.port, open_browser=not args.no_open)
+
+
 def cmd_all(args):
     cmd_scan(args)
     cmd_build(args)
@@ -508,6 +514,11 @@ def main():
     p.add_argument("--create", metavar="NAME")
     p.add_argument("--offline", action="store_true")
     p.set_defaults(fn=cmd_artists)
+
+    p = sub.add_parser("serve", help="local control panel in your browser")
+    p.add_argument("--port", type=int, default=8420)
+    p.add_argument("--no-open", action="store_true")
+    p.set_defaults(fn=cmd_serve)
 
     p = sub.add_parser("all", help="scan, build, views, browser")
     p.add_argument("--workers", type=int, default=12)
