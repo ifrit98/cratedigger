@@ -54,6 +54,16 @@ python cratedigger.py browse --open
 `--workers` defaults to 12. Raise it on an SSD; **lower** it on a spinning
 disk or network share, where seek contention makes more threads slower.
 
+**Scanning is incremental.** A file whose path, size and mtime are unchanged
+is reused from the previous probe rather than re-read, so a rescan after
+adding a few albums takes seconds rather than minutes. Reuse is refused
+whenever it cannot be proved safe — a different root, a corrupt index.
+
+| flag | |
+|---|---|
+| `--full` | re-probe everything, ignoring the previous scan |
+| `--retry-errors` | re-probe only the files that failed last time |
+
 ### Enriching
 
 | | |
@@ -93,7 +103,7 @@ python cratedigger.py audit
 
 ### You added music
 
-Re-scan, then everything downstream:
+Re-scan, then everything downstream. Only the new files are probed:
 
 ```bash
 python cratedigger.py all

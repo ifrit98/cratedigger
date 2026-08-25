@@ -116,6 +116,14 @@ everything else is.
 ## 6. Check it is right
 
 ```bash
+python tests/run_tests.py
+```
+
+76 cases across four suites — date parsing, discography lookup, personnel,
+tune normalisation and incremental scan. Stdlib only; nothing to install.
+
+
+```bash
 python cratedigger.py audit
 ```
 

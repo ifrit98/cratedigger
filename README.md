@@ -159,7 +159,7 @@ never inherits Coltrane's bands.
 
 ```bash
 python cratedigger.py audit
-python tests/test_credits.py
+python tests/run_tests.py
 ```
 
 The audit is adversarial — it hunts for what is *wrong* and prints examples
