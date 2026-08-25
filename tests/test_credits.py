@@ -1,13 +1,17 @@
 """Regression suite for credits.py. Run after any vocabulary refetch.
 
-    python test_credits.py
+    python tests/test_credits.py
 
 Every case is a real folder name from the library. The negative cases matter
 more than the positive ones: a wrong conductor is worse than a missing one.
 """
+import os
 import sys
 
-import credits
+# the toolkit lives one level up from tests/
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                                os.pardir))
+import credits  # noqa: E402
 
 # (path, is_classical, expected_surname_or_None)
 CASES = [
