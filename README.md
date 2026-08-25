@@ -246,6 +246,12 @@ tables, plus the cached MusicBrainz and Wild harvests — roughly forty minutes
 of rate-limited fetching and a lot of hand curation. Everything under
 `output-coltrane/` rebuilds from your audio in about five minutes.
 
+## Where this is going
+
+[ROADMAP.md](ROADMAP.md) — an honest read on what this competes with (beets,
+Picard, Roon), the wedge it actually has, what blocks the general case today,
+and the order to fix it in.
+
 ## Design commitments
 
 - **Read-only.** The manifest is the source of truth; every hierarchy,
