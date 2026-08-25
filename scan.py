@@ -1,17 +1,29 @@
-"""Phase 0: raw probe of every audio file on the drive -> raw_probe.jsonl
+"""Phase 0: probe every audio file -> raw_probe.jsonl
 
 Read-only. Never writes to the music tree.
+
+Incremental by default: a file whose path, size and mtime are unchanged
+since the last scan is reused from the previous probe rather than
+re-read. ffprobe is the entire cost of this stage, so on a library that
+has barely moved a rescan drops from minutes to seconds.
+
+The reuse index lives beside the probe as `<out>.index.json`, not inside
+the JSONL. Downstream loaders route unknown record kinds to "sidecar",
+so a metadata record embedded in the probe would quietly corrupt
+release provenance.
 """
 import argparse
 import json
 import os
 import subprocess
+import time
 import sys
 from concurrent.futures import ThreadPoolExecutor
 
 ROOT = os.getcwd()
 OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "raw_probe.jsonl")
 WORKERS = 12
+INDEX_VERSION = 1
 
 AUDIO_EXT = {".flac", ".mp3", ".dsf", ".dff", ".aif", ".aiff", ".aifc",
              ".wav", ".wv", ".ape", ".m4a", ".ogg", ".opus", ".alac"}
@@ -96,6 +108,62 @@ def probe(path):
     return rec
 
 
+def index_path(out):
+    return out + ".index.json"
+
+
+def load_cache(out, root, retry_errors=False):
+    """Previous audio records keyed by path, when they are still valid.
+
+    Returns {} whenever anything is off -- a different root, a version bump,
+    a missing or unreadable file. Reuse has to be provably safe or not
+    attempted.
+    """
+    idx = index_path(out)
+    if not (os.path.exists(out) and os.path.exists(idx)):
+        return {}
+    try:
+        with open(idx, encoding="utf-8") as fh:
+            meta = json.load(fh)
+    except (OSError, ValueError):
+        return {}
+    if meta.get("version") != INDEX_VERSION:
+        return {}
+    if os.path.normcase(os.path.abspath(meta.get("root", ""))) != \
+            os.path.normcase(os.path.abspath(root)):
+        return {}
+
+    cache = {}
+    try:
+        with open(out, encoding="utf-8") as fh:
+            for line in fh:
+                try:
+                    r = json.loads(line)
+                except ValueError:
+                    continue
+                if r.get("kind") != "audio":
+                    continue
+                if r.get("error") and retry_errors:
+                    continue
+                if r.get("size") is None or r.get("mtime") is None:
+                    continue
+                cache[r["path"]] = r
+    except OSError:
+        return {}
+    return cache
+
+
+def write_index(out, root, counts):
+    try:
+        with open(index_path(out), "w", encoding="utf-8") as fh:
+            json.dump({"version": INDEX_VERSION,
+                       "root": os.path.abspath(root),
+                       "scanned": int(time.time()),
+                       "counts": counts}, fh, indent=1)
+    except OSError:
+        pass
+
+
 def main():
     global ROOT, OUT, WORKERS
     ap = argparse.ArgumentParser(
@@ -105,6 +173,10 @@ def main():
     ap.add_argument("--skip", action="append", default=[],
                     help="directory name to skip (repeatable)")
     ap.add_argument("--workers", type=int, default=WORKERS)
+    ap.add_argument("--full", action="store_true",
+                    help="re-probe everything, ignoring the previous scan")
+    ap.add_argument("--retry-errors", action="store_true",
+                    help="re-probe files that failed last time")
     args = ap.parse_args()
     ROOT, OUT, WORKERS = args.root, args.out, args.workers
     SKIP_DIRS.update(args.skip)
@@ -117,18 +189,51 @@ def main():
     print(f"audio={len(audio)} containers={len(containers)} "
           f"sidecars={len(sidecars)}", flush=True)
 
+    cache = {} if args.full else load_cache(OUT, ROOT, args.retry_errors)
+    if cache:
+        print(f"previous scan: {len(cache):,} usable records", flush=True)
+
+    # Decide per file: reuse, or probe. A cached record is only trusted when
+    # path, size and mtime all agree -- any of them moving means re-read.
+    reuse, todo = [], []
+    for p in audio:
+        rel = os.path.relpath(p, ROOT).replace("\\", "/")
+        hit = cache.get(rel)
+        if hit is not None:
+            try:
+                st = os.stat(p)
+            except OSError:
+                todo.append(p)
+                continue
+            if hit.get("size") == st.st_size and \
+                    hit.get("mtime") == int(st.st_mtime):
+                reuse.append(hit)
+                continue
+        todo.append(p)
+
+    removed = len(cache) - len(reuse) if cache else 0
+    if cache:
+        print(f"  reusing {len(reuse):,}, probing {len(todo):,}"
+              + (f", {removed:,} gone or changed" if removed > 0 else ""),
+              flush=True)
+
     done = 0
     with open(OUT, "w", encoding="utf-8") as fh:
-        with ThreadPoolExecutor(max_workers=WORKERS) as pool:
-            for rec in pool.map(probe, audio):
-                rec["kind"] = "audio"
-                fh.write(json.dumps(rec, ensure_ascii=False) + "\n")
-                done += 1
-                if done % 250 == 0:
-                    print(f"  probed {done}/{len(audio)}", flush=True)
+        for rec in reuse:
+            fh.write(json.dumps(rec, ensure_ascii=False) + "\n")
 
+        if todo:
+            with ThreadPoolExecutor(max_workers=WORKERS) as pool:
+                for rec in pool.map(probe, todo):
+                    rec["kind"] = "audio"
+                    fh.write(json.dumps(rec, ensure_ascii=False) + "\n")
+                    done += 1
+                    if done % 250 == 0:
+                        print(f"  probed {done}/{len(todo)}", flush=True)
+
+        containers_set = set(containers)
         for p in containers + sidecars:
-            kind = "container" if p in set(containers) else "sidecar"
+            kind = "container" if p in containers_set else "sidecar"
             try:
                 size = os.path.getsize(p)
             except OSError:
@@ -144,7 +249,12 @@ def main():
         for line in fh:
             if '"error"' in line:
                 errs += 1
-    print(f"done. {done} audio probed, {errs} errors -> {OUT}")
+    write_index(OUT, ROOT, {"audio": len(audio), "probed": done,
+                            "reused": len(reuse), "errors": errs})
+    saved = ""
+    if reuse:
+        saved = f"  ({len(reuse):,} reused, ~{len(reuse)/750:.0f} min saved)"
+    print(f"done. {done} probed, {errs} errors -> {OUT}{saved}")
 
 
 if __name__ == "__main__":
