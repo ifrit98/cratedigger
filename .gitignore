@@ -3,8 +3,10 @@ cratedigger.json
 
 # Generated artifacts -- all rebuilt from your audio files.
 # Nothing here is precious; `doctor.py` will tell you what to re-run.
-output-coltrane/
-output/
+# any output directory, however named -- `init` derives the name from the
+# artist or library, so a fixed list will always miss one
+output*/
+out/
 _playlists/
 
 # Decisions exported from the browser land in Downloads and are applied with

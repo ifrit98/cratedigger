@@ -183,5 +183,9 @@ a reviewable proposal.
   over-broad works.
 - **A tag containing a newline** breaks line-oriented formats. The tag reader
   collapses whitespace; this was found in the wild (`'Old Folks\nOld Folks'`).
-- **`tests/` covers `credits.py` only.** There is no regression suite for work
-  resolution or duplicate detection.
+- **Work resolution fragments across releases.** The same piece titled three
+  ways in three folders becomes three works, because most repertoire has no
+  universally-used catalogue number to key on. Visible in the Works view; the
+  next thing to fix.
+- **No regression suite for work resolution or duplicate detection.** The 76
+  cases in `tests/` cover dates, sessions, credits and incremental scan.
