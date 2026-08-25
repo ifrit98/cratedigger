@@ -134,6 +134,86 @@ Measured on a 90,000-file library: 10,633 folders processed in 5.4 seconds,
 55% of classical folders resolved, 163 distinct conductors, ~1% residual
 error concentrated in soloist/conductor confusion.
 
+## Reconciling against MusicBrainz
+
+```bash
+python general_mb.py --manifest output/library.json      # fetch
+python general_mb.py --manifest output/library.json --report
+```
+
+The Works view exposes the fragmentation problem: the same piece titled three
+ways in three folders becomes three works, because most orchestral repertoire
+has no universally-used catalogue number to key on. A MusicBrainz **work id**
+is the stable identity that a catalogue number cannot supply, and it comes
+back per-recording:
+
+```
+inc=recordings+work-rels+recording-level-rels+labels
+```
+
+### Matching on durations, not titles
+
+The artist model matches on title overlap. That does not transfer. Measured
+on this manifest, of 314 releases:
+
+- **every** track carries a duration from the probe
+- only **87** carry an album artist
+- exactly **1** carries a MusicBrainz album id
+
+So titles and artist tags are the weak signal here and durations are the
+strong one. A sequence of track lengths is close to unique for a particular
+performance, which is exactly the distinction that matters: there are
+hundreds of recordings of the Brandenburg Concerti and they differ by title
+not at all.
+
+A candidate is accepted when **70% of our tracks** pair to a MusicBrainz
+track within **5 seconds**. Rips drift a second or two from the catalogue;
+five survives that, and a different performance does not pass.
+
+### Why the hit rate is low, and why that is correct
+
+On first measurement roughly a fifth of releases matched. Most refusals are
+the validator working:
+
+```
+'BACH - Brandenburg Concerti CD1'   ours=19 tracks
+   ratio=0.26  mb_tracks=19   The Brandenburg Concerti
+```
+
+Right piece, wrong performance — refused. The alternative is a citation that
+points at someone else's recording, which is worse than no citation. The
+Coltrane pass learned the same lesson from anthologies.
+
+The genuine recall limit is that MusicBrainz ranks search hits by title
+score, and for classical the right performance often does not reach the top
+five. Three things push against that:
+
+| technique | effect |
+|---|---|
+| **title cleaning** | `BACH - Brandenburg Concerti CD1` finds nothing; `Brandenburg Concerti` scores 100. Disc markers, bracketed editions and `24-bit/96kHz` noise are stripped. |
+| **`tracks:N` filter** | `release:"Brandenburg Concerti"` returns eight plausible releases; the same query with `AND tracks:19` returns one. A track count is a far stronger filter than a title score. |
+| **track-count prefilter** | a 67-track anthology cannot be our 4-track release, and the search result says so before any detail fetch. Cut the budget from ~36 calls per release to under 10. |
+
+### Transient failures are not negative results
+
+MusicBrainz throttles hard, and a throttled request looks exactly like an
+empty result unless they are kept apart. On a first measurement, **six of
+seven apparent misses were 503s** being cached as "no match" — permanently,
+since the cache is never revisited. `get()` now returns `(payload,
+transient)`, and a release whose lookup hit a server error is left out of the
+cache entirely so the next run retries it.
+
+### Output
+
+| file | |
+|---|---|
+| `vocab/general_mb_works.json` | work ids and titles, with the releases each appears on |
+| `mb_conflicts.csv` | one row per matched release: our year against theirs, our label against theirs, catalogue number, how many durations lined up, MBID |
+
+Rows where the years disagree sort to the top. **Nothing is applied** — as
+everywhere else in this toolkit, the output is a decision sheet with
+citations, not a mutation.
+
 ## The browser
 
 ```bash
@@ -185,7 +265,9 @@ a reviewable proposal.
   collapses whitespace; this was found in the wild (`'Old Folks\nOld Folks'`).
 - **Work resolution fragments across releases.** The same piece titled three
   ways in three folders becomes three works, because most repertoire has no
-  universally-used catalogue number to key on. Visible in the Works view; the
-  next thing to fix.
-- **No regression suite for work resolution or duplicate detection.** The 76
-  cases in `tests/` cover dates, sessions, credits and incremental scan.
+  universally-used catalogue number to key on. `general_mb.py` addresses this
+  where MusicBrainz has the exact performance; for the rest it remains open,
+  and the honest fix is acoustic fingerprinting (see the roadmap).
+- **No regression suite for work resolution or duplicate detection.** The 130
+  cases in `tests/` cover dates, sessions, credits, incremental scan and
+  portability.

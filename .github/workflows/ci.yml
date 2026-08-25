@@ -1,0 +1,87 @@
+name: tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  test:
+    name: py${{ matrix.python }} on ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false          # one platform failing should not hide the rest
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+        python: ['3.8', '3.12']
+        include:
+          # The middle versions only need checking on one platform; the point
+          # of the matrix is path handling, which does not vary by minor.
+          - os: ubuntu-latest
+            python: '3.9'
+          - os: ubuntu-latest
+            python: '3.10'
+          - os: ubuntu-latest
+            python: '3.11'
+        exclude:
+          # 3.8 is not available on the arm64 macOS runners.
+          - os: macos-latest
+            python: '3.8'
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+
+      # test_scan.py builds a real library with ffmpeg and probes it with
+      # ffprobe. Without them that suite skips, and the incremental-scan
+      # logic -- the part most likely to break on a different filesystem --
+      # would go unexercised.
+      - name: Install ffmpeg (Linux)
+        if: runner.os == 'Linux'
+        run: sudo apt-get update && sudo apt-get install -y ffmpeg
+
+      - name: Install ffmpeg (macOS)
+        if: runner.os == 'macOS'
+        run: brew install ffmpeg
+
+      - name: Install ffmpeg (Windows)
+        if: runner.os == 'Windows'
+        run: choco install ffmpeg -y --no-progress
+
+      - name: Show versions
+        run: |
+          python --version
+          ffprobe -version | head -n 1
+
+      - name: Run the suite
+        run: python tests/run_tests.py
+
+  imports:
+    # Every entry point must at least import on a machine that has never seen
+    # a Windows path. Import-time regexes and os.name branches fail here first.
+    name: import check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Import every module
+        run: |
+          for f in *.py; do
+            echo "-- $f"
+            python -c "import importlib,sys; importlib.import_module('${f%.py}')"
+          done
+
+      - name: Check every CLI responds to --help
+        run: |
+          for f in cratedigger.py scan.py build.py views.py playlists.py \
+                   general_mb.py general_app.py doctor.py; do
+            [ -f "$f" ] || continue
+            echo "-- $f --help"
+            python "$f" --help > /dev/null
+          done

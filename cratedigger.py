@@ -432,17 +432,22 @@ def cmd_enrich(args):
     if not os.path.exists(man):
         sys.exit("no manifest yet -- run:  python cratedigger.py build")
     src = args.source
+    artist_mode = cfg.get("mode") == "artist"
     if src in ("musicbrainz", "all"):
-        run("coltrane_mb.py", ["--manifest", man, "--limit", str(args.limit)],
+        # The two reconcilers validate differently because the libraries give
+        # different signals: an artist archive has titles worth overlapping,
+        # a mixed library has durations and little else. See docs/toolkit.md.
+        script = "coltrane_mb.py" if artist_mode else "general_mb.py"
+        run(script, ["--manifest", man, "--limit", str(args.limit)],
             "MusicBrainz")
-        run("coltrane_mb.py", ["--manifest", man, "--report"], "MB report")
+        run(script, ["--manifest", man, "--report"], "MB report")
     if src in ("wild", "all"):
-        if cfg.get("artist") != "coltrane":
+        if not artist_mode or cfg.get("artist") != "coltrane":
             print("\n(skipping Wild: that source covers Coltrane only)")
         else:
             run("coltrane_wild.py", ["--fetch"], "David Wild")
             run("coltrane_wild.py", ["--tracks"], "Wild track proposals")
-    if src == "all" and cfg.get("artist") == "coltrane":
+    if src == "all" and artist_mode and cfg.get("artist") == "coltrane":
         run("coltrane_consensus.py", [], "three-way consensus")
     print("\nNothing was applied. Review the CSVs in the output directory,")
     print("or adjudicate in the browser's Reconcile mode.")

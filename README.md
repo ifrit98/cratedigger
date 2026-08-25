@@ -1,5 +1,7 @@
 # cratedigger
 
+[![tests](https://github.com/ifrit98/cratedigger/actions/workflows/ci.yml/badge.svg)](https://github.com/ifrit98/cratedigger/actions/workflows/ci.yml)
+
 *Finding the order in a pile of records.*
 
 Builds queryable metadata ontologies for music collections, then projects them
@@ -34,6 +36,10 @@ services. Three things, one of them optional:
 | Python 3.8+ | everything | yes |
 | FFmpeg (`ffprobe`) | reading tags from your files | for `scan` only |
 | Network | the MusicBrainz and Wild enrichers | optional |
+
+Tested on Linux, macOS and Windows across Python 3.8–3.12 in CI. Developed
+against a real library on Windows only — see
+[docs/platform.md](docs/platform.md) for what that distinction costs you.
 
 ```bash
 winget install Gyan.FFmpeg     # Windows
@@ -208,6 +214,7 @@ caught.
 | [troubleshooting.md](docs/troubleshooting.md) | symptom → cause → fix |
 | [coltrane.md](docs/coltrane.md) | the Coltrane archive: model, sources, reconciliation |
 | [toolkit.md](docs/toolkit.md) | the general mixed-library pipeline |
+| [platform.md](docs/platform.md) | what is proven on which OS, and what is only believed |
 
 ## Layout
 
@@ -235,7 +242,7 @@ mbfetch.py mine.py      grow the credits vocabulary
 evalcredits.py          measure credit coverage
 
 vocab/                  curated knowledge -- see LICENSE for provenance
-docs/                   coltrane.md, toolkit.md, panel.md
+docs/                   coltrane.md, toolkit.md, panel.md, platform.md
 tests/                  credits regression suite
 output-coltrane/        GENERATED -- gitignored, rebuilt from your files
 ```

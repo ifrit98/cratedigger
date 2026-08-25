@@ -15,7 +15,8 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, os.path.join(HERE, os.pardir))
 sys.path.insert(0, HERE)
 
-SUITES = ["test_credits", "test_dates", "test_sessions", "test_scan"]
+SUITES = ["test_credits", "test_dates", "test_sessions", "test_scan",
+          "test_portability"]
 
 
 def main():

@@ -119,7 +119,7 @@ everything else is.
 python tests/run_tests.py
 ```
 
-76 cases across four suites — date parsing, discography lookup, personnel,
+130 cases across five suites — date parsing, discography lookup, personnel,
 tune normalisation and incremental scan. Stdlib only; nothing to install.
 
 

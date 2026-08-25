@@ -89,7 +89,7 @@ Load-bearing, not decorative — several have already caught real bugs.
 | **Artist path** | complete: session model, 11 view splines, browser with reconciliation, audit at 0 HIGH, reconciled against David Wild and MusicBrainz |
 | **General path** | model and playlists work; **no browser**, no reconciliation, no duplicate UI |
 | **Scale proven** | 3,398 tracks end to end; 90,159 walked and playlisted via the fast path |
-| **Tests** | 76 cases, 4 suites: dates, sessions, credits, incremental scan |
+| **Tests** | 130 cases, 5 suites: dates, sessions, credits, incremental scan, portability |
 | **Docs** | 9 documents, ~1,900 lines |
 
 Measured on the reference archive of 3,398 tracks:
@@ -118,7 +118,7 @@ byte-identical to a full scan, reuse refused across roots.
 76 cases. Found four real bugs on the first run, including a track-number
 stripper that reduced the composition `26-2` to `2`.
 
-**1.3 General-mode browser — NEXT**
+**1.3 General-mode browser — DONE**
 
 `coltrane_app.py` is roughly 90% artist-agnostic; the compaction step and the
 facet list are the artist-specific parts.
@@ -137,25 +137,55 @@ facet list are the artist-specific parts.
 recordings of a piece together, and the artist browser is unchanged in
 behaviour (verified by hashing its payload before and after).
 
-**1.4 Reconciliation for the general path**
+**1.4 Reconciliation for the general path — DONE**
 
 Reuse the validated-match machinery already proven in `coltrane_mb.py`: a
 candidate release must overlap our tracklist in **both** directions, and
 session facts are computed only from overlapping tracks.
 
-- match on (album artist, album title, track count, durations)
-- populate recording date, label, catalogue number, work identity
-- emit `mb_conflicts.csv` in the same decision-sheet shape
-- durations are the strongest signal available without fingerprinting and
-  are already captured by the probe
+Shipped as `general_mb.py`. One assumption from the plan above did not
+survive contact with the data: **album artist is not usable as a match key.**
+Measured on the manifest, all 314 releases have complete durations, 87 have
+an album artist, and 1 has a MusicBrainz album id. So matching validates on
+the **duration sequence** alone — 70% of tracks pairing within 5 seconds —
+and treats title and artist purely as search terms.
 
-**Done when:** a classical release with useless tags gets its work identity
-and recording date from MusicBrainz, with citations, and nothing is applied
-automatically.
+- populates recording date, label, catalogue number and **per-recording work
+  ids**, which is the stable identity fragmentation actually needs
+- emits `mb_conflicts.csv` in the decision-sheet shape, nothing applied
+- `vocab/general_mb_works.json` records which releases share a work
 
-**1.5 Cross-platform CI**
-GitHub Actions: Python 3.8–3.12 on Windows, macOS and Linux, running
-`tests/run_tests.py`. Converts "should be portable" into "is".
+Three lessons came out of measuring rather than assuming:
+
+1. **A throttle is not a negative result.** Six of seven early "misses" were
+   503s cached permanently as "no match". Transient failures are now kept out
+   of the cache so the next run retries them.
+2. **Folder titles need cleaning before they are queries.** `BACH -
+   Brandenburg Concerti CD1` returns nothing; `Brandenburg Concerti` scores
+   100.
+3. **A track count out-filters a title score.** `tracks:19` reduced eight
+   plausible candidates to one, and prefiltering on the count reported in
+   search results cut the call budget per release from ~36 to under 10.
+
+**Done:** a classical release with useless tags gets work identity and a
+recording date with citations, and a wrong performance is refused rather than
+guessed — which is why the hit rate is a fifth rather than everything.
+
+**1.5 Cross-platform CI — DONE**
+`.github/workflows/ci.yml`: Python 3.8–3.12 on Windows, macOS and Linux with
+`ffmpeg` installed, running `tests/run_tests.py`, plus a Linux job that
+imports every module and `--help`s every entry point — because the failures
+most likely to hit a non-Windows user are import-time.
+
+A `test_portability` suite makes the same guarantee locally: every module is
+parsed against the 3.8 grammar, and no module may carry a hardcoded drive
+letter (a regression that has happened twice here).
+
+**The platform question is open, and deliberately notated rather than
+answered** — see [platform.md](platform.md). CI proves the code *runs* on
+three platforms; it does not prove the tool is *good* on them. The folder
+picker is modelled on drive letters, and no non-Windows playlist consumer has
+been tested. The honest claim is "runs everywhere, proven on Windows."
 
 ### Phase 2 — identify files by content
 
