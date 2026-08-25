@@ -1,0 +1,322 @@
+{
+ "_comment": "Artist profile. Everything here is data, not code -- copy this file, change the values, and the same pipeline works for another artist. `cratedigger init --artist NAME` bootstraps one.",
+ "slug": "coltrane",
+ "name": "John Coltrane",
+ "musicbrainz_mbid": "b625448e-bf4a-41c3-a421-72ad46cdb831",
+ "active_from": "1945-01-01",
+ "active_to": "1967-07-17",
+ "active_to_note": "Coltrane died 1967-07-17. Dates outside the active window are release or compilation years, never sessions.",
+ "sessions_file": "coltrane_sessions.json",
+ "personnel_file": "coltrane_personnel.json",
+ "eras": [
+  {
+   "from": "1945-01-01",
+   "name": "Navy & apprenticeship"
+  },
+  {
+   "from": "1949-01-01",
+   "name": "Dizzy Gillespie / R&B sideman"
+  },
+  {
+   "from": "1955-09-01",
+   "name": "Miles Davis Quintet (first)"
+  },
+  {
+   "from": "1957-04-01",
+   "name": "Monk & the Prestige years"
+  },
+  {
+   "from": "1958-01-01",
+   "name": "Miles Davis Sextet / Prestige leader dates"
+  },
+  {
+   "from": "1959-04-01",
+   "name": "Atlantic years"
+  },
+  {
+   "from": "1961-05-01",
+   "name": "Impulse! -- Dolphy & the expanding group"
+  },
+  {
+   "from": "1962-01-01",
+   "name": "Classic Quartet"
+  },
+  {
+   "from": "1965-06-01",
+   "name": "Late period -- Ascension onward"
+  },
+  {
+   "from": "1966-01-01",
+   "name": "Final group (Alice Coltrane, Sanders, Ali)"
+  }
+ ],
+ "venues": [
+  {
+   "match": "village vanguard",
+   "venue": "Village Vanguard",
+   "city": "New York",
+   "country": "USA"
+  },
+  {
+   "match": "birdland",
+   "venue": "Birdland",
+   "city": "New York",
+   "country": "USA"
+  },
+  {
+   "match": "half note",
+   "venue": "Half Note",
+   "city": "New York",
+   "country": "USA"
+  },
+  {
+   "match": "five spot",
+   "venue": "Five Spot",
+   "city": "New York",
+   "country": "USA"
+  },
+  {
+   "match": "cafe bohemia",
+   "venue": "Café Bohemia",
+   "city": "New York",
+   "country": "USA"
+  },
+  {
+   "match": "newport",
+   "venue": "Newport Jazz Festival",
+   "city": "Newport",
+   "country": "USA"
+  },
+  {
+   "match": "antibes",
+   "venue": "Juan-les-Pins",
+   "city": "Antibes",
+   "country": "France"
+  },
+  {
+   "match": "juan les pins",
+   "venue": "Juan-les-Pins",
+   "city": "Antibes",
+   "country": "France"
+  },
+  {
+   "match": "olatunji",
+   "venue": "Olatunji Center",
+   "city": "New York",
+   "country": "USA"
+  },
+  {
+   "match": "temple university",
+   "venue": "Temple University",
+   "city": "Philadelphia",
+   "country": "USA"
+  },
+  {
+   "match": "showboat",
+   "venue": "Showboat",
+   "city": "Philadelphia",
+   "country": "USA"
+  },
+  {
+   "match": "pep's",
+   "venue": "Pep's",
+   "city": "Philadelphia",
+   "country": "USA"
+  },
+  {
+   "match": "penthouse",
+   "venue": "Penthouse",
+   "city": "Seattle",
+   "country": "USA"
+  },
+  {
+   "match": "soldier's field",
+   "venue": "Soldier Field",
+   "city": "Chicago",
+   "country": "USA"
+  },
+  {
+   "match": "jazz casual",
+   "venue": "Jazz Casual (TV)",
+   "city": null,
+   "country": "USA"
+  },
+  {
+   "match": "comblain",
+   "venue": "Comblain-la-Tour",
+   "city": null,
+   "country": "Belgium"
+  },
+  {
+   "match": "konserthuset",
+   "venue": "Konserthuset",
+   "city": "Stockholm",
+   "country": "Sweden"
+  }
+ ],
+ "cities": [
+  {
+   "match": "paris",
+   "city": "Paris",
+   "country": "France"
+  },
+  {
+   "match": "stockholm",
+   "city": "Stockholm",
+   "country": "Sweden"
+  },
+  {
+   "match": "copenhagen",
+   "city": "Copenhagen",
+   "country": "Denmark"
+  },
+  {
+   "match": "berlin",
+   "city": "Berlin",
+   "country": "Germany"
+  },
+  {
+   "match": "frankfurt",
+   "city": "Frankfurt",
+   "country": "Germany"
+  },
+  {
+   "match": "stuttgart",
+   "city": "Stuttgart",
+   "country": "Germany"
+  },
+  {
+   "match": "hamburg",
+   "city": "Hamburg",
+   "country": "Germany"
+  },
+  {
+   "match": "dusseldorf",
+   "city": "Düsseldorf",
+   "country": "Germany"
+  },
+  {
+   "match": "baden-baden",
+   "city": "Baden-Baden",
+   "country": "Germany"
+  },
+  {
+   "match": "graz",
+   "city": "Graz",
+   "country": "Austria"
+  },
+  {
+   "match": "vienna",
+   "city": "Vienna",
+   "country": "Austria"
+  },
+  {
+   "match": "helsinki",
+   "city": "Helsinki",
+   "country": "Finland"
+  },
+  {
+   "match": "finland",
+   "city": null,
+   "country": "Finland"
+  },
+  {
+   "match": "holland",
+   "city": null,
+   "country": "Netherlands"
+  },
+  {
+   "match": "den haag",
+   "city": "The Hague",
+   "country": "Netherlands"
+  },
+  {
+   "match": "belguim",
+   "city": null,
+   "country": "Belgium"
+  },
+  {
+   "match": "belgium",
+   "city": null,
+   "country": "Belgium"
+  },
+  {
+   "match": "kobe",
+   "city": "Kobe",
+   "country": "Japan"
+  },
+  {
+   "match": "tokyo",
+   "city": "Tokyo",
+   "country": "Japan"
+  },
+  {
+   "match": "japan",
+   "city": null,
+   "country": "Japan"
+  },
+  {
+   "match": "seattle",
+   "city": "Seattle",
+   "country": "USA"
+  },
+  {
+   "match": "chicago",
+   "city": "Chicago",
+   "country": "USA"
+  },
+  {
+   "match": "philadelphia",
+   "city": "Philadelphia",
+   "country": "USA"
+  },
+  {
+   "match": "new york",
+   "city": "New York",
+   "country": "USA"
+  },
+  {
+   "match": "los angeles",
+   "city": "Los Angeles",
+   "country": "USA"
+  },
+  {
+   "match": "san francisco",
+   "city": "San Francisco",
+   "country": "USA"
+  }
+ ],
+ "other_leaders": [
+  "miles davis",
+  "thelonious monk",
+  "cannonball adderley",
+  "tadd dameron",
+  "hank mobley",
+  "art taylor",
+  "kenny burrell",
+  "milt jackson",
+  "duke ellington",
+  "johnny hartman",
+  "red garland",
+  "paul chambers",
+  "elmo hope",
+  "gene ammons",
+  "george russell",
+  "ray draper",
+  "wilbur harden",
+  "sonny clark",
+  "michel legrand",
+  "don cherry",
+  "archie shepp",
+  "mal waldron",
+  "dizzy gillespie",
+  "johnny griffin",
+  "zoot sims",
+  "al cohn",
+  "idrees sulieman",
+  "tommy flanagan",
+  "quinichette",
+  "alice coltrane",
+  "mccoy tyner"
+ ]
+}

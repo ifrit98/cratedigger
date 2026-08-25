@@ -20,7 +20,30 @@ import re
 import unicodedata
 
 VOCAB_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "vocab")
-SESSIONS_FILE = os.path.join(VOCAB_DIR, "coltrane_sessions.json")
+ARTISTS_DIR = os.path.join(VOCAB_DIR, "artists")
+
+# Which artist profile to load. Everything artist-specific -- life dates,
+# eras, venues, sidemen -- lives in vocab/artists/<slug>.json, so the same
+# pipeline serves any artist. The constants further down are the fallback
+# used only when no profile file is present.
+ARTIST_SLUG = os.environ.get("CRATEDIGGER_ARTIST", "coltrane")
+
+
+def _load_profile(slug=None):
+    path = os.path.join(ARTISTS_DIR, (slug or ARTIST_SLUG) + ".json")
+    if not os.path.exists(path):
+        return {}
+    try:
+        with open(path, encoding="utf-8") as fh:
+            return json.load(fh)
+    except (OSError, json.JSONDecodeError):
+        return {}
+
+
+PROFILE = _load_profile()
+ARTIST_NAME = PROFILE.get("name", "John Coltrane")
+SESSIONS_FILE = os.path.join(
+    VOCAB_DIR, PROFILE.get("sessions_file", "coltrane_sessions.json"))
 
 MONTHS = {
     "january": 1, "jan": 1, "february": 2, "feb": 2, "march": 3, "mar": 3,
@@ -74,8 +97,8 @@ _DATE_PATTERNS = [
 # Any "date" outside this window is a release, reissue or compilation year --
 # never a recording date. Without this clamp, posthumous compilations date
 # themselves to 1972-1979 and poison the chronology.
-FIRST_RECORDING = "1945-01-01"
-DIED = "1967-07-17"
+FIRST_RECORDING = PROFILE.get("active_from", "1945-01-01")
+DIED = PROFILE.get("active_to", "1967-07-17")
 
 # Titles that announce a compilation. Their tag year is an issue year and
 # must not be read as a recording date.
@@ -88,7 +111,7 @@ COMPILATION_RE = re.compile(
 
 
 def is_plausible_recording_date(iso):
-    """False for anything outside Coltrane's recording life."""
+    """False for anything outside the artist's recording life."""
     if not iso:
         return False
     d = str(iso)[:10]
@@ -155,10 +178,14 @@ def parse_recording_date(text):
 
 
 # ------------------------------------------------------------------ eras
-# Coltrane's working bands. Boundaries are the conventional ones; a date is
-# assigned to the last era whose start it is on or after.
+# The artist's working bands, from the profile. A date is assigned to the last
+# era whose start it is on or after.
+#
+# A loaded profile is authoritative even where a list is empty. Falling back on
+# emptiness would hand one artist another artist's bands -- Bill Evans would
+# silently acquire Coltrane's Classic Quartet.
 
-ERAS = [
+ERAS = ([(e["from"], e["name"]) for e in PROFILE["eras"]] if PROFILE else [
     ("1945-01-01", "Navy & apprenticeship"),
     ("1949-01-01", "Dizzy Gillespie / R&B sideman"),
     ("1955-09-01", "Miles Davis Quintet (first)"),
@@ -169,7 +196,7 @@ ERAS = [
     ("1962-01-01", "Classic Quartet"),
     ("1965-06-01", "Late period -- Ascension onward"),
     ("1966-01-01", "Final group (Alice Coltrane, Sanders, Ali)"),
-]
+])
 
 
 def band_era(iso_date):
@@ -186,7 +213,8 @@ def band_era(iso_date):
 
 # ------------------------------------------------------------- provenance
 
-_LIVE_VENUES = [
+_LIVE_VENUES = ([(v["match"], v.get("venue"), v.get("city"), v.get("country"))
+                 for v in PROFILE["venues"]] if PROFILE else [
     ("village vanguard", "Village Vanguard", "New York", "USA"),
     ("birdland", "Birdland", "New York", "USA"),
     ("half note", "Half Note", "New York", "USA"),
@@ -204,9 +232,10 @@ _LIVE_VENUES = [
     ("jazz casual", "Jazz Casual (TV)", None, "USA"),
     ("comblain", "Comblain-la-Tour", None, "Belgium"),
     ("konserthuset", "Konserthuset", "Stockholm", "Sweden"),
-]
+])
 
-_CITIES = [
+_CITIES = ([(c["match"], c.get("city"), c.get("country"))
+            for c in PROFILE["cities"]] if PROFILE else [
     ("paris", "Paris", "France"), ("stockholm", "Stockholm", "Sweden"),
     ("copenhagen", "Copenhagen", "Denmark"), ("berlin", "Berlin", "Germany"),
     ("frankfurt", "Frankfurt", "Germany"), ("stuttgart", "Stuttgart", "Germany"),
@@ -221,7 +250,7 @@ _CITIES = [
     ("chicago", "Chicago", "USA"), ("philadelphia", "Philadelphia", "USA"),
     ("new york", "New York", "USA"), ("los angeles", "Los Angeles", "USA"),
     ("san francisco", "San Francisco", "USA"),
-]
+])
 
 _BROADCAST = re.compile(
     r"\b(tv show|television|broadcast|radio|jazz casual|rai\b|ortf|ndr|wdr|"
@@ -364,7 +393,7 @@ def lookup_session(text, sessions=None):
 
 _LEADER_HINT = re.compile(r"\bjohn\s+coltrane\b|\bcoltrane\b", re.I)
 # Names that, when they lead the folder title, mean Coltrane is a sideman.
-_OTHER_LEADERS = [
+_OTHER_LEADERS = (PROFILE["other_leaders"] if PROFILE else [
     "miles davis", "thelonious monk", "cannonball adderley", "tadd dameron",
     "hank mobley", "art taylor", "kenny burrell", "milt jackson",
     "duke ellington", "johnny hartman", "red garland", "paul chambers",
@@ -373,7 +402,7 @@ _OTHER_LEADERS = [
     "archie shepp", "mal waldron", "dizzy gillespie", "johnny griffin",
     "zoot sims", "al cohn", "idrees sulieman", "tommy flanagan",
     "quinichette", "alice coltrane", "mccoy tyner",
-]
+])
 
 
 def classify_role(path, album_artist=None):
@@ -401,7 +430,8 @@ def classify_role(path, album_artist=None):
 
 # -------------------------------------------------------------- personnel
 
-PERSONNEL_FILE = os.path.join(VOCAB_DIR, "coltrane_personnel.json")
+PERSONNEL_FILE = os.path.join(
+    VOCAB_DIR, PROFILE.get("personnel_file", "coltrane_personnel.json"))
 
 
 def load_personnel(path=PERSONNEL_FILE):

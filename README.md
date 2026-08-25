@@ -34,31 +34,55 @@ reconcilers.
 winget install Gyan.FFmpeg          # or: brew install ffmpeg
 ```
 
-## First run
+## Start here
 
 ```bash
-python doctor.py --root "D:\Coltrane"
+python cratedigger.py init
 ```
 
-Checks Python, FFmpeg, the vocabularies, any existing manifest, and your
-archive — then estimates how long a scan will take. It names the install
-command for anything missing.
-
-## Coltrane pipeline
+Point it at a music folder. It surveys what is there, estimates the scan
+time, and writes a small `cratedigger.json` so no later command needs paths
+again. Give it `--artist "Bill Evans"` and it looks the artist up on
+MusicBrainz and bootstraps a profile with the right life dates.
 
 ```bash
-python scan.py --root "D:\Coltrane" --out output-coltrane/raw_probe.jsonl --workers 16
-python coltrane_build.py --raw output-coltrane/raw_probe.jsonl --out output-coltrane --root "D:\Coltrane"
-python coltrane_views.py --manifest output-coltrane/coltrane.json --out output-coltrane/views --root "D:\Coltrane"
-python coltrane_app.py --manifest output-coltrane/coltrane.json --out output-coltrane/coltrane-browser.html --root "D:\Coltrane"
+python cratedigger.py all
 ```
 
-The scan takes ~5 minutes for 3,400 files; everything downstream is seconds.
-Re-run `build` and the generators freely after editing any vocabulary.
+Scan, build, views, browser — in order, with progress. Then:
 
-**Open `output-coltrane/coltrane-browser.html` straight from disk.** It is the
-main way in: the whole ontology in one file, filtering on every axis at once,
-tracks playing in place, and a Reconcile mode for adjudicating dates.
+```bash
+python cratedigger.py status        # config, vocabulary, build state
+python cratedigger.py audit         # adversarial data checks
+python cratedigger.py enrich --source all
+python cratedigger.py browse --open
+```
+
+Every stage is still runnable by hand with explicit paths; `cratedigger.py`
+just spares you repeating them. See `python cratedigger.py --help`.
+
+**The browser is the main way in.** One file, opened from disk: the whole
+ontology, filtering on every axis at once, tracks playing in place, and a
+Reconcile mode for adjudicating dates against the sources.
+
+## Using it for a different artist
+
+Everything artist-specific is **data, not code** — life dates, eras, venues,
+sidemen and the discography all live in `vocab/artists/<slug>.json`.
+
+```bash
+python cratedigger.py artists --create "Bill Evans"
+python cratedigger.py artists
+```
+
+That fetches the MusicBrainz id and life span, then seeds empty session and
+personnel tables for you to fill. The lifetime clamp, era assignment, venue
+detection and MusicBrainz reconciliation all follow the profile from then on.
+`vocab/artists/coltrane.json` is the worked example — 10 eras, 17 venues,
+31 other leaders.
+
+A loaded profile is authoritative even where a list is empty, so a new artist
+never inherits Coltrane's bands.
 
 ## Verifying
 

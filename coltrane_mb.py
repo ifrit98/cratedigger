@@ -33,7 +33,16 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 VOCAB = os.path.join(HERE, "vocab")
 CACHE = os.path.join(VOCAB, "coltrane_mb_cache.json")
 FINDINGS = os.path.join(VOCAB, "coltrane_mb_sessions.json")
-COLTRANE_MBID = "b625448e-bf4a-41c3-a421-72ad46cdb831"
+# The artist comes from the active profile, so this reconciler serves any
+# archive. It falls back to Coltrane only when no profile is loaded.
+try:
+    import coltrane as _artist
+    ARTIST_MBID = (_artist.PROFILE.get("musicbrainz_mbid")
+                   or "b625448e-bf4a-41c3-a421-72ad46cdb831")
+    ARTIST_NAME = _artist.ARTIST_NAME
+except Exception:  # noqa: BLE001
+    ARTIST_MBID = "b625448e-bf4a-41c3-a421-72ad46cdb831"
+    ARTIST_NAME = "John Coltrane"
 
 UA = "MusicLibraryOntology/1.0 (personal library cataloging)"
 BASE = "https://musicbrainz.org/ws/2/"
@@ -182,13 +191,14 @@ def fetch(manifest_path, limit, only=None):
     if only:
         todo = [a for a in todo if only.lower() in a.lower()]
     todo = todo[:limit]
+    print(f"reconciling against MusicBrainz as: {ARTIST_NAME}")
     print(f"{len(albums)} distinct albums; {len(cache)} cached; "
           f"fetching {len(todo)}")
 
     for i, album in enumerate(todo, 1):
         our = albums[album]
         clean = re.sub(r'["\\]', " ", album)[:80]
-        q = f'arid:{COLTRANE_MBID} AND release:"{clean}"'
+        q = f'arid:{ARTIST_MBID} AND release:"{clean}"'
         res = get("release", {"query": q, "limit": 6})
         entry = {"album": album, "fetched": time.strftime("%Y-%m-%d"),
                  "our_tunes": len(our)}
@@ -241,9 +251,13 @@ def report(manifest_path):
     cache = load_json(CACHE, {})
     if not cache:
         sys.exit("no cache yet -- run without --report first")
+    try:
+        import coltrane as _a
+        sess_file = _a.SESSIONS_FILE
+    except Exception:  # noqa: BLE001
+        sess_file = os.path.join(VOCAB, "coltrane_sessions.json")
     ours = {e["title"]: e for e in
-            load_json(os.path.join(VOCAB, "coltrane_sessions.json"),
-                      {"sessions": []})["sessions"]}
+            load_json(sess_file, {"sessions": []})["sessions"]}
     man = load_json(manifest_path, {})
     rel_date = {}
     for r in man.get("releases", []):

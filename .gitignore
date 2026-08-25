@@ -1,3 +1,6 @@
+# Per-project config, written by `cratedigger init`. Yours, not the repo's.
+cratedigger.json
+
 # Generated artifacts -- all rebuilt from your audio files.
 # Nothing here is precious; `doctor.py` will tell you what to re-run.
 output-coltrane/
