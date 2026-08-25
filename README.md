@@ -70,12 +70,49 @@ python cratedigger.py enrich --source all
 python cratedigger.py browse --open
 ```
 
+### Every command
+
+| | |
+|---|---|
+| `init` | point it at a library; writes the project config |
+| `status` | config, artist profile, build state |
+| `all` | scan → build → views → browse |
+| `scan` `build` `views` `browse` | the stages individually |
+| `audit` | adversarial data checks |
+| `enrich` | pull session data from MusicBrainz or Wild |
+| `artists` | list or create artist profiles |
+| `results` | what was produced, where, and what each file is for |
+| `clean` | remove generated output; never your music or `vocab/` |
+| `serve` | the control panel |
+
 Every stage is still runnable by hand with explicit paths; `cratedigger.py`
 just spares you repeating them. See `python cratedigger.py --help`.
 
 **The browser is the main way in.** One file, opened from disk: the whole
 ontology, filtering on every axis at once, tracks playing in place, and a
 Reconcile mode for adjudicating dates against the sources.
+
+## Seeing what you got
+
+```bash
+python cratedigger.py results
+```
+
+Every artifact with its size and purpose, ending at the file to open first —
+the browser. [outputs.md](docs/outputs.md) explains the rest.
+
+## Tearing it down
+
+```bash
+python cratedigger.py clean --dry-run    # preview
+python cratedigger.py clean              # output, keeping the probe
+python cratedigger.py clean all          # everything generated
+```
+
+**Your music is never touched, and `vocab/` is never touched** — the
+discography, personnel and cached harvests survive every level of teardown,
+because they are the only things a rebuild cannot regenerate.
+[teardown.md](docs/teardown.md) has the detail.
 
 ## Using it for a different artist
 
@@ -125,6 +162,20 @@ python coltrane_build.py --raw output-coltrane/raw_probe.jsonl --out output-colt
 
 Nothing external is ever auto-applied. Every reconciler produces a decision
 sheet; a human rules on it; the ruling is stored with its citation.
+
+## Documentation
+
+Start with the first two.
+
+| doc | |
+|---|---|
+| [getting-started.md](docs/getting-started.md) | install, point it at a library, first run |
+| [outputs.md](docs/outputs.md) | what every file and command output means |
+| [panel.md](docs/panel.md) | the control panel |
+| [teardown.md](docs/teardown.md) | what is safe to delete, resetting, uninstalling |
+| [troubleshooting.md](docs/troubleshooting.md) | symptom → cause → fix |
+| [coltrane.md](docs/coltrane.md) | the Coltrane archive: model, sources, reconciliation |
+| [toolkit.md](docs/toolkit.md) | the general mixed-library pipeline |
 
 ## Layout
 

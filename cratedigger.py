@@ -24,6 +24,8 @@ Commands
   artists   list, show or create artist profiles
   all       scan -> build -> views -> browse
   serve     open a local control panel in your browser
+  results   list what was produced and where it is
+  clean     remove generated output; never your music or vocab
 """
 import argparse
 import json
@@ -461,6 +463,172 @@ def cmd_serve(args):
     cratedigger_ui.serve(port=args.port, open_browser=not args.no_open)
 
 
+
+# ---------------------------------------------------------------- results
+
+def _fmt_size(path):
+    if os.path.isdir(path):
+        n = tot = 0
+        for r, _d, files in os.walk(path):
+            for f in files:
+                n += 1
+                try:
+                    tot += os.path.getsize(os.path.join(r, f))
+                except OSError:
+                    pass
+        return "%s files, %.1f MB" % (format(n, ","), tot / 1048576)
+    return "%s KB" % format(round(os.path.getsize(path) / 1024), ",")
+
+
+# What each artifact is for. Printed by `results` so the output directory is
+# self-explaining rather than a pile of CSVs.
+ARTIFACTS = [
+    ("raw_probe.jsonl", "every file's tags and audio properties. The "
+                        "expensive artifact -- keep it and rebuilds take "
+                        "seconds"),
+    ("coltrane.json", "the manifest: sessions, tunes, releases, tracks"),
+    ("library.json", "the manifest (general mode)"),
+    ("chronology.csv", "releases in recording-date order -- the spine, as a "
+                       "spreadsheet"),
+    ("sessions.csv", "one row per session: date, venue, lineup, tunes"),
+    ("tunes.csv", "every tune with version counts, first and last recorded"),
+    ("tracks.csv", "every file with all facets. The one to filter in Excel"),
+    ("library.csv", "one row per track (general mode)"),
+    ("works.csv", "work index with recording counts (general mode)"),
+    ("duplicates.csv", "duplicate clusters by confidence and reclaimable "
+                       "bytes"),
+    ("projection_flat.csv", "proposed flattened tags for simple players. "
+                            "Nothing is written to your files"),
+    ("mb_conflicts.csv", "where MusicBrainz disagrees with the discography"),
+    ("wild_reconciliation.csv", "where David Wild disagrees"),
+    ("date_consensus.csv", "three-way verdicts: adopt / contested / "
+                           "confirmed / unsourced"),
+    ("wild_track_proposals.csv", "per-track session candidates"),
+    ("coltrane-browser.html", "the interactive browser -- open from disk"),
+]
+
+
+def cmd_results(args):
+    cfg = load_config()
+    out = out_dir(cfg)
+    if not os.path.isdir(out):
+        sys.exit("nothing built yet in %s\n  python cratedigger.py all" % out)
+    print("output: %s\n" % out)
+    found = 0
+    for name, why in ARTIFACTS:
+        path = os.path.join(out, name)
+        if os.path.exists(path):
+            found += 1
+            print("  %-28s %18s" % (name, _fmt_size(path)))
+            print("  %-28s %s" % ("", why))
+    views = os.path.join(out, "views")
+    if os.path.isdir(views):
+        found += 1
+        print("  %-28s %18s" % ("views/", _fmt_size(views)))
+        print("  %-28s playlists, one folder per facet:" % "")
+        for f in sorted(d for d in os.listdir(views)
+                        if os.path.isdir(os.path.join(views, d))):
+            n = len([x for x in os.listdir(os.path.join(views, f))
+                     if x.endswith(".m3u8")])
+            print("  %-30s %-28s %5s" % ("", f, format(n, ",")))
+    if not found:
+        print("  (empty)")
+        return
+    browser = os.path.join(out, "coltrane-browser.html")
+    if os.path.exists(browser):
+        print("\nStart here:  %s" % browser)
+        print("  open it from disk -- no server needed")
+    print("\n  python cratedigger.py clean --dry-run   # what teardown "
+          "would remove")
+
+
+# ------------------------------------------------------------------ clean
+
+def _clean_plan(out, what):
+    """(label, path) pairs to remove. Never music, never vocab."""
+    groups = {
+        "views": [("views", os.path.join(out, "views"))],
+        "browser": [("browser", os.path.join(out, "coltrane-browser.html"))],
+        "reports": [("report", os.path.join(out, n)) for n in (
+            "mb_conflicts.csv", "wild_reconciliation.csv",
+            "date_consensus.csv", "wild_track_proposals.csv",
+            "wild_track_proposals.json")],
+        "manifest": [("manifest", os.path.join(out, n)) for n in (
+            "coltrane.json", "library.json", "chronology.csv", "sessions.csv",
+            "tunes.csv", "tracks.csv", "library.csv", "works.csv",
+            "duplicates.csv", "projection_flat.csv")],
+        "probe": [("probe", os.path.join(out, "raw_probe.jsonl"))],
+    }
+    if what == "outputs":
+        want = ["views", "browser", "reports", "manifest"]
+    elif what == "all":
+        want = list(groups)
+    else:
+        want = [what]
+    plan = []
+    for g in want:
+        for label, path in groups.get(g, []):
+            if os.path.exists(path):
+                plan.append((label, path))
+    return plan
+
+
+def _size_of(path):
+    if not os.path.isdir(path):
+        try:
+            return os.path.getsize(path)
+        except OSError:
+            return 0
+    tot = 0
+    for r, _d, files in os.walk(path):
+        for f in files:
+            try:
+                tot += os.path.getsize(os.path.join(r, f))
+            except OSError:
+                pass
+    return tot
+
+
+def cmd_clean(args):
+    cfg = load_config()
+    out = out_dir(cfg)
+    plan = _clean_plan(out, args.what)
+    if not plan:
+        print("nothing to remove for '%s' in %s" % (args.what, out))
+        return
+
+    total = sum(_size_of(p) for _l, p in plan)
+    print("would remove from %s:\n" % out)
+    for label, path in plan:
+        print("  %-9s %s" % (label, os.path.basename(path)))
+    print("\n  %d item(s), %.1f MB" % (len(plan), total / 1048576))
+    print("\n  Your music is never touched. vocab/ is never touched -- the")
+    print("  discography, personnel and cached harvests all survive, and")
+    print("  they are the only things a rebuild cannot regenerate.")
+    if args.what in ("all", "probe"):
+        print("\n  NOTE: removing the probe means the next build needs a")
+        print("  full re-scan of your library.")
+
+    if args.dry_run:
+        print("\n(dry run -- nothing removed)")
+        return
+    if not args.yes:
+        if ask("\n  type 'yes' to remove: ").lower() != "yes":
+            print("  cancelled")
+            return
+
+    import shutil
+    removed = 0
+    for _label, path in plan:
+        try:
+            shutil.rmtree(path) if os.path.isdir(path) else os.remove(path)
+            removed += 1
+        except OSError as e:
+            print("  !! %s: %s" % (path, e))
+    print("\nremoved %d item(s)" % removed)
+    print("  rebuild with:  python cratedigger.py all")
+
+
 def cmd_all(args):
     cmd_scan(args)
     cmd_build(args)
@@ -514,6 +682,19 @@ def main():
     p.add_argument("--create", metavar="NAME")
     p.add_argument("--offline", action="store_true")
     p.set_defaults(fn=cmd_artists)
+
+    sub.add_parser("results", help="list what was produced and where"
+                   ).set_defaults(fn=cmd_results)
+
+    p = sub.add_parser("clean", help="remove generated output")
+    p.add_argument("what", nargs="?", default="outputs",
+                   choices=["views", "browser", "reports", "manifest",
+                            "probe", "outputs", "all"],
+                   help="'outputs' (default) keeps the probe; "
+                        "'all' removes it too")
+    p.add_argument("--dry-run", action="store_true")
+    p.add_argument("--yes", action="store_true", help="skip confirmation")
+    p.set_defaults(fn=cmd_clean)
 
     p = sub.add_parser("serve", help="local control panel in your browser")
     p.add_argument("--port", type=int, default=8420)

@@ -224,6 +224,10 @@ STAGES = {
                            "musicbrainz"],
     "enrich-wild":        ["cratedigger.py", "enrich", "--source", "wild"],
     "enrich-all":         ["cratedigger.py", "enrich", "--source", "all"],
+    "results":       ["cratedigger.py", "results"],
+    "clean-dry":     ["cratedigger.py", "clean", "outputs", "--dry-run"],
+    "clean-outputs": ["cratedigger.py", "clean", "outputs", "--yes"],
+    "clean-all":     ["cratedigger.py", "clean", "all", "--yes"],
 }
 
 
@@ -381,6 +385,8 @@ button:hover:not(:disabled){border-color:var(--accent);color:var(--accent)}
 button:disabled{opacity:.45;cursor:default}
 button.primary{background:var(--accent);color:#fff;border-color:var(--accent)}
 button.primary:hover:not(:disabled){opacity:.9;color:#fff}
+button.danger{border-color:#c0392b;color:#c0392b}
+button.danger:hover:not(:disabled){background:#c0392b;color:#fff}
 input,select{font:inherit;font-size:13px;padding:7px 9px;border-radius:7px;
  border:1px solid var(--line);background:var(--bg);color:var(--ink);width:100%}
 .grow{flex:1;min-width:140px}
@@ -462,6 +468,22 @@ pre{background:var(--panel);border:1px solid var(--line);border-radius:8px;
     </div>
     <p class=hint>Scanning is the slow stage. Everything after it takes
       seconds, so rebuild freely once the probe exists.</p>
+  </div>
+
+  <div class=card>
+    <h2>4 &middot; results &amp; teardown</h2>
+    <div class=row>
+      <button data-stage=results>What was produced</button>
+      <button data-stage=clean-dry>Preview teardown</button>
+    </div>
+    <div class=row>
+      <button id=cleanOut class=danger>Remove output</button>
+      <button id=cleanAll class=danger>Remove output + probe</button>
+    </div>
+    <p class=hint>Teardown never touches your music, and never touches
+      <span class=mono>vocab/</span> &mdash; the discography, personnel and
+      cached harvests survive, and they are the only things a rebuild cannot
+      regenerate. Removing the probe means the next build re-scans.</p>
   </div>
 
   <div class=card>
@@ -553,7 +575,8 @@ async function poll(){
   running=j.running;
   document.querySelectorAll('button[data-stage]').forEach(b=>
     b.disabled=j.running);
-  $('#doInit').disabled=j.running; $('#doArtist').disabled=j.running;
+  ['#doInit','#doArtist','#cleanOut','#cleanAll'].forEach(id=>{
+    const el=$(id); if(el) el.disabled=j.running;});
 }
 
 async function start(stage){
@@ -565,6 +588,16 @@ async function start(stage){
 }
 document.querySelectorAll('button[data-stage]').forEach(b=>
   b.onclick=()=>start(b.dataset.stage));
+
+// Destructive actions confirm first, and say exactly what survives.
+$('#cleanOut').onclick=()=>{
+  if(confirm('Remove generated output?\n\nManifest, playlists, browser and '
+    +'reports go. The raw probe stays, so rebuilding takes seconds.\n\n'
+    +'Your music and vocab/ are untouched.')) start('clean-outputs');};
+$('#cleanAll').onclick=()=>{
+  if(confirm('Remove output AND the raw probe?\n\nThe next build will need '
+    +'a full re-scan of your library, which takes minutes.\n\n'
+    +'Your music and vocab/ are untouched.')) start('clean-all');};
 
 $('#doInit').onclick=async()=>{
   const library=$('#lib').value.trim();

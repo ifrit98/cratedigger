@@ -153,8 +153,10 @@ def main():
         print("Browser and views will work; scan.py needs ffprobe.")
         return 1
     print("All good.")
-    print("  browse : output-coltrane/coltrane-browser.html")
-    print("  verify : python coltrane_audit.py")
+    print("  set up  : python cratedigger.py init")
+    print("  panel   : python cratedigger.py serve")
+    print("  run all : python cratedigger.py all")
+    print("  results : python cratedigger.py results")
     return 0
 
 
