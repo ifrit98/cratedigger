@@ -24,95 +24,117 @@ Two projects share the codebase:
 
 ---
 
-## Requirements
+## Install
 
-Python 3.8+ (**standard library only** — nothing to `pip install`) and
-**FFmpeg**, for `ffprobe`. Network access is needed only by the two
-reconcilers.
+**Standard library only** — nothing to `pip install`, no virtualenv, no
+services. Three things, one of them optional:
+
+| | needed for | required? |
+|---|---|---|
+| Python 3.8+ | everything | yes |
+| FFmpeg (`ffprobe`) | reading tags from your files | for `scan` only |
+| Network | the MusicBrainz and Wild enrichers | optional |
 
 ```bash
-winget install Gyan.FFmpeg          # or: brew install ffmpeg
+winget install Gyan.FFmpeg     # Windows
+brew install ffmpeg            # macOS
+sudo apt install ffmpeg        # Debian/Ubuntu
 ```
 
-## Start here
+Reopen your terminal so `PATH` updates, then:
+
+```bash
+git clone https://github.com/ifrit98/cratedigger
+cd cratedigger
+python doctor.py
+```
+
+`doctor.py` checks Python, FFmpeg and the vocabularies, and names the fix for
+anything missing. Add `--root "D:\Music"` and it also sizes the scan.
+
+FFmpeg is only needed by `scan` — the panel, the model, the playlists and the
+browser all work without it, so you can look around first and install it
+later.
+
+→ **[docs/install.md](docs/install.md)** — per-platform detail, PATH
+problems, the Windows Store Python stub, working offline, upgrading,
+uninstalling.
+
+## Usage
+
+Two routes, same work, freely mixed.
+
+### The panel
 
 ```bash
 python cratedigger.py serve
 ```
 
-Opens a local control panel in your browser: browse to your music folder,
-pick or create an artist profile, run any stage with live output, and open
-the archive browser when it is built. Bound to `127.0.0.1` only.
+A local control panel at `127.0.0.1:8420`: browse to your music folder, pick
+or create an artist profile, run any stage with live output, see what was
+produced, and tear it down again. Bound to localhost only.
 
-See [docs/panel.md](docs/panel.md) for what is on it.
+→ **[docs/panel.md](docs/panel.md)**
 
-Prefer the terminal? Everything the panel does is a command:
-
-```bash
-python cratedigger.py init
-```
-
-Point it at a music folder. It surveys what is there, estimates the scan
-time, and writes a small `cratedigger.json` so no later command needs paths
-again. Give it `--artist "Bill Evans"` and it looks the artist up on
-MusicBrainz and bootstraps a profile with the right life dates.
+### The terminal
 
 ```bash
+python cratedigger.py init --library "D:\Music" --artist "John Coltrane"
 python cratedigger.py all
 ```
 
-Scan, build, views, browser — in order, with progress. Then:
+`init` surveys the folder, estimates the scan, and writes `cratedigger.json`
+so nothing afterwards needs paths again. `all` runs scan → build → views →
+browser.
 
-```bash
-python cratedigger.py status        # config, vocabulary, build state
-python cratedigger.py audit         # adversarial data checks
-python cratedigger.py enrich --source all
-python cratedigger.py browse --open
-```
-
-### Every command
-
-| | |
+| command | |
 |---|---|
-| `init` | point it at a library; writes the project config |
-| `status` | config, artist profile, build state |
+| `init` | point at a library; writes the project config |
+| `status` | config, artist profile, vocabulary, build state |
 | `all` | scan → build → views → browse |
 | `scan` `build` `views` `browse` | the stages individually |
-| `audit` | adversarial data checks |
+| `audit` | adversarial data checks; exits with the HIGH count |
 | `enrich` | pull session data from MusicBrainz or Wild |
 | `artists` | list or create artist profiles |
 | `results` | what was produced, where, and what each file is for |
 | `clean` | remove generated output; never your music or `vocab/` |
 | `serve` | the control panel |
 
-Every stage is still runnable by hand with explicit paths; `cratedigger.py`
-just spares you repeating them. See `python cratedigger.py --help`.
+Only `scan` is slow (~750 files/min). Everything downstream rebuilds in
+seconds, so the loop to iterate in is:
 
-**The browser is the main way in.** One file, opened from disk: the whole
-ontology, filtering on every axis at once, tracks playing in place, and a
-Reconcile mode for adjudicating dates against the sources.
+```bash
+python cratedigger.py build && python cratedigger.py views
+```
 
-## Seeing what you got
+→ **[docs/usage.md](docs/usage.md)** — every flag, plus workflows for adding
+music, reconciling dates, running two libraries side by side, scripting, and
+calling the stages by hand.
+
+### Then look at it
 
 ```bash
 python cratedigger.py results
 ```
 
-Every artifact with its size and purpose, ending at the file to open first —
-the browser. [outputs.md](docs/outputs.md) explains the rest.
+Lists every artifact with its size and purpose, ending at the one to open
+first — `output-*/coltrane-browser.html`, a single self-contained file with
+the whole ontology in it.
 
-## Tearing it down
+→ **[docs/outputs.md](docs/outputs.md)** — what every file and every command
+output means.
+
+### And clean up
 
 ```bash
-python cratedigger.py clean --dry-run    # preview
-python cratedigger.py clean              # output, keeping the probe
-python cratedigger.py clean all          # everything generated
+python cratedigger.py clean --dry-run
 ```
 
-**Your music is never touched, and `vocab/` is never touched** — the
-discography, personnel and cached harvests survive every level of teardown,
-because they are the only things a rebuild cannot regenerate.
-[teardown.md](docs/teardown.md) has the detail.
+**Your music is never touched, and `vocab/` is never touched** at any level —
+the discography, personnel and cached harvests are the only things a rebuild
+cannot regenerate.
+
+→ **[docs/teardown.md](docs/teardown.md)**
 
 ## Using it for a different artist
 
@@ -136,40 +158,49 @@ never inherits Coltrane's bands.
 ## Verifying
 
 ```bash
-python coltrane_audit.py --manifest output-coltrane/coltrane.json --root "D:\Coltrane"
+python cratedigger.py audit
 python tests/test_credits.py
 ```
 
-The audit is adversarial — it hunts for what is *wrong* and prints examples so
-any claim can be checked. It exits with the count of HIGH-severity findings.
-Current state: **0 HIGH**, 54 MED, every MED explained in the docs.
+The audit is adversarial — it hunts for what is *wrong* and prints examples
+so any claim can be checked, exiting with the count of HIGH-severity
+findings so it works as a gate in a script.
+
+Current state on the reference archive: **0 HIGH**, 54 MED, with every MED
+explained in [coltrane.md](docs/coltrane.md).
 
 ## Reconciling dates against external sources
 
 ```bash
-python coltrane_wild.py --fetch --tracks     # David Wild discography
-python coltrane_mb.py                        # MusicBrainz
-python coltrane_mb.py --report
-python coltrane_consensus.py                 # three-way agreement
+python cratedigger.py enrich --source all
 ```
 
-Then adjudicate in the browser's **Reconcile dates** mode and apply:
+Fetches session data from **MusicBrainz** and **David Wild's discography**,
+then grades every release on where the two agree: `adopt` (both agree and we
+differ), `contested` (the sources disagree), `confirmed`, `unsourced`.
+
+Adjudicate in the browser's **Reconcile dates** mode, then apply:
 
 ```bash
 python coltrane_decisions.py --in ~/Downloads/coltrane-date-decisions.json
-python coltrane_build.py --raw output-coltrane/raw_probe.jsonl --out output-coltrane --root "D:\Coltrane"
+python cratedigger.py build
 ```
 
-Nothing external is ever auto-applied. Every reconciler produces a decision
-sheet; a human rules on it; the ruling is stored with its citation.
+**Nothing external is ever auto-applied.** Every reconciler produces a
+decision sheet; a person rules on it; the ruling is stored with its citation
+and outranks every inferred source.
+
+→ **[docs/coltrane.md](docs/coltrane.md)** — the sources, their coverage
+gaps, and the matching traps that cost real accuracy before they were
+caught.
 
 ## Documentation
 
-Start with the first two.
-
 | doc | |
 |---|---|
-| [getting-started.md](docs/getting-started.md) | install, point it at a library, first run |
+| [install.md](docs/install.md) | prerequisites, platforms, upgrading, uninstalling |
+| [usage.md](docs/usage.md) | every command and flag, plus workflows |
+| [getting-started.md](docs/getting-started.md) | the guided first run, end to end |
 | [outputs.md](docs/outputs.md) | what every file and command output means |
 | [panel.md](docs/panel.md) | the control panel |
 | [teardown.md](docs/teardown.md) | what is safe to delete, resetting, uninstalling |
