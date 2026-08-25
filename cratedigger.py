@@ -46,6 +46,20 @@ SKIP_DIRS = {"System Volume Information", "$RECYCLE.BIN", "_library",
 
 # ----------------------------------------------------------------- config
 
+def ask(prompt, default=""):
+    """Prompt only when there is a human there.
+
+    input() raises EOFError under a script, a pipe or CI, which turned a
+    missing flag into a traceback instead of a clear message.
+    """
+    if not sys.stdin or not sys.stdin.isatty():
+        return default
+    try:
+        return input(prompt).strip().strip('"')
+    except (EOFError, KeyboardInterrupt):
+        return default
+
+
 def config_path(start=None):
     return os.path.join(start or os.getcwd(), CONFIG_NAME)
 
@@ -136,7 +150,10 @@ def cmd_init(args):
 
     if not library:
         print("Point cratedigger at a music folder.\n")
-        library = input("  path to your library: ").strip().strip('"')
+        library = ask("  path to your library: ")
+    if not library:
+        sys.exit("No library given. Pass one:\n"
+                 '  python cratedigger.py init --library "D:\\Music"')
     library = os.path.abspath(os.path.expanduser(library))
     if not os.path.isdir(library):
         sys.exit(f"not a directory: {library}")
@@ -159,8 +176,7 @@ def cmd_init(args):
     if mode == "artist":
         name = args.artist
         if not name and not artist_slug:
-            name = input("\n  artist for this archive "
-                         "(blank to skip): ").strip()
+            name = ask("\n  artist for this archive (blank to skip): ")
         if name:
             artist_slug = ensure_profile(name, offline=args.offline)
         elif not artist_slug:
