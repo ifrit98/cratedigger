@@ -208,9 +208,28 @@ cache entirely so the next run retries it.
 | file | |
 |---|---|
 | `vocab/general_mb_works.json` | work ids and titles, with the releases each appears on |
-| `mb_conflicts.csv` | one row per matched release: our year against theirs, our label against theirs, catalogue number, how many durations lined up, MBID |
+| `mb_conflicts.csv` | one row per matched release: years, labels, catalogue number, how many durations lined up, MBID |
 
-Rows where the years disagree sort to the top. **Nothing is applied** — as
+### A MusicBrainz date is a pressing date
+
+The column is named `mb_pressing_year`, not `year`, because that is what it
+is: the release date of *that pressing*. A 1962 performance on a 2001
+remaster is not a disagreement, and calling it one invites someone to
+overwrite a correct recording year with a reissue date. (The artist
+reconciler hit the same trap with `first-release-date`; session facts live in
+recording relationships, not on the release.)
+
+So rows are classified rather than scored:
+
+| state | meaning |
+|---|---|
+| `same year` | agreement |
+| `mb pressing later` | a reissue — **expected**, not a conflict |
+| `REVIEW mb earlier` | our year is later than the pressing, so ours may itself be a reissue date |
+| `unknown` | one side has no year |
+
+Only `REVIEW mb earlier` sorts to the top, because it is the only state that
+implies something might actually be wrong. **Nothing is applied** — as
 everywhere else in this toolkit, the output is a decision sheet with
 citations, not a mutation.
 

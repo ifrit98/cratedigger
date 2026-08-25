@@ -360,16 +360,28 @@ def report(manifest_path):
         r = by_path.get(path, {})
         ours_year = str(r.get("recording_year") or r.get("release_year") or "")
         mb_year = (a.get("date") or "")[:4]
-        state = ("no local date" if not ours_year else
-                 "agree" if ours_year == mb_year else "DIFFER")
-        if state == "agree":
+        # A MusicBrainz release date is THAT PRESSING's date, not the date of
+        # the recording. A 1962 performance on a 2001 remaster is not a
+        # disagreement, and labelling it one invites someone to overwrite a
+        # correct recording year with a reissue year. The same trap as
+        # first-release-date in the artist reconciler.
+        if not ours_year or not mb_year:
+            state = "unknown"
+        elif ours_year == mb_year:
+            state = "same year"
+        elif mb_year > ours_year:
+            state = "mb pressing later"      # expected for a reissue
+        else:
+            state = "REVIEW mb earlier"      # ours may be a reissue date
+        if state == "same year":
             agree += 1
-        elif state == "DIFFER":
+        elif state == "REVIEW mb earlier":
             differ += 1
         else:
             newly += 1
         rows.append({
-            "state": state, "ours": ours_year, "musicbrainz": mb_year,
+            "state": state, "our_year": ours_year,
+            "mb_pressing_year": mb_year,
             "our_label": r.get("label") or "", "mb_label": a.get("label") or "",
             "mb_catalog": a.get("catalog_number") or "",
             "durations": "%d/%d" % (a["matched"], a["our_tracks"]),
@@ -396,16 +408,23 @@ def report(manifest_path):
         with open(out, "w", encoding="utf-8-sig", newline="") as fh:
             w = csv.DictWriter(fh, fieldnames=list(rows[0].keys()))
             w.writeheader()
-            for row in sorted(rows, key=lambda x: (x["state"] != "DIFFER",
+            order = {"REVIEW mb earlier": 0, "same year": 1,
+                     "mb pressing later": 2, "unknown": 3}
+            for row in sorted(rows, key=lambda x: (order.get(x["state"], 9),
                                                    x["release"])):
                 w.writerow(row)
 
     shared = sum(1 for w in works_out.values() if len(set(w["releases"])) > 1)
     rejected = sum(1 for v in cache.values() if not v.get("accepted"))
     print("releases matched        : %d" % len(rows))
-    print("  date agrees           : %d" % agree)
-    print("  date DIFFERS          : %d" % differ)
-    print("  we had no date        : %d" % newly)
+    print("  same year             : %d" % agree)
+    later = sum(1 for x in rows if x["state"] == "mb pressing later")
+    unknown = sum(1 for x in rows if x["state"] == "unknown")
+    print("  mb pressing is later  : %d   (a reissue -- expected, not a"
+          " conflict)" % later)
+    print("  REVIEW, mb earlier    : %d   (our year may be a reissue date)"
+          % differ)
+    print("  one side has no year  : %d" % unknown)
     print("releases unmatched      : %d" % rejected)
     print("distinct works          : %d" % len(works_out))
     print("  works appearing in >1 release: %d   <- the fragmentation fix"
