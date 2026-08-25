@@ -198,6 +198,7 @@ caught.
 
 | doc | |
 |---|---|
+| [PRD.md](docs/PRD.md) | the full product requirements: users, principles, phased build steps, storage decision |
 | [install.md](docs/install.md) | prerequisites, platforms, upgrading, uninstalling |
 | [usage.md](docs/usage.md) | every command and flag, plus workflows |
 | [getting-started.md](docs/getting-started.md) | the guided first run, end to end |
@@ -248,9 +249,12 @@ of rate-limited fetching and a lot of hand curation. Everything under
 
 ## Where this is going
 
-[ROADMAP.md](ROADMAP.md) — an honest read on what this competes with (beets,
-Picard, Roon), the wedge it actually has, what blocks the general case today,
-and the order to fix it in.
+[ROADMAP.md](ROADMAP.md) — the short version: what this competes with
+(beets, Picard, Roon), the wedge it has, and the order to fix things in.
+
+[docs/PRD.md](docs/PRD.md) — the long version: users and jobs, non-goals,
+principles, phase-by-phase build steps with completion criteria, success
+metrics, risks, and the storage decision with measurements behind it.
 
 ## Design commitments
 

@@ -1,5 +1,9 @@
 # Where this could go
 
+> The detailed version is [docs/PRD.md](docs/PRD.md) — phase-by-phase build
+> steps, completion criteria, success metrics, and the database question
+> answered from measurement.
+
 An honest assessment of cratedigger as a product, and what stands between
 here and "point it at a folder, get clean results."
 
