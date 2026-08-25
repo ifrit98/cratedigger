@@ -1,0 +1,27 @@
+# Generated artifacts -- all rebuilt from your audio files.
+# Nothing here is precious; `doctor.py` will tell you what to re-run.
+output-coltrane/
+output/
+_playlists/
+
+# Decisions exported from the browser land in Downloads and are applied with
+# coltrane_decisions.py. The applied result lives in vocab/ and IS tracked.
+coltrane-date-decisions*.json
+
+# Scratch from the reconcilers
+credits_eval.json
+eval_after.json
+mined_candidates.json
+dec_test.json
+
+__pycache__/
+*.py[cod]
+.DS_Store
+Thumbs.db
+.venv/
+.idea/
+.vscode/
+
+# vocab/ is deliberately NOT ignored. It is the curated knowledge -- the
+# discography, personnel, and the cached MusicBrainz and Wild harvests --
+# and the one thing the pipeline cannot regenerate from your files.

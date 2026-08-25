@@ -1,0 +1,1092 @@
+{
+ "_comment": "Coltrane discography: album -> recording date(s). Used only when the folder name carries no date of its own, which covers the SACD/DSD transfers titled by album alone. Hand-editable; `match` holds lowercase substrings tried against the folder name, longest first. `confidence` marks how sure the date is: 'exact' = single well-documented session, 'first' = first of several sessions for the album, 'approx' = year or month only.",
+ "_fields": {
+  "match": "substrings to look for in a folder name",
+  "title": "canonical album title",
+  "recorded": "ISO date; the earliest session for the album",
+  "precision": "day | month | year",
+  "confidence": "exact | first | approx",
+  "venue": "recording location",
+  "label": "original issuing label",
+  "provenance": "studio | live | broadcast",
+  "leader": "coltrane | sideman | co-leader"
+ },
+ "sessions": [
+  {
+   "match": [
+    "a love supreme"
+   ],
+   "title": "A Love Supreme",
+   "recorded": "1964-12-09",
+   "precision": "day",
+   "confidence": "exact",
+   "venue": "Van Gelder Studio, Englewood Cliffs",
+   "label": "Impulse!",
+   "provenance": "studio",
+   "leader": "coltrane"
+  },
+  {
+   "match": [
+    "blue train"
+   ],
+   "title": "Blue Train",
+   "recorded": "1957-09-15",
+   "precision": "day",
+   "confidence": "exact",
+   "venue": "Van Gelder Studio, Hackensack",
+   "label": "Blue Note",
+   "provenance": "studio",
+   "leader": "coltrane"
+  },
+  {
+   "match": [
+    "giant steps"
+   ],
+   "title": "Giant Steps",
+   "recorded": "1959-05-04",
+   "precision": "day",
+   "confidence": "first",
+   "venue": "Atlantic Studios, New York",
+   "label": "Atlantic",
+   "provenance": "studio",
+   "leader": "coltrane"
+  },
+  {
+   "match": [
+    "my favorite things",
+    "my favourite things"
+   ],
+   "title": "My Favorite Things",
+   "recorded": "1960-10-21",
+   "precision": "day",
+   "confidence": "first",
+   "venue": "Atlantic Studios, New York",
+   "label": "Atlantic",
+   "provenance": "studio",
+   "leader": "coltrane"
+  },
+  {
+   "match": [
+    "ascension"
+   ],
+   "title": "Ascension",
+   "recorded": "1965-06-28",
+   "precision": "day",
+   "confidence": "exact",
+   "venue": "Van Gelder Studio, Englewood Cliffs",
+   "label": "Impulse!",
+   "provenance": "studio",
+   "leader": "coltrane"
+  },
+  {
+   "match": [
+    "meditations"
+   ],
+   "title": "Meditations",
+   "recorded": "1965-11-23",
+   "precision": "day",
+   "confidence": "exact",
+   "venue": "Van Gelder Studio, Englewood Cliffs",
+   "label": "Impulse!",
+   "provenance": "studio",
+   "leader": "coltrane"
+  },
+  {
+   "match": [
+    "first meditations"
+   ],
+   "title": "First Meditations",
+   "recorded": "1965-09-02",
+   "precision": "day",
+   "confidence": "exact",
+   "venue": "Van Gelder Studio, Englewood Cliffs",
+   "label": "Impulse!",
+   "provenance": "studio",
+   "leader": "coltrane"
+  },
+  {
+   "match": [
+    "crescent"
+   ],
+   "title": "Crescent",
+   "recorded": "1964-04-27",
+   "precision": "day",
+   "confidence": "first",
+   "venue": "Van Gelder Studio, Englewood Cliffs",
+   "label": "Impulse!",
+   "provenance": "studio",
+   "leader": "coltrane"
+  },
+  {
+   "match": [
+    "ballads"
+   ],
+   "title": "Ballads",
+   "recorded": "1961-12-21",
+   "precision": "day",
+   "confidence": "first",
+   "venue": "Van Gelder Studio, Englewood Cliffs",
+   "label": "Impulse!",
+   "provenance": "studio",
+   "leader": "coltrane"
+  },
+  {
+   "match": [
+    "impressions"
+   ],
+   "title": "Impressions",
+   "recorded": "1961-11-03",
+   "precision": "day",
+   "confidence": "first",
+   "venue": "Village Vanguard, New York",
+   "label": "Impulse!",
+   "provenance": "live",
+   "leader": "coltrane"
+  },
+  {
+   "match": [
+    "africa/brass",
+    "africabrass",
+    "africa brass"
+   ],
+   "title": "Africa/Brass",
+   "recorded": "1961-05-23",
+   "precision": "day",
+   "confidence": "first",
+   "venue": "Van Gelder Studio, Englewood Cliffs",
+   "label": "Impulse!",
+   "provenance": "studio",
+   "leader": "coltrane"
+  },
+  {
+   "match": [
+    "ole coltrane",
+    "olé coltrane"
+   ],
+   "title": "Olé Coltrane",
+   "recorded": "1961-05-25",
+   "precision": "day",
+   "confidence": "exact",
+   "venue": "Atlantic Studios, New York",
+   "label": "Atlantic",
+   "provenance": "studio",
+   "leader": "coltrane"
+  },
+  {
+   "match": [
+    "coltrane's sound",
+    "coltranes sound"
+   ],
+   "title": "Coltrane's Sound",
+   "recorded": "1960-10-24",
+   "precision": "day",
+   "confidence": "first",
+   "venue": "Atlantic Studios, New York",
+   "label": "Atlantic",
+   "provenance": "studio",
+   "leader": "coltrane"
+  },
+  {
+   "match": [
+    "coltrane plays the blues"
+   ],
+   "title": "Coltrane Plays the Blues",
+   "recorded": "1960-10-21",
+   "precision": "day",
+   "confidence": "first",
+   "venue": "Atlantic Studios, New York",
+   "label": "Atlantic",
+   "provenance": "studio",
+   "leader": "coltrane"
+  },
+  {
+   "match": [
+    "coltrane jazz"
+   ],
+   "title": "Coltrane Jazz",
+   "recorded": "1959-11-24",
+   "precision": "day",
+   "confidence": "first",
+   "venue": "Atlantic Studios, New York",
+   "label": "Atlantic",
+   "provenance": "studio",
+   "leader": "coltrane"
+  },
+  {
+   "match": [
+    "the avant-garde",
+    "avant-garde"
+   ],
+   "title": "The Avant-Garde",
+   "recorded": "1960-06-28",
+   "precision": "day",
+   "confidence": "first",
+   "venue": "Atlantic Studios, New York",
+   "label": "Atlantic",
+   "provenance": "studio",
+   "leader": "co-leader"
+  },
+  {
+   "match": [
+    "bags & trane",
+    "bags and trane"
+   ],
+   "title": "Bags & Trane",
+   "recorded": "1959-01-22",
+   "precision": "day",
+   "confidence": "exact",
+   "venue": "Atlantic Studios, New York",
+   "label": "Atlantic",
+   "provenance": "studio",
+   "leader": "co-leader"
+  },
+  {
+   "match": [
+    "soultrane"
+   ],
+   "title": "Soultrane",
+   "recorded": "1958-02-07",
+   "precision": "day",
+   "confidence": "exact",
+   "venue": "Van Gelder Studio, Hackensack",
+   "label": "Prestige",
+   "provenance": "studio",
+   "leader": "coltrane"
+  },
+  {
+   "match": [
+    "lush life"
+   ],
+   "title": "Lush Life",
+   "recorded": "1957-05-31",
+   "precision": "day",
+   "confidence": "first",
+   "venue": "Van Gelder Studio, Hackensack",
+   "label": "Prestige",
+   "provenance": "studio",
+   "leader": "coltrane"
+  },
+  {
+   "match": [
+    "traneing in",
+    "trane of august"
+   ],
+   "title": "Traneing In",
+   "recorded": "1957-08-23",
+   "precision": "day",
+   "confidence": "exact",
+   "venue": "Van Gelder Studio, Hackensack",
+   "label": "Prestige",
+   "provenance": "studio",
+   "leader": "coltrane"
+  },
+  {
+   "match": [
+    "dakar"
+   ],
+   "title": "Dakar",
+   "recorded": "1957-04-20",
+   "precision": "day",
+   "confidence": "exact",
+   "venue": "Van Gelder Studio, Hackensack",
+   "label": "Prestige",
+   "provenance": "studio",
+   "leader": "coltrane"
+  },
+  {
+   "match": [
+    "settin' the pace",
+    "settin the pace"
+   ],
+   "title": "Settin' the Pace",
+   "recorded": "1958-03-26",
+   "precision": "day",
+   "confidence": "exact",
+   "venue": "Van Gelder Studio, Hackensack",
+   "label": "Prestige",
+   "provenance": "studio",
+   "leader": "coltrane"
+  },
+  {
+   "match": [
+    "standard coltrane"
+   ],
+   "title": "Standard Coltrane",
+   "recorded": "1958-07-11",
+   "precision": "day",
+   "confidence": "exact",
+   "venue": "Van Gelder Studio, Hackensack",
+   "label": "Prestige",
+   "provenance": "studio",
+   "leader": "coltrane"
+  },
+  {
+   "match": [
+    "bahia"
+   ],
+   "title": "Bahia",
+   "recorded": "1958-07-11",
+   "precision": "day",
+   "confidence": "first",
+   "venue": "Van Gelder Studio, Hackensack",
+   "label": "Prestige",
+   "provenance": "studio",
+   "leader": "coltrane"
+  },
+  {
+   "match": [
+    "black pearls"
+   ],
+   "title": "Black Pearls",
+   "recorded": "1958-05-23",
+   "precision": "day",
+   "confidence": "exact",
+   "venue": "Van Gelder Studio, Hackensack",
+   "label": "Prestige",
+   "provenance": "studio",
+   "leader": "coltrane"
+  },
+  {
+   "match": [
+    "the believer"
+   ],
+   "title": "The Believer",
+   "recorded": "1958-01-10",
+   "precision": "day",
+   "confidence": "first",
+   "venue": "Van Gelder Studio, Hackensack",
+   "label": "Prestige",
+   "provenance": "studio",
+   "leader": "coltrane"
+  },
+  {
+   "match": [
+    "the last trane",
+    "last trane"
+   ],
+   "title": "The Last Trane",
+   "recorded": "1957-08-23",
+   "precision": "day",
+   "confidence": "first",
+   "venue": "Van Gelder Studio, Hackensack",
+   "label": "Prestige",
+   "provenance": "studio",
+   "leader": "coltrane"
+  },
+  {
+   "match": [
+    "the stardust session",
+    "stardust"
+   ],
+   "title": "Stardust",
+   "recorded": "1958-07-11",
+   "precision": "day",
+   "confidence": "first",
+   "venue": "Van Gelder Studio, Hackensack",
+   "label": "Prestige",
+   "provenance": "studio",
+   "leader": "coltrane"
+  },
+  {
+   "match": [
+    "kenny burrell"
+   ],
+   "title": "Kenny Burrell & John Coltrane",
+   "recorded": "1958-03-07",
+   "precision": "day",
+   "confidence": "exact",
+   "venue": "Van Gelder Studio, Hackensack",
+   "label": "New Jazz",
+   "provenance": "studio",
+   "leader": "co-leader"
+  },
+  {
+   "match": [
+    "cattin'",
+    "cattin with coltrane"
+   ],
+   "title": "Cattin' with Coltrane and Quinichette",
+   "recorded": "1957-05-17",
+   "precision": "day",
+   "confidence": "exact",
+   "venue": "Van Gelder Studio, Hackensack",
+   "label": "Prestige",
+   "provenance": "studio",
+   "leader": "co-leader"
+  },
+  {
+   "match": [
+    "wheelin'",
+    "wheelin & dealin"
+   ],
+   "title": "Wheelin' & Dealin'",
+   "recorded": "1957-09-20",
+   "precision": "day",
+   "confidence": "exact",
+   "venue": "Van Gelder Studio, Hackensack",
+   "label": "Prestige",
+   "provenance": "studio",
+   "leader": "sideman"
+  },
+  {
+   "match": [
+    "the cats"
+   ],
+   "title": "The Cats",
+   "recorded": "1957-04-18",
+   "precision": "day",
+   "confidence": "exact",
+   "venue": "Van Gelder Studio, Hackensack",
+   "label": "New Jazz",
+   "provenance": "studio",
+   "leader": "sideman"
+  },
+  {
+   "match": [
+    "interplay for 2 trumpets",
+    "interplay"
+   ],
+   "title": "Interplay for 2 Trumpets and 2 Tenors",
+   "recorded": "1957-03-22",
+   "precision": "day",
+   "confidence": "exact",
+   "venue": "Van Gelder Studio, Hackensack",
+   "label": "Prestige",
+   "provenance": "studio",
+   "leader": "sideman"
+  },
+  {
+   "match": [
+    "tenor conclave"
+   ],
+   "title": "Tenor Conclave",
+   "recorded": "1956-11-16",
+   "precision": "day",
+   "confidence": "exact",
+   "venue": "Van Gelder Studio, Hackensack",
+   "label": "Prestige",
+   "provenance": "studio",
+   "leader": "sideman"
+  },
+  {
+   "match": [
+    "mating call"
+   ],
+   "title": "Mating Call",
+   "recorded": "1956-11-30",
+   "precision": "day",
+   "confidence": "exact",
+   "venue": "Van Gelder Studio, Hackensack",
+   "label": "Prestige",
+   "provenance": "studio",
+   "leader": "sideman"
+  },
+  {
+   "match": [
+    "taylor's wailers",
+    "taylors wailers"
+   ],
+   "title": "Taylor's Wailers",
+   "recorded": "1957-03-22",
+   "precision": "day",
+   "confidence": "first",
+   "venue": "Van Gelder Studio, Hackensack",
+   "label": "Prestige",
+   "provenance": "studio",
+   "leader": "sideman"
+  },
+  {
+   "match": [
+    "informal jazz"
+   ],
+   "title": "Informal Jazz",
+   "recorded": "1956-05-07",
+   "precision": "day",
+   "confidence": "exact",
+   "venue": "Van Gelder Studio, Hackensack",
+   "label": "Prestige",
+   "provenance": "studio",
+   "leader": "sideman"
+  },
+  {
+   "match": [
+    "thelonious himself"
+   ],
+   "title": "Thelonious Himself",
+   "recorded": "1957-04-05",
+   "precision": "day",
+   "confidence": "first",
+   "venue": "Reeves Sound Studios, New York",
+   "label": "Riverside",
+   "provenance": "studio",
+   "leader": "sideman"
+  },
+  {
+   "match": [
+    "monk and trane at five spot",
+    "five spot"
+   ],
+   "title": "Monk & Coltrane at the Five Spot",
+   "recorded": "1957-11-29",
+   "precision": "day",
+   "confidence": "approx",
+   "venue": "Five Spot, New York",
+   "label": "Blue Note",
+   "provenance": "live",
+   "leader": "co-leader"
+  },
+  {
+   "match": [
+    "duke ellington & john coltrane",
+    "duke ellington and john coltrane"
+   ],
+   "title": "Duke Ellington & John Coltrane",
+   "recorded": "1962-09-26",
+   "precision": "day",
+   "confidence": "exact",
+   "venue": "Van Gelder Studio, Englewood Cliffs",
+   "label": "Impulse!",
+   "provenance": "studio",
+   "leader": "co-leader"
+  },
+  {
+   "match": [
+    "johnny hartman",
+    "john coltrane and johnny hartman"
+   ],
+   "title": "John Coltrane and Johnny Hartman",
+   "recorded": "1963-03-07",
+   "precision": "day",
+   "confidence": "exact",
+   "venue": "Van Gelder Studio, Englewood Cliffs",
+   "label": "Impulse!",
+   "provenance": "studio",
+   "leader": "co-leader"
+  },
+  {
+   "match": [
+    "the john coltrane quartet plays",
+    "quartet plays"
+   ],
+   "title": "The John Coltrane Quartet Plays",
+   "recorded": "1965-02-18",
+   "precision": "day",
+   "confidence": "first",
+   "venue": "Van Gelder Studio, Englewood Cliffs",
+   "label": "Impulse!",
+   "provenance": "studio",
+   "leader": "coltrane"
+  },
+  {
+   "match": [
+    "sun ship"
+   ],
+   "title": "Sun Ship",
+   "recorded": "1965-08-26",
+   "precision": "day",
+   "confidence": "exact",
+   "venue": "Van Gelder Studio, Englewood Cliffs",
+   "label": "Impulse!",
+   "provenance": "studio",
+   "leader": "coltrane"
+  },
+  {
+   "match": [
+    "transition"
+   ],
+   "title": "Transition",
+   "recorded": "1965-06-10",
+   "precision": "day",
+   "confidence": "first",
+   "venue": "Van Gelder Studio, Englewood Cliffs",
+   "label": "Impulse!",
+   "provenance": "studio",
+   "leader": "coltrane"
+  },
+  {
+   "match": [
+    "living space"
+   ],
+   "title": "Living Space",
+   "recorded": "1965-06-10",
+   "precision": "day",
+   "confidence": "exact",
+   "venue": "Van Gelder Studio, Englewood Cliffs",
+   "label": "Impulse!",
+   "provenance": "studio",
+   "leader": "coltrane"
+  },
+  {
+   "match": [
+    "kulu se mama",
+    "kulu sé mama"
+   ],
+   "title": "Kulu Sé Mama",
+   "recorded": "1965-10-14",
+   "precision": "day",
+   "confidence": "first",
+   "venue": "Los Angeles",
+   "label": "Impulse!",
+   "provenance": "studio",
+   "leader": "coltrane"
+  },
+  {
+   "match": [
+    "om"
+   ],
+   "title": "Om",
+   "recorded": "1965-10-01",
+   "precision": "day",
+   "confidence": "exact",
+   "venue": "Seattle",
+   "label": "Impulse!",
+   "provenance": "studio",
+   "leader": "coltrane"
+  },
+  {
+   "match": [
+    "expression"
+   ],
+   "title": "Expression",
+   "recorded": "1967-02-15",
+   "precision": "day",
+   "confidence": "first",
+   "venue": "Van Gelder Studio, Englewood Cliffs",
+   "label": "Impulse!",
+   "provenance": "studio",
+   "leader": "coltrane"
+  },
+  {
+   "match": [
+    "interstellar space"
+   ],
+   "title": "Interstellar Space",
+   "recorded": "1967-02-22",
+   "precision": "day",
+   "confidence": "exact",
+   "venue": "Van Gelder Studio, Englewood Cliffs",
+   "label": "Impulse!",
+   "provenance": "studio",
+   "leader": "coltrane"
+  },
+  {
+   "match": [
+    "stellar regions"
+   ],
+   "title": "Stellar Regions",
+   "recorded": "1967-02-15",
+   "precision": "day",
+   "confidence": "exact",
+   "venue": "Van Gelder Studio, Englewood Cliffs",
+   "label": "Impulse!",
+   "provenance": "studio",
+   "leader": "coltrane"
+  },
+  {
+   "match": [
+    "both directions at once",
+    "the lost album"
+   ],
+   "title": "Both Directions at Once: The Lost Album",
+   "recorded": "1963-03-06",
+   "precision": "day",
+   "confidence": "exact",
+   "venue": "Van Gelder Studio, Englewood Cliffs",
+   "label": "Impulse!",
+   "provenance": "studio",
+   "leader": "coltrane"
+  },
+  {
+   "match": [
+    "blue world"
+   ],
+   "title": "Blue World",
+   "recorded": "1964-06-24",
+   "precision": "day",
+   "confidence": "exact",
+   "venue": "Van Gelder Studio, Englewood Cliffs",
+   "label": "Impulse!",
+   "provenance": "studio",
+   "leader": "coltrane"
+  },
+  {
+   "match": [
+    "live at the village vanguard again"
+   ],
+   "title": "Live at the Village Vanguard Again!",
+   "recorded": "1966-05-28",
+   "precision": "day",
+   "confidence": "exact",
+   "venue": "Village Vanguard, New York",
+   "label": "Impulse!",
+   "provenance": "live",
+   "leader": "coltrane"
+  },
+  {
+   "match": [
+    "live at the village vanguard",
+    "village vanguard"
+   ],
+   "title": "Live! at the Village Vanguard",
+   "recorded": "1961-11-02",
+   "precision": "day",
+   "confidence": "first",
+   "venue": "Village Vanguard, New York",
+   "label": "Impulse!",
+   "provenance": "live",
+   "leader": "coltrane"
+  },
+  {
+   "match": [
+    "live at birdland"
+   ],
+   "title": "Live at Birdland",
+   "recorded": "1963-10-08",
+   "precision": "day",
+   "confidence": "first",
+   "venue": "Birdland, New York",
+   "label": "Impulse!",
+   "provenance": "live",
+   "leader": "coltrane"
+  },
+  {
+   "match": [
+    "the olatunji concert",
+    "olatunji"
+   ],
+   "title": "The Olatunji Concert",
+   "recorded": "1967-04-23",
+   "precision": "day",
+   "confidence": "exact",
+   "venue": "Olatunji Center, New York",
+   "label": "Impulse!",
+   "provenance": "live",
+   "leader": "coltrane"
+  },
+  {
+   "match": [
+    "live in seattle"
+   ],
+   "title": "Live in Seattle",
+   "recorded": "1965-09-30",
+   "precision": "day",
+   "confidence": "exact",
+   "venue": "Penthouse, Seattle",
+   "label": "Impulse!",
+   "provenance": "live",
+   "leader": "coltrane"
+  },
+  {
+   "match": [
+    "one down, one up",
+    "one down one up"
+   ],
+   "title": "One Down, One Up: Live at the Half Note",
+   "recorded": "1965-03-26",
+   "precision": "day",
+   "confidence": "first",
+   "venue": "Half Note, New York",
+   "label": "Impulse!",
+   "provenance": "live",
+   "leader": "coltrane"
+  },
+  {
+   "match": [
+    "afro blue impressions"
+   ],
+   "title": "Afro Blue Impressions",
+   "recorded": "1963-10-22",
+   "precision": "day",
+   "confidence": "approx",
+   "venue": "Europe",
+   "label": "Pablo",
+   "provenance": "live",
+   "leader": "coltrane"
+  },
+  {
+   "match": [
+    "newport '63",
+    "newport 63"
+   ],
+   "title": "Newport '63",
+   "recorded": "1963-07-07",
+   "precision": "day",
+   "confidence": "first",
+   "venue": "Newport Jazz Festival",
+   "label": "Impulse!",
+   "provenance": "live",
+   "leader": "coltrane"
+  },
+  {
+   "match": [
+    "selflessness"
+   ],
+   "title": "Selflessness",
+   "recorded": "1963-07-07",
+   "precision": "day",
+   "confidence": "first",
+   "venue": "Newport Jazz Festival",
+   "label": "Impulse!",
+   "provenance": "live",
+   "leader": "coltrane"
+  },
+  {
+   "match": [
+    "cosmic music"
+   ],
+   "title": "Cosmic Music",
+   "recorded": "1966-02-02",
+   "precision": "day",
+   "confidence": "first",
+   "venue": "Van Gelder Studio, Englewood Cliffs",
+   "label": "Impulse!",
+   "provenance": "studio",
+   "leader": "coltrane"
+  },
+  {
+   "match": [
+    "the bethlehem years",
+    "turning point"
+   ],
+   "title": "The Bethlehem Years",
+   "recorded": "1957-11-15",
+   "precision": "month",
+   "confidence": "approx",
+   "venue": "New York",
+   "label": "Bethlehem",
+   "provenance": "studio",
+   "leader": "sideman"
+  },
+  {
+   "match": [
+    "the cafe bohemia broadcasts",
+    "cafe bohemia"
+   ],
+   "title": "The Café Bohemia Broadcasts",
+   "recorded": "1956-05-01",
+   "precision": "month",
+   "confidence": "approx",
+   "venue": "Café Bohemia, New York",
+   "label": "Domino",
+   "provenance": "broadcast",
+   "leader": "sideman"
+  },
+  {
+   "match": [
+    "early trane"
+   ],
+   "title": "Early Trane",
+   "recorded": "1955-01-01",
+   "precision": "year",
+   "confidence": "approx",
+   "venue": null,
+   "label": null,
+   "provenance": "studio",
+   "leader": "sideman"
+  },
+  {
+   "match": [
+    "coltrane time"
+   ],
+   "title": "Coltrane Time",
+   "recorded": "1958-10-13",
+   "precision": "day",
+   "confidence": "exact",
+   "venue": "New York",
+   "label": "United Artists",
+   "provenance": "studio",
+   "leader": "sideman"
+  },
+  {
+   "match": [
+    "in chicago",
+    "cannonball adderley quintet in chicago"
+   ],
+   "title": "Cannonball Adderley Quintet in Chicago",
+   "recorded": "1959-02-03",
+   "precision": "day",
+   "confidence": "exact",
+   "venue": "Chicago",
+   "label": "Mercury",
+   "provenance": "studio",
+   "leader": "sideman"
+  },
+  {
+   "match": [
+    "red garland trio",
+    "with the red garland trio"
+   ],
+   "title": "John Coltrane with the Red Garland Trio",
+   "recorded": "1957-08-23",
+   "precision": "day",
+   "confidence": "exact",
+   "venue": "Van Gelder Studio, Hackensack",
+   "label": "Prestige",
+   "provenance": "studio",
+   "leader": "coltrane"
+  },
+  {
+   "match": [
+    "live in den haag"
+   ],
+   "title": "Miles Davis Live in Den Haag",
+   "recorded": "1960-04-09",
+   "precision": "day",
+   "confidence": "approx",
+   "venue": "The Hague",
+   "label": null,
+   "provenance": "live",
+   "leader": "sideman"
+  },
+  {
+   "match": [
+    "'58 sessions",
+    "58 sessions"
+   ],
+   "title": "'58 Sessions",
+   "recorded": "1958-01-01",
+   "precision": "year",
+   "confidence": "approx",
+   "venue": null,
+   "label": "Columbia",
+   "provenance": "studio",
+   "leader": "sideman"
+  },
+  {
+   "match": [
+    "live in japan",
+    "coltrane - japan",
+    "tokyo"
+   ],
+   "title": "Live in Japan",
+   "recorded": "1966-07-11",
+   "precision": "day",
+   "confidence": "first",
+   "venue": "Tokyo",
+   "label": "Impulse!",
+   "provenance": "live",
+   "leader": "coltrane"
+  },
+  {
+   "match": [
+    "new thing at newport"
+   ],
+   "title": "New Thing at Newport",
+   "recorded": "1965-07-02",
+   "precision": "day",
+   "confidence": "exact",
+   "venue": "Newport Jazz Festival",
+   "label": "Impulse!",
+   "provenance": "live",
+   "leader": "co-leader"
+  },
+  {
+   "match": [
+    "last performance at newport"
+   ],
+   "title": "Last Performance at Newport",
+   "recorded": "1966-07-02",
+   "precision": "day",
+   "confidence": "exact",
+   "venue": "Newport Jazz Festival",
+   "label": null,
+   "provenance": "live",
+   "leader": "coltrane"
+  },
+  {
+   "match": [
+    "live at the showboat"
+   ],
+   "title": "Live at the Showboat",
+   "recorded": "1963-06-10",
+   "precision": "day",
+   "confidence": "approx",
+   "venue": "Showboat",
+   "label": "RLR",
+   "provenance": "live",
+   "leader": "coltrane"
+  },
+  {
+   "match": [
+    "the final tour",
+    "bootleg series, vol. 6"
+   ],
+   "title": "Miles Davis & John Coltrane: The Final Tour",
+   "recorded": "1960-03-21",
+   "precision": "day",
+   "confidence": "first",
+   "venue": "Europe",
+   "label": "Columbia",
+   "provenance": "live",
+   "leader": "sideman"
+  },
+  {
+   "match": [
+    "complete recordings with dizzy gillespie",
+    "with dizzy gillespie"
+   ],
+   "title": "Complete Recordings with Dizzy Gillespie",
+   "recorded": "1949-11-21",
+   "precision": "day",
+   "confidence": "approx",
+   "venue": null,
+   "label": "Definitive",
+   "provenance": "studio",
+   "leader": "sideman"
+  },
+  {
+   "match": [
+    "the dealers"
+   ],
+   "title": "The Dealers: The Complete Sessions",
+   "recorded": "1957-03-22",
+   "precision": "day",
+   "confidence": "approx",
+   "venue": "Van Gelder Studio, Hackensack",
+   "label": "EJC",
+   "provenance": "studio",
+   "leader": "sideman"
+  },
+  {
+   "match": [
+    "sideman trane",
+    "blue note sessions"
+   ],
+   "title": "Sideman: Trane's Blue Note Sessions",
+   "recorded": "1956-11-16",
+   "precision": "day",
+   "confidence": "approx",
+   "venue": "Van Gelder Studio, Hackensack",
+   "label": "Blue Note",
+   "provenance": "studio",
+   "leader": "sideman"
+  },
+  {
+   "match": [
+    "ray draper"
+   ],
+   "title": "John Coltrane with Ray Draper",
+   "recorded": "1957-12-20",
+   "precision": "day",
+   "confidence": "approx",
+   "venue": "Van Gelder Studio, Hackensack",
+   "label": "New Jazz",
+   "provenance": "studio",
+   "leader": "sideman"
+  },
+  {
+   "match": [
+    "live in paris",
+    "les genies du jazz"
+   ],
+   "title": "Live in Paris",
+   "recorded": "1962-11-17",
+   "precision": "day",
+   "confidence": "approx",
+   "venue": "Paris",
+   "label": null,
+   "provenance": "live",
+   "leader": "coltrane"
+  }
+ ]
+}

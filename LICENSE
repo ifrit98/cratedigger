@@ -1,0 +1,49 @@
+MIT License
+
+Copyright (c) 2026
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+NOTE ON THE DATA IN vocab/
+
+The MIT licence above covers the code. The curated data files have their own
+provenance and are not all the author's to relicense:
+
+  conductors.json, ensembles.json, coltrane_mb_cache.json,
+  coltrane_mb_sessions.json
+      Derived from MusicBrainz, whose core data is released under CC0.
+      https://musicbrainz.org/doc/About/Data_License
+
+  coltrane_wild_sessions.json
+      Session facts (dates, personnel, locations, tune listings) mined from
+      the web edition of David Wild, "The Recordings of John Coltrane: A
+      Discography", 2nd ed., Wildmusic 1979, at wildmusic-jazz.com.
+      Individual facts are not copyrightable, but the compilation is Wild's
+      work. This extract is kept for personal cataloguing of a private
+      collection. If you redistribute it, credit Wild; if you are doing
+      anything commercial with it, seek permission.
+
+  coltrane_sessions.json, coltrane_personnel.json
+      Hand-written by the author from general knowledge, then reconciled
+      against the sources above. Confidence and source fields on each entry
+      record how far any given value has been verified.
+
+No audio is included, referenced by content, or redistributed here.

@@ -1,0 +1,4631 @@
+{
+ "version": 2,
+ "source": "seed + musicbrainz",
+ "abbreviations": {
+  "VPO": "Wiener Philharmoniker",
+  "WPO": "Wiener Philharmoniker",
+  "BPO": "Berliner Philharmoniker",
+  "BPH": "Berliner Philharmoniker",
+  "CSO": "Chicago Symphony Orchestra",
+  "LSO": "London Symphony Orchestra",
+  "LPO": "London Philharmonic Orchestra",
+  "NYPO": "New York Philharmonic",
+  "NYP": "New York Philharmonic",
+  "BSO": "Boston Symphony Orchestra",
+  "RCO": "Royal Concertgebouw Orchestra",
+  "COA": "Royal Concertgebouw Orchestra",
+  "SB": "Staatskapelle Berlin",
+  "SKB": "Staatskapelle Berlin",
+  "SKD": "Staatskapelle Dresden",
+  "ECO": "English Chamber Orchestra",
+  "COE": "Chamber Orchestra of Europe",
+  "OSR": "Orchestre de la Suisse Romande",
+  "ASMF": "Academy of St Martin in the Fields",
+  "SFS": "San Francisco Symphony",
+  "CBSO": "City of Birmingham Symphony Orchestra",
+  "RPO": "Royal Philharmonic Orchestra",
+  "MPO": "Munich Philharmonic Orchestra",
+  "BRSO": "Bavarian Radio Symphony Orchestra",
+  "ONF": "Orchestre National de France",
+  "PO": "Philharmonia Orchestra",
+  "RSOB": "Radio-Symphonie-Orchester Berlin",
+  "SWF": "SWF Sinfonieorchester Baden-Baden",
+  "SWR": "SWR Sinfonieorchester",
+  "WDR": "WDR Sinfonieorchester Köln",
+  "NDR": "NDR Elbphilharmonie Orchester",
+  "ORF": "ORF Radio-Symphonieorchester Wien",
+  "LAPO": "Los Angeles Philharmonic",
+  "RSNO": "Royal Scottish National Orchestra",
+  "OAE": "Orchestra of the Age of Enlightenment",
+  "SCO": "Scottish Chamber Orchestra",
+  "MCO": "Mahler Chamber Orchestra",
+  "AAM": "Academy of Ancient Music",
+  "DSO": "Deutsches Symphonie-Orchester Berlin",
+  "HSO": "Houston Symphony Orchestra",
+  "PSO": "Pittsburgh Symphony Orchestra",
+  "SFSO": "San Francisco Symphony",
+  "TSO": "Toronto Symphony Orchestra"
+ },
+ "patterns": [
+  [
+   "chamber\\ ensemble\\ of\\ the\\ ussr\\ tv\\ and\\ radio\\ large\\ symphony\\ orchestra",
+   "Chamber Ensemble of the USSR TV and Radio Large Symphony Orchestra"
+  ],
+  [
+   "choir\\ of\\ st\\.\\ romanos\\ the\\ melodist\\ orthodox\\ archdiocese\\ of\\ beirut",
+   "Choir of St. Romanos The Melodist Orthodox Archdiocese of Beirut"
+  ],
+  [
+   "pro\\ arte\\ quartet\\ of\\ bucharest\\ george\\ enescu\\ philharmonic\\ orchestra",
+   "Pro Arte Quartet of Bucharest George Enescu Philharmonic Orchestra"
+  ],
+  [
+   "filharmonicni\\ tolkalni\\ ansambel\\ \\-\\ philharmonic\\ percussion\\ ensemble",
+   "Filharmonični tolkalni ansambel - Philharmonic Percussion Ensemble"
+  ],
+  [
+   "chor\\ der\\ monche\\ der\\ benediktiner\\-erzabtei\\ st\\.\\ martin,\\ beuron",
+   "Chor der Mönche der Benediktiner-Erzabtei St. Martin, Beuron"
+  ],
+  [
+   "soloist\\ ensemble\\ of\\ the\\ moscow\\ philharmonic\\ symphony\\ orchestra",
+   "Soloist Ensemble of the Moscow Philharmonic Symphony Orchestra"
+  ],
+  [
+   "new\\ york\\ ensemble\\ of\\ the\\ philharmonic\\ scholarship\\ winners",
+   "New York Ensemble of the Philharmonic Scholarship Winners"
+  ],
+  [
+   "gamer\\ symphony\\ orchestra\\ at\\ the\\ university\\ of\\ maryland",
+   "Gamer Symphony Orchestra at The University of Maryland"
+  ],
+  [
+   "bulgarian\\ state\\ radio\\ \\&\\ television\\ female\\ vocal\\ choir",
+   "Bulgarian State Radio & Television Female Vocal Choir"
+  ],
+  [
+   "orchestre\\ de\\ la\\ societe\\ des\\ concerts\\ du\\ conservatoire",
+   "Orchestre de la Société des Concerts du Conservatoire"
+  ],
+  [
+   "members\\ of\\ the\\ city\\ of\\ prague\\ philharmonic\\ orchestra",
+   "Members of The City of Prague Philharmonic Orchestra"
+  ],
+  [
+   "deutsche\\ radio\\ philharmonie\\ saarbrucken\\ kaiserslautern",
+   "Deutsche Radio Philharmonie Saarbrücken Kaiserslautern"
+  ],
+  [
+   "chamber\\ soloists\\ of\\ the\\ royal\\ philharmonic\\ orchestra",
+   "Chamber Soloists of the Royal Philharmonic Orchestra"
+  ],
+  [
+   "soloists\\ of\\ the\\ philharmonic\\ orchestra\\ of\\ la\\ scala",
+   "Soloists of the Philharmonic Orchestra of La Scala"
+  ],
+  [
+   "orchestra\\ of\\ the\\ royal\\ opera\\ house,\\ covent\\ garden",
+   "Orchestra of the Royal Opera House, Covent Garden"
+  ],
+  [
+   "orchestra\\ dell’accademia\\ nazionale\\ di\\ santa\\ cecilia",
+   "Orchestra dell’Accademia Nazionale di Santa Cecilia"
+  ],
+  [
+   "dr\\.\\ henry\\ levine’s\\ barefoot\\ dixieland\\ philharmonic",
+   "Dr. Henry Levine’s Barefoot Dixieland Philharmonic"
+  ],
+  [
+   "soloists\\ ensemble\\ of\\ the\\ moscow\\ state\\ philharmonic",
+   "Soloists Ensemble of the Moscow State Philharmonic"
+  ],
+  [
+   "choralschola\\ der\\ benediktinerabtei\\ munsterschwarzach",
+   "Choralschola der Benediktinerabtei Münsterschwarzach"
+  ],
+  [
+   "bishop\\ larry\\ trotter\\ and\\ sweet\\ holy\\ spirit\\ choir",
+   "Bishop Larry Trotter and Sweet Holy Spirit Choir"
+  ],
+  [
+   "choir\\ of\\ trinity\\ college,\\ university\\ of\\ melbourne",
+   "Choir of Trinity College, University of Melbourne"
+  ],
+  [
+   "the\\ choir\\ of\\ st\\ george’s\\ chapel,\\ windsor\\ castle",
+   "The Choir of St George’s Chapel, Windsor Castle"
+  ],
+  [
+   "jim\\ connolly\\ and\\ the\\ gove\\ county\\ string\\ quartet",
+   "Jim Connolly and the Gove County String Quartet"
+  ],
+  [
+   "chorus\\ of\\ the\\ royal\\ opera\\ house,\\ covent\\ garden",
+   "Chorus of the Royal Opera House, Covent Garden"
+  ],
+  [
+   "blechblaser\\-ensemble\\ der\\ berliner\\ philharmoniker",
+   "Blechbläser-Ensemble der Berliner Philharmoniker"
+  ],
+  [
+   "choir\\ of\\ gonville\\ \\&\\ caius\\ college,\\ cambridge",
+   "Choir of Gonville & Caius College, Cambridge"
+  ],
+  [
+   "ensemble\\ vocal\\ europeen\\ de\\ la\\ chapelle\\ royale",
+   "Ensemble vocal européen de la Chapelle royale"
+  ],
+  [
+   "russian\\ bolshoi\\ symphony\\ orchestra\\ “millennium”",
+   "Russian Bolshoi Symphony Orchestra “Millennium”"
+  ],
+  [
+   "slovenian\\ philharmonic\\ string\\ chamber\\ orchestra",
+   "Slovenian Philharmonic String Chamber Orchestra"
+  ],
+  [
+   "burbank\\ mericola\\ virtual\\ philharmonic\\ orchestra",
+   "Burbank MeriCola Virtual Philharmonic Orchestra"
+  ],
+  [
+   "jim\\ connolly\\ and\\ the\\ gove\\ county\\ philharmonic",
+   "Jim Connolly and the Gove County Philharmonic"
+  ],
+  [
+   "swr\\ sinfonieorchester\\ baden‐baden\\ und\\ freiburg",
+   "SWR Sinfonieorchester Baden‐Baden und Freiburg"
+  ],
+  [
+   "australian\\ intervarsity\\ choral\\ festival\\ choir",
+   "Australian Intervarsity Choral Festival Choir"
+  ],
+  [
+   "chorus\\ lin\\ \\-\\ linkopings\\ blandade\\ studentkor",
+   "Chorus Lin - Linköpings blandade studentkör"
+  ],
+  [
+   "city\\ of\\ birmingham\\ symphony\\ orchestra\\ chorus",
+   "City of Birmingham Symphony Orchestra Chorus"
+  ],
+  [
+   "die\\ 12\\ cellisten\\ der\\ berliner\\ philharmoniker",
+   "Die 12 Cellisten der Berliner Philharmoniker"
+  ],
+  [
+   "cab\\ calloway\\ and\\ his\\ cotton\\ club\\ orchestra",
+   "Cab Calloway and His Cotton Club Orchestra"
+  ],
+  [
+   "academy\\ of\\ st\\ martin\\ in\\ the\\ fields\\ chorus",
+   "Academy of St Martin in the Fields Chorus"
+  ],
+  [
+   "societas\\ musica\\ chamber\\ orchestra\\ copenhagen",
+   "Societas Musica Chamber Orchestra Copenhagen"
+  ],
+  [
+   "city\\ of\\ prague\\ philharmonic\\ string\\ ensemble",
+   "City of Prague Philharmonic String Ensemble"
+  ],
+  [
+   "symphonieorchester\\ des\\ bayerischen\\ rundfunks",
+   "Symphonieorchester des Bayerischen Rundfunks"
+  ],
+  [
+   "orchestra\\ del\\ teatro\\ alla\\ scala\\ di\\ milano",
+   "Orchestra del Teatro alla Scala di Milano"
+  ],
+  [
+   "the\\ disneyland\\ children’s\\ sing‐along\\ chorus",
+   "The Disneyland Children’s Sing‐Along Chorus"
+  ],
+  [
+   "the\\ monks\\ and\\ choirboys\\ of\\ downside\\ abbey",
+   "The Monks and Choirboys of Downside Abbey"
+  ],
+  [
+   "metropolitan\\ male\\ choir\\ of\\ south\\ australia",
+   "Metropolitan Male Choir of South Australia"
+  ],
+  [
+   "victor\\ silvester\\ \\&\\ his\\ ballroom\\ orchestra",
+   "Victor Silvester & His Ballroom Orchestra"
+  ],
+  [
+   "the\\ london\\ starlight\\ orchestra\\ and\\ singers",
+   "The London Starlight Orchestra and Singers"
+  ],
+  [
+   "ralf\\ willing\\ und\\ sein\\ multisound\\-orchestra",
+   "Ralf Willing und sein Multisound-Orchestra"
+  ],
+  [
+   "westminster\\ philharmonic\\ orchestra\\ \\&\\ choir",
+   "Westminster Philharmonic Orchestra & Choir"
+  ],
+  [
+   "london\\ philharmonic\\ orchestra\\ wind\\ ensemble",
+   "London Philharmonic Orchestra Wind Ensemble"
+  ],
+  [
+   "chœur\\ d'enfants\\ de\\ la\\ philharmonie\\ tcheque",
+   "Chœur d'Enfants de la Philharmonie Tchèque"
+  ],
+  [
+   "the\\ city\\ of\\ prague\\ philharmonic\\ orchestra",
+   "The City of Prague Philharmonic Orchestra"
+  ],
+  [
+   "michigan\\ state\\ university\\ children’s\\ choir",
+   "Michigan State University Children’s Choir"
+  ],
+  [
+   "choir\\ of\\ st\\.\\ mary’s\\ cathedral,\\ edinburgh",
+   "Choir of St. Mary’s Cathedral, Edinburgh"
+  ],
+  [
+   "full\\ gospel\\ baptist\\ fellowship\\ mass\\ choir",
+   "Full Gospel Baptist Fellowship Mass Choir"
+  ],
+  [
+   "silesian\\ philharmonic\\ instrumental\\ ensemble",
+   "Silesian Philharmonic Instrumental Ensemble"
+  ],
+  [
+   "los\\ angeles\\ philharmonic\\ trombone\\ ensemble",
+   "Los Angeles Philharmonic Trombone Ensemble"
+  ],
+  [
+   "blaservereinigung\\ der\\ wiener\\ philharmoniker",
+   "Bläservereinigung der Wiener Philharmoniker"
+  ],
+  [
+   "osterreichisch‐ungarische\\ haydn‐philharmonie",
+   "Österreichisch‐Ungarische Haydn‐Philharmonie"
+  ],
+  [
+   "deutsche\\ staatsphilharmonie\\ rheinland‐pfalz",
+   "Deutsche Staatsphilharmonie Rheinland‐Pfalz"
+  ],
+  [
+   "orchestra\\ del\\ teatro\\ comunale\\ di\\ bologna",
+   "Orchestra del Teatro Comunale di Bologna"
+  ],
+  [
+   "the\\ saint\\ thomas\\ choir\\ of\\ men\\ and\\ boys",
+   "The Saint Thomas Choir of Men and Boys"
+  ],
+  [
+   "ella\\ fitzgerald\\ and\\ her\\ famous\\ orchestra",
+   "Ella Fitzgerald and Her Famous Orchestra"
+  ],
+  [
+   "coon–sanders’\\ original\\ nighthawk\\ orchestra",
+   "Coon–Sanders’ Original Nighthawk Orchestra"
+  ],
+  [
+   "los\\ angeles\\ philharmonic\\ new\\ music\\ group",
+   "Los Angeles Philharmonic New Music Group"
+  ],
+  [
+   "radio‐sinfonieorchester\\ stuttgart\\ des\\ swr",
+   "Radio‐Sinfonieorchester Stuttgart des SWR"
+  ],
+  [
+   "orchestra\\ del\\ teatro\\ dell’opera\\ di\\ roma",
+   "Orchestra del Teatro dell’Opera di Roma"
+  ],
+  [
+   "orchestre\\ philharmonique\\ de\\ radio\\ france",
+   "Orchestre philharmonique de Radio France"
+  ],
+  [
+   "orchestra\\ sinfonica\\ di\\ torino\\ della\\ rai",
+   "Orchestra Sinfonica di Torino della RAI"
+  ],
+  [
+   "orchestra\\ del\\ maggio\\ musicale\\ fiorentino",
+   "Orchestra del Maggio Musicale Fiorentino"
+  ],
+  [
+   "the\\ royal\\ philharmonic\\ concert\\ orchestra",
+   "The Royal Philharmonic Concert Orchestra"
+  ],
+  [
+   "the\\ pea\\ green\\ philharmonic\\ pullover\\ set",
+   "The Pea Green Philharmonic Pullover Set"
+  ],
+  [
+   "the\\ horns\\ of\\ the\\ new\\ york\\ philharmonic",
+   "The Horns of the New York Philharmonic"
+  ],
+  [
+   "berliner philharmoniker|berlin philharmonic",
+   "Berliner Philharmoniker"
+  ],
+  [
+   "the\\ ukulele\\ orchestra\\ of\\ great\\ britain",
+   "The Ukulele Orchestra of Great Britain"
+  ],
+  [
+   "orchestre\\ philharmonique\\ royal\\ de\\ liege",
+   "Orchestre Philharmonique Royal de Liège"
+  ],
+  [
+   "gay\\ men’s\\ chorus\\ of\\ washington,\\ d\\.c\\.",
+   "Gay Men’s Chorus of Washington, D.C."
+  ],
+  [
+   "blema\\-chor\\ \"gerhard\\ hirsch\"\\ aue\\ e\\.v\\.",
+   "Blema-Chor \"GERHARD HIRSCH\" AUE e.V."
+  ],
+  [
+   "chor\\ der\\ st\\.\\ hedwigs‐kathedrale\\ berlin",
+   "Chor der St. Hedwigs‐Kathedrale Berlin"
+  ],
+  [
+   "hornquartett\\ der\\ berliner\\ philharmoniker",
+   "Hornquartett der Berliner Philharmoniker"
+  ],
+  [
+   "the\\ royal\\ philharmonic\\ chamber\\ ensemble",
+   "The Royal Philharmonic Chamber Ensemble"
+  ],
+  [
+   "schlagzeuger\\ der\\ munchner\\ philharmoniker",
+   "Schlagzeuger der Münchner Philharmoniker"
+  ],
+  [
+   "royal\\ flemish\\ philharmonic\\ wood\\ quintet",
+   "Royal Flemish Philharmonic Wood Quintet"
+  ],
+  [
+   "orchestra\\ sinfonica\\ di\\ roma\\ della\\ rai",
+   "Orchestra sinfonica di Roma della RAI"
+  ],
+  [
+   "orchestra\\ of\\ the\\ age\\ of\\ enlightenment",
+   "Orchestra of the Age of Enlightenment"
+  ],
+  [
+   "philharmonisches\\ staatsorchester\\ hamburg",
+   "Philharmonisches Staatsorchester Hamburg"
+  ],
+  [
+   "orchestra\\ of\\ the\\ welsh\\ national\\ opera",
+   "Orchestra of the Welsh National Opera"
+  ],
+  [
+   "orchestre\\ philharmonique\\ de\\ monte‐carlo",
+   "Orchestre philharmonique de Monte‐Carlo"
+  ],
+  [
+   "the\\ tabernacle\\ choir\\ at\\ temple\\ square",
+   "The Tabernacle Choir at Temple Square"
+  ],
+  [
+   "choir\\ of\\ st\\ john’s\\ college,\\ cambridge",
+   "Choir of St John’s College, Cambridge"
+  ],
+  [
+   "the\\ choir\\ of\\ magdalen\\ college,\\ oxford",
+   "The Choir of Magdalen College, Oxford"
+  ],
+  [
+   "brigham\\ young\\ university\\ concert\\ choir",
+   "Brigham Young University Concert Choir"
+  ],
+  [
+   "the\\ city\\ of\\ prague\\ philharmonic\\ choir",
+   "The City of Prague Philharmonic Choir"
+  ],
+  [
+   "ricky\\ dillard’s\\ new\\ generation\\ chorale",
+   "Ricky Dillard’s New Generation Chorale"
+  ],
+  [
+   "mike\\ bennett\\ \\&\\ the\\ soulglo\\ orchestra",
+   "Mike Bennett & The SoulGlo Orchestra"
+  ],
+  [
+   "ron\\ goodwin\\ and\\ his\\ concert\\ orchestra",
+   "Ron Goodwin and His Concert Orchestra"
+  ],
+  [
+   "the\\ baby\\ einstein\\ music\\ box\\ orchestra",
+   "The Baby Einstein Music Box Orchestra"
+  ],
+  [
+   "stockholm\\ philharmonic\\ chamber\\ ensemble",
+   "Stockholm Philharmonic Chamber Ensemble"
+  ],
+  [
+   "the\\ vienna\\ philharmonic\\ rock\\ orchestra",
+   "The Vienna Philharmonic Rock Orchestra"
+  ],
+  [
+   "the\\ city\\ of\\ prague\\ philharmonic\\ brass",
+   "The City of Prague Philharmonic Brass"
+  ],
+  [
+   "wiener philharmoniker|vienna philharmonic",
+   "Wiener Philharmoniker"
+  ],
+  [
+   "royal\\ liverpool\\ philharmonic\\ orchestra",
+   "Royal Liverpool Philharmonic Orchestra"
+  ],
+  [
+   "city\\ of\\ birmingham\\ symphony\\ orchestra",
+   "City of Birmingham Symphony Orchestra"
+  ],
+  [
+   "john\\ scott\\ trotter\\ and\\ his\\ orchestra",
+   "John Scott Trotter and His Orchestra"
+  ],
+  [
+   "orchestre\\ philharmonique\\ de\\ strasbourg",
+   "Orchestre philharmonique de Strasbourg"
+  ],
+  [
+   "pierre\\ dørge\\ \\&\\ new\\ jungle\\ orchestra",
+   "Pierre Dørge & New Jungle Orchestra"
+  ],
+  [
+   "the\\ hollywood\\ bowl\\ symphony\\ orchestra",
+   "The Hollywood Bowl Symphony Orchestra"
+  ],
+  [
+   "choralschola\\ der\\ wiener\\ hofburgkapelle",
+   "Choralschola der Wiener Hofburgkapelle"
+  ],
+  [
+   "brigham\\ young\\ university\\ men's\\ chorus",
+   "Brigham Young University Men's Chorus"
+  ],
+  [
+   "christ\\ church\\ cathedral\\ choir,\\ oxford",
+   "Christ Church Cathedral Choir, Oxford"
+  ],
+  [
+   "the\\ melbourne\\ welsh\\ male\\ voice\\ choir",
+   "The Melbourne Welsh Male Voice Choir"
+  ],
+  [
+   "dan\\ newton's\\ cafe\\ accordion\\ orchestra",
+   "Dan Newton's Cafe Accordion Orchestra"
+  ],
+  [
+   "les\\ baxter,\\ his\\ chorus\\ and\\ orchestra",
+   "Les Baxter, His Chorus and Orchestra"
+  ],
+  [
+   "estonian\\ philharmonic\\ chamber\\ ensemble",
+   "Estonian Philharmonic Chamber Ensemble"
+  ],
+  [
+   "stockholm\\ philharmonic\\ chamber\\ quintet",
+   "Stockholm Philharmonic Chamber Quintet"
+  ],
+  [
+   "philharmonic\\ orchestra\\ of\\ indianapolis",
+   "Philharmonic Orchestra of Indianapolis"
+  ],
+  [
+   "the\\ moscow\\ state\\ philharmonic\\ society",
+   "The Moscow State Philharmonic Society"
+  ],
+  [
+   "the\\ royal\\ philharmonic\\ string\\ quartet",
+   "The Royal Philharmonic String Quartet"
+  ],
+  [
+   "philharmonisches\\ klavierquartett\\ berlin",
+   "Philharmonisches Klavierquartett Berlin"
+  ],
+  [
+   "academy\\ of\\ st\\ martin\\ in\\ the\\ fields",
+   "Academy of St Martin in the Fields"
+  ],
+  [
+   "choir\\ of\\ st\\ peter’s\\ college,\\ oxford",
+   "Choir of St Peter’s College, Oxford"
+  ],
+  [
+   "the\\ new\\ york\\ theater\\ broadway\\ choir",
+   "The New York Theater Broadway Choir"
+  ],
+  [
+   "chor\\ der\\ deutschen\\ staatsoper\\ berlin",
+   "Chor der Deutschen Staatsoper Berlin"
+  ],
+  [
+   "fletcher\\ henderson\\ and\\ his\\ orchestra",
+   "Fletcher Henderson and His Orchestra"
+  ],
+  [
+   "bennie\\ moten’s\\ kansas\\ city\\ orchestra",
+   "Bennie Moten’s Kansas City Orchestra"
+  ],
+  [
+   "henry\\ “red”\\ allen\\ and\\ his\\ orchestra",
+   "Henry “Red” Allen and His Orchestra"
+  ],
+  [
+   "philharmonisches\\ blaserquintett\\ berlin",
+   "Philharmonisches Bläserquintett Berlin"
+  ],
+  [
+   "orchestra\\ of\\ the\\ eighteenth\\ century",
+   "Orchestra of the Eighteenth Century"
+  ],
+  [
+   "andre\\ kostelanetz\\ and\\ his\\ orchestra",
+   "André Kostelanetz and His Orchestra"
+  ],
+  [
+   "hugo\\ winterhalter\\ and\\ his\\ orchestra",
+   "Hugo Winterhalter and His Orchestra"
+  ],
+  [
+   "orchestre\\ symphonique\\ de\\ la\\ monnaie",
+   "Orchestre Symphonique de la Monnaie"
+  ],
+  [
+   "choir\\ of\\ trinity\\ college,\\ cambridge",
+   "Choir of Trinity College, Cambridge"
+  ],
+  [
+   "chorus\\ of\\ the\\ welsh\\ national\\ opera",
+   "Chorus of the Welsh National Opera"
+  ],
+  [
+   "chor\\ des\\ lehar\\ festivals\\ bad\\ ischl",
+   "Chor des Lehár Festivals Bad Ischl"
+  ],
+  [
+   "frankie\\ trumbauer\\ and\\ his\\ orchestra",
+   "Frankie Trumbauer and His Orchestra"
+  ],
+  [
+   "clarence\\ williams\\ and\\ his\\ orchestra",
+   "Clarence Williams and His Orchestra"
+  ],
+  [
+   "george\\ melachrino\\ and\\ his\\ orchestra",
+   "George Melachrino and His Orchestra"
+  ],
+  [
+   "jazz\\ at\\ the\\ philharmonic\\ all\\-stars",
+   "Jazz at the Philharmonic All-Stars"
+  ],
+  [
+   "armenian\\ philharmonic\\ rock\\ orchestra",
+   "Armenian Philharmonic Rock Orchestra"
+  ],
+  [
+   "rotterdam\\ philharmonic\\ wind\\ ensemble",
+   "Rotterdam Philharmonic Wind Ensemble"
+  ],
+  [
+   "the\\ czech\\ philharmonic\\ wind\\ quintet",
+   "The Czech Philharmonic Wind Quintet"
+  ],
+  [
+   "royal\\ college\\ of\\ music\\ philharmonic",
+   "Royal College of Music Philharmonic"
+  ],
+  [
+   "deutsches\\ symphonie‐orchester\\ berlin",
+   "Deutsches Symphonie‐Orchester Berlin"
+  ],
+  [
+   "the\\ romantic\\ strings\\ and\\ orchestra",
+   "The Romantic Strings and Orchestra"
+  ],
+  [
+   "the\\ west\\ end\\ orchestra\\ \\&\\ singers",
+   "The West End Orchestra & Singers"
+  ],
+  [
+   "warren\\ covington\\ and\\ his\\ orchestra",
+   "Warren Covington and His Orchestra"
+  ],
+  [
+   "choir\\ of\\ king’s\\ college,\\ cambridge",
+   "Choir of King’s College, Cambridge"
+  ],
+  [
+   "west\\ coast\\ mennonite\\ chamber\\ choir",
+   "West Coast Mennonite Chamber Choir"
+  ],
+  [
+   "jimmie\\ lunceford\\ and\\ his\\ orchestra",
+   "Jimmie Lunceford and His Orchestra"
+  ],
+  [
+   "frank\\ chacksfield\\ \\&\\ his\\ orchestra",
+   "Frank Chacksfield & His Orchestra"
+  ],
+  [
+   "maynard\\ ferguson\\ and\\ his\\ orchestra",
+   "Maynard Ferguson and His Orchestra"
+  ],
+  [
+   "jimmie\\ noone’s\\ apex\\ club\\ orchestra",
+   "Jimmie Noone’s Apex Club Orchestra"
+  ],
+  [
+   "hoagy\\ carmichael\\ and\\ his\\ orchestra",
+   "Hoagy Carmichael and His Orchestra"
+  ],
+  [
+   "the\\ shashgaz\\ philharmonic\\ orchestra",
+   "The Shashgaz Philharmonic Orchestra"
+  ],
+  [
+   "the\\ berlin\\ philharmonic\\ jazz\\ group",
+   "The Berlin Philharmonic Jazz Group"
+  ],
+  [
+   "the\\ marcus\\ hedges\\ trend\\ orchestra",
+   "The Marcus Hedges Trend Orchestra"
+  ],
+  [
+   "neues\\ bachisches\\ collegium\\ musicum",
+   "Neues Bachisches Collegium Musicum"
+  ],
+  [
+   "erskine\\ hawkins\\ and\\ his\\ orchestra",
+   "Erskine Hawkins and His Orchestra"
+  ],
+  [
+   "claude\\ thornhill\\ \\&\\ his\\ orchestra",
+   "Claude Thornhill & His Orchestra"
+  ],
+  [
+   "west\\ australian\\ symphony\\ orchestra",
+   "West Australian Symphony Orchestra"
+  ],
+  [
+   "ljubljana\\ radio\\ symphony\\ orchestra",
+   "Ljubljana Radio Symphony Orchestra"
+  ],
+  [
+   "choir\\ of\\ clare\\ college,\\ cambridge",
+   "Choir of Clare College, Cambridge"
+  ],
+  [
+   "the\\ choir\\ of\\ canterbury\\ cathedral",
+   "The Choir of Canterbury Cathedral"
+  ],
+  [
+   "philharmonischer\\ kinderchor\\ dresden",
+   "Philharmonischer Kinderchor Dresden"
+  ],
+  [
+   "the\\ international\\ children’s\\ choir",
+   "The International Children’s Choir"
+  ],
+  [
+   "shenandoah\\ valley\\ children's\\ choir",
+   "Shenandoah Valley Children's Choir"
+  ],
+  [
+   "mosfilm\\ state\\ orchestra\\ and\\ choir",
+   "Mosfilm State Orchestra and Choir"
+  ],
+  [
+   "orchestral\\ manoeuvres\\ in\\ the\\ dark",
+   "Orchestral Manoeuvres in the Dark"
+  ],
+  [
+   "the\\ starlite\\ orchestra\\ \\&\\ singers",
+   "The Starlite Orchestra & Singers"
+  ],
+  [
+   "dizzy\\ gillespie\\ and\\ his\\ orchestra",
+   "Dizzy Gillespie and His Orchestra"
+  ],
+  [
+   "vienna\\ symphonic\\ orchestra\\ project",
+   "Vienna Symphonic Orchestra Project"
+  ],
+  [
+   "coleman\\ hawkins\\ and\\ his\\ orchestra",
+   "Coleman Hawkins and His Orchestra"
+  ],
+  [
+   "cootie\\ williams\\ and\\ his\\ orchestra",
+   "Cootie Williams and His Orchestra"
+  ],
+  [
+   "anthony\\ ventura\\ and\\ his\\ orchestra",
+   "Anthony Ventura and His Orchestra"
+  ],
+  [
+   "hugo\\ montenegro\\ and\\ his\\ orchestra",
+   "Hugo Montenegro and His Orchestra"
+  ],
+  [
+   "blaser\\ der\\ berliner\\ philharmoniker",
+   "Bläser der Berliner Philharmoniker"
+  ],
+  [
+   "szczecin\\ philharmonic\\ wind\\ quartet",
+   "Szczecin Philharmonic Wind Quartet"
+  ],
+  [
+   "berlin\\ philharmonic\\ string\\ quintet",
+   "Berlin Philharmonic String Quintet"
+  ],
+  [
+   "cracow\\ philharmonic\\ string\\ section",
+   "Cracow Philharmonic String Section"
+  ],
+  [
+   "matt\\ phillips\\ \\&\\ the\\ philharmonic",
+   "Matt Phillips & The Philharmonic"
+  ],
+  [
+   "das\\ philharmonia\\ hornquartett\\ wien",
+   "Das Philharmonia Hornquartett Wien"
+  ],
+  [
+   "duke\\ ellington\\ and\\ his\\ orchestra",
+   "Duke Ellington and His Orchestra"
+  ],
+  [
+   "orchestre\\ symphonique\\ de\\ montreal",
+   "Orchestre symphonique de Montréal"
+  ],
+  [
+   "jazz\\ at\\ lincoln\\ center\\ orchestra",
+   "Jazz at Lincoln Center Orchestra"
+  ],
+  [
+   "ralph\\ flanagan\\ and\\ his\\ orchestra",
+   "Ralph Flanagan and His Orchestra"
+  ],
+  [
+   "orchestra\\ della\\ svizzera\\ italiana",
+   "Orchestra della Svizzera italiana"
+  ],
+  [
+   "deutsche\\ kammerphilharmonie\\ bremen",
+   "Deutsche Kammerphilharmonie Bremen"
+  ],
+  [
+   "new\\ symphony\\ orchestra\\ of\\ london",
+   "New Symphony Orchestra of London"
+  ],
+  [
+   "richard\\ hayman\\ and\\ his\\ orchestra",
+   "Richard Hayman and His Orchestra"
+  ],
+  [
+   "ensemble\\ instrumental\\ de\\ lausanne",
+   "Ensemble Instrumental de Lausanne"
+  ],
+  [
+   "zappa\\ early\\ renaissance\\ orchestra",
+   "Zappa Early Renaissance Orchestra"
+  ],
+  [
+   "the\\ st\\.\\ john’s\\ children’s\\ choir",
+   "The St. John’s Children’s Choir"
+  ],
+  [
+   "the\\ choir\\ of\\ eparchy\\ of\\ tripoli",
+   "The Choir of Eparchy of Tripoli"
+  ],
+  [
+   "gay\\ men’s\\ chorus\\ of\\ los\\ angeles",
+   "Gay Men’s Chorus of Los Angeles"
+  ],
+  [
+   "all\\-ohio\\ state\\ fair\\ youth\\ choir",
+   "All-Ohio State Fair Youth Choir"
+  ],
+  [
+   "atlanta\\ symphony\\ orchestra\\ chorus",
+   "Atlanta Symphony Orchestra Chorus"
+  ],
+  [
+   "psycho\\-chor\\ der\\ fsu\\ jena\\ e\\.v\\.",
+   "Psycho-Chor der FSU Jena e.V."
+  ],
+  [
+   "tenerife\\ film\\ orchestra\\ \\&\\ choir",
+   "Tenerife Film Orchestra & Choir"
+  ],
+  [
+   "charlie\\ barnet\\ and\\ his\\ orchestra",
+   "Charlie Barnet and His Orchestra"
+  ],
+  [
+   "louis\\ armstrong\\ \\&\\ his\\ orchestra",
+   "Louis Armstrong & His Orchestra"
+  ],
+  [
+   "lionel\\ hampton\\ and\\ his\\ orchestra",
+   "Lionel Hampton and His Orchestra"
+  ],
+  [
+   "billie\\ holiday\\ and\\ her\\ orchestra",
+   "Billie Holiday and Her Orchestra"
+  ],
+  [
+   "cyril\\ stapleton\\ \\&\\ his\\ orchestra",
+   "Cyril Stapleton & His Orchestra"
+  ],
+  [
+   "jack\\ teagarden\\ and\\ his\\ orchestra",
+   "Jack Teagarden and His Orchestra"
+  ],
+  [
+   "lucky\\ millinder\\ \\&\\ his\\ orchestra",
+   "Lucky Millinder & His Orchestra"
+  ],
+  [
+   "jean\\ goldkette\\ and\\ his\\ orchestra",
+   "Jean Goldkette and His Orchestra"
+  ],
+  [
+   "electric\\ light\\ orchestra\\ part\\ ii",
+   "Electric Light Orchestra Part II"
+  ],
+  [
+   "billy\\ eckstine\\ and\\ his\\ orchestra",
+   "Billy Eckstine and His Orchestra"
+  ],
+  [
+   "john\\ dankworth\\ and\\ his\\ orchestra",
+   "John Dankworth and His Orchestra"
+  ],
+  [
+   "jackie\\ gleason\\ and\\ his\\ orchestra",
+   "Jackie Gleason and His Orchestra"
+  ],
+  [
+   "charlie\\ parker\\ and\\ his\\ orchestra",
+   "Charlie Parker and His Orchestra"
+  ],
+  [
+   "toots\\ camarata\\ and\\ his\\ orchestra",
+   "Toots Camarata and His Orchestra"
+  ],
+  [
+   "the\\ philharmonic\\ string\\ orchestra",
+   "The Philharmonic String Orchestra"
+  ],
+  [
+   "berlin\\ philharmonic\\ string\\ sextet",
+   "Berlin Philharmonic String Sextet"
+  ],
+  [
+   "new\\ philharmonic\\ orchestra\\ dublin",
+   "New Philharmonic Orchestra Dublin"
+  ],
+  [
+   "tver'\\ philharmonic\\ string\\ quartet",
+   "Tver' Philharmonic String Quartet"
+  ],
+  [
+   "fort\\ wayne\\ philharmonic\\ orchestra",
+   "Fort Wayne Philharmonic Orchestra"
+  ],
+  [
+   "munchner philharmoniker|munich phil",
+   "Münchner Philharmoniker"
+  ],
+  [
+   "benny\\ goodman\\ and\\ his\\ orchestra",
+   "Benny Goodman and His Orchestra"
+  ],
+  [
+   "nelson\\ riddle\\ and\\ his\\ orchestra",
+   "Nelson Riddle and His Orchestra"
+  ],
+  [
+   "bbc\\ national\\ orchestra\\ of\\ wales",
+   "BBC National Orchestra of Wales"
+  ],
+  [
+   "orf\\ radio‐symphonieorchester\\ wien",
+   "ORF Radio‐Symphonieorchester Wien"
+  ],
+  [
+   "axel\\ stordahl\\ and\\ his\\ orchestra",
+   "Axel Stordahl and His Orchestra"
+  ],
+  [
+   "vaughn\\ monroe\\ and\\ his\\ orchestra",
+   "Vaughn Monroe and His Orchestra"
+  ],
+  [
+   "munich\\ symphonic\\ sound\\ orchestra",
+   "Munich Symphonic Sound Orchestra"
+  ],
+  [
+   "hong\\ kong\\ philharmonic\\ orchestra",
+   "Hong Kong Philharmonic Orchestra"
+  ],
+  [
+   "buddy\\ johnson\\ and\\ his\\ orchestra",
+   "Buddy Johnson and His Orchestra"
+  ],
+  [
+   "norrie\\ paramor\\ \\&\\ his\\ orchestra",
+   "Norrie Paramor & His Orchestra"
+  ],
+  [
+   "english\\ national\\ opera\\ orchestra",
+   "English National Opera Orchestra"
+  ],
+  [
+   "new\\ york\\ city\\ gay\\ men’s\\ chorus",
+   "New York City Gay Men’s Chorus"
+  ],
+  [
+   "academy\\ of\\ ancient\\ music\\ chorus",
+   "Academy of Ancient Music Chorus"
+  ],
+  [
+   "novospassky\\ monastery\\ male\\ choir",
+   "Novospassky Monastery Male Choir"
+  ],
+  [
+   "montreal\\ jubilation\\ gospel\\ choir",
+   "Montreal Jubilation Gospel Choir"
+  ],
+  [
+   "harding\\ university\\ concert\\ choir",
+   "Harding University Concert Choir"
+  ],
+  [
+   "choir\\ of\\ merton\\ college,\\ oxford",
+   "Choir of Merton College, Oxford"
+  ],
+  [
+   "paul\\ whiteman\\ and\\ his\\ orchestra",
+   "Paul Whiteman and His Orchestra"
+  ],
+  [
+   "bert\\ kaempfert\\ \\&\\ his\\ orchestra",
+   "Bert Kaempfert & His Orchestra"
+  ],
+  [
+   "johnny\\ hodges\\ and\\ his\\ orchestra",
+   "Johnny Hodges and His Orchestra"
+  ],
+  [
+   "gordon\\ jenkins\\ \\&\\ his\\ orchestra",
+   "Gordon Jenkins & His Orchestra"
+  ],
+  [
+   "bunny\\ berigan\\ and\\ his\\ orchestra",
+   "Bunny Berigan and His Orchestra"
+  ],
+  [
+   "freddy\\ martin\\ and\\ his\\ orchestra",
+   "Freddy Martin and His Orchestra"
+  ],
+  [
+   "shawn\\ lee’s\\ ping\\ pong\\ orchestra",
+   "Shawn Lee’s Ping Pong Orchestra"
+  ],
+  [
+   "eddie\\ heywood\\ and\\ his\\ orchestra",
+   "Eddie Heywood and His Orchestra"
+  ],
+  [
+   "senor\\ coconut\\ and\\ his\\ orchestra",
+   "Señor Coconut and His Orchestra"
+  ],
+  [
+   "abe\\ lyman’s\\ california\\ orchestra",
+   "Abe Lyman’s California Orchestra"
+  ],
+  [
+   "david\\ carroll\\ and\\ his\\ orchestra",
+   "David Carroll and His Orchestra"
+  ],
+  [
+   "johnny\\ pearson\\ \\&\\ his\\ orchestra",
+   "Johnny Pearson & His Orchestra"
+  ],
+  [
+   "the\\ chandler\\ travis\\ philharmonic",
+   "The Chandler Travis Philharmonic"
+  ],
+  [
+   "rotterdam\\ philharmonic\\ low\\ brass",
+   "Rotterdam Philharmonic Low Brass"
+  ],
+  [
+   "the\\ metro\\ philharmonic\\ orchestra",
+   "the Metro Philharmonic Orchestra"
+  ],
+  [
+   "las\\ vegas\\ philharmonic\\ orchestra",
+   "Las Vegas Philharmonic Orchestra"
+  ],
+  [
+   "bergen\\ philharmonic\\ horn\\ section",
+   "Bergen Philharmonic Horn Section"
+  ],
+  [
+   "glenn\\ miller\\ and\\ his\\ orchestra",
+   "Glenn Miller and His Orchestra"
+  ],
+  [
+   "cab\\ calloway\\ and\\ his\\ orchestra",
+   "Cab Calloway and His Orchestra"
+  ],
+  [
+   "woody\\ herman\\ and\\ his\\ orchestra",
+   "Woody Herman and His Orchestra"
+  ],
+  [
+   "jimmy\\ dorsey\\ and\\ his\\ orchestra",
+   "Jimmy Dorsey and His Orchestra"
+  ],
+  [
+   "rundfunk‐sinfonieorchester\\ berlin",
+   "Rundfunk‐Sinfonieorchester Berlin"
+  ],
+  [
+   "stanley\\ black\\ \\&\\ his\\ orchestra",
+   "Stanley Black & His Orchestra"
+  ],
+  [
+   "akademie\\ fur\\ alte\\ musik\\ berlin",
+   "Akademie für Alte Musik Berlin"
+  ],
+  [
+   "bbc\\ scottish\\ symphony\\ orchestra",
+   "BBC Scottish Symphony Orchestra"
+  ],
+  [
+   "rochester\\ philharmonic\\ orchestra",
+   "Rochester Philharmonic Orchestra"
+  ],
+  [
+   "hal\\ mcintyre\\ and\\ his\\ orchestra",
+   "Hal McIntyre and His Orchestra"
+  ],
+  [
+   "buddy\\ morrow\\ and\\ his\\ orchestra",
+   "Buddy Morrow and His Orchestra"
+  ],
+  [
+   "rotterdams\\ philharmonisch\\ orkest",
+   "Rotterdams Philharmonisch Orkest"
+  ],
+  [
+   "rte\\ national\\ symphony\\ orchestra",
+   "RTÉ National Symphony Orchestra"
+  ],
+  [
+   "orchestra\\ del\\ teatro\\ la\\ fenice",
+   "Orchestra del Teatro La Fenice"
+  ],
+  [
+   "nederlands\\ philharmonisch\\ orkest",
+   "Nederlands Philharmonisch Orkest"
+  ],
+  [
+   "boston\\ modern\\ orchestra\\ project",
+   "Boston Modern Orchestra Project"
+  ],
+  [
+   "the\\ new\\ york\\ theatre\\ orchestra",
+   "The New York Theatre Orchestra"
+  ],
+  [
+   "san\\ francisco\\ gay\\ men’s\\ chorus",
+   "San Francisco Gay Men’s Chorus"
+  ],
+  [
+   "children's\\ chorus\\ of\\ washington",
+   "Children's Chorus of Washington"
+  ],
+  [
+   "chor\\ der\\ bayerischen\\ staatsoper",
+   "Chor der Bayerischen Staatsoper"
+  ],
+  [
+   "chor\\ der\\ deutschen\\ oper\\ berlin",
+   "Chor der Deutschen Oper Berlin"
+  ],
+  [
+   "tommy\\ dorsey\\ and\\ his\\ orchestra",
+   "Tommy Dorsey and His Orchestra"
+  ],
+  [
+   "teddy\\ wilson\\ and\\ his\\ orchestra",
+   "Teddy Wilson and His Orchestra"
+  ],
+  [
+   "billy\\ vaughn\\ and\\ his\\ orchestra",
+   "Billy Vaughn and His Orchestra"
+  ],
+  [
+   "benny\\ carter\\ and\\ his\\ orchestra",
+   "Benny Carter and His Orchestra"
+  ],
+  [
+   "quincy\\ jones\\ and\\ his\\ orchestra",
+   "Quincy Jones and His Orchestra"
+  ],
+  [
+   "xavier\\ cugat\\ and\\ his\\ orchestra",
+   "Xavier Cugat and His Orchestra"
+  ],
+  [
+   "wingy\\ manone\\ and\\ his\\ orchestra",
+   "Wingy Manone and His Orchestra"
+  ],
+  [
+   "roy\\ eldridge\\ and\\ his\\ orchestra",
+   "Roy Eldridge and His Orchestra"
+  ],
+  [
+   "luis\\ russell\\ and\\ his\\ orchestra",
+   "Luis Russell and His Orchestra"
+  ],
+  [
+   "pannonia\\ allstars\\ ska\\ orchestra",
+   "Pannonia Allstars Ska Orchestra"
+  ],
+  [
+   "larry\\ clinton\\ \\&\\ his\\ orchestra",
+   "Larry Clinton & His Orchestra"
+  ],
+  [
+   "dave\\ barbour\\ and\\ his\\ orchestra",
+   "Dave Barbour and His Orchestra"
+  ],
+  [
+   "robert\\ farnon\\ \\&\\ his\\ orchestra",
+   "Robert Farnon & His Orchestra"
+  ],
+  [
+   "new\\ york\\ philharmonic\\ ensembles",
+   "New York Philharmonic Ensembles"
+  ],
+  [
+   "stan\\ kenton\\ and\\ his\\ orchestra",
+   "Stan Kenton and His Orchestra"
+  ],
+  [
+   "national\\ philharmonic\\ orchestra",
+   "National Philharmonic Orchestra"
+  ],
+  [
+   "saint\\ louis\\ symphony\\ orchestra",
+   "Saint Louis Symphony Orchestra"
+  ],
+  [
+   "paul\\ weston\\ and\\ his\\ orchestra",
+   "Paul Weston and His Orchestra"
+  ],
+  [
+   "tito\\ puente\\ and\\ his\\ orchestra",
+   "Tito Puente and His Orchestra"
+  ],
+  [
+   "ray\\ anthony\\ and\\ his\\ orchestra",
+   "Ray Anthony and His Orchestra"
+  ],
+  [
+   "new\\ zealand\\ symphony\\ orchestra",
+   "New Zealand Symphony Orchestra"
+  ],
+  [
+   "boyd\\ raeburn\\ \\&\\ his\\ orchestra",
+   "Boyd Raeburn & His Orchestra"
+  ],
+  [
+   "ziggy\\ elman\\ and\\ his\\ orchestra",
+   "Ziggy Elman and His Orchestra"
+  ],
+  [
+   "sofia\\ national\\ opera\\ orchestra",
+   "Sofia National Opera Orchestra"
+  ],
+  [
+   "ray\\ conniff\\ and\\ his\\ orchestra",
+   "Ray Conniff and His Orchestra"
+  ],
+  [
+   "the\\ victor\\ silvester\\ orchestra",
+   "The Victor Silvester Orchestra"
+  ],
+  [
+   "chor\\ des\\ bayerischen\\ rundfunks",
+   "Chor des Bayerischen Rundfunks"
+  ],
+  [
+   "choir\\ of\\ st\\ mary’s,\\ fishponds",
+   "Choir of St Mary’s, Fishponds"
+  ],
+  [
+   "magnificat\\ meal\\ movement\\ choir",
+   "Magnificat Meal Movement Choir"
+  ],
+  [
+   "the\\ 103rd\\ street\\ gospel\\ choir",
+   "The 103rd Street Gospel Choir"
+  ],
+  [
+   "rundfunk\\-jugendchor\\ wernigerode",
+   "Rundfunk-Jugendchor Wernigerode"
+  ],
+  [
+   "chor\\ der\\ bayreuther\\ festspiele",
+   "Chor der Bayreuther Festspiele"
+  ],
+  [
+   "choir\\ of\\ holy\\ cross,\\ crediton",
+   "Choir of Holy Cross, Crediton"
+  ],
+  [
+   "the\\ cleveland\\ orchestra\\ chorus",
+   "The Cleveland Orchestra Chorus"
+  ],
+  [
+   "slavyanka\\ men’s\\ russian\\ chorus",
+   "Slavyanka Men’s Russian Chorus"
+  ],
+  [
+   "the\\ do‐re‐mi\\ children’s\\ chorus",
+   "The Do‐Re‐Mi Children’s Chorus"
+  ],
+  [
+   "piccola\\ orchestra\\ avion\\ travel",
+   "Piccola Orchestra Avion Travel"
+  ],
+  [
+   "the\\ international\\ go\\ orchestra",
+   "The International Go Orchestra"
+  ],
+  [
+   "harry\\ james\\ and\\ his\\ orchestra",
+   "Harry James and His Orchestra"
+  ],
+  [
+   "percy\\ faith\\ and\\ his\\ orchestra",
+   "Percy Faith and His Orchestra"
+  ],
+  [
+   "perez\\ prado\\ and\\ his\\ orchestra",
+   "Pérez Prado and His Orchestra"
+  ],
+  [
+   "edmundo\\ ros\\ and\\ his\\ orchestra",
+   "Edmundo Ros and His Orchestra"
+  ],
+  [
+   "king\\ oliver\\ and\\ his\\ orchestra",
+   "King Oliver and His Orchestra"
+  ],
+  [
+   "will\\ osborne\\ \\&\\ his\\ orchestra",
+   "Will Osborne & His Orchestra"
+  ],
+  [
+   "pete\\ rugolo\\ and\\ his\\ orchestra",
+   "Pete Rugolo and His Orchestra"
+  ],
+  [
+   "thad\\ jones/mel\\ lewis\\ orchestra",
+   "Thad Jones/Mel Lewis Orchestra"
+  ],
+  [
+   "russ\\ morgan\\ and\\ his\\ orchestra",
+   "Russ Morgan and His Orchestra"
+  ],
+  [
+   "louis\\ prima\\ and\\ his\\ orchestra",
+   "Louis Prima and His Orchestra"
+  ],
+  [
+   "tubingen\\ philharmonic\\ orchestra",
+   "Tübingen Philharmonic Orchestra"
+  ],
+  [
+   "the\\ philharmonic\\ pop\\ orchestra",
+   "The Philharmonic Pop Orchestra"
+  ],
+  [
+   "the\\ bowling\\ green\\ philharmonic",
+   "The Bowling Green Philharmonic"
+  ],
+  [
+   "jack\\ hylton\\ \\&\\ his\\ orchestra",
+   "Jack Hylton & His Orchestra"
+  ],
+  [
+   "bournemouth\\ symphony\\ orchestra",
+   "Bournemouth Symphony Orchestra"
+  ],
+  [
+   "the\\ dorsey\\ brothers\\ orchestra",
+   "The Dorsey Brothers Orchestra"
+  ],
+  [
+   "les\\ baxter\\ and\\ his\\ orchestra",
+   "Les Baxter and His Orchestra"
+  ],
+  [
+   "philharmonia\\ baroque\\ orchestra",
+   "Philharmonia Baroque Orchestra"
+  ],
+  [
+   "rca\\ victor\\ symphony\\ orchestra",
+   "RCA Victor Symphony Orchestra"
+  ],
+  [
+   "david\\ rose\\ and\\ his\\ orchestra",
+   "David Rose and His Orchestra"
+  ],
+  [
+   "rex\\ stewart\\ \\&\\ his\\ orchestra",
+   "Rex Stewart & His Orchestra"
+  ],
+  [
+   "orchestra\\ filarmonica\\ italiana",
+   "Orchestra Filarmonica Italiana"
+  ],
+  [
+   "sammy\\ kaye\\ and\\ his\\ orchestra",
+   "Sammy Kaye and His Orchestra"
+  ],
+  [
+   "roland\\ shaw\\ \\&\\ his\\ orchestra",
+   "Roland Shaw & His Orchestra"
+  ],
+  [
+   "vic\\ schoen\\ and\\ his\\ orchestra",
+   "Vic Schoen and His Orchestra"
+  ],
+  [
+   "buffalo\\ philharmonic\\ orchestra",
+   "Buffalo Philharmonic Orchestra"
+  ],
+  [
+   "antwerp\\ philharmonic\\ orchestra",
+   "Antwerp Philharmonic Orchestra"
+  ],
+  [
+   "joe\\ venuti\\ and\\ his\\ orchestra",
+   "Joe Venuti and His Orchestra"
+  ],
+  [
+   "ken\\ thorne\\ and\\ his\\ orchestra",
+   "Ken Thorne and His Orchestra"
+  ],
+  [
+   "kansas\\ mennonite\\ men's\\ chorus",
+   "Kansas Mennonite Men's Chorus"
+  ],
+  [
+   "florida\\ college\\ alumni\\ chorus",
+   "Florida College Alumni Chorus"
+  ],
+  [
+   "twin\\ cities\\ gay\\ men's\\ chorus",
+   "Twin Cities Gay Men's Chorus"
+  ],
+  [
+   "london\\ community\\ gospel\\ choir",
+   "London Community Gospel Choir"
+  ],
+  [
+   "st\\.\\ petersburg\\ chamber\\ choir",
+   "St. Petersburg Chamber Choir"
+  ],
+  [
+   "choir\\ of\\ trinity\\ wall\\ street",
+   "Choir of Trinity Wall Street"
+  ],
+  [
+   "morgan\\ state\\ university\\ choir",
+   "Morgan State University Choir"
+  ],
+  [
+   "morton\\ gould's\\ symphonic\\ band",
+   "Morton Gould's Symphonic Band"
+  ],
+  [
+   "artie\\ shaw\\ and\\ his\\ orchestra",
+   "Artie Shaw and His Orchestra"
+  ],
+  [
+   "gene\\ krupa\\ and\\ his\\ orchestra",
+   "Gene Krupa and His Orchestra"
+  ],
+  [
+   "bob\\ crosby\\ and\\ his\\ orchestra",
+   "Bob Crosby and His Orchestra"
+  ],
+  [
+   "chick\\ webb\\ and\\ his\\ orchestra",
+   "Chick Webb and His Orchestra"
+  ],
+  [
+   "earl\\ hines\\ and\\ his\\ orchestra",
+   "Earl Hines and His Orchestra"
+  ],
+  [
+   "bruno\\ bertone\\ sound\\ orchestra",
+   "Bruno Bertone Sound Orchestra"
+  ],
+  [
+   "don\\ redman\\ and\\ his\\ orchestra",
+   "Don Redman and His Orchestra"
+  ],
+  [
+   "eddy\\ duchin\\ \\&\\ his\\ orchestra",
+   "Eddy Duchin & His Orchestra"
+  ],
+  [
+   "the\\ allen\\ toussaint\\ orchestra",
+   "The Allen Toussaint Orchestra"
+  ],
+  [
+   "ben\\ selvin\\ and\\ his\\ orchestra",
+   "Ben Selvin and His Orchestra"
+  ],
+  [
+   "johnny\\ otis\\ \\&\\ his\\ orchestra",
+   "Johnny Otis & His Orchestra"
+  ],
+  [
+   "tex\\ beneke\\ and\\ his\\ orchestra",
+   "Tex Beneke and His Orchestra"
+  ],
+  [
+   "tony\\ evans\\ and\\ his\\ orchestra",
+   "Tony Evans and His Orchestra"
+  ],
+  [
+   "jay\\ mcshann\\ \\&\\ his\\ orchestra",
+   "Jay McShann & His Orchestra"
+  ],
+  [
+   "john\\ kirby\\ and\\ his\\ orchestra",
+   "John Kirby and His Orchestra"
+  ],
+  [
+   "the\\ paragon\\ ragtime\\ orchestra",
+   "The Paragon Ragtime Orchestra"
+  ],
+  [
+   "jerry\\ gray\\ and\\ his\\ orchestra",
+   "Jerry Gray and His Orchestra"
+  ],
+  [
+   "tony\\ pastor\\ \\&\\ his\\ orchestra",
+   "Tony Pastor & His Orchestra"
+  ],
+  [
+   "brussels\\ philharmonic\\ soloists",
+   "Brussels Philharmonic Soloists"
+  ],
+  [
+   "collegium\\ ceskych\\ filharmoniku",
+   "Collegium českých filharmoniků"
+  ],
+  [
+   "koninklijk\\ concertgebouworkest",
+   "Koninklijk Concertgebouworkest"
+  ],
+  [
+   "art\\ mooney\\ \\&\\ his\\ orchestra",
+   "Art Mooney & His Orchestra"
+  ],
+  [
+   "geoff\\ love\\ \\&\\ his\\ orchestra",
+   "Geoff Love & His Orchestra"
+  ],
+  [
+   "the\\ gino\\ marinello\\ orchestra",
+   "The Gino Marinello Orchestra"
+  ],
+  [
+   "ndr\\ elbphilharmonie\\ orchester",
+   "NDR Elbphilharmonie Orchester"
+  ],
+  [
+   "the\\ london\\ theatre\\ orchestra",
+   "The London Theatre Orchestra"
+  ],
+  [
+   "prandi\\ sound\\ dance\\ orchestra",
+   "Prandi Sound Dance Orchestra"
+  ],
+  [
+   "saint\\ paul\\ chamber\\ orchestra",
+   "Saint Paul Chamber Orchestra"
+  ],
+  [
+   "kay\\ kyser\\ and\\ his\\ orchestra",
+   "Kay Kyser and His Orchestra"
+  ],
+  [
+   "tiny\\ hill\\ and\\ his\\ orchestra",
+   "Tiny Hill and His Orchestra"
+  ],
+  [
+   "red\\ norvo\\ and\\ his\\ orchestra",
+   "Red Norvo and His Orchestra"
+  ],
+  [
+   "queensland\\ symphony\\ orchestra",
+   "Queensland Symphony Orchestra"
+  ],
+  [
+   "cincinnati\\ symphony\\ orchestra",
+   "Cincinnati Symphony Orchestra"
+  ],
+  [
+   "virtual\\ video\\ game\\ orchestra",
+   "Virtual Video Game Orchestra"
+  ],
+  [
+   "jan\\ garber\\ \\&\\ his\\ orchestra",
+   "Jan Garber & His Orchestra"
+  ],
+  [
+   "london\\ contemporary\\ orchestra",
+   "London Contemporary Orchestra"
+  ],
+  [
+   "bratislava\\ symphony\\ orchestra",
+   "Bratislava Symphony Orchestra"
+  ],
+  [
+   "choir\\ of\\ new\\ college\\ oxford",
+   "Choir of New College Oxford"
+  ],
+  [
+   "choir\\ of\\ the\\ king’s\\ consort",
+   "Choir of the King’s Consort"
+  ],
+  [
+   "stuttgarter\\ hymnus\\-chorknaben",
+   "Stuttgarter Hymnus-Chorknaben"
+  ],
+  [
+   "vocalessence\\ ensemble\\ singers",
+   "VocalEssence Ensemble Singers"
+  ],
+  [
+   "utah\\ valley\\ children's\\ choir",
+   "Utah Valley Children's Choir"
+  ],
+  [
+   "ray\\ noble\\ and\\ his\\ orchestra",
+   "Ray Noble and His Orchestra"
+  ],
+  [
+   "sy\\ oliver\\ and\\ his\\ orchestra",
+   "Sy Oliver and His Orchestra"
+  ],
+  [
+   "wayne\\ king\\ \\&\\ his\\ orchestra",
+   "Wayne King & His Orchestra"
+  ],
+  [
+   "max\\ greger\\ \\&\\ his\\ orchestra",
+   "Max Greger & His Orchestra"
+  ],
+  [
+   "les\\ brown\\ and\\ his\\ orchestra",
+   "Les Brown and His Orchestra"
+  ],
+  [
+   "the\\ duke\\ ellington\\ orchestra",
+   "The Duke Ellington Orchestra"
+  ],
+  [
+   "peter\\ thomas\\ sound\\ orchestra",
+   "Peter Thomas Sound Orchestra"
+  ],
+  [
+   "ted\\ weems\\ and\\ his\\ orchestra",
+   "Ted Weems and His Orchestra"
+  ],
+  [
+   "opening\\ performance\\ orchestra",
+   "Opening Performance Orchestra"
+  ],
+  [
+   "the\\ laurie\\ johnson\\ orchestra",
+   "The Laurie Johnson Orchestra"
+  ],
+  [
+   "les\\ elgart\\ \\&\\ his\\ orchestra",
+   "Les Elgart & His Orchestra"
+  ],
+  [
+   "henri\\ rene\\ \\&\\ his\\ orchestra",
+   "Henri René & His Orchestra"
+  ],
+  [
+   "circulasione\\ totale\\ orchestra",
+   "Circulasione Totale Orchestra"
+  ],
+  [
+   "scottish\\ philharmonic\\ singers",
+   "Scottish Philharmonic Singers"
+  ],
+  [
+   "arkham\\ philharmonic\\ orchestra",
+   "Arkham Philharmonic Orchestra"
+  ],
+  [
+   "madrid\\ philharmonic\\ orchestra",
+   "Madrid Philharmonic Orchestra"
+  ],
+  [
+   "philharmonic\\-septet\\ stuttgart",
+   "Philharmonic-Septet Stuttgart"
+  ],
+  [
+   "hell\\ city,\\ hell\\ philharmonic",
+   "Hell City, Hell Philharmonic"
+  ],
+  [
+   "the\\ henry\\ mancini\\ orchestra",
+   "The Henry Mancini Orchestra"
+  ],
+  [
+   "metropolitan\\ opera\\ orchestra",
+   "Metropolitan Opera Orchestra"
+  ],
+  [
+   "chamber\\ orchestra\\ of\\ europe",
+   "Chamber Orchestra of Europe"
+  ],
+  [
+   "melbourne\\ symphony\\ orchestra",
+   "Melbourne Symphony Orchestra"
+  ],
+  [
+   "tasmanian\\ symphony\\ orchestra",
+   "Tasmanian Symphony Orchestra"
+  ],
+  [
+   "australian\\ chamber\\ orchestra",
+   "Australian Chamber Orchestra"
+  ],
+  [
+   "baltimore\\ symphony\\ orchestra",
+   "Baltimore Symphony Orchestra"
+  ],
+  [
+   "singapore\\ symphony\\ orchestra",
+   "Singapore Symphony Orchestra"
+  ],
+  [
+   "hollywood\\ pictures\\ orchestra",
+   "Hollywood Pictures Orchestra"
+  ],
+  [
+   "orchestra\\ sinfonica\\ di\\ roma",
+   "Orchestra sinfonica di Roma"
+  ],
+  [
+   "the\\ sauter–finegan\\ orchestra",
+   "The Sauter–Finegan Orchestra"
+  ],
+  [
+   "st\\.\\ paul’s\\ cathedral\\ choir",
+   "St. Paul’s Cathedral Choir"
+  ],
+  [
+   "sofia\\ national\\ opera\\ chorus",
+   "Sofia National Opera Chorus"
+  ],
+  [
+   "the\\ youth\\ for\\ christ\\ choir",
+   "The Youth for Christ Choir"
+  ],
+  [
+   "cappella\\ musicale\\ pontificia",
+   "Cappella musicale pontificia"
+  ],
+  [
+   "selwyn\\ college\\ chapel\\ choir",
+   "Selwyn College Chapel Choir"
+  ],
+  [
+   "danish\\ national\\ radio\\ choir",
+   "Danish National Radio Choir"
+  ],
+  [
+   "gabrieli\\ consort\\ \\&\\ players",
+   "Gabrieli Consort & Players"
+  ],
+  [
+   "billy\\ may\\ \\&\\ his\\ orchestra",
+   "Billy May & His Orchestra"
+  ],
+  [
+   "brazilian\\ tropical\\ orchestra",
+   "Brazilian Tropical Orchestra"
+  ],
+  [
+   "apollonia\\ symphony\\ orchestra",
+   "Apollonia Symphony Orchestra"
+  ],
+  [
+   "berlin\\ philharmonic\\ soloists",
+   "Berlin Philharmonic Soloists"
+  ],
+  [
+   "central\\ philharmonic\\ society",
+   "Central Philharmonic Society"
+  ],
+  [
+   "qatar\\ philharmonic\\ orchestra",
+   "Qatar Philharmonic Orchestra"
+  ],
+  [
+   "madras\\ philharmonic\\ arkestra",
+   "Madras Philharmonic Arkestra"
+  ],
+  [
+   "amsterdam\\ baroque\\ orchestra",
+   "Amsterdam Baroque Orchestra"
+  ],
+  [
+   "columbia\\ symphony\\ orchestra",
+   "Columbia Symphony Orchestra"
+  ],
+  [
+   "budapest\\ festival\\ orchestra",
+   "Budapest Festival Orchestra"
+  ],
+  [
+   "nicolaus\\ esterhazy\\ sinfonia",
+   "Nicolaus Esterházy Sinfonia"
+  ],
+  [
+   "adelaide\\ symphony\\ orchestra",
+   "Adelaide Symphony Orchestra"
+  ],
+  [
+   "orchestra\\ at\\ temple\\ square",
+   "Orchestra at Temple Square"
+  ],
+  [
+   "eminence\\ symphony\\ orchestra",
+   "Eminence Symphony Orchestra"
+  ],
+  [
+   "national\\ symphony\\ orchestra",
+   "National Symphony Orchestra"
+  ],
+  [
+   "budapest\\ symphony\\ orchestra",
+   "Budapest Symphony Orchestra"
+  ],
+  [
+   "westminster\\ cathedral\\ choir",
+   "Westminster Cathedral Choir"
+  ],
+  [
+   "choir\\ of\\ westminster\\ abbey",
+   "Choir of Westminster Abbey"
+  ],
+  [
+   "swr\\ vokalensemble\\ stuttgart",
+   "SWR Vokalensemble Stuttgart"
+  ],
+  [
+   "chor\\ der\\ wiener\\ staatsoper",
+   "Chor der Wiener Staatsoper"
+  ],
+  [
+   "ensemble\\ vocal\\ de\\ lausanne",
+   "Ensemble Vocal de Lausanne"
+  ],
+  [
+   "huddersfield\\ choral\\ society",
+   "Huddersfield Choral Society"
+  ],
+  [
+   "crouch\\ end\\ festival\\ chorus",
+   "Crouch End Festival Chorus"
+  ],
+  [
+   "one\\ voice\\ children’s\\ choir",
+   "One Voice Children’s Choir"
+  ],
+  [
+   "the\\ fron\\ male\\ voice\\ choir",
+   "The Fron Male Voice Choir"
+  ],
+  [
+   "church\\ of\\ the\\ helix\\ choir",
+   "Church of the Helix Choir"
+  ],
+  [
+   "oregon\\ bach\\ festival\\ choir",
+   "Oregon Bach Festival Choir"
+  ],
+  [
+   "bournemouth\\ symphony\\ chorus",
+   "Bournemouth Symphony Chorus"
+  ],
+  [
+   "rundfunk\\-kinderchor\\ leipzig",
+   "Rundfunk-Kinderchor Leipzig"
+  ],
+  [
+   "the\\ red\\ budd\\ gospel\\ choir",
+   "The Red Budd Gospel Choir"
+  ],
+  [
+   "los\\ angeles\\ master\\ chorale",
+   "Los Angeles Master Chorale"
+  ],
+  [
+   "the\\ new\\ american\\ orchestra",
+   "The New American Orchestra"
+  ],
+  [
+   "the\\ brian\\ setzer\\ orchestra",
+   "The Brian Setzer Orchestra"
+  ],
+  [
+   "the\\ mystic\\ moods\\ orchestra",
+   "The Mystic Moods Orchestra"
+  ],
+  [
+   "animal\\ liberation\\ orchestra",
+   "Animal Liberation Orchestra"
+  ],
+  [
+   "the\\ night\\ flight\\ orchestra",
+   "The Night Flight Orchestra"
+  ],
+  [
+   "the\\ black\\ mighty\\ orchestra",
+   "The Black Mighty Orchestra"
+  ],
+  [
+   "the\\ quantic\\ soul\\ orchestra",
+   "The Quantic Soul Orchestra"
+  ],
+  [
+   "joe\\ loss\\ \\&\\ his\\ orchestra",
+   "Joe Loss & His Orchestra"
+  ],
+  [
+   "leningrad\\ philharmonic\\ trio",
+   "Leningrad Philharmonic Trio"
+  ],
+  [
+   "michael\\ gordon\\ philharmonic",
+   "Michael Gordon Philharmonic"
+  ],
+  [
+   "vienna\\ philharmonic\\ quartet",
+   "Vienna Philharmonic Quartet"
+  ],
+  [
+   "the\\ philadelphia\\ orchestra",
+   "The Philadelphia Orchestra"
+  ],
+  [
+   "ambrose\\ and\\ his\\ orchestra",
+   "Ambrose and His Orchestra"
+  ],
+  [
+   "wdr\\ sinfonieorchester\\ koln",
+   "WDR Sinfonieorchester Köln"
+  ],
+  [
+   "london\\ promenade\\ orchestra",
+   "London Promenade Orchestra"
+  ],
+  [
+   "scottish\\ chamber\\ orchestra",
+   "Scottish Chamber Orchestra"
+  ],
+  [
+   "atlanta\\ symphony\\ orchestra",
+   "Atlanta Symphony Orchestra"
+  ],
+  [
+   "detroit\\ symphony\\ orchestra",
+   "Detroit Symphony Orchestra"
+  ],
+  [
+   "english\\ symphony\\ orchestra",
+   "English Symphony Orchestra"
+  ],
+  [
+   "romantic\\ strings\\ orchestra",
+   "Romantic Strings Orchestra"
+  ],
+  [
+   "toronto\\ symphony\\ orchestra",
+   "Toronto Symphony Orchestra"
+  ],
+  [
+   "tbilisi\\ symphony\\ orchestra",
+   "Tbilisi Symphony Orchestra"
+  ],
+  [
+   "northern\\ chamber\\ orchestra",
+   "Northern Chamber Orchestra"
+  ],
+  [
+   "antwerp\\ symphony\\ orchestra",
+   "Antwerp Symphony Orchestra"
+  ],
+  [
+   "rundfunk\\-kinderchor\\ berlin",
+   "Rundfunk-Kinderchor Berlin"
+  ],
+  [
+   "winchester\\ cathedral\\ choir",
+   "Winchester Cathedral Choir"
+  ],
+  [
+   "the\\ harry\\ simeone\\ chorale",
+   "The Harry Simeone Chorale"
+  ],
+  [
+   "the\\ love\\ fellowship\\ choir",
+   "The Love Fellowship Choir"
+  ],
+  [
+   "portland\\ gay\\ men's\\ chorus",
+   "Portland Gay Men's Chorus"
+  ],
+  [
+   "victoria\\ welsh\\ male\\ choir",
+   "Victoria Welsh Male Choir"
+  ],
+  [
+   "the\\ boys\\ choir\\ of\\ harlem",
+   "The Boys Choir of Harlem"
+  ],
+  [
+   "the\\ english\\ concert\\ choir",
+   "The English Concert Choir"
+  ],
+  [
+   "crescendo\\ chor\\ leichlingen",
+   "Crescendo Chor Leichlingen"
+  ],
+  [
+   "boys\\ choir\\ from\\ l’alumnat",
+   "Boys Choir from L’Alumnat"
+  ],
+  [
+   "a\\ nude\\ japanese\\ orchestra",
+   "A Nude Japanese Orchestra"
+  ],
+  [
+   "the\\ sturcz\\ string\\ quartet",
+   "The Sturcz String Quartet"
+  ],
+  [
+   "the\\ count\\ basie\\ orchestra",
+   "The Count Basie Orchestra"
+  ],
+  [
+   "machito\\ and\\ his\\ orchestra",
+   "Machito and His Orchestra"
+  ],
+  [
+   "the\\ london\\ pops\\ orchestra",
+   "The London Pops Orchestra"
+  ],
+  [
+   "john\\ blackinsell\\ orchestra",
+   "John Blackinsell Orchestra"
+  ],
+  [
+   "menuhin\\ festival\\ orchestra",
+   "Menuhin Festival Orchestra"
+  ],
+  [
+   "battery\\ operated\\ orchestra",
+   "Battery Operated Orchestra"
+  ],
+  [
+   "rupert's\\ kitchen\\ orchestra",
+   "Rupert's Kitchen Orchestra"
+  ],
+  [
+   "geraldo\\ and\\ his\\ orchestra",
+   "Geraldo and His Orchestra"
+  ],
+  [
+   "thee\\ deadtime\\ philharmonic",
+   "Thee Deadtime Philharmonic"
+  ],
+  [
+   "the\\ charlotte\\ philharmonic",
+   "The Charlotte Philharmonic"
+  ],
+  [
+   "czech\\ philharmonic\\ quartet",
+   "Czech Philharmonic Quartet"
+  ],
+  [
+   "oklahoma\\ city\\ philharmonic",
+   "Oklahoma City Philharmonic"
+  ],
+  [
+   "the\\ templeton\\ philharmonic",
+   "The Templeton Philharmonic"
+  ],
+  [
+   "pittsburgh s(?:ymphony|o\\b)",
+   "Pittsburgh Symphony Orchestra"
+  ],
+  [
+   "cincinnati\\ pops\\ orchestra",
+   "Cincinnati Pops Orchestra"
+  ],
+  [
+   "london\\ festival\\ orchestra",
+   "London Festival Orchestra"
+  ],
+  [
+   "orpheus\\ chamber\\ orchestra",
+   "Orpheus Chamber Orchestra"
+  ],
+  [
+   "sydney\\ symphony\\ orchestra",
+   "Sydney Symphony Orchestra"
+  ],
+  [
+   "berlin\\ symphony\\ orchestra",
+   "Berlin Symphony Orchestra"
+  ],
+  [
+   "dallas\\ symphony\\ orchestra",
+   "Dallas Symphony Orchestra"
+  ],
+  [
+   "orchestra\\ of\\ the\\ sixteen",
+   "Orchestra of The Sixteen"
+  ],
+  [
+   "orchestra\\ of\\ st\\.\\ luke’s",
+   "Orchestra of St. Luke’s"
+  ],
+  [
+   "royal\\ promenade\\ orchestra",
+   "Royal Promenade Orchestra"
+  ],
+  [
+   "pratum\\ integrum\\ orchestra",
+   "Pratum Integrum Orchestra"
+  ],
+  [
+   "the\\ new\\ london\\ orchestra",
+   "The New London Orchestra"
+  ],
+  [
+   "hollywood\\ studio\\ symphony",
+   "Hollywood Studio Symphony"
+  ],
+  [
+   "the\\ john\\ barry\\ orchestra",
+   "The John Barry Orchestra"
+  ],
+  [
+   "the\\ tony\\ hatch\\ orchestra",
+   "The Tony Hatch Orchestra"
+  ],
+  [
+   "chorale\\ des\\ petits\\ anges",
+   "Chorale des petits anges"
+  ],
+  [
+   "brooklyn\\ tabernacle\\ choir",
+   "Brooklyn Tabernacle Choir"
+  ],
+  [
+   "london\\ philharmonic\\ choir",
+   "London Philharmonic Choir"
+  ],
+  [
+   "the\\ henry\\ mancini\\ chorus",
+   "The Henry Mancini Chorus"
+  ],
+  [
+   "guildford\\ cathedral\\ choir",
+   "Guildford Cathedral Choir"
+  ],
+  [
+   "tzlil\\ v’zemer\\ boys\\ choir",
+   "Tzlil V’zemer Boys Choir"
+  ],
+  [
+   "worcester\\ cathedral\\ choir",
+   "Worcester Cathedral Choir"
+  ],
+  [
+   "ensemble\\ vocal\\ l'alliance",
+   "Ensemble Vocal l'Alliance"
+  ],
+  [
+   "the\\ roger\\ wagner\\ chorale",
+   "The Roger Wagner Chorale"
+  ],
+  [
+   "metropolitan\\ opera\\ chorus",
+   "Metropolitan Opera Chorus"
+  ],
+  [
+   "der\\ bendersche\\ kinderchor",
+   "Der Bendersche Kinderchor"
+  ],
+  [
+   "southwark\\ cathedral\\ choir",
+   "Southwark Cathedral Choir"
+  ],
+  [
+   "new\\ london\\ chamber\\ choir",
+   "New London Chamber Choir"
+  ],
+  [
+   "royal\\ philharmonic\\ chorus",
+   "Royal Philharmonic Chorus"
+  ],
+  [
+   "shir\\ vshevach\\ boys\\ choir",
+   "Shir Vshevach Boys Choir"
+  ],
+  [
+   "scholars\\ baroque\\ ensemble",
+   "Scholars Baroque Ensemble"
+  ],
+  [
+   "horn\\ orchestra\\ of\\ russia",
+   "Horn orchestra of Russia"
+  ],
+  [
+   "russian\\ federal\\ orchestra",
+   "Russian Federal Orchestra"
+  ],
+  [
+   "mozart\\ festival\\ orchestra",
+   "Mozart Festival Orchestra"
+  ],
+  [
+   "jazz\\ band\\ ball\\ orchestra",
+   "Jazz Band Ball Orchestra"
+  ],
+  [
+   "stonewall\\ noise\\ orchestra",
+   "Stonewall Noise Orchestra"
+  ],
+  [
+   "edison\\ symphony\\ orchestra",
+   "Edison Symphony Orchestra"
+  ],
+  [
+   "maria\\ schneider\\ orchestra",
+   "Maria Schneider Orchestra"
+  ],
+  [
+   "kevin\\ mcdermott\\ orchestra",
+   "Kevin McDermott Orchestra"
+  ],
+  [
+   "belf’s\\ romanian\\ orchestra",
+   "Belf’s Romanian Orchestra"
+  ],
+  [
+   "the\\ gary\\ tesca\\ orchestra",
+   "The Gary Tesca Orchestra"
+  ],
+  [
+   "ophelia\\ ragtime\\ orchestra",
+   "Ophelia Ragtime Orchestra"
+  ],
+  [
+   "galactic\\ cowboy\\ orchestra",
+   "Galactic Cowboy Orchestra"
+  ],
+  [
+   "stardust\\ memory\\ orchestra",
+   "STARDUST MEMORY ORCHESTRA"
+  ],
+  [
+   "berlin\\ philharmonic\\ octet",
+   "Berlin Philharmonic Octet"
+  ],
+  [
+   "berlin\\ philharmonic\\ brass",
+   "Berlin Philharmonic Brass"
+  ],
+  [
+   "gdansk\\ philharmonic\\ brass",
+   "Gdańsk Philharmonic Brass"
+  ],
+  [
+   "osakan\\ philharmonic\\ winds",
+   "Osakan Philharmonic Winds"
+  ],
+  [
+   "the\\ bushwick\\ philharmonic",
+   "The Bushwick Philharmonic"
+  ],
+  [
+   "concertino\\ string\\ quartet",
+   "Concertino String Quartet"
+  ],
+  [
+   "city\\ of\\ london\\ sinfonia",
+   "City of London Sinfonia"
+  ],
+  [
+   "the\\ new\\ world\\ orchestra",
+   "The New World Orchestra"
+  ],
+  [
+   "venice\\ baroque\\ orchestra",
+   "Venice Baroque Orchestra"
+  ],
+  [
+   "mahler\\ chamber\\ orchestra",
+   "Mahler Chamber Orchestra"
+  ],
+  [
+   "balthasar‐neumann‐ensemble",
+   "Balthasar‐Neumann‐Ensemble"
+  ],
+  [
+   "polish\\ chamber\\ orchestra",
+   "Polish Chamber Orchestra"
+  ],
+  [
+   "hollywood\\ bowl\\ orchestra",
+   "Hollywood Bowl Orchestra"
+  ],
+  [
+   "the\\ norman\\ luboff\\ choir",
+   "The Norman Luboff Choir"
+  ],
+  [
+   "schwarzmeer\\ kosaken\\-chor",
+   "Schwarzmeer Kosaken-Chor"
+  ],
+  [
+   "chamber\\ choir\\ of\\ europe",
+   "Chamber Choir of Europe"
+  ],
+  [
+   "mdr\\ rundfunkchor\\ leipzig",
+   "MDR Rundfunkchor Leipzig"
+  ],
+  [
+   "choral\\ arts\\ philadelphia",
+   "Choral Arts Philadelphia"
+  ],
+  [
+   "african\\ children's\\ choir",
+   "African Children's Choir"
+  ],
+  [
+   "boston\\ gay\\ men’s\\ chorus",
+   "Boston Gay Men’s Chorus"
+  ],
+  [
+   "new\\ york\\ choral\\ artists",
+   "New York Choral Artists"
+  ],
+  [
+   "suddeutscher\\ madrigalchor",
+   "Süddeutscher Madrigalchor"
+  ],
+  [
+   "bach\\ choir\\ of\\ bethlehem",
+   "Bach Choir of Bethlehem"
+  ],
+  [
+   "rhos\\ orpheus\\ male\\ choir",
+   "Rhos Orpheus Male Choir"
+  ],
+  [
+   "electric\\ light\\ orchestra",
+   "Electric Light Orchestra"
+  ],
+  [
+   "love\\ unlimited\\ orchestra",
+   "Love Unlimited Orchestra"
+  ],
+  [
+   "johann\\ strauss\\ orchestra",
+   "Johann Strauss Orchestra"
+  ],
+  [
+   "the\\ gil\\ evans\\ orchestra",
+   "The Gil Evans Orchestra"
+  ],
+  [
+   "unknown\\ mortal\\ orchestra",
+   "Unknown Mortal Orchestra"
+  ],
+  [
+   "acoustic\\ sound\\ orchestra",
+   "Acoustic Sound Orchestra"
+  ],
+  [
+   "trondheim\\ jazz\\ orchestra",
+   "Trondheim Jazz Orchestra"
+  ],
+  [
+   "spanish\\ harlem\\ orchestra",
+   "Spanish Harlem Orchestra"
+  ],
+  [
+   "manhattan\\ jazz\\ orchestra",
+   "Manhattan Jazz Orchestra"
+  ],
+  [
+   "the\\ blackheart\\ orchestra",
+   "The Blackheart Orchestra"
+  ],
+  [
+   "stockholm\\ jazz\\ orchestra",
+   "Stockholm Jazz Orchestra"
+  ],
+  [
+   "orchestra\\ markus\\ schoffl",
+   "Orchestra Markus Schöffl"
+  ],
+  [
+   "crawford\\ light\\ orchestra",
+   "Crawford Light Orchestra"
+  ],
+  [
+   "reptile\\ palace\\ orchestra",
+   "Reptile Palace Orchestra"
+  ],
+  [
+   "genetic\\ memory\\ orchestra",
+   "Genetic Memory Orchestra"
+  ],
+  [
+   "abe\\ schwartz’s\\ orchestra",
+   "Abe Schwartz’s Orchestra"
+  ],
+  [
+   "shirim\\ klezmer\\ orchestra",
+   "Shirim Klezmer Orchestra"
+  ],
+  [
+   "exploding\\ star\\ orchestra",
+   "Exploding Star Orchestra"
+  ],
+  [
+   "brewer\\ chamber\\ orchestra",
+   "Brewer Chamber Orchestra"
+  ],
+  [
+   "thee\\ butchers’\\ orchestra",
+   "Thee Butchers’ Orchestra"
+  ],
+  [
+   "the\\ diva\\ jazz\\ orchestra",
+   "The DIVA Jazz Orchestra"
+  ],
+  [
+   "philharmonic\\ congregation",
+   "Philharmonic Congregation"
+  ],
+  [
+   "new\\ philharmonic\\ quartet",
+   "New Philharmonic Quartet"
+  ],
+  [
+   "erie\\ junior\\ philharmonic",
+   "Erie Junior Philharmonic"
+  ],
+  [
+   "philharmonic\\ string\\ trio",
+   "Philharmonic String Trio"
+  ],
+  [
+   "stuttgart\\ brass\\ quartett",
+   "Stuttgart Brass Quartett"
+  ],
+  [
+   "english chamber orchestra",
+   "English Chamber Orchestra"
+  ],
+  [
+   "the\\ mantovani\\ orchestra",
+   "The Mantovani Orchestra"
+  ],
+  [
+   "bach‐collegium\\ stuttgart",
+   "Bach‐Collegium Stuttgart"
+  ],
+  [
+   "the\\ cleveland\\ orchestra",
+   "The Cleveland Orchestra"
+  ],
+  [
+   "le\\ concert\\ des\\ nations",
+   "Le Concert des Nations"
+  ],
+  [
+   "radion\\ sinfoniaorkesteri",
+   "Radion sinfoniaorkesteri"
+  ],
+  [
+   "george\\ martin\\ orchestra",
+   "George Martin Orchestra"
+  ],
+  [
+   "the\\ filmscore\\ orchestra",
+   "The Filmscore Orchestra"
+  ],
+  [
+   "roma\\ symphony\\ orchestra",
+   "Roma Symphony Orchestra"
+  ],
+  [
+   "suddeutsche\\ philharmonie",
+   "Süddeutsche Philharmonie"
+  ],
+  [
+   "bath\\ festival\\ orchestra",
+   "Bath Festival Orchestra"
+  ],
+  [
+   "united\\ studio\\ orchestra",
+   "United Studio Orchestra"
+  ],
+  [
+   "brussels\\ jazz\\ orchestra",
+   "Brussels Jazz Orchestra"
+  ],
+  [
+   "morriston\\ orpheus\\ choir",
+   "Morriston Orpheus Choir"
+  ],
+  [
+   "capella\\ antiqua\\ munchen",
+   "Capella Antiqua München"
+  ],
+  [
+   "the\\ new\\ london\\ chorale",
+   "The New London Chorale"
+  ],
+  [
+   "amsterdam\\ baroque\\ choir",
+   "Amsterdam Baroque Choir"
+  ],
+  [
+   "chicago\\ symphony\\ chorus",
+   "Chicago Symphony Chorus"
+  ],
+  [
+   "one\\ voice\\ mixed\\ chorus",
+   "One Voice Mixed Chorus"
+  ],
+  [
+   "national\\ lutheran\\ choir",
+   "National Lutheran Choir"
+  ],
+  [
+   "the\\ georgia\\ mass\\ choir",
+   "The Georgia Mass Choir"
+  ],
+  [
+   "norwich\\ cathedral\\ choir",
+   "Norwich Cathedral Choir"
+  ],
+  [
+   "watoto\\ children's\\ choir",
+   "Watoto Children's Choir"
+  ],
+  [
+   "drakensberg\\ boys'\\ choir",
+   "Drakensberg Boys' Choir"
+  ],
+  [
+   "lincoln\\ cathedral\\ choir",
+   "Lincoln Cathedral Choir"
+  ],
+  [
+   "vancouver\\ chamber\\ choir",
+   "Vancouver Chamber Choir"
+  ],
+  [
+   "nymphenburger\\ kinderchor",
+   "Nymphenburger Kinderchor"
+  ],
+  [
+   "cincinnati\\ men's\\ chorus",
+   "Cincinnati Men's Chorus"
+  ],
+  [
+   "the\\ dunvant\\ male\\ choir",
+   "The Dunvant Male Choir"
+  ],
+  [
+   "the\\ florida\\ mass\\ choir",
+   "The Florida Mass Choir"
+  ],
+  [
+   "nouvel\\ ensemble\\ moderne",
+   "Nouvel Ensemble Moderne"
+  ],
+  [
+   "trans‐siberian\\ orchestra",
+   "Trans‐Siberian Orchestra"
+  ],
+  [
+   "the\\ cinematic\\ orchestra",
+   "The Cinematic Orchestra"
+  ],
+  [
+   "vibracathedral\\ orchestra",
+   "Vibracathedral Orchestra"
+  ],
+  [
+   "pasadena\\ roof\\ orchestra",
+   "Pasadena Roof Orchestra"
+  ],
+  [
+   "gerald\\ wilson\\ orchestra",
+   "Gerald Wilson Orchestra"
+  ],
+  [
+   "the\\ starsound\\ orchestra",
+   "The Starsound Orchestra"
+  ],
+  [
+   "melbourne\\ ska\\ orchestra",
+   "Melbourne Ska Orchestra"
+  ],
+  [
+   "the\\ northstar\\ orchestra",
+   "The Northstar Orchestra"
+  ],
+  [
+   "black\\ science\\ orchestra",
+   "Black Science Orchestra"
+  ],
+  [
+   "lingua\\ mortis\\ orchestra",
+   "Lingua Mortis Orchestra"
+  ],
+  [
+   "the\\ ian\\ rich\\ orchestra",
+   "The Ian Rich Orchestra"
+  ],
+  [
+   "perast'troikaa\\ orchestra",
+   "Peräst'troikaa Orchestra"
+  ],
+  [
+   "art\\ hickman’s\\ orchestra",
+   "Art Hickman’s Orchestra"
+  ],
+  [
+   "precious\\ jazz\\ orchestra",
+   "Precious Jazz Orchestra"
+  ],
+  [
+   "hilo\\ hawaiian\\ orchestra",
+   "Hilo Hawaiian Orchestra"
+  ],
+  [
+   "psychotropical\\ orchestra",
+   "Psychotropical Orchestra"
+  ],
+  [
+   "thai\\ elephant\\ orchestra",
+   "Thai Elephant Orchestra"
+  ],
+  [
+   "the\\ bhutan\\ philharmonic",
+   "The Bhutan Philharmonic"
+  ],
+  [
+   "chicago s(?:ymphony|o\\b)",
+   "Chicago Symphony Orchestra"
+  ],
+  [
+   "academy of ancient music",
+   "Academy of Ancient Music"
+  ],
+  [
+   "bavarian (?:radio|state)",
+   "Bavarian Radio Symphony Orchestra"
+  ],
+  [
+   "glenn\\ miller\\ orchestra",
+   "Glenn Miller Orchestra"
+  ],
+  [
+   "bbc\\ symphony\\ orchestra",
+   "BBC Symphony Orchestra"
+  ],
+  [
+   "san\\ francisco\\ symphony",
+   "San Francisco Symphony"
+  ],
+  [
+   "global\\ stage\\ orchestra",
+   "Global Stage Orchestra"
+  ],
+  [
+   "valve\\ studio\\ orchestra",
+   "Valve Studio Orchestra"
+  ],
+  [
+   "heidelberger\\ sinfoniker",
+   "Heidelberger Sinfoniker"
+  ],
+  [
+   "orlando\\ pops\\ orchestra",
+   "Orlando Pops Orchestra"
+  ],
+  [
+   "the\\ heritage\\ orchestra",
+   "The Heritage Orchestra"
+  ],
+  [
+   "circus\\ monti\\ orchestra",
+   "Circus Monti Orchestra"
+  ],
+  [
+   "santec\\ music\\ orchestra",
+   "Santec Music Orchestra"
+  ],
+  [
+   "bournemouth\\ sinfonietta",
+   "Bournemouth Sinfonietta"
+  ],
+  [
+   "haydn\\ sinfonietta\\ wien",
+   "Haydn Sinfonietta Wien"
+  ],
+  [
+   "hawaii\\ calls\\ orchestra",
+   "Hawaii Calls Orchestra"
+  ],
+  [
+   "wiener\\ mozart\\ ensemble",
+   "Wiener Mozart Ensemble"
+  ],
+  [
+   "florida\\ college\\ chorus",
+   "Florida College Chorus"
+  ],
+  [
+   "london\\ festival\\ chorus",
+   "London Festival Chorus"
+  ],
+  [
+   "arnold\\ schoenberg\\ chor",
+   "Arnold Schoenberg Chor"
+  ],
+  [
+   "choir\\ of\\ york\\ minster",
+   "Choir of York Minster"
+  ],
+  [
+   "christian\\ gospel\\ choir",
+   "Christian Gospel Choir"
+  ],
+  [
+   "london\\ symphony\\ chorus",
+   "London Symphony Chorus"
+  ],
+  [
+   "mississippi\\ mass\\ choir",
+   "Mississippi Mass Choir"
+  ],
+  [
+   "atlanta\\ sacred\\ chorale",
+   "Atlanta Sacred Chorale"
+  ],
+  [
+   "the\\ john\\ alldis\\ choir",
+   "The John Alldis Choir"
+  ],
+  [
+   "tewkesbury\\ abbey\\ choir",
+   "Tewkesbury Abbey Choir"
+  ],
+  [
+   "beecham\\ choral\\ society",
+   "Beecham Choral Society"
+  ],
+  [
+   "rhos\\ male\\ voice\\ choir",
+   "Rhos Male Voice Choir"
+  ],
+  [
+   "charlie\\ parker\\ quartet",
+   "Charlie Parker Quartet"
+  ],
+  [
+   "the\\ taliesin\\ orchestra",
+   "The Taliesin Orchestra"
+  ],
+  [
+   "baroque\\ string\\ quartet",
+   "Baroque String Quartet"
+  ],
+  [
+   "yellow\\ magic\\ orchestra",
+   "Yellow Magic Orchestra"
+  ],
+  [
+   "penguin\\ cafe\\ orchestra",
+   "Penguin Cafe Orchestra"
+  ],
+  [
+   "starlite\\ pop\\ orchestra",
+   "Starlite Pop Orchestra"
+  ],
+  [
+   "diablo\\ swing\\ orchestra",
+   "Diablo Swing Orchestra"
+  ],
+  [
+   "sonic\\ hybrid\\ orchestra",
+   "Sonic Hybrid Orchestra"
+  ],
+  [
+   "lydian\\ sound\\ orchestra",
+   "Lydian Sound Orchestra"
+  ],
+  [
+   "the\\ souljazz\\ orchestra",
+   "The Souljazz Orchestra"
+  ],
+  [
+   "fanfareduloup\\ orchestra",
+   "Fanfareduloup Orchestra"
+  ],
+  [
+   "tommy\\ dorsey\\ orchestra",
+   "Tommy Dorsey Orchestra"
+  ],
+  [
+   "l'orchestra\\ cinematique",
+   "L'Orchestra Cinematique"
+  ],
+  [
+   "leroy\\ holmes\\ orchestra",
+   "Leroy Holmes Orchestra"
+  ],
+  [
+   "scratchophone\\ orchestra",
+   "Scratchophone Orchestra"
+  ],
+  [
+   "connie’s\\ inn\\ orchestra",
+   "Connie’s Inn Orchestra"
+  ],
+  [
+   "the\\ tikiyaki\\ orchestra",
+   "The Tikiyaki Orchestra"
+  ],
+  [
+   "future\\ world\\ orchestra",
+   "Future World Orchestra"
+  ],
+  [
+   "constellation\\ orchestra",
+   "Constellation Orchestra"
+  ],
+  [
+   "daniel\\ caine\\ orchestra",
+   "Daniel Caine Orchestra"
+  ],
+  [
+   "multitraction\\ orchestra",
+   "MultiTraction Orchestra"
+  ],
+  [
+   "the\\ colorist\\ orchestra",
+   "The Colorist Orchestra"
+  ],
+  [
+   "rogue\\ steady\\ orchestra",
+   "Rogue Steady Orchestra"
+  ],
+  [
+   "the\\ pixel\\ philharmonic",
+   "The Pixel Philharmonic"
+  ],
+  [
+   "bbc\\ philharmonic\\ brass",
+   "BBC Philharmonic Brass"
+  ],
+  [
+   "boston s(?:ymphony|o\\b)",
+   "Boston Symphony Orchestra"
+  ],
+  [
+   "royal scottish national",
+   "Royal Scottish National Orchestra"
+  ],
+  [
+   "saarland radio symphony",
+   "Saarland Radio Symphony Orchestra"
+  ],
+  [
+   "boston\\ pops\\ orchestra",
+   "Boston Pops Orchestra"
+  ],
+  [
+   "philharmonia\\ hungarica",
+   "Philharmonia Hungarica"
+  ],
+  [
+   "bbc\\ concert\\ orchestra",
+   "BBC Concert Orchestra"
+  ],
+  [
+   "philharmonia\\ slavonica",
+   "Philharmonia Slavonica"
+  ],
+  [
+   "isham\\ jones\\ orchestra",
+   "Isham Jones Orchestra"
+  ],
+  [
+   "royal\\ ballet\\ sinfonia",
+   "Royal Ballet Sinfonia"
+  ],
+  [
+   "rte\\ concert\\ orchestra",
+   "RTÉ Concert Orchestra"
+  ],
+  [
+   "wells\\ cathedral\\ choir",
+   "Wells Cathedral Choir"
+  ],
+  [
+   "windsbacher\\ knabenchor",
+   "Windsbacher Knabenchor"
+  ],
+  [
+   "wdr\\ rundfunkchor\\ koln",
+   "WDR Rundfunkchor Köln"
+  ],
+  [
+   "der\\ botho\\-lucas\\-chor",
+   "Der Botho-Lucas-Chor"
+  ],
+  [
+   "bielefelder\\ kinderchor",
+   "Bielefelder Kinderchor"
+  ],
+  [
+   "exaudi\\ choir\\ of\\ cuba",
+   "Exaudi Choir of Cuba"
+  ],
+  [
+   "the\\ prestonwood\\ choir",
+   "The Prestonwood Choir"
+  ],
+  [
+   "collegium\\ vocale\\ koln",
+   "Collegium Vocale Köln"
+  ],
+  [
+   "the\\ hilliard\\ ensemble",
+   "The Hilliard Ensemble"
+  ],
+  [
+   "philip\\ glass\\ ensemble",
+   "Philip Glass Ensemble"
+  ],
+  [
+   "the\\ salsoul\\ orchestra",
+   "The Salsoul Orchestra"
+  ],
+  [
+   "orchestra\\ alec\\ medina",
+   "Orchestra Alec Medina"
+  ],
+  [
+   "radiofiskars\\ orchestra",
+   "Radiofiskars Orchestra"
+  ],
+  [
+   "star\\ sounds\\ orchestra",
+   "Star Sounds Orchestra"
+  ],
+  [
+   "magic\\ malik\\ orchestra",
+   "Magic Malik Orchestra"
+  ],
+  [
+   "berlin\\ boom\\ orchestra",
+   "Berlin BOOM Orchestra"
+  ],
+  [
+   "marty\\ paich\\ orchestra",
+   "Marty Paich Orchestra"
+  ],
+  [
+   "rhabdomantic\\ orchestra",
+   "Rhabdomantic Orchestra"
+  ],
+  [
+   "gustav\\ brom\\ orchestra",
+   "Gustav Brom Orchestra"
+  ],
+  [
+   "globe\\ unity\\ orchestra",
+   "Globe Unity Orchestra"
+  ],
+  [
+   "pat\\ benesta\\ orchestra",
+   "Pat Benesta Orchestra"
+  ],
+  [
+   "grand'groove\\ orchestra",
+   "Grand'Groove Orchestra"
+  ],
+  [
+   "aarhus\\ jazz\\ orchestra",
+   "Aarhus Jazz Orchestra"
+  ],
+  [
+   "chinatown\\ philharmonic",
+   "Chinatown Philharmonic"
+  ],
+  [
+   "the\\ neon\\ philharmonic",
+   "The Neon Philharmonic"
+  ],
+  [
+   "new\\ philharmonic\\ band",
+   "New Philharmonic Band"
+  ],
+  [
+   "philadelphia orchestra",
+   "Philadelphia Orchestra"
+  ],
+  [
+   "dresdner staatskapelle",
+   "Staatskapelle Dresden"
+  ],
+  [
+   "philharmoniker hamburg",
+   "Philharmoniker Hamburg"
+  ],
+  [
+   "james\\ last\\ orchestra",
+   "James Last Orchestra"
+  ],
+  [
+   "capella\\ istropolitana",
+   "Capella Istropolitana"
+  ],
+  [
+   "dresdner\\ philharmonie",
+   "Dresdner Philharmonie"
+  ],
+  [
+   "mdr\\ sinfonieorchester",
+   "MDR Sinfonieorchester"
+  ],
+  [
+   "collegium\\ musicum\\ 90",
+   "Collegium Musicum 90"
+  ],
+  [
+   "brussels\\ philharmonic",
+   "Brussels Philharmonic"
+  ],
+  [
+   "amsterdam\\ sinfonietta",
+   "Amsterdam Sinfonietta"
+  ],
+  [
+   "ndr\\ radiophilharmonie",
+   "NDR Radiophilharmonie"
+  ],
+  [
+   "cairn\\ string\\ quartet",
+   "Cairn String Quartet"
+  ],
+  [
+   "the\\ brabant\\ ensemble",
+   "The Brabant Ensemble"
+  ],
+  [
+   "seattle\\ men’s\\ chorus",
+   "Seattle Men’s Chorus"
+  ],
+  [
+   "gunter\\ kallmann\\ chor",
+   "Günter Kallmann Chor"
+  ],
+  [
+   "heidelberger\\ hardchor",
+   "Heidelberger HardChor"
+  ],
+  [
+   "balthasar‐neumann‐chor",
+   "Balthasar‐Neumann‐Chor"
+  ],
+  [
+   "disney\\ studio\\ chorus",
+   "Disney Studio Chorus"
+  ],
+  [
+   "bruce\\ mitchell\\ choir",
+   "Bruce Mitchell Choir"
+  ],
+  [
+   "ormond\\ college\\ choir",
+   "Ormond College Choir"
+  ],
+  [
+   "new\\ york\\ boys\\ choir",
+   "New York Boys Choir"
+  ],
+  [
+   "vienna\\ art\\ orchestra",
+   "Vienna Art Orchestra"
+  ],
+  [
+   "mgm\\ studio\\ orchestra",
+   "MGM Studio Orchestra"
+  ],
+  [
+   "disharmonic\\ orchestra",
+   "Disharmonic Orchestra"
+  ],
+  [
+   "orchestra\\ electrecord",
+   "Orchestra Electrecord"
+  ],
+  [
+   "ghost\\ funk\\ orchestra",
+   "Ghost Funk Orchestra"
+  ],
+  [
+   "the\\ delano\\ orchestra",
+   "The Delano Orchestra"
+  ],
+  [
+   "optimystica\\ orchestra",
+   "Optimystica Orchestra"
+  ],
+  [
+   "bombay\\ dub\\ orchestra",
+   "Bombay Dub Orchestra"
+  ],
+  [
+   "treacherous\\ orchestra",
+   "Treacherous Orchestra"
+  ],
+  [
+   "psychedelic\\ orchestra",
+   "Psychedelic Orchestra"
+  ],
+  [
+   "orchestra\\ of\\ spheres",
+   "Orchestra of Spheres"
+  ],
+  [
+   "independent\\ orchestra",
+   "Independent Orchestra"
+  ],
+  [
+   "riku\\ niemi\\ orchestra",
+   "Riku Niemi Orchestra"
+  ],
+  [
+   "orchestra\\ superstring",
+   "Orchestra Superstring"
+  ],
+  [
+   "upperground\\ orchestra",
+   "Upperground Orchestra"
+  ],
+  [
+   "orchestra\\ njervudarov",
+   "Orchestra Njervudarov"
+  ],
+  [
+   "atlantis\\ philharmonic",
+   "Atlantis Philharmonic"
+  ],
+  [
+   "staatskapelle dresden",
+   "Staatskapelle Dresden"
+  ],
+  [
+   "bamberger symphoniker",
+   "Bamberger Symphoniker"
+  ],
+  [
+   "consortium\\ classicum",
+   "Consortium Classicum"
+  ],
+  [
+   "munchner\\ symphoniker",
+   "Münchner Symphoniker"
+  ],
+  [
+   "cappella\\ coloniensis",
+   "Cappella Coloniensis"
+  ],
+  [
+   "die\\ kolner\\ akademie",
+   "Die Kölner Akademie"
+  ],
+  [
+   "berliner\\ symphoniker",
+   "Berliner Symphoniker"
+  ],
+  [
+   "thomanerchor\\ leipzig",
+   "Thomanerchor Leipzig"
+  ],
+  [
+   "robert\\ shaw\\ chorale",
+   "Robert Shaw Chorale"
+  ],
+  [
+   "treorchy\\ male\\ choir",
+   "Treorchy Male Choir"
+  ],
+  [
+   "kammerchor\\ stuttgart",
+   "Kammerchor Stuttgart"
+  ],
+  [
+   "soweto\\ gospel\\ choir",
+   "Soweto Gospel Choir"
+  ],
+  [
+   "london\\ oriana\\ choir",
+   "London Oriana Choir"
+  ],
+  [
+   "hawaii\\ calls\\ chorus",
+   "Hawaii Calls Chorus"
+  ],
+  [
+   "berliner\\ mozart‐chor",
+   "Berliner Mozart‐Chor"
+  ],
+  [
+   "ely\\ cathedral\\ choir",
+   "Ely Cathedral Choir"
+  ],
+  [
+   "gerd\\-michaelis\\ chor",
+   "Gerd-Michaelis Chor"
+  ],
+  [
+   "manchester\\ orchestra",
+   "Manchester Orchestra"
+  ],
+  [
+   "mahavishnu\\ orchestra",
+   "Mahavishnu Orchestra"
+  ],
+  [
+   "casa\\ loma\\ orchestra",
+   "Casa Loma Orchestra"
+  ],
+  [
+   "the\\ biddu\\ orchestra",
+   "The Biddu Orchestra"
+  ],
+  [
+   "vermicelli\\ orchestra",
+   "Vermicelli Orchestra"
+  ],
+  [
+   "apocalypse\\ orchestra",
+   "Apocalypse Orchestra"
+  ],
+  [
+   "the\\ orchestra\\ tokyo",
+   "THE ORCHESTRA TOKYO"
+  ],
+  [
+   "accidental\\ orchestra",
+   "Accidental Orchestra"
+  ],
+  [
+   "fantomatik\\ orchestra",
+   "Fantomatik Orchestra"
+  ],
+  [
+   "club\\ foot\\ orchestra",
+   "Club Foot Orchestra"
+  ],
+  [
+   "soul\\ city\\ orchestra",
+   "Soul City Orchestra"
+  ],
+  [
+   "dark\\ star\\ orchestra",
+   "Dark Star Orchestra"
+  ],
+  [
+   "levitation\\ orchestra",
+   "Levitation Orchestra"
+  ],
+  [
+   "afrodyssey\\ orchestra",
+   "Afrodyssey Orchestra"
+  ],
+  [
+   "bassisters\\ orchestra",
+   "Bassisters Orchestra"
+  ],
+  [
+   "fast\\ food\\ orchestra",
+   "Fast Food Orchestra"
+  ],
+  [
+   "dadavistic\\ orchestra",
+   "Dadavistic Orchestra"
+  ],
+  [
+   "moviesound\\ orchestra",
+   "Moviesound Orchestra"
+  ],
+  [
+   "blue\\ chip\\ orchestra",
+   "Blue Chip Orchestra"
+  ],
+  [
+   "unprepared\\ orchestra",
+   "Unprepared Orchestra"
+  ],
+  [
+   "zelda\\ reorchestrated",
+   "Zelda Reorchestrated"
+  ],
+  [
+   "soothsayer\\ orchestra",
+   "Soothsayer Orchestra"
+  ],
+  [
+   "salt\\ city\\ orchestra",
+   "Salt City Orchestra"
+  ],
+  [
+   "\\[mahori\\ orchestra\\]",
+   "[mahori orchestra]"
+  ],
+  [
+   "drumbago’s\\ orchestra",
+   "Drumbago’s Orchestra"
+  ],
+  [
+   "kacophonic\\ orchestra",
+   "Kacophonic Orchestra"
+  ],
+  [
+   "soundscape\\ orchestra",
+   "Soundscape Orchestra"
+  ],
+  [
+   "freeway\\ philharmonic",
+   "Freeway Philharmonic"
+  ],
+  [
+   "philharmonic\\ quartet",
+   "Philharmonic Quartet"
+  ],
+  [
+   "staatskapelle berlin",
+   "Staatskapelle Berlin"
+  ],
+  [
+   "dancelife\\ orchestra",
+   "Dancelife Orchestra"
+  ],
+  [
+   "minnesota\\ orchestra",
+   "Minnesota Orchestra"
+  ],
+  [
+   "the\\ king’s\\ consort",
+   "The King’s Consort"
+  ],
+  [
+   "umo\\ jazz\\ orchestra",
+   "UMO Jazz Orchestra"
+  ],
+  [
+   "new\\ london\\ consort",
+   "New London Consort"
+  ],
+  [
+   "hr‐sinfonieorchester",
+   "hr‐Sinfonieorchester"
+  ],
+  [
+   "tapiola\\ sinfonietta",
+   "Tapiola Sinfonietta"
+  ],
+  [
+   "sinfonia\\ of\\ london",
+   "Sinfonia of London"
+  ],
+  [
+   "munchener\\ bach‐chor",
+   "Münchener Bach‐Chor"
+  ],
+  [
+   "dresdner\\ kammerchor",
+   "Dresdner Kammerchor"
+  ],
+  [
+   "rundfunkchor\\ berlin",
+   "Rundfunkchor Berlin"
+  ],
+  [
+   "knabenchor\\ hannover",
+   "Knabenchor Hannover"
+  ],
+  [
+   "yeshiva\\ boys\\ choir",
+   "Yeshiva Boys Choir"
+  ],
+  [
+   "chicago\\ mass\\ choir",
+   "Chicago Mass Choir"
+  ],
+  [
+   "philharmonia\\ chorus",
+   "Philharmonia Chorus"
+  ],
+  [
+   "cwmbach\\ male\\ choir",
+   "Cwmbach Male Choir"
+  ],
+  [
+   "vocalessence\\ chorus",
+   "VocalEssence Chorus"
+  ],
+  [
+   "amor\\ artis\\ chorale",
+   "Amor Artis Chorale"
+  ],
+  [
+   "holland\\ boys\\ choir",
+   "Holland Boys Choir"
+  ],
+  [
+   "ars\\ choralis\\ coeln",
+   "Ars Choralis Coeln"
+  ],
+  [
+   "gori\\ women’s\\ choir",
+   "Gori Women’s Choir"
+  ],
+  [
+   "gospel\\ chor\\ pahlen",
+   "Gospel Chor Pahlen"
+  ],
+  [
+   "house\\ gospel\\ choir",
+   "House Gospel Choir"
+  ],
+  [
+   "big\\ city\\ orchestra",
+   "Big City Orchestra"
+  ],
+  [
+   "submotion\\ orchestra",
+   "Submotion Orchestra"
+  ],
+  [
+   "wolverine\\ orchestra",
+   "Wolverine Orchestra"
+  ],
+  [
+   "innerzone\\ orchestra",
+   "Innerzone Orchestra"
+  ],
+  [
+   "videogame\\ orchestra",
+   "Videogame Orchestra"
+  ],
+  [
+   "esterhazy\\ orchestra",
+   "Esterhazy Orchestra"
+  ],
+  [
+   "overdrive\\ orchestra",
+   "Overdrive Orchestra"
+  ],
+  [
+   "telemetry\\ orchestra",
+   "Telemetry Orchestra"
+  ],
+  [
+   "panoptica\\ orchestra",
+   "Panóptica Orchestra"
+  ],
+  [
+   "drop\\ out\\ orchestra",
+   "Drop Out Orchestra"
+  ],
+  [
+   "orchestra\\ fireluche",
+   "Orchestra Fireluche"
+  ],
+  [
+   "turntable\\ orchestra",
+   "Turntable Orchestra"
+  ],
+  [
+   "artchipel\\ orchestra",
+   "Artchipel Orchestra"
+  ],
+  [
+   "pointless\\ orchestra",
+   "Pointless Orchestra"
+  ],
+  [
+   "orchestra\\ u\\.s\\.a\\.",
+   "Orchestra U.S.A."
+  ],
+  [
+   "freestyle\\ orchestra",
+   "Freestyle Orchestra"
+  ],
+  [
+   "monofonic\\ orchestra",
+   "Monofonic Orchestra"
+  ],
+  [
+   "amplified\\ orchestra",
+   "Amplified Orchestra"
+  ],
+  [
+   "orchestra\\ rosichino",
+   "Orchestra Rosichino"
+  ],
+  [
+   "the\\ juju\\ orchestra",
+   "The Juju Orchestra"
+  ],
+  [
+   "rainstick\\ orchestra",
+   "Rainstick Orchestra"
+  ],
+  [
+   "realistic\\ orchestra",
+   "Realistic Orchestra"
+  ],
+  [
+   "soulution\\ orchestra",
+   "Soulution Orchestra"
+  ],
+  [
+   "les\\ reed\\ orchestra",
+   "Les Reed Orchestra"
+  ],
+  [
+   "barebones\\ orchestra",
+   "Barebones Orchestra"
+  ],
+  [
+   "nymphonik\\ orchestra",
+   "Nymphonik Orchestra"
+  ],
+  [
+   "orchestra\\ tascabile",
+   "Orchestra Tascabile"
+  ],
+  [
+   "snowflake\\ orchestra",
+   "Snowflake Orchestra"
+  ],
+  [
+   "orchestra\\ bucuresti",
+   "Orchestra București"
+  ],
+  [
+   "brunswick\\ orchestra",
+   "Brunswick Orchestra"
+  ],
+  [
+   "turnstyle\\ orchestra",
+   "Turnstyle Orchestra"
+  ],
+  [
+   "lightning\\ orchestra",
+   "Lightning Orchestra"
+  ],
+  [
+   "dreamland\\ orchestra",
+   "Dreamland Orchestra"
+  ],
+  [
+   "bradberry\\ orchestra",
+   "BRADBERRY ORCHESTRA"
+  ],
+  [
+   "mnemonist\\ orchestra",
+   "Mnemonist Orchestra"
+  ],
+  [
+   "tinderbox\\ orchestra",
+   "Tinderbox Orchestra"
+  ],
+  [
+   "cardboard\\ orchestra",
+   "Cardboard Orchestra"
+  ],
+  [
+   "symphonia\\ orchestra",
+   "Symphonia Orchestra"
+  ],
+  [
+   "orchestra\\ guacamole",
+   "Orchestra Guacamole"
+  ],
+  [
+   "ghetto\\ philharmonic",
+   "Ghetto Philharmonic"
+  ],
+  [
+   "chance\\ philharmonic",
+   "Chance Philharmonic"
+  ],
+  [
+   "cleveland orchestra",
+   "Cleveland Orchestra"
+  ],
+  [
+   "london philharmonic",
+   "London Philharmonic Orchestra"
+  ],
+  [
+   "bergen philharmonic",
+   "Bergen Philharmonic Orchestra"
+  ],
+  [
+   "israel philharmonic",
+   "Israel Philharmonic Orchestra"
+  ],
+  [
+   "wiener\\ symphoniker",
+   "Wiener Symphoniker"
+  ],
+  [
+   "london\\ sinfonietta",
+   "London Sinfonietta"
+  ],
+  [
+   "northwest\\ sinfonia",
+   "Northwest Sinfonia"
+  ],
+  [
+   "dresdner\\ kreuzchor",
+   "Dresdner Kreuzchor"
+  ],
+  [
+   "oslo\\ gospel\\ choir",
+   "Oslo Gospel Choir"
+  ],
+  [
+   "wonder\\ kids\\ choir",
+   "Wonder Kids Choir"
+  ],
+  [
+   "capella\\ gregoriana",
+   "Capella Gregoriana"
+  ],
+  [
+   "don\\ cossack\\ choir",
+   "Don Cossack Choir"
+  ],
+  [
+   "cappella\\ amsterdam",
+   "Cappella Amsterdam"
+  ],
+  [
+   "ex\\ cathedra\\ choir",
+   "Ex Cathedra Choir"
+  ],
+  [
+   "ocp\\ session\\ choir",
+   "OCP Session Choir"
+  ],
+  [
+   "deep\\ throat\\ choir",
+   "Deep Throat Choir"
+  ],
+  [
+   "peerless\\ orchestra",
+   "Peerless Orchestra"
+  ],
+  [
+   "ballroom\\ orchestra",
+   "Ballroom Orchestra"
+  ],
+  [
+   "abstract\\ orchestra",
+   "Abstract Orchestra"
+  ],
+  [
+   "stealing\\ orchestra",
+   "Stealing Orchestra"
+  ],
+  [
+   "…a\\ toys\\ orchestra",
+   "…a toys orchestra"
+  ],
+  [
+   "selvin’s\\ orchestra",
+   "Selvin’s Orchestra"
+  ],
+  [
+   "orchestra\\ mesogios",
+   "Orchestra Mesogios"
+  ],
+  [
+   "undertow\\ orchestra",
+   "Undertow Orchestra"
+  ],
+  [
+   "starship\\ orchestra",
+   "Starship Orchestra"
+  ],
+  [
+   "orchestra\\ morphine",
+   "Orchestra Morphine"
+  ],
+  [
+   "andemund\\ orchestra",
+   "Andemund Orchestra"
+  ],
+  [
+   "orchestra\\ del\\ sol",
+   "Orchestra Del Sol"
+  ],
+  [
+   "pawnshop\\ orchestra",
+   "Pawnshop Orchestra"
+  ],
+  [
+   "orchestra\\ ethiopia",
+   "Orchestra Ethiopia"
+  ],
+  [
+   "rumblin'\\ orchestra",
+   "Rumblin' Orchestra"
+  ],
+  [
+   "kandel’s\\ orchestra",
+   "Kandel’s Orchestra"
+  ],
+  [
+   "everyone\\ orchestra",
+   "Everyone Orchestra"
+  ],
+  [
+   "symfunny\\ orchestra",
+   "Symfunny Orchestra"
+  ],
+  [
+   "concrete\\ orchestra",
+   "Concrete Orchestra"
+  ],
+  [
+   "herzfeld\\ orchestra",
+   "Herzfeld Orchestra"
+  ],
+  [
+   "farewell\\ orchestra",
+   "Farewell Orchestra"
+  ],
+  [
+   "orphonic\\ orchestra",
+   "Orphonic Orchestra"
+  ],
+  [
+   "topolovo\\ orchestra",
+   "Topolovo Orchestra"
+  ],
+  [
+   "lakeside\\ orchestra",
+   "Lakeside Orchestra"
+  ],
+  [
+   "diapason\\ orchestra",
+   "Diapason Orchestra"
+  ],
+  [
+   "untitled\\ orchestra",
+   "Untitled Orchestra"
+  ],
+  [
+   "neurosis\\ orchestra",
+   "Neurosis Orchestra"
+  ],
+  [
+   "zavijava\\ orchestra",
+   "Zavijava Orchestra"
+  ],
+  [
+   "orchestra\\ lissanga",
+   "Orchestra Lissanga"
+  ],
+  [
+   "flypaper\\ orchestra",
+   "Flypaper Orchestra"
+  ],
+  [
+   "imperial\\ orchestra",
+   "Imperial Orchestra"
+  ],
+  [
+   "selfless\\ orchestra",
+   "Selfless Orchestra"
+  ],
+  [
+   "philharmonic\\ stars",
+   "Philharmonic Stars"
+  ],
+  [
+   "royal philharmonic",
+   "Royal Philharmonic Orchestra"
+  ],
+  [
+   "mozarteumorchester",
+   "Mozarteumorchester Salzburg"
+  ],
+  [
+   "czech philharmonic",
+   "Czech Philharmonic"
+  ],
+  [
+   "orchestre de paris",
+   "Orchestre de Paris"
+  ],
+  [
+   "camerata\\ salzburg",
+   "Camerata Salzburg"
+  ],
+  [
+   "sinfonia\\ varsovia",
+   "Sinfonia Varsovia"
+  ],
+  [
+   "neginah\\ orchestra",
+   "Neginah Orchestra"
+  ],
+  [
+   "empress\\ orchestra",
+   "Empress Orchestra"
+  ],
+  [
+   "neshoma\\ orchestra",
+   "Neshoma Orchestra"
+  ],
+  [
+   "tolzer\\ knabenchor",
+   "Tölzer Knabenchor"
+  ],
+  [
+   "american\\ boychoir",
+   "American Boychoir"
+  ],
+  [
+   "ndr\\ vokalensemble",
+   "NDR Vokalensemble"
+  ],
+  [
+   "anchiskhati\\ choir",
+   "Anchiskhati Choir"
+  ],
+  [
+   "miami\\ boys\\ choir",
+   "Miami Boys Choir"
+  ],
+  [
+   "chorus\\ viennensis",
+   "Chorus Viennensis"
+  ],
+  [
+   "kolner\\ kammerchor",
+   "Kölner Kammerchor"
+  ],
+  [
+   "the\\ oxford\\ choir",
+   "The Oxford Choir"
+  ],
+  [
+   "jazzchor\\ freiburg",
+   "Jazzchor Freiburg"
+  ],
+  [
+   "texas\\ boys\\ choir",
+   "Texas Boys Choir"
+  ],
+  [
+   "all\\ in\\ orchestra",
+   "All In Orchestra"
+  ],
+  [
+   "kaizers\\ orchestra",
+   "Kaizers Orchestra"
+  ],
+  [
+   "camping\\ orchestra",
+   "Camping Orchestra"
+  ],
+  [
+   "orchestra\\ bagutti",
+   "Orchestra Bagutti"
+  ],
+  [
+   "minimal\\ orchestra",
+   "Minimal Orchestra"
+  ],
+  [
+   "arrapaa\\ orchestra",
+   "Ärräpää Orchestra"
+  ],
+  [
+   "asphalt\\ orchestra",
+   "Asphalt Orchestra"
+  ],
+  [
+   "haitian\\ orchestra",
+   "Haitian Orchestra"
+  ],
+  [
+   "the\\ gb\\ orchestra",
+   "The GB Orchestra"
+  ],
+  [
+   "orchestra\\ orlando",
+   "Orchestra Orlando"
+  ],
+  [
+   "trouble\\ orchestra",
+   "Trouble Orchestra"
+  ],
+  [
+   "estrada\\ orchestra",
+   "Estrada Orchestra"
+  ],
+  [
+   "ratchet\\ orchestra",
+   "Ratchet Orchestra"
+  ],
+  [
+   "ragoody\\ orchestra",
+   "Ragoody Orchestra"
+  ],
+  [
+   "emotion\\-orchestra",
+   "Emotion-orchestra"
+  ],
+  [
+   "sampler\\ orchestra",
+   "Sampler Orchestra"
+  ],
+  [
+   "kitchen\\ orchestra",
+   "Kitchen Orchestra"
+  ],
+  [
+   "odelion\\ orchestra",
+   "Odelion Orchestra"
+  ],
+  [
+   "konkolo\\ orchestra",
+   "Konkolo Orchestra"
+  ],
+  [
+   "fiction\\ orchestra",
+   "Fiction Orchestra"
+  ],
+  [
+   "orchestra\\ makassy",
+   "Orchestra Makassy"
+  ],
+  [
+   "fabiano\\ orchestra",
+   "Fabiano Orchestra"
+  ],
+  [
+   "fregate\\ orchestra",
+   "Fregate Orchestra"
+  ],
+  [
+   "montana\\ orchestra",
+   "Montana Orchestra"
+  ],
+  [
+   "grabben\\ orchestra",
+   "Grabben Orchestra"
+  ],
+  [
+   "stretch\\ orchestra",
+   "Stretch Orchestra"
+  ],
+  [
+   "orchestra\\ bartali",
+   "Orchestra Bartali"
+  ],
+  [
+   "madison\\ orchestra",
+   "Madison Orchestra"
+  ],
+  [
+   "agoston\\ orchestra",
+   "Ágoston Orchestra"
+  ],
+  [
+   "zimriah\\ orchestra",
+   "Zimriah Orchestra"
+  ],
+  [
+   "anbessa\\ orchestra",
+   "Anbessa Orchestra"
+  ],
+  [
+   "utopian\\ orchestra",
+   "Utopian Orchestra"
+  ],
+  [
+   "paradou\\ orchestra",
+   "Paradou Orchestra"
+  ],
+  [
+   "orchestra\\ tijuana",
+   "Orchestra Tijuana"
+  ],
+  [
+   "chamber\\ orchestra",
+   "Chamber Orchestra"
+  ],
+  [
+   "welfare\\ orchestra",
+   "Welfare Orchestra"
+  ],
+  [
+   "hayashi\\ orchestra",
+   "HAYASHI ORCHESTRA"
+  ],
+  [
+   "animist\\ orchestra",
+   "Animist Orchestra"
+  ],
+  [
+   "philharmonic\\ weed",
+   "Philharmonic Weed"
+  ],
+  [
+   "wiener singverein",
+   "Wiener Singverein"
+  ],
+  [
+   "bbc\\ philharmonic",
+   "BBC Philharmonic"
+  ],
+  [
+   "seattle\\ symphony",
+   "Seattle Symphony"
+  ],
+  [
+   "ulster\\ orchestra",
+   "Ulster Orchestra"
+  ],
+  [
+   "houston\\ symphony",
+   "Houston Symphony"
+  ],
+  [
+   "britten\\ sinfonia",
+   "Britten Sinfonia"
+  ],
+  [
+   "monteverdi\\ choir",
+   "Monteverdi Choir"
+  ],
+  [
+   "bo\\ katzman\\ chor",
+   "Bo Katzman Chor"
+  ],
+  [
+   "st\\.\\ olaf\\ choir",
+   "St. Olaf Choir"
+  ],
+  [
+   "choir\\ co\\.,ltd\\.",
+   "CHOIR CO.,LTD."
+  ],
+  [
+   "taverner\\ consort",
+   "Taverner Consort"
+  ],
+  [
+   "the\\ shira\\ choir",
+   "The Shira Choir"
+  ],
+  [
+   "meshorerim\\ choir",
+   "Meshorerim Choir"
+  ],
+  [
+   "collegium\\ aureum",
+   "Collegium Aureum"
+  ],
+  [
+   "guarneri\\ quartet",
+   "Guarneri Quartet"
+  ],
+  [
+   "orchestra\\ baobab",
+   "Orchestra Baobab"
+  ],
+  [
+   "orchestra\\ harlow",
+   "Orchestra Harlow"
+  ],
+  [
+   "hidden\\ orchestra",
+   "Hidden Orchestra"
+  ],
+  [
+   "orchestra\\ mozart",
+   "Orchestra Mozart"
+  ],
+  [
+   "fusion\\ orchestra",
+   "Fusion Orchestra"
+  ],
+  [
+   "cradle\\ orchestra",
+   "Cradle Orchestra"
+  ],
+  [
+   "studio\\ orchestra",
+   "Studio Orchestra"
+  ],
+  [
+   "oriole\\ orchestra",
+   "Oriole Orchestra"
+  ],
+  [
+   "kusuma\\ orchestra",
+   "Kusuma Orchestra"
+  ],
+  [
+   "orchestra\\ dicupe",
+   "Orchestra Dicupé"
+  ],
+  [
+   "fugato\\ orchestra",
+   "Fugato Orchestra"
+  ],
+  [
+   "archon\\ orchestra",
+   "Archon Orchestra"
+  ],
+  [
+   "skazka\\ orchestra",
+   "Skazka Orchestra"
+  ],
+  [
+   "ganges\\ orchestra",
+   "Ganges Orchestra"
+  ],
+  [
+   "pocket\\ orchestra",
+   "Pocket Orchestra"
+  ],
+  [
+   "monday\\ orchestra",
+   "Monday Orchestra"
+  ],
+  [
+   "shogun\\ orchestra",
+   "Shogun Orchestra"
+  ],
+  [
+   "lewron\\ orchestra",
+   "Lewron Orchestra"
+  ],
+  [
+   "mexfil\\ orchestra",
+   "Mexfil Orchestra"
+  ],
+  [
+   "ludwig\\ orchestra",
+   "Ludwig Orchestra"
+  ],
+  [
+   "orchestra\\ cometa",
+   "Orchestra Cometa"
+  ],
+  [
+   "kalush\\ orchestra",
+   "Kalush Orchestra"
+  ],
+  [
+   "skyron\\ orchestra",
+   "Skyron Orchestra"
+  ],
+  [
+   "bamboo\\ orchestra",
+   "Bamboo Orchestra"
+  ],
+  [
+   "jaigon\\ orchestra",
+   "Jaigon Orchestra"
+  ],
+  [
+   "shrink\\ orchestra",
+   "Shrink Orchestra"
+  ],
+  [
+   "karibu\\ orchestra",
+   "Karibu Orchestra"
+  ],
+  [
+   "spiral\\ orchestra",
+   "Spiral Orchestra"
+  ],
+  [
+   "nagual\\ orchestra",
+   "Nagual Orchestra"
+  ],
+  [
+   "marina\\ orchestra",
+   "Marina Orchestra"
+  ],
+  [
+   "animal\\ orchestra",
+   "Animal Orchestra"
+  ],
+  [
+   "alaska\\ orchestra",
+   "Alaska Orchestra"
+  ],
+  [
+   "random\\ orchestra",
+   "Random Orchestra"
+  ],
+  [
+   "orchestra\\ volare",
+   "Orchestra Volare"
+  ],
+  [
+   "porous\\ orchestra",
+   "Porous Orchestra"
+  ],
+  [
+   "undead\\ orchestra",
+   "Undead Orchestra"
+  ],
+  [
+   "sketch\\ orchestra",
+   "Sketch Orchestra"
+  ],
+  [
+   "mingus\\ orchestra",
+   "Mingus Orchestra"
+  ],
+  [
+   "g\\.p\\.\\ orchestra",
+   "G.P. Orchestra"
+  ],
+  [
+   "skylab\\ orchestra",
+   "Skylab Orchestra"
+  ],
+  [
+   "bolero\\ orchestra",
+   "Bolero Orchestra"
+  ],
+  [
+   "los angeles phil",
+   "Los Angeles Philharmonic"
+  ],
+  [
+   "halle\\ orchestra",
+   "Hallé Orchestra"
+  ],
+  [
+   "orfeo\\ orchestra",
+   "Orfeo Orchestra"
+  ],
+  [
+   "aradia\\ ensemble",
+   "Aradia Ensemble"
+  ],
+  [
+   "rias\\ kammerchor",
+   "RIAS Kammerchor"
+  ],
+  [
+   "the\\ bach\\ choir",
+   "The Bach Choir"
+  ],
+  [
+   "oxford\\ camerata",
+   "Oxford Camerata"
+  ],
+  [
+   "remission\\ choir",
+   "Remission Choir"
+  ],
+  [
+   "anonymous\\ choir",
+   "Anonymous Choir"
+  ],
+  [
+   "boys\\ air\\ choir",
+   "Boys Air Choir"
+  ],
+  [
+   "amadeus\\ quartet",
+   "Amadeus Quartet"
+  ],
+  [
+   "borodin\\ quartet",
+   "Borodin Quartet"
+  ],
+  [
+   "either/orchestra",
+   "Either/Orchestra"
+  ],
+  [
+   "alloy\\ orchestra",
+   "Alloy Orchestra"
+  ],
+  [
+   "fire!\\ orchestra",
+   "Fire! Orchestra"
+  ],
+  [
+   "orchestra\\ colon",
+   "Orchestra Colón"
+  ],
+  [
+   "robot\\ orchestra",
+   "Robot Orchestra"
+  ],
+  [
+   "storm\\ orchestra",
+   "Storm Orchestra"
+  ],
+  [
+   "grind\\ orchestra",
+   "Grind Orchestra"
+  ],
+  [
+   "vance\\ orchestra",
+   "Vance Orchestra"
+  ],
+  [
+   "bumbe\\ orchestra",
+   "Bumbe Orchestra"
+  ],
+  [
+   "orchestra\\ capri",
+   "Orchestra Capri"
+  ],
+  [
+   "aloha\\ orchestra",
+   "Aloha Orchestra"
+  ],
+  [
+   "mayra\\ orchestra",
+   "Mayra Orchestra"
+  ],
+  [
+   "rasta\\ orchestra",
+   "Rasta Orchestra"
+  ],
+  [
+   "lelek\\ orchestra",
+   "LeLek Orchestra"
+  ],
+  [
+   "pukka\\ orchestra",
+   "Pukka Orchestra"
+  ],
+  [
+   "ensemble\\ zefiro",
+   "Ensemble Zefiro"
+  ],
+  [
+   "jakez\\ orchestra",
+   "Jakez Orchestra"
+  ],
+  [
+   "ocean\\ orchestra",
+   "Ocean Orchestra"
+  ],
+  [
+   "chaos\\ orchestra",
+   "Chaos Orchestra"
+  ],
+  [
+   "dooom\\ orchestra",
+   "Dooom Orchestra"
+  ],
+  [
+   "empty\\ orchestra",
+   "Empty Orchestra"
+  ],
+  [
+   "vt\\ philharmonic",
+   "VT Philharmonic"
+  ],
+  [
+   "london symphony",
+   "London Symphony Orchestra"
+  ],
+  [
+   "english concert",
+   "The English Concert"
+  ],
+  [
+   "sinfonia\\ lahti",
+   "Sinfonia Lahti"
+  ],
+  [
+   "collegium\\ 1704",
+   "Collegium 1704"
+  ],
+  [
+   "montanara\\ chor",
+   "Montanara Chor"
+  ],
+  [
+   "taverner\\ choir",
+   "Taverner Choir"
+  ],
+  [
+   "dufay\\ ensemble",
+   "Dufay Ensemble"
+  ],
+  [
+   "the\\ choraliers",
+   "The Choraliers"
+  ],
+  [
+   "erf\\ studiochor",
+   "ERF Studiochor"
+  ],
+  [
+   "deller\\ consort",
+   "Deller Consort"
+  ],
+  [
+   "kronos\\ quartet",
+   "Kronos Quartet"
+  ],
+  [
+   "cafe\\ orchestra",
+   "Café Orchestra"
+  ],
+  [
+   "dead\\ orchestra",
+   "Dead Orchestra"
+  ],
+  [
+   "fake\\ orchestra",
+   "Fake Orchestra"
+  ],
+  [
+   "fuzz\\ orchestra",
+   "Fuzz Orchestra"
+  ],
+  [
+   "orchestra\\ gold",
+   "Orchestra Gold"
+  ],
+  [
+   "agon\\ orchestra",
+   "Agon Orchestra"
+  ],
+  [
+   "orchestra\\ coco",
+   "Orchestra Cocò"
+  ],
+  [
+   "kuja\\ orchestra",
+   "Kuja Orchestra"
+  ],
+  [
+   "orchestra\\ noir",
+   "Orchestra Noir"
+  ],
+  [
+   "pure\\ orchestra",
+   "Pure Orchestra"
+  ],
+  [
+   "naif\\ orchestra",
+   "Naif Orchestra"
+  ],
+  [
+   "chen\\ orchestra",
+   "Chen Orchestra"
+  ],
+  [
+   "orchestra\\ luna",
+   "Orchestra Luna"
+  ],
+  [
+   "nono\\ orchestra",
+   "Nono Orchestra"
+  ],
+  [
+   "move\\ orchestra",
+   "Move Orchestra"
+  ],
+  [
+   "philharmonia\\b",
+   "Philharmonia Orchestra"
+  ],
+  [
+   "suisse romande",
+   "Orchestre de la Suisse Romande"
+  ],
+  [
+   "leningrad phil",
+   "Leningrad Philharmonic"
+  ],
+  [
+   "concerto\\ koln",
+   "Concerto Köln"
+  ],
+  [
+   "utah\\ symphony",
+   "Utah Symphony"
+  ],
+  [
+   "icp\\ orchestra",
+   "ICP Orchestra"
+  ],
+  [
+   "camerata\\ bern",
+   "Camerata Bern"
+  ],
+  [
+   "yedidim\\ choir",
+   "Yedidim Choir"
+  ],
+  [
+   "oasis\\ chorale",
+   "Oasis Chorale"
+  ],
+  [
+   "unichor\\ essen",
+   "Unichor Essen"
+  ],
+  [
+   "purcell\\ choir",
+   "Purcell Choir"
+  ],
+  [
+   "thp\\ orchestra",
+   "THP Orchestra"
+  ],
+  [
+   "kkc\\ orchestra",
+   "KKC Orchestra"
+  ],
+  [
+   "red\\ orchestra",
+   "red orchestra"
+  ],
+  [
+   "the\\ orchestra",
+   "The Orchestra"
+  ],
+  [
+   "dub\\ orchestra",
+   "Dub Orchestra"
+  ],
+  [
+   "dna\\ orchestra",
+   "DNA Orchestra"
+  ],
+  [
+   "8mm\\ orchestra",
+   "8mm Orchestra"
+  ],
+  [
+   "kiv\\ orchestra",
+   "KIV Orchestra"
+  ],
+  [
+   "eos\\ orchestra",
+   "Eos Orchestra"
+  ],
+  [
+   "jam\\ orchestra",
+   "Jam Orchestra"
+  ],
+  [
+   "his\\ orchestra",
+   "His Orchestra"
+  ],
+  [
+   "sun\\ orchestra",
+   "Sun Orchestra"
+  ],
+  [
+   "bcn\\ orchestra",
+   "BCN Orchestra"
+  ],
+  [
+   "concertgebouw",
+   "Royal Concertgebouw Orchestra"
+  ],
+  [
+   "new york phil",
+   "New York Philharmonic"
+  ],
+  [
+   "a:n:s\\ chorus",
+   "A:N:S Chorus"
+  ],
+  [
+   "ho\\ orchestra",
+   "Ho Orchestra"
+  ],
+  [
+   "tu\\ orchestra",
+   "TU Orchestra"
+  ],
+  [
+   "nbc symphony",
+   "NBC Symphony Orchestra"
+  ],
+  [
+   "tudor\\ choir",
+   "Tudor Choir"
+  ],
+  [
+   "m\\-orchestra",
+   "m-orchestra"
+  ],
+  [
+   "suk\\ quartet",
+   "Suk Quartet"
+  ],
+  [
+   "gewandhaus",
+   "Gewandhausorchester Leipzig"
+  ]
+ ]
+}

@@ -1,0 +1,6735 @@
+{
+ "_comment": "Session data mined from David Wild's online Coltrane discography. Facts only (dates, personnel, locations, tune listings), each citing its session number and source URL. Wild's session number is YYMMDD.",
+ "_source": "http://www.wildmusic-jazz.com/",
+ "_citation": "David Wild, The Recordings of John Coltrane: A Discography, 2nd ed., Wildmusic, 1979 (web edition)",
+ "_fetched": "2026-08-24",
+ "_pages": [
+  "jcdisc56.htm",
+  "jcdisc57.htm",
+  "jcdisc60.htm",
+  "jcdisc61.htm",
+  "jcdisc62.htm",
+  "jcdisc63.htm",
+  "jcdisc64.htm",
+  "jcdisc65.htm",
+  "jcdisc66.htm",
+  "jcdisc67.htm"
+ ],
+ "sessions": [
+  {
+   "session": "560218",
+   "date": "1956-02-18",
+   "group": "MILES DAVIS QUINTET",
+   "personnel": [
+    {
+     "name": "Miles Davis",
+     "instrument": "trumpet"
+    },
+    {
+     "name": "Coltrane",
+     "instrument": "tenor sax"
+    },
+    {
+     "name": "William 'Red' Garland",
+     "instrument": "piano"
+    },
+    {
+     "name": "Paul Chambers",
+     "instrument": "bass"
+    },
+    {
+     "name": "Philly Joe Jones",
+     "instrument": "drums, announcer"
+    },
+    {
+     "name": "Gene Norman",
+     "instrument": "drums, announcer"
+    }
+   ],
+   "location": "Civic Center, Pasadena CA",
+   "engineer": "\"Introduction\" (Gene Norman) 1:37 Sony C2K 94750 a. \"Max Is Making Wax\" (O. Pettiford) 4:34 Sony C2K 94750 b. \"Walkin'\" (R. Carpenter) 9:24 Sony C2K 94750 \"Introduction [Gene Norman, Miles Davis]\" 1:06 Sony C2K 94750 c. \"It Never Entered My Mind\" (R. Rodgers-L. Hart) 5:17 Sony C2K 94750 d. \"Woody 'n' You\" (Dizzy Gillespie) 5:46 Sony C2K 94750 e. \"Salt Peanuts\" (Dizzy Gillespie) 4:35 Sony C2K 94750 f. \"The Theme\" (M. Davis) :19 Sony C2K 94750",
+   "tunes": [
+    {
+     "index": "a",
+     "title": "Max Is Making Wax",
+     "composer": "O. Pettiford",
+     "duration": "4:34",
+     "issue": null
+    },
+    {
+     "index": "b",
+     "title": "Walkin'",
+     "composer": "R. Carpenter",
+     "duration": "9:24",
+     "issue": null
+    },
+    {
+     "index": "c",
+     "title": "It Never Entered My Mind",
+     "composer": "R. Rodgers-L. Hart",
+     "duration": "5:17",
+     "issue": null
+    },
+    {
+     "index": "d",
+     "title": "Woody 'n' You",
+     "composer": "Dizzy Gillespie",
+     "duration": "5:46",
+     "issue": null
+    },
+    {
+     "index": "e",
+     "title": "Salt Peanuts",
+     "composer": "Dizzy Gillespie",
+     "duration": "4:35",
+     "issue": null
+    },
+    {
+     "index": "f",
+     "title": "The Theme",
+     "composer": "M. Davis",
+     "duration": null,
+     "issue": ":19"
+    }
+   ],
+   "note": null,
+   "source": "David Wild, The Recordings of John Coltrane: A Discography (2nd ed., Wildmusic 1979), web edition",
+   "source_url": "http://www.wildmusic-jazz.com/jcdisc56.htm#560218"
+  },
+  {
+   "session": "560714",
+   "date": "1956-07-14",
+   "group": "MILES DAVIS QUINTET",
+   "personnel": [
+    {
+     "name": "Miles Davis",
+     "instrument": "trumpet"
+    },
+    {
+     "name": "Coltrane",
+     "instrument": "tenor sax"
+    },
+    {
+     "name": "William 'Red' Garland",
+     "instrument": "piano"
+    },
+    {
+     "name": "Paul Chambers",
+     "instrument": "bass"
+    },
+    {
+     "name": "Philly Joe Jones",
+     "instrument": "drums"
+    }
+   ],
+   "location": "Peacock Alley, St. Louis MO",
+   "engineer": "a. \"Ah-leu-cha\" (C. Parker) 5:53 VGM VGM-SOU 1997 b. \"A Foggy Day\" (G. Gershwin) 5:19 Coltrane out c. \"All Of You\" (C. Porter) 6:35 VGM VGM-SOU 1997 d. \"Woody 'n' You\" (Dizzy Gillespie) 5:13 VGM VGM-SOU 1997 e. \"Walkin'\" (R. Carpenter) 7:27 VGM VGM-SOU 1997",
+   "tunes": [
+    {
+     "index": "a",
+     "title": "Ah-leu-cha",
+     "composer": "C. Parker",
+     "duration": "5:53",
+     "issue": null
+    },
+    {
+     "index": "b",
+     "title": "A Foggy Day",
+     "composer": "G. Gershwin",
+     "duration": "5:19",
+     "issue": null
+    },
+    {
+     "index": "c",
+     "title": "All Of You",
+     "composer": "C. Porter",
+     "duration": "6:35",
+     "issue": null
+    },
+    {
+     "index": "d",
+     "title": "Woody 'n' You",
+     "composer": "Dizzy Gillespie",
+     "duration": "5:13",
+     "issue": null
+    },
+    {
+     "index": "e",
+     "title": "Walkin'",
+     "composer": "R. Carpenter",
+     "duration": "7:27",
+     "issue": null
+    }
+   ],
+   "note": "Although the dates shown here are those shown on the CD, pursuasive evidence suggests that these broadcasts are from early 1957. See the forthcoming Giant Steps: The Ultimate John Coltrane Reference for details.",
+   "source": "David Wild, The Recordings of John Coltrane: A Discography (2nd ed., Wildmusic 1979), web edition",
+   "source_url": "http://www.wildmusic-jazz.com/jcdisc56.htm#560714"
+  },
+  {
+   "session": "560721",
+   "date": "1956-07-21",
+   "group": "MILES DAVIS QUINTET",
+   "personnel": [
+    {
+     "name": "Miles Davis",
+     "instrument": "trumpet"
+    },
+    {
+     "name": "Coltrane",
+     "instrument": "tenor sax"
+    },
+    {
+     "name": "William 'Red' Garland",
+     "instrument": "piano"
+    },
+    {
+     "name": "Paul Chambers",
+     "instrument": "bass"
+    },
+    {
+     "name": "Philly Joe Jones",
+     "instrument": "drums"
+    }
+   ],
+   "location": "Peacock Alley' St. Louis MO",
+   "engineer": "a. \"Two Bass Hit\" (J. Lewis D. Gillespie) 5:16 VGM VGM-SOU 1997 b. \"Well You Needn't\" (T. Monk) 7:39 VGM VGM-SOU 1997 c. \"Billy Boy\" (Traditional arr. Red Garland) 4:23 Coltrane Out d. \"All Of You\" (C. Porter) 11:03 VGM VGM-SOU 1997 e. \"Oleo\" (Sonny Rollins) 6:07 VGM VGM-SOU 1997 f. \"Airegin\" (Sonny Rollins) 7:01 VGM VGM-SOU 1997 g. \"The Theme\" INC (M. Davis) 1:17 VGM VGM-SOU 1997",
+   "tunes": [
+    {
+     "index": "a",
+     "title": "Two Bass Hit",
+     "composer": "J. Lewis D. Gillespie",
+     "duration": "5:16",
+     "issue": null
+    },
+    {
+     "index": "b",
+     "title": "Well You Needn't",
+     "composer": "T. Monk",
+     "duration": "7:39",
+     "issue": null
+    },
+    {
+     "index": "c",
+     "title": "Billy Boy",
+     "composer": "Traditional arr. Red Garland",
+     "duration": "4:23",
+     "issue": null
+    },
+    {
+     "index": "d",
+     "title": "All Of You",
+     "composer": "C. Porter",
+     "duration": "11:03",
+     "issue": null
+    },
+    {
+     "index": "e",
+     "title": "Oleo",
+     "composer": "Sonny Rollins",
+     "duration": "6:07",
+     "issue": null
+    },
+    {
+     "index": "f",
+     "title": "Airegin",
+     "composer": "Sonny Rollins",
+     "duration": "7:01",
+     "issue": null
+    },
+    {
+     "index": "g",
+     "title": "The Theme",
+     "composer": null,
+     "duration": null,
+     "issue": "INC (M. Davis) 1:17"
+    }
+   ],
+   "note": "560721e as \"Airegin\", 560721f as \"Newk #2\" on VGM VGM-SOU 1997. Although the dates shown here are those shown on the CD, pursuasive evidence suggests that these broadcasts are from early 1957. See the forthcoming Giant Steps: The Ultimate John Coltrane Reference for details.",
+   "source": "David Wild, The Recordings of John Coltrane: A Discography (2nd ed., Wildmusic 1979), web edition",
+   "source_url": "http://www.wildmusic-jazz.com/jcdisc56.htm#560721"
+  },
+  {
+   "session": "571129",
+   "date": "1957-11-29",
+   "group": null,
+   "personnel": [
+    {
+     "name": "Coltrane",
+     "instrument": "tenor sax"
+    },
+    {
+     "name": "Thelonious Monk",
+     "instrument": "piano"
+    },
+    {
+     "name": "Ahmed Abdul Malik",
+     "instrument": "bass"
+    },
+    {
+     "name": "Shadow Wilson",
+     "instrument": "drums"
+    }
+   ],
+   "location": "Carnegie Hall, New York City NY",
+   "engineer": "Early Show \"Introduction [Willis Conover]\" Blue",
+   "tunes": [
+    {
+     "index": "a",
+     "title": "Monk's Mood",
+     "composer": "T. Monk",
+     "duration": "7:43",
+     "issue": null
+    },
+    {
+     "index": "b",
+     "title": "Evidence",
+     "composer": "T. Monk",
+     "duration": "4:41",
+     "issue": null
+    },
+    {
+     "index": "c",
+     "title": "Crepescule with Nellie",
+     "composer": "T. Monk",
+     "duration": "4:25",
+     "issue": null
+    },
+    {
+     "index": "d",
+     "title": "Nutty",
+     "composer": "T. Monk",
+     "duration": "5:07",
+     "issue": null
+    },
+    {
+     "index": "e",
+     "title": "Epistrophy",
+     "composer": "T. Monk",
+     "duration": "4:27",
+     "issue": null
+    },
+    {
+     "index": "a",
+     "title": "Bye-Ya",
+     "composer": "T. Monk",
+     "duration": "6:15",
+     "issue": null
+    },
+    {
+     "index": "b",
+     "title": "Sweet and Lovely",
+     "composer": null,
+     "duration": "9:34",
+     "issue": null
+    },
+    {
+     "index": "c",
+     "title": "Blue Monk",
+     "composer": "T. Monk",
+     "duration": "6:31",
+     "issue": null
+    },
+    {
+     "index": "d",
+     "title": "Epistrophy (INC)_",
+     "composer": "T. Monk",
+     "duration": "2:30",
+     "issue": null
+    }
+   ],
+   "note": "to be released",
+   "source": "David Wild, The Recordings of John Coltrane: A Discography (2nd ed., Wildmusic 1979), web edition",
+   "source_url": "http://www.wildmusic-jazz.com/jcdisc57.htm#571129"
+  },
+  {
+   "session": "600321",
+   "date": "1960-03-21",
+   "group": null,
+   "personnel": [
+    {
+     "name": "Miles Davis",
+     "instrument": "trumpet"
+    },
+    {
+     "name": "Coltrane",
+     "instrument": "tenor sax"
+    },
+    {
+     "name": "Wynton Kelly",
+     "instrument": "piano"
+    },
+    {
+     "name": "Paul Chambers",
+     "instrument": "bass"
+    },
+    {
+     "name": "Jimmy Cobb",
+     "instrument": "drums"
+    }
+   ],
+   "location": "Jazz at the Philharmonic, 'Olympia Theatre' Paris France",
+   "engineer": "Probably First Concert a. \"All Of You\" (C. Porter) 17:05 Private tape; Europe 1(F) 710455 b. \"So What\" (M. Davis) 13:25 Private tape: Europe 1(F) 710455 c. \"On Green Dolphin Street\" (B. Kaper) 14:42 Private tape; Europe 1(F) 710455 Probably Second Concert d. \"Walkin'\" (M. Davis) 15:53 Private tape; Europe 1(F) 710455 e. \"Bye Bye Blackbird\" (Dixon Henderson) 13:58 Private tape; Europe 1(F) 710455 f. \"'Round Midnight\" (B. Hanighen-C. Williams-T. Monk) 5:36 Private tape; Europe 1(F) 710455 g. \"Oleo\" (S. Rollins) 4:22 Private tape; Europe 1(F) 710455 h. \"The Theme\" (M. Davis) :50 Private tape; Europe 1(F) 710455",
+   "tunes": [
+    {
+     "index": "a",
+     "title": "All Of You",
+     "composer": "C. Porter",
+     "duration": "17:05",
+     "issue": null
+    },
+    {
+     "index": "b",
+     "title": "So What",
+     "composer": "M. Davis",
+     "duration": "13:25",
+     "issue": null
+    },
+    {
+     "index": "c",
+     "title": "On Green Dolphin Street",
+     "composer": "B. Kaper",
+     "duration": "14:42",
+     "issue": null
+    },
+    {
+     "index": "d",
+     "title": "Walkin'",
+     "composer": "M. Davis",
+     "duration": "15:53",
+     "issue": null
+    },
+    {
+     "index": "e",
+     "title": "Bye Bye Blackbird",
+     "composer": "Dixon Henderson",
+     "duration": "13:58",
+     "issue": null
+    },
+    {
+     "index": "f",
+     "title": "'Round Midnight",
+     "composer": "B. Hanighen-C. Williams-T. Monk",
+     "duration": "5:36",
+     "issue": null
+    },
+    {
+     "index": "g",
+     "title": "Oleo",
+     "composer": "S. Rollins",
+     "duration": "4:22",
+     "issue": null
+    },
+    {
+     "index": "h",
+     "title": "The Theme",
+     "composer": "M. Davis",
+     "duration": null,
+     "issue": ":50"
+    }
+   ],
+   "note": "Information per Jan Lohmann. Only four titles have been broadcast (600321a, 600321f, 600321g and 600321h), so the performance order cannot be verified. A version of The Theme from the first concert probably also exists.",
+   "source": "David Wild, The Recordings of John Coltrane: A Discography (2nd ed., Wildmusic 1979), web edition",
+   "source_url": "http://www.wildmusic-jazz.com/jcdisc60.htm#600321"
+  },
+  {
+   "session": "600322",
+   "date": "1960-03-22",
+   "group": "MILES DAVIS QUINTET",
+   "personnel": [
+    {
+     "name": "Miles Davis",
+     "instrument": "trumpet"
+    },
+    {
+     "name": "Coltrane",
+     "instrument": "tenor sax"
+    },
+    {
+     "name": "Wynton Kelly",
+     "instrument": "piano"
+    },
+    {
+     "name": "Paul Chambers",
+     "instrument": "bass"
+    },
+    {
+     "name": "Jimmy Cobb",
+     "instrument": "drums"
+    }
+   ],
+   "location": "Jazz at the Philharmonic, 'Koncerthuset, Stockholm Sweden",
+   "engineer": "First Concert a. \"So What\" (M. Davis) 11:00 Private tape; Dragon DRLP 90 b. \"Fran-Dance\" (M. Davis) 7:15 Private tape; Dragon DRLP 91 c. \"Walkin'\" (M. Davis) 16:29 Private tape; Bird",
+   "tunes": [
+    {
+     "index": "a",
+     "title": "So What",
+     "composer": "M. Davis",
+     "duration": "11:00",
+     "issue": null
+    },
+    {
+     "index": "b",
+     "title": "Fran-Dance",
+     "composer": "M. Davis",
+     "duration": "7:15",
+     "issue": null
+    },
+    {
+     "index": "c",
+     "title": "Walkin'",
+     "composer": "M. Davis",
+     "duration": "16:29",
+     "issue": null
+    },
+    {
+     "index": "d",
+     "title": "The Theme",
+     "composer": "M. Davis",
+     "duration": null,
+     "issue": ":47"
+    },
+    {
+     "index": "e",
+     "title": "So What",
+     "composer": "M. Davis",
+     "duration": "14:55",
+     "issue": null
+    },
+    {
+     "index": "f",
+     "title": "On Green Dolphin Street",
+     "composer": "B. Kaper",
+     "duration": "13:25",
+     "issue": null
+    },
+    {
+     "index": "g",
+     "title": "All Blues",
+     "composer": "M. Davis",
+     "duration": "16:15",
+     "issue": null
+    },
+    {
+     "index": "h",
+     "title": "The Theme",
+     "composer": "M Davis",
+     "duration": "3:42",
+     "issue": null
+    }
+   ],
+   "note": "s(Sw) unnumbered; Dragon DRLP 91 d. \"The Theme\" (M. Davis) :47 Private tape; Dragon DRLP 91; Rarelp10",
+   "source": "David Wild, The Recordings of John Coltrane: A Discography (2nd ed., Wildmusic 1979), web edition",
+   "source_url": "http://www.wildmusic-jazz.com/jcdisc60.htm#600322"
+  },
+  {
+   "session": "600324",
+   "date": "1960-03-24",
+   "group": "MILES DAVIS QUINTET",
+   "personnel": [
+    {
+     "name": "Miles Davis",
+     "instrument": "trumpet"
+    },
+    {
+     "name": "Coltrane",
+     "instrument": "tenor sax"
+    },
+    {
+     "name": "Wynton Kelly",
+     "instrument": "piano"
+    },
+    {
+     "name": "Paul Chambers",
+     "instrument": "bass"
+    },
+    {
+     "name": "Jimmy Cobb",
+     "instrument": "drums"
+    }
+   ],
+   "location": "Radio Broadcast, 'Jazz at the Philharmonic, 'Tivoli's Koncertsal, Copenhagen Denmark",
+   "engineer": "a. \"So What\" (M. Davis) 13:42 Private tape; Royal Jazz RJ501 b. \"On Green Dolphin Street\" (B. Kaper) 14:20 Private Tape; Royal Jazz RJ501 c. \"All Blues\" (M. Davis) 15:28 Private tape; Royal Jazz RJ501 d. \"The Theme\" INC (M. Davis) :30 Private tape; Royal Jazz RJ501",
+   "tunes": [
+    {
+     "index": "a",
+     "title": "So What",
+     "composer": "M. Davis",
+     "duration": "13:42",
+     "issue": null
+    },
+    {
+     "index": "b",
+     "title": "On Green Dolphin Street",
+     "composer": "B. Kaper",
+     "duration": "14:20",
+     "issue": null
+    },
+    {
+     "index": "c",
+     "title": "All Blues",
+     "composer": "M. Davis",
+     "duration": "15:28",
+     "issue": null
+    },
+    {
+     "index": "d",
+     "title": "The Theme",
+     "composer": null,
+     "duration": null,
+     "issue": "INC (M. Davis) :30"
+    }
+   ],
+   "note": null,
+   "source": "David Wild, The Recordings of John Coltrane: A Discography (2nd ed., Wildmusic 1979), web edition",
+   "source_url": "http://www.wildmusic-jazz.com/jcdisc60.htm#600324"
+  },
+  {
+   "session": "600408",
+   "date": "1960-04-08",
+   "group": "MILES DAVIS QUINTET",
+   "personnel": [
+    {
+     "name": "Miles Davis",
+     "instrument": "trumpet"
+    },
+    {
+     "name": "Coltrane",
+     "instrument": "tenor sax"
+    },
+    {
+     "name": "Wynton Kelly",
+     "instrument": "piano"
+    },
+    {
+     "name": "Paul Chambers",
+     "instrument": "bass"
+    },
+    {
+     "name": "Jimmy Cobb",
+     "instrument": "drums"
+    }
+   ],
+   "location": "Radio broadcast, 'Jazz at the Philharmonic, Kongresshaus, Zurich Switzerland",
+   "engineer": "a. \"If I Were A Bell\" (F. Loesser) 16:20 Private tape; Jazz Unlimited(Sw) JUCD 2031 b. \"FranDance\" (M. Davis) 7:28 Private Tape; Jazz Unlimited(Sw) JUCD 2031 c. \"So What\" (M. Davis) 15:03 Private tape; Jazz Unlimited(Sw) JUCD 2031 d. \"All Blues\" (M. Davis) 17:06 Private tape; Jazz Unlimited(Sw) JUCD 2031 e. \"The Theme\" (M. Davis) :48 Private tape; Jazz Unlimited(Sw) JUCD 2031",
+   "tunes": [
+    {
+     "index": "a",
+     "title": "If I Were A Bell",
+     "composer": "F. Loesser",
+     "duration": "16:20",
+     "issue": null
+    },
+    {
+     "index": "b",
+     "title": "FranDance",
+     "composer": "M. Davis",
+     "duration": "7:28",
+     "issue": null
+    },
+    {
+     "index": "c",
+     "title": "So What",
+     "composer": "M. Davis",
+     "duration": "15:03",
+     "issue": null
+    },
+    {
+     "index": "d",
+     "title": "All Blues",
+     "composer": "M. Davis",
+     "duration": "17:06",
+     "issue": null
+    },
+    {
+     "index": "e",
+     "title": "The Theme",
+     "composer": "M. Davis",
+     "duration": null,
+     "issue": ":48"
+    }
+   ],
+   "note": null,
+   "source": "David Wild, The Recordings of John Coltrane: A Discography (2nd ed., Wildmusic 1979), web edition",
+   "source_url": "http://www.wildmusic-jazz.com/jcdisc60.htm#600408"
+  },
+  {
+   "session": "600409",
+   "date": "1960-04-09",
+   "group": "MILES DAVIS QUINTET",
+   "personnel": [
+    {
+     "name": "Miles Davis",
+     "instrument": "trumpet"
+    },
+    {
+     "name": "Coltrane",
+     "instrument": "tenor sax"
+    },
+    {
+     "name": "Wynton Kelly",
+     "instrument": "piano"
+    },
+    {
+     "name": "Paul Chambers",
+     "instrument": "bass"
+    },
+    {
+     "name": "Jimmy Cobb",
+     "instrument": "drums"
+    }
+   ],
+   "location": "Jazz At The Philharmonic, 'Kurhaus, Scheveningen, Holland",
+   "engineer": "a. \"So What\" (B. Kaper) 17:10 Private tape; Unique Jazz(I) UJ19; Century CEJC 00102 b. \"On Green Dolphin Street\" (B. Kaper) 12:04 Private tape; Unique Jazz(I) UJ19; Century CEJC 00102 c. \"'Round Midnight\" (B. Hanighen-C. Williams-T. Monk) 5:50 Private tape; Unique Jazz(I) UJ19; Century CEJC 00102 d. \"Walkin'\" (R. Carpenter (M. Davis)) 9:21 Private tape; Unique Jazz(I) UJ19; Century CEJC 00102 e. \"The Theme\" (M. Davis) :45 Private tape; Unique Jazz(I) UJ19; Century CEJC 00102",
+   "tunes": [
+    {
+     "index": "a",
+     "title": "So What",
+     "composer": "B. Kaper",
+     "duration": "17:10",
+     "issue": null
+    },
+    {
+     "index": "b",
+     "title": "On Green Dolphin Street",
+     "composer": "B. Kaper",
+     "duration": "12:04",
+     "issue": null
+    },
+    {
+     "index": "c",
+     "title": "'Round Midnight",
+     "composer": "B. Hanighen-C. Williams-T. Monk",
+     "duration": "5:50",
+     "issue": null
+    },
+    {
+     "index": "d",
+     "title": "Walkin'",
+     "composer": "R. Carpenter (M. Davis",
+     "duration": null,
+     "issue": ") 9:21"
+    },
+    {
+     "index": "e",
+     "title": "The Theme",
+     "composer": "M. Davis",
+     "duration": null,
+     "issue": ":45"
+    }
+   ],
+   "note": null,
+   "source": "David Wild, The Recordings of John Coltrane: A Discography (2nd ed., Wildmusic 1979), web edition",
+   "source_url": "http://www.wildmusic-jazz.com/jcdisc60.htm#600409"
+  },
+  {
+   "session": "600628",
+   "date": "1960-06-28",
+   "group": null,
+   "personnel": [
+    {
+     "name": "Coltrane",
+     "instrument": null
+    },
+    {
+     "name": "Cherry",
+     "instrument": "trumpet"
+    },
+    {
+     "name": "Charlie Haden",
+     "instrument": "bass"
+    },
+    {
+     "name": "Ed Blackwell",
+     "instrument": "drums"
+    }
+   ],
+   "location": "Atlantic Recording Studios, New York NY",
+   "engineer": "Tom Dowd and Phil Iehle a. \"Cherryco\" (D. Cherry) 6:45 Atl 1451 b. \"The Blessing\" (O. Coleman) 7:50 Atl 1451 c. \"The Invisible\" (O. Coleman) Atlantic lost",
+   "tunes": [
+    {
+     "index": "a",
+     "title": "Cherryco",
+     "composer": "D. Cherry",
+     "duration": "6:45",
+     "issue": null
+    },
+    {
+     "index": "b",
+     "title": "The Blessing",
+     "composer": "O. Coleman",
+     "duration": "7:50",
+     "issue": null
+    },
+    {
+     "index": "c",
+     "title": "The Invisible",
+     "composer": "O. Coleman",
+     "duration": null,
+     "issue": null
+    }
+   ],
+   "note": null,
+   "source": "David Wild, The Recordings of John Coltrane: A Discography (2nd ed., Wildmusic 1979), web edition",
+   "source_url": "http://www.wildmusic-jazz.com/jcdisc60.htm#600628"
+  },
+  {
+   "session": "600708",
+   "date": "1960-07-08",
+   "group": null,
+   "personnel": [
+    {
+     "name": "Coltrane",
+     "instrument": "soprano sax, tenor sax"
+    },
+    {
+     "name": "Don Cherry",
+     "instrument": "trumpet"
+    },
+    {
+     "name": "Percy Heath",
+     "instrument": "bass"
+    },
+    {
+     "name": "Ed Blackwell",
+     "instrument": "drums"
+    }
+   ],
+   "location": "Atlantic Recording Studios' New York City NY",
+   "engineer": "Tom Dowd and Phil Iehle a. \"Focus On Sanity\" (O. Coleman) 12:07 Atl 1451 b. \"The Blessing\" (O. Coleman) Atl lost c. \"The Invisible\" (O. Coleman) 4:08 Atl 1451 d. \"Bemsha Swing\" (T. Monk) 5:02 Atl 1451",
+   "tunes": [
+    {
+     "index": "a",
+     "title": "Focus On Sanity",
+     "composer": "O. Coleman",
+     "duration": "12:07",
+     "issue": null
+    },
+    {
+     "index": "b",
+     "title": "The Blessing",
+     "composer": "O. Coleman",
+     "duration": null,
+     "issue": null
+    },
+    {
+     "index": "c",
+     "title": "The Invisible",
+     "composer": "O. Coleman",
+     "duration": "4:08",
+     "issue": null
+    },
+    {
+     "index": "d",
+     "title": "Bemsha Swing",
+     "composer": "T. Monk",
+     "duration": "5:02",
+     "issue": null
+    }
+   ],
+   "note": null,
+   "source": "David Wild, The Recordings of John Coltrane: A Discography (2nd ed., Wildmusic 1979), web edition",
+   "source_url": "http://www.wildmusic-jazz.com/jcdisc60.htm#600708"
+  },
+  {
+   "session": "600908",
+   "date": "1960-09-08",
+   "group": "JOHN COLTRANE QUARTET",
+   "personnel": [
+    {
+     "name": "Coltrane",
+     "instrument": "soprano sax, tenor sax"
+    },
+    {
+     "name": "McCoy Tyner",
+     "instrument": "piano"
+    },
+    {
+     "name": "Steve Davis",
+     "instrument": "bass"
+    },
+    {
+     "name": "Billy Higgins",
+     "instrument": "drums"
+    }
+   ],
+   "location": "United Recorders, Los Angeles CA",
+   "engineer": "a. \"Mr. Day\" (J. Coltrane) 7:27 Roulette RB-2 b. \"Exotica\" AT (J. Coltrane) 4:36 Roulette CDP 7939012 c. \"Exotica\" (J. Coltrane) 4:28 Roulette RB-2 d. \"Like Sonny\" (J. Coltrane) 3:49 Roulette RB-2",
+   "tunes": [
+    {
+     "index": "a",
+     "title": "Mr. Day",
+     "composer": "J. Coltrane",
+     "duration": "7:27",
+     "issue": null
+    },
+    {
+     "index": "b",
+     "title": "Exotica",
+     "composer": null,
+     "duration": null,
+     "issue": "AT (J. Coltrane) 4:36"
+    },
+    {
+     "index": "c",
+     "title": "Exotica",
+     "composer": "J. Coltrane",
+     "duration": "4:28",
+     "issue": null
+    },
+    {
+     "index": "d",
+     "title": "Like Sonny",
+     "composer": "J. Coltrane",
+     "duration": "3:49",
+     "issue": null
+    }
+   ],
+   "note": "600908c as \"One and Four\", 600908d as \"Simple Like\" on the original issues (the titles shown here are those used on the Atlantic issues). Recording sequence per Cuscuna's notes on Roulette CDP 7939012",
+   "source": "David Wild, The Recordings of John Coltrane: A Discography (2nd ed., Wildmusic 1979), web edition",
+   "source_url": "http://www.wildmusic-jazz.com/jcdisc60.htm#600908"
+  },
+  {
+   "session": "601021",
+   "date": "1960-10-21",
+   "group": "JOHN COLTRANE QUARTET",
+   "personnel": [
+    {
+     "name": "Coltrane",
+     "instrument": "soprano sax, tenor sax"
+    },
+    {
+     "name": "McCoy Tyner",
+     "instrument": "piano"
+    },
+    {
+     "name": "Steve Davis",
+     "instrument": "bass"
+    },
+    {
+     "name": "Elvin Jones",
+     "instrument": "drums"
+    }
+   ],
+   "location": "Atlantic Recording Studio, New York City NY",
+   "engineer": "Tom Dowd and Phil Iehle a. \"Village Blues\" (J. Coltrane) 5:21 Atlantic 1354 b. \"Equinox\" (J. Coltrane) Atlantic lost c. \"My Favorite Things\" (R. Rodgers - O Hammerstein) 13:41 Atlantic 1361 d. \"The Night Has A Thousand Eyes\" (Weisman-Garrett) Atlantic lost",
+   "tunes": [
+    {
+     "index": "a",
+     "title": "Village Blues",
+     "composer": "J. Coltrane",
+     "duration": "5:21",
+     "issue": null
+    },
+    {
+     "index": "b",
+     "title": "Equinox",
+     "composer": "J. Coltrane",
+     "duration": null,
+     "issue": null
+    },
+    {
+     "index": "c",
+     "title": "My Favorite Things",
+     "composer": "R. Rodgers - O Hammerstein",
+     "duration": "13:41",
+     "issue": null
+    },
+    {
+     "index": "d",
+     "title": "The Night Has A Thousand Eyes",
+     "composer": "Weisman-Garrett",
+     "duration": null,
+     "issue": null
+    }
+   ],
+   "note": null,
+   "source": "David Wild, The Recordings of John Coltrane: A Discography (2nd ed., Wildmusic 1979), web edition",
+   "source_url": "http://www.wildmusic-jazz.com/jcdisc60.htm#601021"
+  },
+  {
+   "session": "601024",
+   "date": "1960-10-24",
+   "group": "JOHN COLTRANE QUARTET",
+   "personnel": [
+    {
+     "name": "Coltrane",
+     "instrument": "soprano sax, tenor sax"
+    },
+    {
+     "name": "McCoy Tyner",
+     "instrument": "piano"
+    },
+    {
+     "name": "Steve Davis",
+     "instrument": "bass"
+    },
+    {
+     "name": "Elvin Jones",
+     "instrument": "drums"
+    }
+   ],
+   "location": "Atlantic Recording Studios, New York City NY",
+   "engineer": "Tom Dowd Afternoon Session a. \"Central Park West\" (J. Coltrane) 4:12 Atlantic 1419 b. \"Mr. Syms\" (J. Coltrane) 5:19 Atlantic 1382 c. \"Exotica\" (J. Coltrane) 5:20 Atlantic 1553 d. \"Summertime\" (D. Heywood - G. Gershwin) 11:31 Atlantic 1361 e. \"Body and Soul\" AT (J. Green - R. Sour - E. Heywood - F. Eyton) 5:57 Atlantic 1668 f. \"Body and Soul\" (J. Green - R. Sour - E. Heywood - F. Eyton) 5:48 Atlantic 1419 --. \"Lazy Bird\" ( ) Coltrane Out --. \"In Your Own Sweet Way\" ( ) Coltrane out Evening Session g. \"Mr. Knight\" (J. Coltrane) 7:30 Atlantic 1382 h. \"Blues To Elvin\" AT (E. Jones) 10:57 Rhino (Atlantic) R2-71984 i. \"Blues To Elvin\" INC (FS) (E. Jones) Rhino (Atlantic) R2-71984 j. \"Blues To Elvin\" AT (E. Jones) Rhino (Atlantic) R2-71984 k. \"Blues to Elvin\" (E. Jones) 7:51 Atlantic 1382 l. \"Mr. Day\" (J. Coltrane) 7:56 Atlantic 1382 Omit McCoy Tyner, same session m. \"Blues To You\" AT (J. Coltrane) 5:32 Rhino (Atlantic) R2-71984 n. \"Blues To You\" AT (J. Coltrane) Rhino (Atlantic) R2-71984 o. \"Blues To You\" (J. Coltrane) 6:25 Atlantic 1382 p. \"Blues to Bechet\" (J. Coltrane) 5:44 Atlantic 1382 q. \"Satellite\" (J. Coltrane) 5:48 Atlantic 1419",
+   "tunes": [
+    {
+     "index": "a",
+     "title": "Central Park West",
+     "composer": "J. Coltrane",
+     "duration": "4:12",
+     "issue": null
+    },
+    {
+     "index": "b",
+     "title": "Mr. Syms",
+     "composer": "J. Coltrane",
+     "duration": "5:19",
+     "issue": null
+    },
+    {
+     "index": "c",
+     "title": "Exotica",
+     "composer": "J. Coltrane",
+     "duration": "5:20",
+     "issue": null
+    },
+    {
+     "index": "d",
+     "title": "Summertime",
+     "composer": "D. Heywood - G. Gershwin",
+     "duration": "11:31",
+     "issue": null
+    },
+    {
+     "index": "e",
+     "title": "Body and Soul",
+     "composer": null,
+     "duration": null,
+     "issue": "AT (J. Green - R. Sour - E. Heywood - F."
+    },
+    {
+     "index": "f",
+     "title": "Body and Soul",
+     "composer": "J. Green - R. Sour - E. Heywood - F. Eyton",
+     "duration": "5:48",
+     "issue": null
+    },
+    {
+     "index": "g",
+     "title": "Mr. Knight",
+     "composer": "J. Coltrane",
+     "duration": "7:30",
+     "issue": null
+    },
+    {
+     "index": "h",
+     "title": "Blues To Elvin",
+     "composer": null,
+     "duration": null,
+     "issue": "AT (E. Jones) 10:57"
+    },
+    {
+     "index": "i",
+     "title": "Blues To Elvin",
+     "composer": null,
+     "duration": null,
+     "issue": "INC (FS) (E. Jones)"
+    },
+    {
+     "index": "j",
+     "title": "Blues To Elvin",
+     "composer": null,
+     "duration": null,
+     "issue": "AT (E. Jones)"
+    },
+    {
+     "index": "k",
+     "title": "Blues to Elvin",
+     "composer": "E. Jones",
+     "duration": "7:51",
+     "issue": null
+    },
+    {
+     "index": "l",
+     "title": "Mr. Day",
+     "composer": "J. Coltrane",
+     "duration": "7:56",
+     "issue": null
+    },
+    {
+     "index": "m",
+     "title": "Blues To You",
+     "composer": null,
+     "duration": null,
+     "issue": "AT (J. Coltrane) 5:32"
+    },
+    {
+     "index": "n",
+     "title": "Blues To You",
+     "composer": null,
+     "duration": null,
+     "issue": "AT (J. Coltrane)"
+    },
+    {
+     "index": "o",
+     "title": "Blues To You",
+     "composer": "J. Coltrane",
+     "duration": "6:25",
+     "issue": null
+    },
+    {
+     "index": "p",
+     "title": "Blues to Bechet",
+     "composer": "J. Coltrane",
+     "duration": "5:44",
+     "issue": null
+    },
+    {
+     "index": "q",
+     "title": "Satellite",
+     "composer": "J. Coltrane",
+     "duration": "5:48",
+     "issue": null
+    }
+   ],
+   "note": "601024c as \"Untitled Original\" on all issues. The two tracks without Coltrane are McCoy Tyner's first trio recordings.",
+   "source": "David Wild, The Recordings of John Coltrane: A Discography (2nd ed., Wildmusic 1979), web edition",
+   "source_url": "http://www.wildmusic-jazz.com/jcdisc60.htm#601024"
+  },
+  {
+   "session": "601026",
+   "date": "1960-10-26",
+   "group": "JOHN COLTRANE QUARTET",
+   "personnel": [
+    {
+     "name": "Coltrane",
+     "instrument": "soprano sax, tenor sax"
+    },
+    {
+     "name": "McCoy Tyner",
+     "instrument": "piano"
+    },
+    {
+     "name": "Steve Davis",
+     "instrument": "bass"
+    },
+    {
+     "name": "Elvin Jones",
+     "instrument": "drums"
+    }
+   ],
+   "location": "Atlantic Recording Studios",
+   "engineer": "Tom Dowd a. \"Everytime We Say Goodbye\" (C. Porter) 5:39 Atlantic 1361 b. \"26-2\" (J. Coltrane) 6:09 Atlantic 1553 c. \"But Not For Me\" (G. Gershwin - I. Gershwin) 9:35 Atlantic 1361 d. \"Liberia\" (J. Coltrane) 6:45 Atlantic 1419 e. \"The Night Has A Thousand Eyes\" (B. Weisman - M. Garrett) 6:42 Atlantic 1419 f. \"Equinox\" (J. Coltrane) 8:33 Atlantic 1419 John Coltrane | Ornette Coleman | Dave Wild | Ken Wild | TJO | Central Texas Jazz | Home Dave Wild's WildPlace and its contents are protected by copyright and are published for non-commercial use only. Some of the contents of this site are based on The Recordings of John Coltrane: A Discography, (c) 1977, 1978, 1979 by David Wild and disc'ribe, Issues # 1, # 2, and # 3, (c) 1980, 1981 and 1983 by Angelyn and David Wild. All the usual legal protections apply. Click here to send mail to Dave Wild",
+   "tunes": [
+    {
+     "index": "a",
+     "title": "Everytime We Say Goodbye",
+     "composer": "C. Porter",
+     "duration": "5:39",
+     "issue": null
+    },
+    {
+     "index": "b",
+     "title": "26-2",
+     "composer": "J. Coltrane",
+     "duration": "6:09",
+     "issue": null
+    },
+    {
+     "index": "c",
+     "title": "But Not For Me",
+     "composer": "G. Gershwin - I. Gershwin",
+     "duration": "9:35",
+     "issue": null
+    },
+    {
+     "index": "d",
+     "title": "Liberia",
+     "composer": "J. Coltrane",
+     "duration": "6:45",
+     "issue": null
+    },
+    {
+     "index": "e",
+     "title": "The Night Has A Thousand Eyes",
+     "composer": "B. Weisman - M. Garrett",
+     "duration": "6:42",
+     "issue": null
+    },
+    {
+     "index": "f",
+     "title": "Equinox",
+     "composer": "J. Coltrane",
+     "duration": "8:33",
+     "issue": null
+    }
+   ],
+   "note": null,
+   "source": "David Wild, The Recordings of John Coltrane: A Discography (2nd ed., Wildmusic 1979), web edition",
+   "source_url": "http://www.wildmusic-jazz.com/jcdisc60.htm#601026"
+  },
+  {
+   "session": "610320",
+   "date": "1961-03-20",
+   "group": "MILES DAVIS SEXTET",
+   "personnel": [
+    {
+     "name": "Miles Davis",
+     "instrument": "trumpet"
+    },
+    {
+     "name": "Hank Mobley",
+     "instrument": "tenor sax"
+    },
+    {
+     "name": "John Coltrane",
+     "instrument": "tenor sax"
+    },
+    {
+     "name": "Wynton Kelly",
+     "instrument": "piano"
+    },
+    {
+     "name": "Paul Chambers",
+     "instrument": "bass"
+    },
+    {
+     "name": "Jimmy Cobb",
+     "instrument": "drums"
+    }
+   ],
+   "location": "30th Street Studio' New York NY",
+   "engineer": "a. \"Someday My Prince Will Come\"( F. Churchill - L. Morey) 9:06 Col CL1656",
+   "tunes": [
+    {
+     "index": "a",
+     "title": "Someday My Prince Will Come",
+     "composer": "F. Churchill - L. Morey",
+     "duration": "9:06",
+     "issue": null
+    }
+   ],
+   "note": "Coltrane does not perform on the other tracks recorded this date",
+   "source": "David Wild, The Recordings of John Coltrane: A Discography (2nd ed., Wildmusic 1979), web edition",
+   "source_url": "http://www.wildmusic-jazz.com/jcdisc61.htm#610320"
+  },
+  {
+   "session": "610321",
+   "date": "1961-03-21",
+   "group": "MILES DAVIS SEXTET",
+   "personnel": [
+    {
+     "name": "Miles Davis",
+     "instrument": "trumpet"
+    },
+    {
+     "name": "Hank Mobley",
+     "instrument": "tenor sax"
+    },
+    {
+     "name": "John Coltrane",
+     "instrument": "tenor sax"
+    },
+    {
+     "name": "Wynton Kelly",
+     "instrument": "piano"
+    },
+    {
+     "name": "Paul Chambers",
+     "instrument": "bass"
+    },
+    {
+     "name": "Jimmy Cobb",
+     "instrument": "drums"
+    }
+   ],
+   "location": "30th Street Studio' New York NY",
+   "engineer": "a. \"Teo\"( M. Davis) 9:35 Col CL1656",
+   "tunes": [
+    {
+     "index": "a",
+     "title": "Teo",
+     "composer": "M. Davis",
+     "duration": "9:35",
+     "issue": null
+    }
+   ],
+   "note": "Other titles recorded this date do not include Coltrane",
+   "source": "David Wild, The Recordings of John Coltrane: A Discography (2nd ed., Wildmusic 1979), web edition",
+   "source_url": "http://www.wildmusic-jazz.com/jcdisc61.htm#610321"
+  },
+  {
+   "session": "610523",
+   "date": "1961-05-23",
+   "group": "JOHN COLTRANE ORCHESTRA",
+   "personnel": [
+    {
+     "name": "Booker Little",
+     "instrument": "trumpet"
+    },
+    {
+     "name": "Freddie Hubbard",
+     "instrument": "trumpet"
+    },
+    {
+     "name": "Julian Priester",
+     "instrument": "euphonium"
+    },
+    {
+     "name": "Charles Greenlee",
+     "instrument": "euphonium"
+    },
+    {
+     "name": "Julius Watkins",
+     "instrument": "french horn"
+    },
+    {
+     "name": "Bob Northern",
+     "instrument": "french horn"
+    },
+    {
+     "name": "Jimmy buffington",
+     "instrument": "french horn"
+    },
+    {
+     "name": "Robert Swisshelm",
+     "instrument": "french horn"
+    },
+    {
+     "name": "Bill Barber",
+     "instrument": "tu"
+    },
+    {
+     "name": "Eric Dolphy",
+     "instrument": "alto sax, flute"
+    },
+    {
+     "name": "Garvin Bushell",
+     "instrument": "reeds, woodwinds"
+    },
+    {
+     "name": "Laurdine 'Pat' Patrick",
+     "instrument": "bars"
+    },
+    {
+     "name": "Coltrane",
+     "instrument": "soprano sax, tenor sax"
+    },
+    {
+     "name": "McCoy Tyner",
+     "instrument": "piano"
+    },
+    {
+     "name": "Reggie Workman",
+     "instrument": "bass"
+    },
+    {
+     "name": "Paul Chambers",
+     "instrument": "bass"
+    },
+    {
+     "name": "Elvin Jones",
+     "instrument": "drums"
+    }
+   ],
+   "location": "Van Gelder Studios, Englewood Cliffs NJ",
+   "engineer": "Rudy Van Gelder a. \"Greensleeves\" (traditional) 9:55 Imp A-6; more b. \"Song of the Underground Railroad\" (traditional, arr. Coltrane) 6:37 Imp AS9273; more c. \"Greensleeves\" AT (traditional, arr. M. Tyner) 10:49 Imp AS9273; more d. \"The Damned Don't Cry\" (C. Massey) 7:38 Imp IZ9361-2; more e. \"Africa\" (J. Coltrane) 14:06 Imp IZ9361/2; more",
+   "tunes": [
+    {
+     "index": "a",
+     "title": "Greensleeves",
+     "composer": "traditional",
+     "duration": "9:55",
+     "issue": null
+    },
+    {
+     "index": "b",
+     "title": "Song of the Underground Railroad",
+     "composer": "traditional, arr. Coltrane",
+     "duration": "6:37",
+     "issue": null
+    },
+    {
+     "index": "c",
+     "title": "Greensleeves",
+     "composer": null,
+     "duration": null,
+     "issue": "AT (traditional, arr. M. Tyner) 10:49"
+    },
+    {
+     "index": "d",
+     "title": "The Damned Don't Cry",
+     "composer": "C. Massey",
+     "duration": "7:38",
+     "issue": null
+    },
+    {
+     "index": "e",
+     "title": "Africa",
+     "composer": "J. Coltrane",
+     "duration": "14:06",
+     "issue": null
+    }
+   ],
+   "note": null,
+   "source": "David Wild, The Recordings of John Coltrane: A Discography (2nd ed., Wildmusic 1979), web edition",
+   "source_url": "http://www.wildmusic-jazz.com/jcdisc61.htm#610523"
+  },
+  {
+   "session": "610525",
+   "date": "1961-05-25",
+   "group": "JOHN COLTRANE GROUP",
+   "personnel": [
+    {
+     "name": "Freddie Hubbard",
+     "instrument": "trumpet"
+    },
+    {
+     "name": "Coltrane",
+     "instrument": "soprano sax, tenor sax"
+    },
+    {
+     "name": "Eric Dolphy",
+     "instrument": "as fl"
+    },
+    {
+     "name": "McCoy Tyner",
+     "instrument": "piano"
+    },
+    {
+     "name": "Art Davis",
+     "instrument": "bass"
+    },
+    {
+     "name": "Reggie Workman",
+     "instrument": "bass"
+    },
+    {
+     "name": "Elvin Jones",
+     "instrument": "drums"
+    }
+   ],
+   "location": "A & R Studios' New York City NY",
+   "engineer": "Phil Ramone a. \"Ole\" (J. Coltrane) 18:05 Atl 1373 b. \"Dahomey Dance\" (J. Coltrane) 10:50 Atl 1373 c. \"Aisha\" (M. Tyner) 7:32 Atl 1373 d. \"To Her Ladyship\" (B. Frazier)8:54 Atl 1553",
+   "tunes": [
+    {
+     "index": "a",
+     "title": "Ole",
+     "composer": "J. Coltrane",
+     "duration": "18:05",
+     "issue": null
+    },
+    {
+     "index": "b",
+     "title": "Dahomey Dance",
+     "composer": "J. Coltrane",
+     "duration": "10:50",
+     "issue": null
+    },
+    {
+     "index": "c",
+     "title": "Aisha",
+     "composer": "M. Tyner",
+     "duration": "7:32",
+     "issue": null
+    },
+    {
+     "index": "d",
+     "title": "To Her Ladyship",
+     "composer": "B. Frazier",
+     "duration": "8:54",
+     "issue": null
+    }
+   ],
+   "note": "Dolphy as George Lane on the original release. Davis out on 610525c; Workman out on 610525d.",
+   "source": "David Wild, The Recordings of John Coltrane: A Discography (2nd ed., Wildmusic 1979), web edition",
+   "source_url": "http://www.wildmusic-jazz.com/jcdisc61.htm#610525"
+  },
+  {
+   "session": "610607",
+   "date": "1961-06-07",
+   "group": "JOHN COLTRANE ORCHESTRA",
+   "personnel": [
+    {
+     "name": "Booker Little",
+     "instrument": "trumpet"
+    },
+    {
+     "name": "Britt Woodman",
+     "instrument": "trombone"
+    },
+    {
+     "name": "Carl Bowman euphonium",
+     "instrument": null
+    },
+    {
+     "name": "Julius Watkins",
+     "instrument": "french horn"
+    },
+    {
+     "name": "Donald Corrado",
+     "instrument": "french horn"
+    },
+    {
+     "name": "Bob Northern",
+     "instrument": "french horn"
+    },
+    {
+     "name": "Robert Swisshelm",
+     "instrument": "french horn"
+    },
+    {
+     "name": "Bill Barber",
+     "instrument": "tu"
+    },
+    {
+     "name": "Eric Dolphy",
+     "instrument": "alto sax, flute, bass clarinet"
+    },
+    {
+     "name": "Laurdine 'Pat' Patrick",
+     "instrument": "bars"
+    },
+    {
+     "name": "Coltrane",
+     "instrument": "soprano sax, tenor sax"
+    },
+    {
+     "name": "McCoy Tyner",
+     "instrument": "piano"
+    },
+    {
+     "name": "Reggie Workman",
+     "instrument": "bass"
+    },
+    {
+     "name": "Art Davis",
+     "instrument": "bass"
+    },
+    {
+     "name": "Elvin Jones",
+     "instrument": "drums"
+    }
+   ],
+   "location": "Van Gelder Studios, Englewood Cliffs NJ",
+   "engineer": "Rudy Van Gelder a. \"Africa\" AT (J. Coltrane) Imp AS9273; more b. \"Africa\" (J. Coltrane) Imp A-6; more c. \"Blues Minor\" (J. Coltrane) Imp A-6; more",
+   "tunes": [
+    {
+     "index": "a",
+     "title": "Africa",
+     "composer": null,
+     "duration": null,
+     "issue": "AT (J. Coltrane)"
+    },
+    {
+     "index": "b",
+     "title": "Africa",
+     "composer": "J. Coltrane",
+     "duration": null,
+     "issue": null
+    },
+    {
+     "index": "c",
+     "title": "Blues Minor",
+     "composer": "J. Coltrane",
+     "duration": null,
+     "issue": null
+    }
+   ],
+   "note": null,
+   "source": "David Wild, The Recordings of John Coltrane: A Discography (2nd ed., Wildmusic 1979), web edition",
+   "source_url": "http://www.wildmusic-jazz.com/jcdisc61.htm#610607"
+  },
+  {
+   "session": "610701",
+   "date": "1961-07-01",
+   "group": "JOHN COLTRANE QUINTET",
+   "personnel": [
+    {
+     "name": "Coltrane",
+     "instrument": "soprano sax, tenor sax"
+    },
+    {
+     "name": "McCoy Tyner",
+     "instrument": "piano"
+    },
+    {
+     "name": "Art Davis",
+     "instrument": "bass"
+    },
+    {
+     "name": "Reggie Workman",
+     "instrument": "bass"
+    },
+    {
+     "name": "Elvin Jones",
+     "instrument": "drums"
+    }
+   ],
+   "location": "Newport Jazz Festival, Newport RI",
+   "engineer": "a. \"Impressions\" J. Coltrane 6:06 Private tape; MJ(I)2MJP1051 b. \"Naima\" J. Coltrane 4:05 Private tape c. \"My Favorite Things\" R. Rodgers - O. Hammerstein 16:27 Private recording; MJ(I) 2MJP1051",
+   "tunes": [
+    {
+     "index": "a",
+     "title": "Impressions",
+     "composer": null,
+     "duration": null,
+     "issue": "J. Coltrane 6:06"
+    },
+    {
+     "index": "b",
+     "title": "Naima",
+     "composer": null,
+     "duration": null,
+     "issue": "J. Coltrane 4:05"
+    },
+    {
+     "index": "c",
+     "title": "My Favorite Things",
+     "composer": null,
+     "duration": null,
+     "issue": "R. Rodgers - O. Hammerstein 16:27"
+    }
+   ],
+   "note": "Information about the release of this recording on MJ is per Fujioka",
+   "source": "David Wild, The Recordings of John Coltrane: A Discography (2nd ed., Wildmusic 1979), web edition",
+   "source_url": "http://www.wildmusic-jazz.com/jcdisc61.htm#610701"
+  },
+  {
+   "session": "611101",
+   "date": "1961-11-01",
+   "group": "JOHN COLTRANE GROUP",
+   "personnel": [
+    {
+     "name": "Coltrane",
+     "instrument": "soprano sax, tenor sax"
+    },
+    {
+     "name": "Eric Dolphy",
+     "instrument": "alto sax, bass clarinet"
+    },
+    {
+     "name": "Garvin Bushell",
+     "instrument": "oboe, contrabassoon"
+    },
+    {
+     "name": "Ahmed Abdul-Malik",
+     "instrument": "tamboura"
+    },
+    {
+     "name": "McCoy Tyner",
+     "instrument": "piano"
+    },
+    {
+     "name": "Jimmy Garrison",
+     "instrument": "bass"
+    },
+    {
+     "name": "Reggie Workman",
+     "instrument": "bass"
+    },
+    {
+     "name": "Elvin Jones",
+     "instrument": "drums"
+    }
+   ],
+   "location": "Village Vanguard' New York City NY",
+   "engineer": "Rudy Van Gelder a. \"India\" (J. Coltrane) 10:17 Imp IMPD4-232 b. \"Chasin The Trane\" (J. Coltrane) 9:41 Imp AS9325; more c. \"Impressions\" (J.Coltrane) 8:42 Imp IZ9361; more d. \"Spiritual\" (J. Coltrane) 12:29 Imp AS9325; more e. \"The Red Planet\" (J.Coltrane - E. Dolphy) 9:53 Imp IZ9361-2; more f. \"Naima\" (J. Coltrane) 7:33 Imp IZ9361-2; more g. \"Brasilia\" (J. Coltrane) 18:35 Imp AS9325; more",
+   "tunes": [
+    {
+     "index": "a",
+     "title": "India",
+     "composer": "J. Coltrane",
+     "duration": "10:17",
+     "issue": null
+    },
+    {
+     "index": "b",
+     "title": "Chasin The Trane",
+     "composer": "J. Coltrane",
+     "duration": "9:41",
+     "issue": null
+    },
+    {
+     "index": "c",
+     "title": "Impressions",
+     "composer": "J.Coltrane",
+     "duration": "8:42",
+     "issue": null
+    },
+    {
+     "index": "d",
+     "title": "Spiritual",
+     "composer": "J. Coltrane",
+     "duration": "12:29",
+     "issue": null
+    },
+    {
+     "index": "e",
+     "title": "The Red Planet",
+     "composer": "J.Coltrane - E. Dolphy",
+     "duration": "9:53",
+     "issue": null
+    },
+    {
+     "index": "f",
+     "title": "Naima",
+     "composer": "J. Coltrane",
+     "duration": "7:33",
+     "issue": null
+    },
+    {
+     "index": "g",
+     "title": "Brasilia",
+     "composer": "J. Coltrane",
+     "duration": "18:35",
+     "issue": null
+    }
+   ],
+   "note": "61-1101e (\"The Red Planet\") is issued under the name \"Miles' Mode\" (a later title used by Coltrane). These four sessions are lettered consecutively. All titles are included in the 1997 Vanguard box set, The Complete 1961 Village Vanguard Recordings, Imp IMPD4-232. For a discussion of Abdul-Malik's i",
+   "source": "David Wild, The Recordings of John Coltrane: A Discography (2nd ed., Wildmusic 1979), web edition",
+   "source_url": "http://www.wildmusic-jazz.com/jcdisc61.htm#611101"
+  },
+  {
+   "session": "611102",
+   "date": "1961-11-02",
+   "group": "JOHN COLTRANE GROUP",
+   "personnel": [
+    {
+     "name": "Coltrane",
+     "instrument": "soprano sax, tenor sax"
+    },
+    {
+     "name": "Eric Dolphy",
+     "instrument": "alto sax, bass clarinet"
+    },
+    {
+     "name": "Garvin Bushell",
+     "instrument": "oboe, contrabassoon"
+    },
+    {
+     "name": "Ahmed Abdul-Malik",
+     "instrument": "tamboura"
+    },
+    {
+     "name": "McCoy Tyner",
+     "instrument": "piano"
+    },
+    {
+     "name": "Jimmy Garrison",
+     "instrument": "bass"
+    },
+    {
+     "name": "Reggie Workman",
+     "instrument": "bass"
+    },
+    {
+     "name": "Elvin Jones or Roy Haynes",
+     "instrument": "drums"
+    }
+   ],
+   "location": "Village Vanguard' New York City NY",
+   "engineer": "Rudy Van Gelder h. \"Chasin' Another Trane\" (J. Coltrane) 15:26 Imp IZ9361-2; more i. \"India\" (J. Coltrane) 13:14 MCA MCAD5541; Imp [CD] IMPD4-232 j. \"Spiritual\" (J. Coltrane) 15:03 MCA MCAD5541; Imp [CD] IMPD4-232 k. \"Softly As In A Morning Sunrise\" (Romberg) 6:25 Imp A-10; more l. \"Chasin' the Trane\" (J. Coltrane) 15:55 Imp A-10; more m. \"Greensleeves\" (traditional, arr M. Tyner) 6:08 Imp AS9325; more n. \"Impressions\" (J. Coltrane) 10:49 Imp IZ9361-2; more",
+   "tunes": [
+    {
+     "index": "h",
+     "title": "Chasin' Another Trane",
+     "composer": "J. Coltrane",
+     "duration": "15:26",
+     "issue": null
+    },
+    {
+     "index": "i",
+     "title": "India",
+     "composer": "J. Coltrane",
+     "duration": "13:14",
+     "issue": null
+    },
+    {
+     "index": "j",
+     "title": "Spiritual",
+     "composer": "J. Coltrane",
+     "duration": "15:03",
+     "issue": null
+    },
+    {
+     "index": "k",
+     "title": "Softly As In A Morning Sunrise",
+     "composer": "Romberg",
+     "duration": "6:25",
+     "issue": null
+    },
+    {
+     "index": "l",
+     "title": "Chasin' the Trane",
+     "composer": "J. Coltrane",
+     "duration": "15:55",
+     "issue": null
+    },
+    {
+     "index": "m",
+     "title": "Greensleeves",
+     "composer": "traditional, arr M. Tyner",
+     "duration": "6:08",
+     "issue": null
+    },
+    {
+     "index": "n",
+     "title": "Impressions",
+     "composer": "J. Coltrane",
+     "duration": "10:49",
+     "issue": null
+    }
+   ],
+   "note": null,
+   "source": "David Wild, The Recordings of John Coltrane: A Discography (2nd ed., Wildmusic 1979), web edition",
+   "source_url": "http://www.wildmusic-jazz.com/jcdisc61.htm#611102"
+  },
+  {
+   "session": "611103",
+   "date": "1961-11-03",
+   "group": "JOHN COLTRANE GROUP",
+   "personnel": [
+    {
+     "name": "Coltrane",
+     "instrument": "soprano sax, tenor sax"
+    },
+    {
+     "name": "Eric Dolphy",
+     "instrument": "alto sax, bass clarinet"
+    },
+    {
+     "name": "McCoy Tyner",
+     "instrument": "piano"
+    },
+    {
+     "name": "Jimmy Garrison",
+     "instrument": "bass"
+    },
+    {
+     "name": "Reggie Workman",
+     "instrument": "bass"
+    },
+    {
+     "name": "Elvin Jones",
+     "instrument": "drums"
+    }
+   ],
+   "location": "Village Vanguard' New York City NY",
+   "engineer": "Rudy Van Gelder o. \"Spiritual\" (J. Coltrane) 13:31 Imp A-10; more p. \"Naima\" (J. Coltrane) 7:02 Imp IMPD4-232 q. \"Impressions\" (J. Coltrane) 14:45 Imp A-42; more r. \"India\" (J. Coltrane) 13:55 Imp A-42; more s. \"Greensleeves\" (Traditional, arr M. Tyner) 4:51 Imp IZ9361-2; more t. \"The Red Planet\" (J. Coltrane-E. Dolphy) 15:12 Imp IMPD4-232",
+   "tunes": [
+    {
+     "index": "o",
+     "title": "Spiritual",
+     "composer": "J. Coltrane",
+     "duration": "13:31",
+     "issue": null
+    },
+    {
+     "index": "p",
+     "title": "Naima",
+     "composer": "J. Coltrane",
+     "duration": "7:02",
+     "issue": null
+    },
+    {
+     "index": "q",
+     "title": "Impressions",
+     "composer": "J. Coltrane",
+     "duration": "14:45",
+     "issue": null
+    },
+    {
+     "index": "r",
+     "title": "India",
+     "composer": "J. Coltrane",
+     "duration": "13:55",
+     "issue": null
+    },
+    {
+     "index": "s",
+     "title": "Greensleeves",
+     "composer": "Traditional, arr M. Tyner",
+     "duration": "4:51",
+     "issue": null
+    },
+    {
+     "index": "t",
+     "title": "The Red Planet",
+     "composer": "J. Coltrane-E. Dolphy",
+     "duration": "15:12",
+     "issue": null
+    }
+   ],
+   "note": null,
+   "source": "David Wild, The Recordings of John Coltrane: A Discography (2nd ed., Wildmusic 1979), web edition",
+   "source_url": "http://www.wildmusic-jazz.com/jcdisc61.htm#611103"
+  },
+  {
+   "session": "611105",
+   "date": "1961-11-05",
+   "group": "JOHN COLTRANE GROUP",
+   "personnel": [
+    {
+     "name": "Coltrane",
+     "instrument": "soprano sax, tenor sax"
+    },
+    {
+     "name": "Eric Dolphy",
+     "instrument": "alto sax, bass clarinet"
+    },
+    {
+     "name": "Garvin Bushell",
+     "instrument": "oboe, contrabassoon"
+    },
+    {
+     "name": "Ahmed Abdul-Malik",
+     "instrument": "tamboura"
+    },
+    {
+     "name": "McCoy Tyner",
+     "instrument": "piano"
+    },
+    {
+     "name": "Jimmy Garrison",
+     "instrument": "bass"
+    },
+    {
+     "name": "Reggie Workman",
+     "instrument": "bass"
+    },
+    {
+     "name": "Elvin Jones",
+     "instrument": "drums"
+    }
+   ],
+   "location": "Village Vanguard' New York City NY",
+   "engineer": "Rudy Van Gelder u. \"India\" (J. Coltrane) 15:06 Imp AS9325; more v. \"Spiritual\" (J. Coltrane) 20:29 Imp AS9325; more",
+   "tunes": [
+    {
+     "index": "u",
+     "title": "India",
+     "composer": "J. Coltrane",
+     "duration": "15:06",
+     "issue": null
+    },
+    {
+     "index": "v",
+     "title": "Spiritual",
+     "composer": "J. Coltrane",
+     "duration": "20:29",
+     "issue": null
+    }
+   ],
+   "note": null,
+   "source": "David Wild, The Recordings of John Coltrane: A Discography (2nd ed., Wildmusic 1979), web edition",
+   "source_url": "http://www.wildmusic-jazz.com/jcdisc61.htm#611105"
+  },
+  {
+   "session": "611118",
+   "date": "1961-11-18",
+   "group": "JOHN COLTRANE QUINTET",
+   "personnel": [
+    {
+     "name": "Coltrane",
+     "instrument": "soprano sax, tenor sax"
+    },
+    {
+     "name": "Eric Dolphy",
+     "instrument": "flute, alto sax, bass clarinet"
+    },
+    {
+     "name": "McCoy Tyner",
+     "instrument": "piano"
+    },
+    {
+     "name": "Reggie Workman",
+     "instrument": "bass"
+    },
+    {
+     "name": "Elvin Jones",
+     "instrument": "drums"
+    }
+   ],
+   "location": "Radio Broadcast, 'Olympia Theatre, Paris, France",
+   "engineer": "First Concert a. \"Blue Trane\" J. Coltrane 12:40 Private tape; Magnetic(Lux) MRCD114 b. \"I Want To Talk About You\" B. Eckstine 6:45 Private tape; Magnetic(Lux) MRCD 114 c. \"Impressions\" J. Coltrane 10:41 Private tape; Magnetic(L) MRCD 114 d. \"My Favorite Things\" R. Rodgers - O. Hammerstein 22:21 Private tape; Magnetic(L) MRCD 114 Second Concert e. \"I Want To Talk About You\" B. Eckstine 9:27 Private tape; Magnetic(L) MRCD 115 f. \"Blue Trane\" J. Coltrane 12:40 Private tape; Magnetic(L) MRCD 115 g. \"My Favorite Things\" R. Rodgers - O. Hammerstein 25:11 Private tape; Magnetic(L) MRCD 115",
+   "tunes": [
+    {
+     "index": "a",
+     "title": "Blue Trane",
+     "composer": null,
+     "duration": null,
+     "issue": "J. Coltrane 12:40"
+    },
+    {
+     "index": "b",
+     "title": "I Want To Talk About You",
+     "composer": null,
+     "duration": null,
+     "issue": "B. Eckstine 6:45"
+    },
+    {
+     "index": "c",
+     "title": "Impressions",
+     "composer": null,
+     "duration": null,
+     "issue": "J. Coltrane 10:41"
+    },
+    {
+     "index": "d",
+     "title": "My Favorite Things",
+     "composer": null,
+     "duration": null,
+     "issue": "R. Rodgers - O. Hammerstein 22:21"
+    },
+    {
+     "index": "e",
+     "title": "I Want To Talk About You",
+     "composer": null,
+     "duration": null,
+     "issue": "B."
+    },
+    {
+     "index": "f",
+     "title": "Blue Trane",
+     "composer": null,
+     "duration": null,
+     "issue": "J. Coltrane 12:40"
+    },
+    {
+     "index": "g",
+     "title": "My Favorite Things",
+     "composer": null,
+     "duration": null,
+     "issue": "R. Rodgers - O. Hammerstein 25:11"
+    }
+   ],
+   "note": null,
+   "source": "David Wild, The Recordings of John Coltrane: A Discography (2nd ed., Wildmusic 1979), web edition",
+   "source_url": "http://www.wildmusic-jazz.com/jcdisc61.htm#611118"
+  },
+  {
+   "session": "611120",
+   "date": "1961-11-20",
+   "group": "JOHN COLTRANE QUINTET",
+   "personnel": [
+    {
+     "name": "Coltrane",
+     "instrument": "soprano sax, tenor sax"
+    },
+    {
+     "name": "Eric Dolphy",
+     "instrument": "flute, alto sax, bass clarinet"
+    },
+    {
+     "name": "McCoy Tyner",
+     "instrument": "piano"
+    },
+    {
+     "name": "Reggie Workman",
+     "instrument": "bass"
+    },
+    {
+     "name": "Elvin Jones",
+     "instrument": "drums"
+    }
+   ],
+   "location": "Falkonercentret, Copenhagen, Denmark",
+   "engineer": "a. \"Delilah\" V. Young 11\"16 Private tape; Magnetic(L) MRCD116 b. \"Everytime We Say Goodbye\" C. Porter 4:43 Private tape; Magnetic(L) MRCD 116 c. \"Impressions\" J.Coltrane 12:53 Private tape; Magnetic(L) MRCD 116 d. \"Naima\" J. Coltrane 6:46 Private tape; Magnetic(L) MRCD 116 e. \"My Favorite Things\" R. Rodgers - O. Hammerstein 27:19 Private tape; Magnetic(L) MRCD 116",
+   "tunes": [
+    {
+     "index": "a",
+     "title": "Delilah",
+     "composer": null,
+     "duration": null,
+     "issue": "V. Young 11\"16"
+    },
+    {
+     "index": "b",
+     "title": "Everytime We Say Goodbye",
+     "composer": null,
+     "duration": null,
+     "issue": "C. Porter 4:43"
+    },
+    {
+     "index": "c",
+     "title": "Impressions",
+     "composer": null,
+     "duration": null,
+     "issue": "J.Coltrane 12:53"
+    },
+    {
+     "index": "d",
+     "title": "Naima",
+     "composer": null,
+     "duration": null,
+     "issue": "J. Coltrane 6:46"
+    },
+    {
+     "index": "e",
+     "title": "My Favorite Things",
+     "composer": null,
+     "duration": null,
+     "issue": "R. Rodgers - O. Hammerstein 27:19"
+    }
+   ],
+   "note": "621120e is preceded by two false starts, after which Coltrane speaks briefly.",
+   "source": "David Wild, The Recordings of John Coltrane: A Discography (2nd ed., Wildmusic 1979), web edition",
+   "source_url": "http://www.wildmusic-jazz.com/jcdisc61.htm#611120"
+  },
+  {
+   "session": "611123",
+   "date": "1961-11-23",
+   "group": "JOHN COLTRANE QUINTET",
+   "personnel": [
+    {
+     "name": "Coltrane",
+     "instrument": "soprano sax, tenor sax"
+    },
+    {
+     "name": "Eric Dolphy",
+     "instrument": "alto sax, bass clarinet, flute"
+    },
+    {
+     "name": "McCoy Tyner",
+     "instrument": "piano"
+    },
+    {
+     "name": "Reggie Workman",
+     "instrument": "bass"
+    },
+    {
+     "name": "Elvin Jones",
+     "instrument": "drums"
+    }
+   ],
+   "location": "Koncerthuset, Stockholm Sweden",
+   "engineer": "First Concert a. \"Blue Trane\" (J. Coltrane) 20:48 Historic Performances HPLP5 b. \"Naima\" INC (J. Coltrane) 4:00 Historic Performances HPLP5 c. \"Impressions\" (J. Coltrane) 7:11 Historic Performances HPLP5 d. \"My Favorite Things\" (Rogers-Hammerstein) 20:48 Historic Performances HPLP5 Second Concert e. \"Naima\" INC (J. Coltrane) 2:25 Historic Performances HPLP1 f. \"Impressions\" (J. Coltrane) 11:30 Historic Performances HPLP1 g. \"My Favorite Things\" (Rogers-Hammerstein)25:55 Historic Performances HPLP1",
+   "tunes": [
+    {
+     "index": "a",
+     "title": "Blue Trane",
+     "composer": "J. Coltrane",
+     "duration": "20:48",
+     "issue": null
+    },
+    {
+     "index": "b",
+     "title": "Naima",
+     "composer": null,
+     "duration": null,
+     "issue": "INC (J. Coltrane) 4:00"
+    },
+    {
+     "index": "c",
+     "title": "Impressions",
+     "composer": "J. Coltrane",
+     "duration": "7:11",
+     "issue": null
+    },
+    {
+     "index": "d",
+     "title": "My Favorite Things",
+     "composer": "Rogers-Hammerstein",
+     "duration": "20:48",
+     "issue": null
+    },
+    {
+     "index": "e",
+     "title": "Naima",
+     "composer": null,
+     "duration": null,
+     "issue": "INC (J. Coltrane) 2:25"
+    },
+    {
+     "index": "f",
+     "title": "Impressions",
+     "composer": "J. Coltrane",
+     "duration": "11:30",
+     "issue": null
+    },
+    {
+     "index": "g",
+     "title": "My Favorite Things",
+     "composer": "Rogers-Hammerstein",
+     "duration": "25:55",
+     "issue": null
+    }
+   ],
+   "note": "Reissued on a multitude of bootlegs since its original appearance.",
+   "source": "David Wild, The Recordings of John Coltrane: A Discography (2nd ed., Wildmusic 1979), web edition",
+   "source_url": "http://www.wildmusic-jazz.com/jcdisc61.htm#611123"
+  },
+  {
+   "session": "611124",
+   "date": "1961-11-24",
+   "group": "JOHN COLTRANE QUINTET",
+   "personnel": [
+    {
+     "name": "Coltrane",
+     "instrument": "soprano sax, tenor sax"
+    },
+    {
+     "name": "Eric Dolphy",
+     "instrument": "alto sax, bass clarinet, flute"
+    },
+    {
+     "name": "McCoy Tyner",
+     "instrument": "piano"
+    },
+    {
+     "name": "Reggie Workman",
+     "instrument": "bass"
+    },
+    {
+     "name": "Elvin Jones",
+     "instrument": "drums"
+    }
+   ],
+   "location": "Sudwestfunk TV studio",
+   "engineer": "a. \"My Favorite Things\" (Rogers-Hammerstein) 11:06 Jazz Connoisseur(I) JC112 b. \"Everytime We Say Goodbye\" (C. Porter) 5:25 Jazz Connoisseur(I) JC112 c. \"Impressions\" (J. Coltrane) 7:30 Jazz Connoisseur(I) JC112 d. \"Unknown Title\" Private tape",
+   "tunes": [
+    {
+     "index": "a",
+     "title": "My Favorite Things",
+     "composer": "Rogers-Hammerstein",
+     "duration": "11:06",
+     "issue": null
+    },
+    {
+     "index": "b",
+     "title": "Everytime We Say Goodbye",
+     "composer": "C. Porter",
+     "duration": "5:25",
+     "issue": null
+    },
+    {
+     "index": "c",
+     "title": "Impressions",
+     "composer": "J. Coltrane",
+     "duration": "7:30",
+     "issue": null
+    },
+    {
+     "index": "d",
+     "title": "Unknown Title",
+     "composer": null,
+     "duration": null,
+     "issue": null
+    }
+   ],
+   "note": "The \"Unknown Title\" is a minor blues performed by the rhythm section only during the program credits. Excerpts from this performance are visible on several videotaped programs about John Coltrane.",
+   "source": "David Wild, The Recordings of John Coltrane: A Discography (2nd ed., Wildmusic 1979), web edition",
+   "source_url": "http://www.wildmusic-jazz.com/jcdisc61.htm#611124"
+  },
+  {
+   "session": "611221",
+   "date": "1961-12-21",
+   "group": "JOHN COLTRANE QUARTET",
+   "personnel": [
+    {
+     "name": "Coltrane",
+     "instrument": "soprano sax, tenor sax"
+    },
+    {
+     "name": "McCoy Tyner",
+     "instrument": "piano"
+    },
+    {
+     "name": "Reggie Workman",
+     "instrument": "bass"
+    },
+    {
+     "name": "Elvin Jones",
+     "instrument": "drums"
+    }
+   ],
+   "location": "Probably 'Van Gelder Studios, Englewood Cliffs NJ",
+   "engineer": "Probably Rudy Van Gelder a. \"Greensleeves\" (Traditional, arranged M. Tyner) 3:42 Imp 203 b. \"It's Easy To Remember\" (L. Hart - R. Rodgers) 2:45 Imp A-32; more John Coltrane | Ornette Coleman | Dave Wild | Ken Wild | TJO | Central Texas Jazz | Home Dave Wild's WildPlace and its contents are protected by copyright and are published for non-commercial use only. Some of the contents of this site are based on The Recordings of John Coltrane: A Discography, (c) 1977, 1978, 1979 by David Wild and disc'ribe, Issues # 1, # 2, and # 3, (c) 1980, 1981 and 1983 by Angelyn and David Wild. All the usual legal protections apply. Click here to send mail to Dave Wild",
+   "tunes": [
+    {
+     "index": "a",
+     "title": "Greensleeves",
+     "composer": "Traditional, arranged M. Tyner",
+     "duration": "3:42",
+     "issue": null
+    },
+    {
+     "index": "b",
+     "title": "It's Easy To Remember",
+     "composer": "L. Hart - R. Rodgers",
+     "duration": "2:45",
+     "issue": null
+    }
+   ],
+   "note": null,
+   "source": "David Wild, The Recordings of John Coltrane: A Discography (2nd ed., Wildmusic 1979), web edition",
+   "source_url": "http://www.wildmusic-jazz.com/jcdisc61.htm#611221"
+  },
+  {
+   "session": "620209",
+   "date": "1962-02-09",
+   "group": "JOHN COLTRANE QUINTET",
+   "personnel": [
+    {
+     "name": "Coltrane",
+     "instrument": "soprano sax, tenor sax"
+    },
+    {
+     "name": "Eric Dolphy",
+     "instrument": "alto sax, bass clarinet, flute"
+    },
+    {
+     "name": "McCoy Tyner",
+     "instrument": "piano"
+    },
+    {
+     "name": "Jimmy Garrison",
+     "instrument": "bass"
+    },
+    {
+     "name": "Elvin Jones",
+     "instrument": "drums"
+    }
+   ],
+   "location": "Radio Broadcast, 'Birdland' New York City NY",
+   "engineer": "a. \"Mr. P.C.\"( J. Coltrane ) 11:00 Ozone LP 10, more b. \"My Favorite Things\" (R. Rodgers-O.Hammerstein) 18:41 Ozone LP 10, more c. \"The Red Planet\" (E. Dolphy - J. Coltrane) 10:39 Ozone LP 10, more",
+   "tunes": [
+    {
+     "index": "a",
+     "title": "Mr. P.C.",
+     "composer": "J. Coltrane",
+     "duration": "11:00",
+     "issue": null
+    },
+    {
+     "index": "b",
+     "title": "My Favorite Things",
+     "composer": "R. Rodgers-O.Hammerstein",
+     "duration": "18:41",
+     "issue": null
+    },
+    {
+     "index": "c",
+     "title": "The Red Planet",
+     "composer": "E. Dolphy - J. Coltrane",
+     "duration": "10:39",
+     "issue": null
+    }
+   ],
+   "note": "Broadcast at midnight on 2/9/62 and therefore sometimes dated as 2/10/62. \"The Red Planet\" is also known as \"Miles' Mode\". Those bootlegs descended from Session 114 usually copy its odd titles: \"Mr. R.C.M.Jr\" (620209a), \"Man-Made Miles\" (620209c), and \"Stuff I'm Partial Too\" (620209b). All three tit",
+   "source": "David Wild, The Recordings of John Coltrane: A Discography (2nd ed., Wildmusic 1979), web edition",
+   "source_url": "http://www.wildmusic-jazz.com/jcdisc62.htm#620209"
+  },
+  {
+   "session": "620411",
+   "date": "1962-04-11",
+   "group": "JOHN COLTRANE QUARTET",
+   "personnel": [
+    {
+     "name": "Coltrane",
+     "instrument": "soprano sax, tenor sax"
+    },
+    {
+     "name": "McCoy Tyner",
+     "instrument": "piano"
+    },
+    {
+     "name": "Jimmy Garrison",
+     "instrument": "bass"
+    },
+    {
+     "name": "Elvin Jones",
+     "instrument": "drums"
+    }
+   ],
+   "location": "Van Gelder Studios, Englewood Cliffs NJ",
+   "engineer": "Rudy Van Gelder a. \"Soul Eyes\"( M. Waldron ) Impulse unknown b. \"The Inchworm\"( F. Loesser ) 6:14 Imp A-21 more c. \"Big Nick\"( J. Coltrane ) 4:15 Imp A-99; more",
+   "tunes": [
+    {
+     "index": "a",
+     "title": "Soul Eyes",
+     "composer": "M. Waldron",
+     "duration": null,
+     "issue": null
+    },
+    {
+     "index": "b",
+     "title": "The Inchworm",
+     "composer": "F. Loesser",
+     "duration": "6:14",
+     "issue": null
+    },
+    {
+     "index": "c",
+     "title": "Big Nick",
+     "composer": "J. Coltrane",
+     "duration": "4:15",
+     "issue": null
+    }
+   ],
+   "note": null,
+   "source": "David Wild, The Recordings of John Coltrane: A Discography (2nd ed., Wildmusic 1979), web edition",
+   "source_url": "http://www.wildmusic-jazz.com/jcdisc62.htm#620411"
+  },
+  {
+   "session": "620412",
+   "date": "1962-04-12",
+   "group": "JOHN COLTRANE QUARTET",
+   "personnel": [
+    {
+     "name": "Coltrane",
+     "instrument": "soprano sax, tenor sax"
+    },
+    {
+     "name": "McCoy Tyner",
+     "instrument": "piano"
+    },
+    {
+     "name": "Jimmy Garrison",
+     "instrument": "bass"
+    },
+    {
+     "name": "Elvin Jones",
+     "instrument": "drums"
+    }
+   ],
+   "location": "Van Gelder Studios, Englewood Cliffs NJ",
+   "engineer": "Rudy Van Gelder a. \"Soul Eyes\"( M. Waldron ) Impulse unknown b. \"Excerpt\"( J. Coltrane ) Impulse unknown c. \"Body and Soul\"( Green-Sour-Heyman-Eyton ) Impulse unknown d. \"Neptune\"( J. Coltrane ) Impulse unknown",
+   "tunes": [
+    {
+     "index": "a",
+     "title": "Soul Eyes",
+     "composer": "M. Waldron",
+     "duration": null,
+     "issue": null
+    },
+    {
+     "index": "b",
+     "title": "Excerpt",
+     "composer": "J. Coltrane",
+     "duration": null,
+     "issue": null
+    },
+    {
+     "index": "c",
+     "title": "Body and Soul",
+     "composer": "Green-Sour-Heyman-Eyton",
+     "duration": null,
+     "issue": null
+    },
+    {
+     "index": "d",
+     "title": "Neptune",
+     "composer": "J. Coltrane",
+     "duration": null,
+     "issue": null
+    }
+   ],
+   "note": "\"Excerpt\" is an interim title for \"Impressions\". \"Neptune\" is probably an interim title for \"Brasilia\".",
+   "source": "David Wild, The Recordings of John Coltrane: A Discography (2nd ed., Wildmusic 1979), web edition",
+   "source_url": "http://www.wildmusic-jazz.com/jcdisc62.htm#620412"
+  },
+  {
+   "session": "620602",
+   "date": "1962-06-02",
+   "group": "JOHN COLTRANE QUARTET",
+   "personnel": [
+    {
+     "name": "Coltrane",
+     "instrument": "soprano sax, tenor sax"
+    },
+    {
+     "name": "McCoy Tyner",
+     "instrument": "piano"
+    },
+    {
+     "name": "Jimmy Garrison",
+     "instrument": "bass"
+    },
+    {
+     "name": "Elvin Jones",
+     "instrument": "drums"
+    }
+   ],
+   "location": "Radio Broadcast, 'Birdland, New York City NY",
+   "engineer": "a. \"My Favorite Things\"( R. Rodgers-O. Hammerstein ) 13:55 Alto 724 b. \"Body and Soul\"( J. Green-R.Sour-E.Heyman-F.Eyton ) 9:54 Alto 724 c. \"Cousin Mary\"( J. Coltrane ) 5:00 Private Tape",
+   "tunes": [
+    {
+     "index": "a",
+     "title": "My Favorite Things",
+     "composer": "R. Rodgers-O. Hammerstein",
+     "duration": "13:55",
+     "issue": null
+    },
+    {
+     "index": "b",
+     "title": "Body and Soul",
+     "composer": "J. Green-R.Sour-E.Heyman-F.Eyton",
+     "duration": "9:54",
+     "issue": null
+    },
+    {
+     "index": "c",
+     "title": "Cousin Mary",
+     "composer": "J. Coltrane",
+     "duration": "5:00",
+     "issue": null
+    }
+   ],
+   "note": null,
+   "source": "David Wild, The Recordings of John Coltrane: A Discography (2nd ed., Wildmusic 1979), web edition",
+   "source_url": "http://www.wildmusic-jazz.com/jcdisc62.htm#620602"
+  },
+  {
+   "session": "620619",
+   "date": "1962-06-19",
+   "group": "JOHN COLTRANE QUARTET",
+   "personnel": [
+    {
+     "name": "Coltrane",
+     "instrument": "soprano sax, tenor sax"
+    },
+    {
+     "name": "McCoy Tyner",
+     "instrument": "piano"
+    },
+    {
+     "name": "Jimmy Garrison",
+     "instrument": "bass"
+    },
+    {
+     "name": "Elvin Jones",
+     "instrument": "drums"
+    }
+   ],
+   "location": "Van Gelder Studios, Englewood Cliffs NJ",
+   "engineer": "Rudy Van Gelder a. \"Not Yet\"( J. Coltrane ) Impulse unknown b. \"Out of This World\"( H. Arlen - J. Mercer ) 14:02 Imp A-21; more c. \"Soul Eyes\"( M. Waldron ) 5:22 Imp A-21; more d. \"Excerpt\"( J. Coltrane ) Impulse unknown",
+   "tunes": [
+    {
+     "index": "a",
+     "title": "Not Yet",
+     "composer": "J. Coltrane",
+     "duration": null,
+     "issue": null
+    },
+    {
+     "index": "b",
+     "title": "Out of This World",
+     "composer": "H. Arlen - J. Mercer",
+     "duration": "14:02",
+     "issue": null
+    },
+    {
+     "index": "c",
+     "title": "Soul Eyes",
+     "composer": "M. Waldron",
+     "duration": "5:22",
+     "issue": null
+    },
+    {
+     "index": "d",
+     "title": "Excerpt",
+     "composer": "J. Coltrane",
+     "duration": null,
+     "issue": null
+    }
+   ],
+   "note": "\"Excerpt\" is an interim title for \"Impressions\".",
+   "source": "David Wild, The Recordings of John Coltrane: A Discography (2nd ed., Wildmusic 1979), web edition",
+   "source_url": "http://www.wildmusic-jazz.com/jcdisc62.htm#620619"
+  },
+  {
+   "session": "620620",
+   "date": "1962-06-20",
+   "group": "JOHN COLTRANE QUARTET",
+   "personnel": [
+    {
+     "name": "Coltrane",
+     "instrument": "soprano sax, tenor sax"
+    },
+    {
+     "name": "McCoy Tyner",
+     "instrument": "piano"
+    },
+    {
+     "name": "Jimmy Garrison",
+     "instrument": "bass"
+    },
+    {
+     "name": "Elvin Jones",
+     "instrument": "drums"
+    }
+   ],
+   "location": "Van Gelder Studios, Englewood Cliffs NJ",
+   "engineer": "Rudy Van Gelder a. \"Not Yet\" (J. Coltrane) Impulse unissued b. \"Miles' Mode\" (E. Dolphy - J. Coltrane) 7:30 Impulse A-21; more c. \"Two, Three, Four\" (J. Coltrane) Impulse unissued d. \"Impressions\" Tk 1 (J. Coltrane) 6:40 Impulse unissued e. \"Two, Three, Four\" (J. Coltrane) Impulse unissued f. \"Impressions\" Tk 2 (J. Coltrane) 4:30 Impulse 314 549 913-2",
+   "tunes": [
+    {
+     "index": "a",
+     "title": "Not Yet",
+     "composer": "J. Coltrane",
+     "duration": null,
+     "issue": null
+    },
+    {
+     "index": "b",
+     "title": "Miles' Mode",
+     "composer": "E. Dolphy - J. Coltrane",
+     "duration": "7:30",
+     "issue": null
+    },
+    {
+     "index": "c",
+     "title": "Two, Three, Four",
+     "composer": "J. Coltrane",
+     "duration": null,
+     "issue": null
+    },
+    {
+     "index": "d",
+     "title": "Impressions",
+     "composer": null,
+     "duration": null,
+     "issue": "Tk 1 (J. Coltrane) 6:40"
+    },
+    {
+     "index": "e",
+     "title": "Two, Three, Four",
+     "composer": "J. Coltrane",
+     "duration": null,
+     "issue": null
+    },
+    {
+     "index": "f",
+     "title": "Impressions",
+     "composer": null,
+     "duration": null,
+     "issue": "Tk 2 (J. Coltrane) 4:30"
+    }
+   ],
+   "note": "620620b is also known as \"Red Planet\". 620620c is the working title for as \"Tunji\". \"Impressions\"(620620d and f) was recorded under the working title \"Excerpts\". .",
+   "source": "David Wild, The Recordings of John Coltrane: A Discography (2nd ed., Wildmusic 1979), web edition",
+   "source_url": "http://www.wildmusic-jazz.com/jcdisc62.htm#620620"
+  },
+  {
+   "session": "620629",
+   "date": "1962-06-29",
+   "group": "JOHN COLTRANE QUARTET",
+   "personnel": [
+    {
+     "name": "Coltrane",
+     "instrument": "soprano sax, tenor sax"
+    },
+    {
+     "name": "McCoy Tyner",
+     "instrument": "piano"
+    },
+    {
+     "name": "Jimmy Garrison",
+     "instrument": "bass"
+    },
+    {
+     "name": "Elvin Jones",
+     "instrument": "drums"
+    }
+   ],
+   "location": "Van Gelder Studios, Englewood Cliffs NJ",
+   "engineer": "Rudy Van Gelder a. \"Tunji\" (J. Coltrane) 6:33 Impulse A-21; more b. \"Out of This World\" (H. Arlen - J. Mercer) Impulse unknown",
+   "tunes": [
+    {
+     "index": "a",
+     "title": "Tunji",
+     "composer": "J. Coltrane",
+     "duration": "6:33",
+     "issue": null
+    },
+    {
+     "index": "b",
+     "title": "Out of This World",
+     "composer": "H. Arlen - J. Mercer",
+     "duration": null,
+     "issue": null
+    }
+   ],
+   "note": null,
+   "source": "David Wild, The Recordings of John Coltrane: A Discography (2nd ed., Wildmusic 1979), web edition",
+   "source_url": "http://www.wildmusic-jazz.com/jcdisc62.htm#620629"
+  },
+  {
+   "session": "620918",
+   "date": "1962-09-18",
+   "group": "JOHN COLTRANE QUARTET",
+   "personnel": [
+    {
+     "name": "Coltrane",
+     "instrument": "soprano sax, tenor sax"
+    },
+    {
+     "name": "McCoy Tyner",
+     "instrument": "piano"
+    },
+    {
+     "name": "Jimmy Garrison",
+     "instrument": "bass"
+    },
+    {
+     "name": "Elvin Jones",
+     "instrument": "drums"
+    }
+   ],
+   "location": "Van Gelder Studios, Englewood Cliffs NJ",
+   "engineer": "Rudy Van Gelder a. \"Nancy\" (J. Van Heusen- P. Silvers) 3:09 Imp A-32; more b. \"What's New?\" (B. Haggert - J. Burke) 3:43 Imp A-32; more c. \"Up 'Gainst The Wall\" (J. Coltrane) 3:12 Imp A-42; more",
+   "tunes": [
+    {
+     "index": "a",
+     "title": "Nancy",
+     "composer": "J. Van Heusen- P. Silvers",
+     "duration": "3:09",
+     "issue": null
+    },
+    {
+     "index": "b",
+     "title": "What's New?",
+     "composer": "B. Haggert - J. Burke",
+     "duration": "3:43",
+     "issue": null
+    },
+    {
+     "index": "c",
+     "title": "Up 'Gainst The Wall",
+     "composer": "J. Coltrane",
+     "duration": "3:12",
+     "issue": null
+    }
+   ],
+   "note": null,
+   "source": "David Wild, The Recordings of John Coltrane: A Discography (2nd ed., Wildmusic 1979), web edition",
+   "source_url": "http://www.wildmusic-jazz.com/jcdisc62.htm#620918"
+  },
+  {
+   "session": "620926",
+   "date": "1962-09-26",
+   "group": null,
+   "personnel": [
+    {
+     "name": "Coltrane",
+     "instrument": "soprano sax, tenor sax"
+    },
+    {
+     "name": "Ellington",
+     "instrument": "piano"
+    },
+    {
+     "name": "Aaron Bell or Jimmy Garrison",
+     "instrument": "bass"
+    },
+    {
+     "name": "Sam Woodyard or Elvin Jones",
+     "instrument": "drums"
+    }
+   ],
+   "location": "Van Gelder Studios, Englewood Cliffs NJ",
+   "engineer": "Rudy Van Gelder a. \"Stevie\" (D. Ellington) 4:20 Imp A-30; more b. \"In A Sentimental Mood\" (J. Mills-M.Kurtz-D.Ellington) 4:12 Imp A-30; more c. \"Angelica\" (D. Ellington) 5:56 Imp A-30; more d. \"Big Nick\" (J. Coltrane) 4:25 Imp A-30; more e. \"My Little Brown Book\" (B. Strayhorn) 5:20 Imp A-30; more f. \"The Feeling of Jazz\" (B. Troup-G.Simon-D. Ellington) 5:30 Imp A-30; more g. \"Take The Coltrane\" (D. Ellington) 4:40 Imp A-30; more",
+   "tunes": [
+    {
+     "index": "a",
+     "title": "Stevie",
+     "composer": "D. Ellington",
+     "duration": "4:20",
+     "issue": null
+    },
+    {
+     "index": "b",
+     "title": "In A Sentimental Mood",
+     "composer": "J. Mills-M.Kurtz-D.Ellington",
+     "duration": "4:12",
+     "issue": null
+    },
+    {
+     "index": "c",
+     "title": "Angelica",
+     "composer": "D. Ellington",
+     "duration": "5:56",
+     "issue": null
+    },
+    {
+     "index": "d",
+     "title": "Big Nick",
+     "composer": "J. Coltrane",
+     "duration": "4:25",
+     "issue": null
+    },
+    {
+     "index": "e",
+     "title": "My Little Brown Book",
+     "composer": "B. Strayhorn",
+     "duration": "5:20",
+     "issue": null
+    },
+    {
+     "index": "f",
+     "title": "The Feeling of Jazz",
+     "composer": "B. Troup-G.Simon-D. Ellington",
+     "duration": "5:30",
+     "issue": null
+    },
+    {
+     "index": "g",
+     "title": "Take The Coltrane",
+     "composer": "D. Ellington",
+     "duration": "4:40",
+     "issue": null
+    }
+   ],
+   "note": "Bell on 620926a, b, e, f. Garrison on 620926c, d, g. Woodyard on 620926a, e, f. Jones on 620926b, c, d, and g.",
+   "source": "David Wild, The Recordings of John Coltrane: A Discography (2nd ed., Wildmusic 1979), web edition",
+   "source_url": "http://www.wildmusic-jazz.com/jcdisc62.htm#620926"
+  },
+  {
+   "session": "621113",
+   "date": "1962-11-13",
+   "group": "JOHN COLTRANE QUARTET",
+   "personnel": [
+    {
+     "name": "Coltrane",
+     "instrument": "soprano sax, tenor sax"
+    },
+    {
+     "name": "McCoy Tyner",
+     "instrument": "piano"
+    },
+    {
+     "name": "Jimmy Garrison",
+     "instrument": "bass"
+    },
+    {
+     "name": "Elvin Jones",
+     "instrument": "drums"
+    }
+   ],
+   "location": "Van Gelder Studios, Englewood Cliffs NJ",
+   "engineer": "Rudy Van Gelder a. \"Too Young To Go Steady\" (H. Adamson - J. McHugh) 4:20 Imp A-32; more b. \"All or Nothing At All\" (J. Lawrence - A. Altman) 3:35 Imp A-32; more c. \"I Wish I Knew\" (H. Warner - M. Gordon) 4:54 Imp A-32; more d. \"They Say It's Wonderful \" (I. Berlin) Impulse unissued e. \"You Don't Know What Love Is\" (D. Raye - G. DePaul) 5:11 Imp A-32; more f. \"Say It Over and Over Again\" (F. Loesser-J. McHugh) 4:15 Imp A-32; more",
+   "tunes": [
+    {
+     "index": "a",
+     "title": "Too Young To Go Steady",
+     "composer": "H. Adamson - J. McHugh",
+     "duration": "4:20",
+     "issue": null
+    },
+    {
+     "index": "b",
+     "title": "All or Nothing At All",
+     "composer": "J. Lawrence - A. Altman",
+     "duration": "3:35",
+     "issue": null
+    },
+    {
+     "index": "c",
+     "title": "I Wish I Knew",
+     "composer": "H. Warner - M. Gordon",
+     "duration": "4:54",
+     "issue": null
+    },
+    {
+     "index": "d",
+     "title": "They Say It's Wonderful",
+     "composer": "I. Berlin",
+     "duration": null,
+     "issue": null
+    },
+    {
+     "index": "e",
+     "title": "You Don't Know What Love Is",
+     "composer": "D. Raye - G. DePaul",
+     "duration": "5:11",
+     "issue": null
+    },
+    {
+     "index": "f",
+     "title": "Say It Over and Over Again",
+     "composer": "F. Loesser-J. McHugh",
+     "duration": "4:15",
+     "issue": null
+    }
+   ],
+   "note": "62-1113d is a duet between Coltrane and Tyner.",
+   "source": "David Wild, The Recordings of John Coltrane: A Discography (2nd ed., Wildmusic 1979), web edition",
+   "source_url": "http://www.wildmusic-jazz.com/jcdisc62.htm#621113"
+  },
+  {
+   "session": "621117",
+   "date": "1962-11-17",
+   "group": "JOHN COLTRANE QUARTET",
+   "personnel": [
+    {
+     "name": "Coltrane",
+     "instrument": "soprano sax, tenor sax"
+    },
+    {
+     "name": "McCoy Tyner",
+     "instrument": "piano"
+    },
+    {
+     "name": "Jimmy Garrison",
+     "instrument": "bass"
+    },
+    {
+     "name": "Elvin Jones",
+     "instrument": "drums"
+    }
+   ],
+   "location": "L'Olympia, Paris France",
+   "engineer": "a. \"Bye Bye Blackbird\" (Dixon - Henderson) 19:48 Private tape; Pablo 7PACD-4433-2 b. \"The Inchworm\" (F. Loesser) 10:17 Private tape; Pablo Live 2308-217; Pablo 7PACD-4433-2 c. \"Ev'rytime We Say Goodbye\" (C. Porter) 4:58 Private tape; Pablo Live 2308-217; Pablo 7PACD-4433-2 d. \"Mr. P. C.\" (J. Coltrane) 15:13 Private tape; Pablo 7PACD-4433-2 e. \"Naima\" (J. Coltrane) 6:39 Private tape f. \"Impressions\" (J. Coltrane) Private tape g. \"Traneing In\" (J. Coltrane) 18:26 Private tape h. \"My Favorite Things\" (R. Rodgers - O. Hammerstein) Private tape",
+   "tunes": [
+    {
+     "index": "a",
+     "title": "Bye Bye Blackbird",
+     "composer": "Dixon - Henderson",
+     "duration": "19:48",
+     "issue": null
+    },
+    {
+     "index": "b",
+     "title": "The Inchworm",
+     "composer": "F. Loesser",
+     "duration": "10:17",
+     "issue": null
+    },
+    {
+     "index": "c",
+     "title": "Ev'rytime We Say Goodbye",
+     "composer": "C. Porter",
+     "duration": "4:58",
+     "issue": null
+    },
+    {
+     "index": "d",
+     "title": "Mr. P. C.",
+     "composer": "J. Coltrane",
+     "duration": "15:13",
+     "issue": null
+    },
+    {
+     "index": "e",
+     "title": "Naima",
+     "composer": "J. Coltrane",
+     "duration": "6:39",
+     "issue": null
+    },
+    {
+     "index": "f",
+     "title": "Impressions",
+     "composer": "J. Coltrane",
+     "duration": null,
+     "issue": null
+    },
+    {
+     "index": "g",
+     "title": "Traneing In",
+     "composer": "J. Coltrane",
+     "duration": "18:26",
+     "issue": null
+    },
+    {
+     "index": "h",
+     "title": "My Favorite Things",
+     "composer": "R. Rodgers - O. Hammerstein",
+     "duration": null,
+     "issue": null
+    }
+   ],
+   "note": "This entry is still under revision; there were two performances at this concert, and additional titles performed.",
+   "source": "David Wild, The Recordings of John Coltrane: A Discography (2nd ed., Wildmusic 1979), web edition",
+   "source_url": "http://www.wildmusic-jazz.com/jcdisc62.htm#621117"
+  },
+  {
+   "session": "621119",
+   "date": "1962-11-19",
+   "group": "JOHN COLTRANE QUARTET",
+   "personnel": [
+    {
+     "name": "Coltrane",
+     "instrument": "soprano sax, tenor sax"
+    },
+    {
+     "name": "McCoy Tyner",
+     "instrument": "piano"
+    },
+    {
+     "name": "Jimmy Garrison",
+     "instrument": "bass"
+    },
+    {
+     "name": "Elvin Jones",
+     "instrument": "drums"
+    }
+   ],
+   "location": "Koncerthuset, Stockholm Sweden",
+   "engineer": "First Concert a. \"Bye Bye Blackbird\" (Dixon - Henderson) 14:14 Private tape; Magnetic(Lux) MRCD 108 b. \"The Inchworm\" (F. Loesser) 5:37 Private tape; Duke(I) D-1016 c. \"Mr. P. C.\" (J. Coltrane) 15:11 Private tape; Historic Performances (Sw) HPLP-2 d. \"Naima\" (J. Coltrane) 9:20 Private tape; Historic Performances(Sw) HPLP-3 e. \"Traneing In\" (J. Coltrane) 18:40 Private tape; Historic Performances(Sw) HPLP-3 f. \"Impressions\" (J. Coltrane) 7:44 Private tape; Duke(I) D-1016 g. \"My Favorite Things\" (R. Rodgers - O. Hammerstein) 21:18 Private tape; Duke(I) D-1016 Second Concert h. \"Bye Bye Blackbird\" (Henderson-Dixon) 17:58 Private tape; Historic Performances(Sw) HPLP-2 i. \"The Inchworm\" (F. Loesser) 7:04 Private tape; Historic Performances(Sw) HPLP-2 j. \"Naima\" (J. Coltrane) 6:38 Private tape; Magnetic (Lux) MRCD 127 k. \"I Want To Talk About You\" (B. Eckstine) 6:39 Private tape; Magnetic(Lux) MRCD127 l. \"Impressions\" (J. Coltrane) 7:52 Private tape; Historic Performances(Sw) HPLP-3 m. \"Mr. P. C. \" (J. Coltrane) 17:50 Private tape; Magnetic(Lux) MRCD127 n. \"My Favorite Things\" (R. Rodgers - O. Hammerstein) 24:35 Private tape; Magnetic(Lux) MRCD128 o. \"Everytime We Say Goodbye\" (C. Porter) 4:28 Private tape; Magnetic(Lux) MRCD127 p. \"Traneing In\" (J. Coltrane) 16:25 Private tape; Magnetic(Lux) MRCD128",
+   "tunes": [
+    {
+     "index": "a",
+     "title": "Bye Bye Blackbird",
+     "composer": "Dixon - Henderson",
+     "duration": "14:14",
+     "issue": null
+    },
+    {
+     "index": "b",
+     "title": "The Inchworm",
+     "composer": "F. Loesser",
+     "duration": "5:37",
+     "issue": null
+    },
+    {
+     "index": "c",
+     "title": "Mr. P. C.",
+     "composer": "J. Coltrane",
+     "duration": "15:11",
+     "issue": null
+    },
+    {
+     "index": "d",
+     "title": "Naima",
+     "composer": "J. Coltrane",
+     "duration": "9:20",
+     "issue": null
+    },
+    {
+     "index": "e",
+     "title": "Traneing In",
+     "composer": "J. Coltrane",
+     "duration": "18:40",
+     "issue": null
+    },
+    {
+     "index": "f",
+     "title": "Impressions",
+     "composer": "J. Coltrane",
+     "duration": "7:44",
+     "issue": null
+    },
+    {
+     "index": "g",
+     "title": "My Favorite Things",
+     "composer": "R. Rodgers - O. Hammerstein",
+     "duration": "21:18",
+     "issue": null
+    },
+    {
+     "index": "h",
+     "title": "Bye Bye Blackbird",
+     "composer": "Henderson-Dixon",
+     "duration": "17:58",
+     "issue": null
+    },
+    {
+     "index": "i",
+     "title": "The Inchworm",
+     "composer": "F. Loesser",
+     "duration": "7:04",
+     "issue": null
+    },
+    {
+     "index": "j",
+     "title": "Naima",
+     "composer": "J. Coltrane",
+     "duration": "6:38",
+     "issue": null
+    },
+    {
+     "index": "k",
+     "title": "I Want To Talk About You",
+     "composer": "B. Eckstine",
+     "duration": "6:39",
+     "issue": null
+    },
+    {
+     "index": "l",
+     "title": "Impressions",
+     "composer": "J. Coltrane",
+     "duration": "7:52",
+     "issue": null
+    },
+    {
+     "index": "m",
+     "title": "Mr. P. C.",
+     "composer": "J. Coltrane",
+     "duration": "17:50",
+     "issue": null
+    },
+    {
+     "index": "n",
+     "title": "My Favorite Things",
+     "composer": "R. Rodgers - O. Hammerstein",
+     "duration": "24:35",
+     "issue": null
+    },
+    {
+     "index": "o",
+     "title": "Everytime We Say Goodbye",
+     "composer": "C. Porter",
+     "duration": "4:28",
+     "issue": null
+    },
+    {
+     "index": "p",
+     "title": "Traneing In",
+     "composer": "J. Coltrane",
+     "duration": "16:25",
+     "issue": null
+    }
+   ],
+   "note": null,
+   "source": "David Wild, The Recordings of John Coltrane: A Discography (2nd ed., Wildmusic 1979), web edition",
+   "source_url": "http://www.wildmusic-jazz.com/jcdisc62.htm#621119"
+  },
+  {
+   "session": "621122",
+   "date": "1962-11-22",
+   "group": "JOHN COLTRANE QUARTET",
+   "personnel": [
+    {
+     "name": "Coltrane",
+     "instrument": "soprano sax, tenor sax"
+    },
+    {
+     "name": "McCoy Tyner",
+     "instrument": "piano"
+    },
+    {
+     "name": "Jimmy Garrison",
+     "instrument": "bass"
+    },
+    {
+     "name": "Elvin Jones",
+     "instrument": "drums"
+    }
+   ],
+   "location": "Falkonercentret, Copenhagen Denmark",
+   "engineer": "a. \"Bye Bye Blackbird\" (Dixon-Henderson) 20:29 Private tape b. \"Chasin' the Trane\" (J. Coltrane) 7:01 Private Tape; Ingo(I) Ingo Four c. \"The Inchworm\" (F. Loesser) 9:48 Private tape d. \"Everytime We Say Goodbye\" (C. Porter) 5:20 Private tape; Ingo(I) Ingo Four e. \"Mr. P. C. \" (J. Coltrane) 18:56 Private tape; Ingo(I) Ingo Four f. \"I Want To Talk About You\" (B. Eckstine) 10:39 Private tape; Ingo(I) Ingo Four g. \"Traneing In\" (J. Coltrane) 22:50 Private tape h. \"Impressions\" (J. Coltrane) 8:33 Private tape",
+   "tunes": [
+    {
+     "index": "a",
+     "title": "Bye Bye Blackbird",
+     "composer": "Dixon-Henderson",
+     "duration": "20:29",
+     "issue": null
+    },
+    {
+     "index": "b",
+     "title": "Chasin' the Trane",
+     "composer": "J. Coltrane",
+     "duration": "7:01",
+     "issue": null
+    },
+    {
+     "index": "c",
+     "title": "The Inchworm",
+     "composer": "F. Loesser",
+     "duration": "9:48",
+     "issue": null
+    },
+    {
+     "index": "d",
+     "title": "Everytime We Say Goodbye",
+     "composer": "C. Porter",
+     "duration": "5:20",
+     "issue": null
+    },
+    {
+     "index": "e",
+     "title": "Mr. P. C.",
+     "composer": "J. Coltrane",
+     "duration": "18:56",
+     "issue": null
+    },
+    {
+     "index": "f",
+     "title": "I Want To Talk About You",
+     "composer": "B. Eckstine",
+     "duration": "10:39",
+     "issue": null
+    },
+    {
+     "index": "g",
+     "title": "Traneing In",
+     "composer": "J. Coltrane",
+     "duration": "22:50",
+     "issue": null
+    },
+    {
+     "index": "h",
+     "title": "Impressions",
+     "composer": "J. Coltrane",
+     "duration": "8:33",
+     "issue": null
+    }
+   ],
+   "note": null,
+   "source": "David Wild, The Recordings of John Coltrane: A Discography (2nd ed., Wildmusic 1979), web edition",
+   "source_url": "http://www.wildmusic-jazz.com/jcdisc62.htm#621122"
+  },
+  {
+   "session": "621128",
+   "date": "1962-11-28",
+   "group": "JOHN COLTRANE QUARTET",
+   "personnel": [
+    {
+     "name": "Coltrane",
+     "instrument": "soprano sax, tenor sax"
+    },
+    {
+     "name": "McCoy Tyner",
+     "instrument": "piano"
+    },
+    {
+     "name": "Jimmy Garrison",
+     "instrument": "bass"
+    },
+    {
+     "name": "Elvin Jones",
+     "instrument": "drums"
+    }
+   ],
+   "location": "Radio broadcast, 'Stefaniensaal, Graz Austria",
+   "engineer": "a. \"Bye Bye Blackbird\" (Dixon-Henderson) 23:50 Private tape; Magnetic(Lux) MRCD 104 b. \"The Inchworm\" (F. Loesser) 11:50 Private tape; Unique Jazz(I) UJ32; Magnetic(Lux) MRCD 104 c. \"Autumn Leaves\" (J. Prevert - J Kosma) 10:35 Private tape; Magnetic(Lux) MRCD 104 d. \"Everytime We Say Goodbye\" (C. Porter) 5:47 Private tape; Unique Jazz(I) UJ32; Magnetic(Lux) MRCD 104 e. \"Mr. P. C.\" (J. Coltrane) 17:37 Private tape; Magnetic(Lux) MRCD 104 f. \"I Want To Talk About You\" (B. Eckstine) 12:24 Private tape; Ingo(I) Ingo Seven; Magnetic(Lux) MRCD 105 g. \"Impressions\" (J. Coltrane) 20:59 Private tape; Unique Jazz(I) UJ32; Magnetic(Lux) MRCD105 h. \"My Favorite Things\" (R. Rodgers - O. Hammerstein) 23:10 Private tape; Magnetic(Lux) MRCD 105",
+   "tunes": [
+    {
+     "index": "a",
+     "title": "Bye Bye Blackbird",
+     "composer": "Dixon-Henderson",
+     "duration": "23:50",
+     "issue": null
+    },
+    {
+     "index": "b",
+     "title": "The Inchworm",
+     "composer": "F. Loesser",
+     "duration": "11:50",
+     "issue": null
+    },
+    {
+     "index": "c",
+     "title": "Autumn Leaves",
+     "composer": "J. Prevert - J Kosma",
+     "duration": "10:35",
+     "issue": null
+    },
+    {
+     "index": "d",
+     "title": "Everytime We Say Goodbye",
+     "composer": "C. Porter",
+     "duration": "5:47",
+     "issue": null
+    },
+    {
+     "index": "e",
+     "title": "Mr. P. C.",
+     "composer": "J. Coltrane",
+     "duration": "17:37",
+     "issue": null
+    },
+    {
+     "index": "f",
+     "title": "I Want To Talk About You",
+     "composer": "B. Eckstine",
+     "duration": "12:24",
+     "issue": null
+    },
+    {
+     "index": "g",
+     "title": "Impressions",
+     "composer": "J. Coltrane",
+     "duration": "20:59",
+     "issue": null
+    },
+    {
+     "index": "h",
+     "title": "My Favorite Things",
+     "composer": "R. Rodgers - O. Hammerstein",
+     "duration": "23:10",
+     "issue": null
+    }
+   ],
+   "note": null,
+   "source": "David Wild, The Recordings of John Coltrane: A Discography (2nd ed., Wildmusic 1979), web edition",
+   "source_url": "http://www.wildmusic-jazz.com/jcdisc62.htm#621128"
+  },
+  {
+   "session": "621202",
+   "date": "1962-12-02",
+   "group": "JOHN COLTRANE QUARTET",
+   "personnel": [
+    {
+     "name": "Coltrane",
+     "instrument": "soprano sax, tenor sax"
+    },
+    {
+     "name": "McCoy Tyner",
+     "instrument": "piano"
+    },
+    {
+     "name": "Jimmy Garrison",
+     "instrument": "bass"
+    },
+    {
+     "name": "Elvin Jones",
+     "instrument": "drums"
+    }
+   ],
+   "location": "?TV Broadcast, 'Teatro dell' Arte, Milano Italy",
+   "engineer": "a. \"Everytime We Say Goodbye\" (C. Porter) 4:43 Private tape b. \"The Inchworm\" (F. Loesser) 8:16 Private tape; Ingo(I) Ingo Seven c. \"Mr. P. C.\" (J. Coltrane) 16:27 Private tape d. \"Chasin The Trane\" inc (J. Coltrane) 4:15 Private tape",
+   "tunes": [
+    {
+     "index": "a",
+     "title": "Everytime We Say Goodbye",
+     "composer": "C. Porter",
+     "duration": "4:43",
+     "issue": null
+    },
+    {
+     "index": "b",
+     "title": "The Inchworm",
+     "composer": "F. Loesser",
+     "duration": "8:16",
+     "issue": null
+    },
+    {
+     "index": "c",
+     "title": "Mr. P. C.",
+     "composer": "J. Coltrane",
+     "duration": "16:27",
+     "issue": null
+    },
+    {
+     "index": "d",
+     "title": "Chasin The Trane",
+     "composer": null,
+     "duration": null,
+     "issue": "inc (J. Coltrane) 4:15"
+    }
+   ],
+   "note": "Fujioka includes a photo from this concert with a TV camera visible, suggesting that it was in fact a TV broadcast.",
+   "source": "David Wild, The Recordings of John Coltrane: A Discography (2nd ed., Wildmusic 1979), web edition",
+   "source_url": "http://www.wildmusic-jazz.com/jcdisc62.htm#621202"
+  },
+  {
+   "session": "630223",
+   "date": "1963-02-23",
+   "group": "JOHN COLTRANE QUARTET",
+   "personnel": [
+    {
+     "name": "Coltrane",
+     "instrument": "soprano sax, tenor sax"
+    },
+    {
+     "name": "McCoy Tyner",
+     "instrument": "piano"
+    },
+    {
+     "name": "Jimmy Garrison",
+     "instrument": "bass"
+    },
+    {
+     "name": "Elvin Jones",
+     "instrument": "drums"
+    }
+   ],
+   "location": "Radio Broadcast, 'Birdland' NYC",
+   "engineer": "a. \"I Want To Talk About You\" (Billy Eckstine) 10:23 Private tape; Ozone 21 b. \"One Up and One Down\" (J. Coltrane) 14:45 Private tape; Ozone 21 c. \"The Inchworm\" INC (F. Loesser) 1:44 Private tape; Ozone 21",
+   "tunes": [
+    {
+     "index": "a",
+     "title": "I Want To Talk About You",
+     "composer": "Billy Eckstine",
+     "duration": "10:23",
+     "issue": null
+    },
+    {
+     "index": "b",
+     "title": "One Up and One Down",
+     "composer": "J. Coltrane",
+     "duration": "14:45",
+     "issue": null
+    },
+    {
+     "index": "c",
+     "title": "The Inchworm",
+     "composer": null,
+     "duration": null,
+     "issue": "INC (F. Loesser) 1:44"
+    }
+   ],
+   "note": "630223b is not the same composition as \"One Down, One Up\" (650526c). Some bootlegs show 630223b as \" The Colt Gallops\" and 630223c as \" Trane Stops in the Night\" .",
+   "source": "David Wild, The Recordings of John Coltrane: A Discography (2nd ed., Wildmusic 1979), web edition",
+   "source_url": "http://www.wildmusic-jazz.com/jcdisc63.htm#630223"
+  },
+  {
+   "session": "630302",
+   "date": "1963-03-02",
+   "group": "JOHN COLTRANE QUARTET",
+   "personnel": [
+    {
+     "name": "Coltrane",
+     "instrument": "soprano sax, tenor sax"
+    },
+    {
+     "name": "McCoy Tyner",
+     "instrument": "piano"
+    },
+    {
+     "name": "Jimmy Garrison",
+     "instrument": "bass"
+    },
+    {
+     "name": "Elvin Jones",
+     "instrument": "drums"
+    }
+   ],
+   "location": "Radio Broadcast, 'Birdland, NYC",
+   "engineer": "a. \"Mr. P. C.\" (J. Coltrane) 13:14 Private tape; Alto 724 b. \"My Favorite Things\" (Richard Rodgers-Oscar Hammerstein) 10:24 Private tape; Alto 724",
+   "tunes": [
+    {
+     "index": "a",
+     "title": "Mr. P. C.",
+     "composer": "J. Coltrane",
+     "duration": "13:14",
+     "issue": null
+    },
+    {
+     "index": "b",
+     "title": "My Favorite Things",
+     "composer": "Richard Rodgers-Oscar Hammerstein",
+     "duration": "10:24",
+     "issue": null
+    }
+   ],
+   "note": "",
+   "source": "David Wild, The Recordings of John Coltrane: A Discography (2nd ed., Wildmusic 1979), web edition",
+   "source_url": "http://www.wildmusic-jazz.com/jcdisc63.htm#630302"
+  },
+  {
+   "session": "630306",
+   "date": "1963-03-06",
+   "group": "JOHN COLTRANE QUARTET",
+   "personnel": [
+    {
+     "name": "Coltrane",
+     "instrument": "soprano sax, tenor sax"
+    },
+    {
+     "name": "McCoy Tyner",
+     "instrument": "piano"
+    },
+    {
+     "name": "Jimmy Garrison",
+     "instrument": "bass"
+    },
+    {
+     "name": "Elvin Jones",
+     "instrument": "drums"
+    }
+   ],
+   "location": "Van Gelder Studios, Englewood Cliffs NJ",
+   "engineer": "Rudy Van Gelder a. \"Vilia\" (F. Lehar) 4:35 Imp A9101; more b. \"Untitled Original\" (J. Coltrane) Impulse unknown c. \"Nature Boy\" (E. Ahbez) Impulse unknown d. \"Untitled Original\" (J. Coltrane) Impulse unknown e. \"Untitled Original\" (J. Coltrane) Impulse unknown f. \"Untitled Original\" (J. Coltrane) Impulse unknown g. \"Slow Blues - Original\" (J. Coltrane) Impulse unknown",
+   "tunes": [
+    {
+     "index": "a",
+     "title": "Vilia",
+     "composer": "F. Lehar",
+     "duration": "4:35",
+     "issue": null
+    },
+    {
+     "index": "b",
+     "title": "Untitled Original",
+     "composer": "J. Coltrane",
+     "duration": null,
+     "issue": null
+    },
+    {
+     "index": "c",
+     "title": "Nature Boy",
+     "composer": "E. Ahbez",
+     "duration": null,
+     "issue": null
+    },
+    {
+     "index": "d",
+     "title": "Untitled Original",
+     "composer": "J. Coltrane",
+     "duration": null,
+     "issue": null
+    },
+    {
+     "index": "e",
+     "title": "Untitled Original",
+     "composer": "J. Coltrane",
+     "duration": null,
+     "issue": null
+    },
+    {
+     "index": "f",
+     "title": "Untitled Original",
+     "composer": "J. Coltrane",
+     "duration": null,
+     "issue": null
+    },
+    {
+     "index": "g",
+     "title": "Slow Blues - Original",
+     "composer": "J. Coltrane",
+     "duration": null,
+     "issue": null
+    }
+   ],
+   "note": null,
+   "source": "David Wild, The Recordings of John Coltrane: A Discography (2nd ed., Wildmusic 1979), web edition",
+   "source_url": "http://www.wildmusic-jazz.com/jcdisc63.htm#630306"
+  },
+  {
+   "session": "630307",
+   "date": "1963-03-07",
+   "group": null,
+   "personnel": [
+    {
+     "name": "Coltrane",
+     "instrument": "soprano sax, tenor sax"
+    },
+    {
+     "name": "McCoy Tyner",
+     "instrument": "piano"
+    },
+    {
+     "name": "Jimmy Garrison",
+     "instrument": "bass"
+    },
+    {
+     "name": "Elvin Jones",
+     "instrument": "vocal"
+    },
+    {
+     "name": "dr. Hartman",
+     "instrument": "vocal"
+    }
+   ],
+   "location": "Van Gelder Studios, Englewood Cliffs NJ",
+   "engineer": "Rudy Van Gelder a. \"They Say It's Wonderful\" (I. Berlin) 5:15 Imp A-40; more b. \"Lush Life\" (Billy Strayhorn) 5:20 Imp A-40; more c. \"My One and Only Love\" (Mallin - Wood) 4:50 Imp A-40; more d. \"Autumn Serenade\" (S. Gallop - P.DeRose) 4:11 Imp A-40; more e. \"Dedicated To You\" (Cahn - Chaplin) 5:27 Imp A-40; more f. \"Afro-Blue\" (M. Santamaria) Impulse unknown g. \"You Are Too Beautiful\" (R. Rodgers - L. Hart) 5:32 Imp A-40; more",
+   "tunes": [
+    {
+     "index": "a",
+     "title": "They Say It's Wonderful",
+     "composer": "I. Berlin",
+     "duration": "5:15",
+     "issue": null
+    },
+    {
+     "index": "b",
+     "title": "Lush Life",
+     "composer": "Billy Strayhorn",
+     "duration": "5:20",
+     "issue": null
+    },
+    {
+     "index": "c",
+     "title": "My One and Only Love",
+     "composer": "Mallin - Wood",
+     "duration": "4:50",
+     "issue": null
+    },
+    {
+     "index": "d",
+     "title": "Autumn Serenade",
+     "composer": "S. Gallop - P.DeRose",
+     "duration": "4:11",
+     "issue": null
+    },
+    {
+     "index": "e",
+     "title": "Dedicated To You",
+     "composer": "Cahn - Chaplin",
+     "duration": "5:27",
+     "issue": null
+    },
+    {
+     "index": "f",
+     "title": "Afro-Blue",
+     "composer": "M. Santamaria",
+     "duration": null,
+     "issue": null
+    },
+    {
+     "index": "g",
+     "title": "You Are Too Beautiful",
+     "composer": "R. Rodgers - L. Hart",
+     "duration": "5:32",
+     "issue": null
+    }
+   ],
+   "note": "Coltrane's obbligatos on 630307b, c and g were overdubbed, either at the end of the session or during a later editing session. See the note.",
+   "source": "David Wild, The Recordings of John Coltrane: A Discography (2nd ed., Wildmusic 1979), web edition",
+   "source_url": "http://www.wildmusic-jazz.com/jcdisc63.htm#630307"
+  },
+  {
+   "session": "630429",
+   "date": "1963-04-29",
+   "group": "JOHN COLTRANE QUARTET",
+   "personnel": [
+    {
+     "name": "Coltrane",
+     "instrument": "soprano sax, tenor sax"
+    },
+    {
+     "name": "McCoy Tyner",
+     "instrument": "piano"
+    },
+    {
+     "name": "Jimmy Garrison",
+     "instrument": "bass"
+    },
+    {
+     "name": "Roy Haynes",
+     "instrument": "drums"
+    }
+   ],
+   "location": "Van Gelder Studios, Englewood Cliffs NJ",
+   "engineer": "Rudy Van Gelder a. \"After the Rain\" (J. Coltrane) 4:07 Imp A-42; more b. \"All The Things You Are\" (J. Coltrane) Impulse unknown c. \"Dear Old Stockholm\" (Traditional, arr. J. Coltrane) 10:35 Imp A-100; more",
+   "tunes": [
+    {
+     "index": "a",
+     "title": "After the Rain",
+     "composer": "J. Coltrane",
+     "duration": "4:07",
+     "issue": null
+    },
+    {
+     "index": "b",
+     "title": "All The Things You Are",
+     "composer": "J. Coltrane",
+     "duration": null,
+     "issue": null
+    },
+    {
+     "index": "c",
+     "title": "Dear Old Stockholm",
+     "composer": "Traditional, arr. J. Coltrane",
+     "duration": "10:35",
+     "issue": null
+    }
+   ],
+   "note": null,
+   "source": "David Wild, The Recordings of John Coltrane: A Discography (2nd ed., Wildmusic 1979), web edition",
+   "source_url": "http://www.wildmusic-jazz.com/jcdisc63.htm#630429"
+  },
+  {
+   "session": "630707",
+   "date": "1963-07-07",
+   "group": "JOHN COLTRANE QUARTET",
+   "personnel": [
+    {
+     "name": "Coltrane",
+     "instrument": "soprano sax, tenor sax"
+    },
+    {
+     "name": "McCoy Tyner",
+     "instrument": "piano"
+    },
+    {
+     "name": "Jimmy Garrison",
+     "instrument": "bass"
+    },
+    {
+     "name": "Roy Haynes",
+     "instrument": "drums"
+    }
+   ],
+   "location": "Newport Jazz Festival' Newport RI",
+   "engineer": "Rudy Van Gelder a. \"I Want To Talk About You\" (Billy Eckstine) 8:17 Imp A9161; more b. \"My Favorite Things\" (Richard Rodgers - Oscar Hammerstein) 17:31 Imp A9161; more c. \"Impressions\" (J. Coltrane) 15:52 Imp IZ9346-2; more",
+   "tunes": [
+    {
+     "index": "a",
+     "title": "I Want To Talk About You",
+     "composer": "Billy Eckstine",
+     "duration": "8:17",
+     "issue": null
+    },
+    {
+     "index": "b",
+     "title": "My Favorite Things",
+     "composer": "Richard Rodgers - Oscar Hammerstein",
+     "duration": "17:31",
+     "issue": null
+    },
+    {
+     "index": "c",
+     "title": "Impressions",
+     "composer": "J. Coltrane",
+     "duration": "15:52",
+     "issue": null
+    }
+   ],
+   "note": null,
+   "source": "David Wild, The Recordings of John Coltrane: A Discography (2nd ed., Wildmusic 1979), web edition",
+   "source_url": "http://www.wildmusic-jazz.com/jcdisc63.htm#630707"
+  },
+  {
+   "session": "631008",
+   "date": "1963-10-08",
+   "group": "JOHN COLTRANE QUARTET",
+   "personnel": [
+    {
+     "name": "Coltrane",
+     "instrument": "soprano sax, tenor sax"
+    },
+    {
+     "name": "McCoy Tyner",
+     "instrument": "piano"
+    },
+    {
+     "name": "Jimmy Garrison",
+     "instrument": "bass"
+    },
+    {
+     "name": "Elvin Jones",
+     "instrument": "drums"
+    }
+   ],
+   "location": "Birdland' NYC",
+   "engineer": "Rudy Van Gelder a. \"Rockin'\" (J. Coltrane) Imp unissued b. \"Mr. P. C.\" (J. Coltrane) Imp unissued c. \"Lonnie's Lament\" (J. Coltrane) Imp unissued d. \"The Promise\" (J. Coltrane) 8:04 Imp A-50; more e. \"I Want To Talk About You\" (Billy Eckstine) 8:05 Imp A-50; more f. \"Afro-Blue\" (M. Santamaria) 10:40 Imp A-50; more",
+   "tunes": [
+    {
+     "index": "a",
+     "title": "Rockin'",
+     "composer": "J. Coltrane",
+     "duration": null,
+     "issue": null
+    },
+    {
+     "index": "b",
+     "title": "Mr. P. C.",
+     "composer": "J. Coltrane",
+     "duration": null,
+     "issue": null
+    },
+    {
+     "index": "c",
+     "title": "Lonnie's Lament",
+     "composer": "J. Coltrane",
+     "duration": null,
+     "issue": null
+    },
+    {
+     "index": "d",
+     "title": "The Promise",
+     "composer": "J. Coltrane",
+     "duration": "8:04",
+     "issue": null
+    },
+    {
+     "index": "e",
+     "title": "I Want To Talk About You",
+     "composer": "Billy Eckstine",
+     "duration": "8:05",
+     "issue": null
+    },
+    {
+     "index": "f",
+     "title": "Afro-Blue",
+     "composer": "M. Santamaria",
+     "duration": "10:40",
+     "issue": null
+    }
+   ],
+   "note": "See the note for a discussion of issues relating to this session.",
+   "source": "David Wild, The Recordings of John Coltrane: A Discography (2nd ed., Wildmusic 1979), web edition",
+   "source_url": "http://www.wildmusic-jazz.com/jcdisc63.htm#631008"
+  },
+  {
+   "session": "631022",
+   "date": "1963-10-22",
+   "group": "JOHN COLTRANE QUARTET",
+   "personnel": [
+    {
+     "name": "Coltrane",
+     "instrument": "soprano sax, tenor sax"
+    },
+    {
+     "name": "McCoy Tyner",
+     "instrument": "piano"
+    },
+    {
+     "name": "Jimmy Garrison",
+     "instrument": "bass"
+    },
+    {
+     "name": "Elvin Jones",
+     "instrument": "drums"
+    }
+   ],
+   "location": "Koncerthuset, Stockholm Sweden",
+   "engineer": "a. \"Traneing In\" (J. Coltrane) 11:40 Private tape; Historic Performances HPLP-6 b. \"Mr. P. C.\" (J. Coltrane) 18:26 Private tape; Historic Performances HPLP-6; Pablo Live 2308-222 c. \"Naima\" (J. Coltrane) 6:45 Private tape; Pablo Live 2308-222 d. \"The Promise\" (J. Coltrane) 6:55 Private tape; Pablo Live 2308-222, 2310-886 e. \"Spiritual\" (J. Coltrane) 11:21 Private tape; Historic Performances HPLP-6; Pablo Live 2620-101 f. \"Impressions\" (J. Coltrane) 11:15 Private tape; Historic Performances HPLP-1; Pablo Live 2620-101 g. \"I Want To Talk About You\" (Billy Eckstine) 9:09 Private tape; Historic Performances HPLP-6; Pablo Live 2308-222 h. \"My Favorite Things\" (J. Coltrane) 13:56 Private tape; Pablo 7PACD 4433-2",
+   "tunes": [
+    {
+     "index": "a",
+     "title": "Traneing In",
+     "composer": "J. Coltrane",
+     "duration": "11:40",
+     "issue": null
+    },
+    {
+     "index": "b",
+     "title": "Mr. P. C.",
+     "composer": "J. Coltrane",
+     "duration": "18:26",
+     "issue": null
+    },
+    {
+     "index": "c",
+     "title": "Naima",
+     "composer": "J. Coltrane",
+     "duration": "6:45",
+     "issue": null
+    },
+    {
+     "index": "d",
+     "title": "The Promise",
+     "composer": "J. Coltrane",
+     "duration": "6:55",
+     "issue": null
+    },
+    {
+     "index": "e",
+     "title": "Spiritual",
+     "composer": "J. Coltrane",
+     "duration": "11:21",
+     "issue": null
+    },
+    {
+     "index": "f",
+     "title": "Impressions",
+     "composer": "J. Coltrane",
+     "duration": "11:15",
+     "issue": null
+    },
+    {
+     "index": "g",
+     "title": "I Want To Talk About You",
+     "composer": "Billy Eckstine",
+     "duration": "9:09",
+     "issue": null
+    },
+    {
+     "index": "h",
+     "title": "My Favorite Things",
+     "composer": "J. Coltrane",
+     "duration": "13:56",
+     "issue": null
+    }
+   ],
+   "note": "All titles on Pablo 7PACD 4433-2",
+   "source": "David Wild, The Recordings of John Coltrane: A Discography (2nd ed., Wildmusic 1979), web edition",
+   "source_url": "http://www.wildmusic-jazz.com/jcdisc63.htm#631022"
+  },
+  {
+   "session": "631025",
+   "date": "1963-10-25",
+   "group": "JOHN COLTRANE QUARTET",
+   "personnel": [
+    {
+     "name": "Coltrane",
+     "instrument": "soprano sax, tenor sax"
+    },
+    {
+     "name": "McCoy Tyner",
+     "instrument": "piano"
+    },
+    {
+     "name": "Jimmy Garrison",
+     "instrument": "bass"
+    },
+    {
+     "name": "Elvin Jones",
+     "instrument": "drums"
+    }
+   ],
+   "location": "Radio Broadcast, 'Tivolis Koncertsal' Copenhagen Denmark",
+   "engineer": "a. \"Mr. P. C. \" (J. Coltrane) 23:27 Private tape; Magnetic MRCD137 b. \"Impressions\" INC (J. Coltrane) 19:30 Private tape; Tempo Di Jazz CDTJ701; Magnetic MRCD137 c. \"The Promise\" (J. Coltrane) 10:00 Private tape; Tempo Di Jazz CDTJ701; Magnetic MRCD138 d. \"Afro-blue\" (M. Santamaria) 8:40 Private tape; Tempo Di Jazz CDTJ701; Magnetic MRCD138 e. \"Naima\" (J. Coltrane) 7:32 Private tape; Tempo Di Jazz CDTJ701; Magnetic MRCD138 f. \"My Favorite Things\" (Richard Rodgers - Oscar Hammerstein) 17:13 Private tape; Tempo Di Jazz CDTJ701; Magnetic MRCD138",
+   "tunes": [
+    {
+     "index": "a",
+     "title": "Mr. P. C.",
+     "composer": "J. Coltrane",
+     "duration": "23:27",
+     "issue": null
+    },
+    {
+     "index": "b",
+     "title": "Impressions",
+     "composer": null,
+     "duration": null,
+     "issue": "INC (J. Coltrane) 19:30"
+    },
+    {
+     "index": "c",
+     "title": "The Promise",
+     "composer": "J. Coltrane",
+     "duration": "10:00",
+     "issue": null
+    },
+    {
+     "index": "d",
+     "title": "Afro-blue",
+     "composer": "M. Santamaria",
+     "duration": "8:40",
+     "issue": null
+    },
+    {
+     "index": "e",
+     "title": "Naima",
+     "composer": "J. Coltrane",
+     "duration": "7:32",
+     "issue": null
+    },
+    {
+     "index": "f",
+     "title": "My Favorite Things",
+     "composer": "Richard Rodgers - Oscar Hammerstein",
+     "duration": "17:13",
+     "issue": null
+    }
+   ],
+   "note": null,
+   "source": "David Wild, The Recordings of John Coltrane: A Discography (2nd ed., Wildmusic 1979), web edition",
+   "source_url": "http://www.wildmusic-jazz.com/jcdisc63.htm#631025"
+  },
+  {
+   "session": "631101",
+   "date": "1963-11-01",
+   "group": "JOHN COLTRANE QUARTET",
+   "personnel": [
+    {
+     "name": "Coltrane",
+     "instrument": "soprano sax, tenor sax"
+    },
+    {
+     "name": "McCoy Tyner",
+     "instrument": "piano"
+    },
+    {
+     "name": "Jimmy Garrison",
+     "instrument": "bass"
+    },
+    {
+     "name": "Elvin Jones",
+     "instrument": "drums"
+    }
+   ],
+   "location": "Salle Pleyel, Paris, France",
+   "engineer": "a. \"Afro Blue\" (M. Santamaria) Unknown b. \"Unknown Title\" ( ) Unknown c. \"I Want To Talk About You\" (B. Eckstine) Unknown d. \"Impressions\" (J. Coltrane) 22:07 Private tape e. \"My Favorite Things\" (Richard Rodgers - Oscar Hammerstein) 24:20 Private tape f. \"Ev'rytime We Say Goodbye\" (C. Porter) 5:37 Private tape; g. \"Mr. P.C.\" (J. Coltrane) 26:28 Private tape; Pablo 7PACD 4433-2",
+   "tunes": [
+    {
+     "index": "a",
+     "title": "Afro Blue",
+     "composer": "M. Santamaria",
+     "duration": null,
+     "issue": null
+    },
+    {
+     "index": "b",
+     "title": "Unknown Title",
+     "composer": "",
+     "duration": null,
+     "issue": null
+    },
+    {
+     "index": "c",
+     "title": "I Want To Talk About You",
+     "composer": "B. Eckstine",
+     "duration": null,
+     "issue": null
+    },
+    {
+     "index": "d",
+     "title": "Impressions",
+     "composer": "J. Coltrane",
+     "duration": "22:07",
+     "issue": null
+    },
+    {
+     "index": "e",
+     "title": "My Favorite Things",
+     "composer": "Richard Rodgers - Oscar Hammerstein",
+     "duration": "24:20",
+     "issue": null
+    },
+    {
+     "index": "f",
+     "title": "Ev'rytime We Say Goodbye",
+     "composer": "C. Porter",
+     "duration": "5:37",
+     "issue": null
+    },
+    {
+     "index": "g",
+     "title": "Mr. P.C.",
+     "composer": "J. Coltrane",
+     "duration": "26:28",
+     "issue": null
+    }
+   ],
+   "note": "A 5' version of \"Chasin' the Trane\", often attributed to this session, is most probably from a different concert.",
+   "source": "David Wild, The Recordings of John Coltrane: A Discography (2nd ed., Wildmusic 1979), web edition",
+   "source_url": "http://www.wildmusic-jazz.com/jcdisc63.htm#631101"
+  },
+  {
+   "session": "631102",
+   "date": "1963-11-02",
+   "group": "JOHN COLTRANE QUARTET",
+   "personnel": [
+    {
+     "name": "Coltrane",
+     "instrument": "soprano sax, tenor sax"
+    },
+    {
+     "name": "McCoy Tyner",
+     "instrument": "piano"
+    },
+    {
+     "name": "Jimmy Garrison",
+     "instrument": "bass"
+    },
+    {
+     "name": "Elvin Jones",
+     "instrument": "drums"
+    }
+   ],
+   "location": "Auditorium Maximum, Freie Universit�t, Berlin Germany",
+   "engineer": "a. \"Lonnie's Lament\" (J. Coltrane) 10:02 Pablo Live 2620-101 b. \"Naima\" (J. Coltrane) 7:55 Pablo Live 2620-101 c. \"Chasin' the Trane\" (J. Coltrane) 5:41 Pablo Live 2620-101 d. \"My Favorite Things\" (R. Rodgers - O. Hammerstein) 21:35 Pablo Live 2620-101 e. \"Afro-Blue\" (M. Santamaria) 7:37 Pablo Live 2620-101 f. \"Cousin Mary\" (J. Coltrane) 9:52 Pablo Live 2620-101 g. \"I Want To Talk About You\" (Billy Eckstine) 8:12 Pablo Live 2620-101",
+   "tunes": [
+    {
+     "index": "a",
+     "title": "Lonnie's Lament",
+     "composer": "J. Coltrane",
+     "duration": "10:02",
+     "issue": null
+    },
+    {
+     "index": "b",
+     "title": "Naima",
+     "composer": "J. Coltrane",
+     "duration": "7:55",
+     "issue": null
+    },
+    {
+     "index": "c",
+     "title": "Chasin' the Trane",
+     "composer": "J. Coltrane",
+     "duration": "5:41",
+     "issue": null
+    },
+    {
+     "index": "d",
+     "title": "My Favorite Things",
+     "composer": "R. Rodgers - O. Hammerstein",
+     "duration": "21:35",
+     "issue": null
+    },
+    {
+     "index": "e",
+     "title": "Afro-Blue",
+     "composer": "M. Santamaria",
+     "duration": "7:37",
+     "issue": null
+    },
+    {
+     "index": "f",
+     "title": "Cousin Mary",
+     "composer": "J. Coltrane",
+     "duration": "9:52",
+     "issue": null
+    },
+    {
+     "index": "g",
+     "title": "I Want To Talk About You",
+     "composer": "Billy Eckstine",
+     "duration": "8:12",
+     "issue": null
+    }
+   ],
+   "note": "Dated as 10/26/63 on Pablo Live 2620-101 (see note)",
+   "source": "David Wild, The Recordings of John Coltrane: A Discography (2nd ed., Wildmusic 1979), web edition",
+   "source_url": "http://www.wildmusic-jazz.com/jcdisc63.htm#631102"
+  },
+  {
+   "session": "631104",
+   "date": "1963-11-04",
+   "group": "JOHN COLTRANE QUARTET",
+   "personnel": [
+    {
+     "name": "Coltrane",
+     "instrument": "soprano sax, tenor sax"
+    },
+    {
+     "name": "McCoy Tyner",
+     "instrument": "piano"
+    },
+    {
+     "name": "Jimmy Garrison",
+     "instrument": "bass"
+    },
+    {
+     "name": "Elvin Jones",
+     "instrument": "drums"
+    }
+   ],
+   "location": "Radio Broadcast, 'Liederhalle' Stuttgart Germany",
+   "engineer": "a. \"The Promise\" (J. Coltrane) 7:33 Private tape; Jazz Galore 1001 b. \"Afro-Blue\" (M. Santamaria) 6:43 Private tape; Jazz Galore 1001 c. \"I Want To Talk About You\" (Billy Eckstine) 10:55 Private tape; Jazz Galore 1001 d. \"Impressions\" (J. Coltrane) 29:10 Private tape e. \"My Favorite Things\" (J. Coltrane) 19:19 Private tape; Jazz Galore 1001 f. \"Ev'rytime We Say Goodbye\" (C. Porter) 6:25 Private tape g. \"Mr. P. C.\" (J. Coltrane) 35:32 Private tape",
+   "tunes": [
+    {
+     "index": "a",
+     "title": "The Promise",
+     "composer": "J. Coltrane",
+     "duration": "7:33",
+     "issue": null
+    },
+    {
+     "index": "b",
+     "title": "Afro-Blue",
+     "composer": "M. Santamaria",
+     "duration": "6:43",
+     "issue": null
+    },
+    {
+     "index": "c",
+     "title": "I Want To Talk About You",
+     "composer": "Billy Eckstine",
+     "duration": "10:55",
+     "issue": null
+    },
+    {
+     "index": "d",
+     "title": "Impressions",
+     "composer": "J. Coltrane",
+     "duration": "29:10",
+     "issue": null
+    },
+    {
+     "index": "e",
+     "title": "My Favorite Things",
+     "composer": "J. Coltrane",
+     "duration": "19:19",
+     "issue": null
+    },
+    {
+     "index": "f",
+     "title": "Ev'rytime We Say Goodbye",
+     "composer": "C. Porter",
+     "duration": "6:25",
+     "issue": null
+    },
+    {
+     "index": "g",
+     "title": "Mr. P. C.",
+     "composer": "J. Coltrane",
+     "duration": "35:32",
+     "issue": null
+    }
+   ],
+   "note": null,
+   "source": "David Wild, The Recordings of John Coltrane: A Discography (2nd ed., Wildmusic 1979), web edition",
+   "source_url": "http://www.wildmusic-jazz.com/jcdisc63.htm#631104"
+  },
+  {
+   "session": "631118",
+   "date": "1963-11-18",
+   "group": "JOHN COLTRANE QUARTET",
+   "personnel": [
+    {
+     "name": "Coltrane",
+     "instrument": "soprano sax, tenor sax"
+    },
+    {
+     "name": "McCoy Tyner",
+     "instrument": "piano"
+    },
+    {
+     "name": "Jimmy Garrison",
+     "instrument": "bass"
+    },
+    {
+     "name": "Elvin Jones",
+     "instrument": "drums"
+    }
+   ],
+   "location": "Van Gelder Studios, Englewood Cliffs NJ",
+   "engineer": "Rudy Van Gelder a. \"Your Lady\" (J. Coltrane) 6:35 Imp A-50; more b. \"Alabama\" (J. Coltrane) 5:05 Imp A-50; more c. \"Alabama\" (J. Coltrane) 2:23 Imp A-50; more",
+   "tunes": [
+    {
+     "index": "a",
+     "title": "Your Lady",
+     "composer": "J. Coltrane",
+     "duration": "6:35",
+     "issue": null
+    },
+    {
+     "index": "b",
+     "title": "Alabama",
+     "composer": "J. Coltrane",
+     "duration": "5:05",
+     "issue": null
+    },
+    {
+     "index": "c",
+     "title": "Alabama",
+     "composer": "J. Coltrane",
+     "duration": "2:23",
+     "issue": null
+    }
+   ],
+   "note": "See notes for a discussion of the two versions of \"Alabama\".",
+   "source": "David Wild, The Recordings of John Coltrane: A Discography (2nd ed., Wildmusic 1979), web edition",
+   "source_url": "http://www.wildmusic-jazz.com/jcdisc63.htm#631118"
+  },
+  {
+   "session": "631207",
+   "date": "1963-12-07",
+   "group": "JOHN COLTRANE QUARTET",
+   "personnel": [
+    {
+     "name": "Coltrane",
+     "instrument": "soprano sax, tenor sax"
+    },
+    {
+     "name": "McCoy Tyner",
+     "instrument": "piano"
+    },
+    {
+     "name": "Jimmy Garrison",
+     "instrument": "bass"
+    },
+    {
+     "name": "Elvin Jones",
+     "instrument": "drums"
+    }
+   ],
+   "location": "Jazz Casual' KQED-TV (studios) San Francisco CA",
+   "engineer": "a. \"Afro-Blue\" (M. Santamaria) 7:10 Private tape; Session 126 b. \"Alabama\" (J. Coltrane) 5:48 Private tape; Session 126 c. \"Impressions\" INC (J. Coltrane) 14:10 Private tape; Session 126",
+   "tunes": [
+    {
+     "index": "a",
+     "title": "Afro-Blue",
+     "composer": "M. Santamaria",
+     "duration": "7:10",
+     "issue": null
+    },
+    {
+     "index": "b",
+     "title": "Alabama",
+     "composer": "J. Coltrane",
+     "duration": "5:48",
+     "issue": null
+    },
+    {
+     "index": "c",
+     "title": "Impressions",
+     "composer": null,
+     "duration": null,
+     "issue": "INC (J. Coltrane) 14:10"
+    }
+   ],
+   "note": "The videotape of this performance is generally available.",
+   "source": "David Wild, The Recordings of John Coltrane: A Discography (2nd ed., Wildmusic 1979), web edition",
+   "source_url": "http://www.wildmusic-jazz.com/jcdisc63.htm#631207"
+  },
+  {
+   "session": "640427",
+   "date": "1964-04-27",
+   "group": "JOHN COLTRANE QUARTET",
+   "personnel": [
+    {
+     "name": "Coltrane",
+     "instrument": "soprano sax, tenor sax"
+    },
+    {
+     "name": "McCoy Tyner",
+     "instrument": "piano"
+    },
+    {
+     "name": "Jimmy Garrison",
+     "instrument": "bass"
+    },
+    {
+     "name": "Elvin Jones",
+     "instrument": "drums"
+    }
+   ],
+   "location": "Van Gelder Studios, Englewood Cliffs NJ",
+   "engineer": "Rudy Van Gelder a. \"Crescent\" (J. Coltrane) 10:04 Impulse IMPD8-280 b. \"Lonnie's Lament\" (J. Coltrane) 11:42 Imp A-66; more c. \"The Drum Thing\" (J. Coltrane) 7:20 Imp A-66; more d. \"Wise One\" (J. Coltrane) 9:01 Imp A-66; more e. \"Bessie's Blues\" INC (J. Coltrane) 2:58 Impulse IMPD8-280 f. \"Song of Praise\" (J. Coltrane) 2:41 Impulse IMPD8-280",
+   "tunes": [
+    {
+     "index": "a",
+     "title": "Crescent",
+     "composer": "J. Coltrane",
+     "duration": "10:04",
+     "issue": null
+    },
+    {
+     "index": "b",
+     "title": "Lonnie's Lament",
+     "composer": "J. Coltrane",
+     "duration": "11:42",
+     "issue": null
+    },
+    {
+     "index": "c",
+     "title": "The Drum Thing",
+     "composer": "J. Coltrane",
+     "duration": "7:20",
+     "issue": null
+    },
+    {
+     "index": "d",
+     "title": "Wise One",
+     "composer": "J. Coltrane",
+     "duration": "9:01",
+     "issue": null
+    },
+    {
+     "index": "e",
+     "title": "Bessie's Blues",
+     "composer": null,
+     "duration": null,
+     "issue": "INC (J. Coltrane) 2:58"
+    },
+    {
+     "index": "f",
+     "title": "Song of Praise",
+     "composer": "J. Coltrane",
+     "duration": "2:41",
+     "issue": null
+    }
+   ],
+   "note": null,
+   "source": "David Wild, The Recordings of John Coltrane: A Discography (2nd ed., Wildmusic 1979), web edition",
+   "source_url": "http://www.wildmusic-jazz.com/jcdisc64.htm#640427"
+  },
+  {
+   "session": "640601",
+   "date": "1964-06-01",
+   "group": "JOHN COLTRANE QUARTET",
+   "personnel": [
+    {
+     "name": "Coltrane",
+     "instrument": "soprano sax, tenor sax"
+    },
+    {
+     "name": "McCoy Tyner",
+     "instrument": "piano"
+    },
+    {
+     "name": "Jimmy Garrison",
+     "instrument": "bass"
+    },
+    {
+     "name": "Elvin Jones",
+     "instrument": "drums"
+    }
+   ],
+   "location": "Van Gelder Studios, Englewood Cliffs NJ",
+   "engineer": "Rudy Van Gelder a. \"Crescent\" (J. Coltrane) 8:40 Imp A-66; more b. \"Bessie's Blues\" (J. Coltrane) 3:30 Imp A-66; more",
+   "tunes": [
+    {
+     "index": "a",
+     "title": "Crescent",
+     "composer": "J. Coltrane",
+     "duration": "8:40",
+     "issue": null
+    },
+    {
+     "index": "b",
+     "title": "Bessie's Blues",
+     "composer": "J. Coltrane",
+     "duration": "3:30",
+     "issue": null
+    }
+   ],
+   "note": null,
+   "source": "David Wild, The Recordings of John Coltrane: A Discography (2nd ed., Wildmusic 1979), web edition",
+   "source_url": "http://www.wildmusic-jazz.com/jcdisc64.htm#640601"
+  },
+  {
+   "session": "641209",
+   "date": "1964-12-09",
+   "group": "JOHN COLTRANE QUARTET",
+   "personnel": [
+    {
+     "name": "Coltrane",
+     "instrument": "soprano sax, tenor sax"
+    },
+    {
+     "name": "McCoy Tyner",
+     "instrument": "piano"
+    },
+    {
+     "name": "Jimmy Garrison",
+     "instrument": "bass"
+    },
+    {
+     "name": "Elvin Jones",
+     "instrument": "drums"
+    }
+   ],
+   "location": "Van Gelder Studios, Englewood Cliffs NJ",
+   "engineer": "Rudy Van Gelder Suite: A Love Supreme a. \"Part I Acknowledgement\" (J. Coltrane) 7:39 Imp A-77; more b. \"Part II Resolution\" AT (J. Coltrane) 7:21 Imp IMPD8-280 c. \"Part II Resolution\" (J. Coltrane) 7:15 Imp A-77; more d. \"Part III Pursuance\" (J. Coltrane) 10:40 Imp A-77; more e. \"Part IV Psalm\" (J. Coltrane) 7:00 Imp A-77; more",
+   "tunes": [
+    {
+     "index": "a",
+     "title": "Part I Acknowledgement",
+     "composer": "J. Coltrane",
+     "duration": "7:39",
+     "issue": null
+    },
+    {
+     "index": "b",
+     "title": "Part II Resolution",
+     "composer": null,
+     "duration": null,
+     "issue": "AT (J. Coltrane) 7:21"
+    },
+    {
+     "index": "c",
+     "title": "Part II Resolution",
+     "composer": "J. Coltrane",
+     "duration": "7:15",
+     "issue": null
+    },
+    {
+     "index": "d",
+     "title": "Part III Pursuance",
+     "composer": "J. Coltrane",
+     "duration": "10:40",
+     "issue": null
+    },
+    {
+     "index": "e",
+     "title": "Part IV Psalm",
+     "composer": "J. Coltrane",
+     "duration": "7:00",
+     "issue": null
+    }
+   ],
+   "note": "641209d and e are continuous. Coltrane is overdubbed on ts at the end of 641209e. Garrison and Coltrane chant on 641209a.",
+   "source": "David Wild, The Recordings of John Coltrane: A Discography (2nd ed., Wildmusic 1979), web edition",
+   "source_url": "http://www.wildmusic-jazz.com/jcdisc64.htm#641209"
+  },
+  {
+   "session": "641210",
+   "date": "1964-12-10",
+   "group": "JOHN COLTRANE QUARTET",
+   "personnel": [
+    {
+     "name": "Coltrane",
+     "instrument": "tenor sax"
+    },
+    {
+     "name": "Archie Shepp",
+     "instrument": "tenor sax"
+    },
+    {
+     "name": "McCoy Tyner",
+     "instrument": "piano"
+    },
+    {
+     "name": "Jimmy Garrison",
+     "instrument": "bass"
+    },
+    {
+     "name": "Art Davis",
+     "instrument": "bass"
+    },
+    {
+     "name": "Elvin Jones",
+     "instrument": "drums"
+    }
+   ],
+   "location": "Van Gelder Studios, Englewood Cliffs NJ",
+   "engineer": "Rudy Van Gelder Suite: A Love Supreme a. \"Part I Acknowledgement\" (J. Coltrane) Impulse unissued b. \"Part II Resolution\" (J. Coltrane) Impulse unissued",
+   "tunes": [
+    {
+     "index": "a",
+     "title": "Part I Acknowledgement",
+     "composer": "J. Coltrane",
+     "duration": null,
+     "issue": null
+    },
+    {
+     "index": "b",
+     "title": "Part II Resolution",
+     "composer": "J. Coltrane",
+     "duration": null,
+     "issue": null
+    }
+   ],
+   "note": "See the note for a discussion of this session.",
+   "source": "David Wild, The Recordings of John Coltrane: A Discography (2nd ed., Wildmusic 1979), web edition",
+   "source_url": "http://www.wildmusic-jazz.com/jcdisc64.htm#641210"
+  },
+  {
+   "session": "650217",
+   "date": "1965-02-17",
+   "group": "JOHN COLTRANE QUINTET",
+   "personnel": [
+    {
+     "name": "Coltrane",
+     "instrument": "soprano sax, tenor sax"
+    },
+    {
+     "name": "McCoy Tyner",
+     "instrument": "piano"
+    },
+    {
+     "name": "Jimmy Garrison",
+     "instrument": "bass"
+    },
+    {
+     "name": "Art Davis",
+     "instrument": "bass"
+    },
+    {
+     "name": "Elvin Jones",
+     "instrument": "drums"
+    }
+   ],
+   "location": "Van Gelder Studios, Englewood Cliffs NJ",
+   "engineer": "Rudy Van Gelder a. \"Nature Boy\" (E. Ahbez) 6:52 Imp IZ 9345-2; more b. \"Feelin' Good\" (L. Bricusse-A.Newley) Imp unissued c. \"Chim Chim Cheree\" (R. Sherman-R. Sherman) Imp unissued",
+   "tunes": [
+    {
+     "index": "a",
+     "title": "Nature Boy",
+     "composer": "E. Ahbez",
+     "duration": "6:52",
+     "issue": null
+    },
+    {
+     "index": "b",
+     "title": "Feelin' Good",
+     "composer": "L. Bricusse-A.Newley",
+     "duration": null,
+     "issue": null
+    },
+    {
+     "index": "c",
+     "title": "Chim Chim Cheree",
+     "composer": "R. Sherman-R. Sherman",
+     "duration": null,
+     "issue": null
+    }
+   ],
+   "note": "Davis does not play on 650217c.",
+   "source": "David Wild, The Recordings of John Coltrane: A Discography (2nd ed., Wildmusic 1979), web edition",
+   "source_url": "http://www.wildmusic-jazz.com/jcdisc65.htm#650217"
+  },
+  {
+   "session": "650218",
+   "date": "1965-02-18",
+   "group": "JOHN COLTRANE QUINTET",
+   "personnel": [
+    {
+     "name": "Coltrane",
+     "instrument": "soprano sax, tenor sax"
+    },
+    {
+     "name": "McCoy Tyner",
+     "instrument": "piano"
+    },
+    {
+     "name": "Art Davis",
+     "instrument": "bass"
+    },
+    {
+     "name": "Jimmy Garrison",
+     "instrument": "bass"
+    },
+    {
+     "name": "Elvin Jones",
+     "instrument": "drums"
+    }
+   ],
+   "location": "Van Gelder Studios, Englewood Cliffs NJ",
+   "engineer": "Rudy Van Gelder a. \"Nature Boy\" (E. Ahbez) 8:02 Imp A-85;more b. \"Feelin' Good\" AT (L. Bricusse-A. Newley) 5:52 Imp IMPD8-280 c. \"Feelin' Good\" (L. Bricusse-A. Newley) 6:20 Imp IZ9345-2;more",
+   "tunes": [
+    {
+     "index": "a",
+     "title": "Nature Boy",
+     "composer": "E. Ahbez",
+     "duration": "8:02",
+     "issue": null
+    },
+    {
+     "index": "b",
+     "title": "Feelin' Good",
+     "composer": null,
+     "duration": null,
+     "issue": "AT (L. Bricusse-A. Newley) 5:52"
+    },
+    {
+     "index": "c",
+     "title": "Feelin' Good",
+     "composer": "L. Bricusse-A. Newley",
+     "duration": "6:20",
+     "issue": null
+    }
+   ],
+   "note": null,
+   "source": "David Wild, The Recordings of John Coltrane: A Discography (2nd ed., Wildmusic 1979), web edition",
+   "source_url": "http://www.wildmusic-jazz.com/jcdisc65.htm#650218"
+  },
+  {
+   "session": "650319",
+   "date": "1965-03-19",
+   "group": "JOHN COLTRANE QUARTET",
+   "personnel": [
+    {
+     "name": "Coltrane",
+     "instrument": "soprano sax, tenor sax"
+    },
+    {
+     "name": "McCoy Tyner",
+     "instrument": "piano"
+    },
+    {
+     "name": "Jimmy Garrison",
+     "instrument": "bass"
+    },
+    {
+     "name": "Elvin Jones",
+     "instrument": "drums"
+    }
+   ],
+   "location": "Radio Broadcast'Half Note' NYC",
+   "engineer": "a. \"Chim Chim Cheree\" (R. Sherman - R. Sherman) 20:16 Private tape; JforJazz JFJ800; Chiaroscuro CR2023 b. \"Impressions\" (J. Coltrane) 21:58 Private tape; JforJazz JFJ800; Chiaroscuro CR2023",
+   "tunes": [
+    {
+     "index": "a",
+     "title": "Chim Chim Cheree",
+     "composer": "R. Sherman - R. Sherman",
+     "duration": "20:16",
+     "issue": null
+    },
+    {
+     "index": "b",
+     "title": "Impressions",
+     "composer": "J. Coltrane",
+     "duration": "21:58",
+     "issue": null
+    }
+   ],
+   "note": "' NYC",
+   "source": "David Wild, The Recordings of John Coltrane: A Discography (2nd ed., Wildmusic 1979), web edition",
+   "source_url": "http://www.wildmusic-jazz.com/jcdisc65.htm#650319"
+  },
+  {
+   "session": "650326",
+   "date": "1965-03-26",
+   "group": "JOHN COLTRANE QUARTET",
+   "personnel": [
+    {
+     "name": "Coltrane",
+     "instrument": "soprano sax, tenor sax"
+    },
+    {
+     "name": "McCoy Tyner",
+     "instrument": "piano"
+    },
+    {
+     "name": "Jimmy Garrison",
+     "instrument": "bass"
+    },
+    {
+     "name": "Elvin Jones",
+     "instrument": "drums"
+    }
+   ],
+   "location": "Radio Broadcast'Half Note' NYC",
+   "engineer": "a. \"One Down, One Up\" (J. Coltrane) 27:40 Private tape; Impulse 0002380-02 b. \"Afro Blue\" INC (M. Santamaria) 12:44 Private tape; Impulse 0002380-02",
+   "tunes": [
+    {
+     "index": "a",
+     "title": "One Down, One Up",
+     "composer": "J. Coltrane",
+     "duration": "27:40",
+     "issue": null
+    },
+    {
+     "index": "b",
+     "title": "Afro Blue",
+     "composer": null,
+     "duration": null,
+     "issue": "INC (M. Santamaria) 12:44"
+    }
+   ],
+   "note": "' NYC",
+   "source": "David Wild, The Recordings of John Coltrane: A Discography (2nd ed., Wildmusic 1979), web edition",
+   "source_url": "http://www.wildmusic-jazz.com/jcdisc65.htm#650326"
+  },
+  {
+   "session": "650328",
+   "date": "1965-03-28",
+   "group": "JOHN COLTRANE QUARTET",
+   "personnel": [
+    {
+     "name": "Coltrane",
+     "instrument": "soprano sax, tenor sax"
+    },
+    {
+     "name": "McCoy Tyner",
+     "instrument": "piano"
+    },
+    {
+     "name": "Jimmy Garrison",
+     "instrument": "bass"
+    },
+    {
+     "name": "Elvin Jones",
+     "instrument": "drums"
+    }
+   ],
+   "location": "Village Gate' NYC",
+   "engineer": "Rudy Van Gelder a. \"Nature Boy\" (E. Ahbez) 7:54 Imp A-90; more b. \" Bass Solo \" (J. Garrison) Imp unissued c. \" One Down, One Up \" (J. Coltrane) Imp unissued",
+   "tunes": [
+    {
+     "index": "a",
+     "title": "Nature Boy",
+     "composer": "E. Ahbez",
+     "duration": "7:54",
+     "issue": null
+    },
+    {
+     "index": "b",
+     "title": "Bass Solo",
+     "composer": "J. Garrison",
+     "duration": null,
+     "issue": null
+    },
+    {
+     "index": "c",
+     "title": "One Down, One Up",
+     "composer": "J. Coltrane",
+     "duration": null,
+     "issue": null
+    }
+   ],
+   "note": "Taped at \"New Black Music\", a benefit concert for the Black Arts Repertory Theatre/School produced by Leroi Jones. Two titles (plus a bass solo) were recorded.",
+   "source": "David Wild, The Recordings of John Coltrane: A Discography (2nd ed., Wildmusic 1979), web edition",
+   "source_url": "http://www.wildmusic-jazz.com/jcdisc65.htm#650328"
+  },
+  {
+   "session": "650402",
+   "date": "1965-04-02",
+   "group": "JOHN COLTRANE QUARTET",
+   "personnel": [
+    {
+     "name": "Coltrane",
+     "instrument": "soprano sax, tenor sax"
+    },
+    {
+     "name": "McCoy Tyner",
+     "instrument": "piano"
+    },
+    {
+     "name": "Jimmy Garrison",
+     "instrument": "bass"
+    },
+    {
+     "name": "Elvin Jones",
+     "instrument": "drums"
+    }
+   ],
+   "location": "Radio broadcast, 'Half Note, New York City NY",
+   "engineer": "a. \"Untitled Original\" (J. Coltrane) 23:11 Private tape; Blue Parrot(E) AR700 b. \"I Want To Talk About You\" (B. Eckstine) 15:26 Private Tape c. \"Afro-Blue\" INC (M. Santamaria) 5:40 Private Tape",
+   "tunes": [
+    {
+     "index": "a",
+     "title": "Untitled Original",
+     "composer": "J. Coltrane",
+     "duration": "23:11",
+     "issue": null
+    },
+    {
+     "index": "b",
+     "title": "I Want To Talk About You",
+     "composer": "B. Eckstine",
+     "duration": "15:26",
+     "issue": null
+    },
+    {
+     "index": "c",
+     "title": "Afro-Blue",
+     "composer": null,
+     "duration": null,
+     "issue": "INC (M. Santamaria) 5:40"
+    }
+   ],
+   "note": "', New York City NY",
+   "source": "David Wild, The Recordings of John Coltrane: A Discography (2nd ed., Wildmusic 1979), web edition",
+   "source_url": "http://www.wildmusic-jazz.com/jcdisc65.htm#650402"
+  },
+  {
+   "session": "650507",
+   "date": "1965-05-07",
+   "group": "JOHN COLTRANE QUARTET",
+   "personnel": [
+    {
+     "name": "Coltrane",
+     "instrument": "soprano sax, tenor sax"
+    },
+    {
+     "name": "McCoy Tyner",
+     "instrument": "piano"
+    },
+    {
+     "name": "Jimmy Garrison",
+     "instrument": "bass"
+    },
+    {
+     "name": "Elvin Jones",
+     "instrument": "drums"
+    }
+   ],
+   "location": "Radio Broadcast, 'Half Note, New York City NY",
+   "engineer": "a. \"Song of Praise\" (J. Coltrane) 19:39 Private Tape; Ozone 21; Impulse Impulse 0002380-02 b. \"My Favorite Things\" INC (R. Rodgers - O. Hammerstein) 22:47 Private tape; Blue Parrot (E) AR705; Impulse 0002380-02",
+   "tunes": [
+    {
+     "index": "a",
+     "title": "Song of Praise",
+     "composer": "J. Coltrane",
+     "duration": "19:39",
+     "issue": null
+    },
+    {
+     "index": "b",
+     "title": "My Favorite Things",
+     "composer": null,
+     "duration": null,
+     "issue": "INC (R. Rodgers - O. Hammerstein) 22:47"
+    }
+   ],
+   "note": "', New York City NY",
+   "source": "David Wild, The Recordings of John Coltrane: A Discography (2nd ed., Wildmusic 1979), web edition",
+   "source_url": "http://www.wildmusic-jazz.com/jcdisc65.htm#650507"
+  },
+  {
+   "session": "650517",
+   "date": "1965-05-17",
+   "group": "JOHN COLTRANE QUARTET",
+   "personnel": [
+    {
+     "name": "Coltrane",
+     "instrument": "soprano sax, tenor sax"
+    },
+    {
+     "name": "McCoy Tyner",
+     "instrument": "piano"
+    },
+    {
+     "name": "Jimmy Garrison",
+     "instrument": "bass"
+    },
+    {
+     "name": "Elvin Jones",
+     "instrument": "drums"
+    }
+   ],
+   "location": "Van Gelder Studios, Englewood Cliffs NJ",
+   "engineer": "Rudy Van Gelder a. \"Chim Chim Cheree\" (R. Sherman - R. Sherman) 6:56 Imp A-85; more b. \"Brasilia\" (J. Coltrane) 12:56 Imp A-85; more c. \"Song of Praise\" (J. Coltrane) 9:49 Imp A-85; more",
+   "tunes": [
+    {
+     "index": "a",
+     "title": "Chim Chim Cheree",
+     "composer": "R. Sherman - R. Sherman",
+     "duration": "6:56",
+     "issue": null
+    },
+    {
+     "index": "b",
+     "title": "Brasilia",
+     "composer": "J. Coltrane",
+     "duration": "12:56",
+     "issue": null
+    },
+    {
+     "index": "c",
+     "title": "Song of Praise",
+     "composer": "J. Coltrane",
+     "duration": "9:49",
+     "issue": null
+    }
+   ],
+   "note": null,
+   "source": "David Wild, The Recordings of John Coltrane: A Discography (2nd ed., Wildmusic 1979), web edition",
+   "source_url": "http://www.wildmusic-jazz.com/jcdisc65.htm#650517"
+  },
+  {
+   "session": "650526",
+   "date": "1965-05-26",
+   "group": "JOHN COLTRANE QUARTET",
+   "personnel": [
+    {
+     "name": "Coltrane",
+     "instrument": "soprano sax, tenor sax"
+    },
+    {
+     "name": "McCoy Tyner",
+     "instrument": "piano"
+    },
+    {
+     "name": "Jimmy Garrison",
+     "instrument": "bass"
+    },
+    {
+     "name": "Roy Haynes",
+     "instrument": "drums"
+    }
+   ],
+   "location": "Van Gelder Studios, Englewood Cliffs NJ",
+   "engineer": "Rudy Van Gelder a. \"After the Crescent\" (J. Coltrane) 13:34 Imp IZ9346-2; more b. \"Dear Lord\" AT (J. Coltrane) 7:41 Imp IMPD8-280 c. \"Dear Lord\" (J. Coltrane) 5:31 Imp A9195; more d. \"One Down, One Up\" (J. Coltrane) 15:25 Imp IZ9346-2; more e. \"Welcome\" (J. Coltrane) Imp unissued",
+   "tunes": [
+    {
+     "index": "a",
+     "title": "After the Crescent",
+     "composer": "J. Coltrane",
+     "duration": "13:34",
+     "issue": null
+    },
+    {
+     "index": "b",
+     "title": "Dear Lord",
+     "composer": null,
+     "duration": null,
+     "issue": "AT (J. Coltrane) 7:41"
+    },
+    {
+     "index": "c",
+     "title": "Dear Lord",
+     "composer": "J. Coltrane",
+     "duration": "5:31",
+     "issue": null
+    },
+    {
+     "index": "d",
+     "title": "One Down, One Up",
+     "composer": "J. Coltrane",
+     "duration": "15:25",
+     "issue": null
+    },
+    {
+     "index": "e",
+     "title": "Welcome",
+     "composer": "J. Coltrane",
+     "duration": null,
+     "issue": null
+    }
+   ],
+   "note": null,
+   "source": "David Wild, The Recordings of John Coltrane: A Discography (2nd ed., Wildmusic 1979), web edition",
+   "source_url": "http://www.wildmusic-jazz.com/jcdisc65.htm#650526"
+  },
+  {
+   "session": "650610",
+   "date": "1965-06-10",
+   "group": "JOHN COLTRANE QUARTET",
+   "personnel": [
+    {
+     "name": "Coltrane",
+     "instrument": "soprano sax, tenor sax"
+    },
+    {
+     "name": "McCoy Tyner",
+     "instrument": "piano"
+    },
+    {
+     "name": "Jimmy Garrison",
+     "instrument": "bass"
+    },
+    {
+     "name": "Elvin Jones",
+     "instrument": "drums"
+    }
+   ],
+   "location": "Van Gelder Studios, Englewood Cliffs NJ",
+   "engineer": "Rudy Van Gelder a. \"Welcome\" (J. Coltrane) 5:17 Imp A9106; more b. \"The Last Blues\" (J. Coltrane) 4:22 Impulse[CD] IMPD-246 c. \"Untitled Original\" (J. Coltrane) 14:40 Imp IZ9345-2; more d. \"Transition\" (J. Coltrane) 15:29 Imp A9195; more e. \"Suite\" (J. Coltrane) 21:14 \"Part I--Prayer and Meditation: Day\" \"Part II--Peace and After\" \"Part III--Prayer and Meditation: Evening\" \"Part IV--Affirmation\" \"Part V--Prayer and Meditation: 4 A.M.\" Imp A9195; more",
+   "tunes": [
+    {
+     "index": "a",
+     "title": "Welcome",
+     "composer": "J. Coltrane",
+     "duration": "5:17",
+     "issue": null
+    },
+    {
+     "index": "b",
+     "title": "The Last Blues",
+     "composer": "J. Coltrane",
+     "duration": "4:22",
+     "issue": null
+    },
+    {
+     "index": "c",
+     "title": "Untitled Original",
+     "composer": "J. Coltrane",
+     "duration": "14:40",
+     "issue": null
+    },
+    {
+     "index": "d",
+     "title": "Transition",
+     "composer": "J. Coltrane",
+     "duration": "15:29",
+     "issue": null
+    },
+    {
+     "index": "e",
+     "title": "Suite",
+     "composer": "J. Coltrane",
+     "duration": "21:14",
+     "issue": null
+    }
+   ],
+   "note": "650610c as \"Untitled 90314\" on all issues. Tyner out on 650610b.",
+   "source": "David Wild, The Recordings of John Coltrane: A Discography (2nd ed., Wildmusic 1979), web edition",
+   "source_url": "http://www.wildmusic-jazz.com/jcdisc65.htm#650610"
+  },
+  {
+   "session": "650616",
+   "date": "1965-06-16",
+   "group": "JOHN COLTRANE QUARTET",
+   "personnel": [
+    {
+     "name": "Coltrane",
+     "instrument": "soprano sax, tenor sax"
+    },
+    {
+     "name": "McCoy Tyner",
+     "instrument": "piano"
+    },
+    {
+     "name": "Jimmy Garrison",
+     "instrument": "bass"
+    },
+    {
+     "name": "Elvin Jones",
+     "instrument": "drums"
+    }
+   ],
+   "location": "Van Gelder Studios, Englewood Cliffs NJ",
+   "engineer": "Rudy Van Gelder a. \"Living Space\" AT (J. Coltrane) 14:02 Imp Imp IMPD8-280 b. \"Living Space\" (J. Coltrane) 10:20 Imp A9225, IZ9345-2; more c. \"Dusk Dawn\" AT (J. Coltrane) Imp unissued d. \"Dusk Dawn\" (J. Coltrane) 10:45 Imp IZ9345-2; more e. \"Vigil\" BD (J. Coltrane) Imp unissued f. \"Vigil\" (J. Coltrane) 9:36 Imp A9106; more g. \"Untitled Original\" (J. Coltrane) 10:44 Imp IZ9345-2; more",
+   "tunes": [
+    {
+     "index": "a",
+     "title": "Living Space",
+     "composer": null,
+     "duration": null,
+     "issue": "AT (J. Coltrane) 14:02"
+    },
+    {
+     "index": "b",
+     "title": "Living Space",
+     "composer": "J. Coltrane",
+     "duration": "10:20",
+     "issue": null
+    },
+    {
+     "index": "c",
+     "title": "Dusk Dawn",
+     "composer": null,
+     "duration": null,
+     "issue": "AT (J. Coltrane)"
+    },
+    {
+     "index": "d",
+     "title": "Dusk Dawn",
+     "composer": "J. Coltrane",
+     "duration": "10:45",
+     "issue": null
+    },
+    {
+     "index": "e",
+     "title": "Vigil",
+     "composer": null,
+     "duration": null,
+     "issue": "BD (J. Coltrane)"
+    },
+    {
+     "index": "f",
+     "title": "Vigil",
+     "composer": "J. Coltrane",
+     "duration": "9:36",
+     "issue": null
+    },
+    {
+     "index": "g",
+     "title": "Untitled Original",
+     "composer": "J. Coltrane",
+     "duration": "10:44",
+     "issue": null
+    }
+   ],
+   "note": "See the notes regarding \"Living Space\". Tyner, Garrison out on 650616e and f. 650616g as \"Untitled 90320\" on all issues.",
+   "source": "David Wild, The Recordings of John Coltrane: A Discography (2nd ed., Wildmusic 1979), web edition",
+   "source_url": "http://www.wildmusic-jazz.com/jcdisc65.htm#650616"
+  },
+  {
+   "session": "650628",
+   "date": "1965-06-28",
+   "group": "JOHN COLTRANE ORCHESTRA",
+   "personnel": [
+    {
+     "name": "Freddie Hubbard",
+     "instrument": "trumpet"
+    },
+    {
+     "name": "Dewey Johnson",
+     "instrument": "trumpet"
+    },
+    {
+     "name": "John Tchicai",
+     "instrument": "alto sax"
+    },
+    {
+     "name": "Marion Brown",
+     "instrument": "alto sax"
+    },
+    {
+     "name": "Coltrane",
+     "instrument": "tenor sax"
+    },
+    {
+     "name": "Pharoah Sanders",
+     "instrument": "tenor sax"
+    },
+    {
+     "name": "Archie Shepp",
+     "instrument": "tenor sax"
+    },
+    {
+     "name": "McCoy Tyner",
+     "instrument": "piano"
+    },
+    {
+     "name": "Art Davis",
+     "instrument": "bass"
+    },
+    {
+     "name": "Jimmy Garrison",
+     "instrument": "bass"
+    },
+    {
+     "name": "Elvin Jones",
+     "instrument": "drums"
+    }
+   ],
+   "location": "Van Gelder Studios, Englewood Cliffs NJ",
+   "engineer": "Rudy Van Gelder a. \"Ascension \" Ed I Pt I (J. Coltrane) 18:55 Imp A-95; more b. \"Ascension\" Ed I Pt II (J. Coltrane) 19:42 Imp A-95; more c. \"Ascension\" Ed II Pt I (J. Coltrane) 18:35 Imp A-95; more d. \"Ascension\" Ed II Pt II (J. Coltrane) 19:55 Imp A-95; more",
+   "tunes": [
+    {
+     "index": "a",
+     "title": "Ascension",
+     "composer": null,
+     "duration": null,
+     "issue": "Ed I Pt I (J. Coltrane) 18:55"
+    },
+    {
+     "index": "b",
+     "title": "Ascension",
+     "composer": null,
+     "duration": null,
+     "issue": "Ed I Pt II (J. Coltrane) 19:42"
+    },
+    {
+     "index": "c",
+     "title": "Ascension",
+     "composer": null,
+     "duration": null,
+     "issue": "Ed II Pt I (J. Coltrane) 18:35"
+    },
+    {
+     "index": "d",
+     "title": "Ascension",
+     "composer": null,
+     "duration": null,
+     "issue": "Ed II Pt II (J. Coltrane) 19:55"
+    }
+   ],
+   "note": "See note for a discussion of this session.",
+   "source": "David Wild, The Recordings of John Coltrane: A Discography (2nd ed., Wildmusic 1979), web edition",
+   "source_url": "http://www.wildmusic-jazz.com/jcdisc65.htm#650628"
+  },
+  {
+   "session": "650702",
+   "date": "1965-07-02",
+   "group": "JOHN COLTRANE QUARTET",
+   "personnel": [
+    {
+     "name": "Coltrane",
+     "instrument": "soprano sax, tenor sax"
+    },
+    {
+     "name": "McCoy Tyner",
+     "instrument": "piano"
+    },
+    {
+     "name": "Jimmy Garrison",
+     "instrument": "bass"
+    },
+    {
+     "name": "Elvin Jones",
+     "instrument": "drums"
+    }
+   ],
+   "location": "Newport Jazz Festival, Newport RI",
+   "engineer": "a. \"One Down, One Up\" (J. Coltrane) 12:42 Imp A-94; more b. \"My Favorite Things\" (R. Rodgers - O. Hammerstein) 14:44 Imp IZ9345-2; more",
+   "tunes": [
+    {
+     "index": "a",
+     "title": "One Down, One Up",
+     "composer": "J. Coltrane",
+     "duration": "12:42",
+     "issue": null
+    },
+    {
+     "index": "b",
+     "title": "My Favorite Things",
+     "composer": "R. Rodgers - O. Hammerstein",
+     "duration": "14:44",
+     "issue": null
+    }
+   ],
+   "note": null,
+   "source": "David Wild, The Recordings of John Coltrane: A Discography (2nd ed., Wildmusic 1979), web edition",
+   "source_url": "http://www.wildmusic-jazz.com/jcdisc65.htm#650702"
+  },
+  {
+   "session": "650726",
+   "date": "1965-07-26",
+   "group": "JOHN COLTRANE QUARTET",
+   "personnel": [
+    {
+     "name": "Coltrane",
+     "instrument": "soprano sax, tenor sax"
+    },
+    {
+     "name": "McCoy Tyner",
+     "instrument": "piano"
+    },
+    {
+     "name": "Jimmy Garrison",
+     "instrument": "bass"
+    },
+    {
+     "name": "Elvin Jones",
+     "instrument": "drums"
+    }
+   ],
+   "location": "Radio Broadcast, 'Juan-Les-Pins Jazz Festival, Antibes, France",
+   "engineer": "Suite: A Love Supreme a. \"Part I Acknowledgement\" (J. Coltrane) Private tape; Ingo(I) 11 b. \"Part II Resolution\" (J. Coltrane) Private tape; Ingo(I) 11 c. \"Part III Pursuance\" (J. Coltrane) Private tape; Jazz Connoisseur(I) JC112; Ingo(I) 11 d. \"Part IV Psalm\" (J. Coltrane) Private tape; Ingo(I) 11",
+   "tunes": [
+    {
+     "index": "a",
+     "title": "Part I Acknowledgement",
+     "composer": "J. Coltrane",
+     "duration": null,
+     "issue": null
+    },
+    {
+     "index": "b",
+     "title": "Part II Resolution",
+     "composer": "J. Coltrane",
+     "duration": null,
+     "issue": null
+    },
+    {
+     "index": "c",
+     "title": "Part III Pursuance",
+     "composer": "J. Coltrane",
+     "duration": null,
+     "issue": null
+    },
+    {
+     "index": "d",
+     "title": "Part IV Psalm",
+     "composer": "J. Coltrane",
+     "duration": null,
+     "issue": null
+    }
+   ],
+   "note": "The complete performance runs 48:00; most versions are incomplete.",
+   "source": "David Wild, The Recordings of John Coltrane: A Discography (2nd ed., Wildmusic 1979), web edition",
+   "source_url": "http://www.wildmusic-jazz.com/jcdisc65.htm#650726"
+  },
+  {
+   "session": "650727",
+   "date": "1965-07-27",
+   "group": "JOHN COLTRANE QUARTET",
+   "personnel": [
+    {
+     "name": "Coltrane",
+     "instrument": "soprano sax, tenor sax"
+    },
+    {
+     "name": "McCoy Tyner",
+     "instrument": "piano"
+    },
+    {
+     "name": "Jimmy Garrison",
+     "instrument": "bass"
+    },
+    {
+     "name": "Elvin Jones",
+     "instrument": "drums"
+    }
+   ],
+   "location": "Radio Broadcast, 'Juan-Les-Pins Jazz Festival, Antibes France",
+   "engineer": "a. \"Naima\" (J. Coltrane) 7:08 Private Tape; Byg(J) YX4001/4002 b. \"Blue Valse\" (J. Coltrane) 15:00 Private Tape; France's Concert (F) FCD119 c. \"My Favorite Things\" (R. Rodgers-O. Hammerstein) 17:40 Private tape; Frances' Concert(F) FC119 d. \"Impressions\" (J. Coltrane) 21:10 Private tape; France's Concert FCD119",
+   "tunes": [
+    {
+     "index": "a",
+     "title": "Naima",
+     "composer": "J. Coltrane",
+     "duration": "7:08",
+     "issue": null
+    },
+    {
+     "index": "b",
+     "title": "Blue Valse",
+     "composer": "J. Coltrane",
+     "duration": "15:00",
+     "issue": null
+    },
+    {
+     "index": "c",
+     "title": "My Favorite Things",
+     "composer": "R. Rodgers-O. Hammerstein",
+     "duration": "17:40",
+     "issue": null
+    },
+    {
+     "index": "d",
+     "title": "Impressions",
+     "composer": "J. Coltrane",
+     "duration": "21:10",
+     "issue": null
+    }
+   ],
+   "note": "See note for discussion of sequence",
+   "source": "David Wild, The Recordings of John Coltrane: A Discography (2nd ed., Wildmusic 1979), web edition",
+   "source_url": "http://www.wildmusic-jazz.com/jcdisc65.htm#650727"
+  },
+  {
+   "session": "650728",
+   "date": "1965-07-28",
+   "group": "JOHN COLTRANE QUARTET",
+   "personnel": [
+    {
+     "name": "Coltrane",
+     "instrument": "soprano sax, tenor sax"
+    },
+    {
+     "name": "McCoy Tyner",
+     "instrument": "piano"
+    },
+    {
+     "name": "Jimmy Garrison",
+     "instrument": "bass"
+    },
+    {
+     "name": "Elvin Jones",
+     "instrument": "drums"
+    }
+   ],
+   "location": "Radio Broadcast, 'Salle Pleyel, Paris France",
+   "engineer": "a. \"Afro-Blue\" (M. Santamaria) 10:58 Private tape; Byg(J) YX4001/4002 b. \"Impressions\" (J. Coltrane) 16:17 Private tape; Byg(J) YX 4001/4002 c. \"Blue Valse\" INC (J. Coltrane) 22:47 Private tape; Byg(J) YX 4001/4002",
+   "tunes": [
+    {
+     "index": "a",
+     "title": "Afro-Blue",
+     "composer": "M. Santamaria",
+     "duration": "10:58",
+     "issue": null
+    },
+    {
+     "index": "b",
+     "title": "Impressions",
+     "composer": "J. Coltrane",
+     "duration": "16:17",
+     "issue": null
+    },
+    {
+     "index": "c",
+     "title": "Blue Valse",
+     "composer": null,
+     "duration": null,
+     "issue": "INC (J. Coltrane) 22:47"
+    }
+   ],
+   "note": null,
+   "source": "David Wild, The Recordings of John Coltrane: A Discography (2nd ed., Wildmusic 1979), web edition",
+   "source_url": "http://www.wildmusic-jazz.com/jcdisc65.htm#650728"
+  },
+  {
+   "session": "650801",
+   "date": "1965-08-01",
+   "group": "JOHN COLTRANE QUARTET",
+   "personnel": [
+    {
+     "name": "Coltrane",
+     "instrument": "soprano sax, tenor sax"
+    },
+    {
+     "name": "McCoy Tyner",
+     "instrument": "piano"
+    },
+    {
+     "name": "Jimmy Garrison",
+     "instrument": "bass"
+    },
+    {
+     "name": "Elvin Jones",
+     "instrument": "drums"
+    }
+   ],
+   "location": "Radio Broadcast, Comblain-La-Tour, Belgium",
+   "engineer": "a. \"Untitled Original\" (J. Coltrane) 9:09 Private Tape; Landscape LS2-922 b. \"Naima\" (J.Coltrane) 7:29 Private tape; Landscape LS2-922 c. \"My Favorite Things\" (R. Rodgers-O.Hammerstein) 21:10 Private tape; Landscape (B) LS2-922",
+   "tunes": [
+    {
+     "index": "a",
+     "title": "Untitled Original",
+     "composer": "J. Coltrane",
+     "duration": "9:09",
+     "issue": null
+    },
+    {
+     "index": "b",
+     "title": "Naima",
+     "composer": "J.Coltrane",
+     "duration": "7:29",
+     "issue": null
+    },
+    {
+     "index": "c",
+     "title": "My Favorite Things",
+     "composer": "R. Rodgers-O.Hammerstein",
+     "duration": "21:10",
+     "issue": null
+    }
+   ],
+   "note": "650801a misidentified as \"Vigil\" on the Landscape release",
+   "source": "David Wild, The Recordings of John Coltrane: A Discography (2nd ed., Wildmusic 1979), web edition",
+   "source_url": "http://www.wildmusic-jazz.com/jcdisc65.htm#650801"
+  },
+  {
+   "session": "650826",
+   "date": "1965-08-26",
+   "group": "JOHN COLTRANE QUARTET",
+   "personnel": [
+    {
+     "name": "Coltrane",
+     "instrument": "soprano sax, tenor sax"
+    },
+    {
+     "name": "McCoy Tyner",
+     "instrument": "piano"
+    },
+    {
+     "name": "Jimmy Garrison",
+     "instrument": "bass"
+    },
+    {
+     "name": "Elvin Jones",
+     "instrument": "drums"
+    }
+   ],
+   "location": "RCA-Victor Studios, NYC",
+   "engineer": "a. \"Dearly Beloved\" (J. Coltrane) 6:27 Imp A9211; more b. \"Attaining\" (J. Coltrane) 11:26 Imp A9211; more c. \"Sunship\" (J. Coltrane) 6:12 Imp A9211; more d. \"Ascent\" (J. Coltrane) 10:10 Imp A9211; more e. \"Amen\" (J. Coltrane) 8:16 Imp A9211; more",
+   "tunes": [
+    {
+     "index": "a",
+     "title": "Dearly Beloved",
+     "composer": "J. Coltrane",
+     "duration": "6:27",
+     "issue": null
+    },
+    {
+     "index": "b",
+     "title": "Attaining",
+     "composer": "J. Coltrane",
+     "duration": "11:26",
+     "issue": null
+    },
+    {
+     "index": "c",
+     "title": "Sunship",
+     "composer": "J. Coltrane",
+     "duration": "6:12",
+     "issue": null
+    },
+    {
+     "index": "d",
+     "title": "Ascent",
+     "composer": "J. Coltrane",
+     "duration": "10:10",
+     "issue": null
+    },
+    {
+     "index": "e",
+     "title": "Amen",
+     "composer": "J. Coltrane",
+     "duration": "8:16",
+     "issue": null
+    }
+   ],
+   "note": null,
+   "source": "David Wild, The Recordings of John Coltrane: A Discography (2nd ed., Wildmusic 1979), web edition",
+   "source_url": "http://www.wildmusic-jazz.com/jcdisc65.htm#650826"
+  },
+  {
+   "session": "650902",
+   "date": "1965-09-02",
+   "group": "JOHN COLTRANE QUARTET",
+   "personnel": [
+    {
+     "name": "Coltrane",
+     "instrument": "soprano sax, tenor sax"
+    },
+    {
+     "name": "McCoy Tyner",
+     "instrument": "piano"
+    },
+    {
+     "name": "Jimmy Garrison",
+     "instrument": "bass"
+    },
+    {
+     "name": "Elvin Jones",
+     "instrument": "drums"
+    }
+   ],
+   "location": "Van Gelder Studios, Englewood Cliffs NJ",
+   "engineer": "Rudy Van Gelder (Suite: Meditations) a. \"Love\" (J. Coltrane) 8:00 Imp AS9332; more b. \"Compassion\" (J. Coltrane) 8:30 Imp AS9332; more c. \"Joy\" (J. Coltrane) 8:53 Imp AS9332; more d. \"Consequences\" (J. Coltrane) 7:15 Imp AS9332; more e. \"Serenity\" (J. Coltrane) 6:11 Imp AS9332; more",
+   "tunes": [
+    {
+     "index": "a",
+     "title": "Love",
+     "composer": "J. Coltrane",
+     "duration": "8:00",
+     "issue": null
+    },
+    {
+     "index": "b",
+     "title": "Compassion",
+     "composer": "J. Coltrane",
+     "duration": "8:30",
+     "issue": null
+    },
+    {
+     "index": "c",
+     "title": "Joy",
+     "composer": "J. Coltrane",
+     "duration": "8:53",
+     "issue": null
+    },
+    {
+     "index": "d",
+     "title": "Consequences",
+     "composer": "J. Coltrane",
+     "duration": "7:15",
+     "issue": null
+    },
+    {
+     "index": "e",
+     "title": "Serenity",
+     "composer": "J. Coltrane",
+     "duration": "6:11",
+     "issue": null
+    }
+   ],
+   "note": "650902a, b, and c are continuous; 650902d and e are also continuous.",
+   "source": "David Wild, The Recordings of John Coltrane: A Discography (2nd ed., Wildmusic 1979), web edition",
+   "source_url": "http://www.wildmusic-jazz.com/jcdisc65.htm#650902"
+  },
+  {
+   "session": "650922",
+   "date": "1965-09-22",
+   "group": "JOHN COLTRANE QUARTET",
+   "personnel": [
+    {
+     "name": "Coltrane",
+     "instrument": "soprano sax, tenor sax"
+    },
+    {
+     "name": "McCoy Tyner",
+     "instrument": "piano"
+    },
+    {
+     "name": "Jimmy Garrison",
+     "instrument": "bass"
+    },
+    {
+     "name": "Elvin Jones",
+     "instrument": "drums"
+    }
+   ],
+   "location": "Coast Recorders, San Francisco CA",
+   "engineer": "a. \"Joy\" (J. Coltrane) 12:10 Imp A9225; more",
+   "tunes": [
+    {
+     "index": "a",
+     "title": "Joy",
+     "composer": "J. Coltrane",
+     "duration": "12:10",
+     "issue": null
+    }
+   ],
+   "note": "See note for discussion of this title.",
+   "source": "David Wild, The Recordings of John Coltrane: A Discography (2nd ed., Wildmusic 1979), web edition",
+   "source_url": "http://www.wildmusic-jazz.com/jcdisc65.htm#650922"
+  },
+  {
+   "session": "650930",
+   "date": "1965-09-30",
+   "group": "JOHN COLTRANE GROUP",
+   "personnel": [
+    {
+     "name": "Coltrane",
+     "instrument": "soprano sax, tenor sax"
+    },
+    {
+     "name": "Pharoah Sanders",
+     "instrument": "tenor sax"
+    },
+    {
+     "name": "Donald Garrett",
+     "instrument": "bass clarinet, bass"
+    },
+    {
+     "name": "McCoy Tyner",
+     "instrument": "piano"
+    },
+    {
+     "name": "Jimmy Garrison",
+     "instrument": "bass"
+    },
+    {
+     "name": "Elvin Jones",
+     "instrument": "drums"
+    }
+   ],
+   "location": "The Penthouse, Seattle WA",
+   "engineer": "Jan Kurtis a. \"Cosmos\" (J. Coltrane) 10:49 Imp A9202-2; more b. \"Out of This World\" (H. Arlen - J. Mercer) 24:18 Imp A9202; more c. \"Evolution\" (J. Coltrane) 36:22 Imp A9202-2; more d. \"Tapestry in Sound\" (Bass solo) 6:07 Coltrane out e. \"Bass Duet\" Coltrane out (Impulse unissued) f. \"Thumb Piano Piece\" Coltrane Out (Impulse unissued) g. \"Body and Soul\" (Green-Eyeton-Heyman-Sour) 21:03 Impulse GRD-2-146 h. \"Afro-Blue\" INC (M. Santamaria) 34:15 Impulse GRD-2-146",
+   "tunes": [
+    {
+     "index": "a",
+     "title": "Cosmos",
+     "composer": "J. Coltrane",
+     "duration": "10:49",
+     "issue": null
+    },
+    {
+     "index": "b",
+     "title": "Out of This World",
+     "composer": "H. Arlen - J. Mercer",
+     "duration": "24:18",
+     "issue": null
+    },
+    {
+     "index": "c",
+     "title": "Evolution",
+     "composer": "J. Coltrane",
+     "duration": "36:22",
+     "issue": null
+    },
+    {
+     "index": "d",
+     "title": "Tapestry in Sound",
+     "composer": "Bass solo",
+     "duration": "6:07",
+     "issue": null
+    },
+    {
+     "index": "e",
+     "title": "Bass Duet",
+     "composer": null,
+     "duration": null,
+     "issue": null
+    },
+    {
+     "index": "f",
+     "title": "Thumb Piano Piece",
+     "composer": null,
+     "duration": null,
+     "issue": null
+    },
+    {
+     "index": "g",
+     "title": "Body and Soul",
+     "composer": "Green-Eyeton-Heyman-Sour",
+     "duration": "21:03",
+     "issue": null
+    },
+    {
+     "index": "h",
+     "title": "Afro-Blue",
+     "composer": null,
+     "duration": null,
+     "issue": "INC (M. Santamaria) 34:15"
+    }
+   ],
+   "note": "See note for a discussion of this session.",
+   "source": "David Wild, The Recordings of John Coltrane: A Discography (2nd ed., Wildmusic 1979), web edition",
+   "source_url": "http://www.wildmusic-jazz.com/jcdisc65.htm#650930"
+  },
+  {
+   "session": "651001",
+   "date": "1965-10-01",
+   "group": "JOHN COLTRANE GROUP",
+   "personnel": [
+    {
+     "name": "Coltrane",
+     "instrument": "soprano sax, tenor sax"
+    },
+    {
+     "name": "Pharoah Sanders",
+     "instrument": "tenor sax"
+    },
+    {
+     "name": "Joe Brazil",
+     "instrument": "flute"
+    },
+    {
+     "name": "Donald Garrett",
+     "instrument": "bass clarinet, bass"
+    },
+    {
+     "name": "McCoy Tyner",
+     "instrument": "piano"
+    },
+    {
+     "name": "Jimmy Garrison",
+     "instrument": "bass"
+    },
+    {
+     "name": "Elvin Jones",
+     "instrument": "drums"
+    }
+   ],
+   "location": "Camelot Sound Studios, Lynwood WA",
+   "engineer": "Jan Kurtis a. \"Om\" Pt I (J. Coltrane) 15:02 Imp A9140; more b. \"Om\" Pt II (J. Coltrane) 13:58 Imp A9140; more",
+   "tunes": [
+    {
+     "index": "a",
+     "title": "Om",
+     "composer": null,
+     "duration": null,
+     "issue": "Pt I (J. Coltrane) 15:02"
+    },
+    {
+     "index": "b",
+     "title": "Om",
+     "composer": null,
+     "duration": null,
+     "issue": "Pt II (J. Coltrane) 13:58"
+    }
+   ],
+   "note": "Group members chant an invocation to open and close this piece.",
+   "source": "David Wild, The Recordings of John Coltrane: A Discography (2nd ed., Wildmusic 1979), web edition",
+   "source_url": "http://www.wildmusic-jazz.com/jcdisc65.htm#651001"
+  },
+  {
+   "session": "651014",
+   "date": "1965-10-14",
+   "group": "JOHN COLTRANE GROUP",
+   "personnel": [
+    {
+     "name": "Coltrane",
+     "instrument": "tenor sax"
+    },
+    {
+     "name": "Pharoah Sanders",
+     "instrument": "tenor sax"
+    },
+    {
+     "name": "Donald Garrett",
+     "instrument": "bass clarinet, bass"
+    },
+    {
+     "name": "McCoy Tyner",
+     "instrument": "piano"
+    },
+    {
+     "name": "Jimmy Garrison",
+     "instrument": "bass"
+    },
+    {
+     "name": "Elvin Jones",
+     "instrument": "drums"
+    },
+    {
+     "name": "Frank Butler",
+     "instrument": "drums"
+    },
+    {
+     "name": "Juno Lewis",
+     "instrument": "percussion, vocal"
+    }
+   ],
+   "location": "Western Recorders, Los Angeles CA",
+   "engineer": "a. \"Kulu Se Mama\" (J. Lewis) 18:19 Imp A9106; more b. \"Selflessness\" (J. Coltrane) 14:47 Imp A9161; more",
+   "tunes": [
+    {
+     "index": "a",
+     "title": "Kulu Se Mama",
+     "composer": "J. Lewis",
+     "duration": "18:19",
+     "issue": null
+    },
+    {
+     "index": "b",
+     "title": "Selflessness",
+     "composer": "J. Coltrane",
+     "duration": "14:47",
+     "issue": null
+    }
+   ],
+   "note": null,
+   "source": "David Wild, The Recordings of John Coltrane: A Discography (2nd ed., Wildmusic 1979), web edition",
+   "source_url": "http://www.wildmusic-jazz.com/jcdisc65.htm#651014"
+  },
+  {
+   "session": "651123",
+   "date": "1965-11-23",
+   "group": "JOHN COLTRANE SEXTET",
+   "personnel": [
+    {
+     "name": "Coltrane",
+     "instrument": "soprano sax, tenor sax"
+    },
+    {
+     "name": "Pharoah Sanders",
+     "instrument": "tenor sax"
+    },
+    {
+     "name": "McCoy Tyner",
+     "instrument": "piano"
+    },
+    {
+     "name": "Jimmy Garrison",
+     "instrument": "bass"
+    },
+    {
+     "name": "Elvin Jones",
+     "instrument": "drums"
+    },
+    {
+     "name": "Rashied Ali",
+     "instrument": "drums"
+    }
+   ],
+   "location": "Van Gelder Studios, Englewood Cliffs NJ",
+   "engineer": "Rudy Van Gelder (Suite: Meditations) a. \"The Father and the Son and the Holy Ghost\" (J. Coltrane) Imp A9110; more b. \"Compassion\" (J. Coltrane) Imp A9110; more c. \"Love\" (J. Coltrane) Imp A9110; more d. \"Serenity\" (J. Coltrane) Imp A9110; more e. \"Consequences\" (J. Coltrane) Imp A9110; more",
+   "tunes": [
+    {
+     "index": "a",
+     "title": "The Father and the Son and the Holy Ghost",
+     "composer": "J. Coltrane",
+     "duration": null,
+     "issue": null
+    },
+    {
+     "index": "b",
+     "title": "Compassion",
+     "composer": "J. Coltrane",
+     "duration": null,
+     "issue": null
+    },
+    {
+     "index": "c",
+     "title": "Love",
+     "composer": "J. Coltrane",
+     "duration": null,
+     "issue": null
+    },
+    {
+     "index": "d",
+     "title": "Serenity",
+     "composer": "J. Coltrane",
+     "duration": null,
+     "issue": null
+    },
+    {
+     "index": "e",
+     "title": "Consequences",
+     "composer": "J. Coltrane",
+     "duration": null,
+     "issue": null
+    }
+   ],
+   "note": "651123a and b are continuous, with a total time of 18:06. 651123 c d and e are continuous, with a total time of 19:02.",
+   "source": "David Wild, The Recordings of John Coltrane: A Discography (2nd ed., Wildmusic 1979), web edition",
+   "source_url": "http://www.wildmusic-jazz.com/jcdisc65.htm#651123"
+  },
+  {
+   "session": "660202",
+   "date": "1966-02-02",
+   "group": "JOHN COLTRANE SEXTET",
+   "personnel": [
+    {
+     "name": "John Coltrane",
+     "instrument": "tenor saxophone, bass clarinet"
+    },
+    {
+     "name": "Pharoah Sanders",
+     "instrument": "tenor saxophone, flute, piccolo"
+    },
+    {
+     "name": "Alice Coltrane",
+     "instrument": "piano"
+    },
+    {
+     "name": "Jimmy Garrison",
+     "instrument": "bass"
+    },
+    {
+     "name": "Rashied Ali",
+     "instrument": "drums"
+    },
+    {
+     "name": "Ray Appleton",
+     "instrument": "percussion"
+    }
+   ],
+   "location": "Coast Records, San Francisco CA",
+   "engineer": "Rudy Hill a. \"Manifestation\" (J. Coltrane) 11:44 CRC AU4950; Imp AS9223-2 more b. \"Reverend King\" (J. Coltrane) 10:45 CRC AU4950 more c. \"Peace On Earth\" (J. Coltrane) 9:03 Imp A9225, IA9360 more d. \"Leo\" (J. Coltrane) 10:08 Imp A9225 more",
+   "tunes": [
+    {
+     "index": "a",
+     "title": "Manifestation",
+     "composer": "J. Coltrane",
+     "duration": "11:44",
+     "issue": null
+    },
+    {
+     "index": "b",
+     "title": "Reverend King",
+     "composer": "J. Coltrane",
+     "duration": "10:45",
+     "issue": null
+    },
+    {
+     "index": "c",
+     "title": "Peace On Earth",
+     "composer": "J. Coltrane",
+     "duration": "9:03",
+     "issue": null
+    },
+    {
+     "index": "d",
+     "title": "Leo",
+     "composer": "J. Coltrane",
+     "duration": "10:08",
+     "issue": null
+    }
+   ],
+   "note": "Sanders plays pic and ts on 660202a; Coltrane plays bcl and ts on 660202b. See Note for a discussion of this session.",
+   "source": "David Wild, The Recordings of John Coltrane: A Discography (2nd ed., Wildmusic 1979), web edition",
+   "source_url": "http://www.wildmusic-jazz.com/jcdisc66.htm#660202"
+  },
+  {
+   "session": "660421",
+   "date": "1966-04-21",
+   "group": "JOHN COLTRANE QUINTET",
+   "personnel": [
+    {
+     "name": "John Coltrane",
+     "instrument": "tenor saxophone"
+    },
+    {
+     "name": "Pharoah Sanders",
+     "instrument": "tenor saxophone, flute"
+    },
+    {
+     "name": "Alice Coltrane",
+     "instrument": "piano"
+    },
+    {
+     "name": "Jimmy Garrison",
+     "instrument": "bass"
+    },
+    {
+     "name": "Rashied Ali",
+     "instrument": "drums"
+    }
+   ],
+   "location": "Van Gelder Studios, Englewood Cliffs NJ",
+   "engineer": "Rudy Van Gelder a. \"Darkness\" (J. Coltrane) Impulse unknown b. \"Lead Us On\" (J. Coltrane) Impulse Unknown c. \"Leo\" (J. Coltrane) Impulse Unknown d. \"Peace On Earth\" (J. Coltrane) Impulse Unknown",
+   "tunes": [
+    {
+     "index": "a",
+     "title": "Darkness",
+     "composer": "J. Coltrane",
+     "duration": null,
+     "issue": null
+    },
+    {
+     "index": "b",
+     "title": "Lead Us On",
+     "composer": "J. Coltrane",
+     "duration": null,
+     "issue": null
+    },
+    {
+     "index": "c",
+     "title": "Leo",
+     "composer": "J. Coltrane",
+     "duration": null,
+     "issue": null
+    },
+    {
+     "index": "d",
+     "title": "Peace On Earth",
+     "composer": "J. Coltrane",
+     "duration": null,
+     "issue": null
+    }
+   ],
+   "note": null,
+   "source": "David Wild, The Recordings of John Coltrane: A Discography (2nd ed., Wildmusic 1979), web edition",
+   "source_url": "http://www.wildmusic-jazz.com/jcdisc66.htm#660421"
+  },
+  {
+   "session": "660428",
+   "date": "1966-04-28",
+   "group": "JOHN COLTRANE QUINTET",
+   "personnel": [
+    {
+     "name": "John Coltrane",
+     "instrument": "tenor saxophone"
+    },
+    {
+     "name": "Pharoah Sanders",
+     "instrument": "tenor saxophone, flute"
+    },
+    {
+     "name": "Alice Coltrane",
+     "instrument": "piano"
+    },
+    {
+     "name": "Jimmy Garrison",
+     "instrument": "bass"
+    },
+    {
+     "name": "Rashied Ali",
+     "instrument": "drums"
+    }
+   ],
+   "location": "Van Gelder Studios, Englewood Cliffs NJ",
+   "engineer": "Rudy Van Gelder a. \"Call\" (J. Coltrane) Impulse unknown b. \"Leo\" (J. Coltrane) Impulse Unknown",
+   "tunes": [
+    {
+     "index": "a",
+     "title": "Call",
+     "composer": "J. Coltrane",
+     "duration": null,
+     "issue": null
+    },
+    {
+     "index": "b",
+     "title": "Leo",
+     "composer": "J. Coltrane",
+     "duration": null,
+     "issue": null
+    }
+   ],
+   "note": null,
+   "source": "David Wild, The Recordings of John Coltrane: A Discography (2nd ed., Wildmusic 1979), web edition",
+   "source_url": "http://www.wildmusic-jazz.com/jcdisc66.htm#660428"
+  },
+  {
+   "session": "660528",
+   "date": "1966-05-28",
+   "group": "JOHN COLTRANE SEXTET",
+   "personnel": [
+    {
+     "name": "John Coltrane",
+     "instrument": "soprano saxophone, tenor saxophone, bass clarinet"
+    },
+    {
+     "name": "Pharoah Sanders",
+     "instrument": "tenor saxophone, flute"
+    },
+    {
+     "name": "Alice Coltrane",
+     "instrument": "piano"
+    },
+    {
+     "name": "Jimmy Garrison",
+     "instrument": "bass"
+    },
+    {
+     "name": "Rashied Ali",
+     "instrument": "drums"
+    },
+    {
+     "name": "Emanuel Rahim",
+     "instrument": "percussion"
+    }
+   ],
+   "location": "Village Vanguard, NYC",
+   "engineer": "Rudy Van Gelder a. \"My Favorite Things\" (R. Rodgers-O. Hammerstein) 26:04 Imp A9124 more b. \"Naima\" (J. Coltrane) 14:51 Imp A9124 more",
+   "tunes": [
+    {
+     "index": "a",
+     "title": "My Favorite Things",
+     "composer": "R. Rodgers-O. Hammerstein",
+     "duration": "26:04",
+     "issue": null
+    },
+    {
+     "index": "b",
+     "title": "Naima",
+     "composer": "J. Coltrane",
+     "duration": "14:51",
+     "issue": null
+    }
+   ],
+   "note": null,
+   "source": "David Wild, The Recordings of John Coltrane: A Discography (2nd ed., Wildmusic 1979), web edition",
+   "source_url": "http://www.wildmusic-jazz.com/jcdisc66.htm#660528"
+  },
+  {
+   "session": "660702",
+   "date": "1966-07-02",
+   "group": "JOHN COLTRANE QUINTET",
+   "personnel": [
+    {
+     "name": "Personnel: John Coltrane",
+     "instrument": "soprano saxophone, tenor saxophone, bass clarinet"
+    },
+    {
+     "name": "Pharoah Sanders",
+     "instrument": "tenor saxophone, piccolo"
+    },
+    {
+     "name": "Alice Coltrane",
+     "instrument": "piano"
+    },
+    {
+     "name": "Jimmy Garrison",
+     "instrument": "bass"
+    },
+    {
+     "name": "Rashied Ali",
+     "instrument": "drums"
+    }
+   ],
+   "location": "Newport Jazz Festival' Newport RI",
+   "engineer": "a. \"My Favorite Things\" (R. Rodgers - O. Hammerstein) 22:05 Private tape b. \"Welcome\" (J. Coltrane) 11:28 Private tape c. \"Leo (J. Coltrane) 23:17 Private tape",
+   "tunes": [
+    {
+     "index": "a",
+     "title": "My Favorite Things",
+     "composer": "R. Rodgers - O. Hammerstein",
+     "duration": "22:05",
+     "issue": null
+    },
+    {
+     "index": "b",
+     "title": "Welcome",
+     "composer": "J. Coltrane",
+     "duration": "11:28",
+     "issue": null
+    }
+   ],
+   "note": "The Coltrane Quintet performance at the 1966 Newport Jazz Festival was not recorded by Impulse, although an audio tape is known to exist (the timings above are from Fujioka). However, some of the performance was filmed (8mm color home movie film, video with no audio), and excerpts appear in the vide",
+   "source": "David Wild, The Recordings of John Coltrane: A Discography (2nd ed., Wildmusic 1979), web edition",
+   "source_url": "http://www.wildmusic-jazz.com/jcdisc66.htm#660702"
+  },
+  {
+   "session": "660711",
+   "date": "1966-07-11",
+   "group": "JOHN COLTRANE QUINTET",
+   "personnel": [
+    {
+     "name": "John Coltrane",
+     "instrument": "soprano, alto, tenor saxophones, percussion"
+    },
+    {
+     "name": "Pharoah Sanders",
+     "instrument": "alto, tenor saxophone, percussion"
+    },
+    {
+     "name": "Alice Coltrane",
+     "instrument": "piano"
+    },
+    {
+     "name": "Jimmy Garrison",
+     "instrument": "bass"
+    },
+    {
+     "name": "Rashied Ali",
+     "instrument": "drums"
+    }
+   ],
+   "location": "Sankei Hall' Tokyo Japan",
+   "engineer": "Tokyo Broadcasting System Radio Technical Group a. \"Afro-Blue\" (M. Santamaria) 39:10 Imp(J) YB 8508/8509/8510 b. \"Peace On Earth\" (J. Coltrane) 26:15 Imp(J) YB 8508/8509/8510 more (c) . \"Bass Introduction\" (J. Garrison) 7:30 Imp(J) YB8508/8509/8510 more d. \"Crescent\" (J. Coltrane) 41:45 Imp (J) YB 8508/8509/8510 more e. \"Leo\" (J. Coltrane) :53 Imp(J) YB 8508/8509/8510 more",
+   "tunes": [
+    {
+     "index": "a",
+     "title": "Afro-Blue",
+     "composer": "M. Santamaria",
+     "duration": "39:10",
+     "issue": null
+    },
+    {
+     "index": "b",
+     "title": "Peace On Earth",
+     "composer": "J. Coltrane",
+     "duration": "26:15",
+     "issue": null
+    },
+    {
+     "index": "d",
+     "title": "Crescent",
+     "composer": "J. Coltrane",
+     "duration": "41:45",
+     "issue": null
+    },
+    {
+     "index": "e",
+     "title": "Leo",
+     "composer": "J. Coltrane",
+     "duration": null,
+     "issue": ":53"
+    }
+   ],
+   "note": null,
+   "source": "David Wild, The Recordings of John Coltrane: A Discography (2nd ed., Wildmusic 1979), web edition",
+   "source_url": "http://www.wildmusic-jazz.com/jcdisc66.htm#660711"
+  },
+  {
+   "session": "660722",
+   "date": "1966-07-22",
+   "group": "JOHN COLTRANE QUINTET",
+   "personnel": [
+    {
+     "name": "John Coltrane",
+     "instrument": "soprano, alto, tenor saxophone, percussion"
+    },
+    {
+     "name": "Pharoah Sanders",
+     "instrument": "alto, tenor saxophone, percussion"
+    },
+    {
+     "name": "Alice Coltrane",
+     "instrument": "piano"
+    },
+    {
+     "name": "Jimmy Garrison",
+     "instrument": "bass"
+    },
+    {
+     "name": "Rashied Ali",
+     "instrument": "drums"
+    }
+   ],
+   "location": "Kosei-nenkin Hall' Tokyo Japan`",
+   "engineer": "a. \"Peace On Earth\" (J. Coltrane) 26:04 Imp(J) IMR-9036C more b. \"My Favorite Things\" (R. Rodgers - O. Hammerstein) 56:14 Imp(J) IMR-9036C more c. \"Meditations/Leo\" (J. Coltrane) 45:31 Imp(J) IMR-9036C more",
+   "tunes": [
+    {
+     "index": "a",
+     "title": "Peace On Earth",
+     "composer": "J. Coltrane",
+     "duration": "26:04",
+     "issue": null
+    },
+    {
+     "index": "b",
+     "title": "My Favorite Things",
+     "composer": "R. Rodgers - O. Hammerstein",
+     "duration": "56:14",
+     "issue": null
+    },
+    {
+     "index": "c",
+     "title": "Meditations/Leo",
+     "composer": "J. Coltrane",
+     "duration": "45:31",
+     "issue": null
+    }
+   ],
+   "note": "\"Meditations\" (660722c) refers to excerpts from that suite which introduce \"Leo\".",
+   "source": "David Wild, The Recordings of John Coltrane: A Discography (2nd ed., Wildmusic 1979), web edition",
+   "source_url": "http://www.wildmusic-jazz.com/jcdisc66.htm#660722"
+  },
+  {
+   "session": "670215",
+   "date": "1967-02-15",
+   "group": "JOHN COLTRANE QUARTET",
+   "personnel": [
+    {
+     "name": "John Coltrane",
+     "instrument": "alto or tenor saxophone"
+    },
+    {
+     "name": "Alice Coltrane",
+     "instrument": "piano"
+    },
+    {
+     "name": "Jimmy Garrison",
+     "instrument": "bass"
+    },
+    {
+     "name": "Rashied Ali",
+     "instrument": "drums"
+    }
+   ],
+   "location": "Van Gelder Studios,Englewood Cliffs NJ",
+   "engineer": "Rudy Van Gelder a. \"Sun Star\" (AT) (J. Coltrane) 8:05 Imp (CD) IMPD-169 b. \"Sun Star\" (J. Coltrane) 6:05 Imp (CD) IMPD-169 c. \"Stellar Regions\" (J. Coltrane) 3:31 Imp (CD) IMPD-169 d. \"Stellar Regions\" (AT) (J. Coltrane) 4:37 Imp (CD) IMPD-169 e. \"Configuration\" (J. Coltrane) 4:01 Imp (CD) IMPD-169 f. \"Iris\" (J. Coltrane) 3:50 Imp (CD) IMPD-169 g. \"Offering\" (J. Coltrane) 8:20 Imp A9120; more h. \"Seraphic Light\" (J. Coltrane) 8:54 Imp (CD) IMPD-169 i. \"Tranesonic\" (AT) (J. Coltrane) 2:48 Imp (CD) IMPD-169 j. \"Tranesonic\" (J. Coltrane) 4:14 Imp (CD) IMPD-169 k. \"Jimmy's Mode\" (J. Coltrane) 5:58 Imp (CD) IMPD-169",
+   "tunes": [
+    {
+     "index": "a",
+     "title": "Sun Star",
+     "composer": "AT",
+     "duration": null,
+     "issue": "(J. Coltrane) 8:05"
+    },
+    {
+     "index": "b",
+     "title": "Sun Star",
+     "composer": "J. Coltrane",
+     "duration": "6:05",
+     "issue": null
+    },
+    {
+     "index": "c",
+     "title": "Stellar Regions",
+     "composer": "J. Coltrane",
+     "duration": "3:31",
+     "issue": null
+    },
+    {
+     "index": "d",
+     "title": "Stellar Regions",
+     "composer": "AT",
+     "duration": null,
+     "issue": "(J. Coltrane) 4:37"
+    },
+    {
+     "index": "e",
+     "title": "Configuration",
+     "composer": "J. Coltrane",
+     "duration": "4:01",
+     "issue": null
+    },
+    {
+     "index": "f",
+     "title": "Iris",
+     "composer": "J. Coltrane",
+     "duration": "3:50",
+     "issue": null
+    },
+    {
+     "index": "g",
+     "title": "Offering",
+     "composer": "J. Coltrane",
+     "duration": "8:20",
+     "issue": null
+    },
+    {
+     "index": "h",
+     "title": "Seraphic Light",
+     "composer": "J. Coltrane",
+     "duration": "8:54",
+     "issue": null
+    },
+    {
+     "index": "i",
+     "title": "Tranesonic",
+     "composer": "AT",
+     "duration": null,
+     "issue": "(J. Coltrane) 2:48"
+    },
+    {
+     "index": "j",
+     "title": "Tranesonic",
+     "composer": "J. Coltrane",
+     "duration": "4:14",
+     "issue": null
+    },
+    {
+     "index": "k",
+     "title": "Jimmy's Mode",
+     "composer": "J. Coltrane",
+     "duration": "5:58",
+     "issue": null
+    }
+   ],
+   "note": "John Coltrane plays alto saxophone on both takes of \"Tranesonic\". The composition \"Stellar Regions\" was recorded a week later (February 22, 1967) as part of the Interstellar Space duet session, under the title \"Venus\". Titles for the different compositions from this session (with the exception of \"O",
+   "source": "David Wild, The Recordings of John Coltrane: A Discography (2nd ed., Wildmusic 1979), web edition",
+   "source_url": "http://www.wildmusic-jazz.com/jcdisc67.htm#670215"
+  },
+  {
+   "session": "670222",
+   "date": "1967-02-22",
+   "group": "JOHN COLTRANE/RASHIED ALI",
+   "personnel": [
+    {
+     "name": "John Coltrane",
+     "instrument": "tenor saxophone, bells"
+    },
+    {
+     "name": "Rashied Ali",
+     "instrument": "drums, percussion"
+    }
+   ],
+   "location": "Van Gelder Studios, Englewood Cliffs NJ",
+   "engineer": "Rudy Van Gelder a. \"Mars\" (J. Coltrane) 10:41 Imp ASD 9277; more b. \"Leo\" (J. Coltrane) 11:00 Imp IA9360 more c. \"Venus\" (J. Coltrane) 8:17 Im ASD9277 more d. \"Jupiter Variation\" (J. Coltrane) 6:45 Imp IA9360 more e. \"Jupiter\" (J. Coltrane) 5:21 Imp ASD9277 more f. \"Saturn\" (J. Coltrane) 11:35 Imp ASD9277 more",
+   "tunes": [
+    {
+     "index": "a",
+     "title": "Mars",
+     "composer": "J. Coltrane",
+     "duration": "10:41",
+     "issue": null
+    },
+    {
+     "index": "b",
+     "title": "Leo",
+     "composer": "J. Coltrane",
+     "duration": "11:00",
+     "issue": null
+    },
+    {
+     "index": "c",
+     "title": "Venus",
+     "composer": "J. Coltrane",
+     "duration": "8:17",
+     "issue": null
+    },
+    {
+     "index": "d",
+     "title": "Jupiter Variation",
+     "composer": "J. Coltrane",
+     "duration": "6:45",
+     "issue": null
+    },
+    {
+     "index": "e",
+     "title": "Jupiter",
+     "composer": "J. Coltrane",
+     "duration": "5:21",
+     "issue": null
+    },
+    {
+     "index": "f",
+     "title": "Saturn",
+     "composer": "J. Coltrane",
+     "duration": "11:35",
+     "issue": null
+    }
+   ],
+   "note": "The composition \"Venus\" (670222c), originally untitled, was also recorded at session 670215, and was released as \"Stellar Regions\". See the note to session 670215.",
+   "source": "David Wild, The Recordings of John Coltrane: A Discography (2nd ed., Wildmusic 1979), web edition",
+   "source_url": "http://www.wildmusic-jazz.com/jcdisc67.htm#670222"
+  },
+  {
+   "session": "670227",
+   "date": "1967-02-27",
+   "group": "JOHN COLTRANE QUINTET",
+   "personnel": [
+    {
+     "name": "Marion Brown",
+     "instrument": "alto sax, bells"
+    },
+    {
+     "name": "John Coltrane",
+     "instrument": "tenor saxophone"
+    },
+    {
+     "name": "Alice Coltrane",
+     "instrument": "piano"
+    },
+    {
+     "name": "Jimmy Garrison",
+     "instrument": "bass"
+    },
+    {
+     "name": "Rashied Ali",
+     "instrument": "drums"
+    }
+   ],
+   "location": "Van Gelder Studios, Englewood Cliffs NJ",
+   "engineer": "Rudy Van Gelder a. \"E Minor\" (J. Coltrane) Impulse unknown b. \"Half Steps\" (J. Coltrane) Impulse unknown",
+   "tunes": [
+    {
+     "index": "a",
+     "title": "E Minor",
+     "composer": "J. Coltrane",
+     "duration": null,
+     "issue": null
+    },
+    {
+     "index": "b",
+     "title": "Half Steps",
+     "composer": "J. Coltrane",
+     "duration": null,
+     "issue": null
+    }
+   ],
+   "note": null,
+   "source": "David Wild, The Recordings of John Coltrane: A Discography (2nd ed., Wildmusic 1979), web edition",
+   "source_url": "http://www.wildmusic-jazz.com/jcdisc67.htm#670227"
+  },
+  {
+   "session": "670307",
+   "date": "1967-03-07",
+   "group": "JOHN COLTRANE QUARTET",
+   "personnel": [
+    {
+     "name": "John Coltrane",
+     "instrument": "tenor saxophone"
+    },
+    {
+     "name": "Alice Coltrane",
+     "instrument": "piano"
+    },
+    {
+     "name": "Jimmy Garrison",
+     "instrument": "bass"
+    },
+    {
+     "name": "Rashied Ali",
+     "instrument": "drums"
+    }
+   ],
+   "location": "Van Gelder Studios, Englewood Cliffs NJ",
+   "engineer": "Rudy Van Gelder a. \"Number One\" (J. Coltrane) 12:00 Imp IA9360 more b. \"Ogunde\" (J. Coltrane) 3:34 Imp A9120 more",
+   "tunes": [
+    {
+     "index": "a",
+     "title": "Number One",
+     "composer": "J. Coltrane",
+     "duration": "12:00",
+     "issue": null
+    },
+    {
+     "index": "b",
+     "title": "Ogunde",
+     "composer": "J. Coltrane",
+     "duration": "3:34",
+     "issue": null
+    }
+   ],
+   "note": null,
+   "source": "David Wild, The Recordings of John Coltrane: A Discography (2nd ed., Wildmusic 1979), web edition",
+   "source_url": "http://www.wildmusic-jazz.com/jcdisc67.htm#670307"
+  },
+  {
+   "session": "670329",
+   "date": "1967-03-29",
+   "group": "JOHN COLTRANE QUARTET",
+   "personnel": [
+    {
+     "name": "John Coltrane",
+     "instrument": "tenor saxophone"
+    },
+    {
+     "name": "Alice Coltrane",
+     "instrument": "piano"
+    },
+    {
+     "name": "Jimmy Garrison",
+     "instrument": "bass"
+    },
+    {
+     "name": "Rashied Ali",
+     "instrument": "drums"
+    }
+   ],
+   "location": "Van Gelder Studios, Englewood Cliffs NJ",
+   "engineer": "Rudy Van Gelder a. \"Number Eight\" (J. Coltrane ) Impulse unknown b. \"Number Seven\" (J. Coltrane) Impulse unknown c. \"Number Six\" (J. Coltrane) Impulse Unknown d. \"Number Five\" (J. Coltrane) Impulse Unknown e. \"Number Four\" (J. Coltrane) Impulse unknown f. \"Number Two\" (J. Coltrane) Impulse unknown",
+   "tunes": [
+    {
+     "index": "a",
+     "title": "Number Eight",
+     "composer": "J. Coltrane",
+     "duration": null,
+     "issue": null
+    },
+    {
+     "index": "b",
+     "title": "Number Seven",
+     "composer": "J. Coltrane",
+     "duration": null,
+     "issue": null
+    },
+    {
+     "index": "c",
+     "title": "Number Six",
+     "composer": "J. Coltrane",
+     "duration": null,
+     "issue": null
+    },
+    {
+     "index": "d",
+     "title": "Number Five",
+     "composer": "J. Coltrane",
+     "duration": null,
+     "issue": null
+    },
+    {
+     "index": "e",
+     "title": "Number Four",
+     "composer": "J. Coltrane",
+     "duration": null,
+     "issue": null
+    },
+    {
+     "index": "f",
+     "title": "Number Two",
+     "composer": "J. Coltrane",
+     "duration": null,
+     "issue": null
+    }
+   ],
+   "note": null,
+   "source": "David Wild, The Recordings of John Coltrane: A Discography (2nd ed., Wildmusic 1979), web edition",
+   "source_url": "http://www.wildmusic-jazz.com/jcdisc67.htm#670329"
+  },
+  {
+   "session": "670423",
+   "date": "1967-04-23",
+   "group": "JOHN COLTRANE SEPTET",
+   "personnel": [
+    {
+     "name": "John Coltrane",
+     "instrument": "soprano, tenor saxophone"
+    },
+    {
+     "name": "Pharoah Sanders",
+     "instrument": "tenor saxophone"
+    },
+    {
+     "name": "Alice Coltrane",
+     "instrument": "piano"
+    },
+    {
+     "name": "Jimmy Garrison",
+     "instrument": "bass"
+    },
+    {
+     "name": "Rashied Ali",
+     "instrument": "drums"
+    },
+    {
+     "name": "Algie Dewitt",
+     "instrument": "bata drum"
+    },
+    {
+     "name": "probably Jumma Santos",
+     "instrument": "percussion"
+    }
+   ],
+   "location": "Olatunji Center of African Culture' New York City NY",
+   "engineer": "Bernard Drayton First Performance: a. \"Ogunde\" (Traditional, Arr. J. Coltrane) 28:25 Rhino [CD] R2-71255; Verve/Impulse 314 589 120-2 b. \"My Favorite Things\" (J. Coltrane) 34:38 Private tape; Verve/Impulse 314 589 120-2 Second Performance: c. \"Tunji\" (J. Coltrane) Private tape? d. \"Acknowledgement\" (J. Coltrane) Private tape?",
+   "tunes": [
+    {
+     "index": "a",
+     "title": "Ogunde",
+     "composer": "Traditional, Arr. J. Coltrane",
+     "duration": "28:25",
+     "issue": null
+    },
+    {
+     "index": "b",
+     "title": "My Favorite Things",
+     "composer": "J. Coltrane",
+     "duration": "34:38",
+     "issue": null
+    },
+    {
+     "index": "c",
+     "title": "Tunji",
+     "composer": "J. Coltrane",
+     "duration": null,
+     "issue": null
+    },
+    {
+     "index": "d",
+     "title": "Acknowledgement",
+     "composer": "J. Coltrane",
+     "duration": null,
+     "issue": null
+    }
+   ],
+   "note": "The complete first performance from this concert is on Verve/Impulse. The second performance does not appear to have been recorded.",
+   "source": "David Wild, The Recordings of John Coltrane: A Discography (2nd ed., Wildmusic 1979), web edition",
+   "source_url": "http://www.wildmusic-jazz.com/jcdisc67.htm#670423"
+  },
+  {
+   "session": "670517",
+   "date": "1967-05-17",
+   "group": "JOHN COLTRANE SEXTET",
+   "personnel": [
+    {
+     "name": "Pharoah Sanders",
+     "instrument": "alto saxophone"
+    },
+    {
+     "name": "John Coltrane",
+     "instrument": "tenor saxophone"
+    },
+    {
+     "name": "Alice Coltrane",
+     "instrument": "piano"
+    },
+    {
+     "name": "Jimmy Garrison",
+     "instrument": "bass"
+    },
+    {
+     "name": "Rashied Ali",
+     "instrument": "drums"
+    },
+    {
+     "name": "Algie DeWitt",
+     "instrument": null
+    },
+    {
+     "name": "Bata drum",
+     "instrument": null
+    }
+   ],
+   "location": "Van Gelder Studios, Englewood Cliffs NJ",
+   "engineer": "Rudy Van Gelder a. \"None Other\" (J. Coltrane) Impulse unknown b. \"Collidoscope\" (J. Coltrane) Impulse unknown",
+   "tunes": [
+    {
+     "index": "a",
+     "title": "None Other",
+     "composer": "J. Coltrane",
+     "duration": null,
+     "issue": null
+    },
+    {
+     "index": "b",
+     "title": "Collidoscope",
+     "composer": "J. Coltrane",
+     "duration": null,
+     "issue": null
+    }
+   ],
+   "note": null,
+   "source": "David Wild, The Recordings of John Coltrane: A Discography (2nd ed., Wildmusic 1979), web edition",
+   "source_url": "http://www.wildmusic-jazz.com/jcdisc67.htm#670517"
+  }
+ ]
+}

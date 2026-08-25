@@ -1,0 +1,197 @@
+{
+  "_comment": "Coltrane personnel. Two mechanisms: `lineups` assigns a working band by date range (covers the bulk of the archive), and `musicians` recognises names written into folder text or ARTIST tags (covers one-off session dates, which the ranges cannot know about). Hand-editable. Ranges are inclusive of `from`, exclusive of `to`, and deliberately non-overlapping -- transitional months are noted in `caveat` rather than modelled as overlaps.",
+  "_instruments": "ts=tenor sax, ss=soprano sax, as=alto sax, bcl=bass clarinet, fl=flute, tp=trumpet, tb=trombone, p=piano, b=bass, d=drums, perc=percussion, vln=violin, g=guitar, vib=vibraphone, vcl=vocal, org=organ",
+
+  "lineups": [
+    {
+      "id": "miles-quintet",
+      "name": "Miles Davis Quintet",
+      "from": "1955-09-01", "to": "1957-04-01",
+      "members": [
+        {"name": "Miles Davis", "instrument": "tp"},
+        {"name": "John Coltrane", "instrument": "ts"},
+        {"name": "Red Garland", "instrument": "p"},
+        {"name": "Paul Chambers", "instrument": "b"},
+        {"name": "Philly Joe Jones", "instrument": "d"}
+      ],
+      "caveat": "Coltrane is a sideman throughout."
+    },
+    {
+      "id": "monk-prestige",
+      "name": "Monk quartet & Prestige freelance",
+      "from": "1957-04-01", "to": "1958-01-01",
+      "members": [
+        {"name": "Thelonious Monk", "instrument": "p"},
+        {"name": "John Coltrane", "instrument": "ts"},
+        {"name": "Wilbur Ware", "instrument": "b"},
+        {"name": "Shadow Wilson", "instrument": "d"}
+      ],
+      "caveat": "Applies to the Five Spot residency. Prestige leader dates in this window use varying sidemen -- see per-session names."
+    },
+    {
+      "id": "miles-sextet",
+      "name": "Miles Davis Sextet / Prestige & Atlantic leader dates",
+      "from": "1958-01-01", "to": "1960-05-01",
+      "members": [
+        {"name": "Miles Davis", "instrument": "tp"},
+        {"name": "John Coltrane", "instrument": "ts"},
+        {"name": "Cannonball Adderley", "instrument": "as"},
+        {"name": "Bill Evans", "instrument": "p"},
+        {"name": "Paul Chambers", "instrument": "b"},
+        {"name": "Jimmy Cobb", "instrument": "d"}
+      ],
+      "caveat": "Red Garland and Wynton Kelly also held the piano chair. Coltrane's own dates in this window use different rhythm sections."
+    },
+    {
+      "id": "quartet-forming",
+      "name": "First Coltrane quartet",
+      "from": "1960-05-01", "to": "1960-10-01",
+      "members": [
+        {"name": "John Coltrane", "instrument": "ts, ss"},
+        {"name": "McCoy Tyner", "instrument": "p"},
+        {"name": "Steve Davis", "instrument": "b"},
+        {"name": "Pete La Roca", "instrument": "d"}
+      ],
+      "caveat": "Drum chair unsettled; Billy Higgins and Pete La Roca both appear before Elvin Jones."
+    },
+    {
+      "id": "quartet-1960",
+      "name": "Quartet with Steve Davis & Elvin Jones",
+      "from": "1960-10-01", "to": "1961-05-01",
+      "members": [
+        {"name": "John Coltrane", "instrument": "ts, ss"},
+        {"name": "McCoy Tyner", "instrument": "p"},
+        {"name": "Steve Davis", "instrument": "b"},
+        {"name": "Elvin Jones", "instrument": "d"}
+      ]
+    },
+    {
+      "id": "dolphy-group",
+      "name": "Group with Eric Dolphy & Reggie Workman",
+      "from": "1961-05-01", "to": "1961-12-01",
+      "members": [
+        {"name": "John Coltrane", "instrument": "ts, ss"},
+        {"name": "Eric Dolphy", "instrument": "as, bcl, fl"},
+        {"name": "McCoy Tyner", "instrument": "p"},
+        {"name": "Reggie Workman", "instrument": "b"},
+        {"name": "Elvin Jones", "instrument": "d"}
+      ],
+      "caveat": "Village Vanguard, November 1961: Jimmy Garrison and Workman both present on some sets."
+    },
+    {
+      "id": "classic-quartet",
+      "name": "Classic Quartet",
+      "from": "1961-12-01", "to": "1965-06-01",
+      "members": [
+        {"name": "John Coltrane", "instrument": "ts, ss"},
+        {"name": "McCoy Tyner", "instrument": "p"},
+        {"name": "Jimmy Garrison", "instrument": "b"},
+        {"name": "Elvin Jones", "instrument": "d"}
+      ]
+    },
+    {
+      "id": "expanded-1965",
+      "name": "Expanded group -- Sanders joins",
+      "from": "1965-06-01", "to": "1966-01-01",
+      "members": [
+        {"name": "John Coltrane", "instrument": "ts, ss"},
+        {"name": "Pharoah Sanders", "instrument": "ts"},
+        {"name": "McCoy Tyner", "instrument": "p"},
+        {"name": "Jimmy Garrison", "instrument": "b"},
+        {"name": "Elvin Jones", "instrument": "d"},
+        {"name": "Rashied Ali", "instrument": "d"}
+      ],
+      "caveat": "Transitional. Sanders from mid-1965, Ali from November 1965 often alongside Elvin Jones. Ascension (June 1965) uses a one-off eleven-piece band."
+    },
+    {
+      "id": "final-group",
+      "name": "Final group",
+      "from": "1966-01-01", "to": "1967-07-18",
+      "members": [
+        {"name": "John Coltrane", "instrument": "ts, ss, fl"},
+        {"name": "Pharoah Sanders", "instrument": "ts"},
+        {"name": "Alice Coltrane", "instrument": "p"},
+        {"name": "Jimmy Garrison", "instrument": "b"},
+        {"name": "Rashied Ali", "instrument": "d"}
+      ],
+      "caveat": "Tyner left December 1965, Elvin Jones March 1966."
+    }
+  ],
+
+  "musicians": [
+    {"name": "John Coltrane", "instrument": "ts, ss", "aliases": ["coltrane", "trane", "j. coltrane", "john w. coltrane"]},
+    {"name": "McCoy Tyner", "instrument": "p", "aliases": ["mccoy tyner", "tyner"]},
+    {"name": "Elvin Jones", "instrument": "d", "aliases": ["elvin jones"]},
+    {"name": "Jimmy Garrison", "instrument": "b", "aliases": ["jimmy garrison", "garrison"]},
+    {"name": "Eric Dolphy", "instrument": "as, bcl, fl", "aliases": ["eric dolphy", "dolphy"]},
+    {"name": "Reggie Workman", "instrument": "b", "aliases": ["reggie workman", "workman"]},
+    {"name": "Steve Davis", "instrument": "b", "aliases": ["steve davis"]},
+    {"name": "Pharoah Sanders", "instrument": "ts", "aliases": ["pharoah sanders", "pharaoh sanders", "sanders"]},
+    {"name": "Rashied Ali", "instrument": "d", "aliases": ["rashied ali"]},
+    {"name": "Alice Coltrane", "instrument": "p", "aliases": ["alice coltrane", "alice mcleod"]},
+    {"name": "Miles Davis", "instrument": "tp", "aliases": ["miles davis", "miles"]},
+    {"name": "Thelonious Monk", "instrument": "p", "aliases": ["thelonious monk", "monk"]},
+    {"name": "Red Garland", "instrument": "p", "aliases": ["red garland"]},
+    {"name": "Paul Chambers", "instrument": "b", "aliases": ["paul chambers"]},
+    {"name": "Philly Joe Jones", "instrument": "d", "aliases": ["philly joe jones", "philly joe"]},
+    {"name": "Cannonball Adderley", "instrument": "as", "aliases": ["cannonball adderley", "cannonball", "julian adderley"]},
+    {"name": "Bill Evans", "instrument": "p", "aliases": ["bill evans"]},
+    {"name": "Wynton Kelly", "instrument": "p", "aliases": ["wynton kelly"]},
+    {"name": "Jimmy Cobb", "instrument": "d", "aliases": ["jimmy cobb"]},
+    {"name": "Art Taylor", "instrument": "d", "aliases": ["art taylor", "arthur taylor"]},
+    {"name": "Louis Hayes", "instrument": "d", "aliases": ["louis hayes"]},
+    {"name": "Tommy Flanagan", "instrument": "p", "aliases": ["tommy flanagan"]},
+    {"name": "Kenny Burrell", "instrument": "g", "aliases": ["kenny burrell"]},
+    {"name": "Idrees Sulieman", "instrument": "tp", "aliases": ["idrees sulieman"]},
+    {"name": "Donald Byrd", "instrument": "tp", "aliases": ["donald byrd"]},
+    {"name": "Freddie Hubbard", "instrument": "tp", "aliases": ["freddie hubbard"]},
+    {"name": "Lee Morgan", "instrument": "tp", "aliases": ["lee morgan"]},
+    {"name": "Curtis Fuller", "instrument": "tb", "aliases": ["curtis fuller"]},
+    {"name": "Kenny Drew", "instrument": "p", "aliases": ["kenny drew"]},
+    {"name": "Milt Jackson", "instrument": "vib", "aliases": ["milt jackson"]},
+    {"name": "Don Cherry", "instrument": "tp", "aliases": ["don cherry"]},
+    {"name": "Ed Blackwell", "instrument": "d", "aliases": ["ed blackwell"]},
+    {"name": "Charlie Haden", "instrument": "b", "aliases": ["charlie haden"]},
+    {"name": "Percy Heath", "instrument": "b", "aliases": ["percy heath"]},
+    {"name": "Connie Kay", "instrument": "d", "aliases": ["connie kay"]},
+    {"name": "Wilbur Ware", "instrument": "b", "aliases": ["wilbur ware"]},
+    {"name": "Shadow Wilson", "instrument": "d", "aliases": ["shadow wilson"]},
+    {"name": "Johnny Hartman", "instrument": "vcl", "aliases": ["johnny hartman"]},
+    {"name": "Duke Ellington", "instrument": "p", "aliases": ["duke ellington", "ellington"]},
+    {"name": "Aaron Bell", "instrument": "b", "aliases": ["aaron bell"]},
+    {"name": "Sam Woodyard", "instrument": "d", "aliases": ["sam woodyard"]},
+    {"name": "Tadd Dameron", "instrument": "p", "aliases": ["tadd dameron"]},
+    {"name": "Hank Mobley", "instrument": "ts", "aliases": ["hank mobley"]},
+    {"name": "Zoot Sims", "instrument": "ts", "aliases": ["zoot sims"]},
+    {"name": "Al Cohn", "instrument": "ts", "aliases": ["al cohn"]},
+    {"name": "Paul Quinichette", "instrument": "ts", "aliases": ["quinichette", "paul quinichette"]},
+    {"name": "Mal Waldron", "instrument": "p", "aliases": ["mal waldron"]},
+    {"name": "Ray Draper", "instrument": "tuba", "aliases": ["ray draper"]},
+    {"name": "Elmo Hope", "instrument": "p", "aliases": ["elmo hope"]},
+    {"name": "Wilbur Harden", "instrument": "tp", "aliases": ["wilbur harden"]},
+    {"name": "Cedar Walton", "instrument": "p", "aliases": ["cedar walton"]},
+    {"name": "Archie Shepp", "instrument": "ts", "aliases": ["archie shepp"]},
+    {"name": "Marion Brown", "instrument": "as", "aliases": ["marion brown"]},
+    {"name": "John Tchicai", "instrument": "as", "aliases": ["john tchicai", "tchicai"]},
+    {"name": "Dewey Johnson", "instrument": "tp", "aliases": ["dewey johnson"]},
+    {"name": "Art Davis", "instrument": "b", "aliases": ["art davis"]},
+    {"name": "Donald Garrett", "instrument": "b", "aliases": ["donald garrett", "donald rafael garrett"]},
+    {"name": "Juno Lewis", "instrument": "perc", "aliases": ["juno lewis"]},
+    {"name": "Roy Haynes", "instrument": "d", "aliases": ["roy haynes"]},
+    {"name": "Garvin Bushell", "instrument": "reeds", "aliases": ["garvin bushell"]},
+    {"name": "Ahmed Abdul-Malik", "instrument": "b", "aliases": ["ahmed abdul-malik", "abdul-malik"]},
+    {"name": "Frank Butler", "instrument": "d", "aliases": ["frank butler"]},
+    {"name": "Jimmy Heath", "instrument": "ts", "aliases": ["jimmy heath"]},
+    {"name": "Dizzy Gillespie", "instrument": "tp", "aliases": ["dizzy gillespie"]},
+    {"name": "Johnny Griffin", "instrument": "ts", "aliases": ["johnny griffin"]},
+    {"name": "Sonny Clark", "instrument": "p", "aliases": ["sonny clark"]},
+    {"name": "George Russell", "instrument": "arr", "aliases": ["george russell"]},
+    {"name": "Michel Legrand", "instrument": "arr", "aliases": ["michel legrand"]},
+    {"name": "Eric Gale", "instrument": "g", "aliases": ["eric gale"]},
+    {"name": "Billy Higgins", "instrument": "d", "aliases": ["billy higgins"]},
+    {"name": "Pete La Roca", "instrument": "d", "aliases": ["pete la roca", "pete laroca"]},
+    {"name": "Albert Ayler", "instrument": "ts", "aliases": ["albert ayler"]},
+    {"name": "Carlos Ward", "instrument": "as", "aliases": ["carlos ward"]},
+    {"name": "Joe Brazil", "instrument": "as", "aliases": ["joe brazil"]}
+  ]
+}
