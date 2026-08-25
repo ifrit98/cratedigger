@@ -533,9 +533,46 @@ def instrument_of(name):
 
 # ------------------------------------------------------------------ tunes
 
-_TRACK_NUM = re.compile(r"^\s*(?:cd\s*\d+\s*[-.]?\s*)?[\d]{1,3}\s*[-._)]\s*")
-_TAKE = re.compile(r"\((?:alternate\s+)?take\s*(\d+)\)|\balt(?:ernate)?\s*"
-                   r"take\b|\(alternate\)", re.I)
+# A leading track number is only a track number when a *letter* follows.
+# Requiring only a separator ate '26-2', a real Coltrane composition, down
+# to '2'. Allowing a bare space as separator is what catches '07 Naima'.
+# A leading track number is only a track number when a *letter* follows.
+# Requiring only a separator ate '26-2', a real Coltrane composition, down
+# to '2'. Allowing a bare space as separator is what catches '07 Naima'.
+#
+# The first alternative handles the disc-track form '1-06 My Favorite
+# Things'. It demands whitespace before the title, which is exactly what
+# distinguishes it from a tune called '26-2'.
+_TRACK_NUM = re.compile(
+    r"^\s*(?:"
+    r"\d{1,2}-\d{1,3}\s+"                     # 1-06 Title
+    r"|(?:cd\s*\d+\s*[-._)]?\s*)?\d{1,3}\s*[-._)\s]\s*"   # 07 Title
+    r")(?=[^\d\s])",
+    re.I)
+# Takes are written every which way: '(Take 2)', 'take 3', '(Alternate
+# Take)', '[alt]'. The word boundary on the bare form matters -- without it
+# 'Mistake 2' reads as take 2.
+_TAKE = re.compile(
+    r"\((?:alternate\s+)?take\s*(\d+)\)"    # (Take 2), (Alternate Take 2)
+    r"|\btake\s*(\d+)\b"                    # take 3
+    r"|\balt(?:ernate)?\s*take\b"            # Alternate Take
+    r"|\(alternate\)|\[alt\]",              # (alternate), [alt]
+    re.I)
+
+
+def extract_take(title):
+    """'2' | 'alt' | None.
+
+    The single source of truth for take detection. coltrane_build.py used to
+    re-derive this with a weaker pattern, so '(Alternate Take)' was stripped
+    from the title without ever being recorded as a take.
+    """
+    if not title:
+        return None
+    m = _TAKE.search(str(title))
+    if not m:
+        return None
+    return m.group(1) or m.group(2) or "alt"
 
 
 def normalize_tune(title):
@@ -551,11 +588,14 @@ def normalize_tune(title):
     take = None
     m = _TAKE.search(s)
     if m:
-        take = m.group(1) or "alt"
+        take = m.group(1) or m.group(2) or "alt"
     s = _TAKE.sub("", s)
     s = re.sub(r"\[[^\]]*\]|\((?:live|mono|stereo|remaster(?:ed)?|"
                r"alternate|incomplete|part\s*\d+|edit)[^)]*\)", "", s,
                flags=re.I)
+    # Removing '(Alternate Take)' leaves an empty '()' behind; strip any
+    # bracket pair the removal emptied out.
+    s = re.sub(r"[\(\[]\s*[\)\]]", " ", s)
     s = re.sub(r"\s{2,}", " ", s).strip(" -_.")
     key = _flat(s)
     key = re.sub(r"\b(the|a|an)\b", "", key)

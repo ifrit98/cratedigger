@@ -243,10 +243,7 @@ def main():
             raw_title = tget(t, "title") or os.path.splitext(
                 os.path.basename(i["path"]))[0]
             tune, tune_key = coltrane.normalize_tune(raw_title)
-            take = None
-            m = re.search(r"take\s*(\d+)|\(alt(?:ernate)?\)", raw_title, re.I)
-            if m:
-                take = m.group(1) or "alt"
+            take = coltrane.extract_take(raw_title)
             bd = i.get("bits_per_raw_sample") or i.get("bits_per_sample")
             # a per-track decision beats the release-level date
             t_iso, t_prec, t_src = iso, prec, src
