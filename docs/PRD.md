@@ -356,15 +356,26 @@ and official. In descending order of realism:
 
 ## 8. Success criteria
 
-| phase | measurable |
-|---|---|
-| 1 | a 90k mixed library goes scan → browser in under 30 min; browser interactive in under 3 s |
-| 1 | audit reports 0 HIGH on both paths |
-| 1 | CI green on three platforms and three Python versions |
-| 2 | ≥80% of an untagged, badly-named test folder identified correctly |
-| 2 | human decisions needed for <20% of tracks |
-| 3 | install to first browser under 5 minutes for a non-developer |
-| 3 | tag writing has a verified undo, proven by a round-trip test |
+| phase | measurable | status |
+|---|---|---|
+| 1 | a 90k mixed library goes scan → browser in under 30 min; browser interactive in under 3 s | met |
+| 1 | audit reports 0 HIGH on both paths | met |
+| 1 | CI green on three platforms and three Python versions | met — 9 jobs, 3.8–3.12 |
+| 2 | ≥80% of an untagged, badly-named test folder identified correctly | **unverified** — needs an AcoustID key |
+| 2 | human decisions needed for <20% of tracks | **not met** — depends on the above |
+| 3 | install to first browser under 5 minutes for a non-developer | met — `pipx install cratedigger`, verified from a clean venv |
+| 3 | tag writing has a verified undo, proven by a round-trip test | met — `tests/test_tags.py`, run in CI |
+
+The two open rows are both phase 2 and both the same dependency. AcoustID
+lookup needs a free API key, which needs an account; the code path exists and
+degrades cleanly, but the identification rate has never been measured against
+the live service. Until someone runs it with a key, neither number can be
+claimed — and the honest reading is that the phase-2 unlock ("point at a
+folder and it works") is built but unproven.
+
+Duration-based MusicBrainz matching, which *is* measured, reaches 16% on
+classical. That is the ceiling without fingerprinting, and it is why 2.1
+matters rather than being a nice-to-have.
 
 ## 9. Risks
 
