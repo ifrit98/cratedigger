@@ -36,6 +36,7 @@ services. Three things, one of them optional:
 | Python 3.8+ | everything | yes |
 | FFmpeg (`ffprobe`) | reading tags from your files | for `scan` only |
 | Network | the MusicBrainz and Wild enrichers | optional |
+| Chromaprint (`fpcalc`) | identifying tracks by audio | optional |
 
 Tested on Linux, macOS and Windows across Python 3.8–3.12 in CI. Developed
 against a real library on Windows only — see

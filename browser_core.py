@@ -15,7 +15,7 @@ TEMPLATE_HEAD = """<!doctype html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>John Coltrane Archive</title>
+<title>cratedigger</title>
 <style>
 :root{
   --bg:#faf8f5; --panel:#fff; --ink:#1a1714; --muted:#6b625a; --line:#e3ddd4;

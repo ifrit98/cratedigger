@@ -191,7 +191,7 @@ been tested. The honest claim is "runs everywhere, proven on Windows."
 
 The unlock for "point at a folder and it works".
 
-**2.1 AcoustID / Chromaprint, behind a flag**
+**2.1 AcoustID / Chromaprint, behind a flag — DONE (lookup unverified)**
 
 Identify a track by its audio rather than its filename. This is what makes a
 library with garbage names tractable, and it is what beets and Picard already
@@ -203,10 +203,21 @@ use.
 - `cratedigger fingerprint` populates a cache keyed by path + size + mtime,
   the same reuse discipline as the scan
 
-**Done when:** a folder of files named `track01.mp3` with no tags yields
-correct artist, album, date and work.
+Shipped as `fingerprint.py`, wired in as `cratedigger fingerprint`. Stage 1
+(`fpcalc`, local, no key, no network) is verified end to end: Chromaprint
+1.6.1 installed, real files fingerprinted, cache reuse confirmed.
 
-**2.2 Confidence-scored auto-apply**
+**Stage 2 is unverified.** AcoustID lookup needs a free API key, which needs
+an account; none is set, so remote identification has never been exercised
+against the live service. The code path exists and degrades cleanly, but the
+phase-2 success criterion — 80% of an untagged folder identified — cannot be
+claimed until someone runs it with a key.
+
+One bug worth recording: `--limit` rewrote the output file from only the
+records processed before the break, silently discarding every fingerprint
+past that point and turning a resume flag into a way to lose work.
+
+**2.2 Confidence-scored auto-apply — DONE**
 
 With fingerprints most matches become unambiguous.
 
@@ -215,15 +226,46 @@ With fingerprints most matches become unambiguous.
 - anything contested → the existing decision sheet
 - the threshold is configurable and defaults conservative
 
-**Done when:** a human is needed for the genuinely ambiguous minority rather
-than for everything.
+Shipped as `apply.py`. Measured on the classical manifest: **1,022 fields
+applied, 75 held for review, 0 contested**, of which 452 are MusicBrainz work
+ids. Idempotent — a second run finds nothing to do.
 
-**2.3 Duplicate resolution UI**
+Two things the build taught:
 
-The general path already detects clusters and reclaimable bytes and has no
-interface for them. Show clusters side by side with quality, provenance and
-size, with a keep-this action. **Never deletes** — emits a script the user
-reads and runs.
+- **MusicBrainz work ids needed their own field.** Proposed onto `work_id`
+  they were 954 "would overwrite" rows that the guard correctly refused,
+  which meant the fragmentation fix never landed. `musicbrainz_workid` is a
+  different identity from our local grouping key, and is what Picard writes.
+- **Display truncation reached the write path.** Values were stored from the
+  60-character CSV column rather than the real value, silently truncating
+  every work title longer than that. Caught by re-running apply and finding
+  280 of 1,022 no longer matching what had just been written; idempotence is
+  now a check, not an assumption.
+
+Tag writing is planned but **not enabled**: `--tags` emits the full change
+list and a backup of the current tags, and no code path opens an audio file
+for writing. That belongs to 3.3.
+
+**2.3 Duplicate resolution UI — DONE**
+
+Shipped as `duplicates_app.py` / `cratedigger duplicates`. Clusters side by
+side with path, quality and size, one copy preselected. Never deletes: it
+emits a script, and the script is a dry run as written
+(`$WhatIfPreference = $true` / `DRYRUN=1`) — verified by round-tripping an
+actual folder through both states.
+
+**The feature nearly shipped a catastrophe.** The largest cluster was
+`Celibidache Volume 1: Symphonies` — 14 entries, 4.1 GB "reclaimable" —
+which turned out to be the fourteen discs of one box set, grouped only
+because they share a title. The page would have generated a script reducing
+it to a single disc and called that a saving.
+
+`same_title_review` means *"these share a title, look at them"*, never
+*"these are copies"*. Low-confidence clusters now preselect nothing,
+contribute nothing to the script, and say why. The honest figure for this
+library is **9.0 GB across 25 verified clusters**, not the 20.8 GB the raw
+list implies — the difference was entirely false positives, and it is the
+strongest argument in the project for never wiring a deleter to a heuristic.
 
 ### Phase 3 — product surface
 

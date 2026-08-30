@@ -110,7 +110,7 @@ def manifest_path(cfg):
 
 # ----------------------------------------------------------------- helpers
 
-def run(script, args, label=None):
+def run(script, args, label=None, allow=()):
     if label:
         print(f"\n=== {label} ===", flush=True)
     env = dict(os.environ, PYTHONIOENCODING="utf-8")
@@ -119,7 +119,7 @@ def run(script, args, label=None):
     t0 = time.time()
     proc = subprocess.run([sys.executable, os.path.join(HERE, script)] + args,
                           env=env)
-    if proc.returncode != 0:
+    if proc.returncode != 0 and proc.returncode not in allow:
         sys.exit(f"!! {script} exited {proc.returncode}")
     if label:
         print(f"    [{time.time() - t0:.1f}s]", flush=True)
@@ -418,6 +418,57 @@ def cmd_browse(args):
             print("  (could not open automatically -- open it from disk)")
 
 
+def cmd_fingerprint(args):
+    """Identify tracks by their audio. Optional, and says so when absent."""
+    cfg = load_config()
+    out = out_dir(cfg)
+    fp = os.path.join(out, "fingerprints.jsonl")
+    argv = ["--root", cfg["library"], "--out", fp]
+    if args.limit:
+        argv += ["--limit", str(args.limit)]
+    if args.full:
+        argv.append("--full")
+    if args.lookup:
+        argv.append("--lookup")
+    # Exit 2 means "fpcalc or an API key is missing", which is a normal
+    # state for an optional feature, not a pipeline failure.
+    run("fingerprint.py", argv, "fingerprinting", allow=(2,))
+
+
+def cmd_apply(args):
+    cfg = load_config()
+    man = manifest_path(cfg)
+    if not os.path.exists(man):
+        sys.exit("no manifest yet -- run:  python cratedigger.py build")
+    argv = ["--manifest", man, "--threshold", str(args.threshold)]
+    if args.write:
+        argv.append("--apply")
+    if args.overwrite:
+        argv.append("--overwrite")
+    if args.tags:
+        argv.append("--tags")
+    run("apply.py", argv, "scoring findings")
+
+
+def cmd_duplicates(args):
+    cfg = load_config()
+    out = out_dir(cfg)
+    man = manifest_path(cfg)
+    if not os.path.exists(man):
+        sys.exit("no manifest yet -- run:  python cratedigger.py build")
+    html = os.path.join(out, "duplicates.html")
+    run("duplicates_app.py", ["--manifest", man, "--out", html,
+                              "--root", cfg["library"]], "duplicate clusters")
+    print(f"\n  {html}")
+    if args.open:
+        try:
+            import webbrowser
+            webbrowser.open("file:///" + html.replace("\\", "/"))
+            print("  opened in your browser")
+        except Exception:  # noqa: BLE001
+            print("  (could not open automatically -- open it from disk)")
+
+
 def cmd_audit(args):
     cfg = load_config()
     man = manifest_path(cfg)
@@ -689,6 +740,30 @@ def main():
     p = sub.add_parser("browse", help="build the interactive browser")
     p.add_argument("--open", action="store_true", help="open it when done")
     p.set_defaults(fn=cmd_browse)
+
+    p = sub.add_parser("fingerprint",
+                       help="identify tracks by audio (needs fpcalc)")
+    p.add_argument("--lookup", action="store_true",
+                   help="ask AcoustID to identify what was fingerprinted")
+    p.add_argument("--limit", type=int, default=0)
+    p.add_argument("--full", action="store_true")
+    p.set_defaults(func=cmd_fingerprint)
+
+    p = sub.add_parser("apply",
+                       help="score findings; write the certain ones")
+    p.add_argument("--write", action="store_true",
+                   help="actually write into the manifest (default: dry run)")
+    p.add_argument("--overwrite", action="store_true",
+                   help="also replace values we already have")
+    p.add_argument("--tags", action="store_true",
+                   help="show the tag writes this would imply (dry run)")
+    p.add_argument("--threshold", type=float, default=0.95)
+    p.set_defaults(func=cmd_apply)
+
+    p = sub.add_parser("duplicates",
+                       help="review duplicate clusters and emit a script")
+    p.add_argument("--open", action="store_true")
+    p.set_defaults(func=cmd_duplicates)
 
     sub.add_parser("audit", help="adversarial data checks").set_defaults(
         fn=cmd_audit)

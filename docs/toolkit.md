@@ -246,6 +246,109 @@ implies something might actually be wrong. **Nothing is applied** — as
 everywhere else in this toolkit, the output is a decision sheet with
 citations, not a mutation.
 
+## Identifying files by their audio
+
+```bash
+python cratedigger.py fingerprint             # local, no key, no network
+python cratedigger.py fingerprint --lookup    # needs an AcoustID key
+```
+
+The answer to a folder of `track01.mp3` with no tags, which no amount of
+filename parsing can rescue. It is the only part of the toolkit with
+dependencies outside the standard library, so it is **strictly optional**:
+without `fpcalc` or a key it explains what is missing and changes nothing.
+
+| | |
+|---|---|
+| Windows | `winget install AcoustID.Chromaprint` |
+| macOS | `brew install chromaprint` |
+| Linux | `apt install libchromaprint-tools` |
+
+Then a free key from [acoustid.org](https://acoustid.org/new-application), in
+`CRATEDIGGER_ACOUSTID_KEY`.
+
+The two stages are deliberately separate. Stage 1 runs `fpcalc` locally —
+no network, no key, nothing leaves the machine — and is cached on path, size
+and mtime like the scan. Stage 2 turns fingerprints into recording ids over
+the network. Splitting them means a large library is fingerprinted once and
+can be looked up later, repeatedly, or never.
+
+> `winget` puts `fpcalc` on `PATH` only after a shell restart, so
+> "I just installed it and it still says missing" is the first thing a user
+> would hit. The package directory is searched too.
+
+## Deciding what is certain
+
+```bash
+python cratedigger.py apply                   # dry run
+python cratedigger.py apply --write
+python cratedigger.py apply --tags            # tag plan, dry run
+```
+
+Everything upstream produces *candidates*. This decides which are certain
+enough to stop asking about, and writes those into the manifest with their
+source and confidence beside them — `label_source`, `label_confidence`, the
+convention `credits.py` established.
+
+Three rules:
+
+1. **A contested field is never applied.** If two sources disagree it goes to
+   the sheet, however strong either is.
+2. **Corroboration outranks strength.** Two independent sources agreeing at
+   0.8 beats one at 0.99, because the ways a duration match and an acoustic
+   fingerprint fail have nothing in common.
+3. **Your audio files are never touched.** `--write` writes the manifest,
+   which is regenerable from your files, and keeps the previous copy at
+   `library.json.before-apply`.
+
+Measured on the classical manifest: 1,022 fields applied, 75 held for review,
+0 contested — 452 of them MusicBrainz work ids.
+
+### Two identities, two fields
+
+MusicBrainz work ids go to `musicbrainz_workid`, **not** `work_id`. The
+latter is our own locally-derived grouping key and every track already has
+one, so proposing a replacement put 954 rows into "would overwrite" and the
+guard refused them all — the guard working correctly and the fragmentation
+fix never landing. They are different identities and deserve different
+fields; `MUSICBRAINZ_WORKID` is also what Picard writes.
+
+### Tag writing is planned, not enabled
+
+`--tags` produces `tag_changes.csv` (every field that would change) and
+`tag_backup.json` (the current tags of every file it would touch). **There is
+no code path that opens an audio file for writing.** Tag writing is phase
+3.3 and its requirements — per-run opt-in, a verified undo, a round-trip
+test — are not met. Producing the plan and the backup now is what makes
+those testable later.
+
+## Resolving duplicates
+
+```bash
+python cratedigger.py duplicates --open
+```
+
+Clusters side by side with path, quality and size, one copy preselected to
+keep. **It never deletes.** The output is a script you read and run yourself,
+and it is a dry run as written: PowerShell sets `$WhatIfPreference = $true`,
+the shell version sets `DRYRUN=1`. One edit arms it.
+
+Cluster paths are release *folders* — the ones in this library hold about 19
+tracks each — so the commands are recursive.
+
+### Why low-confidence clusters preselect nothing
+
+The largest cluster this library produced was `Celibidache Volume 1:
+Symphonies`, 14 entries, 4.1 GB "reclaimable". They were the fourteen discs
+of one box set, grouped because they share a title. A preselected keep would
+have offered to reduce a complete box set to one disc and called it a saving.
+
+So `same_title_review` means *"these share a title, look at them"*, never
+*"these are copies"*. Those clusters preselect nothing, contribute nothing to
+the script until a human chooses, and carry a warning saying why. The honest
+reclaimable figure for this library is **9.0 GB across 25 verified clusters**,
+not the 20.8 GB the raw cluster list implies.
+
 ## The browser
 
 ```bash
