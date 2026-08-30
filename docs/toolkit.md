@@ -405,6 +405,49 @@ the script until a human chooses, and carry a warning saying why. The honest
 reclaimable figure for this library is **9.0 GB across 25 verified clusters**,
 not the 20.8 GB the raw cluster list implies.
 
+## Sharing a catalogue
+
+```bash
+cratedigger export
+cratedigger export --out ~/site --title "The Collection"
+```
+
+The browser you already use, with everything that only makes sense on your
+own machine removed: no audio, no filesystem paths, no playlist export, no
+library root. What is left is the catalogue — works, dates, personnel,
+facets, counts — which is the part worth showing someone.
+
+The result is a directory with an `index.html`. Host it anywhere static, or
+open it from disk.
+
+### Absent, not hidden
+
+A hidden path is still a path you published. The path column is **overwritten
+with empty strings**, the root key is deleted, and the `<audio>` element is
+cut out of the file rather than hidden by script — so "no audio" is a fact
+about the bytes, not about runtime behaviour.
+
+Then the payload is audited before anything is written, and the export is
+**refused** if a drive letter, a home directory or a surviving path is found.
+
+### The leak that made the audit worth writing
+
+The first export refused itself. Not because of the path column — that was
+already blank — but because 28 *album titles* in this library are rip paths:
+
+```
+E:\APE\rip\Bareboim Bruckner CSO\CD01
+D:\<mojibake>\Unknown Artist - ...
+```
+
+Whoever ripped those discs tagged the album with the directory they ripped
+into. Blanking the path column would have published every one of them.
+Path-shaped metadata is now reduced to its last component, so that title
+becomes `CD01` — useless, but not a description of somebody's hard drive.
+
+`AC/DC Live` survives intact, which is the case a naive slash-split gets
+wrong.
+
 ## The browser
 
 ```bash

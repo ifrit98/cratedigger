@@ -298,8 +298,26 @@ Two design choices worth recording:
 tagged file and one untagged, restored state asserted **identical** to the
 original. CI installs mutagen so it runs rather than skips.
 
-**3.4 Shareable export** — a read-only static site of a collection, no audio,
-for showing a catalogue to someone else.
+**3.4 Shareable export — DONE** — a read-only static site of a collection,
+no audio, for showing a catalogue to someone else. Shipped as `export.py` /
+`cratedigger export`.
+
+The design rule is *absent, not hidden*: the path column is overwritten, the
+root key deleted, and the `<audio>` element cut from the file rather than
+hidden by script, so "no audio" describes the bytes rather than the runtime.
+The payload is audited before writing and the export refuses itself if a
+drive letter, home directory or surviving path is found.
+
+That audit paid for itself immediately. The first export **refused**, and not
+over the path column — 28 *album titles* in the test library are rip paths
+(`E:\APEip\Bareboim Bruckner CSO\CD01`), because whoever ripped those
+discs tagged the album with the directory they ripped into. Blanking the path
+column would have published every one. Path-shaped metadata is now reduced to
+its last component; `AC/DC Live` survives, which is the case a naive
+slash-split gets wrong.
+
+`tests/test_export.py` covers it as a privacy guarantee rather than a code
+review.
 
 ### Phase 4 — sustainability
 

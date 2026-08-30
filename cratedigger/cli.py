@@ -502,6 +502,23 @@ def cmd_tags(args):
     run("tags.py", argv, "tags", allow=(2,))
 
 
+def cmd_export(args):
+    """A copy of the catalogue safe to hand to someone else."""
+    cfg = load_config()
+    out = out_dir(cfg)
+    man = manifest_path(cfg)
+    if not os.path.exists(man):
+        sys.exit(f"no manifest yet -- run:  {PROG} build")
+    dest = args.out or os.path.join(out, "share")
+    argv = ["--manifest", man, "--out", dest]
+    if cfg.get("mode") == "artist":
+        argv.append("--artist")
+    title = args.title or cfg.get("title")
+    if title:
+        argv += ["--title", title]
+    run("export.py", argv, "shareable export")
+
+
 def cmd_audit(args):
     cfg = load_config()
     man = manifest_path(cfg)
@@ -808,6 +825,12 @@ def main():
     p.add_argument("--verify", action="store_true")
     p.add_argument("--force", action="store_true")
     p.set_defaults(func=cmd_tags)
+
+    p = sub.add_parser("export",
+                       help="a read-only catalogue you can share")
+    p.add_argument("--out", default=None, help="directory to write")
+    p.add_argument("--title", default=None)
+    p.set_defaults(func=cmd_export)
 
     sub.add_parser("audit", help="adversarial data checks").set_defaults(
         fn=cmd_audit)

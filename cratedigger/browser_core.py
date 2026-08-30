@@ -141,13 +141,26 @@ APP_HTML = r"""
   <div id="view"></div>
 </section>
 </main>
-<footer>
+<footer id="footer">
   <span id="nowplaying" style="color:var(--muted)">nothing playing</span>
   <audio id="player" controls preload="none"></audio>
 </footer>
 <script>
 const DATA = __PAYLOAD__;
 const T = DATA.tables, ROWS = DATA.rows, ROOT = DATA.root;
+// A shared export carries no filesystem paths, so anything that points at
+// one is removed rather than left to fail silently in front of a stranger.
+if(DATA.share){
+  document.addEventListener('DOMContentLoaded',()=>{
+    const f=document.getElementById('footer'); if(f) f.remove();
+    const x=document.getElementById('export'); if(x) x.remove();
+    // rows are re-rendered constantly, so hide play buttons with a rule
+    // rather than chasing them after every render
+    const st=document.createElement('style');
+    st.textContent='.play{display:none}';
+    document.head.appendChild(st);
+  });
+}
 const C = {}; DATA.cols.forEach((n,i)=>C[n]=i);
 const name = (tbl,i)=> i<0 ? null : (T[tbl]||[])[i];
 
@@ -474,6 +487,7 @@ function render(){
   }));
 }
 function play(r){
+  if(DATA.share) return;      // a shared copy has no audio and no paths
   const p=document.getElementById('player');
   p.src='file:///'+ROOT+'/'+r[C.path];
   document.getElementById('nowplaying').textContent =
