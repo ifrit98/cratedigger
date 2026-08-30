@@ -272,8 +272,30 @@ strongest argument in the project for never wiring a deleter to a heuristic.
 **3.1 Packaging — DONE** — `pipx install cratedigger`, console entry point, so there
 is no clone step. Vocabulary ships as package data.
 
-**3.2 Panel as primary** — first-run wizard, progress surviving a reload,
-vocabulary editing in the UI instead of raw JSON.
+**3.2 Panel as primary — DONE** — first-run wizard, progress surviving a
+reload, vocabulary editing in the UI instead of raw JSON.
+
+All three are in place, and the second turned out to be already true: job
+state lives on the server and the client replays from the start of the run,
+so a reload never lost anything. It is now verified rather than assumed.
+
+The vocabulary editor is an HTTP endpoint that writes files, so the name is
+never joined to a path. A name must appear in the listing the server itself
+produced, which makes traversal impossible rather than merely unlikely —
+`../../cli.py`, `..%2f..%2fcli.py` and `C:/Windows/win.ini` are all refused
+because they are not in the list, not because a check caught them.
+
+Tag writing is deliberately **not** armed from the panel. It can plan,
+preview, verify and undo; writing stays a terminal command, because putting
+a filesystem write behind a button in a web page is the ceremony 3.3 exists
+to prevent.
+
+The 3.1 package move had broken the panel outright — its stage table still
+shelled out to `cratedigger.py` at the repo root, so every button would have
+failed. Two further bugs surfaced only by driving it: the stage runner joined
+`argv[0]` to the package directory, turning `-m` into a nonexistent path; and
+saving vocabulary wrote CRLF on Windows, rewriting an LF file wholesale and
+producing a diff of the entire discography for a one-line edit.
 
 **3.3 Opt-in tag writing — DONE** — the most requested and most dangerous
 feature. All four requirements are met and tested: opt-in per run (`--write`
@@ -310,7 +332,8 @@ drive letter, home directory or surviving path is found.
 
 That audit paid for itself immediately. The first export **refused**, and not
 over the path column — 28 *album titles* in the test library are rip paths
-(`E:\APEip\Bareboim Bruckner CSO\CD01`), because whoever ripped those
+(`E:\APE
+ip\Bareboim Bruckner CSO\CD01`), because whoever ripped those
 discs tagged the album with the directory they ripped into. Blanking the path
 column would have published every one. Path-shaped metadata is now reduced to
 its last component; `AC/DC Live` survives, which is the case a naive

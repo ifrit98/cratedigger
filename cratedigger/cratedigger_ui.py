@@ -212,21 +212,134 @@ def status_payload():
     return data
 
 
+# ------------------------------------------------------------------ vocab
+#
+# Editing vocabulary through the panel means an HTTP endpoint that writes
+# files, so the name is never trusted. Callers pass a bare filename that must
+# appear in the listing this module produced; anything else is refused. There
+# is no path joining of user input, which is what makes traversal impossible
+# rather than merely unlikely.
+
+def vocab_root():
+    return cd.VOCAB_DIR
+
+
+def vocab_files():
+    """{name: absolute path} for every editable vocabulary file."""
+    out = {}
+    root = vocab_root()
+    for sub in ("", "artists"):
+        d = os.path.join(root, sub) if sub else root
+        if not os.path.isdir(d):
+            continue
+        for fn in sorted(os.listdir(d)):
+            if not fn.endswith(".json"):
+                continue
+            full = os.path.join(d, fn)
+            if os.path.isfile(full):
+                out[(sub + "/" + fn) if sub else fn] = full
+    return out
+
+
+def vocab_list():
+    items = []
+    for name, full in sorted(vocab_files().items()):
+        try:
+            size = os.path.getsize(full)
+        except OSError:
+            continue
+        entries = None
+        try:
+            with open(full, encoding="utf-8") as fh:
+                data = json.load(fh)
+            if isinstance(data, dict):
+                for key in ("sessions", "works", "lineups", "conductors",
+                            "ensembles", "musicians"):
+                    if isinstance(data.get(key), (list, dict)):
+                        entries = len(data[key])
+                        break
+                if entries is None:
+                    entries = len(data)
+            elif isinstance(data, list):
+                entries = len(data)
+        except (OSError, ValueError):
+            entries = None
+        items.append({"name": name, "bytes": size, "entries": entries})
+    return items
+
+
+def vocab_read(name):
+    full = vocab_files().get(name)
+    if not full:
+        return None
+    try:
+        with open(full, encoding="utf-8", newline="") as fh:
+            return fh.read()
+    except OSError:
+        return None
+
+
+def vocab_write(name, text):
+    """(ok, message). Refuses anything that is not valid JSON."""
+    full = vocab_files().get(name)
+    if not full:
+        return False, "unknown vocabulary file"
+    try:
+        json.loads(text)
+    except ValueError as e:
+        return False, "not valid JSON: %s" % e
+    # Keep one copy of what was there. Vocabulary is the one thing the
+    # pipeline cannot regenerate from your files.
+    backup = full + ".bak"
+    try:
+        if os.path.exists(full) and not os.path.exists(backup):
+            with open(full, encoding="utf-8") as src:
+                original = src.read()
+            with open(backup, "w", encoding="utf-8", newline="") as dst:
+                dst.write(original)
+        # newline="" writes the text exactly as the browser sent it.
+        # Without it Python translates to CRLF on Windows, so every save
+        # rewrote a LF file wholesale and produced a diff of the entire
+        # vocabulary for a one-line edit.
+        with open(full, "w", encoding="utf-8", newline="") as fh:
+            fh.write(text)
+    except OSError as e:
+        return False, "could not write: %s" % e
+    return True, "saved %s" % name
+
+
+# Every stage is spelled as `-m cratedigger`, not as a path to a script.
+# The 3.1 package move deleted cratedigger.py from the repo root, and this
+# table still pointed at it -- the panel would have failed on every button.
+CD = ["-m", "cratedigger"]
+
 STAGES = {
-    "scan":   ["cratedigger.py", "scan"],
-    "build":  ["cratedigger.py", "build"],
-    "views":  ["cratedigger.py", "views"],
-    "browse": ["cratedigger.py", "browse"],
-    "audit":  ["cratedigger.py", "audit"],
-    "all":    ["cratedigger.py", "all"],
-    "enrich-musicbrainz": ["cratedigger.py", "enrich", "--source",
-                           "musicbrainz"],
-    "enrich-wild":        ["cratedigger.py", "enrich", "--source", "wild"],
-    "enrich-all":         ["cratedigger.py", "enrich", "--source", "all"],
-    "results":       ["cratedigger.py", "results"],
-    "clean-dry":     ["cratedigger.py", "clean", "outputs", "--dry-run"],
-    "clean-outputs": ["cratedigger.py", "clean", "outputs", "--yes"],
-    "clean-all":     ["cratedigger.py", "clean", "all", "--yes"],
+    "scan":   CD + ["scan"],
+    "build":  CD + ["build"],
+    "views":  CD + ["views"],
+    "browse": CD + ["browse"],
+    "audit":  CD + ["audit"],
+    "all":    CD + ["all"],
+    "enrich-musicbrainz": CD + ["enrich", "--source", "musicbrainz"],
+    "enrich-wild":        CD + ["enrich", "--source", "wild"],
+    "enrich-all":         CD + ["enrich", "--source", "all"],
+    "fingerprint":        CD + ["fingerprint"],
+    "fingerprint-lookup": CD + ["fingerprint", "--lookup"],
+    "apply-dry":          CD + ["apply"],
+    "apply-write":        CD + ["apply", "--write"],
+    "apply-tags":         CD + ["apply", "--tags"],
+    "duplicates":         CD + ["duplicates"],
+    "export":             CD + ["export"],
+    # Tag writing is deliberately dry-run only from the panel. Arming a
+    # filesystem write behind a button in a web page is exactly the ceremony
+    # 3.3 exists to prevent; --write --yes stays a terminal decision.
+    "tags-dry":           CD + ["tags"],
+    "tags-verify":        CD + ["tags", "--verify"],
+    "tags-undo":          CD + ["tags", "--undo"],
+    "results":       CD + ["results"],
+    "clean-dry":     CD + ["clean", "outputs", "--dry-run"],
+    "clean-outputs": CD + ["clean", "outputs", "--yes"],
+    "clean-all":     CD + ["clean", "all", "--yes"],
 }
 
 
@@ -253,6 +366,15 @@ class Handler(BaseHTTPRequestHandler):
         if u.path == "/api/ls":
             return self._send(200, json.dumps(
                 list_dir((q.get("path") or [""])[0])))
+        if u.path == "/api/vocab":
+            return self._send(200, json.dumps({"files": vocab_list(),
+                                               "root": vocab_root()}))
+        if u.path == "/api/vocab/get":
+            name = (q.get("name") or [""])[0]
+            text = vocab_read(name)
+            if text is None:
+                return self._send(404, json.dumps({"error": "unknown file"}))
+            return self._send(200, json.dumps({"name": name, "text": text}))
         if u.path == "/api/job":
             since = int((q.get("since") or ["0"])[0])
             return self._send(200, json.dumps(JOB.snapshot(since)))
@@ -282,7 +404,7 @@ class Handler(BaseHTTPRequestHandler):
             body = {}
 
         if u.path == "/api/init":
-            argv = ["cratedigger.py", "init",
+            argv = CD + ["init",
                     "--library", body.get("library", "")]
             if body.get("output"):
                 argv += ["--output", body["output"]]
@@ -292,18 +414,15 @@ class Handler(BaseHTTPRequestHandler):
                 argv += ["--mode", body["mode"]]
             if body.get("offline"):
                 argv += ["--offline"]
-            ok = JOB.start("init", [os.path.join(HERE, a) if a.endswith(".py")
-                                    else a for a in argv])
+            ok = JOB.start("init", argv)
             return self._send(200, json.dumps({"started": ok}))
 
         if u.path == "/api/artist":
-            argv = ["cratedigger.py", "artists", "--create",
+            argv = CD + ["artists", "--create",
                     body.get("name", "")]
             if body.get("offline"):
                 argv += ["--offline"]
-            ok = JOB.start("create artist",
-                           [os.path.join(HERE, a) if a.endswith(".py") else a
-                            for a in argv])
+            ok = JOB.start("create artist", argv)
             return self._send(200, json.dumps({"started": ok}))
 
         if u.path == "/api/select-artist":
@@ -316,11 +435,18 @@ class Handler(BaseHTTPRequestHandler):
             cd.save_config(cfg, cfg.get("_path"))
             return self._send(200, json.dumps({"ok": True}))
 
+        if u.path == "/api/vocab/save":
+            ok, msg = vocab_write(body.get("name", ""), body.get("text", ""))
+            return self._send(200 if ok else 400,
+                              json.dumps({"ok": ok, "message": msg}))
         if u.path == "/api/run":
             stage = body.get("stage")
             if stage not in STAGES:
                 return self._send(400, json.dumps({"error": "unknown stage"}))
-            argv = [os.path.join(HERE, STAGES[stage][0])] + STAGES[stage][1:]
+            # STAGES now holds ["-m", "cratedigger", ...]; joining the
+            # first element with HERE turned "-m" into a nonexistent
+            # path and every stage failed to start.
+            argv = list(STAGES[stage])
             if stage == "scan" and body.get("workers"):
                 argv += ["--workers", str(int(body["workers"]))]
             ok = JOB.start(stage, argv)
@@ -423,6 +549,8 @@ pre{background:var(--panel);border:1px solid var(--line);border-radius:8px;
 </header>
 <main>
  <div class=col>
+  <div class=card id=firstrun style="display:none;border-color:var(--accent)">
+  </div>
   <div class=card>
     <h2>1 &middot; library</h2>
     <div class=row>
@@ -450,7 +578,7 @@ pre{background:var(--panel);border:1px solid var(--line);border-radius:8px;
       example.</p>
   </div>
 
-  <div class=card>
+  <div class=card data-needs-config>
     <h2>3 &middot; run</h2>
     <div class=row>
       <button data-stage=all class=primary>Run everything</button>
@@ -465,12 +593,60 @@ pre{background:var(--panel);border:1px solid var(--line);border-radius:8px;
       <button data-stage=enrich-wild>Enrich: Wild</button>
       <button data-stage=enrich-all>Enrich: all</button>
     </div>
+    <div class=row>
+      <button data-stage=fingerprint>Fingerprint</button>
+      <button data-stage=fingerprint-lookup>Identify (AcoustID)</button>
+      <button data-stage=apply-dry>Score findings</button>
+      <button data-stage=apply-write>Apply certain ones</button>
+    </div>
+    <div class=row>
+      <button data-stage=duplicates>Duplicates</button>
+      <button data-stage=export>Shareable export</button>
+    </div>
     <p class=hint>Scanning is the slow stage. Everything after it takes
       seconds, so rebuild freely once the probe exists.</p>
   </div>
 
-  <div class=card>
-    <h2>4 &middot; results &amp; teardown</h2>
+  <div class=card data-needs-config>
+    <h2>4 &middot; tags</h2>
+    <div class=row>
+      <button data-stage=apply-tags>Plan tag changes</button>
+      <button data-stage=tags-dry>Preview writes</button>
+      <button data-stage=tags-verify>Verify</button>
+      <button data-stage=tags-undo class=danger>Undo all writes</button>
+    </div>
+    <p class=hint>This is the only part of cratedigger that changes your
+      files, so the panel will not arm it. Preview and undo live here;
+      writing is a deliberate terminal command:
+      <span class=mono>cratedigger tags --write --yes</span>. Needs
+      <span class=mono>mutagen</span>.</p>
+  </div>
+
+  <div class=card data-needs-config>
+    <h2>5 &middot; vocabulary</h2>
+    <div class=row>
+      <select id=vocabPick class=grow></select>
+      <button id=vocabLoad>Open</button>
+    </div>
+    <textarea id=vocabText spellcheck=false
+      style="display:none;width:100%;min-height:260px;margin-top:8px;
+             font-family:var(--mono);font-size:12px;line-height:1.5;
+             background:var(--bg);color:var(--ink);
+             border:1px solid var(--line);border-radius:6px;padding:10px;
+             box-sizing:border-box"></textarea>
+    <div class=row id=vocabActions style=display:none>
+      <button id=vocabSave class=primary>Save</button>
+      <span class=hint id=vocabMsg></span>
+    </div>
+    <p class=hint>The curated knowledge &mdash; discography, personnel,
+      conductors, ensembles. It is the one thing a rebuild cannot regenerate
+      from your files, so the first save of any file keeps a
+      <span class=mono>.bak</span> beside it. Invalid JSON is refused rather
+      than written.</p>
+  </div>
+
+  <div class=card data-needs-config>
+    <h2>6 &middot; results &amp; teardown</h2>
     <div class=row>
       <button data-stage=results>What was produced</button>
       <button data-stage=clean-dry>Preview teardown</button>
@@ -544,6 +720,7 @@ async function refresh(){
   if(!(ST.artists||[]).length) a.innerHTML=
     '<p class=hint>No profiles yet. Create one below.</p>';
 
+  wizard();
   const s=$('#state'); s.innerHTML='';
   const add=(k,v,ok)=>{s.innerHTML+=
     `<b>${k}</b><span><span class="dot ${ok===undefined?'':ok?'ok':'no'}">
@@ -657,7 +834,79 @@ $('#openOut').onclick=()=>{
   else alert('Nothing built yet.');
 };
 
-refresh(); poll();
+
+// ---------------------------------------------------------------- vocabulary
+let vocabName = null;
+
+async function loadVocabList(){
+  const v = await api('/api/vocab');
+  const sel = $('#vocabPick');
+  sel.innerHTML = '';
+  (v.files||[]).forEach(f=>{
+    const o = document.createElement('option');
+    o.value = f.name;
+    const kb = (f.bytes/1024).toFixed(0);
+    o.textContent = f.name + '  (' +
+      (f.entries!==null&&f.entries!==undefined ? f.entries+' entries, ' : '') +
+      kb + ' KB)';
+    sel.appendChild(o);
+  });
+  if(!(v.files||[]).length){
+    const o=document.createElement('option');
+    o.textContent='no vocabulary files'; sel.appendChild(o);
+  }
+}
+
+$('#vocabLoad').onclick = async()=>{
+  const name = $('#vocabPick').value;
+  if(!name) return;
+  const r = await api('/api/vocab/get?name='+encodeURIComponent(name));
+  if(r.error){ $('#vocabMsg').textContent = r.error; return; }
+  vocabName = r.name;
+  const t = $('#vocabText');
+  t.value = r.text;
+  t.style.display = 'block';
+  $('#vocabActions').style.display = 'flex';
+  $('#vocabMsg').textContent = '';
+};
+
+$('#vocabSave').onclick = async()=>{
+  if(!vocabName) return;
+  const msg = $('#vocabMsg');
+  // Validate here as well as on the server, so a typo is caught before a
+  // request rather than after one.
+  try { JSON.parse($('#vocabText').value); }
+  catch(e){ msg.textContent = 'not valid JSON: ' + e.message; return; }
+  msg.textContent = 'saving...';
+  const r = await api('/api/vocab/save', {method:'POST',
+    headers:{'Content-Type':'application/json'},
+    body: JSON.stringify({name: vocabName, text: $('#vocabText').value})});
+  msg.textContent = r.message || (r.ok ? 'saved' : 'failed');
+  if(r.ok) loadVocabList();
+};
+
+// ------------------------------------------------------------- first run
+// With no config there is nothing to run and every button below is a dead
+// end, so the panel says what to do first instead of showing a wall of
+// disabled controls.
+function wizard(){
+  const configured = !!(ST.config && ST.config.library);
+  document.querySelectorAll('[data-needs-config]').forEach(el=>{
+    el.style.opacity = configured ? '' : '0.45';
+    el.style.pointerEvents = configured ? '' : 'none';
+  });
+  const banner = $('#firstrun');
+  if(!banner) return;
+  if(configured){ banner.style.display='none'; return; }
+  banner.style.display = 'block';
+  banner.innerHTML =
+    '<b>Nothing is configured yet.</b> Point step 1 at a music folder and '
+    + 'press <b>Set up</b>. That writes a small <span class=mono>'
+    + 'cratedigger.json</span> and every other step reads it &mdash; you '
+    + 'will not have to repeat the path.';
+}
+
+refresh(); poll(); loadVocabList();
 setInterval(poll,900);
 setInterval(()=>{ if(!running) refresh(); },5000);
 </script></body></html>

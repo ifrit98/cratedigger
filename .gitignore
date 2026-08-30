@@ -35,3 +35,7 @@ Thumbs.db
 *.egg-info/
 build/
 dist/
+
+# Backups the panel's vocabulary editor keeps beside each file it saves
+vocab/*.bak
+cratedigger/vocab/*.bak
