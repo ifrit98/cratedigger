@@ -20,7 +20,11 @@ import json
 import os
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-VOCAB = os.path.join(HERE, "vocab")
+# Installed, the package lives in site-packages, which is a poor
+# place to hand-edit curated vocabulary. CRATEDIGGER_VOCAB points
+# somewhere writable without touching the install.
+VOCAB = (os.environ.get("CRATEDIGGER_VOCAB")
+         or os.path.join(HERE, "vocab"))
 OUT = os.path.join(HERE, "output-coltrane")
 
 

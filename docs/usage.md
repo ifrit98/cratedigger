@@ -6,8 +6,8 @@ Two routes do the same work: a control panel, or the terminal. Pick either;
 they share the same config and can be mixed freely.
 
 ```bash
-python cratedigger.py serve       # panel at 127.0.0.1:8420
-python cratedigger.py --help      # the commands below
+cratedigger serve       # panel at 127.0.0.1:8420
+cratedigger --help      # the commands below
 ```
 
 ---
@@ -24,7 +24,7 @@ python cratedigger.py --help      # the commands below
 | `artists --create NAME` | create one, fetching id and life dates from MusicBrainz |
 
 ```bash
-python cratedigger.py init --library "D:\Music" --artist "Bill Evans"
+cratedigger init --library "D:\Music" --artist "Bill Evans"
 ```
 
 | flag | |
@@ -47,8 +47,8 @@ python cratedigger.py init --library "D:\Music" --artist "Bill Evans"
 | `audit` | adversarial data checks; exits with the HIGH count |
 
 ```bash
-python cratedigger.py scan --workers 16
-python cratedigger.py browse --open
+cratedigger scan --workers 16
+cratedigger browse --open
 ```
 
 `--workers` defaults to 12. Raise it on an SSD; **lower** it on a spinning
@@ -95,10 +95,10 @@ See [coltrane.md](coltrane.md).
 
 ```bash
 python doctor.py
-python cratedigger.py init --library "D:\Coltrane" --artist "John Coltrane"
-python cratedigger.py all
-python cratedigger.py results
-python cratedigger.py audit
+cratedigger init --library "D:\Coltrane" --artist "John Coltrane"
+cratedigger all
+cratedigger results
+cratedigger audit
 ```
 
 ### You added music
@@ -106,7 +106,7 @@ python cratedigger.py audit
 Re-scan, then everything downstream. Only the new files are probed:
 
 ```bash
-python cratedigger.py all
+cratedigger all
 ```
 
 ### You changed the model or a vocabulary
@@ -114,7 +114,7 @@ python cratedigger.py all
 No re-scan needed — the probe is unchanged:
 
 ```bash
-python cratedigger.py build && python cratedigger.py views && python cratedigger.py browse
+cratedigger build && cratedigger views && cratedigger browse
 ```
 
 This is the loop to iterate in. It costs seconds, so edit
@@ -123,14 +123,14 @@ This is the loop to iterate in. It costs seconds, so edit
 ### Reconciling dates
 
 ```bash
-python cratedigger.py enrich --source all
+cratedigger enrich --source all
 ```
 
 Then open the browser, switch to **Reconcile dates**, adjudicate, Export, and:
 
 ```bash
 python coltrane_decisions.py --in ~/Downloads/coltrane-date-decisions.json
-python cratedigger.py build
+cratedigger build
 ```
 
 Decisions become the highest-precedence source, above folder names, the
@@ -142,18 +142,18 @@ Give each its own output directory. Run commands from the directory holding
 that project's `cratedigger.json`, or re-run `init` to switch:
 
 ```bash
-python cratedigger.py init --library "D:\Coltrane" --output out-coltrane --artist "John Coltrane"
-python cratedigger.py all
+cratedigger init --library "D:\Coltrane" --output out-coltrane --artist "John Coltrane"
+cratedigger all
 
-python cratedigger.py init --library "L:\Music" --output out-library --mode library
-python cratedigger.py all
+cratedigger init --library "L:\Music" --output out-library --mode library
+cratedigger all
 ```
 
 ### Starting over
 
 ```bash
-python cratedigger.py clean all --yes
-python cratedigger.py all
+cratedigger clean all --yes
+cratedigger all
 ```
 
 ---
@@ -163,13 +163,13 @@ python cratedigger.py all
 Commands exit non-zero on failure, so they chain:
 
 ```bash
-python cratedigger.py build && python cratedigger.py views
+cratedigger build && cratedigger views
 ```
 
 `audit` exits with its **HIGH finding count**, which makes it a usable gate:
 
 ```bash
-python cratedigger.py audit || echo "structural problems found"
+cratedigger audit || echo "structural problems found"
 ```
 
 Prompts are skipped when stdin is not a terminal. `clean` **cancels** rather
@@ -178,7 +178,7 @@ than proceeding in that case — pass `--yes` if a script genuinely means it.
 `CRATEDIGGER_ARTIST` overrides the active profile for one invocation:
 
 ```bash
-CRATEDIGGER_ARTIST=bill-evans python cratedigger.py build
+CRATEDIGGER_ARTIST=bill-evans cratedigger build
 ```
 
 ---

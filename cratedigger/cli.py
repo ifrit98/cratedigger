@@ -1,8 +1,8 @@
 """cratedigger -- one command for the whole pipeline.
 
-    python cratedigger.py init          point it at a library, once
-    python cratedigger.py all           scan, build, views, browser
-    python cratedigger.py status        what is configured and what is built
+    {PROG} init          point it at a library, once
+    {PROG} all           scan, build, views, browser
+    {PROG} status        what is configured and what is built
 
 Everything else in this repo is a stage you can still run by hand with
 explicit paths. This wraps them so you do not have to repeat
@@ -38,7 +38,9 @@ import urllib.request
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 CONFIG_NAME = "cratedigger.json"
-ARTISTS_DIR = os.path.join(HERE, "vocab", "artists")
+VOCAB_DIR = (os.environ.get("CRATEDIGGER_VOCAB")
+             or os.path.join(HERE, "vocab"))
+ARTISTS_DIR = os.path.join(VOCAB_DIR, "artists")
 UA = "cratedigger/1.0 (personal library cataloging)"
 
 AUDIO_EXT = {".flac", ".mp3", ".dsf", ".dff", ".aif", ".aiff", ".aifc",
@@ -76,7 +78,7 @@ def load_config(required=True):
             p = alt
         elif required:
             sys.exit("No cratedigger.json here.\n"
-                     "  Run:  python cratedigger.py init")
+                     f"  Run:  {PROG} init")
         else:
             return {}
     with open(p, encoding="utf-8") as fh:
@@ -109,6 +111,22 @@ def manifest_path(cfg):
 
 
 # ----------------------------------------------------------------- helpers
+
+def prog():
+    """How to spell this command back to the user.
+
+    Installed, argv[0] is the console script and the answer is `cratedigger`.
+    From a clone it is `python -m cratedigger`. Printing the wrong one sends
+    people to a file that no longer exists at the repo root.
+    """
+    base = os.path.basename(sys.argv[0]).lower()
+    if base.startswith("cratedigger") and not base.endswith(".py"):
+        return "cratedigger"
+    return "python -m cratedigger"
+
+
+PROG = prog()
+
 
 def run(script, args, label=None, allow=()):
     if label:
@@ -162,7 +180,7 @@ def cmd_init(args):
         library = ask("  path to your library: ")
     if not library:
         sys.exit("No library given. Pass one:\n"
-                 '  python cratedigger.py init --library "D:\\Music"')
+                 f'  {PROG} init --library "D:\\Music"')
     library = os.path.abspath(os.path.expanduser(library))
     if not os.path.isdir(library):
         sys.exit(f"not a directory: {library}")
@@ -207,8 +225,8 @@ def cmd_init(args):
     print(f"  mode    : {mode}"
           + (f" ({artist_slug})" if artist_slug and mode == "artist" else ""))
     print("\nNext:")
-    print("  python cratedigger.py all        # scan, build, views, browser")
-    print("  python cratedigger.py status")
+    print(f"  {PROG} all        # scan, build, views, browser")
+    print(f"  {PROG} status")
 
 
 def slugify(name):
@@ -294,7 +312,7 @@ def ensure_profile(name, offline=False):
 def cmd_status(args):
     cfg = load_config(required=False)
     if not cfg:
-        print("No project here. Run:  python cratedigger.py init")
+        print(f"No project here. Run:  {PROG} init")
         return
     lib = cfg.get("library", "")
     out = out_dir(cfg)
@@ -368,7 +386,7 @@ def cmd_build(args):
     out = out_dir(cfg)
     raw = os.path.join(out, "raw_probe.jsonl")
     if not os.path.exists(raw):
-        sys.exit("no probe yet -- run:  python cratedigger.py scan")
+        sys.exit(f"no probe yet -- run:  {PROG} scan")
     if cfg.get("mode") == "artist":
         run("coltrane_build.py", ["--raw", raw, "--out", out,
                                   "--root", cfg["library"]], "deriving model")
@@ -382,7 +400,7 @@ def cmd_views(args):
     out = out_dir(cfg)
     man = manifest_path(cfg)
     if not os.path.exists(man):
-        sys.exit("no manifest yet -- run:  python cratedigger.py build")
+        sys.exit(f"no manifest yet -- run:  {PROG} build")
     if cfg.get("mode") == "artist":
         run("coltrane_views.py", ["--manifest", man,
                                   "--out", os.path.join(out, "views"),
@@ -397,7 +415,7 @@ def cmd_browse(args):
     out = out_dir(cfg)
     man = manifest_path(cfg)
     if not os.path.exists(man):
-        sys.exit("no manifest yet -- run:  python cratedigger.py build")
+        sys.exit(f"no manifest yet -- run:  {PROG} build")
     if cfg.get("mode") == "artist":
         html = os.path.join(out, "coltrane-browser.html")
         run("coltrane_app.py", ["--manifest", man, "--out", html,
@@ -439,7 +457,7 @@ def cmd_apply(args):
     cfg = load_config()
     man = manifest_path(cfg)
     if not os.path.exists(man):
-        sys.exit("no manifest yet -- run:  python cratedigger.py build")
+        sys.exit(f"no manifest yet -- run:  {PROG} build")
     argv = ["--manifest", man, "--threshold", str(args.threshold)]
     if args.write:
         argv.append("--apply")
@@ -455,7 +473,7 @@ def cmd_duplicates(args):
     out = out_dir(cfg)
     man = manifest_path(cfg)
     if not os.path.exists(man):
-        sys.exit("no manifest yet -- run:  python cratedigger.py build")
+        sys.exit(f"no manifest yet -- run:  {PROG} build")
     html = os.path.join(out, "duplicates.html")
     run("duplicates_app.py", ["--manifest", man, "--out", html,
                               "--root", cfg["library"]], "duplicate clusters")
@@ -473,7 +491,7 @@ def cmd_audit(args):
     cfg = load_config()
     man = manifest_path(cfg)
     if not os.path.exists(man):
-        sys.exit("no manifest yet -- run:  python cratedigger.py build")
+        sys.exit(f"no manifest yet -- run:  {PROG} build")
     run("coltrane_audit.py", ["--manifest", man, "--root", cfg["library"]])
 
 
@@ -481,7 +499,7 @@ def cmd_enrich(args):
     cfg = load_config()
     man = manifest_path(cfg)
     if not os.path.exists(man):
-        sys.exit("no manifest yet -- run:  python cratedigger.py build")
+        sys.exit(f"no manifest yet -- run:  {PROG} build")
     src = args.source
     artist_mode = cfg.get("mode") == "artist"
     if src in ("musicbrainz", "all"):
@@ -512,7 +530,7 @@ def cmd_artists(args):
     files = sorted(f for f in os.listdir(ARTISTS_DIR) if f.endswith(".json"))
     if not files:
         print("no artist profiles yet")
-        print("  python cratedigger.py artists --create \"Bill Evans\"")
+        print(f"  {PROG} artists --create \"Bill Evans\"")
         return
     print(f"{len(files)} artist profile(s) in vocab/artists/\n")
     for fn in files:
@@ -581,7 +599,7 @@ def cmd_results(args):
     cfg = load_config()
     out = out_dir(cfg)
     if not os.path.isdir(out):
-        sys.exit("nothing built yet in %s\n  python cratedigger.py all" % out)
+        sys.exit(f"nothing built yet in %s\n  {PROG} all" % out)
     print("output: %s\n" % out)
     found = 0
     for name, why in ARTIFACTS:
@@ -609,7 +627,7 @@ def cmd_results(args):
     if browser:
         print("\nStart here:  %s" % browser)
         print("  open it from disk -- no server needed")
-    print("\n  python cratedigger.py clean --dry-run   # what teardown "
+    print(f"\n  {PROG} clean --dry-run   # what teardown "
           "would remove")
 
 
@@ -698,7 +716,7 @@ def cmd_clean(args):
         except OSError as e:
             print("  !! %s: %s" % (path, e))
     print("\nremoved %d item(s)" % removed)
-    print("  rebuild with:  python cratedigger.py all")
+    print(f"  rebuild with:  {PROG} all")
 
 
 def cmd_all(args):
@@ -706,14 +724,14 @@ def cmd_all(args):
     cmd_build(args)
     cmd_views(args)
     cmd_browse(args)
-    print("\nDone. Verify with:  python cratedigger.py audit")
+    print(f"\nDone. Verify with:  {PROG} audit")
 
 
 # -------------------------------------------------------------------- main
 
 def main():
     ap = argparse.ArgumentParser(
-        prog="cratedigger", description=__doc__,
+        prog=PROG, description=__doc__.replace("{PROG}", PROG),
         formatter_class=argparse.RawDescriptionHelpFormatter)
     sub = ap.add_subparsers(dest="cmd")
 

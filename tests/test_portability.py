@@ -13,20 +13,21 @@ import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.join(HERE, os.pardir)
+PKG = os.path.join(ROOT, "cratedigger")
 sys.path.insert(0, ROOT)
 
 OLDEST = (3, 8)          # the floor advertised in README.md and ci.yml
 
 
 def modules():
-    return sorted(glob.glob(os.path.join(ROOT, "*.py"))
+    return sorted(glob.glob(os.path.join(PKG, "*.py"))
                   + glob.glob(os.path.join(HERE, "*.py")))
 
 
 # One case per module for the grammar check, plus one per top-level module
 # for the drive-letter check. Computed rather than written down, so adding a
 # module cannot silently go untested.
-CASE_COUNT = len(modules()) + len(glob.glob(os.path.join(ROOT, "*.py")))
+CASE_COUNT = len(modules()) + len(glob.glob(os.path.join(PKG, "*.py")))
 
 
 def main():
@@ -53,7 +54,7 @@ def main():
     #    happened here twice: build.py joined "D:\\" directly, and the
     #    general path lost its --root flag in a drive swap.
     drive = re.compile(r"""["'][A-Za-z]:[\/]""")
-    for path in glob.glob(os.path.join(ROOT, "*.py")):
+    for path in glob.glob(os.path.join(PKG, "*.py")):
         name = os.path.basename(path)
         count += 1
         with open(path, encoding="utf-8") as fh:

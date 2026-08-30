@@ -10,7 +10,7 @@ import sys
 
 # the toolkit lives one level up from tests/
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)),
-                                os.pardir))
+                                os.pardir, "cratedigger"))
 import credits  # noqa: E402
 
 # (path, is_classical, expected_surname_or_None)

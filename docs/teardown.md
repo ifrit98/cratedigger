@@ -20,7 +20,7 @@ Beyond that, exactly one directory matters:
 ## Preview first
 
 ```bash
-python cratedigger.py clean --dry-run
+cratedigger clean --dry-run
 ```
 
 Lists what would go, with a total size, and removes nothing.
@@ -28,20 +28,20 @@ Lists what would go, with a total size, and removes nothing.
 ## Remove generated output
 
 ```bash
-python cratedigger.py clean
+cratedigger clean
 ```
 
 Removes the manifest, CSVs, playlists, browser and reconciliation reports.
 **Keeps the raw probe**, so rebuilding is seconds rather than a re-scan:
 
 ```bash
-python cratedigger.py build && python cratedigger.py views
+cratedigger build && cratedigger views
 ```
 
 ## Remove everything generated
 
 ```bash
-python cratedigger.py clean all
+cratedigger clean all
 ```
 
 Adds the probe. The next build needs a full re-scan of your library — minutes,
@@ -50,11 +50,11 @@ not seconds. The command warns before doing it.
 ## Remove one thing
 
 ```bash
-python cratedigger.py clean views       # just the playlists
-python cratedigger.py clean browser     # just the html
-python cratedigger.py clean reports     # just the reconciliation CSVs
-python cratedigger.py clean manifest    # manifest + its CSVs
-python cratedigger.py clean probe       # just the probe
+cratedigger clean views       # just the playlists
+cratedigger clean browser     # just the html
+cratedigger clean reports     # just the reconciliation CSVs
+cratedigger clean manifest    # manifest + its CSVs
+cratedigger clean probe       # just the probe
 ```
 
 ## Confirmation
@@ -68,8 +68,8 @@ In the panel, both red buttons confirm in a dialog that states what survives.
 ## Starting over on the same library
 
 ```bash
-python cratedigger.py clean all --yes
-python cratedigger.py all
+cratedigger clean all --yes
+cratedigger all
 ```
 
 ## Pointing at a different library
@@ -77,7 +77,7 @@ python cratedigger.py all
 Re-run init. It overwrites the config; nothing else moves.
 
 ```bash
-python cratedigger.py init --library "E:\Other Music" --output output-other
+cratedigger init --library "E:\Other Music" --output output-other
 ```
 
 Use a separate `--output` per library, and both sets of results coexist.

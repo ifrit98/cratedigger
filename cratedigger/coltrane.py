@@ -19,7 +19,9 @@ import os
 import re
 import unicodedata
 
-VOCAB_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "vocab")
+VOCAB_DIR = (os.environ.get("CRATEDIGGER_VOCAB")
+             or os.path.join(os.path.dirname(
+                 os.path.abspath(__file__)), "vocab"))
 ARTISTS_DIR = os.path.join(VOCAB_DIR, "artists")
 
 # Which artist profile to load. Everything artist-specific -- life dates,

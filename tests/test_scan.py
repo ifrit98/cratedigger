@@ -16,7 +16,7 @@ import tempfile
 import time
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-ROOT = os.path.join(HERE, os.pardir)
+ROOT = os.path.join(HERE, os.pardir, "cratedigger")
 sys.path.insert(0, ROOT)
 
 SCAN = os.path.join(ROOT, "scan.py")

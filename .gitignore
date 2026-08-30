@@ -30,3 +30,8 @@ Thumbs.db
 # vocab/ is deliberately NOT ignored. It is the curated knowledge -- the
 # discography, personnel, and the cached MusicBrainz and Wild harvests --
 # and the one thing the pipeline cannot regenerate from your files.
+
+# Build artifacts from `pip install .` / `python -m build`
+*.egg-info/
+build/
+dist/

@@ -28,8 +28,10 @@ Two projects share the codebase:
 
 ## Install
 
-**Standard library only** — nothing to `pip install`, no virtualenv, no
-services. Three things, one of them optional:
+**No Python dependencies.** Nothing to resolve, no virtualenv required, no
+services. Install it, or run it straight from a clone — both work, and the
+clone needs nothing but Python itself. What it does want is one external
+binary:
 
 | | needed for | required? |
 |---|---|---|
@@ -41,6 +43,28 @@ services. Three things, one of them optional:
 Tested on Linux, macOS and Windows across Python 3.8–3.12 in CI. Developed
 against a real library on Windows only — see
 [docs/platform.md](docs/platform.md) for what that distinction costs you.
+
+### Install it
+
+```bash
+pipx install cratedigger       # isolated, on your PATH
+# or
+pip install cratedigger
+```
+
+Or run it from a clone with nothing installed at all — the toolkit is
+standard library only, so this works immediately:
+
+```bash
+git clone https://github.com/ifrit98/cratedigger
+cd cratedigger
+python -m cratedigger --help
+```
+
+Both spellings are equivalent; `cratedigger` and `python -m cratedigger` run
+the same code, and the help text tells you which one you used.
+
+### FFmpeg
 
 ```bash
 winget install Gyan.FFmpeg     # Windows
@@ -74,7 +98,7 @@ Two routes, same work, freely mixed.
 ### The panel
 
 ```bash
-python cratedigger.py serve
+cratedigger serve
 ```
 
 A local control panel at `127.0.0.1:8420`: browse to your music folder, pick
@@ -86,8 +110,8 @@ produced, and tear it down again. Bound to localhost only.
 ### The terminal
 
 ```bash
-python cratedigger.py init --library "D:\Music" --artist "John Coltrane"
-python cratedigger.py all
+cratedigger init --library "D:\Music" --artist "John Coltrane"
+cratedigger all
 ```
 
 `init` surveys the folder, estimates the scan, and writes `cratedigger.json`
@@ -111,7 +135,7 @@ Only `scan` is slow (~750 files/min). Everything downstream rebuilds in
 seconds, so the loop to iterate in is:
 
 ```bash
-python cratedigger.py build && python cratedigger.py views
+cratedigger build && cratedigger views
 ```
 
 → **[docs/usage.md](docs/usage.md)** — every flag, plus workflows for adding
@@ -121,7 +145,7 @@ calling the stages by hand.
 ### Then look at it
 
 ```bash
-python cratedigger.py results
+cratedigger results
 ```
 
 Lists every artifact with its size and purpose, ending at the one to open
@@ -134,7 +158,7 @@ output means.
 ### And clean up
 
 ```bash
-python cratedigger.py clean --dry-run
+cratedigger clean --dry-run
 ```
 
 **Your music is never touched, and `vocab/` is never touched** at any level —
@@ -149,8 +173,8 @@ Everything artist-specific is **data, not code** — life dates, eras, venues,
 sidemen and the discography all live in `vocab/artists/<slug>.json`.
 
 ```bash
-python cratedigger.py artists --create "Bill Evans"
-python cratedigger.py artists
+cratedigger artists --create "Bill Evans"
+cratedigger artists
 ```
 
 That fetches the MusicBrainz id and life span, then seeds empty session and
@@ -165,7 +189,7 @@ never inherits Coltrane's bands.
 ## Verifying
 
 ```bash
-python cratedigger.py audit
+cratedigger audit
 python tests/run_tests.py
 ```
 
@@ -179,7 +203,7 @@ explained in [coltrane.md](docs/coltrane.md).
 ## Reconciling dates against external sources
 
 ```bash
-python cratedigger.py enrich --source all
+cratedigger enrich --source all
 ```
 
 Fetches session data from **MusicBrainz** and **David Wild's discography**,
@@ -190,7 +214,7 @@ Adjudicate in the browser's **Reconcile dates** mode, then apply:
 
 ```bash
 python coltrane_decisions.py --in ~/Downloads/coltrane-date-decisions.json
-python cratedigger.py build
+cratedigger build
 ```
 
 **Nothing external is ever auto-applied.** Every reconciler produces a

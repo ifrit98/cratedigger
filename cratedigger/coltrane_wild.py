@@ -29,7 +29,11 @@ import urllib.error
 import urllib.request
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-VOCAB = os.path.join(HERE, "vocab")
+# Installed, the package lives in site-packages, which is a poor
+# place to hand-edit curated vocabulary. CRATEDIGGER_VOCAB points
+# somewhere writable without touching the install.
+VOCAB = (os.environ.get("CRATEDIGGER_VOCAB")
+         or os.path.join(HERE, "vocab"))
 OUT_JSON = os.path.join(VOCAB, "coltrane_wild_sessions.json")
 BASE = "http://www.wildmusic-jazz.com/"
 UA = "Mozilla/5.0 (compatible; personal-library-cataloging/1.0)"

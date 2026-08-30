@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cratedigger"
+version = "0.1.0"
+description = "Queryable metadata ontologies for music collections"
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.8"
+authors = [{ name = "ifrit98" }]
+keywords = ["music", "metadata", "musicbrainz", "flac", "playlists",
+            "cataloging", "discography"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Environment :: Console",
+  "Intended Audience :: End Users/Desktop",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Multimedia :: Sound/Audio",
+]
+
+# No install_requires, and that is the point. ffprobe and fpcalc are external
+# binaries the toolkit degrades without; nothing here needs pip to resolve.
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/ifrit98/cratedigger"
+Documentation = "https://github.com/ifrit98/cratedigger/tree/master/docs"
+Issues = "https://github.com/ifrit98/cratedigger/issues"
+
+[project.scripts]
+cratedigger = "cratedigger.cli:main"
+
+[tool.setuptools]
+packages = ["cratedigger"]
+
+[tool.setuptools.package-data]
+# The curated knowledge -- discography, personnel, conductors, ensembles --
+# is the one thing the pipeline cannot regenerate from your files, so it
+# ships with the package. CRATEDIGGER_VOCAB redirects it somewhere writable.
+cratedigger = ["vocab/*.json", "vocab/artists/*.json"]

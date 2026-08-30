@@ -18,12 +18,12 @@ The toolkit is standard-library only, so this is never a missing package.
 affects terminal display.
 
 **`No cratedigger.json here`**
-Run `python cratedigger.py init`, or `cd` to the directory where you ran it.
+Run `cratedigger init`, or `cd` to the directory where you ran it.
 
 ## The panel
 
 **Port already in use**
-`python cratedigger.py serve --port 9000`
+`cratedigger serve --port 9000`
 
 **A job seems stuck**
 It is still running — the pane streams output only as the stage produces it,

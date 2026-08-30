@@ -32,7 +32,11 @@ import urllib.parse
 import urllib.request
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-VOCAB = os.path.join(HERE, "vocab")
+# Installed, the package lives in site-packages, which is a poor
+# place to hand-edit curated vocabulary. CRATEDIGGER_VOCAB points
+# somewhere writable without touching the install.
+VOCAB = (os.environ.get("CRATEDIGGER_VOCAB")
+         or os.path.join(HERE, "vocab"))
 CACHE = os.path.join(VOCAB, "general_mb_cache.json")
 FINDINGS = os.path.join(VOCAB, "general_mb_works.json")
 

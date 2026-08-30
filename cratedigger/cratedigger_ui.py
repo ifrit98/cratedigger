@@ -1,6 +1,6 @@
 """Local control panel for cratedigger.
 
-    python cratedigger.py serve
+    cratedigger serve
 
 Serves a single page on 127.0.0.1 that does what the CLI does: point at a
 library, pick or create an artist profile, run the stages with live output,
@@ -28,7 +28,7 @@ from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
-import cratedigger as cd  # noqa: E402
+import cli as cd  # noqa: E402   (the package is on sys.path via the insert above)
 
 AUDIO_EXT = cd.AUDIO_EXT
 

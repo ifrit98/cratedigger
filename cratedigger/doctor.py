@@ -153,10 +153,10 @@ def main():
         print("Browser and views will work; scan.py needs ffprobe.")
         return 1
     print("All good.")
-    print("  set up  : python cratedigger.py init")
-    print("  panel   : python cratedigger.py serve")
-    print("  run all : python cratedigger.py all")
-    print("  results : python cratedigger.py results")
+    print("  set up  : cratedigger init")
+    print("  panel   : cratedigger serve")
+    print("  run all : cratedigger all")
+    print("  results : cratedigger results")
     return 0
 
 

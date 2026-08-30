@@ -117,7 +117,7 @@ pull.
 If a pull changes the model, rebuild — it costs seconds and needs no re-scan:
 
 ```bash
-python cratedigger.py build && python cratedigger.py views
+cratedigger build && cratedigger views
 ```
 
 ## Uninstalling

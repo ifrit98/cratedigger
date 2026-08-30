@@ -1,7 +1,7 @@
 # The control panel
 
 ```bash
-python cratedigger.py serve
+cratedigger serve
 ```
 
 A single page on `127.0.0.1:8420` that does what the CLI does, for people who
@@ -41,7 +41,7 @@ prints, with elapsed time and an exit status.
 ## Options
 
 ```bash
-python cratedigger.py serve --port 9000 --no-open
+cratedigger serve --port 9000 --no-open
 ```
 
 ## Limits

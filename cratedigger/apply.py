@@ -30,7 +30,11 @@ import os
 import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-VOCAB = os.path.join(HERE, "vocab")
+# Installed, the package lives in site-packages, which is a poor
+# place to hand-edit curated vocabulary. CRATEDIGGER_VOCAB points
+# somewhere writable without touching the install.
+VOCAB = (os.environ.get("CRATEDIGGER_VOCAB")
+         or os.path.join(HERE, "vocab"))
 
 # Auto-apply needs this much strength from a single uncorroborated source.
 # Deliberately high: the cost of a wrong value is that it looks authoritative

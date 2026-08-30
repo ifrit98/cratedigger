@@ -249,8 +249,8 @@ citations, not a mutation.
 ## Identifying files by their audio
 
 ```bash
-python cratedigger.py fingerprint             # local, no key, no network
-python cratedigger.py fingerprint --lookup    # needs an AcoustID key
+cratedigger fingerprint             # local, no key, no network
+cratedigger fingerprint --lookup    # needs an AcoustID key
 ```
 
 The answer to a folder of `track01.mp3` with no tags, which no amount of
@@ -280,9 +280,9 @@ can be looked up later, repeatedly, or never.
 ## Deciding what is certain
 
 ```bash
-python cratedigger.py apply                   # dry run
-python cratedigger.py apply --write
-python cratedigger.py apply --tags            # tag plan, dry run
+cratedigger apply                   # dry run
+cratedigger apply --write
+cratedigger apply --tags            # tag plan, dry run
 ```
 
 Everything upstream produces *candidates*. This decides which are certain
@@ -325,7 +325,7 @@ those testable later.
 ## Resolving duplicates
 
 ```bash
-python cratedigger.py duplicates --open
+cratedigger duplicates --open
 ```
 
 Clusters side by side with path, quality and size, one copy preselected to
@@ -352,7 +352,7 @@ not the 20.8 GB the raw cluster list implies.
 ## The browser
 
 ```bash
-python cratedigger.py browse
+cratedigger browse
 ```
 
 Writes `library-browser.html` -- one self-contained file, opened from disk.

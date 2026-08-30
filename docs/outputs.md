@@ -4,7 +4,7 @@ What every command prints, what every file is for, and which one to open
 first.
 
 ```bash
-python cratedigger.py results
+cratedigger results
 ```
 
 Lists what exists, with sizes and a one-line explanation of each.

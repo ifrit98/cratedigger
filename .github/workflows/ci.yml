@@ -72,16 +72,32 @@ jobs:
           python-version: '3.12'
       - name: Import every module
         run: |
-          for f in *.py; do
-            echo "-- $f"
-            python -c "import importlib,sys; importlib.import_module('${f%.py}')"
+          shopt -s nullglob
+          files=(cratedigger/*.py)
+          if [ ${#files[@]} -eq 0 ]; then
+            echo "no modules found -- the layout moved and this job went blank"
+            exit 1
+          fi
+          echo "checking ${#files[@]} modules"
+          for f in "${files[@]}"; do
+            b=$(basename "$f" .py)
+            echo "-- $b"
+            # Run from inside the package: modules import each other by bare
+            # name because the CLI executes them as scripts.
+            (cd cratedigger && python -c "import importlib; importlib.import_module('$b')")
           done
 
-      - name: Check every CLI responds to --help
+      - name: Check the packaged entry points
         run: |
-          for f in cratedigger.py scan.py build.py views.py playlists.py \
-                   general_mb.py general_app.py doctor.py; do
-            [ -f "$f" ] || continue
+          python -m cratedigger --help > /dev/null
+          for f in scan build views playlists general_mb general_app doctor \
+                   fingerprint apply duplicates_app; do
             echo "-- $f --help"
-            python "$f" --help > /dev/null
+            (cd cratedigger && python "$f.py" --help > /dev/null)
           done
+
+      - name: Install and run the console script
+        run: |
+          pip install .
+          cratedigger --help > /dev/null
+          python -c "import cratedigger, os, glob; d=os.path.dirname(cratedigger.__file__); n=len(glob.glob(os.path.join(d,'vocab','*.json'))); assert n>0, 'vocab did not ship as package data'; print('vocab files installed:', n)"

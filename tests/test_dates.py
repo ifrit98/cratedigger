@@ -8,7 +8,7 @@ import os
 import sys
 
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)),
-                                os.pardir))
+                                os.pardir, "cratedigger"))
 import coltrane  # noqa: E402
 
 # (text, expected_iso_or_None, expected_precision_or_None)

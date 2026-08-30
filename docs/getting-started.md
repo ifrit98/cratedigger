@@ -45,7 +45,7 @@ the fix. A `warn` is informational — no network only disables the enrichers.
 ### The panel
 
 ```bash
-python cratedigger.py serve
+cratedigger serve
 ```
 
 Opens `127.0.0.1:8420`. Press **Browse...**, walk to your music folder — the
@@ -55,7 +55,7 @@ folder**. Then **Set up**.
 ### The terminal
 
 ```bash
-python cratedigger.py init --library "D:\Music"
+cratedigger init --library "D:\Music"
 ```
 
 Either way it surveys the folder, reports what it found, estimates the scan
@@ -69,7 +69,7 @@ time, and writes `cratedigger.json` so nothing afterwards needs paths again.
 For a single-artist archive, the session-centric model is the right one:
 
 ```bash
-python cratedigger.py artists --create "Bill Evans"
+cratedigger artists --create "Bill Evans"
 ```
 
 MusicBrainz supplies the id and life dates; the eras, venues and discography
@@ -82,7 +82,7 @@ composition-centric. See [toolkit.md](toolkit.md).
 ## 4. Run it
 
 ```bash
-python cratedigger.py all
+cratedigger all
 ```
 
 Or press **Run everything** in the panel. Four stages:
@@ -100,7 +100,7 @@ Everything downstream rebuilds in seconds, so iterate freely.
 ## 5. Look at what you got
 
 ```bash
-python cratedigger.py results
+cratedigger results
 ```
 
 Lists every artifact with its size and what it is for. The one to open first
@@ -124,7 +124,7 @@ tune normalisation and incremental scan. Stdlib only; nothing to install.
 
 
 ```bash
-python cratedigger.py audit
+cratedigger audit
 ```
 
 Adversarial by design: it hunts for what is *wrong* and prints examples so
@@ -135,10 +135,10 @@ missing files, orphaned records. It exits with that count.
 
 ```bash
 python doctor.py
-python cratedigger.py init --library "D:\Coltrane" --artist "John Coltrane"
-python cratedigger.py all
-python cratedigger.py results
-python cratedigger.py audit
+cratedigger init --library "D:\Coltrane" --artist "John Coltrane"
+cratedigger all
+cratedigger results
+cratedigger audit
 ```
 
 ## Where things live
