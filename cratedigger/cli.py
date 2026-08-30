@@ -487,6 +487,21 @@ def cmd_duplicates(args):
             print("  (could not open automatically -- open it from disk)")
 
 
+def cmd_tags(args):
+    """The only command that changes your audio files."""
+    cfg = load_config()
+    out = out_dir(cfg)
+    plan = os.path.join(out, "tag_changes.csv")
+    if not os.path.exists(plan) and not (args.undo or args.verify):
+        sys.exit(f"no tag plan yet -- run:  {PROG} apply --tags")
+    argv = ["--plan", plan, "--root", cfg["library"]]
+    for flag in ("write", "yes", "undo", "verify", "force"):
+        if getattr(args, flag, False):
+            argv.append("--" + flag)
+    # exit 2 is "mutagen missing" or "refused a gate", both normal states
+    run("tags.py", argv, "tags", allow=(2,))
+
+
 def cmd_audit(args):
     cfg = load_config()
     man = manifest_path(cfg)
@@ -782,6 +797,17 @@ def main():
                        help="review duplicate clusters and emit a script")
     p.add_argument("--open", action="store_true")
     p.set_defaults(func=cmd_duplicates)
+
+    p = sub.add_parser("tags",
+                       help="write tags into your files (opt-in, reversible)")
+    p.add_argument("--write", action="store_true")
+    p.add_argument("--yes", action="store_true",
+                   help="required alongside --write")
+    p.add_argument("--undo", action="store_true",
+                   help="restore every file to its original tags")
+    p.add_argument("--verify", action="store_true")
+    p.add_argument("--force", action="store_true")
+    p.set_defaults(func=cmd_tags)
 
     sub.add_parser("audit", help="adversarial data checks").set_defaults(
         fn=cmd_audit)

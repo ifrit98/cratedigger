@@ -27,6 +27,13 @@ classifiers = [
 # binaries the toolkit degrades without; nothing here needs pip to resolve.
 dependencies = []
 
+[project.optional-dependencies]
+# Writing tags is the one thing that needs a Python library. mutagen edits
+# the tag block in place; the alternative -- rewriting whole files with
+# ffmpeg -- is a far more dangerous way to change a string. Optional, and
+# `cratedigger tags` refuses to run rather than falling back.
+tags = ["mutagen>=1.45"]
+
 [project.urls]
 Homepage = "https://github.com/ifrit98/cratedigger"
 Documentation = "https://github.com/ifrit98/cratedigger/tree/master/docs"

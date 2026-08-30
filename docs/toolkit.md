@@ -322,6 +322,62 @@ no code path that opens an audio file for writing.** Tag writing is phase
 test — are not met. Producing the plan and the backup now is what makes
 those testable later.
 
+## Writing tags into your files
+
+```bash
+cratedigger apply --tags        # produce the plan
+cratedigger tags                # dry run
+cratedigger tags --write --yes  # do it
+cratedigger tags --verify
+cratedigger tags --undo         # put everything back
+```
+
+The only code in the toolkit that modifies your files, built to be the last
+thing you reach for and the easiest thing to reverse. Needs `mutagen`:
+
+```bash
+pip install cratedigger[tags]
+```
+
+Without it, `tags` refuses rather than falling back to rewriting whole files
+with ffmpeg — a far more dangerous way to change a string.
+
+### It decides nothing
+
+`apply --tags` writes `tag_changes.csv`; `tags` executes it. The separation
+is the feature: the plan is a plain CSV you can read, sort, and **delete rows
+from**. Rows you remove are never written. Nothing infers anything at write
+time.
+
+### The four rules
+
+1. **Opt-in per run.** `--write` alone is refused; `--yes` is also required,
+   and no config setting can make writing the default.
+2. **A complete backup precedes any write.** Not only the fields being
+   changed — *every* tag each file had, so a restore can be exact. The
+   journal is flushed to disk before the first file is opened for writing,
+   and the run aborts if it cannot be written. A second write over an
+   existing journal is refused, because it would overwrite the record of your
+   original tags and leave undo restoring the wrong state.
+3. **`--undo` restores exactly.** It clears the tag block and rewrites the
+   original in full, which also removes tags that were *added*. Reverting
+   only the changed fields would leave those behind.
+4. **Verification is a round trip.** `--verify` re-reads every file and
+   compares against the journal.
+
+### Proven, not asserted
+
+`tests/test_tags.py` builds a real library with ffmpeg — one file with tags
+and one without, the two cases undo handles differently — writes to it, and
+asserts the restored state is **identical** to the original tag dictionary.
+Not "the changed fields reverted": identical. CI installs `mutagen` so this
+runs on every push rather than skipping.
+
+> Vorbis comment keys are case-insensitive and mutagen stores them
+> lowercased, so writing `TITLE` reads back as `title`. The first version of
+> `--verify` compared case-sensitively and reported every correct write as a
+> mismatch.
+
 ## Resolving duplicates
 
 ```bash

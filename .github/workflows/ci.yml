@@ -52,6 +52,12 @@ jobs:
         if: runner.os == 'Windows'
         run: choco install ffmpeg -y --no-progress
 
+      # Without mutagen, test_tags skips -- and the phase-3.3 criterion
+      # ("a verified undo, proven by a round-trip test") would be vacuous in
+      # CI. It stays an optional runtime dependency; it is not optional here.
+      - name: Install mutagen (optional extra, required for the tag suite)
+        run: pip install mutagen
+
       - name: Show versions
         run: |
           python --version

@@ -269,16 +269,34 @@ strongest argument in the project for never wiring a deleter to a heuristic.
 
 ### Phase 3 — product surface
 
-**3.1 Packaging** — `pipx install cratedigger`, console entry point, so there
+**3.1 Packaging — DONE** — `pipx install cratedigger`, console entry point, so there
 is no clone step. Vocabulary ships as package data.
 
 **3.2 Panel as primary** — first-run wizard, progress surviving a reload,
 vocabulary editing in the UI instead of raw JSON.
 
-**3.3 Opt-in tag writing** — the most requested and most dangerous feature.
-Requirements, all mandatory: explicit opt-in per run; a full backup of
-original tags before any write; `cratedigger tags --undo` restoring exactly;
-a dry-run listing every field that would change. Last, loudest, reversible.
+**3.3 Opt-in tag writing — DONE** — the most requested and most dangerous
+feature. All four requirements are met and tested: opt-in per run (`--write`
+is refused without `--yes`); a complete backup of *every* tag before any
+write, flushed before the first file is opened; `--undo` restoring exactly;
+and a dry run listing every field.
+
+Shipped as `tags.py` / `cratedigger tags`, with `mutagen` as an optional
+extra. It refuses to run without it rather than falling back to rewriting
+whole files with ffmpeg.
+
+Two design choices worth recording:
+
+- **It decides nothing.** `apply --tags` writes the plan; `tags` executes it.
+  The CSV is reviewable and row-deletable, so a human filter sits between
+  inference and the filesystem by construction rather than by discipline.
+- **A second write over an existing journal is refused.** It would overwrite
+  the record of the original tags and leave undo restoring the wrong state —
+  the failure mode where the safety net is what breaks.
+
+`tests/test_tags.py` proves the round trip: a real ffmpeg-built library, one
+tagged file and one untagged, restored state asserted **identical** to the
+original. CI installs mutagen so it runs rather than skips.
 
 **3.4 Shareable export** — a read-only static site of a collection, no audio,
 for showing a catalogue to someone else.
