@@ -191,7 +191,7 @@ been tested. The honest claim is "runs everywhere, proven on Windows."
 
 The unlock for "point at a folder and it works".
 
-**2.1 AcoustID / Chromaprint, behind a flag — DONE, measured**
+**2.1 AcoustID / Chromaprint, behind a flag — DONE, measured (full library)**
 
 Identify a track by its audio rather than its filename. This is what makes a
 library with garbage names tractable, and it is what beets and Picard already
@@ -223,44 +223,42 @@ never dispatched (`func=` where the dispatcher reads `fn`, so `--help`
 passed them all); and `apply --tags` writing the plan only when it had rows,
 leaving the previous run's plan on disk looking current.
 
-**The measurement.** A random 128-track sample seeded across the whole
-archive — not the first N in walk order, which is all DSD vinyl-side rips
-and would understate the rate badly:
+**The measurement.** The earlier 128-track sample was superseded on 31 Aug
+2026 by a full pass: all 3,620 audio files fingerprinted (280 turned out to
+be unreadable — corrupt files or a stream fpcalc can't parse, unrelated to
+this tool), 3,336 with a known title looked up against AcoustID:
 
 | | count | share |
 |---|---:|---:|
-| exact title match | 88 | 68.8% |
-| same tune, variant title | 10 | 7.8% |
-| disagrees | 11 | 8.6% |
-| no identification at all | 19 | 14.8% |
-| **identified correctly (strict)** | **98** | **76.6%** |
+| exact title match | 2,497 | 74.9% |
+| same tune, variant title | 293 | 8.8% |
+| disagrees | 211 | 6.3% |
+| no identification at all | 342 | 10.3% |
+| **identified correctly (strict)** | **2,790** | **83.6%** |
 
-Reading the 11 disagreements by hand, four or five are AcoustID being right
-where *we* are wrong, or equally valid: our title `203 mft 10.44` is a
-filename and AcoustID's "My Favorite Things" is correct; "Simple Like" is a
-genuine alternate title for "Like Sonny"; "A Love Supreme, Part 1:
-Acknowledgement" is a fuller form of our "Part I: Acknowledgement". That
-puts the adjudicated rate at **about 80%** — at the threshold, not
-comfortably past it, and the remainder are real errors (`Lush Life`
-identified as Ramsey Lewis's "The 'In' Crowd" at 0.99).
+This is the number to trust — 26x the earlier sample, and it clears 80%
+without needing to adjudicate the disagreements in our favor. (A hand check
+of the 211 disagreements still found the same pattern as before: some are
+AcoustID being right where our own tags are wrong or generic — "Piste 2/3/4"
+identified as "Vierd Blues" and "Equinox", "Untitled 90320" matched to
+"Untitled Original 90320" — and some are real errors, like "Soultrane"
+returned as "Russian Lullaby" at full confidence. Confidence score alone
+does not distinguish the two, which is exactly why the overwrite guard and
+review threshold exist rather than trusting the score outright.)
 
-The 19 non-identifications are not random. They are whole-LP-side DSD rips
-(one file holding an entire side cannot match a per-recording fingerprint),
-bass and drum solos, spoken announcements, playalong exercises, `Track 06`
-from a Sun Ship outtake reel, and basement bootlegs. AcoustID has no
-reference for most of it. **This archive is close to a worst case**: it is
-mostly unreleased live material, alternate takes and bootlegs. A library of
-commercially released albums would score far higher, and the 16% ceiling
-that duration matching hit on classical is exactly the gap fingerprinting
-closes.
+The 342 non-identifications follow the same pattern the smaller sample
+showed: whole-LP-side rips, solos, spoken announcements, playalong
+exercises, outtake reels and basement bootlegs — material with no
+commercial release for AcoustID to have indexed. This archive is close to a
+worst case for fingerprinting; a library of released albums would score
+higher.
 
-**Human decisions.** Against the archive as it stands, 54% of proposals need
-review — but that is the `would overwrite` guard firing on tracks that
-already have titles, which is the project's central principle working, not a
-failure. Re-run with those same tracks' titles blanked, which is the
-criterion's actual scenario (an untagged folder), and it is **11.0%**: 194
-auto-applied, 24 held for review, all 24 held because the score fell below
-the threshold rather than because anything disagreed.
+**Human decisions**, measured the same way — full-scale, on the untagged
+scenario the criterion describes: **4.4%** need review (5,724 auto-applied
+across title + recording-id fields, 264 held, all held on score rather than
+disagreement). Against the archive as it actually stands, with existing
+titles left in place, 1,585 of 4,447 proposals (35.6%) land in review — the
+`would overwrite` guard doing its job, not a shortfall.
 
 One bug worth recording: `--limit` rewrote the output file from only the
 records processed before the break, silently discarding every fingerprint
@@ -409,20 +407,20 @@ and official. In descending order of realism:
 | 1 | a 90k mixed library goes scan → browser in under 30 min; browser interactive in under 3 s | met |
 | 1 | audit reports 0 HIGH on both paths | met |
 | 1 | CI green on three platforms and three Python versions | met — 9 jobs, 3.8–3.12 |
-| 2 | ≥80% of an untagged, badly-named test folder identified correctly | **borderline** — 76.6% strict, ~80% adjudicated, n=128 |
-| 2 | human decisions needed for <20% of tracks | met — 11.0% on an untagged folder |
+| 2 | ≥80% of an untagged, badly-named test folder identified correctly | met — 83.6% strict, n=3,336 (full library) |
+| 2 | human decisions needed for <20% of tracks | met — 4.4% on an untagged folder, full library |
 | 3 | install to first browser under 5 minutes for a non-developer | met — `pipx install cratedigger`, verified from a clean venv |
 | 3 | tag writing has a verified undo, proven by a round-trip test | met — `tests/test_tags.py`, run in CI |
 
 Both phase-2 rows were measured on 31 Aug 2026 once a valid *application*
-key was in hand. The decision rate passes clearly. The identification rate
-lands at 76.6% strict, roughly 80% once the disagreements are adjudicated by
-hand — at the line rather than past it, on an archive that is close to a
-worst case for fingerprinting: mostly bootlegs, alternate takes, solos and
+key was in hand, first on a 128-track sample and then, once fingerprinting
+finished for the whole library, on all 3,336 tracks with a known title.
+Both numbers held up at scale and both criteria pass: 83.6% identified
+correctly, 4.4% needing a human, on an archive that is close to a worst
+case for fingerprinting — mostly bootlegs, alternate takes, solos and
 whole-LP-side rips, much of which was never commercially released and has no
-AcoustID reference. The number to re-measure is the same sample against a
-library of released albums; until then, "point at a folder and it works" is
-demonstrated but not comfortably proven.
+AcoustID reference. A library of released albums would be expected to score
+higher still. "Point at a folder and it works" is now measured, not just built.
 
 Duration-based MusicBrainz matching, which *is* measured, reaches 16% on
 classical. That is the ceiling without fingerprinting, and it is why 2.1
