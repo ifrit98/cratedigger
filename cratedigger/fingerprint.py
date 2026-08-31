@@ -399,10 +399,13 @@ def stage_lookup(args):
         # spend hours arriving at this same sentence.
         print("\nAcoustID refused the key: %s\n" % e)
         print("  key used: %s" % (key[:3] + "..." + key[-2:]))
-        print("\nAn application key is what this needs -- the string shown")
-        print("under 'API key' at https://acoustid.org/my-applications ,")
-        print("not the user API key on your account page. They are different")
-        print("and only the application key works here.")
+        print("\nAcoustID issues TWO keys and the error is the same for")
+        print("both. Signing in gives you a *user* API key, which is for")
+        print("submitting fingerprints. Lookup needs an *application* key,")
+        print("which only exists once you register an application:")
+        print("\n  https://acoustid.org/new-application   (sign in first)")
+        print("\nAny name and version will do. The key it issues is the one")
+        print("to use here; existing ones are at /my-applications.")
         if ident:
             with open(ident_path, "w", encoding="utf-8") as fh:
                 json.dump(ident, fh, ensure_ascii=False, indent=1)

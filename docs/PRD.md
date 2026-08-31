@@ -238,10 +238,14 @@ tag plan whose paths all resolve to real files. `tests/test_fingerprint.py`
 holds the regressions.
 
 **What is still needed is an *application* key.** AcoustID issues two
-different strings: a user API key on the account page, and a per-application
-key at <https://acoustid.org/my-applications>. Only the second works here,
-and the error for the wrong one is simply "invalid API key". The tool now
-says so when it is refused.
+different strings and returns the same error for both. Signing in hands
+you a *user* API key, which the webservice docs describe as being for
+submitting fingerprints; `/v2/lookup` takes `client`, which is an
+*application* key and exists only once you register an application at
+<https://acoustid.org/new-application>. Two separately generated keys were
+tried on 30 Aug and both were user keys, which is the trap: the account
+gives you one unprompted and it looks like the answer. The tool now names
+the right page when it is refused.
 
 One bug worth recording: `--limit` rewrote the output file from only the
 records processed before the break, silently discarding every fingerprint
@@ -397,8 +401,8 @@ and official. In descending order of realism:
 
 The two open rows are both phase 2 and both the same dependency. The key
 supplied on 30 Aug 2026 was refused by AcoustID as invalid — an *application*
-key from <https://acoustid.org/my-applications> is what this needs, not the
-user API key on the account page. The attempt was still worth making: it
+key from <https://acoustid.org/new-application> is what this needs, not
+the user API key that signing in hands you unprompted. The attempt was still worth making: it
 exposed four defects, two of which (a silent join failure and five
 undispatchable CLI commands) would have made a valid key look like a broken
 feature. Those are fixed and covered by tests. The identification rate itself
