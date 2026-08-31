@@ -207,11 +207,41 @@ Shipped as `fingerprint.py`, wired in as `cratedigger fingerprint`. Stage 1
 (`fpcalc`, local, no key, no network) is verified end to end: Chromaprint
 1.6.1 installed, real files fingerprinted, cache reuse confirmed.
 
-**Stage 2 is unverified.** AcoustID lookup needs a free API key, which needs
-an account; none is set, so remote identification has never been exercised
-against the live service. The code path exists and degrades cleanly, but the
-phase-2 success criterion — 80% of an untagged folder identified — cannot be
-claimed until someone runs it with a key.
+**Stage 2 was exercised against the live service on 30 Aug 2026** with a key
+supplied by the owner, and the service rejected it: `{"code": 4, "message":
+"invalid API key"}`. That is still not a measurement of the identification
+rate, but it was worth far more than one, because reaching the network
+uncovered four defects that no amount of local testing had:
+
+1. **A rejected key was reported as a busy server.** The 400 was treated like
+   a throttle and retried three times per file; the message that explained
+   everything was discarded. The run printed "0 identified, 12 deferred after
+   server errors", which reads like AcoustID was having a bad day. On a full
+   library that is 10,000 pointless requests to arrive at one sentence.
+2. **The join to the manifest silently matched nothing.** `apply.py` assumed
+   tracks are nested under their release; the artist archive keeps them in a
+   flat top-level list. Every identification was dropped and the run printed
+   `acoustid 0` — indistinguishable from a lookup that genuinely found
+   nothing. This alone would have made a *valid* key look useless.
+3. **Five CLI subcommands never dispatched.** `fingerprint`, `apply`,
+   `duplicates`, `tags` and `export` set `func=` where the dispatcher reads
+   `fn`. Every one of them parsed `--help` perfectly, which is why a
+   help-only smoke test passed them all.
+4. **`apply --tags` only wrote the plan when it had rows**, leaving the
+   previous run's plan on disk looking current — in the one file that
+   `tags.py --write` executes against real audio.
+
+With those fixed the chain is verified end to end apart from the network
+call itself: real fingerprints from `D:\Coltrane`, through a synthesised
+AcoustID response shaped like the live one, into scored proposals, into a
+tag plan whose paths all resolve to real files. `tests/test_fingerprint.py`
+holds the regressions.
+
+**What is still needed is an *application* key.** AcoustID issues two
+different strings: a user API key on the account page, and a per-application
+key at <https://acoustid.org/my-applications>. Only the second works here,
+and the error for the wrong one is simply "invalid API key". The tool now
+says so when it is refused.
 
 One bug worth recording: `--limit` rewrote the output file from only the
 records processed before the break, silently discarding every fingerprint
@@ -332,8 +362,7 @@ drive letter, home directory or surviving path is found.
 
 That audit paid for itself immediately. The first export **refused**, and not
 over the path column — 28 *album titles* in the test library are rip paths
-(`E:\APE
-ip\Bareboim Bruckner CSO\CD01`), because whoever ripped those
+(`E:\APE\rip\Bareboim Bruckner CSO\CD01`), because whoever ripped those
 discs tagged the album with the directory they ripped into. Blanking the path
 column would have published every one. Path-shaped metadata is now reduced to
 its last component; `AC/DC Live` survives, which is the case a naive
@@ -361,17 +390,20 @@ and official. In descending order of realism:
 | 1 | a 90k mixed library goes scan → browser in under 30 min; browser interactive in under 3 s | met |
 | 1 | audit reports 0 HIGH on both paths | met |
 | 1 | CI green on three platforms and three Python versions | met — 9 jobs, 3.8–3.12 |
-| 2 | ≥80% of an untagged, badly-named test folder identified correctly | **unverified** — needs an AcoustID key |
+| 2 | ≥80% of an untagged, badly-named test folder identified correctly | **unverified** — key supplied 30 Aug was refused as invalid |
 | 2 | human decisions needed for <20% of tracks | **not met** — depends on the above |
 | 3 | install to first browser under 5 minutes for a non-developer | met — `pipx install cratedigger`, verified from a clean venv |
 | 3 | tag writing has a verified undo, proven by a round-trip test | met — `tests/test_tags.py`, run in CI |
 
-The two open rows are both phase 2 and both the same dependency. AcoustID
-lookup needs a free API key, which needs an account; the code path exists and
-degrades cleanly, but the identification rate has never been measured against
-the live service. Until someone runs it with a key, neither number can be
-claimed — and the honest reading is that the phase-2 unlock ("point at a
-folder and it works") is built but unproven.
+The two open rows are both phase 2 and both the same dependency. The key
+supplied on 30 Aug 2026 was refused by AcoustID as invalid — an *application*
+key from <https://acoustid.org/my-applications> is what this needs, not the
+user API key on the account page. The attempt was still worth making: it
+exposed four defects, two of which (a silent join failure and five
+undispatchable CLI commands) would have made a valid key look like a broken
+feature. Those are fixed and covered by tests. The identification rate itself
+remains unmeasured, so the honest reading is unchanged: the phase-2 unlock
+("point at a folder and it works") is built, wired, and unproven.
 
 Duration-based MusicBrainz matching, which *is* measured, reaches 16% on
 classical. That is the ceiling without fingerprinting, and it is why 2.1

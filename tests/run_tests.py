@@ -17,7 +17,8 @@ sys.path.insert(0, os.path.join(HERE, os.pardir))
 sys.path.insert(0, HERE)
 
 SUITES = ["test_credits", "test_dates", "test_sessions", "test_scan",
-          "test_portability", "test_tags", "test_export"]
+          "test_portability", "test_tags", "test_export",
+          "test_fingerprint"]
 
 
 def main():

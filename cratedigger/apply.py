@@ -104,6 +104,34 @@ class Proposal(object):
 # gathering what the enrichers found
 
 
+def iter_tracks(manifest):
+    """Every track, whichever shape the manifest uses.
+
+    The general build nests tracks under their release. The artist archive
+    keeps a flat top-level list, because there a track belongs to a *session*
+    as much as to a release. Assuming the nested shape meant every AcoustID
+    identification against that archive was silently discarded -- the join
+    ran, matched nothing, and reported "acoustid 0" as though the lookup had
+    simply found nothing.
+    """
+    flat = manifest.get("tracks")
+    if flat:
+        for t in flat:
+            yield t
+        return
+    for rel in manifest.get("releases", []):
+        for t in rel.get("tracks") or []:
+            yield t
+
+
+def tracks_by_release(manifest):
+    """{release_id: [tracks]}, for either shape."""
+    out = {}
+    for t in iter_tracks(manifest):
+        out.setdefault(t.get("release_id"), []).append(t)
+    return out
+
+
 def from_musicbrainz(props, manifest):
     """Accepted release matches from general_mb.py.
 
@@ -114,6 +142,7 @@ def from_musicbrainz(props, manifest):
     """
     cache = load_json(os.path.join(VOCAB, "general_mb_cache.json"), {})
     by_path = {r["path"]: r for r in manifest.get("releases", [])}
+    by_rel = tracks_by_release(manifest)
     n = 0
     for path, entry in cache.items():
         acc = entry.get("accepted")
@@ -133,7 +162,7 @@ def from_musicbrainz(props, manifest):
         # Per-recording work ids: the point of the exercise. A work id is the
         # stable identity that catalogue numbers cannot supply, so the same
         # piece in three differently-named folders finally collapses to one.
-        ours = sorted(rel.get("tracks", []),
+        ours = sorted(by_rel.get(rid) or [],
                       key=lambda t: (t.get("disc_number") or 0,
                                      t.get("track_number") or 0))
         theirs = acc.get("tracks") or []
@@ -164,10 +193,9 @@ def from_acoustid(props, manifest, ids_path):
     if not ident:
         return 0
     by_path = {}
-    for rel in manifest.get("releases", []):
-        for t in rel.get("tracks", []):
-            if t.get("path"):
-                by_path[t["path"].replace("\\", "/")] = t
+    for t in iter_tracks(manifest):
+        if t.get("path"):
+            by_path[t["path"].replace("\\", "/")] = t
     n = 0
     for path, best in ident.items():
         t = by_path.get(path.replace("\\", "/"))
@@ -190,8 +218,8 @@ def index_entities(manifest):
     ent = {}
     for rel in manifest.get("releases", []):
         ent[rel["release_id"]] = rel
-        for t in rel.get("tracks", []):
-            ent[t["track_id"]] = t
+    for t in iter_tracks(manifest):
+        ent[t["track_id"]] = t
     return ent
 
 
@@ -347,12 +375,16 @@ def stage_tags(args, manifest, rows):
 
     out_dir = os.path.dirname(os.path.abspath(args.manifest))
     plan = os.path.join(out_dir, "tag_changes.csv")
-    if changes:
-        with open(plan, "w", encoding="utf-8-sig", newline="") as fh:
-            w = csv.DictWriter(fh, fieldnames=list(changes[0].keys()))
-            w.writeheader()
-            for c in sorted(changes, key=lambda x: (x["path"], x["tag"])):
-                w.writerow(c)
+    # Always rewrite, even with nothing to say. Skipping the write when there
+    # are no changes leaves the PREVIOUS run's plan sitting on disk looking
+    # current, and `tags.py --write` would then execute a plan the manifest no
+    # longer supports. An empty plan must be visibly empty.
+    fields = ["path", "tag", "current", "proposed", "source", "confidence"]
+    with open(plan, "w", encoding="utf-8-sig", newline="") as fh:
+        w = csv.DictWriter(fh, fieldnames=fields)
+        w.writeheader()
+        for c in sorted(changes, key=lambda x: (x["path"], x["tag"])):
+            w.writerow(c)
     bpath = os.path.join(out_dir, "tag_backup.json")
     with open(bpath, "w", encoding="utf-8") as fh:
         json.dump({"_comment": "Original tags for every file the tag plan "
@@ -365,9 +397,12 @@ def stage_tags(args, manifest, rows):
     print("  %d tag values across %d files" % (len(changes), files))
     print("  -> %s" % plan)
     print("  -> %s   (%d files backed up)" % (bpath, len(backup)))
-    print("\nNo write path exists yet. Tag writing is phase 3.3 and needs a")
-    print("verified undo first; this plan and backup are what make that")
-    print("testable.")
+    if changes:
+        print("\nRead the plan, delete any row you disagree with, then:")
+        print("  python tags.py --plan %s --root <library>" % plan)
+        print("  ... then --write --yes to write, --undo to reverse")
+    else:
+        print("\nNothing to write. The plan is empty, not stale.")
     return len(changes)
 
 

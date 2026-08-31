@@ -448,6 +448,8 @@ def cmd_fingerprint(args):
         argv.append("--full")
     if args.lookup:
         argv.append("--lookup")
+    if args.key:
+        argv += ["--key", args.key]
     # Exit 2 means "fpcalc or an API key is missing", which is a normal
     # state for an optional feature, not a pipeline failure.
     run("fingerprint.py", argv, "fingerprinting", allow=(2,))
@@ -761,7 +763,11 @@ def cmd_all(args):
 
 # -------------------------------------------------------------------- main
 
-def main():
+def build_parser():
+    """The whole CLI surface, separated from running it so a
+    test can check every subcommand is actually wired up. Five
+    of them once set `func=` where the dispatcher reads `fn`,
+    and `--help` parsed perfectly for all of them."""
     ap = argparse.ArgumentParser(
         prog=PROG, description=__doc__.replace("{PROG}", PROG),
         formatter_class=argparse.RawDescriptionHelpFormatter)
@@ -797,7 +803,10 @@ def main():
                    help="ask AcoustID to identify what was fingerprinted")
     p.add_argument("--limit", type=int, default=0)
     p.add_argument("--full", action="store_true")
-    p.set_defaults(func=cmd_fingerprint)
+    p.add_argument("--key", default=None,
+                   help="AcoustID application key (or set"
+                        " CRATEDIGGER_ACOUSTID_KEY)")
+    p.set_defaults(fn=cmd_fingerprint)
 
     p = sub.add_parser("apply",
                        help="score findings; write the certain ones")
@@ -808,12 +817,12 @@ def main():
     p.add_argument("--tags", action="store_true",
                    help="show the tag writes this would imply (dry run)")
     p.add_argument("--threshold", type=float, default=0.95)
-    p.set_defaults(func=cmd_apply)
+    p.set_defaults(fn=cmd_apply)
 
     p = sub.add_parser("duplicates",
                        help="review duplicate clusters and emit a script")
     p.add_argument("--open", action="store_true")
-    p.set_defaults(func=cmd_duplicates)
+    p.set_defaults(fn=cmd_duplicates)
 
     p = sub.add_parser("tags",
                        help="write tags into your files (opt-in, reversible)")
@@ -824,13 +833,13 @@ def main():
                    help="restore every file to its original tags")
     p.add_argument("--verify", action="store_true")
     p.add_argument("--force", action="store_true")
-    p.set_defaults(func=cmd_tags)
+    p.set_defaults(fn=cmd_tags)
 
     p = sub.add_parser("export",
                        help="a read-only catalogue you can share")
     p.add_argument("--out", default=None, help="directory to write")
     p.add_argument("--title", default=None)
-    p.set_defaults(func=cmd_export)
+    p.set_defaults(fn=cmd_export)
 
     sub.add_parser("audit", help="adversarial data checks").set_defaults(
         fn=cmd_audit)
@@ -869,6 +878,11 @@ def main():
     p.add_argument("--open", action="store_true")
     p.set_defaults(fn=cmd_all)
 
+    return ap
+
+
+def main():
+    ap = build_parser()
     args = ap.parse_args()
     if not args.cmd:
         ap.print_help()

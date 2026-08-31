@@ -238,13 +238,36 @@ def stage_fingerprint(args):
 # stage 2: ask AcoustID what these are
 
 
+class Fatal(Exception):
+    """The run cannot continue -- a bad key, not a bad file."""
+
+
+# AcoustID reports failures in the response body, not the status line, so a
+# rejected key arrives as a 400 that looks exactly like any other 400. These
+# are the codes where retrying is pointless: the key is wrong, and it will be
+# wrong for every one of the next few thousand files.
+FATAL_CODES = {4, 6}          # invalid API key, invalid user API key
+
+
+def _describe(body):
+    """(code, message) from an AcoustID error body."""
+    try:
+        d = json.loads(body)
+    except ValueError:
+        return None, (body or "").strip()[:200] or "no message"
+    err = d.get("error") or {}
+    return err.get("code"), err.get("message") or "unknown error"
+
+
 def acoustid_lookup(key, duration, fp, retries=3):
-    """(results, transient). Same contract as the MusicBrainz reconciler:
-    a throttle must never be cached as an absence."""
+    """(results, transient, error). Same contract as the MusicBrainz
+    reconciler: a throttle must never be cached as an absence. Raises Fatal
+    when the key itself is refused."""
     data = urllib.parse.urlencode({
         "client": key, "duration": str(duration), "fingerprint": fp,
         "meta": "recordings releasegroups compress",
     }).encode("ascii")
+    problem = "no response"
     for attempt in range(retries):
         wait = ACOUSTID_RATE - (time.time() - _last[0])
         if wait > 0:
@@ -258,16 +281,27 @@ def acoustid_lookup(key, duration, fp, retries=3):
             with urllib.request.urlopen(req, timeout=30) as fh:
                 d = json.loads(fh.read().decode("utf-8"))
             if d.get("status") != "ok":
-                return None, False        # a real, cacheable refusal
-            return d.get("results") or [], False
+                err = d.get("error") or {}
+                if err.get("code") in FATAL_CODES:
+                    raise Fatal(err.get("message") or "the key was refused")
+                return None, False, err.get("message") or "not ok"
+            return d.get("results") or [], False, None
         except urllib.error.HTTPError as e:
             if e.code in (429, 503):
+                problem = "HTTP %d (throttled)" % e.code
                 time.sleep(2 ** attempt)
                 continue
-            return None, True
-        except Exception:  # noqa: BLE001
+            code, msg = _describe(e.read().decode("utf-8", "replace"))
+            if code in FATAL_CODES:
+                raise Fatal(msg)
+            # a real, cacheable refusal of this fingerprint
+            return None, False, "HTTP %d: %s" % (e.code, msg)
+        except Fatal:
+            raise
+        except Exception as e:  # noqa: BLE001
+            problem = "%s: %s" % (type(e).__name__, e)
             time.sleep(2 ** attempt)
-    return None, True
+    return None, True, problem
 
 
 def best_result(results):
@@ -341,20 +375,40 @@ def stage_lookup(args):
           % (len(prints), len(ident), len(todo)))
 
     found = skipped = 0
-    for i, p in enumerate(todo, 1):
-        results, transient = acoustid_lookup(key, p["duration"],
-                                             p["fingerprint"])
-        if transient:
-            skipped += 1
-            continue                      # leave uncached so a rerun retries
-        best = best_result(results)
-        ident[p["path"]] = best or {"score": 0, "n_candidates": 0}
-        if best:
-            found += 1
-        if i % 25 == 0:
+    reasons = {}
+    try:
+        for i, p in enumerate(todo, 1):
+            results, transient, err = acoustid_lookup(key, p["duration"],
+                                                      p["fingerprint"])
+            if transient:
+                skipped += 1
+                reasons[err or "unknown"] = reasons.get(err or "unknown", 0) + 1
+                continue                  # leave uncached so a rerun retries
+            if err:
+                reasons[err] = reasons.get(err, 0) + 1
+            best = best_result(results)
+            ident[p["path"]] = best or {"score": 0, "n_candidates": 0}
+            if best:
+                found += 1
+            if i % 25 == 0:
+                with open(ident_path, "w", encoding="utf-8") as fh:
+                    json.dump(ident, fh, ensure_ascii=False, indent=1)
+                print("  %d/%d  %d identified" % (i, len(todo), found))
+    except Fatal as e:
+        # Stop at the first one. Retrying a refused key once per file would
+        # spend hours arriving at this same sentence.
+        print("\nAcoustID refused the key: %s\n" % e)
+        print("  key used: %s" % (key[:3] + "..." + key[-2:]))
+        print("\nAn application key is what this needs -- the string shown")
+        print("under 'API key' at https://acoustid.org/my-applications ,")
+        print("not the user API key on your account page. They are different")
+        print("and only the application key works here.")
+        if ident:
             with open(ident_path, "w", encoding="utf-8") as fh:
                 json.dump(ident, fh, ensure_ascii=False, indent=1)
-            print("  %d/%d  %d identified" % (i, len(todo), found))
+            print("\n%d results from before the failure kept in %s"
+                  % (len(ident), ident_path))
+        return 2
 
     with open(ident_path, "w", encoding="utf-8") as fh:
         json.dump(ident, fh, ensure_ascii=False, indent=1)
@@ -362,8 +416,11 @@ def stage_lookup(args):
     if skipped:
         print("%d deferred after server errors -- run again to pick them up"
               % skipped)
+    for reason, n in sorted(reasons.items(), key=lambda kv: -kv[1])[:5]:
+        print("  %4d  %s" % (n, reason))
     print("-> %s" % ident_path)
-    print("\nNothing was applied. Score these with:  python apply.py --dry-run")
+    print("\nNothing was applied. A dry run is the default; score these")
+    print("with:  python apply.py --manifest <manifest>")
     return 0
 
 
