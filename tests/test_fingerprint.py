@@ -22,6 +22,7 @@ import io
 import json
 import os
 import sys
+import shutil
 import tempfile
 import urllib.error
 
@@ -32,7 +33,7 @@ sys.path.insert(0, PKG)
 import apply as A          # noqa: E402
 import fingerprint as F    # noqa: E402
 
-CASE_COUNT = 18
+CASE_COUNT = 20
 
 
 class FakeResponse(object):
@@ -205,6 +206,31 @@ def main():
           "unwired: %s" % ", ".join(unwired))
     check("the CLI surface is not empty", len(choices) >= 15,
           "%d subcommands" % len(choices))
+
+    # ---- AppleDouble sidecars are excluded, not just usually filtered out -
+    import scan                                          # noqa: E402
+    tmp2 = tempfile.mkdtemp(prefix="cratedigger_ad_")
+    try:
+        for name in ("01 Naima.flac", "._01 Naima.flac", "._resource"):
+            io.open(os.path.join(tmp2, name), "w").close()
+        real_root = scan.ROOT
+        scan.ROOT = tmp2
+        try:
+            found = [p for _kind, p in scan.walk()]
+        finally:
+            scan.ROOT = real_root
+        check("scan.walk skips AppleDouble sidecars",
+              not any(os.path.basename(p).startswith("._") for p in found)
+              and any(os.path.basename(p) == "01 Naima.flac" for p in found),
+              [os.path.basename(p) for p in found])
+
+        found = list(F.walk(tmp2, set()))
+        check("fingerprint.walk skips AppleDouble sidecars",
+              not any(os.path.basename(p).startswith("._") for p in found)
+              and any(os.path.basename(p) == "01 Naima.flac" for p in found),
+              [os.path.basename(p) for p in found])
+    finally:
+        shutil.rmtree(tmp2, ignore_errors=True)
 
     print("\n%d/%d passed" % (CASE_COUNT - len(fails), CASE_COUNT))
     for f in fails:

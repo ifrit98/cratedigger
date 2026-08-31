@@ -21,6 +21,11 @@ touching the audio again -- fingerprinting a large library is expensive and
 the fingerprint does not change unless the file does.
 
 Nothing is applied. Results are candidates for `apply.py` to score.
+
+Known gap: the bundled fpcalc cannot decode `.dff` (DSDIFF) files --
+its own static ffmpeg lacks that demuxer, even though `ffprobe` on
+this machine reads the same files fine. Real, playable SACD rips
+come back as fingerprinting errors for this reason alone.
 """
 import argparse
 import json
@@ -150,6 +155,8 @@ def walk(root, skip):
         dirs[:] = [d for d in dirs
                    if d.lower() not in skip and not d.startswith(".")]
         for f in sorted(files):
+            if f.startswith("._"):    # AppleDouble sidecar, not audio
+                continue
             if os.path.splitext(f)[1].lower() in AUDIO_EXT:
                 yield os.path.join(dirpath, f)
 

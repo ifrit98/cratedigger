@@ -39,6 +39,12 @@ def walk():
     for dirpath, dirnames, filenames in os.walk(ROOT):
         dirnames[:] = [d for d in dirnames if d not in SKIP_DIRS]
         for fn in filenames:
+            # AppleDouble sidecars ("._Track.flac") a Mac leaves behind when
+            # copying onto this drive. Same extension as the real track next
+            # to them, so they would otherwise be probed as audio and only
+            # dropped by chance when ffprobe finds nothing playable in them.
+            if fn.startswith("._"):
+                continue
             ext = os.path.splitext(fn)[1].lower()
             full = os.path.join(dirpath, fn)
             if ext in AUDIO_EXT:
