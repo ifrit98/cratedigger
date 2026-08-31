@@ -191,7 +191,7 @@ been tested. The honest claim is "runs everywhere, proven on Windows."
 
 The unlock for "point at a folder and it works".
 
-**2.1 AcoustID / Chromaprint, behind a flag — DONE (lookup unverified)**
+**2.1 AcoustID / Chromaprint, behind a flag — DONE, measured**
 
 Identify a track by its audio rather than its filename. This is what makes a
 library with garbage names tractable, and it is what beets and Picard already
@@ -207,45 +207,60 @@ Shipped as `fingerprint.py`, wired in as `cratedigger fingerprint`. Stage 1
 (`fpcalc`, local, no key, no network) is verified end to end: Chromaprint
 1.6.1 installed, real files fingerprinted, cache reuse confirmed.
 
-**Stage 2 was exercised against the live service on 30 Aug 2026** with a key
-supplied by the owner, and the service rejected it: `{"code": 4, "message":
-"invalid API key"}`. That is still not a measurement of the identification
-rate, but it was worth far more than one, because reaching the network
-uncovered four defects that no amount of local testing had:
+**Stage 2 ran against the live service on 31 Aug 2026** with a working
+application key. Two earlier keys were refused; both were *user* API keys,
+the string the site hands you on sign-in. `/v2/lookup` takes `client`, which
+is an application key and exists only after registering an application at
+<https://acoustid.org/new-application>. The error is identical for both,
+which is the whole trap — the account gives you the wrong one unprompted.
 
-1. **A rejected key was reported as a busy server.** The 400 was treated like
-   a throttle and retried three times per file; the message that explained
-   everything was discarded. The run printed "0 identified, 12 deferred after
-   server errors", which reads like AcoustID was having a bad day. On a full
-   library that is 10,000 pointless requests to arrive at one sentence.
-2. **The join to the manifest silently matched nothing.** `apply.py` assumed
-   tracks are nested under their release; the artist archive keeps them in a
-   flat top-level list. Every identification was dropped and the run printed
-   `acoustid 0` — indistinguishable from a lookup that genuinely found
-   nothing. This alone would have made a *valid* key look useless.
-3. **Five CLI subcommands never dispatched.** `fingerprint`, `apply`,
-   `duplicates`, `tags` and `export` set `func=` where the dispatcher reads
-   `fn`. Every one of them parsed `--help` perfectly, which is why a
-   help-only smoke test passed them all.
-4. **`apply --tags` only wrote the plan when it had rows**, leaving the
-   previous run's plan on disk looking current — in the one file that
-   `tags.py --write` executes against real audio.
+Reaching the network first exposed four defects that no local testing had,
+all now fixed and covered by `tests/test_fingerprint.py`: a refused key
+reported as a busy server and retried three times per file; a join that
+matched nothing because `apply.py` assumed tracks are nested under their
+release when the artist archive keeps them flat; five CLI subcommands that
+never dispatched (`func=` where the dispatcher reads `fn`, so `--help`
+passed them all); and `apply --tags` writing the plan only when it had rows,
+leaving the previous run's plan on disk looking current.
 
-With those fixed the chain is verified end to end apart from the network
-call itself: real fingerprints from `D:\Coltrane`, through a synthesised
-AcoustID response shaped like the live one, into scored proposals, into a
-tag plan whose paths all resolve to real files. `tests/test_fingerprint.py`
-holds the regressions.
+**The measurement.** A random 128-track sample seeded across the whole
+archive — not the first N in walk order, which is all DSD vinyl-side rips
+and would understate the rate badly:
 
-**What is still needed is an *application* key.** AcoustID issues two
-different strings and returns the same error for both. Signing in hands
-you a *user* API key, which the webservice docs describe as being for
-submitting fingerprints; `/v2/lookup` takes `client`, which is an
-*application* key and exists only once you register an application at
-<https://acoustid.org/new-application>. Two separately generated keys were
-tried on 30 Aug and both were user keys, which is the trap: the account
-gives you one unprompted and it looks like the answer. The tool now names
-the right page when it is refused.
+| | count | share |
+|---|---:|---:|
+| exact title match | 88 | 68.8% |
+| same tune, variant title | 10 | 7.8% |
+| disagrees | 11 | 8.6% |
+| no identification at all | 19 | 14.8% |
+| **identified correctly (strict)** | **98** | **76.6%** |
+
+Reading the 11 disagreements by hand, four or five are AcoustID being right
+where *we* are wrong, or equally valid: our title `203 mft 10.44` is a
+filename and AcoustID's "My Favorite Things" is correct; "Simple Like" is a
+genuine alternate title for "Like Sonny"; "A Love Supreme, Part 1:
+Acknowledgement" is a fuller form of our "Part I: Acknowledgement". That
+puts the adjudicated rate at **about 80%** — at the threshold, not
+comfortably past it, and the remainder are real errors (`Lush Life`
+identified as Ramsey Lewis's "The 'In' Crowd" at 0.99).
+
+The 19 non-identifications are not random. They are whole-LP-side DSD rips
+(one file holding an entire side cannot match a per-recording fingerprint),
+bass and drum solos, spoken announcements, playalong exercises, `Track 06`
+from a Sun Ship outtake reel, and basement bootlegs. AcoustID has no
+reference for most of it. **This archive is close to a worst case**: it is
+mostly unreleased live material, alternate takes and bootlegs. A library of
+commercially released albums would score far higher, and the 16% ceiling
+that duration matching hit on classical is exactly the gap fingerprinting
+closes.
+
+**Human decisions.** Against the archive as it stands, 54% of proposals need
+review — but that is the `would overwrite` guard firing on tracks that
+already have titles, which is the project's central principle working, not a
+failure. Re-run with those same tracks' titles blanked, which is the
+criterion's actual scenario (an untagged folder), and it is **11.0%**: 194
+auto-applied, 24 held for review, all 24 held because the score fell below
+the threshold rather than because anything disagreed.
 
 One bug worth recording: `--limit` rewrote the output file from only the
 records processed before the break, silently discarding every fingerprint
@@ -394,20 +409,20 @@ and official. In descending order of realism:
 | 1 | a 90k mixed library goes scan → browser in under 30 min; browser interactive in under 3 s | met |
 | 1 | audit reports 0 HIGH on both paths | met |
 | 1 | CI green on three platforms and three Python versions | met — 9 jobs, 3.8–3.12 |
-| 2 | ≥80% of an untagged, badly-named test folder identified correctly | **unverified** — key supplied 30 Aug was refused as invalid |
-| 2 | human decisions needed for <20% of tracks | **not met** — depends on the above |
+| 2 | ≥80% of an untagged, badly-named test folder identified correctly | **borderline** — 76.6% strict, ~80% adjudicated, n=128 |
+| 2 | human decisions needed for <20% of tracks | met — 11.0% on an untagged folder |
 | 3 | install to first browser under 5 minutes for a non-developer | met — `pipx install cratedigger`, verified from a clean venv |
 | 3 | tag writing has a verified undo, proven by a round-trip test | met — `tests/test_tags.py`, run in CI |
 
-The two open rows are both phase 2 and both the same dependency. The key
-supplied on 30 Aug 2026 was refused by AcoustID as invalid — an *application*
-key from <https://acoustid.org/new-application> is what this needs, not
-the user API key that signing in hands you unprompted. The attempt was still worth making: it
-exposed four defects, two of which (a silent join failure and five
-undispatchable CLI commands) would have made a valid key look like a broken
-feature. Those are fixed and covered by tests. The identification rate itself
-remains unmeasured, so the honest reading is unchanged: the phase-2 unlock
-("point at a folder and it works") is built, wired, and unproven.
+Both phase-2 rows were measured on 31 Aug 2026 once a valid *application*
+key was in hand. The decision rate passes clearly. The identification rate
+lands at 76.6% strict, roughly 80% once the disagreements are adjudicated by
+hand — at the line rather than past it, on an archive that is close to a
+worst case for fingerprinting: mostly bootlegs, alternate takes, solos and
+whole-LP-side rips, much of which was never commercially released and has no
+AcoustID reference. The number to re-measure is the same sample against a
+library of released albums; until then, "point at a folder and it works" is
+demonstrated but not comfortably proven.
 
 Duration-based MusicBrainz matching, which *is* measured, reaches 16% on
 classical. That is the ceiling without fingerprinting, and it is why 2.1
